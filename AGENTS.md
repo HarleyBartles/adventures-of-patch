@@ -6,10 +6,15 @@ This repository is the canonical source of truth for the Presentation Planner / 
 
 When beginning project work from this repo, read these in order:
 
-1. `README.md` - short project orientation and repo layout.
-2. `docs/project/index.md` - first-class repo index and current source map.
-3. The relevant GitHub issue, if the user named one.
-4. Any repo-tracked asset guides, receipts, deck plans, or source files linked from the index or issue.
+1. `INDEX.md` - root directory index and top-level navigation surface.
+2. `README.md` - short project orientation.
+3. `docs/project/index.md` - first-class project index and current source map.
+4. The relevant GitHub issue, if the user named one.
+5. Any repo-tracked asset guides, receipts, deck plans, or source files linked from the index mesh, project index, or issue.
+
+For issue-to-PPTX production, also read:
+
+- `docs/project/playbooks/end-to-end-pptx-production.md`
 
 Use the live GitHub API connector for known repo paths, issues, and writes when available. Treat code-search/index access as useful but potentially lagging.
 
@@ -21,21 +26,22 @@ Repo files, repo issues, repo-tracked receipts, and repo-tracked asset documenta
 
 If a required guide or asset is missing from the repo, report it as a blocker or repo hygiene gap. Do not silently substitute memory or uploaded zips.
 
+## Directory index mesh
+
+Every visible directory should contain an `INDEX.md` file listing direct files and pointing to child directory indexes. Navigate through that mesh before relying on broad search.
+
 ## Patch rules
 
 Patch is the constant protagonist for Adventures of Patch presentations unless Harley explicitly excludes him.
 
-Before planning or generating images featuring Patch, inspect the current repo-tracked Patch visual references. Current known first read:
+Before planning or generating images featuring Patch, inspect `assets/patch/INDEX.md` and the current repo-tracked Patch visual references:
 
 - `assets/patch/patch_style_guide_v1.2.md`
+- `assets/patch/patch_contact_sheet_v1.1.png`
+- `assets/patch/patch_anti_patterns_v1.1.png`
+- `assets/patch/patch_interaction_guide_v1.1.png`
 
-Expected additional canonical surfaces, if present or later committed, include:
-
-- Patch contact sheet;
-- Patch anti-pattern sheet;
-- Patch interaction guide.
-
-If additional surfaces are needed but not present or discoverable in the repo, report the gap rather than silently substituting memory or uploaded zips.
+If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 
 Patch image generation must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 
@@ -43,7 +49,9 @@ Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, 
 
 ## Presentation production pipeline
 
-For an adventure-plan issue intended to become a finished presentation package, use the project skill chain:
+For an adventure-plan issue intended to become a finished presentation package, follow `docs/project/playbooks/end-to-end-pptx-production.md`.
+
+The short version:
 
 1. issue ingestion;
 2. deck doctrine;
