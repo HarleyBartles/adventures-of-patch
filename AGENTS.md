@@ -25,16 +25,21 @@ If a required guide or asset is missing from the repo, report it as a blocker or
 
 Patch is the constant protagonist for Adventures of Patch presentations unless Harley explicitly excludes him.
 
-Before planning or generating images featuring Patch, inspect the current repo-tracked Patch visual references. Expected canonical surfaces include:
+Before planning or generating images featuring Patch, inspect the current repo-tracked Patch visual references. Current known first read:
 
-- Patch style guide;
+- `assets/patch/patch_style_guide_v1.2.md`
+
+Expected additional canonical surfaces, if present or later committed, include:
+
 - Patch contact sheet;
 - Patch anti-pattern sheet;
 - Patch interaction guide.
 
-If these are not present or discoverable in the repo, do not claim that Patch visual generation is ready. Open or recommend a repo hygiene / asset canonisation issue to land them.
+If additional surfaces are needed but not present or discoverable in the repo, report the gap rather than silently substituting memory or uploaded zips.
 
-Patch image generation must preserve the canonical Patch style. Do not drift into generic robot, glossy 3D mascot, plush realism, or unrelated asset-family styles.
+Patch image generation must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
+
+Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, or unrelated asset-family styles.
 
 ## Presentation production pipeline
 
@@ -45,11 +50,12 @@ For an adventure-plan issue intended to become a finished presentation package, 
 3. deck planning;
 4. image planning;
 5. visual intent and Patch preflight;
-6. image generation or explicit blocked status;
-7. PPTX build;
-8. presenter sidecar;
-9. presentation QA;
-10. receipt and asset-canonisation follow-up.
+6. repo Patch reference inspection;
+7. image generation or explicit blocked status;
+8. PPTX build;
+9. presenter sidecar;
+10. presentation QA;
+11. receipt and asset-canonisation follow-up.
 
 Do not skip a required production gate. If image generation, Patch references, sidecar creation, or QA cannot be completed, stop and report the blocker rather than downgrading the package silently.
 
