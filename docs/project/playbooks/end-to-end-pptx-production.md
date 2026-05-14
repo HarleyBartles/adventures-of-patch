@@ -2,7 +2,7 @@
 
 This playbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
 
-Skills own local contracts. This playbook owns the cross-skill sequence, production gates, stop conditions, downgrade rules, tool-routing expectations, and failure reporting.
+Skills own local contracts. This playbook owns the cross-skill sequence, production gates, stop conditions, downgrade rules, tool-routing expectations, skill-invocation expectations, and failure reporting.
 
 ## Scope
 
@@ -23,17 +23,17 @@ A finished package normally includes:
 
 When the user asks to run an issue-to-PPTX proof, end-to-end pass, production pass, proof pass, rerun, or playbook run, interpret that as a staged playbook execution request.
 
-Do not treat the request as an immediate image-generation request, even when image generation will eventually be needed.
+Do not treat the request as an immediate image-generation request or immediate PPTX-build request, even when the final package will eventually need images and a PPTX.
 
 Default behaviour:
 
 1. Start at the playbook entry point.
 2. Read repo navigation surfaces and the source issue.
 3. Produce the issue brief, deck plan, image plan, and Patch/image readiness assessment in order.
-4. Invoke image generation only when the playbook reaches the image-generation stage, the image plan is complete, repo Patch references have been inspected, and no blocker exists.
+4. Invoke image generation only when the playbook reaches Stage 5, the image plan is complete, repo Patch references have been inspected, and no blocker exists.
 5. If the image generation tool is available, treat that as capability, not permission to jump ahead.
-6. If image generation is unavailable, stop at the image gate and report the blocker.
-7. If image generation is available and the playbook gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
+6. If image generation is unavailable at Stage 5, stop at the image gate and report the blocker.
+7. If image generation is available and the Stage 5 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
 8. After image generation, inspect outputs before using them in a PPTX.
 
 Useful shorthand meanings:
@@ -43,6 +43,41 @@ Useful shorthand meanings:
 - "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gate, Patch preflight, and repo Patch references.
 
 The user should not need to write a long gated instruction every time. The playbook is responsible for the default routing.
+
+## Required skill invocation map
+
+When running this playbook, invoke or apply the following skills at the listed points. Do not rely on general reasoning alone when a skill is named here and available.
+
+### Entry and repo grounding
+
+- `presentation-planner-bootstrap`: use as the project-context/session binding read when the session has not already been bootstrapped.
+- `github-issue-management`: apply for generic GitHub issue mechanics, duplicate checks, comments, updates, closure, and verification discipline.
+- `adventures-of-patch-repo`: apply for local repo doctrine, index-mesh navigation, issue shapes, repo-first source discipline, and failure/downgrade reporting expectations.
+
+These skills do not replace this playbook. They prepare the agent to use the playbook correctly.
+
+### Stage skills
+
+- Stage 1, issue ingestion: `adventures-of-patch-issue-ingestor`.
+- Stage 2, finished-deck contract: `adventures-of-patch-deck-doctrine`.
+- Stage 2, deck planning: `adventures-of-patch-deck-planner`.
+- Stage 3, image planning: `patch-deck-image-planner`.
+- Stage 4, visual intent gate: `visual-intent-gate`.
+- Stage 4, Patch preflight: `patch-image-preflight`.
+- Stage 5, image generation: `image_gen` tool only after the Stage 5 gate is reached and Patch preflight has passed.
+- Stage 5, image acceptance/rejection: `patch-image-preflight` post-generation review rules.
+- Stage 6, PPTX build: `adventures-of-patch-pptx-builder`, composing with the installed `slides` artifact skill.
+- Stage 7, presenter sidecar: installed document/PDF artifact skills as appropriate.
+- Stage 8, presentation QA: `adventures-of-patch-presentation-qa`.
+- Stage 9, image receipt: `presentation-image-receipt`.
+- Stage 9, receipt package ingestion if needed: `receipt-zip-ingressor`.
+- Stage 9, reusable asset canonisation if needed: `asset-sheet-canoniser`.
+
+### Important trigger boundary
+
+A user request for an end-to-end proof, production pass, or PPTX package may trigger artifact tooling because a PPTX is eventually required. That artifact trigger does not authorize skipping the playbook. After any mandatory artifact-handoff/tool preparation, return to this playbook and run stages in order.
+
+A user request for a deck with images may also look like an image-generation request. That does not authorize calling `image_gen` before Stage 5. Treat image generation as one stage inside the playbook, not the whole task.
 
 ## Tool routing and connector discovery
 
