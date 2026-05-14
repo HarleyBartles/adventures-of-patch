@@ -2,7 +2,7 @@
 
 This playbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
 
-Skills own local contracts. This playbook owns the cross-skill sequence, production gates, stop conditions, downgrade rules, tool-routing expectations, skill-invocation expectations, and failure reporting.
+The playbook owns the process flow, required evidence, production gates, stop conditions, downgrade rules, artifact expectations, and failure reporting. It does not prescribe a fixed skill invocation script. The assistant is responsible for selecting appropriate currently available skills and tools to satisfy the work described here.
 
 ## Scope
 
@@ -20,22 +20,32 @@ A finished package normally includes:
 - presentation image receipt when generated or embedded images are used;
 - follow-up asset canonisation issues where reusable assets emerge.
 
+## Skill and tool selection
+
+This playbook describes required work and gates, not a fixed skill invocation script.
+
+At each stage, select appropriate currently installed skills and available tools based on the work being performed. A stage may require multiple skills, no skill, or a future skill not named in this document.
+
+Do not treat any skill as exclusive for a stage. Repo/source discipline, artifact validity, Patch canon, visual intent, and QA obligations remain active whenever the work depends on them.
+
+If installed skills are unavailable, stale, renamed, or superseded, follow the playbook's required evidence, outputs, and stop conditions using the best available tools. Do not skip a gate because a named skill is unavailable, and do not claim progress merely because any particular skill or tool was invoked.
+
 ## Hard preflight: repo access proof
 
-Before any issue-to-PPTX production work may proceed beyond mandatory artifact-handoff preparation, the assistant must prove live access to the canonical GitHub repo and fetch the named source issue.
+Before any issue-to-PPTX production work may proceed beyond mandatory artifact-handoff preparation, prove live access to the canonical GitHub repo and fetch the named source issue.
 
-Repo access is a state established by evidence, not by one preferred tool route. If the assistant has already retrieved a file, issue, comment, PR, commit, or repository metadata from `HarleyBartles/adventures-of-patch` in the current run, repo access for that route is proven and must be carried forward. The assistant must not later treat repo access as unavailable merely because a different GitHub search/index/tool route fails.
+Repo access is a state established by evidence, not by one preferred tool route. If a file, issue, comment, PR, commit, or repository metadata has already been retrieved from `HarleyBartles/adventures-of-patch` in the current run, repo access for that route is proven and must be carried forward. Do not later treat repo access as unavailable merely because a different GitHub search/index/tool route fails.
 
 Required proof for `HarleyBartles/adventures-of-patch`:
 
 1. Identify every currently available GitHub-capable route, including any route that has already successfully fetched repo material in the current run.
 2. Prefer direct known-path and known-issue reads over broad search.
-3. Prove repository identity with `get_repo` or an equivalent successful repository metadata/file/issue fetch from `HarleyBartles/adventures-of-patch`.
+3. Prove repository identity with a successful repository metadata, file, or issue fetch from `HarleyBartles/adventures-of-patch`.
 4. Fetch `INDEX.md` from `main`.
 5. Fetch `AGENTS.md` from `main`.
 6. Fetch `docs/project/INDEX.md` from `main`.
-7. Fetch `docs/project/playbooks/end-to-end-pptx-production.md` from `main` unless this file is already the active source being read from the repo.
-8. Fetch the named issue with `fetch_issue` or an equivalent issue API/read route.
+7. Fetch this playbook from `main` unless this file is already the active source being read from the repo.
+8. Fetch the named issue and relevant issue comments when comments may contain decisions.
 
 A broad search or index miss is not evidence that repo access is unavailable. A failure in one route is route-specific, not a global repo-access failure. If any direct repo read succeeds, do not claim repo access is unavailable. If a known-path read fails after repo access is proven, report the specific failed path and either use another available direct-read route or stop at that path gate.
 
@@ -55,84 +65,44 @@ Default behaviour:
 2. Complete the hard repo access preflight and fetch the source issue.
 3. Read repo navigation surfaces and the source issue.
 4. Produce the issue brief.
-5. Establish or verify the deck frame/analogy/world before deck planning. If the issue or comments do not already contain a strong frame, run `frame-buster` interactively with Harley and land the resulting planning comment on the issue before continuing.
+5. Establish or verify the deck frame/analogy/world before deck planning. If the issue or comments do not already contain a strong frame, resolve the frame interactively with Harley and record the result on the issue before continuing.
 6. Produce the deck plan, image plan, and Patch/image readiness assessment in order.
-7. Invoke image generation only when the playbook reaches Stage 6, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
-8. If the image generation tool is available, treat that as capability, not permission to jump ahead.
-9. If image generation is unavailable at Stage 6, stop at the image gate and report the blocker.
-10. If image generation is available and the Stage 6 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
+7. Invoke image generation only when the playbook reaches the image-generation stage, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
+8. If image generation is available, treat that as capability, not permission to jump ahead.
+9. If image generation is unavailable at the image-generation stage, stop at the image gate and report the blocker.
+10. If image generation is available and the image gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
 11. After image generation, inspect outputs before using them in a PPTX.
 
 Useful shorthand meanings:
 
-- "Run the #3 proof pass" means run the whole staged playbook in order, including frame-buster when needed and image generation only at the correct stage.
+- "Run the #3 proof pass" means run the whole staged playbook in order, including frame resolution when needed and image generation only at the correct stage.
 - "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness.
-- "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gate, Patch preflight, and repo/project-source Patch references.
+- "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gating, Patch preflight, and repo/project-source Patch references.
 
 The user should not need to write a long gated instruction every time. The playbook is responsible for the default routing.
 
-## Required skill invocation map
-
-When running this playbook, invoke or apply the following skills at the listed points. Do not rely on general reasoning alone when a skill is named here and available.
-
-### Entry and repo grounding
-
-- `presentation-planner-bootstrap`: use as the project-context/session binding read when the session has not already been bootstrapped.
-- `github-issue-management`: apply for generic GitHub issue mechanics, duplicate checks, comments, updates, closure, and verification discipline.
-- `adventures-of-patch-repo`: apply for local repo doctrine, index-mesh navigation, issue shapes, repo-first source discipline, and failure/downgrade reporting expectations.
-
-These skills do not replace this playbook. They prepare the agent to use the playbook correctly.
-
-### Stage skills
-
-- Stage 1, issue ingestion: `adventures-of-patch-issue-ingestor`.
-- Stage 2, frame/analogy/world grounding: `frame-buster` when the issue lacks a green frame or contains only a weak/provisional one.
-- Stage 3, finished-deck contract: `adventures-of-patch-deck-doctrine`.
-- Stage 3, deck planning: `adventures-of-patch-deck-planner`.
-- Stage 4, image planning: `patch-deck-image-planner`.
-- Stage 5, visual intent gate: `visual-intent-gate`.
-- Stage 5, Patch preflight: `patch-image-preflight`.
-- Stage 6, image generation: `image_gen` tool only after the Stage 6 gate is reached and Patch preflight has passed.
-- Stage 6, image acceptance/rejection: `patch-image-preflight` post-generation review rules.
-- Stage 7, PPTX build: `adventures-of-patch-pptx-builder`, composing with the installed `slides` artifact skill.
-- Stage 8, presenter sidecar: installed document/PDF artifact skills as appropriate.
-- Stage 9, presentation QA: `adventures-of-patch-presentation-qa`.
-- Stage 10, image receipt: `presentation-image-receipt`.
-- Stage 10, receipt package ingestion if needed: `receipt-zip-ingressor`.
-- Stage 10, reusable asset canonisation if needed: `asset-sheet-canoniser`.
-
-### Important trigger boundary
+## Important trigger boundary
 
 A user request for an end-to-end proof, production pass, or PPTX package may trigger artifact tooling because a PPTX is eventually required. That artifact trigger does not authorize skipping the playbook. After any mandatory artifact-handoff/tool preparation, return to this playbook and run the hard repo access preflight before any deck artifact is built or reported.
 
 Artifact-handoff completion is not evidence of deck progress. Do not answer with a success link or completed-artifact claim unless every required playbook stage for the stated output mode has actually completed.
 
-A user request for a deck with images may also look like an image-generation request. That does not authorize calling `image_gen` before Stage 6. Treat image generation as one stage inside the playbook, not the whole task.
+A user request for a deck with images may also look like an image-generation request. That does not authorize image generation before the image-generation stage. Treat image generation as one stage inside the playbook, not the whole task.
 
-## Tool routing and connector discovery
+## Source and connector routing
 
 Do not claim that a required tool or connector is unavailable until the relevant available routes have actually been inspected or tested.
 
-For this project, source-of-truth repo work may use any live GitHub-capable route that can fetch canonical material from `HarleyBartles/adventures-of-patch`. The live GitHub API connector exposed through `api_tool` is preferred for known repo paths, issues, comments, writes, and metadata when available, but it is not the only possible proof of access. GitHub search/index routes are useful for discovery, but a failure there does not erase successful direct API access.
+For this project, source-of-truth repo work may use any live GitHub-capable route that can fetch canonical material from `HarleyBartles/adventures-of-patch`. Direct API-style reads are preferred for known repo paths, issues, comments, writes, and metadata when available, but they are not the only possible proof of access. GitHub search/index routes are useful for discovery, but a failure there does not erase successful direct repo access.
 
 ### GitHub repo and issue work
 
 Use connector discovery before claiming GitHub is unavailable:
 
-- Check for live GitHub API tools through `api_tool.list_resources` when there is any doubt about GitHub availability.
-- Also preserve any already-successful repo read from another GitHub-capable route as proof of access for that route.
-- Use discovered direct-read tool paths rather than guessing names.
+- Check currently available GitHub-capable routes when there is any doubt about GitHub availability.
+- Preserve any already-successful repo read from another GitHub-capable route as proof of access for that route.
+- Use direct-read routes for known paths and known issue numbers rather than broad search.
 - Do not require a broad search/index route to succeed before using known repo paths or known issue numbers.
-
-Expected GitHub API tools include, when available:
-
-- `get_repo` to prove repo access and permissions.
-- `fetch_file` for known repo paths.
-- `fetch_issue` for a known issue number.
-- `fetch_issue_comments` when issue comments may contain decisions.
-- `search` for repo file search only after known-path index reads have been attempted.
-- `add_comment_to_issue` for production pass status comments.
-- `create_issue`, `update_issue`, `create_file`, `update_file`, and related write tools when repo updates are part of the requested work.
 
 Required access proof before a repo-blocker claim:
 
@@ -172,13 +142,13 @@ A green frame must:
 - identify where the analogy stops helping;
 - provide visual language for environments, props, obstacles, success, failure, and handoff.
 
-If the issue or comments already contain a green frame, carry it into deck planning and cite the source. If the frame is missing, weak, corporate, or merely a UI metaphor, run `frame-buster` before deck planning. `frame-buster` is green when Harley and the assistant decide on a strong frame and a planning comment has been landed on the source issue.
+If the issue or comments already contain a green frame, carry it into deck planning and cite the source. If the frame is missing, weak, corporate, or merely a UI metaphor, resolve the frame before deck planning. Frame resolution is complete when Harley and the assistant have agreed on a strong frame and the source issue records the frame, mapping, visual world, analogy boundaries, and deck-planning implications.
 
 Do not mark deck planning green when the body slides are just Patch performing abstract engineering tasks or standing beside process diagrams.
 
 ### Patch visual references
 
-For Patch visual work, use GitHub `fetch_file` for text references and image-capable inspection where available for visual references:
+For Patch visual work, inspect repo text references and image-capable visual references where available:
 
 1. `assets/patch/INDEX.md`
 2. `assets/patch/patch_style_guide_v1.3.md`
@@ -213,23 +183,23 @@ Avoid heavy explanatory text in images and avoid dense PPTX overlays. If a slide
 
 ### Image generation
 
-Use the `image_gen` tool only at Stage 6, after:
+Use image generation only after:
 
 - issue ingestion is complete;
-- frame-buster is green or a strong frame is already present;
+- a strong frame is already present or frame resolution is complete;
 - deck plan is complete;
 - image plan is complete;
 - visual intent has been established;
 - Patch preflight has inspected repo Patch references and available project-source Patch asset files;
 - prompt pack satisfies Patch style requirements, including v1.3 eye canon.
 
-If `image_gen` is not available at Stage 6, stop at the image gate and report that image generation is the blocker. Do not call `image_gen` before Stage 6 merely because the final deliverable includes images.
+If image generation is not available at this stage, stop at the image gate and report that image generation is the blocker. Do not generate images before this stage merely because the final deliverable includes images.
 
 ### PPTX and artifact work
 
-For slide/PPTX work, follow the installed slides artifact instructions before creating or modifying a `.pptx`. Do not use PPTX tooling before accepted image status is explicit unless the user has explicitly approved storyboard or draft mode.
+For slide/PPTX work, follow the currently available artifact workflow for creating or modifying a `.pptx`. Do not use PPTX tooling before accepted image status is explicit unless the user has explicitly approved storyboard or draft mode.
 
-For PDF sidecars, follow the installed PDF/document artifact instructions. Do not mark the package final if the sidecar is missing.
+For PDF sidecars, follow the currently available document/PDF artifact workflow. Do not mark the package final if the sidecar is missing.
 
 ## Output modes
 
@@ -261,11 +231,10 @@ Do not silently change modes. If a requested final-art or proof-run path becomes
 
 ### Stage 1: Issue ingestion
 
-Skill: `adventures-of-patch-issue-ingestor`
-
-Required actions:
+Required work:
 
 - Fetch the issue from `HarleyBartles/adventures-of-patch` using a live GitHub-capable route.
+- Fetch relevant issue comments if they may contain decisions.
 - Extract issue source, issue type, core principle, target audience, narrative premise, slide beats, frame/analogy state, asset/image implications, risks, and acceptance criteria.
 - Preserve gaps and uncertainty.
 
@@ -275,14 +244,12 @@ Stop if the issue cannot be fetched after multi-route GitHub connector discovery
 
 ### Stage 2: Frame / analogy / world grounding
 
-Skill: `frame-buster` when needed.
-
-Required actions:
+Required work:
 
 - Determine whether the ingested issue already has a green frame.
-- If the frame is missing, weak, merely corporate, or only a thin UI/process metaphor, run `frame-buster` interactively with Harley.
+- If the frame is missing, weak, merely corporate, or only a thin UI/process metaphor, resolve the frame interactively with Harley.
 - Decide the deck's frame/analogy/world.
-- Land a planning comment on the source issue describing the green frame, mapping, visual world, analogy boundaries, and implications for deck planning.
+- Record the green frame, mapping, visual world, analogy boundaries, and implications for deck planning on the source issue.
 
 Gate 2: strong frame is present and recorded.
 
@@ -290,9 +257,7 @@ Stop if no strong frame exists and Harley has not approved one. Do not proceed t
 
 ### Stage 3: Deck doctrine and deck plan
 
-Skills: `adventures-of-patch-deck-doctrine`, then `adventures-of-patch-deck-planner`
-
-Required actions:
+Required work:
 
 - Apply the finished-deck contract.
 - Carry the green frame into the narrative arc and slide plan.
@@ -309,9 +274,7 @@ Stop if the body lacks a Patch adventure spine, title/end requirements are missi
 
 ### Stage 4: Image planning
 
-Skill: `patch-deck-image-planner`
-
-Required actions:
+Required work:
 
 - Exclude title and end cards from image generation by default.
 - Produce shot list for body slides from the selected frame/world.
@@ -327,9 +290,7 @@ Stop if title/end cards receive image prompts without override, Patch is decorat
 
 ### Stage 5: Visual intent and Patch preflight
 
-Skills: `visual-intent-gate`, `patch-image-preflight`
-
-Required actions:
+Required work:
 
 - Confirm that image generation/editing is the current playbook stage, not the first action.
 - Inspect repo Patch references and available project-source Patch asset files before generating Patch images.
@@ -372,9 +333,7 @@ Do not build the PPTX after this gate fails unless the user explicitly accepts s
 
 ### Stage 6: Image generation and image acceptance
 
-Tool: `image_gen`, when available and when Stage 6 has been reached.
-
-Required actions:
+Required work:
 
 - Generate images according to the image plan.
 - Inspect results before using them in a deck.
@@ -390,9 +349,7 @@ Do not use rejected images in a final candidate deck.
 
 ### Stage 7: PPTX build
 
-Skill: `adventures-of-patch-pptx-builder`, composing with the installed slides artifact workflow.
-
-Required actions:
+Required work:
 
 - Build only after image status is explicit.
 - Use accepted images for visual-first body slides.
@@ -410,9 +367,7 @@ Stop or downgrade only with explicit user approval if accepted images are missin
 
 ### Stage 8: Presenter sidecar
 
-Artifact workflows: document/PDF tooling as appropriate.
-
-Required actions:
+Required work:
 
 - Create a presenter sidecar, preferably PDF.
 - Explain target audience, purpose, core principle, selected frame/analogy/world, narrative arc, themes, lessons, slide-by-slide guide, discussion prompts, practical application, assumptions, boundaries, and asset/receipt/canonisation notes.
@@ -423,9 +378,7 @@ Stop before final status if sidecar is missing, sidecar is only a transcript rat
 
 ### Stage 9: Presentation QA
 
-Skill: `adventures-of-patch-presentation-qa`
-
-Required actions:
+Required work:
 
 - Review issue alignment, frame strength, doctrine, Patch story, visual-first quality, image-led slide quality, text hierarchy, notes, sidecar, practical transfer, receipt/canonisation, and repo/source grounding.
 - Use green/amber/red status.
@@ -442,13 +395,11 @@ Do not mark green because a deck merely looks polished.
 
 ### Stage 10: Receipt and canonisation follow-up
 
-Skills: `presentation-image-receipt`, `receipt-zip-ingressor`, `asset-sheet-canoniser`, plus GitHub issue workflows.
-
-Required actions:
+Required work:
 
 - Create or plan a presentation image receipt for finished PPTX files using generated/embedded images.
 - Identify reusable asset candidates.
-- Open or recommend follow-up canonisation issues for accepted reusable environments, props, characters, visual grammar, contact sheets, style guides, anti-patterns, interaction guides, or receipts.
+- Open, perform, or recommend follow-up canonisation work for accepted reusable environments, props, characters, visual grammar, contact sheets, style guides, anti-patterns, interaction guides, or receipts.
 
 Gate 10: receipt/canonisation status recorded.
 
@@ -491,22 +442,22 @@ Use this template:
 
 <smallest next repair or decision>
 
-### Skill or repo-doc follow-ups
+### Follow-ups
 
-<any suggested updates>
+<any suggested process, repo-doc, receipt, or canonisation follow-ups>
 ```
 
-## Red conditions from the first proof failure
+## Red conditions from previous proof failures
 
-The first issue-to-PPTX proof pass on issue #3 should be treated as red because:
+Past issue-to-PPTX proof failures on issue #3 should be treated as red because:
 
-1. The run continued after image generation was unavailable/unbound instead of stopping at the image generation gate.
-2. The later generated images did not follow canonical Patch style and drifted into glossy 3D mascot imagery.
+1. A run continued after image generation was unavailable/unbound instead of stopping at the image generation gate.
+2. Later generated images did not follow canonical Patch style and drifted into glossy 3D mascot imagery.
 3. Patch bag symbol and style constraints were violated.
-4. The run did not sufficiently enforce repo-grounded Patch reference inspection before generation.
-5. The result was described too permissively as amber/storyboard rather than as a failed proof with invalid images.
-6. The run claimed tool sparsity before discovering/testing the GitHub live API connector.
-7. Subsequent proof attempts exposed that unframed or weakly framed decks drift into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
+4. Repo-grounded Patch reference inspection was not sufficiently enforced before generation.
+5. Results were described too permissively as amber/storyboard rather than as failed proof work with invalid images.
+6. A run claimed tool sparsity before discovering/testing live GitHub-capable repo access.
+7. Unframed or weakly framed decks drifted into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
 8. A later attempted production run treated search/index failure as repo unavailability and produced an artifact without fetching the source issue; future runs must stop at the hard repo preflight instead.
 9. Any future run that has already retrieved repo material must preserve that successful route as access proof instead of narrowing to a different connector and declaring repo access lost.
 
@@ -518,9 +469,9 @@ Prefer the smallest honest repair:
 
 - If GitHub access appears unavailable, identify all GitHub-capable routes, preserve any route that already succeeded in the current run, and test direct repo metadata/file/issue reads before claiming a repo blocker.
 - If source issue is weak, repair the issue or ask for clarification.
-- If the issue lacks a strong frame, run `frame-buster` and land the planning comment before deck planning.
+- If the issue lacks a strong frame, resolve the frame and record it before deck planning.
 - If deck plan violates doctrine, repair the plan before image work.
-- If image generation is unavailable at Stage 6, stop and report the image-generation blocker.
+- If image generation is unavailable at the image-generation stage, stop and report the image-generation blocker.
 - If Patch references are missing or uninspected, stop and inspect repo/project-source references or land missing references.
 - If images fail Patch canon, including v1.3 eye canon, reject/regenerate before PPTX build.
 - If PPTX lacks notes or sidecar, keep it draft/amber or red depending on scope.
