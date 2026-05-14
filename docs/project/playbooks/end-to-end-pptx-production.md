@@ -19,13 +19,38 @@ A finished package normally includes:
 - presentation image receipt when generated or embedded images are used;
 - follow-up asset canonisation issues where reusable assets emerge.
 
+## Default interpretation of end-to-end run requests
+
+When the user asks to run an issue-to-PPTX proof, end-to-end pass, production pass, proof pass, rerun, or playbook run, interpret that as a staged playbook execution request.
+
+Do not treat the request as an immediate image-generation request, even when image generation will eventually be needed.
+
+Default behaviour:
+
+1. Start at the playbook entry point.
+2. Read repo navigation surfaces and the source issue.
+3. Produce the issue brief, deck plan, image plan, and Patch/image readiness assessment in order.
+4. Invoke image generation only when the playbook reaches the image-generation stage, the image plan is complete, repo Patch references have been inspected, and no blocker exists.
+5. If the image generation tool is available, treat that as capability, not permission to jump ahead.
+6. If image generation is unavailable, stop at the image gate and report the blocker.
+7. If image generation is available and the playbook gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
+8. After image generation, inspect outputs before using them in a PPTX.
+
+Useful shorthand meanings:
+
+- "Run the #3 proof pass" means run the whole staged playbook in order, including image generation only at the correct stage.
+- "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness.
+- "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gate, Patch preflight, and repo Patch references.
+
+The user should not need to write a long gated instruction every time. The playbook is responsible for the default routing.
+
 ## Required repo reads
 
 Before doing production work, inspect the repo navigation surfaces:
 
 1. `INDEX.md`
 2. `AGENTS.md`
-3. `docs/project/index.md`
+3. `docs/project/INDEX.md`
 4. this playbook
 5. the source GitHub issue
 6. any relevant directory `INDEX.md` files for assets, decks, receipts, or docs
@@ -153,7 +178,7 @@ Skills: `visual-intent-gate`, `patch-image-preflight`
 
 Required actions:
 
-- Confirm that the user wants generation/editing now, not prompt-only planning.
+- Confirm that image generation/editing is the current playbook stage, not the first action.
 - Inspect repo Patch references before generating Patch images.
 - Incorporate Patch style guide constraints into prompts.
 
@@ -184,7 +209,7 @@ Patch prompt negative constraints:
 - no changed hoodie colour;
 - no `X` bag symbol unless explicitly documented as canonical change.
 
-Gate 4: image generation is authorized and Patch preflight is complete.
+Gate 4: image generation is available, playbook-authorized, and Patch preflight is complete.
 
 Stop if:
 
