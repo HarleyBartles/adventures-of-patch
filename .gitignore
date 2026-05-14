@@ -1,0 +1,19 @@
+﻿.DS_Store
+Thumbs.db
+
+# local/editor state
+.vscode/
+.idea/
+
+# temporary working files
+tmp/
+temp/
+*.log
+
+# generated caches
+__pycache__/
+.pytest_cache/
+
+# keep scratch local unless explicitly promoted
+scratch/*
+!scratch/.gitkeep
