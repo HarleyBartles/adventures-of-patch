@@ -36,16 +36,16 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 
 Before planning or generating images featuring Patch, inspect `assets/patch/INDEX.md` and the current repo-tracked Patch visual references:
 
-- `assets/patch/patch_style_guide_v1.2.md`
+- `assets/patch/patch_style_guide_v1.3.md`
 - `assets/patch/patch_contact_sheet_v1.1.png`
 - `assets/patch/patch_anti_patterns_v1.1.png`
 - `assets/patch/patch_interaction_guide_v1.1.png`
 
 If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 
-Patch image generation must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
+Patch image generation must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 
-Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, or unrelated asset-family styles.
+Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, unrelated asset-family styles, or alternate eye styles such as white sclera, irises, anime eyes, human eyes, doll eyes, or large expressive mascot eyes.
 
 ## Presentation production pipeline
 
@@ -54,16 +54,17 @@ For an adventure-plan issue intended to become a finished presentation package, 
 The short version:
 
 1. issue ingestion;
-2. deck doctrine;
-3. deck planning;
-4. image planning;
-5. visual intent and Patch preflight;
-6. repo Patch reference inspection;
-7. image generation or explicit blocked status;
-8. PPTX build;
-9. presenter sidecar;
-10. presentation QA;
-11. receipt and asset-canonisation follow-up.
+2. frame/analogy grounding when no strong frame exists;
+3. deck doctrine;
+4. deck planning;
+5. image planning;
+6. visual intent and Patch preflight;
+7. repo/project-source Patch reference inspection;
+8. image generation or explicit blocked status;
+9. PPTX build;
+10. presenter sidecar;
+11. presentation QA;
+12. receipt and asset-canonisation follow-up.
 
 Do not skip a required production gate. If image generation, Patch references, sidecar creation, or QA cannot be completed, stop and report the blocker rather than downgrading the package silently.
 
@@ -73,7 +74,9 @@ A finished deck package includes:
 
 - a PPTX;
 - plain text-only title page with month date;
-- visual-first Patch-led body slides;
+- a strong frame/analogy/world that makes the lesson physically happen through Patch's adventure;
+- visual-first Patch-led body slides, preferably full-slide or near-full-slide images;
+- sparse visible slide text, with short concept-bearing text preferably embedded in-world inside images where it helps the scene carry meaning;
 - speaker notes sufficient for another presenter;
 - plain text-only end card focused on takeaways and applying the learning today;
 - presenter sidecar, preferably PDF;
