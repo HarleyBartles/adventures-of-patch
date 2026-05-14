@@ -12,7 +12,8 @@ A finished package normally includes:
 
 - PPTX deck;
 - plain text-only title slide with month date;
-- visual-first Patch-led body slides;
+- a strong frame/analogy/world that makes the issue's lesson physically happen through Patch's adventure;
+- visual-first Patch-led body slides, preferably full-slide or near-full-slide images;
 - speaker notes for every substantive body slide;
 - plain text-only end card focused on takeaways and applying the learning today;
 - presenter sidecar document, preferably PDF;
@@ -29,16 +30,18 @@ Default behaviour:
 
 1. Start at the playbook entry point.
 2. Read repo navigation surfaces and the source issue.
-3. Produce the issue brief, deck plan, image plan, and Patch/image readiness assessment in order.
-4. Invoke image generation only when the playbook reaches Stage 5, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
-5. If the image generation tool is available, treat that as capability, not permission to jump ahead.
-6. If image generation is unavailable at Stage 5, stop at the image gate and report the blocker.
-7. If image generation is available and the Stage 5 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
-8. After image generation, inspect outputs before using them in a PPTX.
+3. Produce the issue brief.
+4. Establish or verify the deck frame/analogy/world before deck planning. If the issue or comments do not already contain a strong frame, run `frame-buster` interactively with Harley and land the resulting planning comment on the issue before continuing.
+5. Produce the deck plan, image plan, and Patch/image readiness assessment in order.
+6. Invoke image generation only when the playbook reaches Stage 6, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
+7. If the image generation tool is available, treat that as capability, not permission to jump ahead.
+8. If image generation is unavailable at Stage 6, stop at the image gate and report the blocker.
+9. If image generation is available and the Stage 6 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
+10. After image generation, inspect outputs before using them in a PPTX.
 
 Useful shorthand meanings:
 
-- "Run the #3 proof pass" means run the whole staged playbook in order, including image generation only at the correct stage.
+- "Run the #3 proof pass" means run the whole staged playbook in order, including frame-buster when needed and image generation only at the correct stage.
 - "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness.
 - "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gate, Patch preflight, and repo/project-source Patch references.
 
@@ -59,25 +62,26 @@ These skills do not replace this playbook. They prepare the agent to use the pla
 ### Stage skills
 
 - Stage 1, issue ingestion: `adventures-of-patch-issue-ingestor`.
-- Stage 2, finished-deck contract: `adventures-of-patch-deck-doctrine`.
-- Stage 2, deck planning: `adventures-of-patch-deck-planner`.
-- Stage 3, image planning: `patch-deck-image-planner`.
-- Stage 4, visual intent gate: `visual-intent-gate`.
-- Stage 4, Patch preflight: `patch-image-preflight`.
-- Stage 5, image generation: `image_gen` tool only after the Stage 5 gate is reached and Patch preflight has passed.
-- Stage 5, image acceptance/rejection: `patch-image-preflight` post-generation review rules.
-- Stage 6, PPTX build: `adventures-of-patch-pptx-builder`, composing with the installed `slides` artifact skill.
-- Stage 7, presenter sidecar: installed document/PDF artifact skills as appropriate.
-- Stage 8, presentation QA: `adventures-of-patch-presentation-qa`.
-- Stage 9, image receipt: `presentation-image-receipt`.
-- Stage 9, receipt package ingestion if needed: `receipt-zip-ingressor`.
-- Stage 9, reusable asset canonisation if needed: `asset-sheet-canoniser`.
+- Stage 2, frame/analogy/world grounding: `frame-buster` when the issue lacks a green frame or contains only a weak/provisional one.
+- Stage 3, finished-deck contract: `adventures-of-patch-deck-doctrine`.
+- Stage 3, deck planning: `adventures-of-patch-deck-planner`.
+- Stage 4, image planning: `patch-deck-image-planner`.
+- Stage 5, visual intent gate: `visual-intent-gate`.
+- Stage 5, Patch preflight: `patch-image-preflight`.
+- Stage 6, image generation: `image_gen` tool only after the Stage 6 gate is reached and Patch preflight has passed.
+- Stage 6, image acceptance/rejection: `patch-image-preflight` post-generation review rules.
+- Stage 7, PPTX build: `adventures-of-patch-pptx-builder`, composing with the installed `slides` artifact skill.
+- Stage 8, presenter sidecar: installed document/PDF artifact skills as appropriate.
+- Stage 9, presentation QA: `adventures-of-patch-presentation-qa`.
+- Stage 10, image receipt: `presentation-image-receipt`.
+- Stage 10, receipt package ingestion if needed: `receipt-zip-ingressor`.
+- Stage 10, reusable asset canonisation if needed: `asset-sheet-canoniser`.
 
 ### Important trigger boundary
 
 A user request for an end-to-end proof, production pass, or PPTX package may trigger artifact tooling because a PPTX is eventually required. That artifact trigger does not authorize skipping the playbook. After any mandatory artifact-handoff/tool preparation, return to this playbook and run stages in order.
 
-A user request for a deck with images may also look like an image-generation request. That does not authorize calling `image_gen` before Stage 5. Treat image generation as one stage inside the playbook, not the whole task.
+A user request for a deck with images may also look like an image-generation request. That does not authorize calling `image_gen` before Stage 6. Treat image generation as one stage inside the playbook, not the whole task.
 
 ## Tool routing and connector discovery
 
@@ -125,39 +129,72 @@ Use GitHub known-path fetches before broad search. Required repo reads for this 
 
 Use repo search only when the path is unknown or the index mesh points to a file that cannot be found by direct fetch.
 
+### Frame / analogy / world grounding
+
+Every Adventures of Patch deck needs a named frame/analogy/world unless Harley explicitly waives that requirement.
+
+A green frame must:
+
+- map cleanly to the issue's core principle;
+- create physical stakes or a lived situation for Patch;
+- give Patch an active role, not a mascot role;
+- generate most body-slide scenes naturally;
+- avoid importing misleading source-domain authority;
+- identify where the analogy stops helping;
+- provide visual language for environments, props, obstacles, success, failure, and handoff.
+
+If the issue or comments already contain a green frame, carry it into deck planning and cite the source. If the frame is missing, weak, corporate, or merely a UI metaphor, run `frame-buster` before deck planning. `frame-buster` is green when Harley and the assistant decide on a strong frame and a planning comment has been landed on the source issue.
+
+Do not mark deck planning green when the body slides are just Patch performing abstract engineering tasks or standing beside process diagrams.
+
 ### Patch visual references
 
 For Patch visual work, use GitHub `fetch_file` for text references and image-capable inspection where available for visual references:
 
 1. `assets/patch/INDEX.md`
-2. `assets/patch/patch_style_guide_v1.2.md`
+2. `assets/patch/patch_style_guide_v1.3.md`
 3. `assets/patch/patch_contact_sheet_v1.1.png`
 4. `assets/patch/patch_anti_patterns_v1.1.png`
 5. `assets/patch/patch_interaction_guide_v1.1.png`
 
 ChatGPT project sources are also the expected home for an inspectable Patch asset package when this project provides one, especially `patch_assets.zip`. That project-source package may contain the same Patch visual surfaces in a form the assistant can inspect directly:
 
-- `patch_style_guide_v1.2.md`
-- `patch_contact_sheet_v1.1.png`
-- `patch_anti_patterns_v1.1.png`
-- `patch_interaction_guide_v1.1.png`
+- `patch_style_guide_v1.3.md` or the latest project-source Patch style guide available;
+- `patch_contact_sheet_v1.1.png`;
+- `patch_anti_patterns_v1.1.png`;
+- `patch_interaction_guide_v1.1.png`.
 
 Use the project-source Patch asset package as the tool-accessible visual reference home for contact sheets, anti-pattern sheets, interaction guides, and style guides when GitHub confirms the repo paths but the connector cannot materialize PNGs for visual inspection. It is an inspectable mirror/input for Patch preflight, not a replacement for repo truth. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
 
 If the tool cannot visually inspect PNG files from GitHub, report that exact limitation, then check whether the project-source Patch asset package is available and inspectable. Do not substitute arbitrary uploaded zips or memory. If neither GitHub visual inspection nor project-source Patch assets are available, use the written style guide as the minimum text basis and mark confidence or blocking status according to the requested output mode.
 
+Patch prompts and image reviews must enforce v1.3 eye canon: black oval eyes with small white shine highlights only. Reject white sclera, visible irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or alternate creative eye styles.
+
+### Slide image and text posture
+
+Body slides should normally be full-slide or near-full-slide image-led scenes. The image should carry the emotional, narrative, and conceptual load.
+
+Preferred visible text hierarchy:
+
+1. No visible slide text beyond the image when the scene is self-explanatory with presenter notes.
+2. Short in-world text embedded in the image when it helps the scene carry meaning: signs, stamps, mission cards, warning labels, dossiers, route markers, dashboards, receipts, or brief checklists.
+3. Short PPTX overlay captions only when exact readable wording is required or generated in-world text is unreliable.
+
+Avoid heavy explanatory text in images and avoid dense PPTX overlays. If a slide needs a paragraph to explain itself, repair the frame, image plan, or presenter notes instead of treating the slide as green.
+
 ### Image generation
 
-Use the `image_gen` tool only at Stage 5, after:
+Use the `image_gen` tool only at Stage 6, after:
 
 - issue ingestion is complete;
+- frame-buster is green or a strong frame is already present;
 - deck plan is complete;
 - image plan is complete;
 - visual intent has been established;
 - Patch preflight has inspected repo Patch references and available project-source Patch asset files;
-- prompt pack satisfies Patch style requirements.
+- prompt pack satisfies Patch style requirements, including v1.3 eye canon.
 
-If `image_gen` is not available at Stage 5, stop at the image gate and report that image generation is the blocker. Do not call `image_gen` before Stage 5 merely because the final deliverable includes images.
+If `image_gen` is not available at Stage 6, stop at the image gate and report that image generation is the blocker. Do not call `image_gen` before Stage 6 merely because the final deliverable includes images.
 
 ### PPTX and artifact work
 
@@ -200,47 +237,66 @@ Skill: `adventures-of-patch-issue-ingestor`
 Required actions:
 
 - Fetch the issue from `HarleyBartles/adventures-of-patch` using the live GitHub API connector.
-- Extract issue source, issue type, core principle, target audience, narrative premise, slide beats, asset/image implications, risks, and acceptance criteria.
+- Extract issue source, issue type, core principle, target audience, narrative premise, slide beats, frame/analogy state, asset/image implications, risks, and acceptance criteria.
 - Preserve gaps and uncertainty.
 
 Gate 1: issue fetched and production brief created.
 
 Stop if the issue cannot be fetched after GitHub connector discovery/testing, the issue is ambiguous and no safe default exists, or the issue lacks enough material to plan and the gap cannot be resolved without user input.
 
-### Stage 2: Deck doctrine and deck plan
+### Stage 2: Frame / analogy / world grounding
+
+Skill: `frame-buster` when needed.
+
+Required actions:
+
+- Determine whether the ingested issue already has a green frame.
+- If the frame is missing, weak, merely corporate, or only a thin UI/process metaphor, run `frame-buster` interactively with Harley.
+- Decide the deck's frame/analogy/world.
+- Land a planning comment on the source issue describing the green frame, mapping, visual world, analogy boundaries, and implications for deck planning.
+
+Gate 2: strong frame is present and recorded.
+
+Stop if no strong frame exists and Harley has not approved one. Do not proceed to green deck planning with an unframed issue unless Harley explicitly waives the frame requirement.
+
+### Stage 3: Deck doctrine and deck plan
 
 Skills: `adventures-of-patch-deck-doctrine`, then `adventures-of-patch-deck-planner`
 
 Required actions:
 
 - Apply the finished-deck contract.
+- Carry the green frame into the narrative arc and slide plan.
 - Add a plain text-only title slide with month date.
 - Add a plain text-only end card focused on takeaways and applying the learning today.
-- Plan visual-first Patch-led body slides.
+- Plan visual-first Patch-led body slides generated by the selected frame/world.
 - Plan speaker-note intent for every substantive body slide.
 - Plan presenter sidecar content.
 - Identify asset and canonisation candidates.
 
-Gate 2: deck plan satisfies doctrine before image planning.
+Gate 3: deck plan satisfies doctrine before image planning.
 
-Stop if the body lacks a Patch adventure spine, title/end requirements are missing, practical transfer is missing, the plan depends on dense slide text, or notes/sidecar obligations are absent.
+Stop if the body lacks a Patch adventure spine, title/end requirements are missing, practical transfer is missing, the frame is missing/weak, the plan depends on dense slide text, or notes/sidecar obligations are absent.
 
-### Stage 3: Image planning
+### Stage 4: Image planning
 
 Skill: `patch-deck-image-planner`
 
 Required actions:
 
 - Exclude title and end cards from image generation by default.
-- Produce shot list for body slides.
+- Produce shot list for body slides from the selected frame/world.
+- Prefer full-slide or near-full-slide image-led scenes.
+- Plan short in-world image text where it helps the scene carry meaning.
+- Reserve PPTX overlays for short fallback captions or exact-readable support only.
 - Produce prompt pack, in-world text requirements, continuity constraints, generation order, and reusable asset candidates.
 - Mark all new visual material provisional until accepted and canonicalised.
 
-Gate 3: image plan maps to the deck plan and respects doctrine.
+Gate 4: image plan maps to the deck plan and respects doctrine.
 
-Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected Patch canon/reference assets, or in-world text is too dense/purposeless.
+Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected Patch canon/reference assets, the image plan ignores the frame, or image/PPTX text is too dense.
 
-### Stage 4: Visual intent and Patch preflight
+### Stage 5: Visual intent and Patch preflight
 
 Skills: `visual-intent-gate`, `patch-image-preflight`
 
@@ -258,7 +314,8 @@ Patch prompt requirements:
 - teal hoodie;
 - hoodie antennae;
 - compact rounded proportions;
-- expressive simple face;
+- black oval eyes with small white shine highlights only;
+- expressive simple face without alternate eye anatomy;
 - dark pants;
 - teal shoes with white soles;
 - teal crossbody bag with visible `>` symbol;
@@ -275,17 +332,18 @@ Patch prompt negative constraints:
 - no missing bag;
 - no missing antennae;
 - no changed hoodie colour;
-- no `X` bag symbol unless explicitly documented as canonical change.
+- no `X` bag symbol unless explicitly documented as canonical change;
+- no white sclera, irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or creative alternate eye styles.
 
-Gate 4: image generation is available, playbook-authorized, and Patch preflight is complete.
+Gate 5: image generation is available, playbook-authorized, and Patch preflight is complete.
 
 Stop if image generation is not available at this stage, Patch references cannot be inspected sufficiently for the requested confidence level through either repo or project-source assets, or prompts cannot satisfy Patch identity constraints.
 
 Do not build the PPTX after this gate fails unless the user explicitly accepts storyboard/draft downgrade.
 
-### Stage 5: Image generation and image acceptance
+### Stage 6: Image generation and image acceptance
 
-Tool: `image_gen`, when available and when Stage 5 has been reached.
+Tool: `image_gen`, when available and when Stage 6 has been reached.
 
 Required actions:
 
@@ -293,15 +351,15 @@ Required actions:
 - Inspect results before using them in a deck.
 - Reject images that violate Patch canon or the deck's visual intent.
 
-Gate 5: accepted image set exists.
+Gate 6: accepted image set exists.
 
-Reject Patch images if Patch becomes glossy 3D, generic robot, plush, or photoreal; the bag is missing; the bag symbol is wrong; strap continuity fails; antennae are missing; hoodie is not teal; proportions drift; in-world text is unreadable/misleading; or the image does not support the slide concept.
+Reject Patch images if Patch becomes glossy 3D, generic robot, plush, or photoreal; the bag is missing; the bag symbol is wrong; strap continuity fails; antennae are missing; hoodie is not teal; eyes have white sclera, visible irises, coloured pupils, or alternate eye style; proportions drift; in-world text is unreadable/misleading; or the image does not support the slide concept.
 
 Stop if generated images fail canon and cannot be repaired in the current pass, generation repeatedly produces non-canonical style, or the user needs to choose between alternative directions.
 
 Do not use rejected images in a final candidate deck.
 
-### Stage 6: PPTX build
+### Stage 7: PPTX build
 
 Skill: `adventures-of-patch-pptx-builder`, composing with the installed slides artifact workflow.
 
@@ -309,48 +367,51 @@ Required actions:
 
 - Build only after image status is explicit.
 - Use accepted images for visual-first body slides.
+- Prefer full-slide or near-full-slide image-led layouts.
 - Keep visible slide text sparse.
+- Prefer short in-world image text where it carries the scene meaning.
+- Use PPTX overlays only as short fallback captions or exact-readable support.
 - Add presenter notes to every substantive body slide.
 - Include plain title and end cards.
 - Label the build mode accurately.
 
-Gate 6: PPTX built in the correct mode.
+Gate 7: PPTX built in the correct mode.
 
-Stop or downgrade only with explicit user approval if accepted images are missing, notes are absent, title/end cards violate doctrine, or the deck requires dense visible text to work.
+Stop or downgrade only with explicit user approval if accepted images are missing, notes are absent, title/end cards violate doctrine, the deck requires dense visible text to work, or it falls back to corporate infographic/bullet layouts instead of image-led Patch scenes.
 
-### Stage 7: Presenter sidecar
+### Stage 8: Presenter sidecar
 
 Artifact workflows: document/PDF tooling as appropriate.
 
 Required actions:
 
 - Create a presenter sidecar, preferably PDF.
-- Explain target audience, purpose, core principle, narrative arc, themes, lessons, slide-by-slide guide, discussion prompts, practical application, assumptions, boundaries, and asset/receipt/canonisation notes.
+- Explain target audience, purpose, core principle, selected frame/analogy/world, narrative arc, themes, lessons, slide-by-slide guide, discussion prompts, practical application, assumptions, boundaries, and asset/receipt/canonisation notes.
 
-Gate 7: sidecar exists for final candidate or finished package.
+Gate 8: sidecar exists for final candidate or finished package.
 
-Stop before final status if sidecar is missing, sidecar is only a transcript rather than a presenter guide, or sidecar omits audience, lesson, slide guide, or practical application.
+Stop before final status if sidecar is missing, sidecar is only a transcript rather than a presenter guide, or sidecar omits audience, lesson, selected frame, slide guide, or practical application.
 
-### Stage 8: Presentation QA
+### Stage 9: Presentation QA
 
 Skill: `adventures-of-patch-presentation-qa`
 
 Required actions:
 
-- Review issue alignment, doctrine, Patch story, visual-first quality, notes, sidecar, practical transfer, receipt/canonisation, and repo/source grounding.
+- Review issue alignment, frame strength, doctrine, Patch story, visual-first quality, image-led slide quality, text hierarchy, notes, sidecar, practical transfer, receipt/canonisation, and repo/source grounding.
 - Use green/amber/red status.
 
-Gate 8: QA report produced.
+Gate 9: QA report produced.
 
 Final status rules:
 
 - Green: package satisfies doctrine and issue acceptance criteria.
 - Amber: usable draft/final candidate with known missing or weak pieces.
-- Red: mandatory gate failed, Patch canon failed, production phase skipped without approval, or significant redesign required.
+- Red: mandatory gate failed, frame is missing/weak for a non-waived deck, Patch canon failed, production phase skipped without approval, or significant redesign required.
 
 Do not mark green because a deck merely looks polished.
 
-### Stage 9: Receipt and canonisation follow-up
+### Stage 10: Receipt and canonisation follow-up
 
 Skills: `presentation-image-receipt`, `receipt-zip-ingressor`, `asset-sheet-canoniser`, plus GitHub issue workflows.
 
@@ -360,7 +421,7 @@ Required actions:
 - Identify reusable asset candidates.
 - Open or recommend follow-up canonisation issues for accepted reusable environments, props, characters, visual grammar, contact sheets, style guides, anti-patterns, interaction guides, or receipts.
 
-Gate 9: receipt/canonisation status recorded.
+Gate 10: receipt/canonisation status recorded.
 
 Stop before finished status if embedded/generated images are used and receipt status is unknown, or reusable assets emerged but no canonisation follow-up is recorded or explicitly deferred.
 
@@ -416,6 +477,7 @@ The first issue-to-PPTX proof pass on issue #3 should be treated as red because:
 4. The run did not sufficiently enforce repo-grounded Patch reference inspection before generation.
 5. The result was described too permissively as amber/storyboard rather than as a failed proof with invalid images.
 6. The run claimed tool sparsity before discovering/testing the GitHub live API connector.
+7. Subsequent proof attempts exposed that unframed or weakly framed decks drift into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
 
 Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green or near-green artifacts.
 
@@ -425,9 +487,10 @@ Prefer the smallest honest repair:
 
 - If GitHub access appears unavailable, discover `/GitHub` tools through `api_tool.list_resources` and test `get_repo` before claiming a repo blocker.
 - If source issue is weak, repair the issue or ask for clarification.
+- If the issue lacks a strong frame, run `frame-buster` and land the planning comment before deck planning.
 - If deck plan violates doctrine, repair the plan before image work.
-- If image generation is unavailable at Stage 5, stop and report the image-generation blocker.
+- If image generation is unavailable at Stage 6, stop and report the image-generation blocker.
 - If Patch references are missing or uninspected, stop and inspect repo/project-source references or land missing references.
-- If images fail Patch canon, reject/regenerate before PPTX build.
+- If images fail Patch canon, including v1.3 eye canon, reject/regenerate before PPTX build.
 - If PPTX lacks notes or sidecar, keep it draft/amber or red depending on scope.
 - If final package lacks receipt/canonisation status, do not mark finished.
