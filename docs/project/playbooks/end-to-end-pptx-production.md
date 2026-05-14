@@ -22,21 +22,24 @@ A finished package normally includes:
 
 ## Hard preflight: repo access proof
 
-Before any issue-to-PPTX production work may proceed beyond mandatory artifact-handoff preparation, the assistant must prove live GitHub API access to the canonical repo and fetch the named source issue.
+Before any issue-to-PPTX production work may proceed beyond mandatory artifact-handoff preparation, the assistant must prove live access to the canonical GitHub repo and fetch the named source issue.
+
+Repo access is a state established by evidence, not by one preferred tool route. If the assistant has already retrieved a file, issue, comment, PR, commit, or repository metadata from `HarleyBartles/adventures-of-patch` in the current run, repo access for that route is proven and must be carried forward. The assistant must not later treat repo access as unavailable merely because a different GitHub search/index/tool route fails.
 
 Required proof for `HarleyBartles/adventures-of-patch`:
 
-1. Discover GitHub tools through `api_tool.list_resources`.
-2. Call `get_repo` for `HarleyBartles/adventures-of-patch`.
-3. Fetch `INDEX.md` from `main`.
-4. Fetch `AGENTS.md` from `main`.
-5. Fetch `docs/project/INDEX.md` from `main`.
-6. Fetch `docs/project/playbooks/end-to-end-pptx-production.md` from `main` unless this file is already the active source being read.
-7. Fetch the named issue with `fetch_issue`.
+1. Identify every currently available GitHub-capable route, including any route that has already successfully fetched repo material in the current run.
+2. Prefer direct known-path and known-issue reads over broad search.
+3. Prove repository identity with `get_repo` or an equivalent successful repository metadata/file/issue fetch from `HarleyBartles/adventures-of-patch`.
+4. Fetch `INDEX.md` from `main`.
+5. Fetch `AGENTS.md` from `main`.
+6. Fetch `docs/project/INDEX.md` from `main`.
+7. Fetch `docs/project/playbooks/end-to-end-pptx-production.md` from `main` unless this file is already the active source being read from the repo.
+8. Fetch the named issue with `fetch_issue` or an equivalent issue API/read route.
 
-A broad search or index miss is not evidence that repo access is unavailable. If `get_repo` succeeds, the assistant must not claim repo access is unavailable. If a known-path read fails after repo access is proven, report the specific path failure and stop at that gate.
+A broad search or index miss is not evidence that repo access is unavailable. A failure in one route is route-specific, not a global repo-access failure. If any direct repo read succeeds, do not claim repo access is unavailable. If a known-path read fails after repo access is proven, report the specific failed path and either use another available direct-read route or stop at that path gate.
 
-If the source issue or required repo playbook surfaces cannot be fetched, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Uploaded zips, receipt packages, previous decks, local scratch files, old assets, and memory must not be used as substitutes for the named issue or repo playbook in an end-to-end production run.
+If the source issue or required repo playbook surfaces cannot be fetched through any available GitHub-capable route, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Uploaded zips, receipt packages, previous decks, local scratch files, old assets, and memory must not be used as substitutes for the named issue or repo playbook in an end-to-end production run.
 
 No PPTX, storyboard, draft, proof artifact, sidecar, receipt, or QA result may be presented as valid for a source issue when the repo gate was skipped.
 
@@ -108,16 +111,18 @@ A user request for a deck with images may also look like an image-generation req
 
 ## Tool routing and connector discovery
 
-Do not claim that a required tool or connector is unavailable until the appropriate tool namespace has actually been inspected or tested.
+Do not claim that a required tool or connector is unavailable until the relevant available routes have actually been inspected or tested.
 
-For this project, the preferred source-of-truth tool for repo work is the live GitHub API connector exposed through `api_tool`.
+For this project, source-of-truth repo work may use any live GitHub-capable route that can fetch canonical material from `HarleyBartles/adventures-of-patch`. The live GitHub API connector exposed through `api_tool` is preferred for known repo paths, issues, comments, writes, and metadata when available, but it is not the only possible proof of access. GitHub search/index routes are useful for discovery, but a failure there does not erase successful direct API access.
 
 ### GitHub repo and issue work
 
-Use `api_tool.list_resources` before claiming GitHub is unavailable:
+Use connector discovery before claiming GitHub is unavailable:
 
-- Call `api_tool.list_resources` with path `/GitHub`, `only_tools: true`, and `refetch_tools: true` when there is any doubt about GitHub availability.
-- Then use the discovered `/GitHub/...` tool paths rather than guessing names.
+- Check for live GitHub API tools through `api_tool.list_resources` when there is any doubt about GitHub availability.
+- Also preserve any already-successful repo read from another GitHub-capable route as proof of access for that route.
+- Use discovered direct-read tool paths rather than guessing names.
+- Do not require a broad search/index route to succeed before using known repo paths or known issue numbers.
 
 Expected GitHub API tools include, when available:
 
@@ -131,17 +136,18 @@ Expected GitHub API tools include, when available:
 
 Required access proof before a repo-blocker claim:
 
-1. Discover GitHub tools with `api_tool.list_resources`.
-2. Call `get_repo` for `HarleyBartles/adventures-of-patch`.
-3. If `get_repo` succeeds, do not claim repo access is unavailable.
+1. Identify all currently available GitHub-capable routes and any route that already succeeded in this run.
+2. Attempt a direct repo metadata, file, or issue read for `HarleyBartles/adventures-of-patch`.
+3. If any direct read succeeds, do not claim repo access is unavailable.
 4. If a specific file fetch fails, report the specific path failure, not generic connector absence.
-5. If GitHub tools are absent or `get_repo` fails, report the actual tool result and stop at the repo gate.
+5. If one GitHub route fails, try another available direct-read route before reporting a repo gate blocker.
+6. If no GitHub-capable route can fetch repo metadata, known paths, or the named issue, report the actual tool results and stop at the repo gate.
 
-Claims of tool sparsity, missing connector access, or unavailable repo access are red only after this discovery/test sequence has failed.
+Claims of tool sparsity, missing connector access, or unavailable repo access are red only after this multi-route discovery/test sequence has failed.
 
 ### Repo file reads
 
-Use GitHub known-path fetches before broad search. Required repo reads for this playbook should normally be fetched with `fetch_file` from `HarleyBartles/adventures-of-patch` on `main`:
+Use GitHub known-path fetches before broad search. Required repo reads for this playbook should normally be fetched from `HarleyBartles/adventures-of-patch` on `main`:
 
 1. `INDEX.md`
 2. `AGENTS.md`
@@ -150,7 +156,7 @@ Use GitHub known-path fetches before broad search. Required repo reads for this 
 5. Relevant directory `INDEX.md` files.
 6. Relevant asset guides, deck docs, receipts, or issue-linked files.
 
-Use repo search only when the path is unknown or the index mesh points to a file that cannot be found by direct fetch.
+Use repo search only when the path is unknown or the index mesh points to a file that cannot be found by direct fetch. Search/index failure must be reported as a search/index failure, not as repo unavailability.
 
 ### Frame / analogy / world grounding
 
@@ -259,13 +265,13 @@ Skill: `adventures-of-patch-issue-ingestor`
 
 Required actions:
 
-- Fetch the issue from `HarleyBartles/adventures-of-patch` using the live GitHub API connector.
+- Fetch the issue from `HarleyBartles/adventures-of-patch` using a live GitHub-capable route.
 - Extract issue source, issue type, core principle, target audience, narrative premise, slide beats, frame/analogy state, asset/image implications, risks, and acceptance criteria.
 - Preserve gaps and uncertainty.
 
 Gate 1: issue fetched and production brief created.
 
-Stop if the issue cannot be fetched after GitHub connector discovery/testing, the issue is ambiguous and no safe default exists, or the issue lacks enough material to plan and the gap cannot be resolved without user input.
+Stop if the issue cannot be fetched after multi-route GitHub connector discovery/testing, the issue is ambiguous and no safe default exists, or the issue lacks enough material to plan and the gap cannot be resolved without user input.
 
 ### Stage 2: Frame / analogy / world grounding
 
@@ -502,6 +508,7 @@ The first issue-to-PPTX proof pass on issue #3 should be treated as red because:
 6. The run claimed tool sparsity before discovering/testing the GitHub live API connector.
 7. Subsequent proof attempts exposed that unframed or weakly framed decks drift into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
 8. A later attempted production run treated search/index failure as repo unavailability and produced an artifact without fetching the source issue; future runs must stop at the hard repo preflight instead.
+9. Any future run that has already retrieved repo material must preserve that successful route as access proof instead of narrowing to a different connector and declaring repo access lost.
 
 Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green or near-green artifacts.
 
@@ -509,7 +516,7 @@ Future passes must stop at the relevant gate and report the blocker rather than 
 
 Prefer the smallest honest repair:
 
-- If GitHub access appears unavailable, discover `/GitHub` tools through `api_tool.list_resources` and test `get_repo` before claiming a repo blocker.
+- If GitHub access appears unavailable, identify all GitHub-capable routes, preserve any route that already succeeded in the current run, and test direct repo metadata/file/issue reads before claiming a repo blocker.
 - If source issue is weak, repair the issue or ask for clarification.
 - If the issue lacks a strong frame, run `frame-buster` and land the planning comment before deck planning.
 - If deck plan violates doctrine, repair the plan before image work.
