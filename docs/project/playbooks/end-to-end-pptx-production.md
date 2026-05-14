@@ -30,7 +30,7 @@ Default behaviour:
 1. Start at the playbook entry point.
 2. Read repo navigation surfaces and the source issue.
 3. Produce the issue brief, deck plan, image plan, and Patch/image readiness assessment in order.
-4. Invoke image generation only when the playbook reaches Stage 5, the image plan is complete, repo Patch references have been inspected, and no blocker exists.
+4. Invoke image generation only when the playbook reaches Stage 5, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
 5. If the image generation tool is available, treat that as capability, not permission to jump ahead.
 6. If image generation is unavailable at Stage 5, stop at the image gate and report the blocker.
 7. If image generation is available and the Stage 5 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
@@ -40,7 +40,7 @@ Useful shorthand meanings:
 
 - "Run the #3 proof pass" means run the whole staged playbook in order, including image generation only at the correct stage.
 - "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness.
-- "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gate, Patch preflight, and repo Patch references.
+- "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gate, Patch preflight, and repo/project-source Patch references.
 
 The user should not need to write a long gated instruction every time. The playbook is responsible for the default routing.
 
@@ -135,7 +135,16 @@ For Patch visual work, use GitHub `fetch_file` for text references and image-cap
 4. `assets/patch/patch_anti_patterns_v1.1.png`
 5. `assets/patch/patch_interaction_guide_v1.1.png`
 
-If the tool cannot visually inspect PNG files from GitHub, report that exact limitation and use the written style guide as the minimum text basis. Do not substitute uploaded zips or memory unless the user explicitly scopes the task to them.
+ChatGPT project sources are also the expected home for an inspectable Patch asset package when this project provides one, especially `patch_assets.zip`. That project-source package may contain the same Patch visual surfaces in a form the assistant can inspect directly:
+
+- `patch_style_guide_v1.2.md`
+- `patch_contact_sheet_v1.1.png`
+- `patch_anti_patterns_v1.1.png`
+- `patch_interaction_guide_v1.1.png`
+
+Use the project-source Patch asset package as the tool-accessible visual reference home for contact sheets, anti-pattern sheets, interaction guides, and style guides when GitHub confirms the repo paths but the connector cannot materialize PNGs for visual inspection. It is an inspectable mirror/input for Patch preflight, not a replacement for repo truth. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
+
+If the tool cannot visually inspect PNG files from GitHub, report that exact limitation, then check whether the project-source Patch asset package is available and inspectable. Do not substitute arbitrary uploaded zips or memory. If neither GitHub visual inspection nor project-source Patch assets are available, use the written style guide as the minimum text basis and mark confidence or blocking status according to the requested output mode.
 
 ### Image generation
 
@@ -145,7 +154,7 @@ Use the `image_gen` tool only at Stage 5, after:
 - deck plan is complete;
 - image plan is complete;
 - visual intent has been established;
-- Patch preflight has inspected repo Patch references;
+- Patch preflight has inspected repo Patch references and available project-source Patch asset files;
 - prompt pack satisfies Patch style requirements.
 
 If `image_gen` is not available at Stage 5, stop at the image gate and report that image generation is the blocker. Do not call `image_gen` before Stage 5 merely because the final deliverable includes images.
@@ -229,7 +238,7 @@ Required actions:
 
 Gate 3: image plan maps to the deck plan and respects doctrine.
 
-Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected repo canon, or in-world text is too dense/purposeless.
+Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected Patch canon/reference assets, or in-world text is too dense/purposeless.
 
 ### Stage 4: Visual intent and Patch preflight
 
@@ -238,8 +247,8 @@ Skills: `visual-intent-gate`, `patch-image-preflight`
 Required actions:
 
 - Confirm that image generation/editing is the current playbook stage, not the first action.
-- Inspect repo Patch references before generating Patch images.
-- Incorporate Patch style guide constraints into prompts.
+- Inspect repo Patch references and available project-source Patch asset files before generating Patch images.
+- Incorporate Patch style guide, contact sheet, anti-pattern sheet, and interaction guide constraints into prompts when those project-source assets are available.
 
 Patch prompt requirements:
 
@@ -270,7 +279,7 @@ Patch prompt negative constraints:
 
 Gate 4: image generation is available, playbook-authorized, and Patch preflight is complete.
 
-Stop if image generation is not available at this stage, repo Patch references cannot be inspected sufficiently for the requested confidence level, or prompts cannot satisfy Patch identity constraints.
+Stop if image generation is not available at this stage, Patch references cannot be inspected sufficiently for the requested confidence level through either repo or project-source assets, or prompts cannot satisfy Patch identity constraints.
 
 Do not build the PPTX after this gate fails unless the user explicitly accepts storyboard/draft downgrade.
 
@@ -418,7 +427,7 @@ Prefer the smallest honest repair:
 - If source issue is weak, repair the issue or ask for clarification.
 - If deck plan violates doctrine, repair the plan before image work.
 - If image generation is unavailable at Stage 5, stop and report the image-generation blocker.
-- If Patch references are missing or uninspected, stop and inspect/land references.
+- If Patch references are missing or uninspected, stop and inspect repo/project-source references or land missing references.
 - If images fail Patch canon, reject/regenerate before PPTX build.
 - If PPTX lacks notes or sidecar, keep it draft/amber or red depending on scope.
 - If final package lacks receipt/canonisation status, do not mark finished.
