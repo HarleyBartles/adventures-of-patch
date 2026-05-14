@@ -1,0 +1,22 @@
+# assets/patch index
+
+Canonical Patch visual references.
+
+Patch is the constant protagonist for Adventures of Patch presentations unless Harley explicitly excludes him.
+
+## Files in this directory
+
+- `patch_style_guide_v1.2.md` - canonical Patch visual design guide. Read this before planning or generating Patch images.
+- `patch_contact_sheet_v1.1.png` - visual contact sheet for Patch proportions, poses, palette, and silhouette.
+- `patch_anti_patterns_v1.1.png` - visual anti-pattern sheet showing Patch drift risks.
+- `patch_interaction_guide_v1.1.png` - visual interaction guide for Patch scenes and behaviours.
+
+## Subdirectories
+
+None.
+
+## Mandatory image-generation note
+
+Before generating or editing any Patch image, inspect the style guide and relevant visual sheets in this directory. Patch must remain in the canonical style: clean editorial vector style with thick rounded outlines and soft shading; teal hoodie; hoodie antennae; compact rounded proportions; dark pants; teal shoes with white soles; teal crossbody bag with visible `>` symbol and consistent strap placement.
+
+Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, or unrelated asset-family styles.
