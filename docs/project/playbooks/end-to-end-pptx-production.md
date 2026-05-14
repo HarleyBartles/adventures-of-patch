@@ -2,7 +2,7 @@
 
 This playbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
 
-Skills own local contracts. This playbook owns the cross-skill sequence, production gates, stop conditions, downgrade rules, and failure reporting.
+Skills own local contracts. This playbook owns the cross-skill sequence, production gates, stop conditions, downgrade rules, tool-routing expectations, and failure reporting.
 
 ## Scope
 
@@ -44,26 +44,82 @@ Useful shorthand meanings:
 
 The user should not need to write a long gated instruction every time. The playbook is responsible for the default routing.
 
-## Required repo reads
+## Tool routing and connector discovery
 
-Before doing production work, inspect the repo navigation surfaces:
+Do not claim that a required tool or connector is unavailable until the appropriate tool namespace has actually been inspected or tested.
+
+For this project, the preferred source-of-truth tool for repo work is the live GitHub API connector exposed through `api_tool`.
+
+### GitHub repo and issue work
+
+Use `api_tool.list_resources` before claiming GitHub is unavailable:
+
+- Call `api_tool.list_resources` with path `/GitHub`, `only_tools: true`, and `refetch_tools: true` when there is any doubt about GitHub availability.
+- Then use the discovered `/GitHub/...` tool paths rather than guessing names.
+
+Expected GitHub API tools include, when available:
+
+- `get_repo` to prove repo access and permissions.
+- `fetch_file` for known repo paths.
+- `fetch_issue` for a known issue number.
+- `fetch_issue_comments` when issue comments may contain decisions.
+- `search` for repo file search only after known-path index reads have been attempted.
+- `add_comment_to_issue` for production pass status comments.
+- `create_issue`, `update_issue`, `create_file`, `update_file`, and related write tools when repo updates are part of the requested work.
+
+Required access proof before a repo-blocker claim:
+
+1. Discover GitHub tools with `api_tool.list_resources`.
+2. Call `get_repo` for `HarleyBartles/adventures-of-patch`.
+3. If `get_repo` succeeds, do not claim repo access is unavailable.
+4. If a specific file fetch fails, report the specific path failure, not generic connector absence.
+5. If GitHub tools are absent or `get_repo` fails, report the actual tool result and stop at the repo gate.
+
+Claims of tool sparsity, missing connector access, or unavailable repo access are red only after this discovery/test sequence has failed.
+
+### Repo file reads
+
+Use GitHub known-path fetches before broad search. Required repo reads for this playbook should normally be fetched with `fetch_file` from `HarleyBartles/adventures-of-patch` on `main`:
 
 1. `INDEX.md`
 2. `AGENTS.md`
 3. `docs/project/INDEX.md`
-4. this playbook
-5. the source GitHub issue
-6. any relevant directory `INDEX.md` files for assets, decks, receipts, or docs
+4. `docs/project/playbooks/end-to-end-pptx-production.md`
+5. Relevant directory `INDEX.md` files.
+6. Relevant asset guides, deck docs, receipts, or issue-linked files.
 
-For Patch visual work, inspect:
+Use repo search only when the path is unknown or the index mesh points to a file that cannot be found by direct fetch.
+
+### Patch visual references
+
+For Patch visual work, use GitHub `fetch_file` for text references and image-capable inspection where available for visual references:
 
 1. `assets/patch/INDEX.md`
 2. `assets/patch/patch_style_guide_v1.2.md`
-3. `assets/patch/patch_contact_sheet_v1.1.png` when visual reference is available to the tool
-4. `assets/patch/patch_anti_patterns_v1.1.png` when visual reference is available to the tool
-5. `assets/patch/patch_interaction_guide_v1.1.png` when visual reference is available to the tool
+3. `assets/patch/patch_contact_sheet_v1.1.png`
+4. `assets/patch/patch_anti_patterns_v1.1.png`
+5. `assets/patch/patch_interaction_guide_v1.1.png`
 
-If a required file cannot be fetched or visually inspected with the available tools, report that as a blocker or reduced-confidence condition. Do not silently substitute memory or uploaded zips.
+If the tool cannot visually inspect PNG files from GitHub, report that exact limitation and use the written style guide as the minimum text basis. Do not substitute uploaded zips or memory unless the user explicitly scopes the task to them.
+
+### Image generation
+
+Use the `image_gen` tool only at Stage 5, after:
+
+- issue ingestion is complete;
+- deck plan is complete;
+- image plan is complete;
+- visual intent has been established;
+- Patch preflight has inspected repo Patch references;
+- prompt pack satisfies Patch style requirements.
+
+If `image_gen` is not available at Stage 5, stop at the image gate and report that image generation is the blocker. Do not call `image_gen` before Stage 5 merely because the final deliverable includes images.
+
+### PPTX and artifact work
+
+For slide/PPTX work, follow the installed slides artifact instructions before creating or modifying a `.pptx`. Do not use PPTX tooling before accepted image status is explicit unless the user has explicitly approved storyboard or draft mode.
+
+For PDF sidecars, follow the installed PDF/document artifact instructions. Do not mark the package final if the sidecar is missing.
 
 ## Output modes
 
@@ -97,27 +153,15 @@ Do not silently change modes. If a requested final-art or proof-run path becomes
 
 Skill: `adventures-of-patch-issue-ingestor`
 
-Input:
-
-- GitHub issue number, URL, or title.
-
 Required actions:
 
-- Fetch the issue from `HarleyBartles/adventures-of-patch` using the live GitHub API connector when available.
+- Fetch the issue from `HarleyBartles/adventures-of-patch` using the live GitHub API connector.
 - Extract issue source, issue type, core principle, target audience, narrative premise, slide beats, asset/image implications, risks, and acceptance criteria.
 - Preserve gaps and uncertainty.
 
-Output:
+Gate 1: issue fetched and production brief created.
 
-- Production brief.
-
-Gate 1: issue fetched and brief created.
-
-Stop if:
-
-- the issue cannot be fetched;
-- the issue is ambiguous and no safe default exists;
-- the issue lacks enough material to plan and the gap cannot be resolved without user input.
+Stop if the issue cannot be fetched after GitHub connector discovery/testing, the issue is ambiguous and no safe default exists, or the issue lacks enough material to plan and the gap cannot be resolved without user input.
 
 ### Stage 2: Deck doctrine and deck plan
 
@@ -133,19 +177,9 @@ Required actions:
 - Plan presenter sidecar content.
 - Identify asset and canonisation candidates.
 
-Output:
-
-- Doctrine-compliant deck plan.
-
 Gate 2: deck plan satisfies doctrine before image planning.
 
-Stop if:
-
-- the body does not have a clear Patch adventure spine;
-- the title/end requirements are not represented;
-- practical transfer is missing;
-- the plan relies on dense slide text rather than visual explanation;
-- speaker-note or sidecar obligations are absent.
+Stop if the body lacks a Patch adventure spine, title/end requirements are missing, practical transfer is missing, the plan depends on dense slide text, or notes/sidecar obligations are absent.
 
 ### Stage 3: Image planning
 
@@ -158,19 +192,9 @@ Required actions:
 - Produce prompt pack, in-world text requirements, continuity constraints, generation order, and reusable asset candidates.
 - Mark all new visual material provisional until accepted and canonicalised.
 
-Output:
-
-- Image plan and prompt pack.
-
 Gate 3: image plan maps to the deck plan and respects doctrine.
 
-Stop if:
-
-- any title/end card receives a generated image without explicit override;
-- Patch is decorative rather than active;
-- prompt pack lacks Patch continuity requirements;
-- prompt pack relies on uninspected repo canon;
-- in-world text is too dense or not purposeful.
+Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected repo canon, or in-world text is too dense/purposeless.
 
 ### Stage 4: Visual intent and Patch preflight
 
@@ -211,18 +235,13 @@ Patch prompt negative constraints:
 
 Gate 4: image generation is available, playbook-authorized, and Patch preflight is complete.
 
-Stop if:
-
-- image generation is not available or not bound;
-- the user requested final-art/proof-run output and image generation cannot proceed;
-- repo Patch references cannot be inspected sufficiently for the requested confidence level;
-- prompts cannot satisfy Patch identity constraints.
+Stop if image generation is not available at this stage, repo Patch references cannot be inspected sufficiently for the requested confidence level, or prompts cannot satisfy Patch identity constraints.
 
 Do not build the PPTX after this gate fails unless the user explicitly accepts storyboard/draft downgrade.
 
 ### Stage 5: Image generation and image acceptance
 
-Tool: image generation/editing tool when available.
+Tool: `image_gen`, when available and when Stage 5 has been reached.
 
 Required actions:
 
@@ -232,23 +251,9 @@ Required actions:
 
 Gate 5: accepted image set exists.
 
-Reject Patch images if:
+Reject Patch images if Patch becomes glossy 3D, generic robot, plush, or photoreal; the bag is missing; the bag symbol is wrong; strap continuity fails; antennae are missing; hoodie is not teal; proportions drift; in-world text is unreadable/misleading; or the image does not support the slide concept.
 
-- Patch becomes a glossy 3D mascot, generic robot, plush, or photoreal character;
-- bag is missing;
-- bag symbol is wrong;
-- strap does not cross torso when visible;
-- antennae are missing;
-- hoodie is not teal;
-- proportions or facial features drift away from the style guide;
-- in-world text is unreadable or misleading;
-- image does not support the slide's concept.
-
-Stop if:
-
-- generated images fail canon and cannot be repaired in the current pass;
-- image generation repeatedly produces non-canonical style;
-- the user needs to choose between alternative directions.
+Stop if generated images fail canon and cannot be repaired in the current pass, generation repeatedly produces non-canonical style, or the user needs to choose between alternative directions.
 
 Do not use rejected images in a final candidate deck.
 
@@ -267,12 +272,7 @@ Required actions:
 
 Gate 6: PPTX built in the correct mode.
 
-Stop or downgrade only with explicit user approval if:
-
-- accepted images are missing;
-- notes are absent;
-- title/end cards violate doctrine;
-- the deck requires dense visible text to work.
+Stop or downgrade only with explicit user approval if accepted images are missing, notes are absent, title/end cards violate doctrine, or the deck requires dense visible text to work.
 
 ### Stage 7: Presenter sidecar
 
@@ -285,11 +285,7 @@ Required actions:
 
 Gate 7: sidecar exists for final candidate or finished package.
 
-Stop before final status if:
-
-- sidecar is missing;
-- sidecar is only a transcript rather than a presenter guide;
-- sidecar omits audience, lesson, slide guide, or practical application.
+Stop before final status if sidecar is missing, sidecar is only a transcript rather than a presenter guide, or sidecar omits audience, lesson, slide guide, or practical application.
 
 ### Stage 8: Presentation QA
 
@@ -322,10 +318,7 @@ Required actions:
 
 Gate 9: receipt/canonisation status recorded.
 
-Stop before finished status if:
-
-- embedded/generated images are used and receipt status is unknown;
-- reusable assets emerged but no canonisation follow-up is recorded or explicitly deferred.
+Stop before finished status if embedded/generated images are used and receipt status is unknown, or reusable assets emerged but no canonisation follow-up is recorded or explicitly deferred.
 
 ## Failure reporting
 
@@ -378,6 +371,7 @@ The first issue-to-PPTX proof pass on issue #3 should be treated as red because:
 3. Patch bag symbol and style constraints were violated.
 4. The run did not sufficiently enforce repo-grounded Patch reference inspection before generation.
 5. The result was described too permissively as amber/storyboard rather than as a failed proof with invalid images.
+6. The run claimed tool sparsity before discovering/testing the GitHub live API connector.
 
 Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green or near-green artifacts.
 
@@ -385,9 +379,10 @@ Future passes must stop at the relevant gate and report the blocker rather than 
 
 Prefer the smallest honest repair:
 
+- If GitHub access appears unavailable, discover `/GitHub` tools through `api_tool.list_resources` and test `get_repo` before claiming a repo blocker.
 - If source issue is weak, repair the issue or ask for clarification.
 - If deck plan violates doctrine, repair the plan before image work.
-- If image generation is unavailable, stop and request binding.
+- If image generation is unavailable at Stage 5, stop and report the image-generation blocker.
 - If Patch references are missing or uninspected, stop and inspect/land references.
 - If images fail Patch canon, reject/regenerate before PPTX build.
 - If PPTX lacks notes or sidecar, keep it draft/amber or red depending on scope.
