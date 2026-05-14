@@ -8,7 +8,7 @@ When beginning project work from this repo, read these in order:
 
 1. `INDEX.md` - root directory index and top-level navigation surface.
 2. `README.md` - short project orientation.
-3. `docs/project/index.md` - first-class project index and current source map.
+3. `docs/project/INDEX.md` - first-class project index and current source map.
 4. The relevant GitHub issue, if the user named one.
 5. Any repo-tracked asset guides, receipts, deck plans, or source files linked from the index mesh, project index, or issue.
 
