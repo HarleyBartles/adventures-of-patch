@@ -26,6 +26,16 @@ Repo files, repo issues, repo-tracked receipts, and repo-tracked asset documenta
 
 If a required guide or asset is missing from the repo, report it as a blocker or repo hygiene gap. Do not silently substitute memory or uploaded zips.
 
+## Issue-to-PPTX repo gate
+
+For issue-to-PPTX, proof-pass, production-pass, or finished-package work, prove repo access and fetch the named source issue before producing any deck artifact.
+
+A search or index miss is not proof that repo access is unavailable. Discover and test the live GitHub API connector first. If `get_repo` succeeds for `HarleyBartles/adventures-of-patch`, do not claim repo access is unavailable.
+
+If the source issue or required repo playbook surfaces cannot be fetched, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Do not create a PPTX, storyboard, draft, or proof artifact from uploaded zips, receipt packages, old deck assets, memory, or inferred structure.
+
+Any artifact produced after a skipped repo gate is not valid for issue progress, QA, receipt, asset canonisation, or closure.
+
 ## Directory index mesh
 
 Every visible directory should contain an `INDEX.md` file listing direct files and pointing to child directory indexes. Navigate through that mesh before relying on broad search.
@@ -67,6 +77,8 @@ The short version:
 12. receipt and asset-canonisation follow-up.
 
 Do not skip a required production gate. If image generation, Patch references, sidecar creation, or QA cannot be completed, stop and report the blocker rather than downgrading the package silently.
+
+Mandatory artifact-handoff preparation for a PPTX request is not production progress. After any artifact handoff/tool preparation, resume the playbook at the repo-access proof gate. Do not report a completed artifact unless every required playbook stage for the claimed output mode actually completed.
 
 ## Finished deck expectations
 
