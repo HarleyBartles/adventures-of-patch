@@ -23,4 +23,4 @@ Use this file first when spelunking the repo through a GitHub API connector. Eac
 - The repo is canonical project truth.
 - Uploaded zips or chat attachments are not active canon unless committed here or explicitly scoped by the user.
 - For Patch image work, start with `assets/patch/INDEX.md` and inspect the style guide before planning or generating images.
-- For issue-to-deck work, start from the GitHub issue, then use the production pipeline described in `AGENTS.md` and `docs/project/index.md`.
+- For issue-to-deck or issue-to-PPTX work, start from the GitHub issue, then use the production pipeline described in `AGENTS.md` and `docs/project/INDEX.md`.
