@@ -16,7 +16,7 @@ For issue-to-PPTX production, also read:
 
 - `docs/project/playbooks/end-to-end-pptx-production.md`
 
-Use the live GitHub API connector for known repo paths, issues, and writes when available. Treat code-search/index access as useful but potentially lagging.
+Use any live GitHub-capable route that can fetch canonical material from this repo. Prefer the live GitHub API connector for known repo paths, issues, and writes when available, but do not treat it as the only possible proof of access. Treat code-search/index access as useful but potentially lagging.
 
 ## Source-of-truth rules
 
@@ -30,9 +30,11 @@ If a required guide or asset is missing from the repo, report it as a blocker or
 
 For issue-to-PPTX, proof-pass, production-pass, or finished-package work, prove repo access and fetch the named source issue before producing any deck artifact.
 
-A search or index miss is not proof that repo access is unavailable. Discover and test the live GitHub API connector first. If `get_repo` succeeds for `HarleyBartles/adventures-of-patch`, do not claim repo access is unavailable.
+Repo access is a state established by evidence, not by one preferred tool route. If an assistant has already retrieved a file, issue, comment, PR, commit, or repository metadata from `HarleyBartles/adventures-of-patch` in the current run, repo access for that route is proven and must be carried forward. A later failure in a different GitHub search/index/tool route must not erase that proof.
 
-If the source issue or required repo playbook surfaces cannot be fetched, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Do not create a PPTX, storyboard, draft, or proof artifact from uploaded zips, receipt packages, old deck assets, memory, or inferred structure.
+A search or index miss is not proof that repo access is unavailable. Check all currently available GitHub-capable routes and prefer direct known-path or known-issue reads over broad search. If any direct repo read succeeds for `HarleyBartles/adventures-of-patch`, do not claim repo access is unavailable.
+
+If the source issue or required repo playbook surfaces cannot be fetched through any available GitHub-capable route, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Do not create a PPTX, storyboard, draft, or proof artifact from uploaded zips, receipt packages, old deck assets, memory, or inferred structure.
 
 Any artifact produced after a skipped repo gate is not valid for issue progress, QA, receipt, asset canonisation, or closure.
 
