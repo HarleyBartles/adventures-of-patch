@@ -20,6 +20,26 @@ A finished package normally includes:
 - presentation image receipt when generated or embedded images are used;
 - follow-up asset canonisation issues where reusable assets emerge.
 
+## Hard preflight: repo access proof
+
+Before any issue-to-PPTX production work may proceed beyond mandatory artifact-handoff preparation, the assistant must prove live GitHub API access to the canonical repo and fetch the named source issue.
+
+Required proof for `HarleyBartles/adventures-of-patch`:
+
+1. Discover GitHub tools through `api_tool.list_resources`.
+2. Call `get_repo` for `HarleyBartles/adventures-of-patch`.
+3. Fetch `INDEX.md` from `main`.
+4. Fetch `AGENTS.md` from `main`.
+5. Fetch `docs/project/INDEX.md` from `main`.
+6. Fetch `docs/project/playbooks/end-to-end-pptx-production.md` from `main` unless this file is already the active source being read.
+7. Fetch the named issue with `fetch_issue`.
+
+A broad search or index miss is not evidence that repo access is unavailable. If `get_repo` succeeds, the assistant must not claim repo access is unavailable. If a known-path read fails after repo access is proven, report the specific path failure and stop at that gate.
+
+If the source issue or required repo playbook surfaces cannot be fetched, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Uploaded zips, receipt packages, previous decks, local scratch files, old assets, and memory must not be used as substitutes for the named issue or repo playbook in an end-to-end production run.
+
+No PPTX, storyboard, draft, proof artifact, sidecar, receipt, or QA result may be presented as valid for a source issue when the repo gate was skipped.
+
 ## Default interpretation of end-to-end run requests
 
 When the user asks to run an issue-to-PPTX proof, end-to-end pass, production pass, proof pass, rerun, or playbook run, interpret that as a staged playbook execution request.
@@ -29,15 +49,16 @@ Do not treat the request as an immediate image-generation request or immediate P
 Default behaviour:
 
 1. Start at the playbook entry point.
-2. Read repo navigation surfaces and the source issue.
-3. Produce the issue brief.
-4. Establish or verify the deck frame/analogy/world before deck planning. If the issue or comments do not already contain a strong frame, run `frame-buster` interactively with Harley and land the resulting planning comment on the issue before continuing.
-5. Produce the deck plan, image plan, and Patch/image readiness assessment in order.
-6. Invoke image generation only when the playbook reaches Stage 6, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
-7. If the image generation tool is available, treat that as capability, not permission to jump ahead.
-8. If image generation is unavailable at Stage 6, stop at the image gate and report the blocker.
-9. If image generation is available and the Stage 6 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
-10. After image generation, inspect outputs before using them in a PPTX.
+2. Complete the hard repo access preflight and fetch the source issue.
+3. Read repo navigation surfaces and the source issue.
+4. Produce the issue brief.
+5. Establish or verify the deck frame/analogy/world before deck planning. If the issue or comments do not already contain a strong frame, run `frame-buster` interactively with Harley and land the resulting planning comment on the issue before continuing.
+6. Produce the deck plan, image plan, and Patch/image readiness assessment in order.
+7. Invoke image generation only when the playbook reaches Stage 6, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
+8. If the image generation tool is available, treat that as capability, not permission to jump ahead.
+9. If image generation is unavailable at Stage 6, stop at the image gate and report the blocker.
+10. If image generation is available and the Stage 6 gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
+11. After image generation, inspect outputs before using them in a PPTX.
 
 Useful shorthand meanings:
 
@@ -79,7 +100,9 @@ These skills do not replace this playbook. They prepare the agent to use the pla
 
 ### Important trigger boundary
 
-A user request for an end-to-end proof, production pass, or PPTX package may trigger artifact tooling because a PPTX is eventually required. That artifact trigger does not authorize skipping the playbook. After any mandatory artifact-handoff/tool preparation, return to this playbook and run stages in order.
+A user request for an end-to-end proof, production pass, or PPTX package may trigger artifact tooling because a PPTX is eventually required. That artifact trigger does not authorize skipping the playbook. After any mandatory artifact-handoff/tool preparation, return to this playbook and run the hard repo access preflight before any deck artifact is built or reported.
+
+Artifact-handoff completion is not evidence of deck progress. Do not answer with a success link or completed-artifact claim unless every required playbook stage for the stated output mode has actually completed.
 
 A user request for a deck with images may also look like an image-generation request. That does not authorize calling `image_gen` before Stage 6. Treat image generation as one stage inside the playbook, not the whole task.
 
@@ -478,6 +501,7 @@ The first issue-to-PPTX proof pass on issue #3 should be treated as red because:
 5. The result was described too permissively as amber/storyboard rather than as a failed proof with invalid images.
 6. The run claimed tool sparsity before discovering/testing the GitHub live API connector.
 7. Subsequent proof attempts exposed that unframed or weakly framed decks drift into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
+8. A later attempted production run treated search/index failure as repo unavailability and produced an artifact without fetching the source issue; future runs must stop at the hard repo preflight instead.
 
 Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green or near-green artifacts.
 
