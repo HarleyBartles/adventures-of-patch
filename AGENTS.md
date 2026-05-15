@@ -19,9 +19,13 @@ For Patch actor-governed work, also read:
 - `Patch/ROUTING.md`
 - `Patch/CONTRACTS/WORKER_RETURN_CONTRACT.md` when tracked repo mutation may occur.
 
+For Patch-owned executable capabilities, start with:
+
+- `Patch/SKILLS/INDEX.md`
+
 For issue-to-PPTX production, also read:
 
-- `docs/project/playbooks/end-to-end-pptx-production.md`
+- `playbooks/end-to-end-pptx-production.md`
 
 Use any live GitHub-capable route that can fetch canonical material from this repo. Prefer the live GitHub API connector for known repo paths, issues, and writes when available, but do not treat it as the only possible proof of access. Treat code-search/index access as useful but potentially lagging.
 
@@ -38,7 +42,7 @@ These are local bindings for one named project agent. They do not redefine Will'
 
 The default workspace route is `Will -> Patch`. There is no Chris-like intermediary and no separate Adventures asset, deck, image, canon, receipt, or publication executor unless a future issue creates one for a real boundary.
 
-Patch actor governance lives under `Patch/`. Patch visual canon remains under `assets/patch/`.
+Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/patch/`.
 
 ## Source-of-truth rules
 
@@ -83,7 +87,7 @@ Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, 
 
 ## Presentation production pipeline
 
-For an adventure-plan issue intended to become a finished presentation package, follow `docs/project/playbooks/end-to-end-pptx-production.md`.
+For an adventure-plan issue intended to become a finished presentation package, follow `playbooks/end-to-end-pptx-production.md`.
 
 The short version:
 
