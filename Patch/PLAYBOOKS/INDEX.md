@@ -1,11 +1,17 @@
-# Patch playbooks index
+# Patch playbooks compatibility pointer
 
-Operational playbooks for Patch project-local actor work.
+Patch-local playbooks have been retired as a primary surface.
 
-## Files in this directory
+Project/domain playbooks now live at root:
 
-- `ASSET_PACKAGE_LANDING.md` - execution playbook for landing approved visual assets, markdown sidecars, source zips, and related indexes.
+```text
+/playbooks/
+```
 
-## Subdirectories
+Patch-owned executable capabilities live at:
 
-None.
+```text
+/Patch/SKILLS/
+```
+
+Use this file only as a compatibility pointer for older references. Do not add new project/domain playbooks under `/Patch/PLAYBOOKS/`.
