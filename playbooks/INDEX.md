@@ -6,7 +6,8 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 
 ## Files in this directory
 
-- `end-to-end-pptx-production.md` - canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
+- `pre-playbook-adventure-readiness.md` - required planning-readiness workflow before issue-to-PPTX production; matures seed issues through frame-ready and asset-ready states.
+- `end-to-end-pptx-production.md` - canonical orchestration guide for turning a playbook-ready Adventures of Patch issue into a finished presentation package.
 - `asset-package-landing.md` - project/domain workflow for landing approved visual assets, markdown sidecars, source zips, and related indexes.
 
 ## Subdirectories
@@ -17,5 +18,6 @@ None.
 
 - Skills own local runtime behaviour.
 - Playbooks own project orchestration across skills, production gates, stop conditions, and failure reporting.
+- Pre-playbook readiness is separate from PPTX production. Production should stop if frame-ready or asset-ready state is missing.
 - Patch actor governance lives under `Patch/`.
 - Patch repo-resident executable skills live under `Patch/SKILLS/`.
