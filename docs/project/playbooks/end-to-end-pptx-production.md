@@ -44,8 +44,9 @@ Required proof for `HarleyBartles/adventures-of-patch`:
 4. Fetch `INDEX.md` from `main`.
 5. Fetch `AGENTS.md` from `main`.
 6. Fetch `docs/project/INDEX.md` from `main`.
-7. Fetch this playbook from `main` unless this file is already the active source being read from the repo.
-8. Fetch the named issue and relevant issue comments when comments may contain decisions.
+7. Fetch `assets/INDEX.md` and `assets/source-zips/INDEX.md` when any project-source or zipped asset inspection may be needed.
+8. Fetch this playbook from `main` unless this file is already the active source being read from the repo.
+9. Fetch the named issue and relevant issue comments when comments may contain decisions.
 
 A broad search or index miss is not evidence that repo access is unavailable. A failure in one route is route-specific, not a global repo-access failure. If any direct repo read succeeds, do not claim repo access is unavailable. If a known-path read fails after repo access is proven, report the specific failed path and either use another available direct-read route or stop at that path gate.
 
@@ -64,12 +65,12 @@ Minimum ledger fields:
 - `repo_access`: green, red, or blocked.
 - `proven_repo_route`: the GitHub-capable route that successfully fetched repo material.
 - `repo_identity`: `HarleyBartles/adventures-of-patch`, default branch, and permission/access evidence when available.
-- `fetched_repo_surfaces`: root `INDEX.md`, `AGENTS.md`, `docs/project/INDEX.md`, this playbook, issue number, issue comments, and any frame/deck/asset references used.
+- `fetched_repo_surfaces`: root `INDEX.md`, `AGENTS.md`, `docs/project/INDEX.md`, `assets/INDEX.md`, `assets/source-zips/INDEX.md` when relevant, this playbook, issue number, issue comments, and any frame/deck/asset references used.
 - `source_issue`: issue number, title, state, and comment IDs that contain current decisions.
 - `current_stage`: playbook stage and gate state.
 - `frame_state`: missing, amber, green, or waived, with issue comment ID when recorded.
 - `artifact_mode`: none, plan-only, storyboard, draft, final candidate, or finished package.
-- `local_sources_allowed`: which uploaded/project-source zips may be used, and for what limited purpose.
+- `local_sources_allowed`: which repo-indexed source package names may be matched to project-source zips, and for what limited purpose.
 - `blocked_or_open_items`: real blockers only, not inferred connector absence.
 
 Before any mode switch, the assistant must re-check the ledger. Mode switches include: artifact handoff, image generation, slide/PPTX creation, local file/container operations, zip extraction, visible-code execution, and any transition from planning to artifact production.
@@ -78,7 +79,9 @@ If the ledger says repo access is green, the assistant must not later reason fro
 
 If the assistant cannot see or reconstruct the ledger after a mode switch, it must stop and reconstruct it from repo evidence before continuing. It must not fall back to uploaded zips, receipts, memory, or old assets while the ledger is missing.
 
-Project-source Patch assets may be used only after the ledger records repo proof and the specific reason for local visual inspection, such as: repo confirms Patch PNG paths but the current GitHub route cannot visually materialize PNG files. They are never a general substitute for issue, playbook, deck, or repo truth.
+Project-source zips may be used only after the ledger records repo proof, the current repo-tracked source package name from `assets/source-zips/INDEX.md`, and the specific reason for local inspection. The normal pattern is: identify the current zip package in the repo index, then inspect the project-source zip with the matching filename when visual or package inspection is needed. Do not rely on hard-coded legacy project-source filenames.
+
+Patch visual source packages are never a general substitute for issue, playbook, deck, or repo truth. They are inspection mirrors for visual references only when repo text and paths are already confirmed and the current GitHub route cannot materialize the required PNGs directly.
 
 A production artifact is invalid if the run-state ledger is absent, contradicts the claimed artifact status, or shows that a repo-green state was discarded during an artifact/local-file mode switch.
 
@@ -97,7 +100,7 @@ Default behaviour:
 5. Produce the issue brief.
 6. Establish or verify the deck frame/analogy/world before deck planning. If the issue or comments do not already contain a strong frame, resolve the frame interactively with Harley and record the result on the issue before continuing.
 7. Produce the deck plan, image plan, and Patch/image readiness assessment in order.
-8. Invoke image generation only when the playbook reaches the image-generation stage, the image plan is complete, Patch references have been inspected through repo text plus available project-source Patch asset files, and no blocker exists.
+8. Invoke image generation only when the playbook reaches the image-generation stage, the image plan is complete, Patch references have been inspected through repo text plus any required repo-indexed project-source visual package, and no blocker exists.
 9. If image generation is available, treat that as capability, not permission to jump ahead.
 10. If image generation is unavailable at the image-generation stage, stop at the image gate and report the blocker.
 11. If image generation is available and the image gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
@@ -153,8 +156,9 @@ Use GitHub known-path fetches before broad search. Required repo reads for this 
 2. `AGENTS.md`
 3. `docs/project/INDEX.md`
 4. `docs/project/playbooks/end-to-end-pptx-production.md`
-5. Relevant directory `INDEX.md` files.
-6. Relevant asset guides, deck docs, receipts, or issue-linked files.
+5. `assets/INDEX.md` and `assets/source-zips/INDEX.md` when project-source zips, receipts, Patch visual package inspection, or other asset package inspection may be needed.
+6. Relevant directory `INDEX.md` files.
+7. Relevant asset guides, deck docs, receipts, or issue-linked files.
 
 Use repo search only when the path is unknown or the index mesh points to a file that cannot be found by direct fetch. Search/index failure must be reported as a search/index failure, not as repo unavailability.
 
@@ -164,15 +168,16 @@ Do not begin an issue-to-PPTX run from uploaded zips, local scratch files, or pr
 
 Allowed examples:
 
-- Inspecting `patch_assets.zip` to view Patch PNG references after repo paths and style-guide truth have been confirmed.
-- Inspecting a receipt zip when the source issue, playbook stage, or repo receipt path explicitly requires receipt work.
+- Inspecting the current repo-indexed Patch source package from project sources to view Patch PNG references after repo paths and style-guide truth have been confirmed.
+- Inspecting a receipt zip when the source issue, playbook stage, repo receipt path, or `assets/source-zips/INDEX.md` explicitly identifies that receipt package.
 - Reading an artifact just produced in the current run for QA or receipt generation, after the ledger records its mode and validity.
 
 Disallowed examples:
 
-- Using `patch_assets.zip`, `receipts.zip`, old decks, or memory as a replacement for issue #3, its comments, the playbook, deck plan, or image plan.
+- Using repo-indexed source zips, receipt zips, old decks, or memory as a replacement for issue #3, its comments, the playbook, deck plan, or image plan.
 - Treating local unzip work as evidence that repo access is unavailable.
 - Continuing artifact production after the ledger has been lost or contradicted.
+- Hard-coding legacy project-source package names instead of reading `assets/source-zips/INDEX.md` and matching the current filename.
 
 ### Frame / analogy / world grounding
 
@@ -197,23 +202,26 @@ Do not mark deck planning green when the body slides are just Patch performing a
 For Patch visual work, inspect repo text references and image-capable visual references where available:
 
 1. `assets/patch/INDEX.md`
-2. `assets/patch/patch_style_guide_v1.3.md`
+2. `assets/patch/patch_style_guide_v1.3.md` or the latest repo-indexed Patch style guide
 3. `assets/patch/patch_contact_sheet_v1.1.png`
 4. `assets/patch/patch_anti_patterns_v1.1.png`
 5. `assets/patch/patch_interaction_guide_v1.1.png`
+6. `assets/source-zips/INDEX.md` to identify the current repo-tracked Patch source package when project-source visual inspection is needed.
 
-ChatGPT project sources are also the expected home for an inspectable Patch asset package when this project provides one, especially `patch_assets.zip`. That project-source package may contain the same Patch visual surfaces in a form the assistant can inspect directly:
+ChatGPT project sources are also the expected home for matching inspectable source packages when this project provides them. Do not assume a fixed package filename. Identify the current Patch source package from `assets/source-zips/INDEX.md`, then inspect the project-source zip with the same filename when GitHub confirms the repo paths but cannot materialize PNGs for visual inspection.
 
-- `patch_style_guide_v1.3.md` or the latest project-source Patch style guide available;
+The current matching Patch source package may contain the same Patch visual surfaces in a form the assistant can inspect directly:
+
+- the latest project-source Patch style guide corresponding to the repo-indexed style guide;
 - `patch_contact_sheet_v1.1.png`;
 - `patch_anti_patterns_v1.1.png`;
 - `patch_interaction_guide_v1.1.png`.
 
-Use the project-source Patch asset package as the tool-accessible visual reference home for contact sheets, anti-pattern sheets, interaction guides, and style guides only when the run-state ledger records that GitHub confirmed the repo paths but the connector cannot materialize PNGs for visual inspection. It is an inspectable mirror/input for Patch preflight, not a replacement for repo truth. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
+Use the matching project-source Patch asset package as the tool-accessible visual reference home for contact sheets, anti-pattern sheets, interaction guides, and style guides only when the run-state ledger records that GitHub confirmed the repo paths but the connector cannot materialize PNGs for visual inspection. It is an inspectable mirror/input for Patch preflight, not a replacement for repo truth. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
 
-If the tool cannot visually inspect PNG files from GitHub, report that exact limitation, then check whether the project-source Patch asset package is available and inspectable. Do not substitute arbitrary uploaded zips or memory. If neither GitHub visual inspection nor project-source Patch assets are available, use the written style guide as the minimum text basis and mark confidence or blocking status according to the requested output mode.
+If the tool cannot visually inspect PNG files from GitHub, report that exact limitation, then check whether the matching repo-indexed project-source package is available and inspectable. Do not substitute arbitrary uploaded zips or memory. If neither GitHub visual inspection nor matching project-source assets are available, use the written style guide as the minimum text basis and mark confidence or blocking status according to the requested output mode.
 
-Patch prompts and image reviews must enforce v1.3 eye canon: black oval eyes with small white shine highlights only. Reject white sclera, visible irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or alternate creative eye styles.
+Patch prompts and image reviews must enforce v1.3 eye canon unless superseded by a newer repo-indexed style guide: black oval eyes with small white shine highlights only. Reject white sclera, visible irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or alternate creative eye styles.
 
 ### Slide image and text posture
 
@@ -236,8 +244,8 @@ Use image generation only after:
 - deck plan is complete;
 - image plan is complete;
 - visual intent has been established;
-- Patch preflight has inspected repo Patch references and available project-source Patch asset files;
-- prompt pack satisfies Patch style requirements, including v1.3 eye canon.
+- Patch preflight has inspected repo Patch references and any required matching repo-indexed project-source visual package;
+- prompt pack satisfies Patch style requirements, including current repo-indexed eye canon.
 
 If image generation is not available at this stage, stop at the image gate and report that image generation is the blocker. Do not generate images before this stage merely because the final deliverable includes images.
 
@@ -344,8 +352,8 @@ Required work:
 
 - Confirm that image generation/editing is the current playbook stage, not the first action.
 - Re-check the run-state ledger before any local zip extraction or image-generation tool use.
-- Inspect repo Patch references and available project-source Patch asset files before generating Patch images.
-- Incorporate Patch style guide, contact sheet, anti-pattern sheet, and interaction guide constraints into prompts when those project-source assets are available.
+- Inspect repo Patch references and any required matching repo-indexed project-source Patch package before generating Patch images.
+- Incorporate Patch style guide, contact sheet, anti-pattern sheet, and interaction guide constraints into prompts when those visual surfaces are available.
 
 Patch prompt requirements:
 
@@ -378,7 +386,7 @@ Patch prompt negative constraints:
 
 Gate 5: image generation is available, playbook-authorized, and Patch preflight is complete.
 
-Stop if image generation is not available at this stage, Patch references cannot be inspected sufficiently for the requested confidence level through either repo or project-source assets, or prompts cannot satisfy Patch identity constraints.
+Stop if image generation is not available at this stage, Patch references cannot be inspected sufficiently for the requested confidence level through either repo or matching project-source assets, or prompts cannot satisfy Patch identity constraints.
 
 Do not build the PPTX after this gate fails unless the user explicitly accepts storyboard/draft downgrade.
 
@@ -522,10 +530,11 @@ Past issue-to-PPTX proof failures on issue #3 should be treated as red because:
 4. Repo-grounded Patch reference inspection was not sufficiently enforced before generation.
 5. Results were described too permissively as amber/storyboard rather than as failed proof work with invalid images.
 6. A run claimed tool sparsity before discovering/testing live GitHub-capable repo access.
-7. Unframed or weakly framed decks drifted into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
+7. Unframed or weakly framed decks drift into bland corporate process diagrams; future runs must establish a strong frame before green deck planning.
 8. A later attempted production run treated search/index failure as repo unavailability and produced an artifact without fetching the source issue; future runs must stop at the hard repo preflight instead.
 9. Any future run that has already retrieved repo material must preserve that successful route as access proof instead of narrowing to a different connector and declaring repo access lost.
 10. Any future run that enters artifact generation, local file work, image work, or zip inspection and loses the repo-green state must stop and reconstruct the run-state ledger before continuing.
+11. Any future run that inspects project-source zips by hard-coded legacy filename rather than repo-indexed package discovery must stop and repair source routing before continuing.
 
 Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green or near-green artifacts.
 
@@ -535,11 +544,12 @@ Prefer the smallest honest repair:
 
 - If GitHub access appears unavailable, identify all GitHub-capable routes, preserve any route that already succeeded in the current run, and test direct repo metadata/file/issue reads before claiming a repo blocker.
 - If repo access was green earlier but appears absent after a mode switch, stop and reconstruct the run-state ledger before using local sources or producing artifacts.
+- If project-source zip inspection is needed, read `assets/source-zips/INDEX.md`, record the repo-indexed package name in the ledger, and inspect the matching project-source filename rather than a hard-coded legacy name.
 - If source issue is weak, repair the issue or ask for clarification.
 - If the issue lacks a strong frame, resolve the frame and record it before deck planning.
 - If deck plan violates doctrine, repair the plan before image work.
 - If image generation is unavailable at the image-generation stage, stop and report the image-generation blocker.
 - If Patch references are missing or uninspected, stop and inspect repo/project-source references or land missing references.
-- If images fail Patch canon, including v1.3 eye canon, reject/regenerate before PPTX build.
+- If images fail Patch canon, including current repo-indexed eye canon, reject/regenerate before PPTX build.
 - If PPTX lacks notes or sidecar, keep it draft/amber or red depending on scope.
 - If final package lacks receipt/canonisation status, do not mark finished.
