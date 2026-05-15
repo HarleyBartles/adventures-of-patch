@@ -12,7 +12,7 @@ Patch is the project-local actor surface for `HarleyBartles/adventures-of-patch`
 ## Subdirectories
 
 - `CONTRACTS/` - Patch-local worker return contracts. See `CONTRACTS/INDEX.md`.
-- `PLAYBOOKS/` - Patch execution and actor playbooks. See `PLAYBOOKS/INDEX.md`.
+- `SKILLS/` - Patch-owned repo-resident executable capability surfaces. See `SKILLS/INDEX.md`.
 
 ## Current lanes
 
@@ -22,3 +22,5 @@ Patch is the project-local actor surface for `HarleyBartles/adventures-of-patch`
 ## Notes
 
 Patch actor governance lives here. Patch visual canon remains under `assets/patch/`.
+
+Project/domain playbooks live in root `/playbooks/`, not under `/Patch/`.
