@@ -66,14 +66,14 @@ Patch is the constant protagonist unless explicitly excluded.
 
 Current canonical Patch references in repo:
 
-- `assets/patch/patch_style_guide_v1.2.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, expression, pose, and prompt guidance.
+- `assets/patch/patch_style_guide_v1.3.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, eye canon, expression, pose, and prompt guidance. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
 - `assets/patch/patch_contact_sheet_v1.1.png` - Patch contact sheet.
 - `assets/patch/patch_anti_patterns_v1.1.png` - Patch anti-pattern sheet.
 - `assets/patch/patch_interaction_guide_v1.1.png` - Patch interaction guide.
 
-Patch generation must preserve the style guide requirements: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, two hoodie antennae, compact rounded proportions, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
+Patch generation must preserve the style guide requirements: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, two hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 
-Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, or unrelated asset-family styles.
+Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, unrelated asset-family styles, or alternate eye styles such as white sclera, irises, anime eyes, human eyes, doll eyes, or large expressive mascot eyes.
 
 ## Presentation production pipeline
 
@@ -84,16 +84,17 @@ For end-to-end deck work from an issue, read and follow:
 The short version:
 
 1. Ingest the issue into a production brief.
-2. Apply deck doctrine.
-3. Create a deck plan.
-4. Create an image plan and prompt pack.
-5. Run visual-intent gate and Patch image preflight.
-6. Inspect repo-tracked Patch references.
-7. Generate images, or stop and report a blocker.
-8. Build the PPTX only after required image status is explicit.
-9. Create presenter sidecar, preferably PDF.
-10. Run presentation QA.
-11. Create presentation image receipt and asset-canonisation follow-ups where needed.
+2. Establish a strong frame/analogy/world with `frame-buster` when one is missing or weak.
+3. Apply deck doctrine.
+4. Create a deck plan.
+5. Create an image plan and prompt pack.
+6. Run visual-intent gate and Patch image preflight.
+7. Inspect repo-tracked Patch references and available project-source Patch assets.
+8. Generate images, or stop and report a blocker.
+9. Build the PPTX only after required image status is explicit.
+10. Create presenter sidecar, preferably PDF.
+11. Run presentation QA.
+12. Create presentation image receipt and asset-canonisation follow-ups where needed.
 
 Do not skip required gates. Do not call a package finished without notes, sidecar, QA, and receipt/canonisation status.
 
@@ -103,8 +104,9 @@ A finished Adventures of Patch presentation package should include:
 
 - PPTX deck;
 - plain text-only title slide with month date;
-- visual-first Patch-led body slides;
-- sparse visible slide text, with concept-bearing text preferably in-world;
+- a strong frame/analogy/world that makes the lesson physically happen through Patch's adventure;
+- visual-first Patch-led body slides, preferably full-slide or near-full-slide images;
+- sparse visible slide text, with short concept-bearing text preferably embedded in-world inside images where it helps the scene carry meaning;
 - speaker notes on every substantive body slide;
 - plain text-only end card focused on takeaways and applying the learning today;
 - presenter sidecar document, preferably PDF;

@@ -6,7 +6,7 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 
 ## Files in this directory
 
-- `patch_style_guide_v1.2.md` - canonical Patch visual design guide. Read this before planning or generating Patch images.
+- `patch_style_guide_v1.3.md` - canonical Patch visual design guide. Read this before planning or generating Patch images. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
 - `patch_contact_sheet_v1.1.png` - visual contact sheet for Patch proportions, poses, palette, and silhouette.
 - `patch_anti_patterns_v1.1.png` - visual anti-pattern sheet showing Patch drift risks.
 - `patch_interaction_guide_v1.1.png` - visual interaction guide for Patch scenes and behaviours.
@@ -17,6 +17,6 @@ None.
 
 ## Mandatory image-generation note
 
-Before generating or editing any Patch image, inspect the style guide and relevant visual sheets in this directory. Patch must remain in the canonical style: clean editorial vector style with thick rounded outlines and soft shading; teal hoodie; hoodie antennae; compact rounded proportions; dark pants; teal shoes with white soles; teal crossbody bag with visible `>` symbol and consistent strap placement.
+Before generating or editing any Patch image, inspect the style guide and relevant visual sheets in this directory. Patch must remain in the canonical style: clean editorial vector style with thick rounded outlines and soft shading; teal hoodie; hoodie antennae; compact rounded proportions; black oval eyes with small white shine highlights only; dark pants; teal shoes with white soles; teal crossbody bag with visible `>` symbol and consistent strap placement.
 
-Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, or unrelated asset-family styles.
+Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, unrelated asset-family styles, or alternate eye styles such as white sclera, irises, anime eyes, human eyes, doll eyes, or large expressive mascot eyes.
