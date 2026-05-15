@@ -7,6 +7,7 @@ These packages mirror the current project-source visual asset zips when the same
 ## Files in this directory
 
 - `asset_class__character__bouncers.zip` - bouncer supporting-character asset class package.
+- `asset_class__character__pmc__patch_mission_control_team.zip` - Patch Mission Control Team character family source package.
 - `asset_class__environment__clubdb.zip` - Club DB environment/location asset package.
 - `asset_class__hero__patch.zip` - Patch hero asset class package and inspectable Patch visual references.
 - `asset_class__character__stakeholders.zip` - reusable stakeholder character class package.
