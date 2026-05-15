@@ -72,7 +72,7 @@ Uploaded zips, chat attachments, generated images, and local scratch files are n
 
 Project-source packages must be discovered through repo indexes, especially `assets/source-zips/INDEX.md`, before they are used as package or visual-inspection evidence.
 
-Patch visual work must start from `assets/patch/INDEX.md` and the current repo-tracked Patch visual references.
+Patch visual work must start from `assets/hero-patch/INDEX.md` and the current repo-tracked Patch visual references.
 
 ## Completion rule
 

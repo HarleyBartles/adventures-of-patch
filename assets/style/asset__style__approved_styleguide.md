@@ -19,7 +19,7 @@ This sidecar is based on the approved second-pass style pair from the current se
 
 Current repo doctrine remains authoritative for Patch identity and source discipline. Before future final/proof Patch image work, inspect:
 
-- `assets/patch/INDEX.md`
+- `assets/hero-patch/INDEX.md`
 - the current repo-indexed Patch style guide
 - the current repo-indexed Patch contact sheet
 - the current repo-indexed Patch anti-pattern sheet

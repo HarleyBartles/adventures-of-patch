@@ -1,4 +1,4 @@
-# assets/patch index
+# assets/hero-patch index
 
 Canonical Patch visual references.
 
@@ -6,10 +6,12 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 
 ## Files in this directory
 
-- `patch_style_guide_v1.3.md` - canonical Patch visual design guide. Read this before planning or generating Patch images. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
-- `patch_contact_sheet_v1.1.png` - visual contact sheet for Patch proportions, poses, palette, and silhouette.
-- `patch_anti_patterns_v1.1.png` - visual anti-pattern sheet showing Patch drift risks.
-- `patch_interaction_guide_v1.1.png` - visual interaction guide for Patch scenes and behaviours.
+- `asset_class__hero__patch_approved_style.png` - visual contact sheet for Patch proportions, poses, palette, and silhouette.
+- `asset__hero__patch_antipatterns.png` - visual anti-pattern sheet showing Patch drift risks.
+- `asset__hero__patch_interactions.png` - visual interaction guide for Patch scenes and behaviours.
+- `asset__hero__patch_style_antipatterns__v1.0.png` - older Patch anti-pattern reference kept for history.
+- `asset__hero__patch_style_antipatterns__v1.1.png` - updated Patch anti-pattern reference.
+- `asset__hero__patch_style_bible.md` - canonical Patch visual design guide. Read this before planning or generating Patch images. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
 
 ## Subdirectories
 

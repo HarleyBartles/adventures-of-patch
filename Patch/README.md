@@ -2,7 +2,7 @@
 
 Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
 
-This surface defines Patch as the on-disk Adventures of Patch actor. It is about repo-local work and project operation. It does not replace Patch's visual canon, which remains under `assets/patch/`.
+This surface defines Patch as the on-disk Adventures of Patch actor. It is about repo-local work and project operation. It does not replace Patch's visual canon, which remains under `assets/hero-patch/`.
 
 ## Role
 
@@ -62,7 +62,7 @@ Patch the actor and Patch the visual protagonist are related by project identity
 - Actor governance lives under `Patch/`.
 - Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - Project/domain playbooks live under root `playbooks/`.
-- Visual Patch canon lives under `assets/patch/`.
+- Visual Patch canon lives under `assets/hero-patch/`.
 - Asset/source package discovery lives under `assets/source-zips/`.
 
 Do not move visual canon into this actor surface. Do not use actor governance as a substitute for Patch image preflight.

@@ -1,14 +1,14 @@
-# assets/environments/clubdb index
+# assets/environments/asset_class__environment__clubdb index
 
 Club DB environment/location asset family.
 
 ## Files in this directory
 
-- `asset_class_club_db.png` - class/contact-style overview for the Club DB environment family.
-- `asset_club_db_back_interior.png` - back interior environment view.
-- `asset_club_db_front_exterior.png` - front exterior environment view.
-- `asset_club_db_front_interior.png` - front interior environment view.
-- `asset_club_db_queue_lane.png` - queue lane environment view.
+- `asset_class__environment__clubdb.png` - class/contact-style overview for the Club DB environment family.
+- `asset__environment__clubdb__back_interior.png` - back interior environment view.
+- `asset__environment__clubdb__front_exterior.png` - front exterior environment view.
+- `asset__environment__clubdb__front_interior.png` - front interior environment view.
+- `asset__environment__clubdb__queue_lane.png` - queue lane environment view.
 
 ## Subdirectories
 

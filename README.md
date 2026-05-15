@@ -21,6 +21,7 @@ Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - `Patch/` - Patch actor governance, routing, contracts, and Patch-owned executable capabilities.
 - `playbooks/` - first-class project/domain playbooks for Adventures workflows.
 - `assets/source-zips/` - canonical uploaded asset packages and reusable visual source bundles.
+- `assets/hero-patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
 - `assets/receipts/` - receipt packages and evidence bundles derived from decks or asset work.
 - `docs/adventures/` - Patch adventure concepts and deck narrative frames.
 - `docs/principles/` - software-agent working principles expressed through Patch stories.

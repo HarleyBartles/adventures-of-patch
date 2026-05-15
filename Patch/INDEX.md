@@ -21,6 +21,6 @@ Patch is the project-local actor surface for `HarleyBartles/adventures-of-patch`
 
 ## Notes
 
-Patch actor governance lives here. Patch visual canon remains under `assets/patch/`.
+Patch actor governance lives here. Patch visual canon remains under `assets/hero-patch/`.
 
 Project/domain playbooks live in root `/playbooks/`, not under `/Patch/`.

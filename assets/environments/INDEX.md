@@ -8,7 +8,7 @@ No direct environment files are expected at this level. Navigate into subdirecto
 
 ## Subdirectories
 
-- `clubdb/` - Club DB environment family. See `clubdb/INDEX.md`.
+- `asset_class__environment__clubdb/` - Club DB environment family. See `asset_class__environment__clubdb/INDEX.md`.
 
 ## Notes for agents
 

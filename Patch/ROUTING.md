@@ -70,7 +70,7 @@ For source/package questions:
 
 1. Start with repo indexes.
 2. Use `assets/source-zips/INDEX.md` for source package discovery.
-3. Use `assets/patch/INDEX.md` for Patch visual canon.
+3. Use `assets/hero-patch/INDEX.md` for Patch visual canon.
 4. Treat uploaded/project-source zips as bounded evidence only when repo-indexed or user-scoped.
 
 ## Stop conditions

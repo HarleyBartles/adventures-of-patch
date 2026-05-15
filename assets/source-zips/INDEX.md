@@ -6,10 +6,11 @@ These packages mirror the current project-source visual asset zips when the same
 
 ## Files in this directory
 
-- `asset_class__bouncer.zip` - bouncer supporting-character asset class package.
-- `asset__environment__clubdb.zip` - Club DB environment/location asset package.
+- `asset_class__character__bouncers.zip` - bouncer supporting-character asset class package.
+- `asset_class__environment__clubdb.zip` - Club DB environment/location asset package.
 - `asset_class__hero__patch.zip` - Patch hero asset class package and inspectable Patch visual references.
-- `asset_class__stakeholder.zip` - reusable stakeholder character class package.
+- `asset_class__character__stakeholders.zip` - reusable stakeholder character class package.
+- `asset_class__style__style_system.zip` - approved style-system smoke package.
 - `receipts.zip` - receipt/evidence package bundle.
 
 ## Subdirectories
@@ -22,4 +23,4 @@ Source zips are not automatically active canon. Treat them as import, transfer, 
 
 Do not rely on hard-coded legacy project-source filenames. When project-source inspection is needed, identify the current repo-tracked zip package here and then inspect the project-source zip with the matching filename.
 
-For Patch visual work, repo text and `assets/patch/` remain canonical for Patch identity. `asset_class__hero__patch.zip` is the current matching project-source package to inspect when PNG visual references are needed and the GitHub route cannot materialize images directly.
+For Patch visual work, repo text and `assets/hero-patch/` remain canonical for Patch identity. `asset_class__hero__patch.zip` is the current matching project-source package to inspect when PNG visual references are needed and the GitHub route cannot materialize images directly. The style-system mirror package is `asset_class__style__style_system.zip`.

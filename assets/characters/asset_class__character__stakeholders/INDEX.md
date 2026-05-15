@@ -1,4 +1,4 @@
-# assets/characters/stakeholders index
+# assets/characters/asset_class__character__stakeholders index
 
 Reusable stakeholder character class for Adventures of Patch.
 
@@ -6,15 +6,15 @@ Stakeholders are cross-deck human counterparties who define needs, priorities, c
 
 ## Files in this directory
 
-- `asset_class__stakeholder.png` - stakeholder character class overview with all eight reusable stakeholder roles.
-- `asset__stakeholder__client.png` - Client / Requester individual stakeholder sheet.
-- `asset__stakeholder__product_owner.png` - Product Owner individual stakeholder sheet.
-- `asset__stakeholder__engineering.png` - Engineering Lead individual stakeholder sheet.
-- `asset__stakeholder__qa.png` - QA / Verification Lead individual stakeholder sheet.
-- `asset__stakeholder__ux.png` - Design / UX Lead individual stakeholder sheet.
-- `asset__stakeholder__support.png` - Operations / Support Lead individual stakeholder sheet.
-- `asset__stakeholder__risk.png` - Risk / Policy Reviewer individual stakeholder sheet.
-- `asset__stakeholder__sponsor.png` - Decision Maker / Sponsor individual stakeholder sheet.
+- `asset_class__character__stakeholders.png` - stakeholder character class overview with all eight reusable stakeholder roles.
+- `asset__character__client_stakeholder.png` - Client / Requester individual stakeholder sheet.
+- `asset__character__product_stakeholder.png` - Product Owner individual stakeholder sheet.
+- `asset__character__engineering_stakeholder.png` - Engineering Lead individual stakeholder sheet.
+- `asset__character__qa_stakeholder.png` - QA / Verification Lead individual stakeholder sheet.
+- `asset__character__ux_stakeholder.png` - Design / UX Lead individual stakeholder sheet.
+- `asset__character__support_stakeholder.png` - Operations / Support Lead individual stakeholder sheet.
+- `asset__character__risk_stakeholder.png` - Risk / Policy Reviewer individual stakeholder sheet.
+- `asset__character__sponsor_stakeholder.png` - Decision Maker / Sponsor individual stakeholder sheet.
 
 ## Subdirectories
 

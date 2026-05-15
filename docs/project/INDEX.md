@@ -41,7 +41,7 @@ For a fresh agent session or repo-sensitive task:
 - `playbooks/` - first-class Adventures project/domain playbooks.
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
 - `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
-- `assets/patch/` - canonical Patch visual guidance and asset surfaces.
+- `assets/hero-patch/` - canonical Patch visual guidance and asset surfaces.
 - `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented.
 - `assets/receipts/` - committed receipt packages and evidence bundles.
 - `decks/` - deck artifacts or deck working folders when committed.
@@ -91,10 +91,10 @@ Patch is the constant protagonist unless explicitly excluded.
 
 Current canonical Patch references in repo:
 
-- `assets/patch/patch_style_guide_v1.3.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, eye canon, expression, pose, and prompt guidance. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
-- `assets/patch/patch_contact_sheet_v1.1.png` - Patch contact sheet.
-- `assets/patch/patch_anti_patterns_v1.1.png` - Patch anti-pattern sheet.
-- `assets/patch/patch_interaction_guide_v1.1.png` - Patch interaction guide.
+- `assets/hero-patch/asset__hero__patch_style_bible.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, eye canon, expression, pose, and prompt guidance. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
+- `assets/hero-patch/asset_class__hero__patch_approved_style.png` - Patch contact sheet.
+- `assets/hero-patch/asset__hero__patch_antipatterns.png` - Patch anti-pattern sheet.
+- `assets/hero-patch/asset__hero__patch_interactions.png` - Patch interaction guide.
 
 Patch generation must preserve the style guide requirements: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, two hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 

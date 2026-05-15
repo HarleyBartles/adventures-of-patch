@@ -201,11 +201,11 @@ Do not mark deck planning green when the body slides are just Patch performing a
 
 For Patch visual work, inspect repo text references and image-capable visual references where available:
 
-1. `assets/patch/INDEX.md`
-2. `assets/patch/patch_style_guide_v1.3.md` or the latest repo-indexed Patch style guide
-3. `assets/patch/patch_contact_sheet_v1.1.png`
-4. `assets/patch/patch_anti_patterns_v1.1.png`
-5. `assets/patch/patch_interaction_guide_v1.1.png`
+1. `assets/hero-patch/INDEX.md`
+2. `assets/hero-patch/asset__hero__patch_style_bible.md` or the latest repo-indexed Patch style guide
+3. `assets/hero-patch/asset_class__hero__patch_approved_style.png`
+4. `assets/hero-patch/asset__hero__patch_antipatterns.png`
+5. `assets/hero-patch/asset__hero__patch_interactions.png`
 6. `assets/source-zips/INDEX.md` to identify the current repo-tracked Patch source package when project-source visual inspection is needed.
 
 ChatGPT project sources are also the expected home for matching inspectable source packages when this project provides them. Do not assume a fixed package filename. Identify the current Patch source package from `assets/source-zips/INDEX.md`, then inspect the project-source zip with the same filename when GitHub confirms the repo paths but cannot materialize PNGs for visual inspection.
