@@ -16,7 +16,7 @@ Use the live GitHub API connector for known paths and issue operations when avai
 
 ## Subdirectories
 
-- `playbooks/` - compatibility home for older playbook references. First-class project/domain playbooks now live at root `playbooks/`.
+None.
 
 ## Required first reads
 
@@ -141,7 +141,6 @@ A finished Adventures of Patch presentation package should include:
 
 ## Repo hygiene gaps to resolve
 
-- Complete migration of canonical playbook bodies from `docs/project/playbooks/` to root `playbooks/` in a dedicated pass.
 - Add labels for local issue taxonomy if desired.
 - Add deck/asset/receipt folders as concrete artifacts are committed.
 
