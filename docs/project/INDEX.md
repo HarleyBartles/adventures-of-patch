@@ -6,7 +6,7 @@ This index is the first-class navigation surface for repo-grounded project work 
 
 - Repo: `HarleyBartles/adventures-of-patch`
 - Default branch: `main`
-- Purpose: canonical project state for Presentation Planner / Adventures of Patch decks, issues, assets, receipts, skills, and workflow notes.
+- Purpose: canonical project state for Presentation Planner / Adventures of Patch decks, issues, assets, receipts, skills, actor governance, and workflow notes.
 
 Use the live GitHub API connector for known paths and issue operations when available. Do not rely on uploaded project-source zips as active truth unless the repo points to them or the user explicitly scopes work to them.
 
@@ -27,13 +27,15 @@ For a fresh agent session or repo-sensitive task:
 3. `README.md`.
 4. `docs/project/INDEX.md`.
 5. The named issue, deck, receipt, or asset guide relevant to the task.
-6. For issue-to-PPTX production, `docs/project/playbooks/end-to-end-pptx-production.md`.
+6. For Patch actor-governed work, `Patch/README.md`, `Patch/GOVERNANCE.md`, and `Patch/ROUTING.md`.
+7. For issue-to-PPTX production, `docs/project/playbooks/end-to-end-pptx-production.md`.
 
 ## Current repo layout
 
 - `README.md` - project orientation.
-- `AGENTS.md` - agent navigation, source discipline, and production gates.
+- `AGENTS.md` - agent navigation, source discipline, Patch actor routing, visual Patch rules, and production gates.
 - `INDEX.md` - root directory index and top-level navigation surface.
+- `Patch/` - Patch project-local actor surface, with project-director and execution lanes.
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
 - `docs/project/` - project indexes, workflow notes, doctrine summaries, playbooks, and bootstrap/navigation material.
 - `docs/project/playbooks/end-to-end-pptx-production.md` - canonical orchestration playbook for issue-to-finished-presentation-package work.
@@ -43,6 +45,19 @@ For a fresh agent session or repo-sensitive task:
 - `decks/` - deck artifacts or deck working folders when committed.
 - `skills/` - packaged or source copies of project-specific skills when intentionally committed.
 - `scratch/` - local working area; not canonical.
+
+## Patch actor surface
+
+Patch is the sole project-local agent for Adventures of Patch.
+
+Current local lanes:
+
+- `Patch / project-director` - planning, issue shaping, source discipline, gate checks, routing decisions, verification, and repo-state judgement.
+- `Patch / execution` - repo-local file mutation, binary asset landing, source zip creation, index updates, issue updates, commit/push, and return evidence.
+
+The default workspace route is `Will -> Patch`.
+
+No separate Adventures asset, deck, image, canon, receipt, or publication executors exist unless a future issue creates one for a real boundary.
 
 ## Directory index mesh
 
@@ -55,6 +70,10 @@ Adventure-plan issues are durable presentation seeds. Use issue ingestion before
 Smallest proof target selected for pipeline testing:
 
 - Issue #3: `Adventure plan: Patch at the Checkpoint of Intent`
+
+Patch actor instantiation and binary asset landing route:
+
+- Issue #20: `Planning: instantiate Patch as Adventures repo-local agent and binary asset landing worker`
 
 Known proof-run result:
 
