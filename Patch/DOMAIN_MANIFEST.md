@@ -24,13 +24,14 @@ Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
 3. `Patch/README.md`
 4. `Patch/GOVERNANCE.md`
 5. `Patch/ROUTING.md`
-6. Relevant issue or playbook
+6. Relevant issue or project playbook
 
 ## Key governed surfaces
 
+- `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.
+- `playbooks/` - first-class Adventures project/domain playbooks.
 - `assets/patch/` - Patch visual canon.
 - `assets/source-zips/` - source/import packages and package discovery index.
-- `docs/project/playbooks/` - project production playbooks.
 - `skills/` - committed project skill packages or source copies when intentionally committed.
 
 ## Publication expectation
