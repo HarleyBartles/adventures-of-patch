@@ -11,6 +11,7 @@ None.
 ## Subdirectories
 
 - `patch-asset-zip-ingress/` - planned Patch capability for ingesting asset zips, classifying contents, routing assets to repo taxonomy locations, rebuilding canonical source packages, updating indexes, publishing, and returning evidence.
+- `patch-asset-directory-source-packager/` - repo-resident Patch capability for publishing an existing asset directory into a flat source zip with index updates and publication proof.
 
 ## Rules
 
