@@ -12,11 +12,11 @@ Use the live GitHub API connector for known paths and issue operations when avai
 
 ## Files in this directory
 
-- `INDEX.md` - this file; first-class project index and current source map for agents.
+- `INDEX.md` - this file; project index and source map for docs/project.
 
 ## Subdirectories
 
-- `playbooks/` - operational playbooks for composing project skills into complete jobs. See `playbooks/INDEX.md`.
+- `playbooks/` - compatibility home for older playbook references. First-class project/domain playbooks now live at root `playbooks/`.
 
 ## Required first reads
 
@@ -28,7 +28,8 @@ For a fresh agent session or repo-sensitive task:
 4. `docs/project/INDEX.md`.
 5. The named issue, deck, receipt, or asset guide relevant to the task.
 6. For Patch actor-governed work, `Patch/README.md`, `Patch/GOVERNANCE.md`, and `Patch/ROUTING.md`.
-7. For issue-to-PPTX production, `docs/project/playbooks/end-to-end-pptx-production.md`.
+7. For Patch-owned executable capabilities, `Patch/SKILLS/INDEX.md`.
+8. For project/domain playbooks, `playbooks/INDEX.md`.
 
 ## Current repo layout
 
@@ -36,14 +37,15 @@ For a fresh agent session or repo-sensitive task:
 - `AGENTS.md` - agent navigation, source discipline, Patch actor routing, visual Patch rules, and production gates.
 - `INDEX.md` - root directory index and top-level navigation surface.
 - `Patch/` - Patch project-local actor surface, with project-director and execution lanes.
+- `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.
+- `playbooks/` - first-class Adventures project/domain playbooks.
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
-- `docs/project/` - project indexes, workflow notes, doctrine summaries, playbooks, and bootstrap/navigation material.
-- `docs/project/playbooks/end-to-end-pptx-production.md` - canonical orchestration playbook for issue-to-finished-presentation-package work.
+- `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
 - `assets/patch/` - canonical Patch visual guidance and asset surfaces.
 - `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented.
 - `assets/receipts/` - committed receipt packages and evidence bundles.
 - `decks/` - deck artifacts or deck working folders when committed.
-- `skills/` - packaged or source copies of project-specific skills when intentionally committed.
+- `skills/` - packaged or source copies of project-specific ChatGPT skills when intentionally committed.
 - `scratch/` - local working area; not canonical.
 
 ## Patch actor surface
@@ -75,6 +77,10 @@ Patch actor instantiation and binary asset landing route:
 
 - Issue #20: `Planning: instantiate Patch as Adventures repo-local agent and binary asset landing worker`
 
+Character/environment preflight and deferred asset planning:
+
+- Issue #19: `Investigation: character and environment preflight for issue-to-deck runs`
+
 Known proof-run result:
 
 - The first proof pass should be treated as failed/red because it skipped mandatory image generation and produced non-canonical Patch imagery. Future passes must stop at blocked image generation or missing Patch references rather than silently downgrading to storyboard/fallback output.
@@ -98,7 +104,8 @@ Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, 
 
 For end-to-end deck work from an issue, read and follow:
 
-- `docs/project/playbooks/end-to-end-pptx-production.md`
+- `playbooks/INDEX.md`
+- `playbooks/end-to-end-pptx-production.md`
 
 The short version:
 
@@ -134,7 +141,7 @@ A finished Adventures of Patch presentation package should include:
 
 ## Repo hygiene gaps to resolve
 
-- Update stale docs or skills that still refer to uploaded project sources as canonical.
+- Complete migration of canonical playbook bodies from `docs/project/playbooks/` to root `playbooks/` in a dedicated pass.
 - Add labels for local issue taxonomy if desired.
 - Add deck/asset/receipt folders as concrete artifacts are committed.
 
