@@ -44,18 +44,24 @@ For Patch actor-governed work, read:
 3. this file
 4. `GOVERNANCE.md`
 5. `ROUTING.md`
-6. the relevant playbook under `PLAYBOOKS/`
+6. the relevant project playbook under `../playbooks/`
 7. the relevant issue, asset guide, deck plan, receipt, or source package index
 
 For tracked repo mutation, also read:
 
 - `CONTRACTS/WORKER_RETURN_CONTRACT.md`
 
+For Patch-owned executable capabilities, use:
+
+- `SKILLS/INDEX.md`
+
 ## Boundary with visual Patch canon
 
 Patch the actor and Patch the visual protagonist are related by project identity, but their source surfaces are separate.
 
 - Actor governance lives under `Patch/`.
+- Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
+- Project/domain playbooks live under root `playbooks/`.
 - Visual Patch canon lives under `assets/patch/`.
 - Asset/source package discovery lives under `assets/source-zips/`.
 
