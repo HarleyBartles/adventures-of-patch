@@ -11,6 +11,7 @@ These packages mirror the current project-source visual asset zips when the same
 - `asset_class__hero__patch.zip` - Patch hero asset class package and inspectable Patch visual references.
 - `asset_class__character__stakeholders.zip` - reusable stakeholder character class package.
 - `asset_class__style__style_system.zip` - approved style-system smoke package.
+- `asset_class__environment__patch_mission_control.zip` - Patch Mission Control Centre environment family source package.
 - `receipts.zip` - receipt/evidence package bundle.
 
 ## Subdirectories

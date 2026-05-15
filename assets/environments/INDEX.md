@@ -9,6 +9,7 @@ No direct environment files are expected at this level. Navigate into subdirecto
 ## Subdirectories
 
 - `asset_class__environment__clubdb/` - Club DB environment family. See `asset_class__environment__clubdb/INDEX.md`.
+- `asset_class__environment__patch_mission_control/` - Patch Mission Control Centre environment family. See `asset_class__environment__patch_mission_control/INDEX.md`.
 
 ## Notes for agents
 
