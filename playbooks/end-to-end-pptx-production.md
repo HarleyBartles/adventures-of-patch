@@ -2,7 +2,7 @@
 
 This playbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
 
-The playbook owns the process flow, required evidence, production gates, stop conditions, downgrade rules, artifact expectations, and failure reporting. It does not prescribe a fixed skill invocation script. The assistant is responsible for selecting appropriate currently available skills and tools to satisfy the work described here.
+The playbook owns process flow, required evidence, production gates, stop conditions, downgrade rules, artifact expectations, and failure reporting. It does not prescribe a fixed skill invocation script. The assistant is responsible for selecting appropriate currently available skills and tools to satisfy the work described here.
 
 ## Scope
 
@@ -13,12 +13,38 @@ A finished package normally includes:
 - PPTX deck;
 - plain text-only title slide with month date;
 - a strong frame/analogy/world that makes the issue's lesson physically happen through Patch's adventure;
-- visual-first Patch-led body slides, preferably full-slide or near-full-slide images;
+- visual-first Patch-led body slides, preferably full-slide or near-full-slide accepted generated scene images;
 - speaker notes for every substantive body slide;
 - plain text-only end card focused on takeaways and applying the learning today;
 - presenter sidecar document, preferably PDF;
 - presentation image receipt when generated or embedded images are used;
 - follow-up asset canonisation issues where reusable assets emerge.
+
+## Proof-run semantics
+
+A proof run is a full live run of this end-to-end production playbook.
+
+"Proof" describes the purpose of the run: proving whether the playbook, skills, tools, assets, and artifact pipeline can complete correctly from source issue to package. It does not describe a weaker output mode.
+
+A proof run must execute the same required stages as a full production run:
+
+1. repo access proof;
+2. issue ingestion;
+3. frame verification or frame-buster resolution;
+4. deck planning;
+5. image planning;
+6. visual intent gate;
+7. Patch image preflight where Patch appears;
+8. image generation;
+9. generated-image acceptance/rejection;
+10. PPTX build from accepted generated scene images;
+11. presenter sidecar;
+12. QA;
+13. receipt and canonisation follow-up.
+
+If a proof run fails at any mandatory gate, the proof result is Red or Amber with exact evidence. The assistant must stop at the failed gate unless the playbook explicitly allows continuation and Harley explicitly approves the mode change.
+
+A proof run must not be downgraded to storyboard, draft, placeholder, asset-sheet deck, or plan-only mode merely because a gate is difficult, unavailable, or inconvenient. Storyboard and draft modes are separate requested modes, not implicit proof-run fallbacks.
 
 ## Skill and tool selection
 
@@ -26,9 +52,32 @@ This playbook describes required work and gates, not a fixed skill invocation sc
 
 At each stage, select appropriate currently installed skills and available tools based on the work being performed. A stage may require multiple skills, no skill, or a future skill not named in this document.
 
-Do not treat any skill as exclusive for a stage. Repo/source discipline, artifact validity, Patch canon, visual intent, and QA obligations remain active whenever the work depends on them.
+Do not treat any skill as exclusive for a stage. Repo/source discipline, artifact validity, Patch canon, visual intent, image evidence, and QA obligations remain active whenever the work depends on them.
 
 If installed skills are unavailable, stale, renamed, or superseded, follow the playbook's required evidence, outputs, and stop conditions using the best available tools. Do not skip a gate because a named skill is unavailable, and do not claim progress merely because any particular skill or tool was invoked.
+
+### Required discovery before unavailability claims
+
+Before claiming that a required skill, artifact route, image route, repo connector, or source package is unavailable, record the discovery attempt in the run-state ledger.
+
+For skills:
+
+- attempt skill catalogue lookup for each required Adventures skill;
+- read `SKILL.md` for visible skills;
+- record exact absence or read failure if a skill is missing.
+
+For GitHub/repo:
+
+- identify all currently available GitHub-capable routes;
+- prefer direct known-path and known-issue reads over search;
+- preserve any successful route as proof of repo access for the current run.
+
+For image generation:
+
+- image generation availability must be established by the actual image-generation route at the image stage, not by inference, tool sparsity language, artifact-tool behaviour, or prior failures in unrelated tools;
+- valid image-stage outcomes are: image generation invoked and outputs produced; image generation invoked and failed with the exact tool failure recorded; or no image-generation route visible after actual tool discovery, with the discovery result recorded.
+
+Do not use phrases such as "tool sparsity", "unavailable", "not visible", or "unbound" unless the actual discovery or tool call supports that statement.
 
 ## Hard preflight: repo access proof
 
@@ -56,7 +105,7 @@ No PPTX, storyboard, draft, proof artifact, sidecar, receipt, or QA result may b
 
 ## Run-state ledger and mode-switch continuity
 
-Every playbook run must maintain an explicit run-state ledger. The ledger is the handoff object that prevents mode switches from resetting source truth.
+Every playbook run must maintain an explicit run-state ledger. The ledger is the handoff object that prevents mode switches from resetting source truth or silently changing run mode.
 
 The ledger must be created immediately after hard preflight and carried forward through chat reasoning, artifact handoff, image generation, local file/container work, zip inspection, PPTX building, sidecar creation, QA, and receipt work.
 
@@ -70,20 +119,24 @@ Minimum ledger fields:
 - `current_stage`: playbook stage and gate state.
 - `frame_state`: missing, amber, green, or waived, with issue comment ID when recorded.
 - `artifact_mode`: none, plan-only, storyboard, draft, final candidate, or finished package.
+- `proof_run`: yes/no; if yes, record that proof means full live run, not a weaker mode.
+- `downgrade_approval`: none, or Harley approval quote/comment ID plus approved mode.
 - `local_sources_allowed`: which repo-indexed source package names may be matched to project-source zips, and for what limited purpose.
+- `image_generation_route`: available, unavailable, failed, or not yet tested, with evidence.
+- `accepted_scene_image_inventory`: missing, partial, complete, or not applicable.
 - `blocked_or_open_items`: real blockers only, not inferred connector absence.
 
 Before any mode switch, the assistant must re-check the ledger. Mode switches include: artifact handoff, image generation, slide/PPTX creation, local file operations, zip extraction, visible-code execution, and any transition from planning to artifact production.
 
 If the ledger says repo access is green, the assistant must not later reason from a blank state such as "GitHub is unavailable," "repo tools are unavailable," or "I must use local zips," unless a new direct tool call actually fails and the failure is recorded as route-specific. A route-specific failure does not erase the ledger.
 
-If the assistant cannot see or reconstruct the ledger after a mode switch, it must stop and reconstruct it from repo evidence before continuing. It must not fall back to uploaded zips, receipts, memory, or old assets while the ledger is missing.
+If the assistant cannot see or reconstruct the ledger after a mode switch, it must stop and reconstruct it from repo evidence before continuing. It must not fall back to uploaded zips, receipts, memory, old assets, or substitute visuals while the ledger is missing.
 
 Project-source zips may be used only after the ledger records repo proof, the current repo-tracked source package name from `assets/source-zips/INDEX.md`, and the specific reason for local inspection. The normal pattern is: identify the current zip package in the repo index, then inspect the project-source zip with the matching filename when visual or package inspection is needed. Do not rely on hard-coded legacy project-source filenames.
 
-Patch visual source packages are never a general substitute for issue, playbook, deck, or repo truth. They are inspection mirrors for visual references only when repo text and paths are already confirmed and the current GitHub route cannot materialize the required PNGs directly.
+Patch visual source packages are never a general substitute for issue, playbook, deck, image generation, or repo truth. They are inspection mirrors for visual references only when repo text and paths are already confirmed and the current GitHub route cannot materialize the required PNGs directly.
 
-A production artifact is invalid if the run-state ledger is absent, contradicts the claimed artifact status, or shows that a repo-green state was discarded during an artifact/local-file mode switch.
+A production artifact is invalid if the run-state ledger is absent, contradicts the claimed artifact status, shows that a repo-green state was discarded during an artifact/local-file mode switch, or shows a proof/full run without the accepted scene-image inventory required for PPTX build.
 
 ## Default interpretation of end-to-end run requests
 
@@ -105,11 +158,12 @@ Default behaviour:
 10. If image generation is unavailable at the image-generation stage, stop at the image gate and report the blocker.
 11. If image generation is available and the image gate is satisfied, proceed without asking the user to restate the whole command, unless the image plan materially changed, the prompt set is uncertain, or a safety/tooling blocker appears.
 12. After image generation, inspect outputs before using them in a PPTX.
+13. Build PPTX only after the accepted generated scene-image inventory is complete for every body slide.
 
 Useful shorthand meanings:
 
-- "Run the #3 proof pass" means run the whole staged playbook in order, including frame resolution when needed and image generation only at the correct stage.
-- "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness.
+- "Run the #3 proof pass" means run the whole staged playbook in order as a full live run, including frame resolution when needed, image generation at the correct stage, image acceptance, PPTX build, sidecar, QA, and receipt/canonisation status.
+- "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness; this is not a completed proof run.
 - "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gating, Patch preflight, and repo/project-source Patch references.
 
 The user should not need to write a long gated instruction every time. The playbook is responsible for the default routing.
@@ -121,6 +175,44 @@ A user request for an end-to-end proof, production pass, or PPTX package may tri
 Artifact-handoff completion is not evidence of deck progress. Do not answer with a success link or completed-artifact claim unless every required playbook stage for the stated output mode has actually completed and the run-state ledger supports that claim.
 
 A user request for a deck with images may also look like an image-generation request. That does not authorize image generation before the image-generation stage. Treat image generation as one stage inside the playbook, not the whole task.
+
+## Downgrade approval rule
+
+A proof/full/final-art run may downgrade to storyboard or draft only when all are true:
+
+- the blocking gate is reported before the downgrade;
+- Harley explicitly approves the downgrade in the current conversation or through a cited issue comment;
+- the run-state ledger records the approval quote or comment ID;
+- every output and issue comment labels the artifact with the downgraded mode;
+- the artifact is not described as a completed proof/full run.
+
+Absent this approval, continuing after a failed mandatory gate is Red, not Amber.
+
+A failed proof can produce notes, diagnostics, and scratch artifacts, but those scratch artifacts are not the proof output and must not be dressed up as one.
+
+## Image evidence contract
+
+For proof, full, final-candidate, or finished-package runs, body-slide visual requirements are satisfied only by an accepted generated scene-image inventory.
+
+An accepted generated scene-image inventory must list, for each body slide:
+
+- slide number and deck-plan beat;
+- generated image file/path or generation ID;
+- generation prompt or prompt reference;
+- source/reference assets used as guidance;
+- whether Patch appears;
+- Patch preflight basis when Patch appears;
+- post-generation acceptance result;
+- rejection reason if rejected;
+- whether the image is final, draft, or storyboard.
+
+Reference assets, source zips, asset-class sheets, contact sheets, style sheets, anti-pattern sheets, interaction sheets, location sheets, package thumbnails, and old deck images are not accepted generated scene images. They may be used only as generation references unless Harley explicitly approves storyboard mode.
+
+If the requested mode is proof, full, final candidate, or finished package, the assistant must not build a PPTX until the accepted generated scene-image inventory exists for every body slide.
+
+If image generation is unavailable, untested, or repeatedly produces rejected Patch images, stop at the image gate. Do not continue as storyboard, draft, asset-sheet deck, or placeholder deck unless Harley explicitly approves that downgrade after the blocker is reported.
+
+A successful image-generation tool call proves tool availability only. It does not prove Patch image acceptance. Every generated Patch image must still be reviewed against Patch canon and the image plan.
 
 ## Source and connector routing
 
@@ -174,10 +266,11 @@ Allowed examples:
 
 Disallowed examples:
 
-- Using repo-indexed source zips, receipt zips, old decks, or memory as a replacement for issue #3, its comments, the playbook, deck plan, or image plan.
+- Using repo-indexed source zips, receipt zips, old decks, or memory as a replacement for issue #3, its comments, the playbook, deck plan, image plan, image generation, or generated scene images.
 - Treating local unzip work as evidence that repo access is unavailable.
 - Continuing artifact production after the ledger has been lost or contradicted.
 - Hard-coding legacy project-source package names instead of reading `assets/source-zips/INDEX.md` and matching the current filename.
+- Using asset sheets, contact sheets, style sheets, anti-pattern sheets, or location sheets as body-slide art in a proof/full/final run unless Harley explicitly approves separate storyboard mode.
 
 ### Frame / analogy / world grounding
 
@@ -210,18 +303,11 @@ For Patch visual work, inspect repo text references and image-capable visual ref
 
 ChatGPT project sources are also the expected home for matching inspectable source packages when this project provides them. Do not assume a fixed package filename. Identify the current Patch source package from `assets/source-zips/INDEX.md`, then inspect the project-source zip with the same filename when GitHub confirms the repo paths but cannot materialize PNGs for visual inspection.
 
-The current matching Patch source package may contain the same Patch visual surfaces in a form the assistant can inspect directly:
-
-- the latest project-source Patch style guide corresponding to the repo-indexed style guide;
-- `patch_contact_sheet_v1.1.png`;
-- `patch_anti_patterns_v1.1.png`;
-- `patch_interaction_guide_v1.1.png`.
-
 Use the matching project-source Patch asset package as the tool-accessible visual reference home for contact sheets, anti-pattern sheets, interaction guides, and style guides only when the run-state ledger records that GitHub confirmed the repo paths but the connector cannot materialize PNGs for visual inspection. It is an inspectable mirror/input for Patch preflight, not a replacement for repo truth. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
 
 If the tool cannot visually inspect PNG files from GitHub, report that exact limitation, then check whether the matching repo-indexed project-source package is available and inspectable. Do not substitute arbitrary uploaded zips or memory. If neither GitHub visual inspection nor matching project-source assets are available, use the written style guide as the minimum text basis and mark confidence or blocking status according to the requested output mode.
 
-Patch prompts and image reviews must enforce v1.3 eye canon unless superseded by a newer repo-indexed style guide: black oval eyes with small white shine highlights only. Reject white sclera, visible irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or alternate creative eye styles.
+Patch prompts and image reviews must enforce current repo-indexed eye canon unless superseded by a newer repo-indexed style guide: black oval eyes with small white shine highlights only. Reject white sclera, visible irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or alternate creative eye styles.
 
 ### Slide image and text posture
 
@@ -247,11 +333,15 @@ Use image generation only after:
 - Patch preflight has inspected repo Patch references and any required matching repo-indexed project-source visual package;
 - prompt pack satisfies Patch style requirements, including current repo-indexed eye canon.
 
+At the image-generation stage, the assistant must either invoke the image-generation route, report the exact route failure, or record exact route absence after discovery. It must not infer unavailability.
+
 If image generation is not available at this stage, stop at the image gate and report that image generation is the blocker. Do not generate images before this stage merely because the final deliverable includes images.
 
 ### PPTX and artifact work
 
-For slide/PPTX work, follow the currently available artifact workflow for creating or modifying a `.pptx`. Do not use PPTX tooling before accepted image status is explicit unless the user has explicitly approved storyboard or draft mode.
+For slide/PPTX work, follow the currently available artifact workflow for creating or modifying a `.pptx`. Do not use PPTX tooling before accepted generated scene-image status is explicit unless Harley has explicitly approved a separate storyboard or draft mode.
+
+For proof/full/final-candidate/finished runs, PPTX build is not permitted until the accepted generated scene-image inventory exists for every body slide.
 
 For PDF sidecars, follow the currently available document/PDF artifact workflow. Do not mark the package final if the sidecar is missing.
 
@@ -265,11 +355,11 @@ No artifact generation. Produces briefs, plans, prompts, or QA recommendations.
 
 ### Storyboard
 
-A prototype deck with placeholders or non-final visual treatment. Allowed only if the user requests storyboard/prototype mode or explicitly accepts a downgrade after a production gate is blocked.
+A prototype deck with placeholders or non-final visual treatment. Allowed only if the user requests storyboard/prototype mode or explicitly accepts a downgrade after a production gate is blocked. Storyboard is not proof-run completion.
 
 ### Draft
 
-A deck with real structure and possibly real images, but known missing or weak pieces. Drafts are not final and must clearly list missing gates.
+A deck with real structure and possibly real images, but known missing or weak pieces. Drafts are not final and must clearly list missing gates. Draft is not proof-run completion unless the requested run mode was draft from the start.
 
 ### Final candidate
 
@@ -279,7 +369,7 @@ All required artifacts exist and the package is ready for QA, but QA has not yet
 
 PPTX, notes, sidecar, image receipt status, and canonisation status are complete, and presentation QA is green or explicitly accepted by the user with known deviations.
 
-Do not silently change modes. If a requested final-art or proof-run path becomes blocked, stop and ask whether to continue as storyboard/draft.
+Do not silently change modes. If a requested proof/full/final-art path becomes blocked, stop and report the failed gate. Continue as storyboard/draft only after explicit Harley approval.
 
 ## Production sequence
 
@@ -338,13 +428,18 @@ Required work:
 - Prefer full-slide or near-full-slide image-led scenes.
 - Plan short in-world image text where it helps the scene carry meaning.
 - Reserve PPTX overlays for short fallback captions or exact-readable support only.
-- Produce prompt pack, in-world text requirements, continuity constraints, generation order, and reusable asset candidates.
+- Produce prompt pack, in-world text requirements, continuity constraints, generation order, reusable asset candidates, and a slide-by-slide image inventory skeleton.
 - Mark all new visual material provisional until accepted and canonicalised.
 - Update the run-state ledger with image-plan status and any local visual-reference sources allowed.
 
+The image inventory skeleton must include, for every body slide:
+
+| Slide | Required scene image | Reference assets | Patch present? | Generation status | Acceptance status |
+|---|---|---|---|---|---|
+
 Gate 4: image plan maps to the deck plan and respects doctrine.
 
-Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected Patch canon/reference assets, the image plan ignores the frame, or image/PPTX text is too dense.
+Stop if title/end cards receive image prompts without override, Patch is decorative rather than active, Patch continuity requirements are missing, prompt pack relies on uninspected Patch canon/reference assets, the image plan ignores the frame, image/PPTX text is too dense, or the image inventory skeleton is missing.
 
 ### Stage 5: Visual intent and Patch preflight
 
@@ -354,6 +449,7 @@ Required work:
 - Re-check the run-state ledger before any local zip extraction or image-generation tool use.
 - Inspect repo Patch references and any required matching repo-indexed project-source Patch package before generating Patch images.
 - Incorporate Patch style guide, contact sheet, anti-pattern sheet, and interaction guide constraints into prompts when those visual surfaces are available.
+- Record image-generation route status as available, failed, unavailable, or not yet tested.
 
 Patch prompt requirements:
 
@@ -369,11 +465,13 @@ Patch prompt requirements:
 - teal shoes with white soles;
 - teal crossbody bag with visible `>` symbol;
 - strap crossing torso from shoulder to opposite hip;
-- bag-side continuity in sequences, comparisons, and panels.
+- bag-side continuity in sequences, comparisons, and panels;
+- Patch remains singular.
 
 Patch prompt negative constraints:
 
 - no generic robot;
+- no animal Patch, dog Patch, mascot animal Patch, or anthropomorphic animal substitute;
 - no glossy 3D mascot;
 - no plush realism;
 - no photorealism;
@@ -382,39 +480,42 @@ Patch prompt negative constraints:
 - no missing antennae;
 - no changed hoodie colour;
 - no `X` bag symbol unless explicitly documented as canonical change;
-- no white sclera, irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or creative alternate eye styles.
+- no white sclera, irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or creative alternate eye styles;
+- no duplicate Patch bodies, Patch-shaped support team, or Patch-like audience.
 
-Gate 5: image generation is available, playbook-authorized, and Patch preflight is complete.
+Gate 5: image generation is available or has been actually tested, playbook-authorized, and Patch preflight is complete.
 
-Stop if image generation is not available at this stage, Patch references cannot be inspected sufficiently for the requested confidence level through either repo or matching project-source assets, or prompts cannot satisfy Patch identity constraints.
+Stop if image generation is not available at this stage, Patch references cannot be inspected sufficiently for the requested confidence level through either repo or matching project-source assets, prompts cannot satisfy Patch identity constraints, or image-generation availability has been inferred rather than tested/discovered.
 
-Do not build the PPTX after this gate fails unless the user explicitly accepts storyboard/draft downgrade.
+Do not build the PPTX after this gate fails unless Harley explicitly accepts a separate storyboard/draft downgrade.
 
 ### Stage 6: Image generation and image acceptance
 
 Required work:
 
 - Re-check the run-state ledger immediately before image generation.
+- Invoke the image-generation route or record its exact failure/absence.
 - Generate images according to the image plan.
 - Inspect results before using them in a deck.
-- Reject images that violate Patch canon or the deck's visual intent.
+- Reject images that violate Patch canon, the selected frame, or the deck's visual intent.
+- Complete the accepted generated scene-image inventory.
 - Update the run-state ledger with accepted/rejected image status.
 
-Gate 6: accepted image set exists.
+Gate 6: accepted generated scene-image inventory exists for every body slide.
 
-Reject Patch images if Patch becomes glossy 3D, generic robot, plush, or photoreal; the bag is missing; the bag symbol is wrong; strap continuity fails; antennae are missing; hoodie is not teal; eyes have white sclera, visible irises, coloured pupils, or alternate eye style; proportions drift; in-world text is unreadable/misleading; or the image does not support the slide concept.
+Reject Patch images if Patch becomes a dog, animal, glossy 3D, generic robot, plush, or photoreal; the bag is missing; the bag symbol is wrong; strap continuity fails; antennae are missing; hoodie is not teal; eyes have white sclera, visible irises, coloured pupils, or alternate eye style; proportions drift; Patch is multiplied; supporting agents become Patch clones; in-world text is unreadable/misleading; or the image does not support the slide concept.
 
-Stop if generated images fail canon and cannot be repaired in the current pass, generation repeatedly produces non-canonical style, or the user needs to choose between alternative directions.
+Stop if generated images fail canon and cannot be repaired in the current pass, generation repeatedly produces non-canonical style, image generation is not actually invoked, or the user needs to choose between alternative directions.
 
-Do not use rejected images in a final candidate deck.
+Do not use rejected images or reference/source asset sheets in a proof/full/final-candidate deck.
 
 ### Stage 7: PPTX build
 
 Required work:
 
 - Re-check the run-state ledger immediately before PPTX/artifact building.
-- Build only after image status is explicit.
-- Use accepted images for visual-first body slides.
+- Build only after the accepted generated scene-image inventory is complete, unless Harley explicitly approved separate storyboard/draft mode.
+- Use accepted generated scene images for visual-first body slides.
 - Prefer full-slide or near-full-slide image-led layouts.
 - Keep visible slide text sparse.
 - Prefer short in-world image text where it carries the scene meaning.
@@ -426,7 +527,9 @@ Required work:
 
 Gate 7: PPTX built in the correct mode.
 
-Stop or downgrade only with explicit user approval if accepted images are missing, notes are absent, title/end cards violate doctrine, the deck requires dense visible text to work, or it falls back to corporate infographic/bullet layouts instead of image-led Patch scenes.
+Stop if the accepted generated scene-image inventory is missing, partial, pending, rejected, or made from reference/source assets rather than generated scenes.
+
+Stop or downgrade only with explicit Harley approval if accepted images are missing, notes are absent, title/end cards violate doctrine, the deck requires dense visible text to work, or it falls back to corporate infographic/bullet layouts instead of image-led Patch scenes.
 
 ### Stage 8: Presenter sidecar
 
@@ -446,7 +549,7 @@ Stop before final status if sidecar is missing, sidecar is only a transcript rat
 Required work:
 
 - Re-check the run-state ledger before QA.
-- Review issue alignment, frame strength, doctrine, Patch story, visual-first quality, image-led slide quality, text hierarchy, notes, sidecar, practical transfer, receipt/canonisation, and repo/source grounding.
+- Review issue alignment, frame strength, doctrine, Patch story, visual-first quality, accepted generated scene-image inventory, image-led slide quality, text hierarchy, notes, sidecar, practical transfer, receipt/canonisation, and repo/source grounding.
 - Use green/amber/red status.
 - Include the run-state ledger in the QA basis or artifact manifest.
 
@@ -454,9 +557,9 @@ Gate 9: QA report produced.
 
 Final status rules:
 
-- Green: package satisfies doctrine and issue acceptance criteria.
-- Amber: usable draft/final candidate with known missing or weak pieces.
-- Red: mandatory gate failed, frame is missing/weak for a non-waived deck, Patch canon failed, production phase skipped without approval, ledger lost/contradicted, or significant redesign required.
+- Green: package satisfies doctrine, issue acceptance criteria, accepted generated scene-image inventory, Patch canon, notes, sidecar, QA, and receipt/canonisation status.
+- Amber: usable explicitly scoped draft/storyboard/final candidate with known missing or weak pieces that were not silently skipped.
+- Red: mandatory gate failed, frame is missing/weak for a non-waived deck, Patch canon failed, generated scene-image inventory is missing, source/reference assets were substituted without explicit approval, production phase skipped without approval, ledger lost/contradicted, or significant redesign required.
 
 Do not mark green because a deck merely looks polished.
 
@@ -493,7 +596,22 @@ Use this template:
 
 ### Run-state ledger
 
-<repo route, source issue, fetched surfaces, frame state, artifact mode, local sources allowed, current blocker>
+<repo route, source issue, fetched surfaces, frame state, artifact mode, proof_run, downgrade_approval, local sources allowed, image_generation_route, accepted_scene_image_inventory, current blocker>
+
+### Proof-run validity
+
+- Full playbook run attempted: yes/no
+- Stage reached:
+- Mandatory gate failed:
+- Accepted generated scene-image inventory exists: yes/no
+- Reference assets used as substitute art: yes/no
+- Downgrade explicitly approved by Harley: yes/no + quote/comment ID
+- PPTX build permitted by playbook: yes/no
+- Sidecar produced: yes/no
+- QA produced: yes/no
+- Receipt produced: yes/no
+- Result: Red / Amber / Green
+- If Amber or Red, exact repair required:
 
 ### What was attempted
 
@@ -535,8 +653,11 @@ Past issue-to-PPTX proof failures on issue #3 should be treated as red because:
 9. Any future run that has already retrieved repo material must preserve that successful route as access proof instead of narrowing to a different connector and declaring repo access lost.
 10. Any future run that enters artifact generation, local file work, image work, or zip inspection and loses the repo-green state must stop and reconstruct the run-state ledger before continuing.
 11. Any future run that inspects project-source zips by hard-coded legacy filename rather than repo-indexed package discovery must stop and repair source routing before continuing.
+12. Any future run that skips actual image-generation invocation at the image stage and substitutes asset/source/reference sheets for body-slide art is Red.
+13. Any future proof run described as draft, storyboard, semi-run, asset-sheet proof, or partial proof without explicit Harley approval is Red.
+14. Any image-generation test that produces non-canonical Patch proves tool availability only; it must not be used as accepted Patch art.
 
-Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green or near-green artifacts.
+Future passes must stop at the relevant gate and report the blocker rather than silently producing false-green, near-green, or substitute artifacts.
 
 ## Repair policy
 
@@ -548,8 +669,10 @@ Prefer the smallest honest repair:
 - If source issue is weak, repair the issue or ask for clarification.
 - If the issue lacks a strong frame, resolve the frame and record it before deck planning.
 - If deck plan violates doctrine, repair the plan before image work.
+- If image generation has not been tested at the image stage, test/invoke the image route or record exact route absence before making availability claims.
 - If image generation is unavailable at the image-generation stage, stop and report the image-generation blocker.
 - If Patch references are missing or uninspected, stop and inspect repo/project-source references or land missing references.
 - If images fail Patch canon, including current repo-indexed eye canon, reject/regenerate before PPTX build.
+- If the accepted generated scene-image inventory is missing or incomplete, stop before PPTX build.
 - If PPTX lacks notes or sidecar, keep it draft/amber or red depending on scope.
 - If final package lacks receipt/canonisation status, do not mark finished.
