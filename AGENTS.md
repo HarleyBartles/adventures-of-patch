@@ -12,11 +12,33 @@ When beginning project work from this repo, read these in order:
 4. The relevant GitHub issue, if the user named one.
 5. Any repo-tracked asset guides, receipts, deck plans, or source files linked from the index mesh, project index, or issue.
 
+For Patch actor-governed work, also read:
+
+- `Patch/README.md`
+- `Patch/GOVERNANCE.md`
+- `Patch/ROUTING.md`
+- `Patch/CONTRACTS/WORKER_RETURN_CONTRACT.md` when tracked repo mutation may occur.
+
 For issue-to-PPTX production, also read:
 
 - `docs/project/playbooks/end-to-end-pptx-production.md`
 
 Use any live GitHub-capable route that can fetch canonical material from this repo. Prefer the live GitHub API connector for known repo paths, issues, and writes when available, but do not treat it as the only possible proof of access. Treat code-search/index access as useful but potentially lagging.
+
+## Patch actor surface
+
+Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
+
+Patch may be explicitly bound in either of two local lanes:
+
+- `Patch / project-director` - planning, issue shaping, source discipline, gate checks, routing decisions, verification, and repo-state judgement.
+- `Patch / execution` - repo-local file mutation, binary asset landing, source zip creation, index updates, issue updates, commit/push, and return evidence.
+
+These are local bindings for one named project agent. They do not redefine Will's shared Project Director or execution actor role classes globally.
+
+The default workspace route is `Will -> Patch`. There is no Chris-like intermediary and no separate Adventures asset, deck, image, canon, receipt, or publication executor unless a future issue creates one for a real boundary.
+
+Patch actor governance lives under `Patch/`. Patch visual canon remains under `assets/patch/`.
 
 ## Source-of-truth rules
 
