@@ -12,6 +12,7 @@ Use this file first when spelunking the repo through a GitHub API connector. Eac
 
 ## Top-level directories
 
+- `Patch/` - Patch project-local actor surface, with project-director and execution lanes. See `Patch/README.md`.
 - `assets/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
 - `decks/` - committed presentation artifacts and deck working folders. See `decks/INDEX.md`.
 - `docs/` - project documentation, adventure concepts, principles, and workflow notes. See `docs/INDEX.md`.
@@ -22,5 +23,6 @@ Use this file first when spelunking the repo through a GitHub API connector. Eac
 
 - The repo is canonical project truth.
 - Uploaded zips or chat attachments are not active canon unless committed here or explicitly scoped by the user.
+- For Patch actor-governed work, start with `Patch/README.md`, `Patch/GOVERNANCE.md`, and `Patch/ROUTING.md`.
 - For Patch image work, start with `assets/patch/INDEX.md` and inspect the style guide before planning or generating images.
 - For issue-to-deck or issue-to-PPTX work, start from the GitHub issue, then use the production pipeline described in `AGENTS.md` and `docs/project/INDEX.md`.
