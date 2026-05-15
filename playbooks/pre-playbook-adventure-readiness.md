@@ -54,6 +54,10 @@ Asset-ready normally requires:
 
 Asset preproduction may use image generation, but it must not generate body-slide scene images. Body-slide image generation belongs inside the production playbook after deck and image planning.
 
+Generated or edited preproduction images are only candidates until accepted by `adventures-image-qa` in the correct lane. Unreviewed, rejected, weak, or generated-only sheets do not count toward asset-ready.
+
+For new Patch-bearing worlds, visual preproduction must normally begin with a Patch-in-world interaction or scale proof. This proof must show canonical Patch inhabiting the theme, interacting with the core hook and relevant non-Patch people, agents, systems, gates, or props. If that proof fails Patch canon, world fit, or interaction grammar, do not continue into the broader asset package.
+
 ### Playbook-ready
 
 The issue is both frame-ready and asset-ready. The end-to-end PPTX production playbook may start.
@@ -95,6 +99,16 @@ After frame-ready, run `adventures-visual-preproduction` before the production p
 Visual preproduction consumes the frame-greenlight output and produces the asset package needed for consistent later body-slide image generation.
 
 `adventures-asset-sheet-canoniser` may be used as a sheet-format helper, but it is no longer the primary production route. Post-playbook asset work is limited to landing, receipt, or promotion of accepted material; it is not where the core visual language of a deck is first discovered.
+
+Use `playbooks/image-qa-contract.md` as the canonical image QA contract. `adventures-image-qa` is the single authoritative image QA skill. Visual preproduction owns the loop, but `adventures-image-qa` owns acceptance.
+
+The required visual preproduction image loop is:
+
+```text
+plan candidate -> generate or edit candidate -> run adventures-image-qa -> accept / edit_required / regenerate_required / blocked -> repeat until accepted or blocked
+```
+
+Only QA-accepted candidates may count as asset-ready references.
 
 ## Production playbook gate
 
@@ -138,6 +152,7 @@ Use this compact readiness report when handing a matured issue to production:
 - Environment/location sheets:
 - Prop/continuity sheets:
 - Interaction/style/anti-pattern sheets:
+- Image QA decisions and lanes:
 - Provisional vs repo-tracked status:
 
 ### Production handoff
