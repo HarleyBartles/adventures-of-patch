@@ -18,4 +18,4 @@ None.
 
 ## Notes for agents
 
-Use this directory when verifying or updating the Adventures style-system smoke assets. Keep the committed source/import bundle in `../source-zips/asset_class__style__style_system.zip` aligned with these files.
+Use this directory when verifying or updating the Adventures style-system smoke assets. Keep the committed source/import bundle in `../source-zips/style.zip` aligned with these files.
