@@ -7,8 +7,7 @@ Identity Emporium environment family.
 - `asset_class__environment__identity_emporium__bible.md` - provisional Stage 2b environment visual design guide for the Identity Emporium family.
 - `asset_class__environment__identity_emporium.png` - class/contact-style overview for the Identity Emporium environment family.
 - `asset__environment__identity_emporium__world_proof.png` - environment proof / view asset for the Identity Emporium family.
-- `asset__environment__identity_emporium__front_and_3_4_view.png` - accepted Stage 2b Storefront Exterior two-view asset sheet showing front elevation and 3/4 exterior view.
-- `asset__environment__identity_emporium__profile_view.png` - accepted Stage 2b Storefront Exterior side / angled profile source plate.
+- `asset__environment__identity_emporium__storefront_exterior__three_view_sheet.png` - accepted Stage 2b Storefront Exterior three-view asset sheet covering front elevation, 3/4 exterior, and profile details.
 
 ## Subdirectories
 
