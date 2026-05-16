@@ -189,6 +189,25 @@ Every image QA decision should record enough working-loop state for the caller t
 
 During an active autonomous loop, this output is for the caller, not an automatic GitHub issue comment. The caller continues repair loops when the repair is clear.
 
+## Repair-prompt hygiene
+
+When returning `edit_required` or `regenerate_required`, provide repair guidance as prompt constraints, not prose to
+paste into the next image prompt.
+
+The caller should translate failures into:
+
+- concise positive visual constraints;
+- hard negatives only for the exact failure mode;
+- preserve clauses for features that were correct;
+- text-budget and operator-context quarantine reminders when relevant.
+
+Do not encourage the caller to include QA reports, candidate numbers, pass/fail labels, issue comments, repo/process
+notes, sidebars, or checklists in a generation prompt. If a generated image includes operator-context material, mark it
+`edit_required` or `regenerate_required` and require removal.
+
+For Patch drift, repair instructions should prefer whole-character constraints over isolated attribute lists. Avoid
+terms that trigger bad generator priors for Patch, especially `robot`, `cute robot`, `mascot`, `toy`, or `bot`.
+
 ## Failure posture
 
 Mark the image Red or blocked when:
