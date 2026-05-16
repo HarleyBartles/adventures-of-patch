@@ -33,13 +33,13 @@ Use `adventures-visual-preproduction` as the primary orchestration skill for thi
 Compose with:
 
 - `visual-intent-gate` only after the visual-preproduction lane and stage semantics are clear;
-- `adventures-patch-image-preflight` before Patch-bearing generation;
+- `adventures-patch-image-preflight` as the Patch identity and interaction subcheck when Patch appears;
 - `adventures-image-qa` after every generated or edited candidate;
 - `adventures-asset-sheet-canoniser` only after QA acceptance, when sheet-format, landing, or promotion guidance is
   needed.
 
-`adventures-image-qa` is the single authoritative acceptance gate. Visual preproduction owns the loop;
-`adventures-image-qa` owns the decision.
+`adventures-image-qa` is the single authoritative acceptance gate. Visual preproduction owns the pre-generation
+asset preflight and generation loop; `adventures-image-qa` owns the decision.
 
 ## Asset discovery
 
@@ -73,6 +73,41 @@ must be discovered, enumerated, and considered before generation is authorized.
 If the current style-system package cannot be located, enumerated, or inspected when required, stop with a blocker or
 mark reduced confidence according to the run mode. Do not proceed as though Patch-only references are sufficient.
 
+## Mandatory visual asset preflight
+
+Every generated or edited visual-preproduction image must pass visual asset preflight before generation is authorized.
+This preflight is not Patch-specific. It applies to Patch images, non-Patch character sheets, environments, props,
+continuity objects, style references, and interaction sheets.
+
+Visual asset preflight converts inspected assets into prompt governance. It is not enough to say that assets were
+located or viewed. The assistant must extract and apply:
+
+- positive rendering constraints from the approved style-system and task-relevant references;
+- hard negative constraints from anti-pattern sheets, style guides, and prior failures;
+- lane-specific composition constraints;
+- prop, character, environment, and continuity-object constraints;
+- physical-logic constraints for held, touched, stamped, carried, occluded, or transformed objects;
+- text and label constraints;
+- project-exposure constraints that keep repo/session machinery out of audience-facing visuals.
+
+The preflight packet must include:
+
+- source issue and frame basis;
+- selected visual-preproduction lane;
+- first-level asset index inspection;
+- relevant asset families and source packages discovered through the index mesh;
+- mandatory style-system package discovered, enumerated, and considered;
+- task-specific packages discovered, enumerated, and considered;
+- positive visual constraints extracted;
+- hard negative visual constraints extracted;
+- generated prompt contract shaped from those constraints;
+- Patch sub-preflight result when Patch appears;
+- selected `adventures-image-qa` lane;
+- known risk notes to carry into QA.
+
+If the packet is incomplete, block generation. If the packet is complete and Harley has not explicitly forbidden
+generation, generate one governed candidate and continue to QA.
+
 ## Patch-first proof
 
 For any new Patch-bearing theme, world, or major environment, begin with a Patch-in-world interaction or scale proof.
@@ -89,6 +124,15 @@ Do not begin with the final environment class sheet, character class sheet, prop
 explicitly asks for that lane. Do not continue into the broader asset package if the Patch-first proof fails Patch
 canon, world fit, non-Patch distinction, or interaction grammar.
 
+## Patch sub-preflight
+
+When Patch appears, compose with `adventures-patch-image-preflight` for Patch identity, singularity, non-Patch
+distinction, and Patch interaction grammar.
+
+Patch sub-preflight does not replace the mandatory visual asset preflight. It must not be used as a shortcut around
+style-system inspection, non-Patch asset inspection, environment/prop constraints, physical-logic checks, or prompt
+contract shaping.
+
 ## Image generation and QA loop
 
 Visual preproduction is a generation-bearing stage by default when Harley asks to run visual preproduction or image
@@ -97,7 +141,7 @@ preflight for a frame-ready, asset-not-ready issue. It is not an analysis-only s
 The required loop is:
 
 ```text
-plan candidate -> generate or edit candidate -> run adventures-image-qa -> accept / edit_required / regenerate_required / blocked -> repeat until accepted or blocked
+plan candidate -> visual asset preflight -> generate or edit candidate -> run adventures-image-qa -> accept / edit_required / regenerate_required / blocked -> repeat until accepted or blocked
 ```
 
 Use `playbooks/image-qa-contract.md` for canonical lane definitions and acceptance posture.
@@ -180,6 +224,7 @@ Stop or mark blocked when:
 - frame-ready state is missing;
 - required asset families cannot be discovered from indexes;
 - mandatory style-system inspection cannot be completed;
+- mandatory visual asset preflight cannot produce a prompt contract;
 - Patch-bearing work cannot preserve canonical Patch;
 - non-Patch characters or agents become Patch clones;
 - the continuity object or key prop cannot be represented coherently;
@@ -201,6 +246,7 @@ Use this report shape when returning visual-preproduction status:
 - Selected lane:
 - Asset discovery:
 - Mandatory style-system inspection:
+- Visual asset preflight:
 - Patch-first proof status:
 - Existing reusable assets:
 - Generated or edited candidates:
