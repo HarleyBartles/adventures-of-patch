@@ -108,6 +108,27 @@ The preflight packet must include:
 If the packet is incomplete, block generation. If the packet is complete and Harley has not explicitly forbidden
 generation, generate one governed candidate and continue to QA.
 
+## Prompt-governance discipline
+
+Visual preproduction must reduce predictable generation failures before QA. Prompt contracts must use the hierarchy
+and quarantine rules from `adventures-image-preflight`.
+
+For Patch-bearing prompts:
+
+- start with Patch identity, not the scene;
+- do not call Patch a robot, cute robot, mascot, toy, or bot;
+- include the whole-character Patch lock: long-sleeved teal hoodie, hood framing off-white face panel, black oval eyes
+  with tiny white shine highlights, dark trousers, teal shoes, distinct dark crossbody strap, dark/black bag flap with
+  white `>` mark, and correct slim dark hood antennae with small dark round tips;
+- state the selected lane and artifact type before adding decorative scene detail;
+- keep text minimal and functional;
+- quarantine operator context: do not render QA notes, issue comments, candidate numbers, repo/process references,
+  sidebars, or checklists;
+- translate failed QA into concise prompt constraints, not pasted QA prose.
+
+If a prior candidate had correct Patch features, the next prompt must preserve those features while repairing the
+specific failure. Do not let one repaired feature regress another.
+
 ## Patch-first proof
 
 For any new Patch-bearing theme, world, or major environment, begin with a Patch-in-world interaction or scale proof.
