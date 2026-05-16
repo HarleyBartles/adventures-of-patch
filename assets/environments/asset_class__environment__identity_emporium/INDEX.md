@@ -8,10 +8,11 @@ Identity Emporium environment family.
 - `asset_class__environment__identity_emporium.png` - class/contact-style overview for the Identity Emporium environment family.
 - `asset__environment__identity_emporium__world_proof.png` - environment proof / view asset for the Identity Emporium family.
 - `asset__environment__identity_emporium__storefront_exterior__three_view_sheet.png` - accepted Stage 2b Storefront Exterior three-view asset sheet covering front elevation, 3/4 exterior, and profile details.
+- `asset__environment__identity_emporium__storefront_interior__three_view_sheet.png` - Stage 2b interior locations sheet covering the main sales floor, costume and prop wall, and counter / checkout.
 
 ## Subdirectories
 
-- `assembly/` - Stage 2b Storefront Exterior assembly plates and image set. See `assembly/INDEX.md`.
+None.
 
 ## Notes for agents
 
