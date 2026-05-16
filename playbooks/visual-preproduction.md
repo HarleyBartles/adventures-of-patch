@@ -105,6 +105,33 @@ Use `playbooks/image-qa-contract.md` for canonical lane definitions and acceptan
 Only candidates accepted by `adventures-image-qa` in the correct lane may count toward asset-ready references.
 Generated-only, unreviewed, weak, rejected, or reference-source-only images do not count.
 
+## Non-terminal image generation
+
+Image generation and image editing are non-terminal substeps of this playbook.
+
+When a candidate image is generated or edited, the assistant must not stop, summarize, or wait for Harley as though the
+run is complete. The generated image is a candidate only. The next required action is to resume the playbook loop and
+run `adventures-image-qa` in the selected lane.
+
+If the platform image-generation tool returns control in a way that prevents the assistant from continuing in the same
+visible response, the assistant's next message must resume at QA. Do not treat the image tool boundary as a
+user-confirmation gate.
+
+Required continuation state after every generation or edit:
+
+- source issue;
+- selected lane;
+- candidate image identifier or path if available;
+- preflight and source-discovery basis;
+- intended use;
+- QA skill to invoke;
+- known risk notes from the generation brief.
+
+The visual-preproduction run is not complete until the candidate has a QA decision:
+`accepted_preproduction_reference`, `edit_required`, `regenerate_required`, or `blocked`.
+
+Generate is not a handoff. Generate is a candidate-producing substep. QA is the handoff.
+
 ## Lane selection
 
 Select one primary lane before generating or editing.
@@ -159,6 +186,8 @@ Stop or mark blocked when:
 - generated candidates fail QA and cannot be repaired without a new direction;
 - image generation or image QA is unavailable;
 - the task tries to generate deck body-slide art before the production playbook stage.
+
+Stopping after generation or edit without a QA decision is a playbook violation, not a valid stop condition.
 
 ## Output contract
 
