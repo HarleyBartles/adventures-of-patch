@@ -11,7 +11,7 @@ Identity Emporium environment family.
 
 ## Subdirectories
 
-None.
+- `assembly/` - Stage 2b Storefront Exterior assembly plates and image set. See `assembly/INDEX.md`.
 
 ## Notes for agents
 
