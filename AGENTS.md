@@ -52,6 +52,10 @@ Repo files, repo issues, repo-tracked receipts, and repo-tracked asset documenta
 
 If a required guide or asset is missing from the repo, report it as a blocker or repo hygiene gap. Do not silently substitute memory or uploaded zips.
 
+## Bound connector action gate
+
+When a turn, skill step, or playbook stage clearly becomes an external connector action, refresh the named connector namespace at that boundary before selecting actions or reporting action availability. Use `playbooks/bound-connector-action-gate.md` for the full gate. Do not treat earlier sparse connector listings as final evidence.
+
 ## Issue-to-PPTX repo gate
 
 For issue-to-PPTX, proof-pass, production-pass, or finished-package work, prove repo access and fetch the named source issue before producing any deck artifact.

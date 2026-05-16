@@ -71,6 +71,8 @@ Expected compositions include:
 
 Before claiming that a required skill, artifact route, image route, repo connector, or source package is unavailable, record the discovery attempt in the run-state ledger.
 
+For external app connectors, refresh the named connector namespace at the action boundary before selecting actions or reporting availability. Treat earlier sparse connector listings as provisional until that refresh happens.
+
 For skills:
 
 - attempt skill catalogue lookup for each required Adventures skill;

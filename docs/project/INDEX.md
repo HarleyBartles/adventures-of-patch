@@ -10,6 +10,10 @@ This index is the first-class navigation surface for repo-grounded project work 
 
 Use the live GitHub API connector for known paths and issue operations when available. Do not rely on uploaded project-source zips as active truth unless the repo points to them or the user explicitly scopes work to them.
 
+## Connector action gate
+
+When project work reaches an external app connector action, use `docs/project/connector-action-gate-note.md` and `playbooks/bound-connector-action-gate.md`. Refresh the named connector namespace at the action boundary before selecting actions or reporting availability.
+
 ## Files in this directory
 
 - `INDEX.md` - this file; project index and source map for docs/project.
