@@ -26,23 +26,28 @@ Every generated or edited image is a candidate until `adventures-image-qa` accep
 
 A successful generation call proves only that an image was produced. It does not prove Patch canon, asset usefulness, slide readiness, or package validity.
 
-## Mandatory autonomous loop
+## Semi-autonomous generation / QA loop
 
 Use this loop for every generated or edited image that may be used downstream:
 
 ```text
-plan candidate -> generate or edit candidate -> run adventures-image-qa
--> if edit_required or regenerate_required and repair is clear, edit/regenerate immediately
--> repeat until QA-pass ready for Harley approval, hard blocker, or creative-choice fork
+plan candidate -> generate or edit candidate -> stop for Harley review/nudge
+-> on continue: run adventures-image-qa
+-> if edit_required or regenerate_required and the repair target is known and well defined, edit/regenerate immediately
+-> stop again after the next generated candidate
 ```
 
-The loop runs as many times as required. A weak, non-compliant, unreviewed, or rejected image must not enter decks, asset packages, receipts, or canon surfaces as an accepted image.
+Generation is an expected stop point. The image tool naturally returns a visible candidate, and that pause gives Harley an insertion point to add visual direction before QA. Stopping after generation is not a process failure.
 
-Generation is not a stopping point. Ordinary failed QA is not a stopping point when the repair is clear. Harley should not need to prompt `continue`, `proceed`, or `continue to QA` during normal repair loops.
+The next user prompt to continue after generation should resume at QA for the latest candidate. It should not restart planning, ask whether to QA, or skip QA.
+
+Failed QA with a clear and well-defined repair target still continues into the next edit/regeneration without a separate confirmation. The next stopping point is after that next generated candidate appears.
+
+A weak, non-compliant, unreviewed, or rejected image must not enter decks, asset packages, receipts, or canon surfaces as an accepted image.
 
 ## Working-loop state vs durable repo state
 
-Candidate-level QA decisions inside an autonomous visual-preproduction loop are working loop state, not durable repo state.
+Candidate-level QA decisions inside a visual-preproduction loop are working loop state, not durable repo state.
 
 Do not post per-candidate QA comments to GitHub during the loop. Keep failed-candidate QA, repair prompts, regenerated attempts, and provisional decisions inside the active loop.
 
@@ -187,7 +192,7 @@ Every image QA decision should record enough working-loop state for the caller t
 - regeneration or edit instruction;
 - whether the result may count toward `asset_ready`, scene inventory readiness, or neither.
 
-During an active autonomous loop, this output is for the caller, not an automatic GitHub issue comment. The caller continues repair loops when the repair is clear.
+During an active loop, this output is for the caller, not an automatic GitHub issue comment. If the repair target is clear and well defined, the caller may continue to one edit/regeneration, then stop after the next generated candidate.
 
 ## Repair-prompt hygiene
 
@@ -225,12 +230,26 @@ Do not mark Green because an image is attractive, polished, or plausible. Green 
 
 ## Stop and continuation posture
 
+Expected stop points:
+
+- after each generated or edited candidate, so Harley can inspect the visible result;
+- after a QA-pass candidate/package is ready for Harley approval;
+- at a hard blocker;
+- at a creative-choice fork.
+
+After a user says to continue from a generated candidate:
+
+- resume at QA for the latest candidate;
+- do not restart planning;
+- do not skip QA;
+- do not ask whether QA is desired.
+
 After a QA decision:
 
-- `edit_required` with clear repair: continue directly to edit/regenerate and QA again.
-- `regenerate_required` with clear repair: continue directly to regeneration and QA again.
+- `edit_required` with clear, well-defined repair: perform the edit/regeneration, then stop after the next generated candidate.
+- `regenerate_required` with clear, well-defined repair: perform one regeneration, then stop after the next generated candidate.
 - accepted candidate/package: stop for Harley approval when the owning stage requires it.
 - `blocked`: stop and record the blocker when durable project tracking is required.
 - creative-choice fork: stop and ask Harley to choose.
 
-Stopping after generation or ordinary failed QA with a clear repair is a process violation.
+Continuing through multiple generated candidates without Harley's review insertion point is not the default. It requires explicit authorization for a fully autonomous run in that specific stage.
