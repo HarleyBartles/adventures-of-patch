@@ -141,27 +141,34 @@ preflight for a frame-ready, asset-not-ready issue. It is not an analysis-only s
 The required loop is:
 
 ```text
-plan candidate -> visual asset preflight -> generate or edit candidate -> run adventures-image-qa -> accept / edit_required / regenerate_required / blocked -> repeat until accepted or blocked
+plan candidate/package -> visual asset preflight -> generate or edit candidate -> run adventures-image-qa
+-> if edit_required or regenerate_required and repair is clear, edit/regenerate immediately
+-> repeat until QA-pass ready for Harley approval, hard blocker, or creative-choice fork
 ```
 
 Use `playbooks/image-qa-contract.md` for canonical lane definitions and acceptance posture.
 
-Only candidates accepted by `adventures-image-qa` in the correct lane may count toward asset-ready references.
-Generated-only, unreviewed, weak, rejected, or reference-source-only images do not count.
+Only candidates accepted by `adventures-image-qa` in the correct lane may count toward asset-ready references after the
+stage approval rules are satisfied. Generated-only, unreviewed, weak, rejected, or reference-source-only images do not
+count.
 
-## Non-terminal image generation
+## Non-terminal image generation and failed QA
 
-Image generation and image editing are non-terminal substeps of this playbook.
+Image generation, image editing, and ordinary failed QA are non-terminal substeps of this playbook.
 
 When a candidate image is generated or edited, the assistant must not stop, summarize, or wait for Harley as though the
 run is complete. The generated image is a candidate only. The next required action is to resume the playbook loop and
 run `adventures-image-qa` in the selected lane.
 
+If QA returns `edit_required` or `regenerate_required` and the repair is clear, the assistant must continue directly to
+edit/regeneration and then QA again. Harley should not have to prompt `continue`, `proceed`, or `continue to QA` for
+ordinary repair loops.
+
 If the platform image-generation tool returns control in a way that prevents the assistant from continuing in the same
 visible response, the assistant's next message must resume at QA. Do not treat the image tool boundary as a
-user-confirmation gate.
+user-confirmation gate. If that QA fails with a clear repair, continue the loop rather than pausing for confirmation.
 
-Required continuation state after every generation or edit:
+Required continuation state after every generation, edit, or failed QA:
 
 - source issue;
 - selected lane;
@@ -169,12 +176,33 @@ Required continuation state after every generation or edit:
 - preflight and source-discovery basis;
 - intended use;
 - QA skill to invoke;
-- known risk notes from the generation brief.
+- known risk notes from the generation brief;
+- repair instruction when QA failed.
 
-The visual-preproduction run is not complete until the candidate has a QA decision:
-`accepted_preproduction_reference`, `edit_required`, `regenerate_required`, or `blocked`.
+The visual-preproduction run is not complete until it reaches one of these states:
 
-Generate is not a handoff. Generate is a candidate-producing substep. QA is the handoff.
+- QA-pass candidate or package ready for Harley approval;
+- hard blocker;
+- creative-choice fork requiring Harley.
+
+Generate is not a handoff. Generate is a candidate-producing substep. QA is not a repo-persistence trigger. Harley
+approval or blocker state is the handoff.
+
+## Repo-comment threshold
+
+Do not post per-candidate QA comments to GitHub during an active autonomous visual-preproduction loop. Failed-candidate
+QA, repair prompts, regenerated attempts, and provisional acceptances are working loop state, not durable project
+state.
+
+Persist to GitHub only when one of these thresholds is met:
+
+- Harley has approved a QA-pass candidate or package;
+- a hard blocker requires durable project tracking;
+- Harley explicitly asks to preserve a planning decision;
+- a final stage readiness report is complete.
+
+Do not persist false-green risk by posting a repo comment before Harley approval. The issue should record durable
+outcomes, blockers, and approved state, not every candidate attempt.
 
 ## Lane selection
 
@@ -232,7 +260,8 @@ Stop or mark blocked when:
 - image generation or image QA is unavailable;
 - the task tries to generate deck body-slide art before the production playbook stage.
 
-Stopping after generation or edit without a QA decision is a playbook violation, not a valid stop condition.
+Stopping after generation, edit, or ordinary failed QA with a clear repair is a playbook violation, not a valid stop
+condition.
 
 ## Output contract
 
