@@ -8,6 +8,10 @@ This project develops presentation narratives through Patch's adventures as a fi
 
 The repository is canonical project truth. Do not rely on memory when asset availability, Patch continuity, visual planning, actor routing, or playbook status matters. Inspect the current repo files first.
 
+## Connector action gate
+
+When work reaches an external connector action, refresh the named connector at that boundary before choosing actions or reporting action availability. See `docs/project/connector-action-gate-note.md` and `playbooks/bound-connector-action-gate.md`.
+
 ## Patch actor surface
 
 Patch is the sole project-local agent for Adventures of Patch.
