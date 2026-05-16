@@ -33,6 +33,7 @@ Use `adventures-visual-preproduction` as the primary orchestration skill for thi
 Compose with:
 
 - `visual-intent-gate` only after the visual-preproduction lane and stage semantics are clear;
+- `adventures-visual-bible-interpreter` when a mature visual bible exists or a provisional asset-class bible must be created;
 - `adventures-patch-image-preflight` as the Patch identity and interaction subcheck when Patch appears;
 - `adventures-image-qa` after every generated or edited candidate;
 - `adventures-asset-sheet-canoniser` only after QA acceptance, when sheet-format, landing, or promotion guidance is
@@ -83,7 +84,7 @@ Visual asset preflight converts inspected assets into prompt governance. It is n
 located or viewed. The assistant must extract and apply:
 
 - positive rendering constraints from the approved style-system and task-relevant references;
-- hard negative constraints from anti-pattern sheets, style guides, and prior failures;
+- hard negative constraints from anti-pattern sheets, style guides, bibles, and prior failures;
 - lane-specific composition constraints;
 - prop, character, environment, and continuity-object constraints;
 - physical-logic constraints for held, touched, stamped, carried, occluded, or transformed objects;
@@ -98,6 +99,7 @@ The preflight packet must include:
 - relevant asset families and source packages discovered through the index mesh;
 - mandatory style-system package discovered, enumerated, and considered;
 - task-specific packages discovered, enumerated, and considered;
+- relevant mature bible interpreted, or minimal provisional bible created for new asset classes;
 - positive visual constraints extracted;
 - hard negative visual constraints extracted;
 - generated prompt contract shaped from those constraints;
@@ -129,6 +131,38 @@ For Patch-bearing prompts:
 If a prior candidate had correct Patch features, the next prompt must preserve those features while repairing the
 specific failure. Do not let one repaired feature regress another.
 
+## Bible-first asset-class workflow
+
+Any reusable asset class must be guided by a visual bible before image generation begins. The bible may be minimal and
+provisional at first, but it must be sufficient to steer the first generation and QA loop.
+
+A minimal provisional bible should define:
+
+- asset class name and function;
+- intended tone and visual direction;
+- positive prompt constraints;
+- negative prompt constraints and anti-drift rules;
+- material, palette, prop, and motif vocabulary;
+- text/signage posture;
+- what belongs in the class;
+- what does not belong in the class;
+- immediate QA hard gates;
+- known uncertainty.
+
+The asset-class workflow is:
+
+```text
+minimal bible -> Pass A asset class overview -> update bible from accepted learning
+-> Pass B asset family sheets -> update and lock bible
+```
+
+Do not wait until after image generation to invent the bible from results. Generation should be guided by the bible;
+accepted results can refine and validate it.
+
+Update the provisional bible after accepted Pass A imagery and again after accepted Pass B member sheets. Failed imagery
+may add anti-pattern guidance only when the failure is durable, repeated, or semantically important. At the end of the
+asset family pass, lock the bible or explicitly leave it provisional with unresolved questions.
+
 ## Dual-pass asset-class workflow
 
 Any reusable asset class must be produced through a required two-pass workflow. Do not ask image generation to create
@@ -156,11 +190,11 @@ Only after Pass A is accepted, generate the concrete member sheets for the famil
 
 Each member sheet should:
 
-- stay anchored to the accepted Pass A overview;
+- stay anchored to the accepted Pass A overview and current bible;
 - focus on one concrete member asset, location, character, prop, or motif;
 - avoid re-solving the whole class;
 - be QA'd in the correct sheet lane;
-- be checked for family coherence against the accepted overview.
+- be checked for family coherence against the accepted overview and current bible.
 
 For environment classes, Pass A is the environment asset class overview and Pass B is the set of location sheets. For
 character classes, Pass A is the class/cast overview and Pass B is the individual character sheets. For prop classes,
@@ -249,6 +283,23 @@ The visual-preproduction run is not complete until it reaches one of these state
 Generate is not a handoff. Generate is a candidate-producing substep. QA is not a repo-persistence trigger. Harley
 approval or blocker state is the handoff.
 
+## Fresh-start discipline
+
+Long image-edit chains are a workflow smell. Edits are appropriate for local, surgical defects in an otherwise correct
+candidate. They are not appropriate when a candidate lineage repeatedly reinforces wrong lane, wrong style,
+character contamination, operator-context bleed, omnibus-poster behaviour, or another structural failure.
+
+Use fresh generation from the current bible and accepted references when:
+
+- the candidate fails lane or package structure;
+- style direction has drifted;
+- characters contaminate an environment-only or prop-only pass;
+- operator/process/context material appears in the image;
+- repeated repairs strengthen the same bad pattern;
+- two repair passes fail with the same family of failure.
+
+A fresh start should use the minimal/current bible and accepted references, not the contaminated image lineage.
+
 ## Repo-comment threshold
 
 Do not post per-candidate QA comments to GitHub during an active autonomous visual-preproduction loop. Failed-candidate
@@ -303,8 +354,9 @@ Asset-ready normally requires some subset of:
 - style or anti-pattern references where drift risk is high;
 - readiness report identifying provisional, accepted, and repo-tracked status.
 
-For any item that introduces a reusable asset class, apply the dual-pass workflow before counting the family asset-ready:
-Pass A accepted overview first, then Pass B member sheets and family-coherence QA.
+For any item that introduces a reusable asset class, apply the bible-first dual-pass workflow before counting the family
+asset-ready: minimal/current bible, Pass A accepted overview, bible update, Pass B member sheets, family-coherence QA,
+and bible lock or explicit provisional status.
 
 The exact subset depends on the issue. Do not force optional existing assets into a deck merely because they exist.
 Do require assets that the frame actually needs to make the story repeatable.
@@ -317,6 +369,7 @@ Stop or mark blocked when:
 - required asset families cannot be discovered from indexes;
 - mandatory style-system inspection cannot be completed;
 - mandatory visual asset preflight cannot produce a prompt contract;
+- required mature bible cannot be discovered or a minimal provisional bible cannot be created for a new asset class;
 - Patch-bearing work cannot preserve canonical Patch;
 - non-Patch characters or agents become Patch clones;
 - the continuity object or key prop cannot be represented coherently;
@@ -340,8 +393,10 @@ Use this report shape when returning visual-preproduction status:
 - Asset discovery:
 - Mandatory style-system inspection:
 - Visual asset preflight:
+- Visual bible status:
 - Patch-first proof status:
 - Dual-pass asset-class status:
+- Fresh-start / edit-chain status:
 - Existing reusable assets:
 - Generated or edited candidates:
 - Image QA decisions:
