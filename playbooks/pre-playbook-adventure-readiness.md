@@ -94,19 +94,11 @@ The positive pattern should be something the audience can apply in real workflow
 
 ## Visual preproduction route
 
-After frame-ready, run `adventures-visual-preproduction` before the production playbook.
+After frame-ready, run `playbooks/visual-preproduction.md` before the production playbook.
 
-Visual preproduction consumes the frame-greenlight output and produces the asset package needed for consistent later body-slide image generation.
+Visual preproduction consumes the frame-greenlight output and produces the asset package needed for consistent later body-slide image generation. `adventures-visual-preproduction` owns the local orchestration skill route.
 
-`adventures-asset-sheet-canoniser` may be used as a sheet-format helper, but it is no longer the primary production route. Post-playbook asset work is limited to landing, receipt, or promotion of accepted material; it is not where the core visual language of a deck is first discovered.
-
-Use `playbooks/image-qa-contract.md` as the canonical image QA contract. `adventures-image-qa` is the single authoritative image QA skill. Visual preproduction owns the loop, but `adventures-image-qa` owns acceptance.
-
-The required visual preproduction image loop is:
-
-```text
-plan candidate -> generate or edit candidate -> run adventures-image-qa -> accept / edit_required / regenerate_required / blocked -> repeat until accepted or blocked
-```
+Use `playbooks/image-qa-contract.md` as the canonical image QA contract. `adventures-image-qa` is the single authoritative image QA skill. Visual preproduction owns candidate planning and generation loops, but `adventures-image-qa` owns acceptance.
 
 Only QA-accepted candidates may count as asset-ready references.
 
@@ -115,7 +107,7 @@ Only QA-accepted candidates may count as asset-ready references.
 The end-to-end PPTX production playbook should stop when an issue is not playbook-ready:
 
 - If frame-ready is missing, route to the framing family through `adventures-frame-buster`.
-- If frame-ready exists but asset-ready is missing, route to `adventures-visual-preproduction`.
+- If frame-ready exists but asset-ready is missing, route to `playbooks/visual-preproduction.md`.
 - If either state is absent, do not build a deck, generate body-slide images, or treat the issue as a completed proof run.
 
 Preproduction asset sheets are references for later generation. They must not be used as substitute body-slide art in proof/full/final-candidate runs unless Harley explicitly approves a separate storyboard mode.
