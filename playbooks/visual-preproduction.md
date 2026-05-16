@@ -129,6 +129,46 @@ For Patch-bearing prompts:
 If a prior candidate had correct Patch features, the next prompt must preserve those features while repairing the
 specific failure. Do not let one repaired feature regress another.
 
+## Dual-pass asset-class workflow
+
+Any reusable asset class must be produced through a required two-pass workflow. Do not ask image generation to create
+an asset class overview and all related member asset sheets in one instruction unless Harley explicitly overrides this
+rule for a narrow exception.
+
+### Pass A: asset class overview
+
+Create and QA one asset-class overview sheet first.
+
+The overview sheet defines the reusable class and establishes:
+
+- visual language, palette, materials, motifs, and design boundaries;
+- what belongs inside the asset family;
+- what does not belong inside the asset family;
+- the intended member assets or locations to be produced in Pass B;
+- enough reusable structure that member sheets can anchor to it.
+
+Pass A must be accepted by `adventures-image-qa` and approved for the stage before Pass B begins. If Pass A fails, repair
+or regenerate Pass A rather than moving on to member sheets.
+
+### Pass B: asset family expansion
+
+Only after Pass A is accepted, generate the concrete member sheets for the family.
+
+Each member sheet should:
+
+- stay anchored to the accepted Pass A overview;
+- focus on one concrete member asset, location, character, prop, or motif;
+- avoid re-solving the whole class;
+- be QA'd in the correct sheet lane;
+- be checked for family coherence against the accepted overview.
+
+For environment classes, Pass A is the environment asset class overview and Pass B is the set of location sheets. For
+character classes, Pass A is the class/cast overview and Pass B is the individual character sheets. For prop classes,
+Pass A is the prop family overview and Pass B is the individual prop or continuity-object sheets.
+
+This rule prevents the generator from collapsing class definition and family expansion into an omnibus poster with
+mixed lanes, characters, slogans, process panels, or unrelated notes.
+
 ## Patch-first proof
 
 For any new Patch-bearing theme, world, or major environment, begin with a Patch-in-world interaction or scale proof.
@@ -263,6 +303,9 @@ Asset-ready normally requires some subset of:
 - style or anti-pattern references where drift risk is high;
 - readiness report identifying provisional, accepted, and repo-tracked status.
 
+For any item that introduces a reusable asset class, apply the dual-pass workflow before counting the family asset-ready:
+Pass A accepted overview first, then Pass B member sheets and family-coherence QA.
+
 The exact subset depends on the issue. Do not force optional existing assets into a deck merely because they exist.
 Do require assets that the frame actually needs to make the story repeatable.
 
@@ -298,6 +341,7 @@ Use this report shape when returning visual-preproduction status:
 - Mandatory style-system inspection:
 - Visual asset preflight:
 - Patch-first proof status:
+- Dual-pass asset-class status:
 - Existing reusable assets:
 - Generated or edited candidates:
 - Image QA decisions:
