@@ -11,6 +11,7 @@ These packages mirror the current repo asset folders. Use the repo index first t
 - `asset_class__character__stakeholders.zip` - reusable stakeholder character family.
 - `asset_classs__character__other_agents.zip` - other agents character family.
 - `asset_class__environment__clubdb.zip` - Club DB environment/location family.
+- `asset_class__environment__identity_emporium.zip` - Identity Emporium environment family.
 - `asset_class__environment__patch_mission_control.zip` - Patch Mission Control Centre environment family.
 - `hero-patch.zip` - canonical Patch visual reference folder mirror.
 - `style.zip` - approved style-system folder mirror.
