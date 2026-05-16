@@ -26,15 +26,34 @@ Every generated or edited image is a candidate until `adventures-image-qa` accep
 
 A successful generation call proves only that an image was produced. It does not prove Patch canon, asset usefulness, slide readiness, or package validity.
 
-## Mandatory loop
+## Mandatory autonomous loop
 
 Use this loop for every generated or edited image that may be used downstream:
 
 ```text
-plan candidate -> generate or edit candidate -> run adventures-image-qa -> accept / edit_required / regenerate_required / blocked -> repeat until accepted or blocked
+plan candidate -> generate or edit candidate -> run adventures-image-qa
+-> if edit_required or regenerate_required and repair is clear, edit/regenerate immediately
+-> repeat until QA-pass ready for Harley approval, hard blocker, or creative-choice fork
 ```
 
 The loop runs as many times as required. A weak, non-compliant, unreviewed, or rejected image must not enter decks, asset packages, receipts, or canon surfaces as an accepted image.
+
+Generation is not a stopping point. Ordinary failed QA is not a stopping point when the repair is clear. Harley should not need to prompt `continue`, `proceed`, or `continue to QA` during normal repair loops.
+
+## Working-loop state vs durable repo state
+
+Candidate-level QA decisions inside an autonomous visual-preproduction loop are working loop state, not durable repo state.
+
+Do not post per-candidate QA comments to GitHub during the loop. Keep failed-candidate QA, repair prompts, regenerated attempts, and provisional decisions inside the active loop.
+
+Persist to GitHub only when one of these thresholds is reached:
+
+- Harley has approved a QA-pass candidate or package;
+- a hard blocker requires durable project tracking;
+- Harley explicitly asks to preserve a planning decision;
+- a final stage readiness report is complete.
+
+Do not persist false-green risk by posting an issue comment before Harley approval.
 
 ## QA lanes
 
@@ -139,7 +158,8 @@ Preproduction assets count toward `asset_ready` only when:
 - `adventures-image-qa` has accepted the generated candidate in that lane;
 - Patch-bearing candidates have passed Patch canon and non-Patch distinction checks;
 - the image is useful as a future generation reference;
-- the asset is recorded as provisional, accepted, or repo-tracked according to its evidence state.
+- the asset is recorded as provisional, accepted, or repo-tracked according to its evidence state;
+- any required Harley approval threshold for the stage has been met.
 
 Rejected, weak, unreviewed, or generated-only asset sheets must not make an issue asset-ready.
 
@@ -153,7 +173,7 @@ Preproduction references, asset sheets, source zips, contact sheets, anti-patter
 
 ## Required QA output
 
-Every image QA decision should record:
+Every image QA decision should record enough working-loop state for the caller to continue:
 
 - image or candidate identifier;
 - intended use;
@@ -166,6 +186,8 @@ Every image QA decision should record:
 - exact failures when not accepted;
 - regeneration or edit instruction;
 - whether the result may count toward `asset_ready`, scene inventory readiness, or neither.
+
+During an active autonomous loop, this output is for the caller, not an automatic GitHub issue comment. The caller continues repair loops when the repair is clear.
 
 ## Failure posture
 
@@ -181,3 +203,15 @@ Mark the image Red or blocked when:
 - the image cannot be repaired without a new generation pass.
 
 Do not mark Green because an image is attractive, polished, or plausible. Green requires lane fitness and downstream usefulness.
+
+## Stop and continuation posture
+
+After a QA decision:
+
+- `edit_required` with clear repair: continue directly to edit/regenerate and QA again.
+- `regenerate_required` with clear repair: continue directly to regeneration and QA again.
+- accepted candidate/package: stop for Harley approval when the owning stage requires it.
+- `blocked`: stop and record the blocker when durable project tracking is required.
+- creative-choice fork: stop and ask Harley to choose.
+
+Stopping after generation or ordinary failed QA with a clear repair is a process violation.
