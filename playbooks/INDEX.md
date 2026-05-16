@@ -8,6 +8,7 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 
 - `pre-playbook-adventure-readiness.md` - required planning-readiness workflow before issue-to-PPTX production; matures seed issues through frame-ready and asset-ready states.
 - `visual-preproduction.md` - canonical pre-deck visual preproduction workflow for generating, editing, QA-ing, and reporting reusable asset references before PPTX production.
+- `visual-bible-interpretation.md` - canonical workflow for discovering repo-indexed visual bibles and converting them into prompt, QA, and repair constraints.
 - `image-qa-contract.md` - canonical multi-lane image QA contract; generated images are candidates until accepted by `adventures-image-qa`.
 - `end-to-end-pptx-production.md` - canonical orchestration guide for turning a playbook-ready Adventures of Patch issue into a finished presentation package.
 - `asset-package-landing.md` - project/domain workflow for landing approved visual assets, markdown sidecars, source zips, and related indexes.
@@ -22,6 +23,7 @@ None.
 - Playbooks own project orchestration across skills, production gates, stop conditions, and failure reporting.
 - Pre-playbook readiness is separate from PPTX production. Production should stop if frame-ready or asset-ready state is missing.
 - Visual preproduction is separate from PPTX production and must not generate body-slide scene art.
+- Visual bible interpretation converts repo-indexed canon into prompt, QA, and repair constraints without hard-coding brittle paths.
 - `adventures-image-qa` is the canonical image QA authority; generated image candidates must be QA-accepted in the correct lane before they count as preproduction references or scene art.
 - Patch actor governance lives under `Patch/`.
 - Patch repo-resident executable skills live under `Patch/SKILLS/`.
