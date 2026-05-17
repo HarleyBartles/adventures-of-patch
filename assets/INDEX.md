@@ -11,6 +11,7 @@ No direct asset files are expected at this level. Navigate into subdirectories.
 - `characters/` - character asset families. See `characters/INDEX.md`.
 - `environments/` - environment/location asset families. See `environments/INDEX.md`.
 - `hero-patch/` - canonical Patch visual references. See `hero-patch/INDEX.md`.
+- `htmls/` - self-contained HTML visual bridge packages derived from canonical assets. See `htmls/INDEX.md`.
 - `style/` - Adventures of Patch style-system sheets and sidecar guide. See `style/INDEX.md`.
 - `receipts/` - receipt packages and evidence bundles. See `receipts/INDEX.md`.
 - `source-zips/` - committed source/import zip packages. See `source-zips/INDEX.md`.
