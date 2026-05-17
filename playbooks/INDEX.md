@@ -11,6 +11,7 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 - visual-bible-creation.md - canonical workflow for creating, updating, normalising, and locking standardized visual bibles with composable prompt, QA, repair, and extrapolation blocks.
 - visual-bible-interpretation.md - canonical workflow for discovering repo-indexed visual bibles and converting them into prompt, QA, and repair constraints.
 - image-qa-contract.md - canonical multi-lane image QA contract; generated images are candidates until accepted by adventures-image-qa.
+- asset-sheet-production-contract.md - canonical final-layout and zip-package contract for source-image-first, template-compiled asset sheets.
 - bound-connector-action-gate.md - connector-agnostic gate requiring namespace refresh at the external app action boundary before reporting tool availability.
 - end-to-end-pptx-production.md - canonical orchestration guide for turning a playbook-ready Adventures of Patch issue into a finished presentation package.
 - asset-package-landing.md - project/domain workflow for landing approved visual assets, markdown sidecars, source zips, and related indexes.
@@ -28,6 +29,7 @@ None.
 - Visual preproduction is separate from PPTX production and must not generate body-slide scene art.
 - Visual bible creation authors or updates standardized bibles before generation, after accepted overview references, and when locking accepted asset families.
 - Visual bible interpretation converts repo-indexed canon into prompt, QA, and repair constraints without hard-coding brittle paths.
-- adventures-image-qa is the canonical image QA authority; generated image candidates must be QA-accepted in the correct lane before they count as preproduction references or scene art.
+- Asset sheets must follow the source-image-first, deterministic-template compile contract before landing or being counted asset-ready.
+- adventures-image-qa is the canonical image QA authority; generated images must be QA-accepted in the correct lane before they count as preproduction references or scene art.
 - Patch actor governance lives under Patch.
 - Patch repo-resident executable skills live under Patch/SKILLS.
