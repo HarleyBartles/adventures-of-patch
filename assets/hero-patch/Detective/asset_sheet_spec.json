@@ -1,0 +1,35 @@
+{
+  "title": "Patch Detective Role Kit",
+  "asset_type": "Character / Patch costume variant",
+  "status": "approved_source_set",
+  "version": "v1",
+  "template": "template_final_asset_sheet_blank_v4.png",
+  "production": "deterministic Pillow compile; no image generation used for final sheet",
+  "fit_policy": "contain/no-crop for hero and all alternate view slots",
+  "source_images": [
+    "source_hero_patch_detective.png",
+    "source_alt_01_side_view.png",
+    "source_alt_02_back_view.png",
+    "source_alt_03_clue_hunt.png",
+    "source_alt_04_on_the_case.png",
+    "source_alt_05_details.png",
+    "source_alt_06_props.png"
+  ],
+  "captions": [
+    "HERO IMAGE",
+    "SIDE VIEW",
+    "BACK VIEW",
+    "CLUE HUNT",
+    "ON THE CASE",
+    "DETAILS",
+    "PROPS"
+  ],
+  "guidance": [
+    "Keep Patch recognisable: teal hoodie, hood antennae, off-white face panel, black oval eyes and black crossbody bag with > mark.",
+    "Detective role reads through the beige trench coat, detective cap, magnifying glass, note-taking and clue-hunting prop language.",
+    "Do not replace the core Patch silhouette; the trench coat sits over the hoodie and the antennae remain visible through the cap design.",
+    "Use side, back, action, detail and prop views as reference anchors for later scene generation and costume continuity.",
+    "Preferred presentation is clean white-background source art with readable full-body, action, detail and prop views."
+  ],
+  "qa_note": "Source images were explicitly approved by Harley in-chat before deterministic compile."
+}

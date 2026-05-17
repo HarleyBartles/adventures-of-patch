@@ -15,7 +15,9 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 
 ## Subdirectories
 
-- `assembly/` - supplemental Patch assembly and reference sheets. See `assembly/INDEX.md`.
+- `Cowboy/` - Patch cowboy role kit asset-sheet package. See `Cowboy/INDEX.md`.
+- `Detective/` - Patch detective role kit asset-sheet package. See `Detective/INDEX.md`.
+- `Mechanic/` - Patch mechanic role kit asset-sheet package. See `Mechanic/INDEX.md`.
 
 ## Mandatory image-generation note
 

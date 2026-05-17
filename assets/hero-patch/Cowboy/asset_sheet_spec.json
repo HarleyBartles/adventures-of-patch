@@ -1,0 +1,37 @@
+{
+  "title": "Patch Cowboy Role Kit",
+  "asset_type": "Character / Patch costume variant",
+  "status": "provisional_asset",
+  "asset_version": "v1",
+  "template_version": "v4",
+  "template": "template_final_asset_sheet_blank_v4.png",
+  "production": "deterministic Pillow compile; no image generation used for final sheet",
+  "fit_policy": "contain/no-crop for hero and all alternate view slots",
+  "source_images": [
+    "source_hero_patch_cowboy_waistcoat.png",
+    "source_alt_01_side_view.png",
+    "source_alt_02_back_view.png",
+    "source_alt_03_lasso_pose.png",
+    "source_alt_04_close_view.png",
+    "source_alt_05_details.png",
+    "source_alt_06_props.png"
+  ],
+  "captions": [
+    "HERO IMAGE",
+    "SIDE VIEW",
+    "BACK VIEW",
+    "LASSO POSE",
+    "CLOSE VIEW",
+    "DETAILS",
+    "PROPS"
+  ],
+  "guidance_text_style": "dark solid text",
+  "guidance": [
+    "Keep Patch recognisable: teal hoodie, hood antennae, off-white face panel, black oval eyes and black crossbody bag with > mark.",
+    "Cowboy role reads through brown hat, leather waistcoat over the hoodie, boots, lasso and sheriff-star prop language.",
+    "Do not replace the hoodie with western clothing; the waistcoat sits over it and preserves the Patch silhouette.",
+    "Use side, back, action, close, detail and prop views as reference anchors for later scene generation.",
+    "Preferred presentation is clean white-background source art with readable full-body and detail views."
+  ],
+  "qa_note": "Source images were explicitly approved by Harley in-chat before deterministic compile."
+}
