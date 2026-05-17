@@ -1,0 +1,317 @@
+name: hero-patch pages proof
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Stage Pages proof site
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import mimetypes
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from shutil import copy2, rmtree
+
+          repo = Path(os.environ["GITHUB_WORKSPACE"])
+          source_root = repo / "assets" / "hero-patch"
+          sha = os.environ["GITHUB_SHA"]
+          site_root = repo / "site"
+          published_root = f"visual-inspection/{sha}/"
+          public_owner = os.environ["GITHUB_REPOSITORY_OWNER"].lower()
+          public_repo = os.environ["GITHUB_REPOSITORY"].split("/", 1)[1]
+          pages_base_url = f"https://{public_owner}.github.io/{public_repo}/"
+          published_base_url = pages_base_url + published_root
+          published_dir = site_root / "visual-inspection" / sha
+          originals_dir = published_dir / "originals" / "assets" / "hero-patch"
+          manifest_json_path = published_dir / "manifest.json"
+          manifest_md_path = published_dir / "manifest.md"
+          index_path = published_dir / "index.html"
+
+          if site_root.exists():
+              rmtree(site_root)
+          originals_dir.mkdir(parents=True, exist_ok=True)
+
+          included_direct_files = [
+              "asset_class__hero__patch_approved_style.png",
+              "asset__hero__patch_antipatterns.png",
+              "asset__hero__patch_interactions.png",
+              "asset__hero__patch_style_antipatterns__v1.0.png",
+              "asset__hero__patch_style_antipatterns__v1.1.png",
+              "asset__hero__patch_style_bible.md",
+          ]
+
+          included_files = []
+          skipped_files = []
+
+          for filename in included_direct_files:
+              source_path = source_root / filename
+              if not source_path.is_file():
+                  skipped_files.append({"repo_path": f"assets/hero-patch/{filename}", "reason": "missing at workflow runtime"})
+                  continue
+              dest_path = originals_dir / filename
+              copy2(source_path, dest_path)
+              data = dest_path.read_bytes()
+              sha256 = hashlib.sha256(data).hexdigest()
+              mime, _ = mimetypes.guess_type(dest_path.name)
+              if dest_path.suffix.lower() == ".png":
+                  file_type = mime or "image/png"
+              elif dest_path.suffix.lower() == ".md":
+                  file_type = mime or "text/markdown"
+              else:
+                  file_type = mime or "application/octet-stream"
+              published_path = f"{published_root}originals/assets/hero-patch/{filename}"
+              included_files.append(
+                  {
+                      "repo_path": f"assets/hero-patch/{filename}",
+                      "published_path": published_path,
+                      "published_url": published_base_url + f"originals/assets/hero-patch/{filename}",
+                      "size_bytes": len(data),
+                      "sha256": sha256,
+                      "file_type": file_type,
+                  }
+              )
+
+          generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+          manifest = {
+              "package_purpose": "github_pages_visual_inspection_proof",
+              "issue_number": 43,
+              "source_root": "assets/hero-patch",
+              "head_sha": sha,
+              "generated_at": generated_at,
+              "pages_base_url": pages_base_url,
+              "published_root": published_root,
+              "manifest_path": "manifest.json",
+              "index_path": "index.html",
+              "included_files": included_files,
+              "consumption_note": "Open the Pages index or manifest URL, then open PNG URLs under originals/assets/hero-patch/ for visual inspection.",
+              "skipped_files": skipped_files,
+          }
+          manifest_json_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+
+          manifest_md_lines = [
+              "# Hero-patch Pages visual inspection proof",
+              "",
+              f"- Issue: #43",
+              f"- Head SHA: `{sha}`",
+              f"- Source root: `assets/hero-patch`",
+              f"- Pages base URL: `{pages_base_url}`",
+              f"- Published root: `{published_root}`",
+              f"- Manifest URL: `{published_base_url}manifest.json`",
+              f"- Index URL: `{published_base_url}index.html`",
+              "- Consumption note: Open the Pages index or manifest URL, then open PNG URLs under `originals/assets/hero-patch/` for visual inspection.",
+              "",
+              "## Included files",
+              "",
+          ]
+          for item in included_files:
+              manifest_md_lines.append(f"- `{item['repo_path']}` -> `{item['published_path']}` ({item['size_bytes']} bytes, {item['sha256']})")
+          if skipped_files:
+              manifest_md_lines.extend(["", "## Skipped files", ""])
+              for item in skipped_files:
+                  manifest_md_lines.append(f"- `{item['repo_path']}` skipped: {item['reason']}")
+          manifest_md_path.write_text("\n".join(manifest_md_lines) + "\n", encoding="utf-8")
+
+          rows = []
+          for item in included_files:
+              relative = item["published_path"].removeprefix(published_root)
+              if item["file_type"] == "image/png":
+                  rows.append(
+                      f"""
+                      <article class=\"card\">
+                        <h2>{item['repo_path']}</h2>
+                        <p><a href=\"{relative}\">{relative}</a></p>
+                        <img src=\"{relative}\" alt=\"{item['repo_path']}\" loading=\"lazy\" />
+                        <dl>
+                          <div><dt>Bytes</dt><dd>{item['size_bytes']}</dd></div>
+                          <div><dt>SHA256</dt><dd>{item['sha256']}</dd></div>
+                        </dl>
+                      </article>
+                      """.strip()
+                  )
+              else:
+                  rows.append(
+                      f"""
+                      <article class=\"card text-card\">
+                        <h2>{item['repo_path']}</h2>
+                        <p><a href=\"{relative}\">{relative}</a></p>
+                        <dl>
+                          <div><dt>Bytes</dt><dd>{item['size_bytes']}</dd></div>
+                          <div><dt>SHA256</dt><dd>{item['sha256']}</dd></div>
+                        </dl>
+                      </article>
+                      """.strip()
+                  )
+
+          index_html = f"""<!doctype html>
+          <html lang=\"en\">
+          <head>
+            <meta charset=\"utf-8\" />
+            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+            <title>Hero-patch Pages visual inspection proof</title>
+            <style>
+              :root {{
+                color-scheme: light;
+                --bg: #f7f4ef;
+                --panel: #ffffff;
+                --ink: #1f2a30;
+                --muted: #5d6a72;
+                --line: #d8ddd9;
+                --accent: #146d67;
+              }}
+              * {{ box-sizing: border-box; }}
+              body {{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background: linear-gradient(180deg, #fcfbf8 0%, var(--bg) 100%);
+                color: var(--ink);
+              }}
+              main {{
+                max-width: 1380px;
+                margin: 0 auto;
+                padding: 28px 20px 40px;
+              }}
+              header, .meta, .card {{
+                background: var(--panel);
+                border: 1px solid var(--line);
+                border-radius: 18px;
+                box-shadow: 0 12px 28px rgba(16, 24, 40, 0.06);
+              }}
+              header {{ padding: 22px 24px; margin-bottom: 18px; }}
+              h1 {{ margin: 0 0 10px; font-size: clamp(1.6rem, 2vw, 2.2rem); }}
+              p {{ line-height: 1.55; }}
+              .meta {{ padding: 18px 22px; margin-bottom: 18px; }}
+              .grid {{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 16px;
+              }}
+              .card {{ padding: 16px; }}
+              .card img {{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin-top: 12px;
+                border-radius: 12px;
+                border: 1px solid var(--line);
+                background: #fff;
+              }}
+              .card h2 {{ margin: 0 0 8px; font-size: 1rem; }}
+              .text-card img {{ display: none; }}
+              dl {{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+                margin: 12px 0 0;
+              }}
+              dl div {{ padding-top: 8px; border-top: 1px solid var(--line); }}
+              dt {{ font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }}
+              dd {{ margin: 2px 0 0; word-break: break-word; }}
+              .small {{ color: var(--muted); }}
+              .pill {{
+                display: inline-block;
+                padding: 6px 10px;
+                border-radius: 999px;
+                background: #def1ee;
+                color: #0f5f59;
+                font-weight: 700;
+                margin-bottom: 12px;
+              }}
+            </style>
+          </head>
+          <body>
+            <main>
+              <header>
+                <div class=\"pill\">GitHub Pages visual inspection proof</div>
+                <h1>Issue #43 hero-patch Pages bridge</h1>
+                <p>This page is commit-scoped and publishes repo-sourced hero-patch files under <code>{published_root}</code>. Open the manifest link and then open the PNG links below for direct browser visual inspection.</p>
+              </header>
+              <section class=\"meta\">
+                <p><strong>Issue:</strong> #43</p>
+                <p><strong>Head SHA:</strong> <code>{sha}</code></p>
+                <p><strong>Source root:</strong> <code>assets/hero-patch</code></p>
+                <p><strong>Pages base URL:</strong> <code>{pages_base_url}</code></p>
+                <p><strong>Published root:</strong> <code>{published_root}</code></p>
+                <p><strong>Manifest:</strong> <a href=\"manifest.json\">manifest.json</a></p>
+                <p><strong>Manifest MD:</strong> <a href=\"manifest.md\">manifest.md</a></p>
+              </section>
+              <section>
+                <h2>Published files</h2>
+                <div class=\"grid\">
+                  {''.join(rows)}
+                </div>
+              </section>
+            </main>
+          </body>
+          </html>
+          """
+          index_path.write_text(index_html, encoding="utf-8")
+
+          summary_path = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          summary_lines = [
+              "# Hero-patch Pages proof",
+              "",
+              f"- Pages base URL: `{pages_base_url}`",
+              f"- Published root: `{published_root}`",
+              f"- Index URL: `{published_base_url}index.html`",
+              f"- Manifest URL: `{published_base_url}manifest.json`",
+              f"- Included files: {len(included_files)}",
+              "",
+              "## Included files",
+          ]
+          for item in included_files:
+              summary_lines.append(f"- `{item['repo_path']}` -> `{item['published_path']}`")
+          if skipped_files:
+              summary_lines.extend(["", "## Skipped files"])
+              for item in skipped_files:
+                  summary_lines.append(f"- `{item['repo_path']}` skipped: {item['reason']}")
+          summary_path.write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
+          PY
+
+          test -f site/visual-inspection/"$GITHUB_SHA"/manifest.json
+          test -f site/visual-inspection/"$GITHUB_SHA"/manifest.md
+          test -f site/visual-inspection/"$GITHUB_SHA"/index.html
+          test -f site/visual-inspection/"$GITHUB_SHA"/originals/assets/hero-patch/asset_class__hero__patch_approved_style.png
+          test -f site/visual-inspection/"$GITHUB_SHA"/originals/assets/hero-patch/asset__hero__patch_antipatterns.png
+          test -f site/visual-inspection/"$GITHUB_SHA"/originals/assets/hero-patch/asset__hero__patch_interactions.png
+          test -f site/visual-inspection/"$GITHUB_SHA"/originals/assets/hero-patch/asset__hero__patch_style_antipatterns__v1.0.png
+          test -f site/visual-inspection/"$GITHUB_SHA"/originals/assets/hero-patch/asset__hero__patch_style_antipatterns__v1.1.png
+          test -f site/visual-inspection/"$GITHUB_SHA"/originals/assets/hero-patch/asset__hero__patch_style_bible.md
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
