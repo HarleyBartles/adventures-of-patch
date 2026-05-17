@@ -66,6 +66,31 @@
           "type": "string",
           "pattern": "^[0-9a-f]{40}$"
         },
+        "asset_family_root": {
+          "type": "string",
+          "pattern": "^assets/.+/$"
+        },
+        "deck_group": {
+          "type": "string"
+        },
+        "deck_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "deck_slide_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "slide_index": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "view_mode": {
+          "type": "string",
+          "enum": ["single_image_slide"]
+        },
         "presentation_id": {
           "type": "string",
           "minLength": 1
