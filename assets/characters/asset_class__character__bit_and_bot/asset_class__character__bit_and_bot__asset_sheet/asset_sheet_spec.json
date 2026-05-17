@@ -1,0 +1,45 @@
+{
+  "asset_title": "BIT & BOT",
+  "asset_type": "PATCH MISSION CONTROL SUPPORT BOTS",
+  "status": "QA-ACCEPTED SOURCE SET",
+  "version": "v1",
+  "source_qa": "7 approved uploaded PNGs; deterministic Pillow/PIL compile; no image generation or visual editing.",
+  "template": "/mnt/data/template_final_asset_sheet_blank_v4.png",
+  "rendered_asset_sheet": "asset_sheet__character__bit_and_bot_v1.png",
+  "source_images": [
+    "source_hero_bit_and_bot.png",
+    "source_bit_profile.png",
+    "source_bit_action.png",
+    "source_bit_expressions.png",
+    "source_bot_profile.png",
+    "source_bot_action.png",
+    "source_bot_expressions.png"
+  ],
+  "layout": {
+    "hero_area": "source_hero_bit_and_bot.png",
+    "alternate_views_left": [
+      "source_bit_profile.png",
+      "source_bit_action.png",
+      "source_bit_expressions.png"
+    ],
+    "alternate_views_right": [
+      "source_bot_profile.png",
+      "source_bot_action.png",
+      "source_bot_expressions.png"
+    ],
+    "fit_mode": "near-white trim then contain-fit into template slots, no distortion"
+  },
+  "qa_checks": {
+    "hero_image_in_main_area": true,
+    "bit_alt_views_grouped_left": true,
+    "bot_alt_views_grouped_right": true,
+    "no_image_generation_used": true,
+    "template_hard_text_preserved": [
+      "ASSET SHEET",
+      "GUIDANCE",
+      "ALTERNATE VIEWS"
+    ],
+    "package_contains_rendered_sheet_sources_and_sidecar": true,
+    "top_field_text_fits_without_overlap": true
+  }
+}
