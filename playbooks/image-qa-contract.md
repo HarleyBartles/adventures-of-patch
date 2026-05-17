@@ -4,6 +4,8 @@ This playbook defines the project-level image QA contract for Adventures of Patc
 
 Use this playbook whenever generated or edited images may become preproduction references, body-slide art, anti-pattern references, package evidence, or reusable assets.
 
+Asset-sheet QA must also apply `playbooks/asset-sheet-production-contract.md`. Source images and final compiled sheets are different QA moments: generated source images must be accepted before compile, and the final rendered sheet must then be checked against the approved template/package contract.
+
 ## Canonical image QA authority
 
 `adventures-image-qa` is the single authoritative image QA skill.
@@ -24,7 +26,9 @@ Never trust image generation.
 
 Every generated or edited image is a candidate until `adventures-image-qa` accepts it in the correct lane.
 
-A successful generation call proves only that an image was produced. It does not prove Patch canon, asset usefulness, slide readiness, or package validity.
+A successful generation call proves only that an image was produced. It does not prove Patch canon, asset usefulness, slide readiness, asset-sheet template compliance, or package validity.
+
+For asset sheets, do not treat an attractive one-shot generated full-sheet image as satisfying the final asset-sheet deliverable. The accepted path is QA-accepted source images followed by deterministic compile into the approved template and final package review.
 
 ## Semi-autonomous generation / QA loop
 
@@ -78,6 +82,8 @@ Accepted output: `accepted_preproduction_reference`.
 
 This lane makes the image usable as a reference for later generation. It does not make the image body-slide art.
 
+For Patch-bearing asset sheets, apply the source-image and compiled-sheet checks from `playbooks/asset-sheet-production-contract.md` after Patch canon and non-Patch distinction checks.
+
 ### non_patch_preproduction_reference
 
 Use for preproduction references where Patch does not appear.
@@ -85,6 +91,8 @@ Use for preproduction references where Patch does not appear.
 Accepted output: `accepted_preproduction_reference`.
 
 This lane still checks style, lane fit, function mapping, text discipline, physical logic, and canon confusion.
+
+For non-Patch asset sheets, apply the same source-image, template compile, package sidecar, and character hero-shot checks when the sheet is a character sheet.
 
 ### asset_sheet_lane_compliance
 
@@ -101,6 +109,10 @@ Use when the image is intended as an asset sheet. Check whether it matches its d
 - anti-pattern or style sheet.
 
 Reject omnibus posters unless the requested lane explicitly calls for one.
+
+For final compiled asset sheets, this lane must verify compliance with `playbooks/asset-sheet-production-contract.md`: approved blank template layout, rendered asset-sheet PNG, all used source images previously QA-accepted, sidecar/spec present, shadow placeholders covered where needed, guidance text contained in the right panel, alternate views in the bottom rail, unused alternate slots left empty rather than squeezed, and no durable inclusion of HTML/scratch/helper intermediates unless explicitly promoted.
+
+For character asset sheets, the main/hero source image must be a full-body character shot on a plain white background. A compiled character sheet lacking that source image is not accepted.
 
 ### anti_pattern_reference
 
@@ -160,13 +172,17 @@ Generated asset sheets are candidates, not accepted assets.
 Preproduction assets count toward `asset_ready` only when:
 
 - the correct lane has been selected;
-- `adventures-image-qa` has accepted the generated candidate in that lane;
+- `adventures-image-qa` has accepted the generated source images in the correct lane;
 - Patch-bearing candidates have passed Patch canon and non-Patch distinction checks;
-- the image is useful as a future generation reference;
+- the source images are useful as future generation references;
+- final asset sheets have been deterministically compiled into the approved template when a rendered sheet is being delivered;
+- final compiled sheets pass lane/layout compliance and package-shape checks;
+- the package includes the rendered PNG, every approved source image used, and a markdown or JSON sidecar/spec;
+- character sheets include a full-body plain-white hero/main source image;
 - the asset is recorded as provisional, accepted, or repo-tracked according to its evidence state;
 - any required Harley approval threshold for the stage has been met.
 
-Rejected, weak, unreviewed, or generated-only asset sheets must not make an issue asset-ready.
+Rejected, weak, unreviewed, generated-only asset sheets, one-shot generated full-sheet layouts, or template-noncompliant compiled sheets must not make an issue asset-ready.
 
 ## Body-slide image readiness
 
@@ -191,6 +207,8 @@ Every image QA decision should record enough working-loop state for the caller t
 - exact failures when not accepted;
 - regeneration or edit instruction;
 - whether the result may count toward `asset_ready`, scene inventory readiness, or neither.
+
+For asset-sheet source-image QA, record whether the image is accepted as a source image/view only. For final compiled-sheet QA, record the rendered PNG path/name, source-image filenames, sidecar/spec status, template compliance, character hero-shot status when applicable, and skipped/omitted candidates if relevant.
 
 During an active loop, this output is for the caller, not an automatic GitHub issue comment. If the repair target is clear and well defined, the caller may continue to one edit/regeneration, then stop after the next generated candidate.
 
@@ -221,6 +239,9 @@ Mark the image Red or blocked when:
 - Patch is replaced by a human boy, generic robot, bot mascot, or other wrong identity;
 - Patch is multiplied or support agents are Patch clones;
 - the image uses the wrong lane and becomes an omnibus poster instead of the requested sheet;
+- an asset sheet uses generated full-sheet layout as a substitute for the approved deterministic template/package path;
+- a final compiled asset sheet uses unaccepted source images, lacks the rendered PNG/source images/sidecar package basis, or violates the approved template layout;
+- a character sheet lacks a full-body plain-white hero/main source image;
 - in-world text is misleading, overlong, or contaminates canon;
 - the image accidentally canonises legacy or rejected material;
 - the image is too cluttered or unclear to function as a reference or slide image;
