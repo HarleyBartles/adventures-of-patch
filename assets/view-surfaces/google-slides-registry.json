@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "registry_purpose": "durable_gpt_view_surfaces_for_repo_canonical_assets",
+  "canonicality_note": "Repo image files remain canonical source truth. Google Slides entries are derived GPT view surfaces for visual inspection.",
+  "entries": {}
+}
