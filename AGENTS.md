@@ -42,7 +42,7 @@ These are local bindings for one named project agent. They do not redefine Will'
 
 The default workspace route is `Will -> Patch`. There is no Chris-like intermediary and no separate Adventures asset, deck, image, canon, receipt, or publication executor unless a future issue creates one for a real boundary.
 
-Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/hero-patch/`.
+Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/hero-patch/`. Repo-canonical image inspection defaults to `assets/view-surfaces/google-slides-registry.json`; source zips stay in the package/import/integrity lane.
 
 ## Source-of-truth rules
 
@@ -101,7 +101,7 @@ The short version:
 4. deck planning;
 5. image planning;
 6. visual intent and Patch preflight;
-7. repo/project-source Patch reference inspection;
+7. repo/view-surface Patch reference inspection;
 8. image generation or explicit blocked status;
 9. PPTX build;
 10. presenter sidecar;

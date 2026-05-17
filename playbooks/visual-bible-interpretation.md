@@ -8,7 +8,7 @@ Use this playbook whenever a visual-preproduction, image-preflight, or image-QA 
 
 Visual bibles are source doctrine. Skills must not reconstruct visual canon from memory.
 
-A visual-bible interpretation step should discover the relevant bible through the repo index mesh, inspect matching project-source visuals when needed, and produce grounded prompt/QA blocks. It must not rely on hard-coded second-level paths, fixed source-zip names, versioned filenames, or bundled copies of visual canon.
+A visual-bible interpretation step should discover the relevant bible through the repo index mesh, inspect the Slides registry view surface when pixels are needed, and produce grounded prompt/QA blocks. It must not rely on hard-coded second-level paths, fixed source-zip names, versioned filenames, or bundled copies of visual canon.
 
 ## Bible-first preproduction
 
@@ -37,9 +37,10 @@ For every visual-bible interpretation task:
 1. Start from the source issue, image task, candidate, or visual-preproduction lane.
 2. Start repo discovery from stable first-level indexes, normally `assets/INDEX.md`.
 3. Follow the asset index mesh to discover the relevant asset family and bible/style guide.
-4. Follow the source-package index to discover current matching source/project-source packages when visual backing is needed.
-5. Enumerate relevant package files from the package index, manifest, or directory listing.
-6. Consider matching contact sheets, style guides, anti-pattern sheets, interaction sheets, and asset sheets.
+4. Read `assets/view-surfaces/google-slides-registry.json` for the current visual backing route when a rendered image is needed.
+5. Follow the source-package index only when package, transfer, or integrity fallback inspection is needed.
+6. Enumerate relevant package files from the package index, manifest, or directory listing when using a fallback package.
+7. Consider matching contact sheets, style guides, anti-pattern sheets, interaction sheets, and asset sheets.
 7. Distinguish repo text evidence, visual evidence, inference, and uncertainty.
 
 If the relevant mature bible cannot be located through the index mesh but the task is creating a new asset class, create a minimal provisional bible as a preproduction artifact instead of substituting stale path memory. If the task requires an existing canonical bible and it cannot be found, block or mark reduced confidence according to the owning playbook.

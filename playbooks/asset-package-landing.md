@@ -1,6 +1,6 @@
 # Asset package landing playbook
 
-Use this project playbook when approved visual assets, markdown sidecars, receipt packages, or source zips need to be landed in `HarleyBartles/adventures-of-patch`.
+Use this project playbook when approved visual assets, markdown sidecars, receipt packages, or source zips need to be landed in `HarleyBartles/adventures-of-patch`. Source zips are package/import/receipt artifacts, not the default GPT visual inspection route.
 
 Patch may execute this workflow through `Patch / execution`, but the project workflow belongs in root `/playbooks/`. Patch-specific executable helpers belong under `Patch/SKILLS/`.
 

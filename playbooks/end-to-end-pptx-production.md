@@ -140,9 +140,9 @@ Minimum ledger fields:
 
 Before any mode switch, re-check the ledger. If the ledger is lost or contradicted, stop and reconstruct it from repo evidence before continuing. Do not fall back to uploaded zips, receipts, memory, old assets, or substitute visuals while the ledger is missing.
 
-Project-source zips may be used only after the ledger records repo proof, the current repo-tracked source package name from `assets/source-zips/INDEX.md`, and the specific reason for local inspection. Identify the current zip package in the repo index, then inspect the project-source zip with the matching filename when visual/package inspection is needed. Do not hard-code legacy project-source filenames.
+Project-source zips may be used only after the ledger records repo proof, the current repo-tracked source package name from `assets/source-zips/INDEX.md`, and the specific non-visual reason for local inspection. Identify the current zip package in the repo index only when package, import, or integrity work actually needs it; do not treat the matching zip as the default visual truth for repo-canonical images.
 
-Patch visual source packages are never a substitute for issue, playbook, deck, image generation, image QA, or repo truth. They are inspection mirrors for visual references only when repo text and paths are already confirmed and the current GitHub route cannot materialize the required PNGs directly.
+Patch visual source packages are never a substitute for issue, playbook, deck, image generation, image QA, or repo truth. They are inspection mirrors for package/integrity fallback only when repo text and paths are already confirmed and the current Slides route is blocked or explicitly unavailable.
 
 A production artifact is invalid if the ledger is absent, contradicts claimed status, loses repo-green state during a mode switch, or shows a proof/full run without the accepted scene-image inventory required for PPTX build.
 
@@ -161,7 +161,7 @@ Default behaviour:
 5. Produce the issue brief.
 6. Establish or verify the deck frame/analogy/world before deck planning. If no green frame exists, resolve the frame interactively with Harley and record the result on the issue.
 7. Produce deck plan, image plan, and Patch/image readiness assessment in order.
-8. Invoke image generation only at the image-generation stage when the image plan is complete, Patch references have been inspected through repo text plus any required repo-indexed project-source visual package, and no blocker exists.
+8. Invoke image generation only at the image-generation stage when the image plan is complete, Patch references have been inspected through repo text plus any required repo-indexed Slides view surface, and no blocker exists.
 9. Run post-generation image QA on outputs. Weak/non-compliant images go back for edit or full regeneration.
 10. Repeat the image generation -> image QA loop until every body-slide image is accepted, or stop Red/blocked.
 11. Build PPTX only after the accepted generated scene-image inventory is complete for every body slide.
@@ -268,9 +268,10 @@ For Patch visual work, inspect repo text references and image-capable visual ref
 3. repo-indexed Patch contact sheet;
 4. repo-indexed Patch anti-pattern sheet;
 5. repo-indexed Patch interaction guide;
-6. `assets/source-zips/INDEX.md` to identify the current repo-tracked Patch source package when project-source visual inspection is needed.
+6. `assets/view-surfaces/INDEX.md` and `assets/view-surfaces/google-slides-registry.json` to identify the current repo-tracked Patch view surface when rendered visual inspection is needed.
+7. `assets/source-zips/INDEX.md` only when package, import, or integrity fallback inspection is explicitly needed.
 
-Use the matching project-source Patch package as a visual inspection aid only when the ledger records that GitHub confirmed the repo paths but cannot materialize PNGs for visual inspection. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
+Use the project-source Patch package only as a package or integrity aid when the ledger records that GitHub confirmed the repo paths but the Slides route is blocked. If repo metadata/text and project-source files disagree, report the discrepancy and do not silently prefer either source.
 
 Patch prompts and image QA must enforce current repo-indexed eye canon unless superseded by a newer repo-indexed style guide: black oval eyes with small white shine highlights only. Reject white sclera, visible irises, anime eyes, human eyes, doll eyes, coloured pupils, large expressive mascot eyes, or alternate eye styles.
 
@@ -295,7 +296,7 @@ Use image generation only after:
 - deck plan is complete;
 - image plan is complete;
 - visual intent has been established;
-- Patch preflight has inspected repo Patch references and any required matching repo-indexed project-source visual package;
+- Patch preflight has inspected repo Patch references and any required repo-indexed Slides view surface;
 - prompt pack satisfies Patch style requirements, including current repo-indexed eye canon.
 
 At the image-generation stage, invoke the image-generation route, report exact route failure, or record exact route absence after discovery. Do not infer unavailability.
@@ -416,7 +417,7 @@ Required work:
 
 - confirm image generation/editing is the current playbook stage;
 - re-check ledger before local zip extraction or image tool use;
-- inspect repo Patch references and matching repo-indexed project-source package when needed;
+- inspect repo Patch references and the repo-indexed Slides view surface when needed;
 - incorporate style guide, contact sheet, anti-pattern sheet, and interaction guide into prompts when available;
 - record image-generation route status.
 
@@ -599,7 +600,7 @@ Prefer the smallest honest repair:
 
 - If GitHub access appears unavailable, identify all GitHub-capable routes, preserve any route that already succeeded, and test direct repo metadata/file/issue reads before claiming a repo blocker.
 - If repo access was green earlier but appears absent after a mode switch, stop and reconstruct the ledger.
-- If project-source zip inspection is needed, read `assets/source-zips/INDEX.md`, record the repo-indexed package name, and inspect the matching project-source filename.
+- If project-source zip inspection is needed, read `assets/source-zips/INDEX.md`, record the repo-indexed package name, and inspect the project-source filename for package, import, or integrity reasons only.
 - If the issue lacks a strong frame, resolve and record the frame before deck planning.
 - If deck plan violates doctrine, repair the plan before image work.
 - If image generation has not been tested at the image stage, test/invoke the image route or record exact absence.

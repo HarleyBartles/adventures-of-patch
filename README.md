@@ -24,7 +24,8 @@ Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 
 - `Patch/` - Patch actor governance, routing, contracts, and Patch-owned executable capabilities.
 - `playbooks/` - first-class project/domain playbooks for Adventures workflows.
-- `assets/source-zips/` - canonical uploaded asset packages and reusable visual source bundles.
+- `assets/view-surfaces/` - durable Google Slides view-surface registry for repo-canonical image inspection.
+- `assets/source-zips/` - canonical uploaded asset packages and reusable source/import bundles; not the default visual-inspection route.
 - `assets/hero-patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
 - `assets/receipts/` - receipt packages and evidence bundles derived from decks or asset work.
 - `docs/adventures/` - Patch adventure concepts and deck narrative frames.
@@ -35,5 +36,7 @@ Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - `scratch/` - local working area, ignored by git except for `.gitkeep`.
 
 ## Core rule
+
+Repo-canonical image inspection should default to the Slides registry view-surface route documented under `assets/view-surfaces/`. Source zips remain useful for package/import/receipt/integrity work, not as the ordinary source of visual truth.
 
 Patch is the through-line. Existing non-Patch assets are optional. New presentation-specific asset generation is expected and first-class. Reusable results should later be canonicalised into asset sheets, style guides, contact sheets, anti-pattern sheets, interaction guides, environment sheets, or receipt packages.

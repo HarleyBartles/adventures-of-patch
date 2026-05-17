@@ -11,6 +11,8 @@ This is a repo-resident Patch skill surface, not a ChatGPT-native installed skil
 
 Use when Patch is bound to `Patch / execution` and receives an existing asset directory under `assets/` that needs to be discovered, indexed, flat-zipped, added to `assets/source-zips/`, and published.
 
+This skill handles source/package publishing only; repo-canonical image inspection should default to `assets/view-surfaces/google-slides-registry.json`.
+
 ## Required inputs
 
 - Target asset directory path under `Adventures-of-Patch/assets/`.

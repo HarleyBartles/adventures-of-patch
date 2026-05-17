@@ -83,6 +83,8 @@ For asset or source-zip work, returns must record:
 - relevant asset directory `INDEX.md` update status;
 - any discrepancy between repo text and package contents.
 
+For visual-inspection doctrine work, returns should also note whether the Slides registry route or a package fallback was used.
+
 For asset sheet package work, returns must also record:
 
 - rendered asset-sheet PNG path;

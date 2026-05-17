@@ -19,7 +19,7 @@ The creator writes or updates the bible. The interpreter reads a repo-indexed or
 
 ## Source discipline
 
-Start from repo truth. For asset-sensitive work, begin at `assets/INDEX.md` and follow the index mesh to discover existing asset-family docs, bibles, style guides, source zips, receipts, and accepted references.
+Start from repo truth. For asset-sensitive work, begin at `assets/INDEX.md` and follow the index mesh to discover existing asset-family docs, bibles, style guides, source zips, receipts, accepted references, and view-surface registry entries.
 
 Use accepted generated images and Harley-approved uploaded images as visual evidence only for the scoped bible task. Do not treat unaccepted candidates, project-source zips, or session handoff notes as canon unless repo evidence or Harley explicitly scopes them as evidence.
 

@@ -1,8 +1,8 @@
 # assets/view-surfaces index
 
-Durable GPT view-surface registry for repo-canonical image assets.
+Durable default GPT view-surface registry for repo-canonical image assets.
 
-This directory exists so GPT can find a durable visual inspection surface for image files that live canonically in the repo. It is a machine-facing support surface, not a replacement for repo assets.
+This directory exists so GPT can find the default visual inspection surface for image files that live canonically in the repo. It is a machine-facing support surface, not a replacement for repo assets.
 
 ## Files in this directory
 

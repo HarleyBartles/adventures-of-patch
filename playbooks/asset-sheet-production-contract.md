@@ -20,7 +20,7 @@ Do not ask image generation to create the final sheet layout. Image generation c
 
 ## Approved template rule
 
-Use the current approved blank asset sheet template as the final layout for every asset sheet. The approved template is the one Harley placed as a first-class project-source/library file after approving `template_final_asset_sheet_blank_v3.png`.
+Use the current approved blank asset sheet template as the final layout for every asset sheet. The approved template is the one Harley placed as a first-class project-source/library template package after approving `template_final_asset_sheet_blank_v3.png`. Project sources are reserved for asset-sheet template package(s) only for now unless Harley changes that policy.
 
 The template structure is:
 
@@ -77,6 +77,6 @@ The final canonical artifact is the rendered PNG sheet. HTML files, scratch mani
 
 ## Landing posture
 
-When landing in the repo, place the rendered sheet and approved source images in the relevant asset directory. Place the zip package in `assets/source-zips/` only when the package is intended as a repo-tracked source/import package. Update the relevant asset directory index and `assets/source-zips/INDEX.md` when applicable.
+When landing in the repo, place the rendered sheet and approved source images in the relevant asset directory. Place the zip package in `assets/source-zips/` only when the package is intended as a repo-tracked source/import package or integrity receipt. Update the relevant asset directory index and `assets/source-zips/INDEX.md` when applicable.
 
 Do not call the sheet canonical solely because the zip exists. Canonical status requires repo/source-package/index evidence and any required Harley approval threshold.

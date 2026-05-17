@@ -63,6 +63,6 @@ Patch the actor and Patch the visual protagonist are related by project identity
 - Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - Project/domain playbooks live under root `playbooks/`.
 - Visual Patch canon lives under `assets/hero-patch/`.
-- Asset/source package discovery lives under `assets/source-zips/`.
+- Asset/source package discovery lives under `assets/source-zips/`. Repo-canonical image inspection lives under `assets/view-surfaces/`.
 
 Do not move visual canon into this actor surface. Do not use actor governance as a substitute for Patch image preflight.

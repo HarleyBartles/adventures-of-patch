@@ -40,18 +40,18 @@ For asset-sensitive work:
 
 1. start at the first-level `assets` index;
 2. follow the index mesh to identify relevant asset families;
-3. identify matching source/import packages from the current source-package index when visual package inspection is needed;
+3. identify matching source/import packages from the current source-package index when package or integrity fallback inspection is needed;
 4. enumerate each relevant package from its own index, manifest, or directory listing;
 5. inspect or consider every task-relevant style, contact, anti-pattern, interaction, guide, character, environment, prop, and continuity-object file;
 6. record skipped files with reasons.
 
-Do not hard-code second-level asset-family paths, legacy source-zip names, or a fixed count of visual sheets. Source packages are mirrors/source evidence, not independent canon; use the repo index first, then the matching package for visual inspection when needed.
+Do not hard-code second-level asset-family paths, legacy source-zip names, or a fixed count of visual sheets. Source packages are mirrors/source evidence, not independent canon; use the repo index first, then the Slides registry for visual inspection when pixels are needed, and use source packages only for package/integrity fallback when the Slides route is blocked.
 
 ## Mandatory style-system inspection
 
 Style-system inspection is mandatory for visual preproduction that will generate or edit Adventures of Patch images, especially Patch-bearing work.
 
-Locate the current style-system asset family and matching source package through the asset/source-package index mesh. Do not encode or depend on a particular style zip filename. Whatever the current style-system package is called, it must be discovered, enumerated, and considered before generation is authorized.
+Locate the current style-system asset family through the asset index mesh and inspect the Slides registry for pixel-backed references when needed. Source package discovery remains for package/integrity fallback, not as the default visual truth. Do not encode or depend on a particular style zip filename. Whatever the current style-system package is called, it must be discovered, enumerated, and considered before generation is authorized when the fallback route is actually needed.
 
 If the current style-system package cannot be located, enumerated, or inspected when required, stop with a blocker or mark reduced confidence according to the run mode. Do not proceed as though Patch-only references are sufficient.
 

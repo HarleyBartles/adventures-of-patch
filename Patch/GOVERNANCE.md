@@ -70,9 +70,9 @@ The repo is canonical project truth.
 
 Uploaded zips, chat attachments, generated images, and local scratch files are not active canon unless committed here, indexed here, or explicitly scoped for a bounded task.
 
-Project-source packages must be discovered through repo indexes, especially `assets/source-zips/INDEX.md`, before they are used as package or visual-inspection evidence.
+Project-source packages must be discovered through repo indexes, especially `assets/source-zips/INDEX.md`, before they are used as package or integrity evidence. For repo-canonical image inspection, use `assets/view-surfaces/google-slides-registry.json` first.
 
-Patch visual work must start from `assets/hero-patch/INDEX.md` and the current repo-tracked Patch visual references.
+Patch visual work must start from `assets/hero-patch/INDEX.md`, the current repo-tracked Patch visual references, and the Slides view-surface registry when rendered pixels are needed.
 
 ## Completion rule
 

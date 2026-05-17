@@ -46,7 +46,8 @@ For a fresh agent session or repo-sensitive task:
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
 - `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
 - `assets/hero-patch/` - canonical Patch visual guidance and asset surfaces.
-- `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented.
+- `assets/view-surfaces/` - machine-readable Google Slides view-surface registry for repo-canonical image inspection.
+- `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented and are not the default image-inspection route.
 - `assets/receipts/` - committed receipt packages and evidence bundles.
 - `decks/` - deck artifacts or deck working folders when committed.
 - `skills/` - packaged or source copies of project-specific ChatGPT skills when intentionally committed.
@@ -119,7 +120,7 @@ The short version:
 4. Create a deck plan.
 5. Create an image plan and prompt pack.
 6. Run visual-intent gate and Patch image preflight.
-7. Inspect repo-tracked Patch references and available project-source Patch assets.
+7. Inspect repo-tracked Patch references and the view-surface registry for pixel-backed Patch assets.
 8. Generate images, or stop and report a blocker.
 9. Build the PPTX only after required image status is explicit.
 10. Create presenter sidecar, preferably PDF.
