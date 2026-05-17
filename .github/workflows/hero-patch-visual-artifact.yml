@@ -1,0 +1,138 @@
+name: hero-patch visual artifact proof
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-artifact:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Stage hero-patch artifact package
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import mimetypes
+          import os
+          from pathlib import Path
+          from shutil import copy2, copytree, rmtree
+          from datetime import datetime, timezone
+
+          repo = Path(os.environ["GITHUB_WORKSPACE"])
+          source_root = repo / "assets" / "hero-patch"
+          staging_root = repo / "artifact-staging"
+          originals_root = staging_root / "originals"
+          artifact_root = originals_root / "assets" / "hero-patch"
+          manifest_path = staging_root / "manifest.json"
+          manifest_md_path = staging_root / "manifest.md"
+          artifact_name = f"hero-patch-visual-inspection-{os.environ['GITHUB_SHA']}"
+
+          if staging_root.exists():
+              rmtree(staging_root)
+          artifact_root.parent.mkdir(parents=True, exist_ok=True)
+          copytree(source_root, artifact_root)
+
+          included_files = []
+          skipped_files = []
+
+          for path in sorted(artifact_root.rglob("*")):
+              if path.is_dir():
+                  continue
+              rel = path.relative_to(originals_root).as_posix()
+              artifact_path = f"originals/{rel}"
+              if rel == "assets/hero-patch/INDEX.md":
+                  repo_path = "assets/hero-patch/INDEX.md"
+              else:
+                  repo_path = rel
+              data = path.read_bytes()
+              sha256 = hashlib.sha256(data).hexdigest()
+              mime, _ = mimetypes.guess_type(path.name)
+              if path.suffix.lower() == ".png":
+                  file_type = mime or "image/png"
+              elif path.suffix.lower() == ".md":
+                  file_type = mime or "text/markdown"
+              else:
+                  file_type = mime or "application/octet-stream"
+              included_files.append(
+                  {
+                      "repo_path": repo_path,
+                      "artifact_path": artifact_path,
+                      "size_bytes": len(data),
+                      "sha256": sha256,
+                      "file_type": file_type,
+                  }
+              )
+
+          generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+          manifest = {
+              "package_purpose": "github_actions_visual_inspection_artifact_proof",
+              "issue_number": 43,
+              "source_root": "assets/hero-patch",
+              "head_sha": os.environ["GITHUB_SHA"],
+              "generated_at": generated_at,
+              "artifact_name": artifact_name,
+              "manifest_path": "manifest.json",
+              "included_files": included_files,
+              "reconstruction_or_consumption_note": "Download artifact ZIP, extract it, read manifest.json, and visually inspect PNGs under originals/assets/hero-patch/.",
+              "skipped_files": skipped_files,
+          }
+
+          manifest_json = json.dumps(manifest, indent=2) + "\n"
+          manifest_path.write_text(manifest_json, encoding="utf-8")
+          manifest_md = [
+              "# Hero-patch visual artifact proof",
+              "",
+              f"- Issue: #43",
+              f"- Head SHA: `{os.environ['GITHUB_SHA']}`",
+              f"- Source root: `assets/hero-patch`",
+              f"- Artifact name: `{artifact_name}`",
+              f"- Manifest path: `manifest.json`",
+              "- Consumption note: Download the artifact ZIP, extract it, read `manifest.json`, and visually inspect PNGs under `originals/assets/hero-patch/`.",
+              "",
+              "## Included files",
+              "",
+          ]
+          for item in included_files:
+              manifest_md.append(f"- `{item['repo_path']}` -> `{item['artifact_path']}` ({item['size_bytes']} bytes, {item['sha256']})")
+          manifest_md_path.write_text("\n".join(manifest_md) + "\n", encoding="utf-8")
+
+          summary_path = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          summary_lines = [
+              "# Hero-patch visual artifact proof",
+              "",
+              f"- Artifact name: `{artifact_name}`",
+              f"- Head SHA: `{os.environ['GITHUB_SHA']}`",
+              f"- Manifest path: `manifest.json`",
+              f"- Included files: {len(included_files)}",
+              "",
+              "## Included files",
+          ]
+          for item in included_files:
+              summary_lines.append(f"- `{item['repo_path']}` -> `{item['artifact_path']}`")
+          summary_path.write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
+          PY
+
+          test -f artifact-staging/manifest.json
+          test -f artifact-staging/manifest.md
+          test -f artifact-staging/originals/assets/hero-patch/asset_class__hero__patch_approved_style.png
+          test -f artifact-staging/originals/assets/hero-patch/asset__hero__patch_antipatterns.png
+          test -f artifact-staging/originals/assets/hero-patch/asset__hero__patch_interactions.png
+          test -f artifact-staging/originals/assets/hero-patch/asset__hero__patch_style_bible.md
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hero-patch-visual-inspection-${{ github.sha }}
+          path: artifact-staging
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 6
