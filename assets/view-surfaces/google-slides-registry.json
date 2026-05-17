@@ -2,5 +2,22 @@
   "schema_version": 1,
   "registry_purpose": "durable_gpt_view_surfaces_for_repo_canonical_assets",
   "canonicality_note": "Repo image files remain canonical source truth. Google Slides entries are derived GPT view surfaces for visual inspection.",
-  "entries": {}
+  "entries": {
+    "assets/hero-patch/asset_class__hero__patch_approved_style.png": {
+      "provider": "google-slides",
+      "status": "canonical",
+      "source_repo_path": "assets/hero-patch/asset_class__hero__patch_approved_style.png",
+      "source_commit_sha": "b64aeb96e9ff0cee240c3e87943ddcc520d3c12f",
+      "source_blob_sha": "f61d8299ba17e751a6a92f9c5ef87c782afab51c",
+      "presentation_id": "1gLGbsI8vWOUlyC-wUQCElzLzSCCm_LLdufnniudMkck",
+      "presentation_url": "https://docs.google.com/presentation/d/1gLGbsI8vWOUlyC-wUQCElzLzSCCm_LLdufnniudMkck",
+      "slide_object_id": "p",
+      "image_object_id": "SLIDES_API1279780423_0",
+      "view_presentation_title": "AOP #43 GitHub Pages PNG proof",
+      "created_by": "gpt",
+      "created_at": "2026-05-17T10:29:45Z",
+      "updated_at": "2026-05-17T10:33:00Z",
+      "notes": "Created during issue #43 investigation. Google Slides successfully inserted the GitHub Pages PNG URL and returned a 1600x900 slide thumbnail through get_slide_thumbnail. Use presentation_id plus slide_object_id as the durable view handle; do not rely on thumbnail URLs as durable."
+    }
+  }
 }
