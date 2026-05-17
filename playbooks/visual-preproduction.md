@@ -12,6 +12,10 @@ Use this playbook for Patch-in-world proofs, world or theme visual-language shee
 
 This playbook may generate or edit preproduction reference images. It must not generate deck body-slide scene images. Body-slide image generation belongs inside the production playbook after deck planning and image planning.
 
+Asset sheet deliverables produced through this playbook must also follow `playbooks/asset-sheet-production-contract.md`: generate and QA source images first, then deterministically compile the final rendered sheet into the approved blank asset-sheet template, then package the rendered PNG, all approved source images, and the sidecar/spec together.
+
+For character asset sheets, including Patch variants and non-Patch characters, the hero/main source image must be a full-body character shot on a plain white background before compilation. Alternate views may use close-ups, in-world shots, pose studies, detail shots, or other lane-appropriate support images after QA acceptance.
+
 ## Primary skill route
 
 Use `adventures-visual-preproduction` as the primary orchestration skill for this playbook.
@@ -25,6 +29,8 @@ Compose with:
 - `adventures-asset-sheet-canoniser` after QA acceptance, when sheet-format, landing, or promotion guidance is needed.
 
 `adventures-image-qa` is the single authoritative acceptance gate. Visual preproduction owns the stage, bible/preflight packet, prompt contract, and generation cadence. Image QA owns the decision.
+
+For sheet-format, final-layout, package-shape, and repo/source-package landing questions, defer to `playbooks/asset-sheet-production-contract.md` as the canonical contract.
 
 ## Asset discovery
 
@@ -65,6 +71,8 @@ Visual asset preflight converts inspected assets and current visual bible guidan
 
 The preflight packet must include source issue and frame basis, selected lane, first-level asset index inspection, relevant asset/source packages, mandatory style-system package, task-specific packages, mature bible interpretation or minimal provisional bible, positive constraints, hard negatives, generated prompt contract, Patch sub-preflight when Patch appears, selected QA lane, and known risk notes.
 
+For asset-sheet lanes, the preflight packet must also identify the intended source images/views, the deterministic compile target, the guidance/sidecar basis, and any character hero-shot requirement from `playbooks/asset-sheet-production-contract.md`.
+
 If the packet is incomplete, block generation. If the packet is complete and Harley has not explicitly forbidden generation, generate one governed candidate and then stop at the natural generation boundary for Harley review.
 
 ## Prompt-governance discipline
@@ -103,6 +111,8 @@ Update the provisional bible after accepted Pass A imagery and again after accep
 ## Dual-pass asset-class workflow
 
 Any reusable asset class must be produced through a required two-pass workflow. Do not ask image generation to create an asset class overview and all related member asset sheets in one instruction unless Harley explicitly overrides this rule for a narrow exception.
+
+Asset sheet production inside either pass is governed by `playbooks/asset-sheet-production-contract.md`. Image generation creates focused source images or views only; it does not create the final sheet layout. The final sheet must be compiled deterministically into the approved template and delivered as a package containing the rendered asset-sheet PNG, every approved source image used in it, and a markdown or JSON sidecar/spec.
 
 ### Pass A: asset class overview
 
@@ -193,6 +203,8 @@ Supported visual-preproduction lanes include Patch interaction or scale proof, w
 
 Reject or regenerate candidates that drift into omnibus posters, session-status artifacts, deck body-slide art, or multi-product asset bundles unless that lane was explicitly requested.
 
+For asset-sheet lanes, use the approved template/package contract rather than generated full-sheet art as the default final-output path.
+
 ## Asset-ready standard
 
 An issue is asset-ready only when the required visual references for its deck world have been created or verified and accepted in the correct QA lanes.
@@ -200,6 +212,8 @@ An issue is asset-ready only when the required visual references for its deck wo
 Asset-ready normally requires some subset of world/theme style or asset-class sheet, cast/character class sheet, individual recurring-character sheets, environment class sheet, location sheets, prop asset-class sheet, individual hero prop/continuity-object sheets, interaction/handoff/scale sheets, anti-pattern references, and readiness report.
 
 For any item that introduces a reusable asset class, apply the bible-first dual-pass workflow before counting the family asset-ready: minimal/current bible, Pass A accepted overview, bible update, Pass B member sheets, family-coherence QA, and bible lock or explicit provisional status.
+
+A rendered asset sheet counts only after the approved source images have passed image QA, the final sheet has been deterministically compiled into the approved template, the final sheet/lane compliance check has passed, and the required package sidecar/spec exists.
 
 The exact subset depends on the issue. Do not force optional existing assets into a deck merely because they exist. Do require assets that the frame actually needs to make the story repeatable.
 
@@ -217,6 +231,7 @@ Stop or mark blocked when:
 - the continuity object or key prop cannot be represented coherently;
 - generated candidates fail QA and cannot be repaired without a new direction;
 - image generation or image QA is unavailable;
+- an asset-sheet package lacks the approved rendered template sheet, approved source images, required sidecar/spec, or character full-body plain-white hero source image when applicable;
 - the task tries to generate deck body-slide art before the production playbook stage.
 
 Expected pauses after generated candidates are not blockers and not process failures. They are the review insertion point in the default semi-autonomous cadence.
@@ -250,6 +265,8 @@ Use this report shape when returning visual-preproduction status:
 - Blockers:
 - Required next action:
 ```
+
+For asset-sheet package work, also record the `playbooks/asset-sheet-production-contract.md` compliance basis: approved source image filenames, rendered sheet PNG, sidecar/spec, skipped candidates if relevant, and character hero-shot confirmation when applicable.
 
 ## Boundaries
 
