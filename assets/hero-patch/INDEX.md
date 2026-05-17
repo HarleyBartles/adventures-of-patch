@@ -18,6 +18,7 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 - `Cowboy/` - Patch cowboy role kit asset-sheet package. See `Cowboy/INDEX.md`.
 - `Detective/` - Patch detective role kit asset-sheet package. See `Detective/INDEX.md`.
 - `Mechanic/` - Patch mechanic role kit asset-sheet package. See `Mechanic/INDEX.md`.
+- `Chef/` - Patch chef role kit asset-sheet package. See `Chef/INDEX.md`.
 
 ## Mandatory image-generation note
 

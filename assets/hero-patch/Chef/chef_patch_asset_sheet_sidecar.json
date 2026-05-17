@@ -1,0 +1,43 @@
+{
+  "title": "Chef Patch",
+  "asset_type": "Individual character sheet",
+  "status": "provisional_asset",
+  "version": "v4",
+  "source_qa": "Seven Harley-approved Chef Patch images supplied in the current conversation on 2026-05-17. Deterministic Pillow compile; no image generation.",
+  "template": "template_final_asset_sheet_blank_v4.png",
+  "rendered_asset_sheet": "chef_patch_asset_sheet_v4.png",
+  "source_images": {
+    "alt_side_view": "chef_patch_alt_side_view.png",
+    "alt_back_view": "chef_patch_alt_back_view.png",
+    "alt_action_rolling_dough": "chef_patch_alt_action_rolling_dough.png",
+    "alt_action_mixing_bowl": "chef_patch_alt_action_mixing_bowl.png",
+    "alt_detail_split": "chef_patch_alt_detail_split.png",
+    "alt_prop_sheet": "chef_patch_alt_prop_sheet.png",
+    "hero_front": "chef_patch_hero_front.png"
+  },
+  "panel_order": {
+    "main_hero_image": "chef_patch_hero_front.png",
+    "alternate_views": [
+      "chef_patch_alt_side_view.png",
+      "chef_patch_alt_back_view.png",
+      "chef_patch_alt_action_rolling_dough.png",
+      "chef_patch_alt_action_mixing_bowl.png",
+      "chef_patch_alt_detail_split.png",
+      "chef_patch_alt_prop_sheet.png"
+    ]
+  },
+  "guidance_bullets": [
+    "Patch remains the teal-hooded autonomous AI agent with black antennae and cream face.",
+    "Chef variant keeps white chef hat, double-breasted jacket, black trousers, teal shoes, and black crossbody bag.",
+    "Do not change identity markers: hood colour, antenna count, face shape, simple black eyes, or command-arrow bag mark.",
+    "Source basis: seven Harley-approved Chef Patch images; deterministic compile, no new image generation.",
+    "Allowed variation: cooking poses, baking props, detail close-ups, and prop/support sheets that preserve continuity.",
+    "Downstream use: reusable Chef Patch character reference for scenes and deck/world preproduction."
+  ],
+  "compile_notes": [
+    "Used contain fit/no crop for hero and alternate source images.",
+    "Covered template placeholder text with rendered final metadata, guidance, images, captions, and footer.",
+    "Included all seven approved source images in source_images/."
+  ],
+  "skipped_or_omitted_candidate_images": []
+}
