@@ -83,6 +83,15 @@ For asset or source-zip work, returns must record:
 - relevant asset directory `INDEX.md` update status;
 - any discrepancy between repo text and package contents.
 
+For asset sheet package work, returns must also record:
+
+- rendered asset-sheet PNG path;
+- approved source image paths used in the sheet;
+- sidecar/spec path and whether it records title, type, status, source/QA, guidance bullets, source-image filenames, and QA decisions;
+- confirmation that the approved blank asset sheet template was used for deterministic compile;
+- for character asset sheets, confirmation that the main/hero source image is a full-body character shot on a plain white background;
+- whether compile intermediates such as HTML, scratch manifests, or helper scripts were omitted or explicitly promoted.
+
 ## Status guidance
 
 Use `GREEN` only when the requested work is complete and publication proof is present when required.
