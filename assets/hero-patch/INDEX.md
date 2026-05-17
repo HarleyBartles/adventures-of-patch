@@ -15,7 +15,7 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 
 ## Subdirectories
 
-None.
+- `assembly/` - supplemental Patch assembly and reference sheets. See `assembly/INDEX.md`.
 
 ## Mandatory image-generation note
 
