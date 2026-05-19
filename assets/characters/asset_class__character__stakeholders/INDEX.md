@@ -7,18 +7,12 @@ Stakeholders are cross-deck human counterparties who define needs, priorities, c
 ## Files in this directory
 
 - `asset_class__character__stakeholders.png` - stakeholder character class overview with all eight reusable stakeholder roles.
-- `asset__character__client_stakeholder.png` - Client / Requester individual stakeholder sheet.
-- `asset__character__product_stakeholder.png` - Product Owner individual stakeholder sheet.
-- `asset__character__engineering_stakeholder.png` - Engineering Lead individual stakeholder sheet.
-- `asset__character__qa_stakeholder.png` - QA / Verification Lead individual stakeholder sheet.
-- `asset__character__ux_stakeholder.png` - Design / UX Lead individual stakeholder sheet.
-- `asset__character__support_stakeholder.png` - Operations / Support Lead individual stakeholder sheet.
-- `asset__character__risk_stakeholder.png` - Risk / Policy Reviewer individual stakeholder sheet.
-- `asset__character__sponsor_stakeholder.png` - Decision Maker / Sponsor individual stakeholder sheet.
+- `asset_sheet__stakeholders__data_architect_product_v1.png` - rendered stakeholder trio sheet for issue #47.
+- `manifest.json` - structured manifest for the stakeholder trio sheet.
 
 ## Subdirectories
 
-None.
+- `source_images/` - approved source images for the stakeholder trio sheet. See `source_images/INDEX.md`.
 
 ## Character roles
 
@@ -37,4 +31,4 @@ These assets are reusable visual references and casting aids. Do not treat gener
 
 Select stakeholders because the adventure needs their function. Do not add stakeholders as generic background characters. If removing a stakeholder does not change the story state, the role is probably unnecessary for that deck.
 
-For issue #3, likely useful stakeholder roles are Client / Requester, Product Owner or Operations Planner equivalent, QA / Verification Lead, and possibly Risk / Policy Reviewer depending on how explicit the constraint/non-goal beat becomes.
+For issue #47, the approved preproduction stakeholder set is the Data Analyst / Software Architect / Product Manager trio. Use the approved source images in `source_images/` as the inspection basis for that sheet.

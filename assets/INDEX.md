@@ -8,6 +8,7 @@ No direct asset files are expected at this level. Navigate into subdirectories.
 
 ## Subdirectories
 
+- `adventures/` - adventure-specific asset families and preproduction sheet sets. See `adventures/INDEX.md`.
 - `characters/` - character asset families. See `characters/INDEX.md`.
 - `environments/` - environment/location asset families. See `environments/INDEX.md`.
 - `hero-patch/` - canonical Patch visual references. See `hero-patch/INDEX.md`.
