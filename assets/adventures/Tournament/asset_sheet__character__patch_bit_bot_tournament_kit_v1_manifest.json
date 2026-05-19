@@ -1,0 +1,67 @@
+{
+  "title": "Patch / Bit / Bot Tournament Kit",
+  "type": "Patch / Bit / Bot tournament role kit",
+  "status": "approved_preproduction_reference",
+  "version": "v1",
+  "source_qa": "9 approved PNGs / deterministic PIL compile",
+  "template": "template_asset_sheet_3hero_6alt_v4",
+  "slot_order": [
+    {
+      "slot": "hero_1",
+      "character": "Patch",
+      "asset": "patch_hero"
+    },
+    {
+      "slot": "hero_1_alt_A",
+      "character": "Patch",
+      "asset": "patch_startline_quizzical"
+    },
+    {
+      "slot": "hero_1_alt_B",
+      "character": "Patch",
+      "asset": "patch_notebook_focus"
+    },
+    {
+      "slot": "hero_2",
+      "character": "Bit",
+      "asset": "bit_hero"
+    },
+    {
+      "slot": "hero_2_alt_A",
+      "character": "Bit",
+      "asset": "bit_race_off"
+    },
+    {
+      "slot": "hero_2_alt_B",
+      "character": "Bit",
+      "asset": "bit_hazard_tape"
+    },
+    {
+      "slot": "hero_3",
+      "character": "Bot",
+      "asset": "bot_hero"
+    },
+    {
+      "slot": "hero_3_alt_A",
+      "character": "Bot",
+      "asset": "bot_side_stretch"
+    },
+    {
+      "slot": "hero_3_alt_B",
+      "character": "Bot",
+      "asset": "bot_wrong_line"
+    }
+  ],
+  "source_files": {
+    "patch_hero": "ChatGPT Image May 19, 2026, 05_20_18 PM.png",
+    "patch_startline_quizzical": "ChatGPT Image May 19, 2026, 05_28_01 PM.png",
+    "patch_notebook_focus": "ChatGPT Image May 19, 2026, 05_30_21 PM.png",
+    "bit_hero": "ChatGPT Image May 19, 2026, 05_59_49 PM.png",
+    "bit_race_off": "ChatGPT Image May 19, 2026, 06_06_28 PM.png",
+    "bit_hazard_tape": "ChatGPT Image May 19, 2026, 06_07_45 PM.png",
+    "bot_hero": "ChatGPT Image May 19, 2026, 06_19_31 PM.png",
+    "bot_side_stretch": "ChatGPT Image May 19, 2026, 06_22_51 PM.png",
+    "bot_wrong_line": "ChatGPT Image May 19, 2026, 06_24_41 PM.png"
+  },
+  "compiler": "PIL deterministic fit-without-crop paste into v4 3-hero/6-alt template"
+}
