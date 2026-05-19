@@ -5,6 +5,8 @@ Cowboy variant image folder for the Bit and Bot character asset family.
 ## Files in this directory
 
 - `ChatGPT Image May 17, 2026, 10_03_09 PM.png` - cowboy variant image.
+- `ChatGPT Image May 18, 2026, 08_31_12 PM.png` - cowboy variant image 2.
+- `ChatGPT Image May 18, 2026, 08_31_28 PM.png` - cowboy variant image 3.
 
 ## Subdirectories
 

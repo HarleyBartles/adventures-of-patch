@@ -6,6 +6,7 @@ Detective variant image folder for the Bit and Bot character asset family.
 
 - `ChatGPT Image May 17, 2026, 10_11_59 PM.png` - detective variant image 1.
 - `ChatGPT Image May 17, 2026, 10_12_43 PM.png` - detective variant image 2.
+- `ChatGPT Image May 18, 2026, 08_36_06 PM.png` - detective variant image 3.
 
 ## Subdirectories
 

@@ -11,6 +11,7 @@ None.
 ## Subdirectories
 
 - `asset_class__character__bit_and_bot__asset_sheet/` - Bit and Bot asset-sheet package. See `asset_class__character__bit_and_bot__asset_sheet/INDEX.md`.
+- `asset__bot_role_kit/` - Bit and Bot bot role-kit package. See `asset__bot_role_kit/INDEX.md`.
 - `Chef/` - Chef variant image folder. See `Chef/INDEX.md`.
 - `Cowboy/` - Cowboy variant image folder. See `Cowboy/INDEX.md`.
 - `Detective/` - Detective variant image folder. See `Detective/INDEX.md`.
