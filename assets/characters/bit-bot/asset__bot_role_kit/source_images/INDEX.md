@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__bit_and_bot/asset__bot_role_kit/source_images index
+# assets/characters/bit-bot/asset__bot_role_kit/source_images index
 
 Approved source images for the bot role-kit asset sheet.
 

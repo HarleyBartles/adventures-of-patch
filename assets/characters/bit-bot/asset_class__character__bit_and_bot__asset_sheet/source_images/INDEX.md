@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__bit_and_bot__asset_sheet/source_images index
+# assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images index
 
 Approved source images for the Bit and Bot asset sheet.
 

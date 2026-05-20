@@ -9,7 +9,7 @@ No direct character files are expected at this level. Navigate into subdirectori
 ## Subdirectories
 
 - `asset__character__identity_emporium_shopkeeper/` - Identity Emporium Shopkeeper individual character asset. See `asset__character__identity_emporium_shopkeeper/INDEX.md`.
-- `asset_class__character__bit_and_bot/` - Bit and Bot character asset family. See `asset_class__character__bit_and_bot/INDEX.md`.
+- `bit-bot/` - Bit and Bot character asset family. See `bit-bot/INDEX.md`.
 - `asset_class__character__bouncers/` - bouncer supporting-character family. See `asset_class__character__bouncers/INDEX.md`.
 - `asset_class__character__pmc__patch_mission_control_team/` - Patch Mission Control Team character family. See `asset_class__character__pmc__patch_mission_control_team/INDEX.md`.
 - `asset_class__character__stakeholders/` - reusable stakeholder character class for cross-deck counterparties. See `asset_class__character__stakeholders/INDEX.md`.

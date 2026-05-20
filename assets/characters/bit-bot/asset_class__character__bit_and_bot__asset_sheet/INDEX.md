@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__bit_and_bot__asset_sheet index
+# assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet index
 
 Bit and Bot asset-sheet package.
 

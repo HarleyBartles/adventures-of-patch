@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__bit_and_bot/asset__bot_role_kit index
+# assets/characters/bit-bot/asset__bot_role_kit index
 
 Bit and Bot bot role-kit package.
 

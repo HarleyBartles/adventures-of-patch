@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__bit_and_bot index
+# assets/characters/bit-bot index
 
 Bit and Bot character asset family.
 

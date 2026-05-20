@@ -35,7 +35,7 @@ Harley-approved source images compiled deterministically; no image generation or
 
 ## Registry / view-surface note
 
-No registry paths changed in this dispatch. If a view-surface entry exists elsewhere for the rendered sheet, it remains untouched here.
+This package is not registry-covered in the current batch. The family root moved to `assets/characters/bit-bot/`, but the bot role-kit package itself remains a non-view-surface companion.
 
 ## Canon / provisional warning
 
@@ -43,7 +43,7 @@ This is not Patch canon. Bit and Bot must remain distinct from Patch.
 
 ## Future migration note
 
-Future target under `assets/characters/bit-bot/`.
+Current root is `assets/characters/bit-bot/`. No further family-root migration is scheduled for this batch.
 
 ## Do not use as Patch canon
 

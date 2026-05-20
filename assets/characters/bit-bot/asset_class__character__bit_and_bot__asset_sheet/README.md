@@ -35,7 +35,7 @@ Seven Harley-approved PNG source images compiled deterministically with PIL; no 
 
 ## Registry / view-surface note
 
-No registry paths changed in this dispatch. If a view-surface entry exists elsewhere for the rendered sheet, it remains untouched here.
+Bit and Bot asset-sheet registry entries were migrated to `assets/characters/bit-bot/` in this batch. Any registry entry for this package should now resolve to the moved path.
 
 ## Canon / provisional warning
 
@@ -43,7 +43,7 @@ This is not Patch canon. Bit and Bot must remain distinct from Patch.
 
 ## Future migration note
 
-Future target under `assets/characters/bit-bot/`.
+Current root is `assets/characters/bit-bot/`. No further family-root migration is scheduled for this batch.
 
 ## Do not use as Patch canon
 
