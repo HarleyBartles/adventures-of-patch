@@ -283,7 +283,7 @@ assets/evidence/
 
 - Batch 0: taxonomy contract only, no asset moves.
 - Batch 1: GPT-native canonical asset-pack zip skill update plan.
-- Batch 2: low-risk pilot move, likely `assets/style/` to `assets/canon/style/`.
+- Batch 2: low-risk pilot move, completed here as `assets/style/` to `assets/canon/style/`.
 - Batch 3: evidence and source-zip structure cleanup without deleting unique evidence.
 - Batch 4: reusable character and environment family moves in small batches.
 - Batch 5: adventure pack migration and scaffolding for issues `#37`, `#47`, and `#48`.

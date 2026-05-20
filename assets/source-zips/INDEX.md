@@ -19,16 +19,16 @@ Use source zips for bounded package tasks only, including:
 
 ## Files in this directory
 
-- `asset_class__character__bouncers.zip` - bouncer supporting-character asset family mirror.
-- `asset_class__character__pmc__patch_mission_control_team.zip` - Patch Mission Control Team character family mirror.
-- `asset_class__character__stakeholders.zip` - reusable stakeholder character family mirror.
-- `asset_classs__character__other_agents.zip` - other agents character family mirror.
-- `asset_class__environment__clubdb.zip` - Club DB environment/location family mirror.
-- `asset_class__environment__identity_emporium.zip` - Identity Emporium environment family mirror.
-- `asset_class__environment__patch_mission_control.zip` - Patch Mission Control Centre environment family mirror.
-- `hero-patch.zip` - canonical Patch visual reference folder mirror.
-- `style.zip` - approved style-system folder mirror.
-- `receipts.zip` - receipt/evidence folder mirror.
+- `asset_class__character__bouncers.zip` - bouncer supporting-character canonical input/backfill package.
+- `asset_class__character__pmc__patch_mission_control_team.zip` - Patch Mission Control Team canonical input/backfill package.
+- `asset_class__character__stakeholders.zip` - reusable stakeholder canonical input/backfill package.
+- `asset_classs__character__other_agents.zip` - other agents canonical input/backfill package.
+- `asset_class__environment__clubdb.zip` - Club DB canonical input/backfill package.
+- `asset_class__environment__identity_emporium.zip` - Identity Emporium canonical input/backfill package.
+- `asset_class__environment__patch_mission_control.zip` - Patch Mission Control Centre canonical input/backfill package.
+- `hero-patch.zip` - canonical Patch visual reference package.
+- `style.zip` - canonical style-system input/backfill package.
+- `receipts.zip` - receipt/evidence package.
 
 ## Subdirectories
 
@@ -44,6 +44,6 @@ Project-source visual packages are no longer expected as the normal GPT image-in
 
 For Patch visual work, repo text and `assets/hero-patch/` remain canonical for Patch identity, and GPT visual inspection should route through the view-surface registry when rendered image inspection is needed.
 
-Legacy zip names that no longer match the current folder basenames were replaced during the rebuild. The previous `asset_class__hero__patch.zip` mirror is now `hero-patch.zip`, and the previous `asset_class__style__style_system.zip` mirror is now `style.zip`.
+Legacy zip names that no longer match the current folder basenames were replaced during the rebuild. The previous `asset_class__hero__patch.zip` package is now `hero-patch.zip`, and the previous `asset_class__style__style_system.zip` package is now `style.zip`.
 
 The current tracked zip files may still reflect earlier mirror semantics. They stay in place until a later migration batch reclassifies or retires them.
