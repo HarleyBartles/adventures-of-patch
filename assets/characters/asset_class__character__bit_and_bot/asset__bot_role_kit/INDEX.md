@@ -4,6 +4,7 @@ Bit and Bot bot role-kit package.
 
 ## Files in this directory
 
+- `README.md` - canonical human-readable package summary and companion status note.
 - `asset_sheet__bot_role_kit_4column_v1.png` - rendered bot role-kit asset sheet.
 - `asset_sheet_spec.json` - deterministic compile spec for the bot role-kit asset sheet.
 

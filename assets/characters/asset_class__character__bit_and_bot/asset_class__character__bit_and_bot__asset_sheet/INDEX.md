@@ -4,6 +4,7 @@ Bit and Bot asset-sheet package.
 
 ## Files in this directory
 
+- `README.md` - canonical human-readable package summary and companion status note.
 - `asset_sheet__character__bit_and_bot_v1.png` - rendered Bit and Bot asset sheet.
 - `asset_sheet_spec.json` - deterministic compile spec for the Bit and Bot asset sheet.
 
