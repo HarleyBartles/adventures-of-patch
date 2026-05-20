@@ -8,12 +8,12 @@ No direct character files are expected at this level. Navigate into subdirectori
 
 ## Subdirectories
 
-- `asset__character__identity_emporium_shopkeeper/` - Identity Emporium Shopkeeper individual character asset. See `asset__character__identity_emporium_shopkeeper/INDEX.md`.
 - `bit-bot/` - Bit and Bot character asset family. See `bit-bot/INDEX.md`.
 - `bouncers/` - bouncer supporting-character family. See `bouncers/INDEX.md`.
-- `asset_class__character__pmc__patch_mission_control_team/` - Patch Mission Control Team character family. See `asset_class__character__pmc__patch_mission_control_team/INDEX.md`.
-- `stakeholders/` - reusable stakeholder character class for cross-deck counterparties. See `stakeholders/INDEX.md`.
+- `mission-control-team/` - reusable Patch Mission Control Team supporting-character family. See `mission-control-team/INDEX.md`.
 - `other-agents/` - other agents character class. See `other-agents/INDEX.md`.
+- `shopkeeper/` - Identity Emporium Shopkeeper provisional individual character asset. See `shopkeeper/INDEX.md`.
+- `stakeholders/` - reusable stakeholder character class for cross-deck counterparties. See `stakeholders/INDEX.md`.
 
 ## Notes for agents
 
