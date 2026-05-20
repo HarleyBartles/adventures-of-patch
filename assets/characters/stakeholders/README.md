@@ -49,7 +49,7 @@ This is not Patch canon. Stakeholders are reusable human counterparties, not gen
 
 ## Future migration note
 
-Future target under `assets/characters/stakeholders/`.
+Current root is `assets/characters/stakeholders/`. No further family-root migration is scheduled for this batch.
 
 ## Guidance
 

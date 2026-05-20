@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__stakeholders index
+# assets/characters/stakeholders index
 
 Reusable stakeholder character class for Adventures of Patch.
 

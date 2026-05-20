@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__stakeholders/source_images index
+# assets/characters/stakeholders/source_images index
 
 Approved source images for the stakeholder trio asset sheet.
 
