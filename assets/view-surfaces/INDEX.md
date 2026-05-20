@@ -2,6 +2,8 @@
 
 Durable default GPT view-surface registry for repo-canonical image assets.
 
+This is the current live registry root. The taxonomy contract treats `assets/views/` as the future target name, but no on-disk rename happens in this dispatch.
+
 This directory exists so GPT can find the default visual inspection surface for image files that live canonically in the repo. It is a machine-facing support surface, not a replacement for repo assets.
 
 ## Files in this directory

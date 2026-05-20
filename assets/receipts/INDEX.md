@@ -2,6 +2,8 @@
 
 Receipt packages and evidence bundles.
 
+This is the current live receipts root. The taxonomy contract treats `assets/evidence/receipts/` as the future landing zone, but no path move happens in this dispatch.
+
 ## Files in this directory
 
 - `.gitkeep` - keeps the directory present when empty in early setup.

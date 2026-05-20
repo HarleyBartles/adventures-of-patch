@@ -2,12 +2,14 @@
 
 Committed source/import zip packages.
 
-These packages mirror selected repo asset folders for package transfer, import, rebuild, receipt, and integrity-check workflows. They are not the default GPT visual inspection route for repo-canonical images.
+This is a first-class asset root for canonical ingested input zips and one-time cleanup/backfill zips. It is not an ad hoc mirror-generation lane.
 
 When GPT needs to inspect a repo-canonical image, use the repo index mesh plus `assets/view-surfaces/google-slides-registry.json` and the recorded Google Slides view surface. Do not use source zips, project-source zips, or package mirrors as the source of image inspection truth unless the Slides route is explicitly blocked and the reduced-confidence fallback is stated.
 
 Use source zips for bounded package tasks only, including:
 
+- canonical input-zip storage after validation and extraction;
+- one-time cleanup/backfill zip storage for already-landed assets;
 - import or transfer bundle review;
 - source package rebuild checks;
 - receipt/evidence package handling;
@@ -43,3 +45,5 @@ Project-source visual packages are no longer expected as the normal GPT image-in
 For Patch visual work, repo text and `assets/hero-patch/` remain canonical for Patch identity, and GPT visual inspection should route through the view-surface registry when rendered image inspection is needed.
 
 Legacy zip names that no longer match the current folder basenames were replaced during the rebuild. The previous `asset_class__hero__patch.zip` mirror is now `hero-patch.zip`, and the previous `asset_class__style__style_system.zip` mirror is now `style.zip`.
+
+The current tracked zip files may still reflect earlier mirror semantics. They stay in place until a later migration batch reclassifies or retires them.

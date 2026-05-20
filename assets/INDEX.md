@@ -4,7 +4,9 @@ Reusable visual assets, canonical asset docs, source packages, receipt packages,
 
 ## Files in this directory
 
-No direct asset files are expected at this level. Navigate into subdirectories.
+- `TAXONOMY.md` - durable asset taxonomy contract and migration posture.
+
+No other direct asset files are expected at this level. Navigate into subdirectories.
 
 ## Subdirectories
 
@@ -25,3 +27,15 @@ Patch references in `hero-patch/` are canonical for Patch image planning and gen
 Non-Patch character and environment families are optional. Do not force them into a deck just because they exist.
 
 Repo image files remain canonical source truth. When GPT needs a durable visual inspection surface for a repo image, use `view-surfaces/google-slides-registry.json`. Do not add Google Slides links or per-image view pointers to ordinary asset-family indexes unless Harley explicitly requests a human-facing report.
+
+## Taxonomy posture
+
+The current repo still uses the live roots listed above. The taxonomy contract in `TAXONOMY.md` defines the target shape and the migration order before any asset moves begin.
+
+Current future-shape targets are documented in the contract only:
+
+- `assets/canon/patch/role-kits/` for Patch role kits.
+- `assets/views/` for the future view-surface root name.
+- `assets/evidence/receipts/` for the future receipts root name.
+- `assets/packs/issue-*/` for adventure-scoped packs.
+- `assets/characters/heist-crew/` for the heist crew family.

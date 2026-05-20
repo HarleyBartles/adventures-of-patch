@@ -1,10 +1,10 @@
 # assets/png_chunks index
 
-Self-contained PNG chunk packages derived from canonical repo assets.
+Legacy PNG chunk packages derived from canonical repo assets.
 
 These packages are GPT inspection bridges, not canon. The canonical source remains the original asset files under `assets/**`.
 
-This directory is an intermediary experiment for Git-native image reconstruction and inspection.
+This directory is a retirement-path experiment for Git-native image reconstruction and inspection.
 
 ## Files in this directory
 
@@ -16,6 +16,7 @@ No direct files are expected at this level. Navigate into child directories.
 
 ## Notes for agents
 
-- PNG chunk packages here must remain self-contained and repo-tracked.
+- Do not create new PNG chunk packages as a normal operating path.
 - Canonical asset files remain the source of truth.
 - Do not treat these packages as source canon.
+- Keep only until the reference audit says the lineage can be retired or folded into evidence.
