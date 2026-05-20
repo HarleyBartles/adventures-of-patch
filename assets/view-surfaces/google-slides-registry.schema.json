@@ -23,7 +23,7 @@
     },
     "entries": {
       "type": "object",
-      "description": "Keys are repo-relative image paths, for example assets/hero-patch/example.png.",
+      "description": "Keys are repo-relative image paths, for example assets/canon/patch/example.png.",
       "additionalProperties": {
         "$ref": "#/$defs/view_surface_entry"
       }

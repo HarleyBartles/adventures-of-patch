@@ -39,7 +39,7 @@ Do not rely on hard-coded legacy flat source-zip filenames. When package inspect
 
 Project-source visual packages are no longer expected as the normal GPT image-inspection bridge. For now, project sources should contain only asset sheet template package(s), unless Harley explicitly changes that policy.
 
-For Patch visual work, repo text and `assets/hero-patch/` remain canonical for Patch identity, and GPT visual inspection should route through the view-surface registry when rendered image inspection is needed.
+For Patch visual work, repo text and `assets/canon/patch/` remain canonical for Patch identity, and GPT visual inspection should route through the view-surface registry when rendered image inspection is needed.
 
 The current tracked zip files are catalogued by asset taxonomy category. Their filenames are preserved because they remain canonical package identifiers until a later package-normalization lane says otherwise.
 

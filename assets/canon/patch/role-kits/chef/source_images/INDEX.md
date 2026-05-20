@@ -1,4 +1,4 @@
-# assets/hero-patch/Chef/source_images index
+# assets/canon/patch/role-kits/chef/source_images index
 
 Approved source-image set for the Chef Patch role kit.
 

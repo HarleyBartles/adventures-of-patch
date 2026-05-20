@@ -263,7 +263,7 @@ Do not mark deck planning green when the body slides are Patch beside abstract d
 
 For Patch visual work, inspect repo text references and image-capable visual references where available:
 
-1. `assets/hero-patch/INDEX.md`;
+1. `assets/canon/patch/INDEX.md`;
 2. repo-indexed Patch style guide;
 3. repo-indexed Patch contact sheet;
 4. repo-indexed Patch anti-pattern sheet;

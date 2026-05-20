@@ -1,4 +1,4 @@
-# assets/hero-patch/Cowboy/source_images index
+# assets/canon/patch/role-kits/cowboy/source_images index
 
 Approved source-image set for the Patch cowboy role kit.
 

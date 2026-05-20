@@ -1,4 +1,4 @@
-# assets/hero-patch/Mechanic index
+# assets/canon/patch/role-kits/mechanic index
 
 Patch Mechanic role kit asset-sheet package.
 

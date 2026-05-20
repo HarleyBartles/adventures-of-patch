@@ -1,4 +1,4 @@
-# assets/hero-patch/Detective/source_images index
+# assets/canon/patch/role-kits/detective/source_images index
 
 Approved source-image set for the Patch detective role kit.
 

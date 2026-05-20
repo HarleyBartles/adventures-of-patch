@@ -1,4 +1,4 @@
-﻿# Adventures of Patch
+# Adventures of Patch
 
 Canonical repository for the Presentation Planner / Adventures of Patch project.
 
@@ -26,7 +26,7 @@ Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - `playbooks/` - first-class project/domain playbooks for Adventures workflows.
 - `assets/view-surfaces/` - durable Google Slides view-surface registry for repo-canonical image inspection.
 - `assets/source-zips/` - canonical uploaded asset packages and reusable source/import bundles; not the default visual-inspection route.
-- `assets/hero-patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
+- `assets/canon/patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
 - `assets/receipts/` - receipt packages and evidence bundles derived from decks or asset work.
 - `docs/adventures/` - Patch adventure concepts and deck narrative frames.
 - `docs/principles/` - software-agent working principles expressed through Patch stories.

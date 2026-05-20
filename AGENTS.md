@@ -42,7 +42,7 @@ These are local bindings for one named project agent. They do not redefine Will'
 
 The default workspace route is `Will -> Patch`. There is no Chris-like intermediary and no separate Adventures asset, deck, image, canon, receipt, or publication executor unless a future issue creates one for a real boundary.
 
-Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/hero-patch/`. Repo-canonical image inspection defaults to `assets/view-surfaces/google-slides-registry.json`; source zips stay in the package/import/integrity lane.
+Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/canon/patch/`. Repo-canonical image inspection defaults to `assets/view-surfaces/google-slides-registry.json`; source zips stay in the package/import/integrity lane.
 
 ## Source-of-truth rules
 
@@ -76,12 +76,12 @@ Every visible directory should contain an `INDEX.md` file listing direct files a
 
 Patch is the constant protagonist for Adventures of Patch presentations unless Harley explicitly excludes him.
 
-Before planning or generating images featuring Patch, inspect `assets/hero-patch/INDEX.md` and the current repo-tracked Patch visual references:
+Before planning or generating images featuring Patch, inspect `assets/canon/patch/INDEX.md` and the current repo-tracked Patch visual references:
 
-- `assets/hero-patch/asset__hero__patch_style_bible.md`
-- `assets/hero-patch/asset_class__hero__patch_approved_style.png`
-- `assets/hero-patch/asset__hero__patch_antipatterns.png`
-- `assets/hero-patch/asset__hero__patch_interactions.png`
+- `assets/canon/patch/asset__hero__patch_style_bible.md`
+- `assets/canon/patch/asset_class__hero__patch_approved_style.png`
+- `assets/canon/patch/asset__hero__patch_antipatterns.png`
+- `assets/canon/patch/asset__hero__patch_interactions.png`
 
 If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 

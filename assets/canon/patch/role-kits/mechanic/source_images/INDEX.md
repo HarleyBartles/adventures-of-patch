@@ -1,4 +1,4 @@
-# assets/hero-patch/Mechanic/source_images index
+# assets/canon/patch/role-kits/mechanic/source_images index
 
 Approved source-image set for the Patch mechanic role kit.
 

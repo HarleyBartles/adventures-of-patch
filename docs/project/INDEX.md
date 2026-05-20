@@ -45,7 +45,7 @@ For a fresh agent session or repo-sensitive task:
 - `playbooks/` - first-class Adventures project/domain playbooks.
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
 - `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
-- `assets/hero-patch/` - canonical Patch visual guidance and asset surfaces.
+- `assets/canon/patch/` - canonical Patch visual guidance and asset surfaces.
 - `assets/view-surfaces/` - machine-readable Google Slides view-surface registry for repo-canonical image inspection.
 - `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented and are not the default image-inspection route.
 - `assets/receipts/` - committed receipt packages and evidence bundles.
@@ -96,10 +96,10 @@ Patch is the constant protagonist unless explicitly excluded.
 
 Current canonical Patch references in repo:
 
-- `assets/hero-patch/asset__hero__patch_style_bible.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, eye canon, expression, pose, and prompt guidance. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
-- `assets/hero-patch/asset_class__hero__patch_approved_style.png` - Patch contact sheet.
-- `assets/hero-patch/asset__hero__patch_antipatterns.png` - Patch anti-pattern sheet.
-- `assets/hero-patch/asset__hero__patch_interactions.png` - Patch interaction guide.
+- `assets/canon/patch/asset__hero__patch_style_bible.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, eye canon, expression, pose, and prompt guidance. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
+- `assets/canon/patch/asset_class__hero__patch_approved_style.png` - Patch contact sheet.
+- `assets/canon/patch/asset__hero__patch_antipatterns.png` - Patch anti-pattern sheet.
+- `assets/canon/patch/asset__hero__patch_interactions.png` - Patch interaction guide.
 
 Patch generation must preserve the style guide requirements: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, two hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 

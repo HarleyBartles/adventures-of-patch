@@ -10,8 +10,9 @@ No direct canonical files are expected at this level. Navigate into subdirectori
 
 ## Subdirectories
 
+- `patch/` - Patch visual canon and role-kit root. See `patch/INDEX.md`.
 - `style/` - global Adventures style canon. See `style/INDEX.md`.
 
 ## Notes for agents
 
-Use this directory for roots that are globally canonical across the repo. Patch role-kit canon will be added here in a later batch under `patch/`.
+Use this directory for roots that are globally canonical across the repo. Patch visual canon and role-kit packages live here under `patch/`.

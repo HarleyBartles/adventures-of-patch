@@ -1,4 +1,4 @@
-# assets/hero-patch index
+# assets/canon/patch index
 
 Canonical Patch visual references.
 
@@ -15,10 +15,7 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 
 ## Subdirectories
 
-- `Cowboy/` - Patch cowboy role kit asset-sheet package. See `Cowboy/INDEX.md`.
-- `Detective/` - Patch detective role kit asset-sheet package. See `Detective/INDEX.md`.
-- `Mechanic/` - Patch mechanic role kit asset-sheet package. See `Mechanic/INDEX.md`.
-- `Chef/` - Patch chef role kit asset-sheet package. See `Chef/INDEX.md`.
+- `role-kits/` - Patch costume-variant role-kit packages. See `role-kits/INDEX.md`.
 
 ## Mandatory image-generation note
 

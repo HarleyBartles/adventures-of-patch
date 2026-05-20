@@ -1,4 +1,4 @@
-# assets/hero-patch/Cowboy index
+# assets/canon/patch/role-kits/cowboy index
 
 Patch Cowboy role kit asset-sheet package.
 

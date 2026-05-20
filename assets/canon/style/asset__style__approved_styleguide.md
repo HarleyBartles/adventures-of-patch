@@ -19,7 +19,7 @@ This sidecar is based on the approved second-pass style pair from the current se
 
 Current repo doctrine remains authoritative for Patch identity and source discipline. Before future final/proof Patch image work, inspect:
 
-- `assets/hero-patch/INDEX.md`
+- `assets/canon/patch/INDEX.md`
 - the current repo-indexed Patch style guide
 - the current repo-indexed Patch contact sheet
 - the current repo-indexed Patch anti-pattern sheet
@@ -71,7 +71,7 @@ In anti-pattern sheets, wrong Patch variants may be shown only as rejected examp
 
 ### 5.1 Patch
 
-Patch is singular. There is only one Patch. Do not create Patch clones, Patch-shaped teams, Patch-shaped audiences, or other agents wearing Patch’s hoodie, antennae, bag, `>` symbol, face panel, or full silhouette.
+Patch is singular. There is only one Patch. Do not create Patch clones, Patch-shaped teams, Patch-shaped audiences, or other agents wearing Patchâ€™s hoodie, antennae, bag, `>` symbol, face panel, or full silhouette.
 
 Patch is the protagonist, not a decoration. When Patch appears in a deck scene, he should normally be doing something that carries the lesson: inspecting, asking, checking, receiving, presenting, handing off, validating, learning, being blocked, or applying a rule.
 
@@ -105,7 +105,7 @@ Approved human direction:
 - role-appropriate clothing and props;
 - expressive but not extreme faces;
 - no photorealistic skin, uncanny facial detail, or cinematic realism;
-- no borrowing Patch’s hoodie/bag/antennae silhouette.
+- no borrowing Patchâ€™s hoodie/bag/antennae silhouette.
 
 Humans should usually represent meaningful counterparties: stakeholders, requesters, reviewers, operators, gatekeepers, approvers, teammates, sponsors, or users.
 
@@ -218,7 +218,7 @@ Avoid:
 
 ## 10. Color and palette
 
-The world should feel cohesive and readable. Patch’s identity colors are protected. Other assets may use role-specific accents, but should not steal Patch’s identity.
+The world should feel cohesive and readable. Patchâ€™s identity colors are protected. Other assets may use role-specific accents, but should not steal Patchâ€™s identity.
 
 Use:
 
@@ -235,7 +235,7 @@ Avoid:
 - muddy desaturated palettes that drain the friendly tone;
 - harsh black-and-white contrast that hurts readability;
 - random palette shifts between related assets;
-- assigning Patch’s teal identity to other agents as their main read;
+- assigning Patchâ€™s teal identity to other agents as their main read;
 - using color as clutter rather than information.
 
 ## 11. Composition and readability
@@ -387,7 +387,7 @@ Patch must remain canonical: teal hoodie with hood antennae, off-white face pane
 For other agents:
 
 ```text
-Other agents are separate clearly robotic bots. They must not borrow Patch’s hoodie, teal identity, bag, `>` symbol, off-white face panel, or full silhouette. Give them distinct bot shapes, role accents, simple screen or graphic faces, and friendly capable body language.
+Other agents are separate clearly robotic bots. They must not borrow Patchâ€™s hoodie, teal identity, bag, `>` symbol, off-white face panel, or full silhouette. Give them distinct bot shapes, role accents, simple screen or graphic faces, and friendly capable body language.
 ```
 
 ## 17. Negative prompt guidance
@@ -401,7 +401,7 @@ Avoid photorealism, glossy 3D mascot rendering, plush toy texture, anime/chibi s
 Patch-specific negatives:
 
 ```text
-Do not represent Patch as a robot bot or screen-face agent. Do not remove Patch’s hoodie, hood antennae, off-white face panel, crossbody bag, visible `>` symbol, or strap. Do not add white sclera, irises, anime eyes, human eyes, doll eyes, or alternate eye styles. Do not create Patch clones or Patch-shaped supporting agents.
+Do not represent Patch as a robot bot or screen-face agent. Do not remove Patchâ€™s hoodie, hood antennae, off-white face panel, crossbody bag, visible `>` symbol, or strap. Do not add white sclera, irises, anime eyes, human eyes, doll eyes, or alternate eye styles. Do not create Patch clones or Patch-shaped supporting agents.
 ```
 
 ## 18. Approval checklist

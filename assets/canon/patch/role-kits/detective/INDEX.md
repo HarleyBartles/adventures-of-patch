@@ -1,4 +1,4 @@
-# assets/hero-patch/Detective index
+# assets/canon/patch/role-kits/detective index
 
 Patch Detective role kit asset-sheet package.
 

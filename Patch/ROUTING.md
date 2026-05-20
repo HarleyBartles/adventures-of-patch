@@ -71,7 +71,7 @@ For source/package questions:
 1. Start with repo indexes.
 2. Use `assets/view-surfaces/google-slides-registry.json` for repo-canonical image inspection.
 3. Use `assets/source-zips/INDEX.md` for source package discovery or package/integrity fallback.
-4. Use `assets/hero-patch/INDEX.md` for Patch visual canon.
+4. Use `assets/canon/patch/INDEX.md` for Patch visual canon.
 5. Treat uploaded/project-source zips as bounded evidence only when repo-indexed or user-scoped.
 
 ## Stop conditions

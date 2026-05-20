@@ -1,4 +1,4 @@
-# assets/hero-patch/Chef index
+# assets/canon/patch/role-kits/chef index
 
 Chef Patch role kit asset-sheet package.
 
