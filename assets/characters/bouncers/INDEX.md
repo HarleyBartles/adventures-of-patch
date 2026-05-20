@@ -1,4 +1,4 @@
-# assets/characters/asset_class__character__bouncers index
+# assets/characters/bouncers index
 
 Bouncer supporting-character asset family.
 
