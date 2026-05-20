@@ -13,6 +13,7 @@ No other direct asset files are expected at this level. Navigate into subdirecto
 - `adventures/` - adventure-specific asset families and preproduction sheet sets. See `adventures/INDEX.md`.
 - `canon/` - global canonical Patch and style roots. See `canon/INDEX.md`.
 - `characters/` - character asset families. See `characters/INDEX.md`.
+- `evidence/` - receipt, import, transfer, and legacy evidence. See `evidence/INDEX.md`.
 - `environments/` - environment/location asset families. See `environments/INDEX.md`.
 - `hero-patch/` - canonical Patch visual references. See `hero-patch/INDEX.md`.
 - `png_chunks/` - self-contained PNG chunk packages derived from canonical assets. See `png_chunks/INDEX.md`.

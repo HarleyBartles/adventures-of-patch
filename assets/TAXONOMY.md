@@ -17,10 +17,10 @@ The repo's current folder layout remains in place until a migration batch explic
 - This is a docs-first contract stage.
 - No asset files are moved by this document.
 - Current roots remain live until a later batch migrates them.
-- `source-zips` remains first-class, but only as a canonical input-zip and one-time backfill storage lane.
+- `source-zips` remains first-class, but only as a canonical input-zip and one-time backfill storage lane organized by asset taxonomy category.
 - `png_chunks` is a retirement path, not an operating root.
 - `assets/views/` is the future name for the current view-surface registry root, but the on-disk path is not renamed in this dispatch.
-- `assets/evidence/receipts/` is the future receipts landing zone, but the current `assets/receipts/` root stays live for now.
+- `assets/evidence/receipts/` is the live evidence lane for receipt bundles moved out of source-zips, while the current `assets/receipts/` root stays live for its existing receipt packages until that lane migrates.
 - `assets/packs/issue-*` is the future home for adventure-scoped packs, while `assets/adventures/` remains the current staging root.
 
 ## Canonical roots
@@ -51,7 +51,7 @@ Target taxonomy roots:
 - `assets/packs/` holds issue-scoped adventure packs, planning, bibles, manifests, and accepted or rejected references.
 - `assets/templates/` holds deterministic templates, layout specs, and pack-manifest templates.
 - `assets/views/` holds derived GPT view-surface registry material, not canonical repo assets.
-- `assets/source-zips/` holds canonical ingested input zips and one-time backfill zips.
+- `assets/source-zips/` holds canonical ingested input zips and one-time backfill zips, organized by category folders.
 - `assets/evidence/` holds receipts, imports, transfers, and legacy provenance that is not the canonical input zip.
 
 ## Naming rules

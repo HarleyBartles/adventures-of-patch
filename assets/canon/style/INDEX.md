@@ -18,4 +18,4 @@ None.
 
 ## Notes for agents
 
-Use this directory when verifying or updating the Adventures style-system smoke assets. If a repo-tracked zip is maintained for this family, keep it in `../../source-zips/style.zip` as canonical input-zip or backfill storage, not as a mirror-generation lane. For repo-canonical image inspection, use `../../view-surfaces/google-slides-registry.json`.
+Use this directory when verifying or updating the Adventures style-system smoke assets. If a repo-tracked zip is maintained for this family, keep it in `../../source-zips/canon/style.zip` as canonical input-zip or backfill storage, not as a mirror-generation lane. For repo-canonical image inspection, use `../../view-surfaces/google-slides-registry.json`.
