@@ -1,4 +1,4 @@
-# assets/characters/asset_classs__character__other_agents index
+# assets/characters/other-agents index
 
 Other agents character asset class.
 
