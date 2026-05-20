@@ -48,7 +48,7 @@ For a fresh agent session or repo-sensitive task:
 - `assets/canon/patch/` - canonical Patch visual guidance and asset surfaces.
 - `assets/view-surfaces/` - machine-readable Google Slides view-surface registry for repo-canonical image inspection.
 - `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented and are not the default image-inspection route.
-- `assets/receipts/` - committed receipt packages and evidence bundles.
+- `assets/evidence/receipts/` - committed receipt packages and evidence bundles.
 - `decks/` - deck artifacts or deck working folders when committed.
 - `skills/` - packaged or source copies of project-specific ChatGPT skills when intentionally committed.
 - `scratch/` - local working area; not canonical.

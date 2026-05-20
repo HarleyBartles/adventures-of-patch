@@ -27,7 +27,7 @@ Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - `assets/view-surfaces/` - durable Google Slides view-surface registry for repo-canonical image inspection.
 - `assets/source-zips/` - canonical uploaded asset packages and reusable source/import bundles; not the default visual-inspection route.
 - `assets/canon/patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
-- `assets/receipts/` - receipt packages and evidence bundles derived from decks or asset work.
+- `assets/evidence/receipts/` - receipt packages and evidence bundles derived from decks or asset work.
 - `docs/adventures/` - Patch adventure concepts and deck narrative frames.
 - `docs/principles/` - software-agent working principles expressed through Patch stories.
 - `docs/project/` - project indexes, bootstrap notes, and workflow guidance.

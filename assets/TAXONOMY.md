@@ -20,7 +20,7 @@ The repo's current folder layout remains in place until a migration batch explic
 - `source-zips` remains first-class, but only as a canonical input-zip and one-time backfill storage lane organized by asset taxonomy category.
 - `png_chunks` has been retired and is no longer an operating root.
 - `assets/views/` is the future name for the current view-surface registry root, but the on-disk path is not renamed in this dispatch.
-- `assets/evidence/receipts/` is the live evidence lane for receipt bundles moved out of source-zips, while the current `assets/receipts/` root stays live for its existing receipt packages until that lane migrates.
+- `assets/evidence/receipts/` is the live evidence lane for receipt bundles and migrated receipt packages.
 - `assets/packs/issue-*` is the future home for adventure-scoped packs, while `assets/adventures/` remains the current staging root.
 
 ## Canonical roots
@@ -152,7 +152,7 @@ Patch execution for a canonical asset pack zip should follow this order:
 ## Evidence policy
 
 - `assets/evidence/` is the home for receipts, imports, transfers, and legacy provenance that is not itself the canonical input zip.
-- `assets/receipts/` is the current live root for receipt packages until migration creates `assets/evidence/receipts/`.
+- `assets/evidence/receipts/` is the live root for receipt packages.
 - Receipt content should remain distinguishable from canonical input zips.
 - The extra `assembly/` tree in `hero-patch.zip` is not protected by default; keep it only if dependency evidence proves it is still needed.
 

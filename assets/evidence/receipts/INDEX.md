@@ -7,6 +7,7 @@ This subdirectory stores receipt bundles that have been reclassified out of `ass
 ## Files in this directory
 
 - `receipts.zip` - receipt/evidence package moved out of `assets/source-zips/`.
+- `club_db_bouncer_queue_v6_ordered_receipt.zip` - migrated receipt package from the retired `assets/receipts/` root.
 
 ## Subdirectories
 
