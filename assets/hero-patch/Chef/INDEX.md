@@ -6,7 +6,7 @@ This folder holds the deterministic sheet, source images, sidecar, and README fo
 
 ## Files in this directory
 
-- `chef_patch_asset_sheet_README.md` - human-readable summary for the Chef Patch asset sheet.
+- `README.md` - canonical human-readable package summary and companion status note.
 - `chef_patch_asset_sheet_sidecar.json` - structured sidecar for the Chef Patch asset sheet.
 - `chef_patch_asset_sheet_v4.png` - rendered Chef Patch asset sheet.
 

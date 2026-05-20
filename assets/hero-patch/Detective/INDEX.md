@@ -6,6 +6,7 @@ This folder holds the deterministic sheet, the sheet spec, the sidecar, and the 
 
 ## Files in this directory
 
+- `README.md` - canonical human-readable package summary and companion status note.
 - `asset_sheet_sidecar.md` - human-readable summary for the Patch Detective role kit.
 - `asset_sheet_spec.json` - deterministic compile spec for the Patch Detective role kit.
 - `asset_sheet__character__patch_detective_role_kit_v1.png` - rendered Patch Detective role kit sheet.

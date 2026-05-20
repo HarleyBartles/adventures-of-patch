@@ -2,6 +2,7 @@
   "title": "Patch Mechanic Role Kit",
   "asset_type": "character role kit",
   "asset_status": "provisional_asset",
+  "spec_status": "missing_legacy_not_reconstructed",
   "asset_version": "v1",
   "template": "template_final_asset_sheet_blank_v4.png",
   "template_version": "v4",

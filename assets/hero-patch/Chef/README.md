@@ -1,12 +1,12 @@
-# Patch Mechanic Role Kit
+# Chef Patch
 
 ## Package name
 
-Patch Mechanic Role Kit
+Chef Patch
 
 ## Package type
 
-Character / Patch costume variant
+Individual character sheet
 
 ## Current status
 
@@ -14,15 +14,15 @@ provisional_asset
 
 ## Intended use
 
-Patch costume-variant reference package for mechanic continuity, source-image QA, and deterministic asset-sheet compilation.
+Patch costume-variant reference package for chef continuity, source-image QA, and deterministic asset-sheet compilation.
 
 ## Source basis
 
-Harley supplied and approved the hero image plus alternate images in chat.
+Seven Harley-approved Chef Patch images supplied in-chat and compiled deterministically.
 
 ## Rendered sheet file
 
-- `asset_sheet__character__patch_mechanic_role_kit_v1.png`
+- `chef_patch_asset_sheet_v4.png`
 
 ## Source image folder
 
@@ -30,7 +30,7 @@ Harley supplied and approved the hero image plus alternate images in chat.
 
 ## Sidecar file
 
-- `asset_sheet__character__patch_mechanic_role_kit_v1.sidecar.json`
+- `chef_patch_asset_sheet_sidecar.json`
 
 ## Spec file or spec status
 
@@ -48,7 +48,7 @@ This is not new Patch canon. It is a Patch role-kit reference only.
 
 ## Migration note
 
-Future target: `assets/canon/patch/role-kits/mechanic/`
+Future target: `assets/canon/patch/role-kits/chef/`
 
 ## Do not use as new Patch canon
 
