@@ -1,9 +1,10 @@
-# assets/environments/asset_class__environment__identity_emporium index
+# assets/environments/identity-emporium index
 
 Identity Emporium environment family.
 
 ## Files in this directory
 
+- `README.md` - canonical human-readable package summary and companion status note.
 - `asset_class__environment__identity_emporium__bible.md` - provisional Stage 2b environment visual design guide for the Identity Emporium family.
 - `asset_class__environment__identity_emporium.png` - class/contact-style overview for the Identity Emporium environment family.
 - `asset__character__identity_emporium_shopkeeper__three_view_sheet.png` - Identity Emporium shopkeeper character sheet with route card review, identity kit handoff, and full-body reference views.
@@ -18,3 +19,5 @@ None.
 ## Notes for agents
 
 Use this family when the adventure needs the Identity Emporium setting. Keep it distinct from Club DB, Patch Mission Control, and hero canon surfaces.
+Current root: `assets/environments/identity-emporium/`.
+The shopkeeper sheet is preserved here as an environment-side view asset; it does not promote the shopkeeper beyond the provisional character status tracked in `assets/characters/shopkeeper/`.

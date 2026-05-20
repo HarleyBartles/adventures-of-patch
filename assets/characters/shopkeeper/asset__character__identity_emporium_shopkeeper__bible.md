@@ -12,8 +12,8 @@ This bible is grounded in the accepted / repo-indexed Identity Emporium world pr
 
 Repo evidence:
 
-- `assets/environments/asset_class__environment__identity_emporium/INDEX.md` identifies the Identity Emporium environment family and includes the world proof, exterior sheet, and interior sheet.
-- `assets/environments/asset_class__environment__identity_emporium/asset_class__environment__identity_emporium__bible.md` defines the Identity Emporium as a warm, grounded, slightly comic commercial costume-and-prop shop for mission identities.
+- `assets/environments/identity-emporium/INDEX.md` identifies the Identity Emporium environment family and includes the world proof, exterior sheet, and interior sheet.
+- `assets/environments/identity-emporium/asset_class__environment__identity_emporium__bible.md` defines the Identity Emporium as a warm, grounded, slightly comic commercial costume-and-prop shop for mission identities.
 - `assets/canon/style/asset__style__approved_styleguide.md` defines the broader Adventures visual style for humans: simple friendly editorial cartoon construction, readable posture and gesture, role-appropriate clothing and props, expressive but not extreme faces, no photorealistic/uncanny detail, and no borrowing Patch identity markers.
 
 Visual evidence:

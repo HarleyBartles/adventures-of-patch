@@ -1,9 +1,10 @@
-# assets/environments/asset_class__environment__patch_mission_control index
+# assets/environments/mission-control index
 
 Patch Mission Control Centre environment family.
 
 ## Files in this directory
 
+- `README.md` - canonical human-readable package summary and companion status note.
 - `asset__environment__pmc__control_desk.png` - mission control desk environment view.
 - `asset__environment__pmc__launch_gate.png` - launch gate environment view.
 - `asset__environment__pmc__launch_pad.png` - launch pad environment view.
@@ -18,3 +19,4 @@ None.
 ## Notes for agents
 
 Use this family when the adventure needs the Patch Mission Control Centre setting. Keep it distinct from Club DB or hero canon surfaces.
+Current root: `assets/environments/mission-control/`.

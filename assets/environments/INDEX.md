@@ -8,9 +8,9 @@ No direct environment files are expected at this level. Navigate into subdirecto
 
 ## Subdirectories
 
-- `asset_class__environment__clubdb/` - Club DB environment family. See `asset_class__environment__clubdb/INDEX.md`.
-- `asset_class__environment__identity_emporium/` - Identity Emporium environment family. See `asset_class__environment__identity_emporium/INDEX.md`.
-- `asset_class__environment__patch_mission_control/` - Patch Mission Control Centre environment family. See `asset_class__environment__patch_mission_control/INDEX.md`.
+- `club-db/` - Club DB reusable optional environment family. See `club-db/INDEX.md`.
+- `identity-emporium/` - Identity Emporium reusable environment family. See `identity-emporium/INDEX.md`.
+- `mission-control/` - Patch Mission Control Centre reusable environment family. See `mission-control/INDEX.md`.
 
 ## Notes for agents
 
