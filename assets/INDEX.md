@@ -16,7 +16,6 @@ No other direct asset files are expected at this level. Navigate into subdirecto
 - `evidence/` - receipt, import, transfer, and legacy evidence. See `evidence/INDEX.md`.
 - `environments/` - environment/location asset families. See `environments/INDEX.md`.
 - `canon/patch/` - canonical Patch visual references. See `canon/patch/INDEX.md`.
-- `png_chunks/` - self-contained PNG chunk packages derived from canonical assets. See `png_chunks/INDEX.md`.
 - `receipts/` - receipt packages and evidence bundles. See `receipts/INDEX.md`.
 - `source-zips/` - committed source/import zip packages. See `source-zips/INDEX.md`.
 - `view-surfaces/` - machine-readable durable GPT view-surface registry for repo-canonical images. See `view-surfaces/INDEX.md`.

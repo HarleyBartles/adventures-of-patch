@@ -18,7 +18,7 @@ The repo's current folder layout remains in place until a migration batch explic
 - No asset files are moved by this document.
 - Current roots remain live until a later batch migrates them.
 - `source-zips` remains first-class, but only as a canonical input-zip and one-time backfill storage lane organized by asset taxonomy category.
-- `png_chunks` is a retirement path, not an operating root.
+- `png_chunks` has been retired and is no longer an operating root.
 - `assets/views/` is the future name for the current view-surface registry root, but the on-disk path is not renamed in this dispatch.
 - `assets/evidence/receipts/` is the live evidence lane for receipt bundles moved out of source-zips, while the current `assets/receipts/` root stays live for its existing receipt packages until that lane migrates.
 - `assets/packs/issue-*` is the future home for adventure-scoped packs, while `assets/adventures/` remains the current staging root.
@@ -168,10 +168,10 @@ Patch execution for a canonical asset pack zip should follow this order:
 
 ## png_chunks retirement policy
 
-- `assets/png_chunks/` is a legacy experiment and not an operating lane.
+- `assets/png_chunks/` has been retired and removed as a live root.
 - Do not create new chunk packages as a normal workflow.
-- Keep it only until a reference audit proves it can be retired or folded into evidence.
-- If provenance must survive, preserve only the minimum necessary record under `assets/evidence/legacy/`.
+- Do not revive the lane as a first-class operating path.
+- If any minimal provenance must survive in the future, preserve only the minimum necessary record under `assets/evidence/legacy/`.
 
 ## Reusable vs adventure-specific promotion rules
 
@@ -288,7 +288,7 @@ assets/evidence/
 - Batch 4: reusable character and environment family moves in small batches.
 - Batch 5: adventure pack migration and scaffolding for issues `#37`, `#47`, and `#48`.
 - Batch 6: Patch canon migration last, after path, registry, and skill updates are proven.
-- Batch 7: retire `png_chunks` and old legacy mirrors after reference audit.
+- Batch 7: `png_chunks` retirement and old legacy mirror cleanup after reference audit.
 
 ## Rollback and validation
 
