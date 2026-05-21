@@ -1,12 +1,13 @@
 # patch-asset-contact-sheet-exporter index
 
-Repo-resident Patch execution capability for deterministic PNG contact-sheet exports from bounded dispatch JSON.
+Repo-resident Patch execution capability for deterministic PNG contact-sheet exports plus full compiled asset-sheet inclusion from bounded dispatch JSON.
 
 ## Files in this directory
 
 - `README.md` - capability overview, dispatch contract, and real CLI invocation.
-- `examples/sample-dispatch.json` - small repo-tracked sample dispatch using existing PNG assets.
-- `scripts/build_contact_sheets.py` - deterministic exporter that renders contact sheets, manifests, skipped records, evidence, and a packaged zip.
+- `examples/sample-dispatch.json` - small repo-tracked sample dispatch using source-image plus compiled-sheet inputs.
+- `examples/asset-sheet-only-dispatch.json` - sample dispatch proving asset-sheet-only inclusion without a fake contact sheet.
+- `scripts/build_contact_sheets.py` - deterministic exporter that renders source-image contact sheets, includes compiled asset sheets, writes manifests/evidence, and packages a zip.
 
 ## Subdirectories
 
@@ -17,3 +18,4 @@ Repo-resident Patch execution capability for deterministic PNG contact-sheet exp
 
 - `../../../../playbooks/asset-package-landing.md` - closest repo-local packaging discipline reference for output shape and publication hygiene.
 
+Build staging lives under `scratch/contact-sheet-builds/`, while `output-zips/asset-contact-sheets/` stays zip-only plus index mesh docs.

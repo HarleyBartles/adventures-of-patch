@@ -1,16 +1,17 @@
 # Patch asset contact-sheet exporter
 
-Repo-resident Patch execution capability for bounded export of deterministic PNG contact sheets.
+Repo-resident Patch execution capability for bounded export of deterministic PNG contact sheets plus full compiled asset-sheet inclusion.
 
 ## Purpose
 
-Given a structured dispatch JSON that names explicit repo-relative PNG asset paths, the exporter:
+Given a structured dispatch JSON that names explicit repo-relative source PNGs and optional compiled asset-sheet PNGs, the exporter:
 
 - resolves the requested files from the repository root;
 - rejects unsafe, absolute, missing, unreadable, or non-PNG inputs;
-- renders deterministic contact-sheet PNGs with short visible labels;
-- writes `request.json`, `manifest.json`, `skipped.json`, and `evidence.json`;
-- packages the rendered sheets and manifests into one `asset-contact-sheets.zip`.
+- renders deterministic contact-sheet PNGs from source-image families only;
+- includes compiled asset-sheet PNGs in full under `included-assets/`;
+- writes `request.json`, `manifest.json`, `skipped.json`, `evidence.json`, and `unresolved.json` when needed;
+- packages the rendered sheets, included assets, and manifests into one `asset-contact-sheets.zip`.
 
 This capability is for local repo work and GPT visual intake. It does not generate images and does not canonicalise assets.
 
@@ -30,8 +31,11 @@ The first-version dispatch shape is:
     {
       "family_id": "example-family",
       "reason": "why GPT needs this family",
-      "png_paths": [
+      "source_png_paths": [
         "assets/example/path/image-a.png"
+      ],
+      "asset_sheet_paths": [
+        "assets/example/path/compiled-sheet.png"
       ],
       "selectors": []
     }
@@ -44,7 +48,7 @@ The first-version dispatch shape is:
 }
 ```
 
-`png_paths` must be exact repo-relative paths first. `selectors` are deliberately limited in this pass and must not trigger vague whole-tree discovery.
+`source_png_paths` must be exact repo-relative paths first. `asset_sheet_paths` are compiled PNG sheets to include in full, not contact-sheet panels. `png_paths` remains a legacy alias for `source_png_paths` only. `selectors` are deliberately limited in this pass and must not trigger vague whole-tree discovery.
 
 ## Real CLI
 
@@ -56,23 +60,37 @@ python Patch/SKILLS/patch-asset-contact-sheet-exporter/scripts/build_contact_she
   --output-root output-zips/asset-contact-sheets
 ```
 
-The command writes a run folder under `output-zips/asset-contact-sheets/` and emits a zip with the sheets plus manifests.
+The command writes staging under `scratch/contact-sheet-builds/` and emits the final zip into `output-zips/asset-contact-sheets/`.
 
 ## Output shape
 
 ```text
-output-zips/asset-contact-sheets/<request-id-or-timestamp>/
+scratch/contact-sheet-builds/<request-id-or-timestamp>/
   contact-sheets/
     <family-slug>.png
+  included-assets/
+    <family-slug>/
+      <compiled-sheet>.png
   manifests/
     request.json
     manifest.json
     skipped.json
+    unresolved.json
   evidence.json
-  asset-contact-sheets.zip
+
+output-zips/asset-contact-sheets/<request-id>.zip
+output-zips/asset-contact-sheets/INDEX.md
+output-zips/INDEX.md
 ```
 
-The zip includes the contact sheets and manifest files, plus the evidence file for the run.
+The staging folder lives under `scratch/` so `output-zips/` stays zip-only plus index mesh docs. The final zip includes the contact sheets, full asset sheets, and manifest files, plus the evidence file for the run.
+
+## Manifest model
+
+- `rendered_source_contact_sheets` lists the generated contact-sheet panels and their repo-relative source PNGs.
+- `included_existing_assets` lists the full compiled asset sheets copied into the zip under `included-assets/`.
+- Each family records whether a source contact sheet was generated and, if not, why.
+- Families with only asset sheets record `source_contact_sheet_generated: false` and `source_contact_sheet_reason: asset_sheet_only_no_source_images`.
 
 ## Safety rules
 
@@ -81,8 +99,12 @@ The zip includes the contact sheets and manifest files, plus the evidence file f
 - Do not modify source PNGs.
 - Record every skipped input with a reason.
 - Keep the output deterministic by using stable ordering and fixed layout rules.
+- Do not create a contact sheet out of compiled asset sheets.
+- Do not scan the whole repository for vague selectors.
+- Keep build staging in `scratch/contact-sheet-builds/` or another ignored local staging root.
+- Keep `output-zips/` limited to zip packages and mesh docs.
 
 ## Notes
 
 Selectors are intentionally bounded in this first pass. If a dispatch needs broader lookup semantics, extend the selector logic deliberately rather than falling back to a repo-wide scan.
-
+Asset-sheet-only families are valid and should still be represented in the zip, but only as included full sheets.
