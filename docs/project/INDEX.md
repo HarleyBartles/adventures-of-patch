@@ -34,11 +34,13 @@ For a fresh agent session or repo-sensitive task:
 6. For Patch actor-governed work, `Patch/README.md`, `Patch/GOVERNANCE.md`, and `Patch/ROUTING.md`.
 7. For Patch-owned executable capabilities, `Patch/SKILLS/INDEX.md`.
 8. For project/domain playbooks, `playbooks/INDEX.md`.
+9. For visual-production, image QA, or image-credit stewardship decisions, `playbooks/image-generation-resource-discipline.md`.
 
 ## Current repo layout
 
 - `README.md` - project orientation.
 - `AGENTS.md` - agent navigation, source discipline, Patch actor routing, visual Patch rules, and production gates.
+- `playbooks/image-generation-resource-discipline.md` - durable image-credit stewardship doctrine for deterministic/no-credit visual work.
 - `INDEX.md` - root directory index and top-level navigation surface.
 - `Patch/` - Patch project-local actor surface, with project-director and execution lanes.
 - `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.

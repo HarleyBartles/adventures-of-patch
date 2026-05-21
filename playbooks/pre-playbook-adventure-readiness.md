@@ -54,6 +54,8 @@ Asset-ready normally requires:
 
 Asset preproduction may use image generation, but it must not generate body-slide scene images. Body-slide image generation belongs inside the production playbook after deck and image planning.
 
+Before any preproduction image call, consult `playbooks/image-generation-resource-discipline.md` so deterministic prep work stays on the no-credit path unless the current turn explicitly authorizes a spend.
+
 Generated or edited preproduction images are only candidates until accepted by `adventures-image-qa` in the correct lane. Unreviewed, rejected, weak, or generated-only sheets do not count toward asset-ready.
 
 For new Patch-bearing worlds, visual preproduction must normally begin with a Patch-in-world interaction or scale proof. This proof must show canonical Patch inhabiting the theme, interacting with the core hook and relevant non-Patch people, agents, systems, gates, or props. If that proof fails Patch canon, world fit, or interaction grammar, do not continue into the broader asset package.

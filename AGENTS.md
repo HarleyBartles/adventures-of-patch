@@ -27,7 +27,15 @@ For issue-to-PPTX production, also read:
 
 - `playbooks/end-to-end-pptx-production.md`
 
+For any visual-production decision that could touch image credits, also read:
+
+- `playbooks/image-generation-resource-discipline.md`
+
 Use any live GitHub-capable route that can fetch canonical material from this repo. Prefer the live GitHub API connector for known repo paths, issues, and writes when available, but do not treat it as the only possible proof of access. Treat code-search/index access as useful but potentially lagging.
+
+## Visual resource discipline
+
+Image-generation credits are scarce production capacity. Deterministic workflows exist to reduce failed image-generation calls and conserve those credits. Do not spend image credits during deterministic work such as QA, prompt-board creation, asset-sheet compilation, contact-sheet rendering, receipts, repo work, or policy discussion.
 
 ## Patch actor surface
 

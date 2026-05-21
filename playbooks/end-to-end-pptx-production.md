@@ -2,6 +2,8 @@
 
 This playbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
 
+Before any image-generation decision inside this playbook, read `playbooks/image-generation-resource-discipline.md`. The deterministic stages in this playbook are credit-conservation infrastructure, not automatic spend triggers.
+
 It owns process flow, required evidence, production gates, stop conditions, downgrade rules, artifact expectations, and failure reporting. It does not prescribe a fixed skill invocation script. At each stage, select currently available skills and tools that satisfy the required evidence and gates.
 
 ## Scope
@@ -298,6 +300,7 @@ Use image generation only after:
 - visual intent has been established;
 - Patch preflight has inspected repo Patch references and any required repo-indexed contact-sheet intake package;
 - prompt pack satisfies Patch style requirements, including current repo-indexed eye canon.
+- the current turn satisfies `playbooks/image-generation-resource-discipline.md`, including the credit-spend justification object.
 
 At the image-generation stage, invoke the image-generation route, report exact route failure, or record exact route absence after discovery. Do not infer unavailability.
 

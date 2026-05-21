@@ -8,6 +8,10 @@ This project develops presentation narratives through Patch's adventures as a fi
 
 The repository is canonical project truth. Do not rely on memory when asset availability, Patch continuity, visual planning, actor routing, or playbook status matters. Inspect the current repo files first.
 
+## Visual resource discipline
+
+Before any visual-production decision that could touch image credits, read `playbooks/image-generation-resource-discipline.md`. Deterministic workflows such as QA, prompt boards, contact sheets, asset-sheet compilation, receipts, repo work, and policy discussion are credit-conservation work, not image-generation authorization.
+
 ## Connector action gate
 
 When work reaches an external connector action, refresh the named connector at that boundary before choosing actions or reporting action availability. See `docs/project/connector-action-gate-note.md` and `playbooks/bound-connector-action-gate.md`.

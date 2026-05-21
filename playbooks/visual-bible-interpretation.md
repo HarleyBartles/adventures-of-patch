@@ -2,6 +2,8 @@
 
 This playbook defines how Adventures visual bibles are discovered and converted into image-generation, image-QA, and repair constraints.
 
+Before any image-generation decision, read `playbooks/image-generation-resource-discipline.md` so the current turn is classified as deterministic/no-credit or credit-spending mutation before prompts are built.
+
 Use this playbook whenever a visual-preproduction, image-preflight, or image-QA task involves a subject, style system, character, environment, prop, or asset class that has a repo-indexed visual bible or style guide. Also use it when creating a minimal provisional bible before generating a new reusable asset class.
 
 ## Core rule
