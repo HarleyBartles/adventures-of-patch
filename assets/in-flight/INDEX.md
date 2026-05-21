@@ -10,17 +10,7 @@ These files are non-canonical working references. They may be included in visual
 
 ## Files in this directory
 
-- `ChatGPT Image May 20, 2026, 06_48_30 AM.png`
-- `ChatGPT Image May 20, 2026, 06_49_03 PM.png`
-- `ChatGPT Image May 20, 2026, 06_59_23 AM.png`
-- `ChatGPT Image May 20, 2026, 07_14_52 AM.png`
-- `ChatGPT Image May 20, 2026, 07_43_58 AM.png`
-- `ChatGPT Image May 20, 2026, 08_58_02 AM.png`
-- `ChatGPT Image May 20, 2026, 08_58_10 AM.png`
-- `ChatGPT Image May 20, 2026, 09_22_21 PM.png`
-- `ChatGPT Image May 20, 2026, 09_35_23 AM.png`
-- `ChatGPT Image May 21, 2026, 06_04_42 AM.png`
-- `trial4_image2_storyboard_diagram_v2_corrected_bit_line.png`
+None
 
 ## Subdirectories
 
