@@ -31,7 +31,6 @@ Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
 - `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.
 - `playbooks/` - first-class Adventures project/domain playbooks.
 - `assets/canon/patch/` - Patch visual canon.
-- `assets/view-surfaces/` - Google Slides view-surface registry for repo-canonical image inspection.
 - `assets/source-zips/` - source/import packages and package discovery index.
 - `skills/` - committed project skill packages or source copies when intentionally committed.
 

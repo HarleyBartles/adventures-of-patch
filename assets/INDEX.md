@@ -15,7 +15,6 @@ Live directory listing.
 - `environments/`
 - `evidence/`
 - `source-zips/`
-- `view-surfaces/`
 
 ## Notes for agents
 

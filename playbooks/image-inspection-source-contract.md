@@ -6,7 +6,7 @@ This contract defines how GPT should visually inspect repo-canonical image asset
 
 Repo image files are canonical source truth. Asset-family indexes describe what images exist and what they are for.
 
-Google Slides view surfaces are GPT's durable visual inspection surface for repo-canonical images. They are derived views, not source truth.
+Repo-indexed contact-sheet dispatch/intake packages built by the Patch contact-sheet exporter are the default visual inspection surface for repo-canonical images. They are inspection packages, not source truth.
 
 Source zips, project-source zips, source-package mirrors, and receipt packages are not the default image-inspection truth for GPT.
 
@@ -16,20 +16,18 @@ When GPT needs to inspect a repo-canonical image:
 
 1. Start from `assets/INDEX.md`.
 2. Read the relevant asset-family `INDEX.md`.
-3. Read `assets/view-surfaces/google-slides-registry.json`.
-4. Look up the repo-relative image path.
-5. Use the recorded `presentation_id` and `slide_object_id` to render the Google Slides thumbnail or equivalent view surface.
-6. Visually inspect the rendered slide image.
+3. Discover the current repo-indexed contact-sheet dispatch or intake package through the repo index mesh.
+4. Open the rendered contact-sheet PNGs or included full-size references from that package.
+5. Visually inspect the rendered image surface.
 
-If the registry entry is missing, stale, blocked, or inconsistent with the repo image fingerprint, GPT should use the deterministic Slides view-surface deck workflow to create or update the deck and registry when the Google Drive/Slides and GitHub tools are available.
+If the needed contact-sheet package is missing or stale, use the Patch contact-sheet exporter and the repo index mesh to produce or refresh the package, then inspect the resulting contact-sheet PNGs. Do not promote the package itself to canon.
 
-## Deck contract
+## Contact-sheet package contract
 
-- One image per slide.
-- One stable deck per asset folder for folders with 1-10 images.
-- Folders with more than 10 images split into stable numbered deck chunks with at most 10 image slides per deck.
-- Deck names include the numeric suffix from creation, for example `AOP View Surface - Hero Patch -1`.
-- The durable handle is `presentation_id` plus `slide_object_id`, not a transient thumbnail URL.
+- Contact sheets are built from bounded, repo-relative dispatches.
+- One package may cover one or more asset families, but the dispatch must name the explicit files or bounded selectors.
+- The package records the rendered contact-sheet PNGs, included full-size references, manifests, and evidence.
+- The package is an inspection input, not a canonical asset surface.
 
 ## Source zips and project sources
 
@@ -40,16 +38,18 @@ Source zips remain valid for bounded package work only:
 - receipt/evidence package handling;
 - package integrity checks;
 - explicit user-scoped zip inspection;
-- emergency fallback when the Slides view-surface route is blocked and the reduced-confidence state is stated.
+- contact-sheet package support when the dispatch needs full-size source or in-flight inclusion.
 
 Do not inspect source zips or project-source visual packages as the ordinary way to view repo PNGs.
 
 For now, project sources should contain only asset sheet template package(s), unless Harley explicitly changes that policy.
 
+For template packages only, the repo template PNG plus its JSON sidecar and the matching project-source PNG plus spec must both be discoverable and reconciled through the index mesh before the package is treated as ready.
+
 ## False-green checks
 
 A run is not green if it claims image inspection was complete because a source zip existed, a package was listed, a repo path was known, or a project-source package name matched.
 
-A run may claim visual inspection only when GPT inspected a rendered image surface, normally through the Slides registry route.
+A run may claim visual inspection only when GPT inspected a rendered image surface from a repo-indexed contact-sheet package.
 
-If the Slides route is blocked, report the exact blocker and either stop or mark reduced confidence before using any package fallback.
+If the required package is blocked, report the exact blocker and either stop or mark reduced confidence before using any package fallback.

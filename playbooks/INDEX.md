@@ -10,7 +10,7 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 - visual-preproduction.md - canonical pre-deck visual preproduction workflow for generating, editing, QA-ing, and reporting reusable asset references before PPTX production.
 - visual-bible-creation.md - canonical workflow for creating, updating, normalising, and locking standardized visual bibles with composable prompt, QA, repair, and extrapolation blocks.
 - visual-bible-interpretation.md - canonical workflow for discovering repo-indexed visual bibles and converting them into prompt, QA, and repair constraints.
-- image-inspection-source-contract.md - canonical contract for GPT image inspection through the Slides registry view-surface route.
+- image-inspection-source-contract.md - canonical contract for GPT visual inspection through repo-indexed contact-sheet dispatch/intake packages.
 - image-qa-contract.md - canonical multi-lane image QA contract; generated images are candidates until accepted by adventures-image-qa.
 - asset-sheet-production-contract.md - canonical final-layout and zip-package contract for source-image-first, template-compiled asset sheets.
 - bound-connector-action-gate.md - connector-agnostic gate requiring namespace refresh at the external app action boundary before reporting tool availability.
@@ -30,7 +30,7 @@ None.
 - Visual preproduction is separate from PPTX production and must not generate body-slide scene art.
 - Visual bible creation authors or updates standardized bibles before generation, after accepted overview references, and when locking accepted asset families.
 - Visual bible interpretation converts repo-indexed canon into prompt, QA, and repair constraints without hard-coding brittle paths or source-package visual truth assumptions.
-- Image inspection should default to the Slides registry route documented in `image-inspection-source-contract.md`.
+- Image inspection should default to repo-indexed contact-sheet intake documented in `image-inspection-source-contract.md`.
 - Asset sheets must follow the source-image-first, deterministic-template compile contract before landing or being counted asset-ready.
 - adventures-image-qa is the canonical image QA authority; generated images must be QA-accepted in the correct lane before they count as preproduction references or scene art.
 - Patch actor governance lives under Patch.

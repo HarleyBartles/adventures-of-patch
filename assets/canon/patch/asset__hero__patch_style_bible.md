@@ -203,4 +203,4 @@ Create a clean, vector-style illustration of a friendly autonomous software-agen
 
 Reference
 
-Use the current Patch contact sheet in the Slides view-surface registry as the visual reference for Patch's proportions, palette, poses and core silhouette. The version number may change between sessions, so refer to the current Slides registry entry rather than relying on a fixed versioned filename. When a skill or workflow needs visual backing, discover the current repo-indexed Patch asset family and open the recorded Google Slides view surface first; use source packages only for package, import, or integrity fallback.
+Use the current Patch contact sheet in a repo-indexed contact-sheet dispatch/intake package as the visual reference for Patch's proportions, palette, poses and core silhouette. The version number may change between sessions, so discover the current repo-indexed package entry rather than relying on a fixed versioned filename. When a skill or workflow needs visual backing, discover the current repo-indexed Patch asset family and open the contact-sheet package first; use source packages only for package, import, or integrity fallback.

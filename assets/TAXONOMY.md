@@ -178,7 +178,6 @@ The validator should report:
 
 - `assets/source-zips/` stores canonical ingested input zips and one-time backfill bundles.
 - `assets/evidence/` stores receipts, imports, transfers, and legacy provenance.
-- `assets/view-surfaces/` stores derived inspection surfaces such as the Google Slides registry.
 
 These lanes are separate from reusable asset packages.
 

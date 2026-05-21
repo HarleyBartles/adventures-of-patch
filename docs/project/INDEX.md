@@ -46,7 +46,6 @@ For a fresh agent session or repo-sensitive task:
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
 - `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
 - `assets/canon/patch/` - canonical Patch visual guidance and asset surfaces, including `reference_sheets/` for explicit canon/reference PNGs with local filenames.
-- `assets/view-surfaces/` - machine-readable Google Slides view-surface registry for repo-canonical image inspection.
 - `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented and are not the default image-inspection route.
 - `assets/evidence/receipts/` - committed receipt packages and evidence bundles.
 - `decks/` - deck artifacts or deck working folders when committed.

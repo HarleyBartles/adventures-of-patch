@@ -30,7 +30,6 @@ REUSABLE_FAMILY_ROOTS = {
 TEXT_EXTENSIONS = {".md", ".json"}
 STALE_REFERENCE_EXCLUDE_FILES = {
     REPO_ROOT / "Patch" / "SKILLS" / "patch-asset-contact-sheet-exporter" / "README.md",
-    REPO_ROOT / "assets" / "view-surfaces" / "google-slides-registry.schema.json",
 }
 LOCAL_REF_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*__v\d+(?:_\d+)?\.png$")
 SHEET_RE = re.compile(r"^sheet__v\d+(?:_\d+)?\.png$")

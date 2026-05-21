@@ -18,7 +18,7 @@ This is a repo-resident Patch skill surface, not a ChatGPT-native installed skil
 
 Use when Patch is bound to `Patch / execution` and receives a zip or package of visual assets, markdown sidecars, receipt evidence, or source files that may need to be landed into `HarleyBartles/adventures-of-patch`.
 
-This skill handles package or import work only; repo-canonical image inspection should default to `assets/view-surfaces/google-slides-registry.json`.
+This skill handles package or import work only; repo-canonical image inspection should default to repo-indexed contact-sheet dispatch/intake packages built by the Patch contact-sheet exporter.
 
 ## Required reads
 

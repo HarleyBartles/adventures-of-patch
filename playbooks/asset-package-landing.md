@@ -1,6 +1,6 @@
 # Asset package landing playbook
 
-Use this project playbook when approved visual assets, markdown sidecars, receipt packages, or source zips need to be landed in `HarleyBartles/adventures-of-patch`. Source zips are package/import/receipt artifacts, not the default GPT visual inspection route.
+Use this project playbook when approved visual assets, markdown sidecars, receipt packages, or source zips need to be landed in `HarleyBartles/adventures-of-patch`. Source zips are package/import/receipt artifacts, not the default GPT visual inspection route. For visual inspection, use repo-indexed contact-sheet dispatch/intake packages built by the Patch contact-sheet exporter.
 
 For Patch-routed asset zip ingress, the canonical local drop zone is `Patch/INGRESS/asset-zips/`. Incoming ingress zips are evidence/input artifacts, not canon.
 

@@ -24,7 +24,7 @@ Current repo doctrine remains authoritative for Patch identity and source discip
 - the current repo-indexed Patch contact sheet
 - the current repo-indexed Patch anti-pattern sheet
 - the current repo-indexed Patch interaction guide
-- `assets/view-surfaces/google-slides-registry.json` when repo-canonical image inspection is needed
+- repo-indexed contact-sheet dispatch/intake packages when repo-canonical image inspection is needed
 - `assets/source-zips/INDEX.md` when package or integrity fallback is needed
 
 The current approved sheets should be treated as accepted session outputs until Harley lands them in the repo and project sources.

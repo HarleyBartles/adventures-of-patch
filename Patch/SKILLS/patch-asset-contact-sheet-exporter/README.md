@@ -14,7 +14,7 @@ Given a structured dispatch JSON that names explicit repo-relative source PNGs, 
 - writes `request.json`, `manifest.json`, `skipped.json`, `evidence.json`, and `unresolved.json` when needed;
 - packages the rendered sheets, included assets, and manifests into one `asset-contact-sheets.zip`.
 
-This capability is for local repo work and GPT visual intake. It does not generate images and does not canonicalise assets.
+This capability is for local repo work and GPT visual intake. It does not generate images and does not canonicalise assets; the rendered contact-sheet zip is an inspection package, not canon.
 
 ## Dispatch contract
 

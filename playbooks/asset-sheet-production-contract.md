@@ -22,6 +22,8 @@ Do not ask image generation to create the final sheet layout. Image generation c
 
 Use the current approved blank asset sheet template as the final layout for every asset sheet. The approved template is the one Harley placed as a first-class project-source/library template package after approving `template_final_asset_sheet_blank_v3.png`. Project sources are reserved for asset-sheet template package(s) only for now unless Harley changes that policy.
 
+For template packages, the repo PNG and JSON sidecar are required source truth, and the matching project-source PNG plus spec are also required and must be discoverable through the index mesh. Do not treat either side as sufficient on its own.
+
 The template structure is:
 
 - hard-text header: `ASSET SHEET`;
