@@ -9,6 +9,7 @@ Live directory listing.
 ## Subdirectories
 
 - `adventures/`
+- `in-flight/`
 - `canon/`
 - `characters/`
 - `environments/`

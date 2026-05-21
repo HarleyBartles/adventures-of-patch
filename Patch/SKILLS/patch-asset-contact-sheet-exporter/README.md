@@ -1,15 +1,16 @@
 # Patch asset contact-sheet exporter
 
-Repo-resident Patch execution capability for bounded export of deterministic PNG contact sheets plus full compiled asset-sheet inclusion.
+Repo-resident Patch execution capability for bounded export of deterministic PNG contact sheets plus full compiled asset-sheet and in-flight visual-reference inclusion.
 
 ## Purpose
 
-Given a structured dispatch JSON that names explicit repo-relative source PNGs and optional compiled asset-sheet PNGs, the exporter:
+Given a structured dispatch JSON that names explicit repo-relative source PNGs, optional compiled asset-sheet PNGs, and optional in-flight working references, the exporter:
 
 - resolves the requested files from the repository root;
 - rejects unsafe, absolute, missing, unreadable, or non-PNG inputs;
-- renders deterministic contact-sheet PNGs from source-image families only;
+- renders deterministic contact-sheet PNGs from source-image families and in-flight image inputs;
 - includes compiled asset-sheet PNGs in full under `included-assets/`;
+- includes in-flight reference PNGs in full under `included-assets/<family>/in-flight/` when requested;
 - writes `request.json`, `manifest.json`, `skipped.json`, `evidence.json`, and `unresolved.json` when needed;
 - packages the rendered sheets, included assets, and manifests into one `asset-contact-sheets.zip`.
 
@@ -34,8 +35,17 @@ The first-version dispatch shape is:
       "source_png_paths": [
         "assets/example/path/image-a.png"
       ],
-      "asset_sheet_paths": [
+      "compiled_asset_sheet_paths": [
         "assets/example/path/compiled-sheet.png"
+      ],
+      "reference_sheet_paths": [
+        "assets/example/path/reference-sheet.png"
+      ],
+      "in_flight_image_paths": [
+        "assets/in-flight/working-panel.png"
+      ],
+      "in_flight_reference_paths": [
+        "assets/in-flight/storyboard-diagram.png"
       ],
       "selectors": []
     }
@@ -48,7 +58,7 @@ The first-version dispatch shape is:
 }
 ```
 
-`source_png_paths` must be exact repo-relative paths first. `asset_sheet_paths` are compiled PNG sheets to include in full, not contact-sheet panels. `png_paths` remains a legacy alias for `source_png_paths` only. `selectors` are deliberately limited in this pass and must not trigger vague whole-tree discovery.
+`source_png_paths` must be exact repo-relative paths first. `compiled_asset_sheet_paths` are compiled PNG sheets to include in full, not contact-sheet panels. `asset_sheet_paths` remains a legacy alias for `compiled_asset_sheet_paths`. `reference_sheet_paths` are full-size reference PNGs. `in_flight_image_paths` are contact-sheetable working references that stay visibly in-flight in the manifest. `in_flight_reference_paths` are full-size working references for diagrams, storyboards, or other detail assets that GPT should inspect at native resolution. `png_paths` remains a legacy alias for `source_png_paths` only. `selectors` are deliberately limited in this pass and must not trigger vague whole-tree discovery.
 
 ## Real CLI
 
@@ -71,6 +81,8 @@ scratch/contact-sheet-builds/<request-id-or-timestamp>/
   included-assets/
     <family-slug>/
       <compiled-sheet>.png
+      in-flight/
+        <working-reference>.png
   manifests/
     request.json
     manifest.json
@@ -83,14 +95,16 @@ output-zips/asset-contact-sheets/INDEX.md
 output-zips/INDEX.md
 ```
 
-The staging folder lives under `scratch/` so `output-zips/` stays zip-only plus index mesh docs. The final zip includes the contact sheets, full asset sheets, and manifest files, plus the evidence file for the run.
+The staging folder lives under `scratch/` so `output-zips/` stays zip-only plus index mesh docs. The final zip includes the contact sheets, full asset sheets, full reference sheets, in-flight reference inclusions, and manifest files, plus the evidence file for the run.
 
 ## Manifest model
 
-- `rendered_source_contact_sheets` lists the generated contact-sheet panels and their repo-relative source PNGs.
+- `rendered_source_contact_sheets` lists the generated contact-sheet panels and their repo-relative PNGs, including any `in_flight_image` panels that were intentionally contact-sheeted.
 - `included_existing_assets` lists the full compiled asset sheets copied into the zip under `included-assets/`.
 - Each family records whether a source contact sheet was generated and, if not, why.
 - Families with only asset sheets record `source_contact_sheet_generated: false` and `source_contact_sheet_reason: asset_sheet_only_no_source_images`.
+- In-flight panels record `record_type: in_flight_image` in the manifest, while full-size in-flight inclusions record `record_type: in_flight_reference`.
+- In-flight inclusions are copied under `included-assets/<family>/in-flight/` so the zip itself stays explicit about their working-reference status.
 
 ## Safety rules
 

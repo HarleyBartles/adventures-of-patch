@@ -1,0 +1,35 @@
+{
+  "request_type": "asset_contact_sheet_export",
+  "project": "adventures-of-patch",
+  "source_repo": "HarleyBartles/adventures-of-patch",
+  "request_id": "in-flight-visual-intake-request",
+  "issue": 47,
+  "purpose": "visual intake for current in-flight adventure references without canon promotion",
+  "families": [
+    {
+      "family_id": "tournament-working-references",
+      "reason": "GPT needs source images, a compiled sheet, a canon reference, and in-flight working references to inspect the current preproduction state",
+      "selectors": [],
+      "source_png_paths": [
+        "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/patch_hero__v1.png"
+      ],
+      "compiled_asset_sheet_paths": [
+        "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/compiled_asset_sheets/sheet__v1.png"
+      ],
+      "reference_sheet_paths": [
+        "assets/canon/patch/reference_sheets/approved_style__v1.png"
+      ],
+      "in_flight_image_paths": [
+        "assets/in-flight/ChatGPT Image May 21, 2026, 06_04_42 AM.png"
+      ],
+      "in_flight_reference_paths": [
+        "assets/in-flight/trial4_image2_storyboard_diagram_v2_corrected_bit_line.png"
+      ]
+    }
+  ],
+  "output": {
+    "contact_sheet_per_family": true,
+    "zip_all_outputs": true,
+    "include_manifest": true
+  }
+}

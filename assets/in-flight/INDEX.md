@@ -1,0 +1,39 @@
+# assets/in-flight index
+
+Live directory listing for current working visual references.
+
+## Purpose
+
+This lane holds repo-tracked images that are still in flight: accepted-but-not-yet-canonised references, storyboard diagrams, trial renders, and other visual-preproduction assets.
+
+These files are non-canonical working references. They may be included in visual-intake zips, but they are not source-image packs or canonical asset sheets by default.
+
+## Files in this directory
+
+- `ChatGPT Image May 20, 2026, 06_48_30 AM.png`
+- `ChatGPT Image May 20, 2026, 06_49_03 PM.png`
+- `ChatGPT Image May 20, 2026, 06_59_23 AM.png`
+- `ChatGPT Image May 20, 2026, 07_14_52 AM.png`
+- `ChatGPT Image May 20, 2026, 07_43_58 AM.png`
+- `ChatGPT Image May 20, 2026, 08_58_02 AM.png`
+- `ChatGPT Image May 20, 2026, 08_58_10 AM.png`
+- `ChatGPT Image May 20, 2026, 09_22_21 PM.png`
+- `ChatGPT Image May 20, 2026, 09_35_23 AM.png`
+- `ChatGPT Image May 21, 2026, 06_04_42 AM.png`
+- `trial4_image2_storyboard_diagram_v2_corrected_bit_line.png`
+
+## Subdirectories
+
+None.
+
+## Non-canon warning
+
+In-flight images are working references only. Do not treat this lane as canonical source art, compiled asset-sheet output, or a promoted asset package unless a separate canonisation workflow says otherwise.
+
+## How GPT and Patch should request these
+
+Use `in_flight_image_paths` for contact-sheetable in-flight panels.
+
+Use `in_flight_reference_paths` for full-size in-flight inclusions such as storyboard diagrams or detail references that GPT needs to inspect at native resolution.
+
+If a dispatch also uses source images, compiled sheets, or reference sheets, keep those lanes explicit so in-flight assets stay visibly separate in the manifest and evidence.

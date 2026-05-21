@@ -13,6 +13,24 @@ Path, lane, and manifest carry taxonomy. Filenames are local identifiers inside 
 
 ## Canonical repository shapes
 
+### Working in-flight lane
+
+`assets/in-flight/` is a repo-tracked working lane for current visual references that are not yet canonical asset-pack contents.
+
+```text
+assets/in-flight/
+  INDEX.md
+  <working_reference>.png
+```
+
+This lane is separate from reusable asset packs and canon roots.
+
+- In-flight images are repo-tracked visual evidence and working references, not final canonical asset-pack contents.
+- In-flight images may be contact-sheeted for GPT visual intake when requested.
+- In-flight images may also be included full-size when the dispatch marks them as storyboard, diagram, or full-size reference.
+- Manifest and evidence output must label them as `in_flight_image` or `in_flight_reference`, not `source_image`, `asset_sheet`, `compiled_asset_sheet`, or canon reference.
+- If an in-flight image later becomes reusable or canonical, promote it through a separate asset-pack or canonisation workflow.
+
 ### Reusable asset families
 
 Reusable families live under `asset_packs/`.
@@ -75,6 +93,8 @@ Canon roots may remain outside `asset_packs/` when they are explicitly documente
 - `reference_sheets/`
 - `manifests/`
 
+The working `in-flight/` lane is not an `asset_packs/` lane and does not become canonical by path alone.
+
 No active package should use `reference_sheets/` at the family root as a substitute for `asset_packs/`.
 
 ## Filename rules
@@ -82,6 +102,7 @@ No active package should use `reference_sheets/` at the family root as a substit
 - `source_images/` filenames are local inputs, such as `hero__v1.png` or `side_view__v1.png`.
 - `compiled_asset_sheets/` filenames are local compiled-sheet labels, normally `sheet__vN.png`.
 - `reference_sheets/` filenames are local sheet labels, such as `overview__v1.png` or `front_exterior__v1.png`.
+- `in-flight/` filenames are local working-reference labels; they remain lane-qualified as in-flight until promoted elsewhere.
 - Filenames must not repeat the package taxonomy in full just to encode what the path already says.
 - Over-encoded names such as `asset_sheet__character__stakeholders__data_architect_product_trio__v1.png` are not acceptable active filenames.
 
@@ -134,6 +155,7 @@ The validator must check:
 - `source_images/` contains only local source images;
 - `compiled_asset_sheets/` contains only local compiled sheets;
 - `reference_sheets/` contains only local reference sheets;
+- `in-flight/` contents are working references, not canonical package contents;
 - no active filename is over-encoded with redundant package taxonomy;
 - no stale moved path remains in indexes, manifests, registry, docs, or sample dispatches;
 - no UTF-8 BOM exists in touched Markdown or JSON files;

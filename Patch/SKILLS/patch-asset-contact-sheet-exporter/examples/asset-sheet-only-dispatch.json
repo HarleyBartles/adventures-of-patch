@@ -13,6 +13,9 @@
       "asset_sheet_paths": [
         "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/compiled_asset_sheets/sheet__v1.png"
       ],
+      "reference_sheet_paths": [],
+      "in_flight_image_paths": [],
+      "in_flight_reference_paths": [],
       "selectors": []
     }
   ],

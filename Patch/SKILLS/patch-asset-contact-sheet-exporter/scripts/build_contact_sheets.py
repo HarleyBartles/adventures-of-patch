@@ -123,22 +123,39 @@ def resolved_family_paths(family: dict[str, Any]) -> dict[str, list[str]]:
     if not compiled_asset_sheet_paths:
         compiled_asset_sheet_paths = legacy_asset_sheet_paths
     reference_sheet_paths = normalize_list(family.get("reference_sheet_paths"))
+    in_flight_image_paths = normalize_list(family.get("in_flight_image_paths"))
+    in_flight_reference_paths = normalize_list(family.get("in_flight_reference_paths"))
     selectors = normalize_list(family.get("selectors"))
     requested_optional_paths_or_names = normalize_list(family.get("requested_optional_paths_or_names"))
     return {
         "source_png_paths": source_png_paths,
         "compiled_asset_sheet_paths": compiled_asset_sheet_paths,
         "reference_sheet_paths": reference_sheet_paths,
+        "in_flight_image_paths": in_flight_image_paths,
+        "in_flight_reference_paths": in_flight_reference_paths,
         "selectors": selectors,
         "requested_optional_paths_or_names": requested_optional_paths_or_names,
     }
+
+
+def classify_record_type(repo_rel_path: str, requested_type: str | None = None) -> str:
+    path = repo_rel_path.replace("\\", "/")
+    if requested_type == "in_flight_reference":
+        return requested_type
+    if path == "assets/in-flight" or path.startswith("assets/in-flight/"):
+        return "in_flight_image"
+    if "compiled_asset_sheets/" in path:
+        return "asset_sheet"
+    if "reference_sheets/" in path:
+        return "reference_sheet"
+    return requested_type or "source_png"
 
 
 def safe_add_record(
     family_id: str,
     raw_path: str,
     root: Path,
-    record_type: str,
+    requested_type: str | None,
     skipped: list[dict[str, Any]],
     seen: set[str],
 ) -> InputRecord | None:
@@ -212,6 +229,7 @@ def safe_add_record(
         return None
 
     seen.add(repo_rel)
+    record_type = classify_record_type(repo_rel, requested_type)
     return InputRecord(family_id=family_id, record_type=record_type, source_path=repo_rel, resolved_path=resolved)
 
 
@@ -266,7 +284,7 @@ def collect_selector_records(
                         family_id,
                         repo_relative_string(child, root),
                         root,
-                        "source_png",
+                        None,
                         skipped,
                         seen,
                     )
@@ -274,7 +292,7 @@ def collect_selector_records(
                         records.append(record)
             continue
 
-        record = safe_add_record(family_id, selector, root, "source_png", skipped, seen)
+        record = safe_add_record(family_id, selector, root, None, skipped, seen)
         if record is not None:
             records.append(record)
 
@@ -286,35 +304,62 @@ def collect_family_records(
     source_png_paths: list[str],
     compiled_asset_sheet_paths: list[str],
     reference_sheet_paths: list[str],
+    in_flight_image_paths: list[str],
+    in_flight_reference_paths: list[str],
     selectors: list[str],
     requested_optional_paths_or_names: list[str],
     root: Path,
     skipped: list[dict[str, Any]],
-) -> tuple[list[InputRecord], list[InputRecord], list[InputRecord]]:
+) -> tuple[list[InputRecord], list[InputRecord], list[InputRecord], list[InputRecord], list[InputRecord]]:
     source_records: list[InputRecord] = []
     asset_sheet_records: list[InputRecord] = []
     reference_sheet_records: list[InputRecord] = []
+    in_flight_image_records: list[InputRecord] = []
+    in_flight_reference_records: list[InputRecord] = []
     seen: set[str] = set()
 
-    for raw_path in source_png_paths:
-        record = safe_add_record(family_id, raw_path, root, "source_png", skipped, seen)
-        if record is not None:
+    def route_record(record: InputRecord | None) -> None:
+        if record is None:
+            return
+        if record.record_type == "source_png":
+            source_records.append(record)
+        elif record.record_type == "asset_sheet":
+            asset_sheet_records.append(record)
+        elif record.record_type == "reference_sheet":
+            reference_sheet_records.append(record)
+        elif record.record_type == "in_flight_image":
+            in_flight_image_records.append(record)
+        elif record.record_type == "in_flight_reference":
+            in_flight_reference_records.append(record)
+        else:
             source_records.append(record)
 
-    source_records.extend(collect_selector_records(family_id, selectors, root, skipped, seen))
+    for raw_path in source_png_paths:
+        route_record(safe_add_record(family_id, raw_path, root, "source_png", skipped, seen))
+
+    for record in collect_selector_records(family_id, selectors, root, skipped, seen):
+        route_record(record)
 
     for raw_path in compiled_asset_sheet_paths:
-        record = safe_add_record(family_id, raw_path, root, "asset_sheet", skipped, seen)
-        if record is not None:
-            asset_sheet_records.append(record)
+        route_record(safe_add_record(family_id, raw_path, root, "asset_sheet", skipped, seen))
 
     for raw_path in reference_sheet_paths:
-        record = safe_add_record(family_id, raw_path, root, "reference_sheet", skipped, seen)
-        if record is not None:
-            reference_sheet_records.append(record)
+        route_record(safe_add_record(family_id, raw_path, root, "reference_sheet", skipped, seen))
+
+    for raw_path in in_flight_image_paths:
+        route_record(safe_add_record(family_id, raw_path, root, "in_flight_image", skipped, seen))
+
+    for raw_path in in_flight_reference_paths:
+        route_record(safe_add_record(family_id, raw_path, root, "in_flight_reference", skipped, seen))
 
     if requested_optional_paths_or_names:
-        resolved_set = {record.source_path for record in source_records} | {record.source_path for record in asset_sheet_records} | {record.source_path for record in reference_sheet_records}
+        resolved_set = (
+            {record.source_path for record in source_records}
+            | {record.source_path for record in asset_sheet_records}
+            | {record.source_path for record in reference_sheet_records}
+            | {record.source_path for record in in_flight_image_records}
+            | {record.source_path for record in in_flight_reference_records}
+        )
         for raw_name in requested_optional_paths_or_names:
             if raw_name in resolved_set:
                 continue
@@ -332,6 +377,8 @@ def collect_family_records(
         sorted(source_records, key=lambda item: item.source_path),
         sorted(asset_sheet_records, key=lambda item: item.source_path),
         sorted(reference_sheet_records, key=lambda item: item.source_path),
+        sorted(in_flight_image_records, key=lambda item: item.source_path),
+        sorted(in_flight_reference_records, key=lambda item: item.source_path),
     )
 
 
@@ -434,7 +481,7 @@ def render_contact_sheet(
             width=1,
         )
 
-        label = f"{index + 1}. {Path(record.source_path).name}"
+        label = f"{index + 1}. [{record.record_type}] {Path(record.source_path).name}"
         label_lines = wrap_label(label, label_font, thumb_w - 10, max_lines=2)
         text_y = thumb_y + thumb_h + 10
         for line in label_lines:
@@ -449,6 +496,7 @@ def render_contact_sheet(
                 "sheet_file": output_path.name,
                 "sheet_index": sheet_number,
                 "panel_slot": index + 1,
+                "record_type": record.record_type,
                 "source_path": record.source_path,
                 "visible_label": label,
             }
@@ -527,6 +575,8 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
     unresolved: list[dict[str, Any]] = []
     compiled_assets_included: list[dict[str, Any]] = []
     reference_sheets_included: list[dict[str, Any]] = []
+    in_flight_image_panels: list[dict[str, Any]] = []
+    in_flight_reference_included: list[dict[str, Any]] = []
 
     for family in dispatch["families"]:
         if not isinstance(family, dict):
@@ -546,6 +596,8 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         source_png_paths = family_paths["source_png_paths"]
         compiled_asset_sheet_paths = family_paths["compiled_asset_sheet_paths"]
         reference_sheet_paths = family_paths["reference_sheet_paths"]
+        in_flight_image_paths = family_paths["in_flight_image_paths"]
+        in_flight_reference_paths = family_paths["in_flight_reference_paths"]
         selectors = family_paths["selectors"]
         requested_optional_paths_or_names = family_paths["requested_optional_paths_or_names"]
         if not family_id:
@@ -560,20 +612,23 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
             continue
 
         family_skipped: list[dict[str, Any]] = []
-        source_records, asset_sheet_records, reference_sheet_records = collect_family_records(
+        source_records, asset_sheet_records, reference_sheet_records, in_flight_image_records, in_flight_reference_records = collect_family_records(
             family_id,
             source_png_paths,
             compiled_asset_sheet_paths,
             reference_sheet_paths,
+            in_flight_image_paths,
+            in_flight_reference_paths,
             selectors,
             requested_optional_paths_or_names,
             root,
             family_skipped,
         )
 
-        source_contact_sheet_generated = bool(source_records)
+        contact_sheet_records = sorted(source_records + in_flight_image_records, key=lambda item: item.source_path)
+        source_contact_sheet_generated = bool(contact_sheet_records)
         source_contact_sheet_reason: str | None = None
-        if not source_records:
+        if not source_records and not in_flight_image_records:
             if asset_sheet_records and reference_sheet_records:
                 source_contact_sheet_reason = "full_size_asset_sheets_only_no_source_images"
             elif asset_sheet_records:
@@ -582,18 +637,20 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
                 source_contact_sheet_reason = "reference_sheet_only_no_source_images"
             else:
                 source_contact_sheet_reason = "no_source_images_or_asset_sheets_resolved"
-        elif asset_sheet_records:
-            source_contact_sheet_reason = None
+        elif not source_records and in_flight_image_records:
+            source_contact_sheet_reason = "in_flight_image_only_no_source_images"
+        elif source_records and in_flight_image_records:
+            source_contact_sheet_reason = "source_and_in_flight_images"
 
         family_sheet_files: list[str] = []
         family_panels: list[dict[str, Any]] = []
-        if source_records:
+        if contact_sheet_records:
             max_per_sheet = 12
-            total_sheets = math.ceil(len(source_records) / max_per_sheet)
+            total_sheets = math.ceil(len(contact_sheet_records) / max_per_sheet)
             for sheet_number in range(1, total_sheets + 1):
                 start = (sheet_number - 1) * max_per_sheet
                 end = start + max_per_sheet
-                page_records = source_records[start:end]
+                page_records = contact_sheet_records[start:end]
                 sheet_suffix = f"__{sheet_number:02d}" if total_sheets > 1 else ""
                 sheet_name = f"{slugify(family_id)}{sheet_suffix}.png"
                 sheet_path = contact_sheets_dir / sheet_name
@@ -642,14 +699,32 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
             all_included_assets.append(entry)
             reference_sheets_included.append(entry)
 
-        if not source_records and not asset_sheet_records and not reference_sheet_records:
+        family_in_flight_references: list[dict[str, Any]] = []
+        for record in in_flight_reference_records:
+            included_relative = Path("included-assets") / slugify(family_id) / "in-flight" / Path(record.source_path).name
+            included_path = run_dir / included_relative
+            copy_included_asset(record.resolved_path, included_path)
+            included_assets_written.append(included_path)
+            entry = {
+                "family_id": family_id,
+                "zip_path": included_relative.as_posix(),
+                "source_path": record.source_path,
+                "record_type": record.record_type,
+            }
+            family_in_flight_references.append(entry)
+            all_included_assets.append(entry)
+            in_flight_reference_included.append(entry)
+
+        if not source_records and not asset_sheet_records and not reference_sheet_records and not in_flight_image_records and not in_flight_reference_records:
             unresolved.append(
                 {
                     "family_id": family_id,
-                    "reason": "no valid source PNGs, compiled asset sheets, or reference sheets were resolved for this family",
+                    "reason": "no valid source PNGs, compiled asset sheets, reference sheets, or in-flight assets were resolved for this family",
                     "requested_source_png_paths": source_png_paths,
                     "requested_compiled_asset_sheet_paths": compiled_asset_sheet_paths,
                     "requested_reference_sheet_paths": reference_sheet_paths,
+                    "requested_in_flight_image_paths": in_flight_image_paths,
+                    "requested_in_flight_reference_paths": in_flight_reference_paths,
                     "selectors": selectors,
                     "requested_optional_paths_or_names": requested_optional_paths_or_names,
                 }
@@ -677,6 +752,7 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
                 "included_existing_assets": [entry["zip_path"] for entry in family_included_assets + family_reference_assets],
                 "included_compiled_asset_sheets": [entry["zip_path"] for entry in family_included_assets],
                 "included_reference_sheets": [entry["zip_path"] for entry in family_reference_assets],
+                "included_in_flight_references": [entry["zip_path"] for entry in family_in_flight_references],
                 "source_records": [
                     {
                         "source_path": record.source_path,
@@ -698,6 +774,20 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
                     }
                     for record in reference_sheet_records
                 ],
+                "in_flight_image_records": [
+                    {
+                        "source_path": record.source_path,
+                        "record_type": record.record_type,
+                    }
+                    for record in in_flight_image_records
+                ],
+                "in_flight_reference_records": [
+                    {
+                        "source_path": record.source_path,
+                        "record_type": record.record_type,
+                    }
+                    for record in in_flight_reference_records
+                ],
                 "panels": family_panels,
                 "skipped": family_skipped,
             }
@@ -713,6 +803,10 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
             "zip_all_outputs": True,
             "include_manifest": True,
         },
+        "taxonomy": {
+            "in_flight_assets_are_non_canonical": True,
+            "in_flight_record_types": ["in_flight_image", "in_flight_reference"],
+        },
         "stats": {
             "families_requested": len(dispatch["families"]),
             "families_rendered": len([item for item in family_results if item["rendered_source_contact_sheets"]]),
@@ -720,8 +814,11 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
             "included_existing_assets": len(all_included_assets),
             "included_compiled_asset_sheets": len(compiled_assets_included),
             "included_reference_sheets": len(reference_sheets_included),
+            "included_in_flight_references": len(in_flight_reference_included),
+            "in_flight_contact_sheet_panels": len([panel for panel in all_panels if panel["record_type"] == "in_flight_image"]),
             "compiled_asset_sheet_only_families": len([item for item in family_results if item["source_contact_sheet_reason"] == "compiled_asset_sheet_only_no_source_images"]),
             "reference_sheet_only_families": len([item for item in family_results if item["source_contact_sheet_reason"] == "reference_sheet_only_no_source_images"]),
+            "in_flight_image_only_families": len([item for item in family_results if item["source_contact_sheet_reason"] == "in_flight_image_only_no_source_images"]),
             "skipped_count": len(skipped),
             "unresolved_count": len(unresolved),
         },
@@ -730,6 +827,7 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         "included_existing_assets": all_included_assets,
         "included_compiled_asset_sheets": compiled_assets_included,
         "included_reference_sheets": reference_sheets_included,
+        "included_in_flight_references": in_flight_reference_included,
     }
     if unresolved:
         manifest["unresolved"] = unresolved
@@ -764,11 +862,18 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         "found_count": len(all_panels) + len(all_included_assets),
         "source_contact_sheet_count": len(sheets_written),
         "included_existing_asset_count": len(included_assets_written),
+        "in_flight_contact_sheet_panels": len([panel for panel in all_panels if panel["record_type"] == "in_flight_image"]),
+        "in_flight_full_size_inclusions": len(in_flight_reference_included),
         "compiled_asset_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "compiled_asset_sheet_only_no_source_images"]),
         "reference_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "reference_sheet_only_no_source_images"]),
+        "in_flight_image_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "in_flight_image_only_no_source_images"]),
         "skipped_count": len(skipped),
         "families_rendered": len([item for item in family_results if item["rendered_source_contact_sheets"]]),
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "taxonomy": {
+            "in_flight_assets_are_non_canonical": True,
+            "in_flight_record_types": ["in_flight_image", "in_flight_reference"],
+        },
     }
     dump_json(evidence_path, evidence)
 
@@ -790,8 +895,11 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         "skipped": skipped,
         "source_contact_sheet_count": len(sheets_written),
         "included_existing_asset_count": len(included_assets_written),
+        "in_flight_contact_sheet_panels": len([panel for panel in all_panels if panel["record_type"] == "in_flight_image"]),
+        "in_flight_full_size_inclusions": len(in_flight_reference_included),
         "compiled_asset_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "compiled_asset_sheet_only_no_source_images"]),
         "reference_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "reference_sheet_only_no_source_images"]),
+        "in_flight_image_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "in_flight_image_only_no_source_images"]),
         "families_rendered": len([item for item in family_results if item["rendered_source_contact_sheets"]]),
         "unresolved": unresolved,
     }

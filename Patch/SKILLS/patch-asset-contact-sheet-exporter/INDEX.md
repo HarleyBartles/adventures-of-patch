@@ -7,6 +7,7 @@ Repo-resident Patch execution capability for deterministic PNG contact-sheet exp
 - `README.md` - capability overview, dispatch contract, and real CLI invocation.
 - `examples/sample-dispatch.json` - small repo-tracked sample dispatch using source-image plus compiled-sheet inputs.
 - `examples/asset-sheet-only-dispatch.json` - sample dispatch proving asset-sheet-only inclusion without a fake contact sheet.
+- `examples/in-flight-visual-intake-dispatch.json` - sample dispatch proving in-flight contact-sheet and full-size inclusion handling.
 - `scripts/build_contact_sheets.py` - deterministic exporter that renders source-image contact sheets, includes compiled asset sheets, writes manifests/evidence, and packages a zip.
 
 ## Subdirectories
