@@ -41,6 +41,7 @@ class FamilyResult:
     source_contact_sheet_reason: str | None = None
     source_records: list[InputRecord] = field(default_factory=list)
     asset_sheet_records: list[InputRecord] = field(default_factory=list)
+    reference_sheet_records: list[InputRecord] = field(default_factory=list)
     rendered_source_contact_sheets: list[str] = field(default_factory=list)
     included_existing_assets: list[str] = field(default_factory=list)
     skipped: list[dict[str, Any]] = field(default_factory=list)
@@ -117,12 +118,19 @@ def resolved_family_paths(family: dict[str, Any]) -> dict[str, list[str]]:
     legacy_png_paths = normalize_list(family.get("png_paths"))
     if not source_png_paths:
         source_png_paths = legacy_png_paths
-    asset_sheet_paths = normalize_list(family.get("asset_sheet_paths"))
+    compiled_asset_sheet_paths = normalize_list(family.get("compiled_asset_sheet_paths"))
+    legacy_asset_sheet_paths = normalize_list(family.get("asset_sheet_paths"))
+    if not compiled_asset_sheet_paths:
+        compiled_asset_sheet_paths = legacy_asset_sheet_paths
+    reference_sheet_paths = normalize_list(family.get("reference_sheet_paths"))
     selectors = normalize_list(family.get("selectors"))
+    requested_optional_paths_or_names = normalize_list(family.get("requested_optional_paths_or_names"))
     return {
         "source_png_paths": source_png_paths,
-        "asset_sheet_paths": asset_sheet_paths,
+        "compiled_asset_sheet_paths": compiled_asset_sheet_paths,
+        "reference_sheet_paths": reference_sheet_paths,
         "selectors": selectors,
+        "requested_optional_paths_or_names": requested_optional_paths_or_names,
     }
 
 
@@ -276,13 +284,16 @@ def collect_selector_records(
 def collect_family_records(
     family_id: str,
     source_png_paths: list[str],
-    asset_sheet_paths: list[str],
+    compiled_asset_sheet_paths: list[str],
+    reference_sheet_paths: list[str],
     selectors: list[str],
+    requested_optional_paths_or_names: list[str],
     root: Path,
     skipped: list[dict[str, Any]],
-) -> tuple[list[InputRecord], list[InputRecord]]:
+) -> tuple[list[InputRecord], list[InputRecord], list[InputRecord]]:
     source_records: list[InputRecord] = []
     asset_sheet_records: list[InputRecord] = []
+    reference_sheet_records: list[InputRecord] = []
     seen: set[str] = set()
 
     for raw_path in source_png_paths:
@@ -292,12 +303,36 @@ def collect_family_records(
 
     source_records.extend(collect_selector_records(family_id, selectors, root, skipped, seen))
 
-    for raw_path in asset_sheet_paths:
+    for raw_path in compiled_asset_sheet_paths:
         record = safe_add_record(family_id, raw_path, root, "asset_sheet", skipped, seen)
         if record is not None:
             asset_sheet_records.append(record)
 
-    return sorted(source_records, key=lambda item: item.source_path), sorted(asset_sheet_records, key=lambda item: item.source_path)
+    for raw_path in reference_sheet_paths:
+        record = safe_add_record(family_id, raw_path, root, "reference_sheet", skipped, seen)
+        if record is not None:
+            reference_sheet_records.append(record)
+
+    if requested_optional_paths_or_names:
+        resolved_set = {record.source_path for record in source_records} | {record.source_path for record in asset_sheet_records} | {record.source_path for record in reference_sheet_records}
+        for raw_name in requested_optional_paths_or_names:
+            if raw_name in resolved_set:
+                continue
+            skipped.append(
+                {
+                    "family_id": family_id,
+                    "input": raw_name,
+                    "kind": "missing_optional_reference",
+                    "reason": "not repo-tracked or not found through inspected selectors",
+                    "status": "not_found",
+                }
+            )
+
+    return (
+        sorted(source_records, key=lambda item: item.source_path),
+        sorted(asset_sheet_records, key=lambda item: item.source_path),
+        sorted(reference_sheet_records, key=lambda item: item.source_path),
+    )
 
 
 def load_font(size: int, bold: bool = False) -> ImageFont.ImageFont:
@@ -490,6 +525,8 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
     all_panels: list[dict[str, Any]] = []
     all_included_assets: list[dict[str, Any]] = []
     unresolved: list[dict[str, Any]] = []
+    compiled_assets_included: list[dict[str, Any]] = []
+    reference_sheets_included: list[dict[str, Any]] = []
 
     for family in dispatch["families"]:
         if not isinstance(family, dict):
@@ -507,8 +544,10 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         reason = str(family.get("reason", "")).strip()
         family_paths = resolved_family_paths(family)
         source_png_paths = family_paths["source_png_paths"]
-        asset_sheet_paths = family_paths["asset_sheet_paths"]
+        compiled_asset_sheet_paths = family_paths["compiled_asset_sheet_paths"]
+        reference_sheet_paths = family_paths["reference_sheet_paths"]
         selectors = family_paths["selectors"]
+        requested_optional_paths_or_names = family_paths["requested_optional_paths_or_names"]
         if not family_id:
             skipped.append(
                 {
@@ -521,11 +560,13 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
             continue
 
         family_skipped: list[dict[str, Any]] = []
-        source_records, asset_sheet_records = collect_family_records(
+        source_records, asset_sheet_records, reference_sheet_records = collect_family_records(
             family_id,
             source_png_paths,
-            asset_sheet_paths,
+            compiled_asset_sheet_paths,
+            reference_sheet_paths,
             selectors,
+            requested_optional_paths_or_names,
             root,
             family_skipped,
         )
@@ -533,8 +574,12 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         source_contact_sheet_generated = bool(source_records)
         source_contact_sheet_reason: str | None = None
         if not source_records:
-            if asset_sheet_records:
-                source_contact_sheet_reason = "asset_sheet_only_no_source_images"
+            if asset_sheet_records and reference_sheet_records:
+                source_contact_sheet_reason = "full_size_asset_sheets_only_no_source_images"
+            elif asset_sheet_records:
+                source_contact_sheet_reason = "compiled_asset_sheet_only_no_source_images"
+            elif reference_sheet_records:
+                source_contact_sheet_reason = "reference_sheet_only_no_source_images"
             else:
                 source_contact_sheet_reason = "no_source_images_or_asset_sheets_resolved"
         elif asset_sheet_records:
@@ -575,18 +620,38 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
                 "family_id": family_id,
                 "zip_path": included_relative.as_posix(),
                 "source_path": record.source_path,
+                "record_type": record.record_type,
             }
             family_included_assets.append(entry)
             all_included_assets.append(entry)
+            compiled_assets_included.append(entry)
 
-        if not source_records and not asset_sheet_records:
+        family_reference_assets: list[dict[str, Any]] = []
+        for record in reference_sheet_records:
+            included_relative = Path("included-assets") / slugify(family_id) / Path(record.source_path).name
+            included_path = run_dir / included_relative
+            copy_included_asset(record.resolved_path, included_path)
+            included_assets_written.append(included_path)
+            entry = {
+                "family_id": family_id,
+                "zip_path": included_relative.as_posix(),
+                "source_path": record.source_path,
+                "record_type": record.record_type,
+            }
+            family_reference_assets.append(entry)
+            all_included_assets.append(entry)
+            reference_sheets_included.append(entry)
+
+        if not source_records and not asset_sheet_records and not reference_sheet_records:
             unresolved.append(
                 {
                     "family_id": family_id,
-                    "reason": "no valid source PNGs or compiled asset sheets were resolved for this family",
+                    "reason": "no valid source PNGs, compiled asset sheets, or reference sheets were resolved for this family",
                     "requested_source_png_paths": source_png_paths,
-                    "requested_asset_sheet_paths": asset_sheet_paths,
+                    "requested_compiled_asset_sheet_paths": compiled_asset_sheet_paths,
+                    "requested_reference_sheet_paths": reference_sheet_paths,
                     "selectors": selectors,
+                    "requested_optional_paths_or_names": requested_optional_paths_or_names,
                 }
             )
 
@@ -609,7 +674,9 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
                 "source_contact_sheet_generated": source_contact_sheet_generated,
                 "source_contact_sheet_reason": source_contact_sheet_reason,
                 "rendered_source_contact_sheets": family_sheet_files,
-                "included_existing_assets": [entry["zip_path"] for entry in family_included_assets],
+                "included_existing_assets": [entry["zip_path"] for entry in family_included_assets + family_reference_assets],
+                "included_compiled_asset_sheets": [entry["zip_path"] for entry in family_included_assets],
+                "included_reference_sheets": [entry["zip_path"] for entry in family_reference_assets],
                 "source_records": [
                     {
                         "source_path": record.source_path,
@@ -623,6 +690,13 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
                         "record_type": record.record_type,
                     }
                     for record in asset_sheet_records
+                ],
+                "reference_sheet_records": [
+                    {
+                        "source_path": record.source_path,
+                        "record_type": record.record_type,
+                    }
+                    for record in reference_sheet_records
                 ],
                 "panels": family_panels,
                 "skipped": family_skipped,
@@ -644,13 +718,18 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
             "families_rendered": len([item for item in family_results if item["rendered_source_contact_sheets"]]),
             "source_contact_sheets_rendered": len(sheets_written),
             "included_existing_assets": len(all_included_assets),
-            "asset_sheet_only_families": len([item for item in family_results if item["source_contact_sheet_reason"] == "asset_sheet_only_no_source_images"]),
+            "included_compiled_asset_sheets": len(compiled_assets_included),
+            "included_reference_sheets": len(reference_sheets_included),
+            "compiled_asset_sheet_only_families": len([item for item in family_results if item["source_contact_sheet_reason"] == "compiled_asset_sheet_only_no_source_images"]),
+            "reference_sheet_only_families": len([item for item in family_results if item["source_contact_sheet_reason"] == "reference_sheet_only_no_source_images"]),
             "skipped_count": len(skipped),
             "unresolved_count": len(unresolved),
         },
         "families": family_results,
         "rendered_source_contact_sheets": all_panels,
         "included_existing_assets": all_included_assets,
+        "included_compiled_asset_sheets": compiled_assets_included,
+        "included_reference_sheets": reference_sheets_included,
     }
     if unresolved:
         manifest["unresolved"] = unresolved
@@ -685,7 +764,8 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         "found_count": len(all_panels) + len(all_included_assets),
         "source_contact_sheet_count": len(sheets_written),
         "included_existing_asset_count": len(included_assets_written),
-        "asset_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "asset_sheet_only_no_source_images"]),
+        "compiled_asset_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "compiled_asset_sheet_only_no_source_images"]),
+        "reference_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "reference_sheet_only_no_source_images"]),
         "skipped_count": len(skipped),
         "families_rendered": len([item for item in family_results if item["rendered_source_contact_sheets"]]),
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -710,7 +790,8 @@ def build_contact_sheets(dispatch_path: Path, output_root: Path) -> dict[str, An
         "skipped": skipped,
         "source_contact_sheet_count": len(sheets_written),
         "included_existing_asset_count": len(included_assets_written),
-        "asset_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "asset_sheet_only_no_source_images"]),
+        "compiled_asset_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "compiled_asset_sheet_only_no_source_images"]),
+        "reference_sheet_only_family_count": len([item for item in family_results if item["source_contact_sheet_reason"] == "reference_sheet_only_no_source_images"]),
         "families_rendered": len([item for item in family_results if item["rendered_source_contact_sheets"]]),
         "unresolved": unresolved,
     }
