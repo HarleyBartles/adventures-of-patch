@@ -2,7 +2,7 @@
 
 Patch / Bit / Bot Tournament Kit approved preproduction reference for issue #47.
 
-This folder holds the compiled asset sheet, its manifest, and the approved source-image set for the tournament kit.
+This folder holds the compiled asset sheet, its manifest, and the approved source-image set for the compiled tournament kit asset sheet.
 
 ## Files in this directory
 
@@ -11,7 +11,7 @@ This folder holds the compiled asset sheet, its manifest, and the approved sourc
 
 ## Subdirectories
 
-- `source_images/` - approved source images for the tournament kit. See `source_images/INDEX.md`.
+- `source_images/` - approved source images for the compiled tournament kit asset sheet. See `source_images/INDEX.md`.
 
 ## Notes for agents
 

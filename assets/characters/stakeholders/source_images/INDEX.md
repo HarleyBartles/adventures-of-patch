@@ -1,6 +1,6 @@
 # assets/characters/stakeholders/source_images index
 
-Approved source images for the stakeholder trio asset sheet.
+Approved source images for the stakeholder trio compiled asset sheet.
 
 ## Files in this directory
 
@@ -20,4 +20,4 @@ None.
 
 ## Notes for agents
 
-These images are the approved source set for issue #47's stakeholder trio sheet.
+These images are the approved source set for issue #47's stakeholder trio compiled asset sheet.

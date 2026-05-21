@@ -18,7 +18,7 @@ Reusable stakeholder reference package for decks that need accountable human cou
 
 ## Source basis
 
-Nine approved PNG source images compiled deterministically into the stakeholder trio sheet; the manifest records the approved reference set.
+Nine approved PNG source images compiled deterministically into the stakeholder trio compiled asset sheet; the manifest records the approved reference set.
 
 ## Rendered sheet file
 

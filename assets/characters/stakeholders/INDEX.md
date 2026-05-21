@@ -13,7 +13,7 @@ Stakeholders are cross-deck human counterparties who define needs, priorities, c
 
 ## Subdirectories
 
-- `source_images/` - approved source images for the stakeholder trio sheet. See `source_images/INDEX.md`.
+- `source_images/` - approved source images for the compiled stakeholder trio asset sheet. See `source_images/INDEX.md`.
 
 ## Character roles
 
@@ -32,4 +32,4 @@ These assets are reusable visual references and casting aids. Do not treat gener
 
 Select stakeholders because the adventure needs their function. Do not add stakeholders as generic background characters. If removing a stakeholder does not change the story state, the role is probably unnecessary for that deck.
 
-For issue #47, the approved preproduction stakeholder set is the Data Analyst / Software Architect / Product Manager trio. Use the approved source images in `source_images/` as the inspection basis for that sheet.
+For issue #47, the approved preproduction stakeholder set is the Data Analyst / Software Architect / Product Manager trio. Use the approved source images in `source_images/` as the inspection basis for the compiled stakeholder trio asset sheet.
