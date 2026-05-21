@@ -23,6 +23,32 @@ The repo's current folder layout remains in place until a migration batch explic
 - `assets/evidence/receipts/` is the live evidence lane for receipt bundles and migrated receipt packages.
 - `assets/packs/issue-*` is the future home for adventure-scoped packs, while `assets/adventures/` remains the current staging root.
 
+## Asset sheet, source image, and in-flight reference distinction
+
+The repo uses these terms with specific meaning:
+
+- `asset_sheet` - a compiled or rendered PNG sheet that presents an approved asset family, character set, prop pack, environment pack, role kit, or visual kit.
+- `source_images` - approved individual PNG images used to construct a compiled asset sheet or completed asset pack.
+- `in_flight_references` - accepted, candidate, or reviewed images for an adventure or asset pack that have not yet been compiled into a completed asset sheet or promoted into an approved `source_images` set.
+- `view_surfaces` - derived GPT inspection surfaces, such as Google Slides registry entries or other visual mirrors of repo-canonical images.
+
+Contract rules:
+
+- Source images are the panel inputs for generated contact sheets.
+- Compiled asset sheets are included full-size in visual-intake zips when requested.
+- Compiled asset sheets are never used as contact-sheet panels.
+- In-flight references may be included full-size for GPT visual grounding, but they remain distinct from completed `source_images` until promoted.
+- View surfaces are not canonical image truth.
+- Registry or path changes for view surfaces happen only when the underlying repo paths move.
+
+Contact-sheet decision table:
+
+- source images + compiled asset sheet -> generate a contact sheet from source images only, and include the compiled asset sheet separately in full.
+- source images only -> generate a contact sheet from source images.
+- compiled asset sheet only -> include the asset sheet in full; do not generate a fake contact sheet made from asset sheets.
+- in-flight references -> include full-size or as an explicitly in-flight visual packet when needed; do not silently classify as completed `source_images`.
+- neither source images nor asset sheet resolves -> record unresolved/skipped with reason; do not invent paths.
+
 ## Canonical roots
 
 Target taxonomy roots:
@@ -51,6 +77,7 @@ Target taxonomy roots:
 - `assets/packs/` holds issue-scoped adventure packs, planning, bibles, manifests, and accepted or rejected references.
 - `assets/templates/` holds deterministic templates, layout specs, and pack-manifest templates.
 - `assets/views/` holds derived GPT view-surface registry material, not canonical repo assets.
+- `assets/views/` and the current live `assets/view-surfaces/` registry are derived inspection surfaces, not canonical assets.
 - `assets/source-zips/` holds canonical ingested input zips and one-time backfill zips, organized by category folders.
 - `assets/evidence/` holds receipts, imports, transfers, and legacy provenance that is not the canonical input zip.
 
@@ -108,6 +135,7 @@ Minimum manifest fields:
 - `intended_repo_paths`
 - `included_files`
 - `source_images`
+- `asset_sheet`
 - `qa_status`
 - `template_version`
 - `extraction_instructions`
@@ -125,6 +153,8 @@ Required pack types:
 - `adventure-pack`
 - `visual-bible-pack`
 - `template-pack`
+
+For completed packs, the manifest should identify the compiled asset sheet separately from the source image set. For asset-sheet-only packs, the manifest should make it explicit that the pack is represented only by the full compiled sheet and has no contact-sheetable source-image set yet. In-flight reference packets should remain labeled as in-flight until promoted.
 
 ## Source-zips policy
 
