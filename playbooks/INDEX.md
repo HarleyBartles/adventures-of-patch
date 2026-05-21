@@ -10,6 +10,7 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 - visual-preproduction.md - canonical pre-deck visual preproduction workflow for generating, editing, QA-ing, and reporting reusable asset references before PPTX production.
 - visual-bible-creation.md - canonical workflow for creating, updating, normalising, and locking standardized visual bibles with composable prompt, QA, repair, and extrapolation blocks.
 - visual-bible-interpretation.md - canonical workflow for discovering repo-indexed visual bibles and converting them into prompt, QA, and repair constraints.
+- image-generation-resource-discipline.md - canonical resource-discipline doctrine for conserving scarce image-generation credits, separating deterministic/no-credit visual workflows from credit-spending visual mutation, and preventing image-tool churn.
 - image-inspection-source-contract.md - canonical contract for GPT visual inspection through repo-indexed contact-sheet dispatch/intake packages.
 - image-qa-contract.md - canonical multi-lane image QA contract; generated images are candidates until accepted by adventures-image-qa.
 - asset-sheet-production-contract.md - canonical final-layout and zip-package contract for source-image-first, template-compiled asset sheets.
@@ -25,6 +26,7 @@ None.
 
 - Skills own local runtime behaviour.
 - Playbooks own project orchestration across skills, production gates, stop conditions, and failure reporting.
+- Image generation is scarce production capacity. Use `image-generation-resource-discipline.md` before visual-production decisions that could confuse deterministic no-credit workflows with credit-spending image mutation.
 - External app connector stages must use bound-connector-action-gate.md before selecting actions or reporting tool absence.
 - Pre-playbook readiness is separate from PPTX production. Production should stop if frame-ready or asset-ready state is missing.
 - Visual preproduction is separate from PPTX production and must not generate body-slide scene art.
