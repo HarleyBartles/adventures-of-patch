@@ -1,6 +1,6 @@
 # assets/characters/stakeholders/asset_packs index
 
-Active stakeholder packages.
+Live directory listing.
 
 ## Files in this directory
 
@@ -8,8 +8,8 @@ None.
 
 ## Subdirectories
 
-- `data-architect-product-trio/` - approved stakeholder trio package. See `data-architect-product-trio/INDEX.md`.
+- `data-architect-product-trio/`
 
 ## Notes for agents
 
-Keep compiled sheets in `compiled_asset_sheets/`, source inputs in `source_images/`, and machine-readable package metadata in `manifests/`.
+This directory uses path, lane, and manifest metadata for taxonomy.

@@ -1,20 +1,16 @@
 # assets/canon/patch index
 
-Canonical Patch visual references.
-
-Patch is the constant protagonist for Adventures of Patch presentations unless Harley explicitly excludes him.
+Live directory listing.
 
 ## Files in this directory
 
-- `asset__hero__patch_style_bible.md` - canonical Patch visual design guide. Read this before planning or generating Patch images. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
+- `asset__hero__patch_style_bible.md`
 
 ## Subdirectories
 
-- `reference_sheets/` - canonical Patch reference sheets and anti-pattern sheets. See `reference_sheets/INDEX.md`.
-- `role-kits/` - Patch costume-variant role-kit packages. See `role-kits/INDEX.md`.
+- `reference_sheets/`
+- `role-kits/`
 
-## Mandatory image-generation note
+## Notes for agents
 
-Before generating or editing any Patch image, inspect the style guide and relevant visual sheets in this directory. Patch must remain in the canonical style: clean editorial vector style with thick rounded outlines and soft shading; teal hoodie; hoodie antennae; compact rounded proportions; black oval eyes with small white shine highlights only; dark pants; teal shoes with white soles; teal crossbody bag with visible `>` symbol and consistent strap placement.
-
-Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, unrelated asset-family styles, or alternate eye styles such as white sclera, irises, anime eyes, human eyes, doll eyes, or large expressive mascot eyes.
+This directory is an explicit canon root. Its reference sheets use local filenames, and reusable role kits live under `role-kits/asset_packs/`.

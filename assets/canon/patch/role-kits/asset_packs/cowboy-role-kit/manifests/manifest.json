@@ -1,0 +1,30 @@
+{
+  "domain": "canon",
+  "family": "patch",
+  "package_id": "cowboy-role-kit",
+  "package_type": "role_kit",
+  "status": "provisional",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "alt_01_side_view__v1.png",
+      "alt_02_back_view__v1.png",
+      "alt_03_lasso_pose__v1.png",
+      "alt_04_close_view__v1.png",
+      "alt_05_details__v1.png",
+      "alt_06_props__v1.png",
+      "hero_patch_cowboy_waistcoat__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v1.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "domain": "characters",
+  "family": "bit-bot",
+  "package_id": "bot-role-kit",
+  "package_type": "compiled_asset_pack",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "chef_alt_cupcake_delivery__v1.png",
+      "chef_alt_mixing_bowl__v1.png",
+      "chef_hero__v1.png",
+      "cowboy_alt_chicken_chase__v1.png",
+      "cowboy_alt_lasso_pose__v1.png",
+      "cowboy_hero__v1.png",
+      "detective_alt_clue_chase__v1.png",
+      "detective_alt_tiny_clue__v1.png",
+      "detective_hero__v1.png",
+      "mechanic_alt_hammer_screw__v1.png",
+      "mechanic_alt_speedy_toolbox__v1.png",
+      "mechanic_hero__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v1.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

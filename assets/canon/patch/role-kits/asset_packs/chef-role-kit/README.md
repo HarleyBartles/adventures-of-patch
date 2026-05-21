@@ -1,41 +1,23 @@
-﻿# Chef Patch Role Kit
+# assets/canon/patch/role-kits/asset_packs/chef-role-kit
 
-## Package name
+Package type: `role_kit`
+Status: `provisional`
+Domain: `canon`
+Family: `patch`
+Package id: `chef-role-kit`
 
-Chef Patch Role Kit
+## Lanes
 
-## Package type
+- `source_images/` - `present`
+- `compiled_asset_sheets/` - `present`
+- `reference_sheets/` - `absent_not_required`
 
-Patch costume-variant compiled asset pack
+## Manifest
 
-## Current status
+- `manifests/manifest.json`
+  - `source_images`: alt_action_mixing_bowl__v1.png, alt_action_rolling_dough__v1.png, alt_back_view__v1.png, alt_detail_split__v1.png, alt_prop_sheet__v1.png, alt_side_view__v1.png, hero_front__v1.png
+  - `compiled_asset_sheets`: sheet__v4.png
 
-provisional_asset
+## Notes
 
-## Intended use
-
-Patch costume-variant reference package for chef continuity, source-image QA, and deterministic asset-sheet compilation.
-
-## Source basis
-
-Seven Harley-approved Chef Patch images supplied in-chat and compiled deterministically.
-
-## Source image folder
-
-- `source_images/`
-
-## Sidecar / manifest file
-
-- `manifests/chef_patch_asset_sheet_sidecar.json`
-
-## Rendered sheet file
-
-- `compiled_asset_sheets/asset_sheet__character__patch_role_kits__chef_role_kit__v4.png`
-
-## Canon / provisional warning
-
-This is not new Patch canon. It is a Patch role-kit reference only.
-
-## Guidance
-
-Keep the chef hat, double-breasted jacket, black trousers, teal shoes, and black crossbody bag continuity intact.
+Path and lane carry taxonomy; filenames stay local to their lane.

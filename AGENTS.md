@@ -1,4 +1,4 @@
-﻿# Agent navigation for Adventures of Patch
+# Agent navigation for Adventures of Patch
 
 This repository is the canonical source of truth for the Presentation Planner / Adventures of Patch project.
 
@@ -79,13 +79,15 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 Before planning or generating images featuring Patch, inspect `assets/canon/patch/INDEX.md` and the current repo-tracked Patch visual references:
 
 - `assets/canon/patch/asset__hero__patch_style_bible.md`
-- `assets/canon/patch/reference_sheets/canon_reference_sheet__hero_patch__patch__approved_style__v1.png`
-- `assets/canon/patch/reference_sheets/antipattern_sheet__hero_patch__patch__general_drift_risks__v1.png`
-- `assets/canon/patch/reference_sheets/interaction_sheet__hero_patch__patch__scene_behaviour__v1.png`
+- `assets/canon/patch/reference_sheets/approved_style__v1.png`
+- `assets/canon/patch/reference_sheets/general_drift_risks__v1.png`
+- `assets/canon/patch/reference_sheets/scene_behaviour__v1.png`
 
 If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 
 Patch image generation must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
+
+Patch canon reference sheets use local filenames inside `assets/canon/patch/reference_sheets/`; the path tells you they are canon references, and the filename only labels the sheet locally.
 
 Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, unrelated asset-family styles, or alternate eye styles such as white sclera, irises, anime eyes, human eyes, doll eyes, or large expressive mascot eyes.
 

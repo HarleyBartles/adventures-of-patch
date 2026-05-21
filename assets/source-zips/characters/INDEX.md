@@ -1,15 +1,13 @@
 # assets/source-zips/characters index
 
-Reusable character-family source/import zips.
-
-This category stores canonical input/backfill packages for reusable character families.
+Live directory listing.
 
 ## Files in this directory
 
-- `asset_class__character__bouncers.zip` - bouncer supporting-character canonical input/backfill package.
-- `asset_class__character__pmc__patch_mission_control_team.zip` - Patch Mission Control Team canonical input/backfill package.
-- `asset_class__character__stakeholders.zip` - reusable stakeholder canonical input/backfill package.
-- `asset_classs__character__other_agents.zip` - other agents canonical input/backfill package.
+- `asset_class__character__bouncers.zip`
+- `asset_class__character__pmc__patch_mission_control_team.zip`
+- `asset_class__character__stakeholders.zip`
+- `asset_classs__character__other_agents.zip`
 
 ## Subdirectories
 
@@ -17,4 +15,4 @@ None.
 
 ## Notes for agents
 
-Do not use these packages as image-inspection truth. They are source/import packages only.
+This directory uses path, lane, and manifest metadata for taxonomy.

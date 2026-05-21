@@ -1,0 +1,27 @@
+{
+  "domain": "characters",
+  "family": "mission-control-team",
+  "package_id": "mission-control-team",
+  "package_type": "reference_pack",
+  "status": "legacy_reference",
+  "artifact_lanes": {
+    "source_images": "absent_not_required",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "present"
+  },
+  "files": {
+    "source_images": [],
+    "compiled_asset_sheets": [],
+    "reference_sheets": [
+      "bit_and_bot__v1.png",
+      "mission_controller__v1.png",
+      "ops_commander__v1.png",
+      "overview__v1.png",
+      "prep_officer__v1.png",
+      "verification_lead__v1.png"
+    ]
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

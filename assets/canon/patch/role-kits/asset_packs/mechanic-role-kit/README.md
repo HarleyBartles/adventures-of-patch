@@ -1,41 +1,23 @@
-﻿# Patch Mechanic Role Kit
+# assets/canon/patch/role-kits/asset_packs/mechanic-role-kit
 
-## Package name
+Package type: `role_kit`
+Status: `provisional`
+Domain: `canon`
+Family: `patch`
+Package id: `mechanic-role-kit`
 
-Patch Mechanic Role Kit
+## Lanes
 
-## Package type
+- `source_images/` - `present`
+- `compiled_asset_sheets/` - `present`
+- `reference_sheets/` - `absent_not_required`
 
-Patch costume-variant compiled asset pack
+## Manifest
 
-## Current status
+- `manifests/manifest.json`
+  - `source_images`: action_1__v1.png, action_2__v1.png, back_view__v1.png, details__v1.png, hero_full_body__v1.png, props__v1.png, side_view__v1.png
+  - `compiled_asset_sheets`: sheet__v1.png
 
-provisional_asset
+## Notes
 
-## Intended use
-
-Patch costume-variant reference package for mechanic continuity, source-image QA, and deterministic asset-sheet compilation.
-
-## Source basis
-
-Approved source images supplied and accepted in-chat before deterministic compile.
-
-## Source image folder
-
-- `source_images/`
-
-## Sidecar / manifest file
-
-- `manifests/asset_sheet__character__patch_mechanic_role_kit_v1.sidecar.json`
-
-## Rendered sheet file
-
-- `compiled_asset_sheets/asset_sheet__character__patch_role_kits__mechanic_role_kit__v1.png`
-
-## Canon / provisional warning
-
-This is not new Patch canon. It is a Patch role-kit reference only.
-
-## Guidance
-
-Keep the action, back-view, details, props, and side-view continuity intact when using this family as reference.
+Path and lane carry taxonomy; filenames stay local to their lane.

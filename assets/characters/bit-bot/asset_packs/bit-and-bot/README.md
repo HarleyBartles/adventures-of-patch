@@ -1,50 +1,23 @@
-﻿# Bit and Bot Asset Pack
+# assets/characters/bit-bot/asset_packs/bit-and-bot
 
-## Package name
+Package type: `compiled_asset_pack`
+Status: `approved`
+Domain: `characters`
+Family: `bit-bot`
+Package id: `bit-and-bot`
 
-Bit and Bot Asset Pack
+## Lanes
 
-## Package type
+- `source_images/` - `present`
+- `compiled_asset_sheets/` - `present`
+- `reference_sheets/` - `absent_not_required`
 
-Character family compiled asset pack / Bit and Bot support-bot family reference
+## Manifest
 
-## Current status
+- `manifests/manifest.json`
+  - `source_images`: bit_action__v1.png, bit_expressions__v1.png, bit_profile__v1.png, bot_action__v1.png, bot_expressions__v1.png, bot_profile__v1.png, hero__v1.png
+  - `compiled_asset_sheets`: sheet__v1.png
 
-QA-accepted source-set material
+## Notes
 
-## Intended use
-
-Bit and Bot support-bot family reference package for continuity, QA, and deterministic asset-sheet compilation.
-
-## Source basis
-
-Seven Harley-approved PNG source images compiled deterministically with PIL; no image generation or visual editing.
-
-## Compiled asset sheet file
-
-- `compiled_asset_sheets/asset_sheet__character__bit_bot__bit_and_bot__v1.png`
-
-## Source image folder
-
-- `source_images/`
-
-## Spec file and spec_status
-
-- `manifests/asset_sheet_spec.json`
-- `spec_status: present`
-
-## Registry / view-surface note
-
-Bit and Bot asset-sheet registry entries were migrated to `assets/characters/bit-bot/asset_packs/bit-and-bot/` in this batch. Any registry entry for this package should now resolve to the moved path.
-
-## Canon / provisional warning
-
-This is not Patch canon. Bit and Bot must remain distinct from Patch.
-
-## Future migration note
-
-Current package root is `assets/characters/bit-bot/asset_packs/bit-and-bot/`. No further family-root migration is scheduled for this batch.
-
-## Do not use as Patch canon
-
-Use this package as Bit and Bot support-bot reference material only.
+Path and lane carry taxonomy; filenames stay local to their lane.

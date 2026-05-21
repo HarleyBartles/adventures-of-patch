@@ -1,6 +1,6 @@
 # assets/source-zips/packs index
 
-Reserved source-zip category for future adventure packs.
+Live directory listing.
 
 ## Files in this directory
 
@@ -12,4 +12,4 @@ None.
 
 ## Notes for agents
 
-This category is reserved for future pack bundles. It exists now so the source-zip taxonomy has a stable destination shape.
+This directory uses path, lane, and manifest metadata for taxonomy.

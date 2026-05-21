@@ -17,6 +17,7 @@ Use this file first when spelunking the repo through a GitHub API connector. Eac
 - `decks/` - committed presentation artifacts and deck working folders. See `decks/INDEX.md`.
 - `docs/` - project documentation, adventure concepts, principles, and workflow notes. See `docs/INDEX.md`.
 - `playbooks/` - first-class Adventures project/domain playbooks. See `playbooks/INDEX.md`.
+- `scripts/` - repo-tracked validation and maintenance helpers. See `scripts/INDEX.md`.
 - `scratch/` - local working area, not canonical. See `scratch/INDEX.md`.
 - `skills/` - project-specific ChatGPT skill packages or source copies when intentionally committed. See `skills/INDEX.md`.
 

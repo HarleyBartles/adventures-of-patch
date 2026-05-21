@@ -1,37 +1,23 @@
-﻿# Patch / Bit / Bot Tournament Kit
+# assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit
 
-## Package name
+Package type: `compiled_asset_pack`
+Status: `approved`
+Domain: `adventures`
+Family: `tournament`
+Package id: `patch-bit-bot-tournament-kit`
 
-Patch / Bit / Bot Tournament Kit
+## Lanes
 
-## Package type
+- `source_images/` - `present`
+- `compiled_asset_sheets/` - `present`
+- `reference_sheets/` - `absent_not_required`
 
-Adventure-scoped compiled asset pack
+## Manifest
 
-## Current status
+- `manifests/manifest.json`
+  - `source_images`: bit_hazard_tape__v1.png, bit_hero__v1.png, bit_race_off__v1.png, bot_hero__v1.png, bot_side_stretch__v1.png, bot_wrong_line__v1.png, patch_hero__v1.png, patch_notebook_focus__v1.png, patch_startline_quizzical__v1.png
+  - `compiled_asset_sheets`: sheet__v1.png
 
-approved_preproduction_reference
+## Notes
 
-## Intended use
-
-Preproduction reference pack for issue #47 that keeps Patch, Bit, and Bot role identities intact.
-
-## Source basis
-
-Approved PNG source images compiled deterministically into the tournament kit asset sheet.
-
-## Compiled asset sheet file
-
-- `compiled_asset_sheets/asset_sheet__adventure__tournament__patch_bit_bot_tournament_kit__v1.png`
-
-## Manifest file
-
-- `manifests/asset_sheet__character__patch_bit_bot_tournament_kit_v1_manifest.json`
-
-## Source image folder
-
-- `source_images/`
-
-## Guidance
-
-Treat the source PNGs as the approved inspection inputs for this sheet.
+Path and lane carry taxonomy; filenames stay local to their lane.

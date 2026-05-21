@@ -1,0 +1,22 @@
+{
+  "domain": "characters",
+  "family": "shopkeeper",
+  "package_id": "shopkeeper",
+  "package_type": "reference_pack",
+  "status": "legacy_reference",
+  "artifact_lanes": {
+    "source_images": "absent_not_required",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "present"
+  },
+  "files": {
+    "source_images": [],
+    "compiled_asset_sheets": [],
+    "reference_sheets": [
+      "three_view_sheet__v1.png"
+    ]
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

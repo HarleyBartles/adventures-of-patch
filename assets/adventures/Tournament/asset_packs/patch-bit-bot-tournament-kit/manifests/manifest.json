@@ -1,0 +1,32 @@
+{
+  "domain": "adventures",
+  "family": "tournament",
+  "package_id": "patch-bit-bot-tournament-kit",
+  "package_type": "compiled_asset_pack",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "bit_hazard_tape__v1.png",
+      "bit_hero__v1.png",
+      "bit_race_off__v1.png",
+      "bot_hero__v1.png",
+      "bot_side_stretch__v1.png",
+      "bot_wrong_line__v1.png",
+      "patch_hero__v1.png",
+      "patch_notebook_focus__v1.png",
+      "patch_startline_quizzical__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v1.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

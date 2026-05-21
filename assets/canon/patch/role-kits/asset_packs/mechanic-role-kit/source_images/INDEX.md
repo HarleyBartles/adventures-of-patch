@@ -1,17 +1,21 @@
-﻿# assets/canon/patch/role-kits/asset_packs/mechanic-role-kit/source_images index
+# assets/canon/patch/role-kits/asset_packs/mechanic-role-kit/source_images index
 
-Approved source images for the Patch Mechanic role-kit package.
+Live directory listing.
 
 ## Files in this directory
 
-- `source_image__character__patch_role_kits__mechanic_role_kit_action_1__v1.png`
-- `source_image__character__patch_role_kits__mechanic_role_kit_action_2__v1.png`
-- `source_image__character__patch_role_kits__mechanic_role_kit_back_view__v1.png`
-- `source_image__character__patch_role_kits__mechanic_role_kit_details__v1.png`
-- `source_image__character__patch_role_kits__mechanic_role_kit_hero_full_body__v1.png`
-- `source_image__character__patch_role_kits__mechanic_role_kit_props__v1.png`
-- `source_image__character__patch_role_kits__mechanic_role_kit_side_view__v1.png`
+- `action_1__v1.png`
+- `action_2__v1.png`
+- `back_view__v1.png`
+- `details__v1.png`
+- `hero_full_body__v1.png`
+- `props__v1.png`
+- `side_view__v1.png`
+
+## Subdirectories
+
+None.
 
 ## Notes for agents
 
-These PNGs are source-image inputs only.
+This directory uses path, lane, and manifest metadata for taxonomy.

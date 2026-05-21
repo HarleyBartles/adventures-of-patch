@@ -1,0 +1,30 @@
+{
+  "domain": "characters",
+  "family": "bouncers",
+  "package_id": "bouncer-family",
+  "package_type": "reference_pack",
+  "status": "legacy_reference",
+  "artifact_lanes": {
+    "source_images": "absent_not_required",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "present"
+  },
+  "files": {
+    "source_images": [],
+    "compiled_asset_sheets": [],
+    "reference_sheets": [
+      "chaperone_bouncer__v1.png",
+      "door_bouncer__v1.png",
+      "overview__v1.png",
+      "payload_bouncer__v1.png",
+      "peacekeeper_bouncer__v1.png",
+      "recovery_bouncer__v1.png",
+      "route_bouncer__v1.png",
+      "stamp_bouncer__v1.png",
+      "wristband_bouncer__v1.png"
+    ]
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

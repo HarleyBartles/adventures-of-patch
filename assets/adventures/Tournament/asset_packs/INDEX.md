@@ -1,6 +1,6 @@
 # assets/adventures/Tournament/asset_packs index
 
-Active Tournament asset-pack packages.
+Live directory listing.
 
 ## Files in this directory
 
@@ -8,8 +8,8 @@ None.
 
 ## Subdirectories
 
-- `patch-bit-bot-tournament-kit/` - Patch / Bit / Bot tournament kit package. See `patch-bit-bot-tournament-kit/INDEX.md`.
+- `patch-bit-bot-tournament-kit/`
 
 ## Notes for agents
 
-Keep compiled sheets in `compiled_asset_sheets/`, source inputs in `source_images/`, and machine-readable package metadata in `manifests/`.
+This directory uses path, lane, and manifest metadata for taxonomy.

@@ -1,42 +1,23 @@
-﻿# Patch Cowboy Role Kit
+# assets/canon/patch/role-kits/asset_packs/cowboy-role-kit
 
-## Package name
+Package type: `role_kit`
+Status: `provisional`
+Domain: `canon`
+Family: `patch`
+Package id: `cowboy-role-kit`
 
-Patch Cowboy Role Kit
+## Lanes
 
-## Package type
+- `source_images/` - `present`
+- `compiled_asset_sheets/` - `present`
+- `reference_sheets/` - `absent_not_required`
 
-Patch costume-variant compiled asset pack
+## Manifest
 
-## Current status
+- `manifests/manifest.json`
+  - `source_images`: alt_01_side_view__v1.png, alt_02_back_view__v1.png, alt_03_lasso_pose__v1.png, alt_04_close_view__v1.png, alt_05_details__v1.png, alt_06_props__v1.png, hero_patch_cowboy_waistcoat__v1.png
+  - `compiled_asset_sheets`: sheet__v1.png
 
-provisional_asset
+## Notes
 
-## Intended use
-
-Patch costume-variant reference package for cowboy continuity, source-image QA, and deterministic asset-sheet compilation.
-
-## Source basis
-
-Approved source images supplied and accepted in-chat before deterministic compile.
-
-## Source image folder
-
-- `source_images/`
-
-## Sidecar / manifest files
-
-- `manifests/asset_sheet_sidecar.md`
-- `manifests/asset_sheet_spec.json`
-
-## Rendered sheet file
-
-- `compiled_asset_sheets/asset_sheet__character__patch_role_kits__cowboy_role_kit__v1.png`
-
-## Canon / provisional warning
-
-This is not new Patch canon. It is a Patch role-kit reference only.
-
-## Guidance
-
-Keep the teal hoodie, antennae, black oval eyes, and crossbody bag language intact when using this family as reference.
+Path and lane carry taxonomy; filenames stay local to their lane.

@@ -1,17 +1,15 @@
 # assets/environments/club-db index
 
-Club DB environment/location asset family.
+Live directory listing.
 
 ## Files in this directory
 
-- `README.md` - canonical human-readable package summary and companion status note.
-None.
+- `README.md`
 
 ## Subdirectories
 
-- `reference_sheets/` - Club DB reference sheets. See `reference_sheets/INDEX.md`.
+- `asset_packs/`
 
 ## Notes for agents
 
-This is an optional environment family. Use only when the issue/deck concept benefits from the Club DB setting. Do not use this environment as a default for all Patch decks.
-Current root: `assets/environments/club-db/`.
+This directory uses path, lane, and manifest metadata for taxonomy.

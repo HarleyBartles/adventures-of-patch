@@ -1,0 +1,30 @@
+{
+  "domain": "canon",
+  "family": "patch",
+  "package_id": "chef-role-kit",
+  "package_type": "role_kit",
+  "status": "provisional",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "alt_action_mixing_bowl__v1.png",
+      "alt_action_rolling_dough__v1.png",
+      "alt_back_view__v1.png",
+      "alt_detail_split__v1.png",
+      "alt_prop_sheet__v1.png",
+      "alt_side_view__v1.png",
+      "hero_front__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v4.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

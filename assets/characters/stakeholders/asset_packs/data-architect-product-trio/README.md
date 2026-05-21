@@ -1,45 +1,23 @@
-﻿# Data Analyst / Software Architect / Product Manager Trio
+# assets/characters/stakeholders/asset_packs/data-architect-product-trio
 
-## Package name
+Package type: `compiled_asset_pack`
+Status: `approved`
+Domain: `characters`
+Family: `stakeholders`
+Package id: `data-architect-product-trio`
 
-Data Analyst / Software Architect / Product Manager Trio
+## Lanes
 
-## Package type
+- `source_images/` - `present`
+- `compiled_asset_sheets/` - `present`
+- `reference_sheets/` - `absent_not_required`
 
-Character-family compiled asset pack
-
-## Current status
-
-approved_preproduction_reference
-
-## Intended use
-
-Reusable stakeholder reference pack for decks that need accountable human counterparties with defined function, proof, risk, and approval roles.
-
-## Source basis
-
-Nine approved PNG source images compiled deterministically into the stakeholder trio compiled asset sheet; the manifest records the approved reference set.
-
-## Compiled asset sheet file
-
-- `compiled_asset_sheets/asset_sheet__character__stakeholders__data_architect_product_trio__v1.png`
-
-## Manifest file
+## Manifest
 
 - `manifests/manifest.json`
+  - `source_images`: data_analyst_alt__v1.png, data_analyst_hero__v1.png, data_analyst_props__v1.png, product_manager_alt__v1.png, product_manager_hero__v1.png, product_manager_props__v1.png, software_architect_alt__v1.png, software_architect_hero__v1.png, software_architect_props__v1.png
+  - `compiled_asset_sheets`: sheet__v1.png
 
-## Source image folder
+## Notes
 
-- `source_images/`
-
-## Issue #47 note
-
-For issue #47, the approved preproduction stakeholder set is the Data Analyst / Software Architect / Product Manager trio.
-
-## Canon / provisional warning
-
-This is not Patch canon. Stakeholders are reusable human counterparties, not generic background characters.
-
-## Guidance
-
-Select stakeholders because the story needs their function. Do not add them unless the deck benefits from clearly accountable human counterparties.
+Path and lane carry taxonomy; filenames stay local to their lane.

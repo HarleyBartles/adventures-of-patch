@@ -1,4 +1,4 @@
-﻿# Future Patch Adventures
+# Future Patch Adventures
 
 Working list of Patch adventure frames for presentations about software teams working with agents.
 

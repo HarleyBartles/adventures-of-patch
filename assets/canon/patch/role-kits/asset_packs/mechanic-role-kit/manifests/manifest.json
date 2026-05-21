@@ -1,0 +1,30 @@
+{
+  "domain": "canon",
+  "family": "patch",
+  "package_id": "mechanic-role-kit",
+  "package_type": "role_kit",
+  "status": "provisional",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "action_1__v1.png",
+      "action_2__v1.png",
+      "back_view__v1.png",
+      "details__v1.png",
+      "hero_full_body__v1.png",
+      "props__v1.png",
+      "side_view__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v1.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}

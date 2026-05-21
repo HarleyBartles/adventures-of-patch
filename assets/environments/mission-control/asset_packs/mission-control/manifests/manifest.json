@@ -1,0 +1,27 @@
+{
+  "domain": "environments",
+  "family": "mission-control",
+  "package_id": "mission-control",
+  "package_type": "reference_pack",
+  "status": "legacy_reference",
+  "artifact_lanes": {
+    "source_images": "absent_not_required",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "present"
+  },
+  "files": {
+    "source_images": [],
+    "compiled_asset_sheets": [],
+    "reference_sheets": [
+      "control_desk__v1.png",
+      "launch_gate__v1.png",
+      "launch_pad__v1.png",
+      "operations_room__v1.png",
+      "overview__v1.png",
+      "review_bay__v1.png"
+    ]
+  },
+  "provenance_notes": [
+    "Migrated to local lane filenames and manifest-driven taxonomy."
+  ]
+}
