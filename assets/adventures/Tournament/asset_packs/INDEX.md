@@ -9,6 +9,7 @@ None.
 ## Subdirectories
 
 - `patch-bit-bot-tournament-kit/`
+- `tournament-trial-environments/`
 
 ## Notes for agents
 
