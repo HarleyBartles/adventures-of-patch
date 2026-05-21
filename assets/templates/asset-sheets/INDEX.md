@@ -8,6 +8,8 @@ Live directory listing for discoverable asset-sheet templates.
 - `template_asset_sheet_3hero_6alt_v4.json`
 - `template_asset_sheet_4column_12equal_v1.png`
 - `template_asset_sheet_4column_12equal_v1.json`
+- `template_asset_sheet_4up_equal_header_v1.png`
+- `template_asset_sheet_4up_equal_header_v1.json`
 - `template_asset_sheet_1location_3view_v1.png`
 - `template_asset_sheet_1location_3view_v1.json`
 - `template_asset_sheet_1location_6view_v1.png`
@@ -23,6 +25,7 @@ Live directory listing for discoverable asset-sheet templates.
 
 - `template_asset_sheet_3hero_6alt_v4`: three-hero character or role sheet with six alternates. Use for character families or role kits that need three primary figures plus supporting views.
 - `template_asset_sheet_4column_12equal_v1`: four-column equal-grid sheet for environment, location, or trial-reference families that need twelve equally weighted panels.
+- `template_asset_sheet_4up_equal_header_v1`: reusable four-up sheet with a baked `ASSET SHEET` header and blank subtitle/guidance regions. Use for generic reusable asset sheets with four equal images.
 - `template_asset_sheet_1location_3view_v1`: single-location sheet with one establishing hero view plus two support or detail views.
 - `template_asset_sheet_1location_6view_v1`: richer single-location sheet for one place with multiple details, approach or reverse angles, props, signage, and interaction zones.
 - `template_asset_sheet_world_overview_v1`: world overview or minimal visual-bible sheet for palette, signage, materials, props, continuity, and anti-patterns.

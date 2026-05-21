@@ -1,0 +1,146 @@
+{
+  "template_id": "template_asset_sheet_4up_equal_header_v1",
+  "template_name": "template_asset_sheet_4up_equal_header_v1",
+  "version": "v1",
+  "status": "candidate",
+  "png_filename": "template_asset_sheet_4up_equal_header_v1.png",
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_4up_equal_header_v1.zip",
+  "project_source_package_filename": "template_asset_sheet_4up_equal_header_v1.zip",
+  "project_source_png_filename": "template_asset_sheet_4up_equal_header_v1.png",
+  "project_source_spec_filename": "template_asset_sheet_4up_equal_header_v1.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "four_up_equal_with_header",
+  "supported_layout": "generic reusable asset sheet for four related images with equal visual weight; slot meanings are supplied by the compile manifest",
+  "baked_text": [
+    {
+      "text": "ASSET SHEET",
+      "region": "sheet_header",
+      "reason": "approved invariant asset-sheet header"
+    }
+  ],
+  "text_regions": [
+    {
+      "region_id": "subtitle_or_metadata",
+      "box": [
+        54,
+        106,
+        1482,
+        146
+      ],
+      "role": "compile_time_title_or_metadata",
+      "editable": true,
+      "blank_in_template_png": true
+    },
+    {
+      "region_id": "guidance_notes",
+      "box": [
+        54,
+        818,
+        1482,
+        950
+      ],
+      "role": "compile_time_guidance",
+      "editable": true,
+      "blank_in_template_png": true
+    }
+  ],
+  "slots": [
+    {
+      "slot_id": "image_1",
+      "box": [
+        54,
+        170,
+        758,
+        470
+      ],
+      "image_box": [
+        70,
+        186,
+        742,
+        454
+      ],
+      "default_fit": "cover",
+      "role": "image",
+      "group": "four_up_equal"
+    },
+    {
+      "slot_id": "image_2",
+      "box": [
+        778,
+        170,
+        1482,
+        470
+      ],
+      "image_box": [
+        794,
+        186,
+        1466,
+        454
+      ],
+      "default_fit": "cover",
+      "role": "image",
+      "group": "four_up_equal"
+    },
+    {
+      "slot_id": "image_3",
+      "box": [
+        54,
+        494,
+        758,
+        794
+      ],
+      "image_box": [
+        70,
+        510,
+        742,
+        778
+      ],
+      "default_fit": "cover",
+      "role": "image",
+      "group": "four_up_equal"
+    },
+    {
+      "slot_id": "image_4",
+      "box": [
+        778,
+        494,
+        1482,
+        794
+      ],
+      "image_box": [
+        794,
+        510,
+        1466,
+        778
+      ],
+      "default_fit": "cover",
+      "role": "image",
+      "group": "four_up_equal"
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true,
+    "template_png_contains_no_placeholder_explanatory_copy": true,
+    "only_baked_text_is_asset_sheet_header": true
+  },
+  "consistency_checks": [
+    "template_id matches package, PNG, and JSON filename stems",
+    "canvas dimensions match PNG bytes",
+    "slot ids are unique",
+    "all slot boxes and image boxes are inside canvas",
+    "subtitle_or_metadata and guidance_notes are blank in the template PNG",
+    "ASSET SHEET is the only baked wording in the template PNG"
+  ],
+  "notes_for_agents": [
+    "Use for any reusable asset sheet that needs four equal image panels.",
+    "Do not infer image meanings from slot names; the compile manifest supplies semantics.",
+    "Do not patch out placeholder text; there is no placeholder explanatory text in this template PNG."
+  ]
+}
