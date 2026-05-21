@@ -6,14 +6,11 @@ This directory groups the Patch role kits that sit under the canonical Patch vis
 
 ## Files in this directory
 
-No direct files are expected at this level. Navigate into the role-kit subdirectories.
+No direct files are expected at this level. Navigate into `asset_packs/`.
 
 ## Subdirectories
 
-- `chef/` - Chef Patch role kit asset-sheet package. See `chef/INDEX.md`.
-- `cowboy/` - Patch cowboy role kit asset-sheet package. See `cowboy/INDEX.md`.
-- `detective/` - Patch detective role kit asset-sheet package. See `detective/INDEX.md`.
-- `mechanic/` - Patch mechanic role kit asset-sheet package. See `mechanic/INDEX.md`.
+- `asset_packs/` - Patch role-kit packages. See `asset_packs/INDEX.md`.
 
 ## Notes for agents
 

@@ -31,11 +31,16 @@ Repo image files remain canonical source truth. When GPT needs a durable visual 
 
 ## Taxonomy posture
 
-The current repo still uses the live roots listed above. The taxonomy contract in `TAXONOMY.md` defines the target shape and the migration order before any asset moves begin.
+The current repo uses the live roots listed above. The taxonomy contract in `TAXONOMY.md` defines the live package lanes and the migration order before any future batch begins.
+
+Current active package lanes:
+
+- `assets/canon/patch/role-kits/asset_packs/` for Patch role kits.
+- `assets/characters/<family>/asset_packs/` for character-family packs.
+- `assets/adventures/<family>/asset_packs/` for adventure-scoped packs.
 
 Current future-shape targets are documented in the contract only:
 
-- `assets/canon/patch/role-kits/` for Patch role kits.
 - `assets/views/` for the future view-surface root name.
-- `assets/packs/issue-*/` for adventure-scoped packs.
+- `assets/packs/issue-*/` for issue-scoped adventure packs.
 - `assets/characters/heist-crew/` for the heist crew family.

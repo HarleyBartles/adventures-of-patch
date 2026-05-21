@@ -113,10 +113,10 @@
       "updated_at": "2026-05-17T11:22:00Z",
       "notes": "Recreated because Drive search did not show the prior deck. Stable deck container for hero-patch, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/asset_sheet__character__bit_and_bot_v1.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/compiled_asset_sheets/asset_sheet__character__bit_and_bot_v1.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/asset_sheet__character__bit_and_bot_v1.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/compiled_asset_sheets/asset_sheet__character__bit_and_bot_v1.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "9754fce4de3f50d75d4e6a1058d9d426f4f691e9",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -135,10 +135,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_hero_bit_and_bot.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_hero_bit_and_bot.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_hero_bit_and_bot.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_hero_bit_and_bot.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "1a17051e8f09266f0b8d3b620aa2fdb779ab55fd",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -157,10 +157,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bit_profile.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bit_profile.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bit_profile.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bit_profile.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "1a185454ae529e3964970ffc645de0171bf8fd56",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -179,10 +179,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bit_action.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bit_action.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bit_action.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bit_action.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "d5bc58b5ebcc8c4d05b1e109724003cfaccacc09",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -201,10 +201,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bit_expressions.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bit_expressions.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bit_expressions.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bit_expressions.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "72217f6d386cd1e3c67fe2d5619dac5be6592b7c",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -223,10 +223,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bot_profile.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bot_profile.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bot_profile.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bot_profile.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "37d19d84ee379997bab6d4501486ad47a093d094",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -245,10 +245,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bot_action.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bot_action.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bot_action.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bot_action.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "782cbdffad3dbcec6c7b76b4d0aa39717ba99f1f",
       "asset_family_root": "assets/characters/bit-bot/",
@@ -267,10 +267,10 @@
       "updated_at": "2026-05-19T00:00:00Z",
       "notes": "Stable deck container for bit-and-bot, one source PNG per slide, max-10 deck rule."
     },
-    "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bot_expressions.png": {
+    "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bot_expressions.png": {
       "provider": "google-slides",
       "status": "canonical",
-      "source_repo_path": "assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images/source_bot_expressions.png",
+      "source_repo_path": "assets/characters/bit-bot/asset_packs/bit-and-bot/source_images/source_bot_expressions.png",
       "source_commit_sha": "0bc6412e2ac5d4e22c7b167a4cdcbd608c0df19b",
       "source_blob_sha": "ab87f73686dacc53b086846fb338e7bf9a5028e0",
       "asset_family_root": "assets/characters/bit-bot/",

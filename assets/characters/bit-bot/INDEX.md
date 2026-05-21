@@ -2,7 +2,7 @@
 
 Bit and Bot character asset family.
 
-This folder holds the Bit & Bot support-bot sheet package and the bot role-kit package.
+This family keeps its active package roots under `asset_packs/` so the package schema is obvious from the path.
 
 ## Files in this directory
 
@@ -10,8 +10,7 @@ None.
 
 ## Subdirectories
 
-- `asset_class__character__bit_and_bot__asset_sheet/` - Bit and Bot asset-sheet package. See `asset_class__character__bit_and_bot__asset_sheet/INDEX.md`.
-- `asset__bot_role_kit/` - Bit and Bot bot role-kit package. See `asset__bot_role_kit/INDEX.md`.
+- `asset_packs/` - Bit and Bot asset-pack packages. See `asset_packs/INDEX.md`.
 
 ## Notes for agents
 

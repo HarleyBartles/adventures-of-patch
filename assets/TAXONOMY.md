@@ -21,9 +21,12 @@ The repo's current folder layout remains in place until a migration batch explic
 - `png_chunks` has been retired and is no longer an operating root.
 - `assets/canon/patch/reference_sheets/` is the live home for Patch canon reference, interaction, and anti-pattern sheets.
 - `assets/canon/style/reference_sheets/` is the live home for the style-system pattern and anti-pattern sheets.
+- `assets/canon/patch/role-kits/asset_packs/` is the live home for Patch role-kit packages.
+- `assets/characters/<family>/asset_packs/` is the live home for character-family packages.
+- `assets/adventures/<family>/asset_packs/` is the live home for adventure-scoped packages.
 - `assets/views/` is the future name for the current view-surface registry root, but the on-disk path is not renamed in this dispatch.
 - `assets/evidence/receipts/` is the live evidence lane for receipt bundles and migrated receipt packages.
-- `assets/packs/issue-*` is the future home for adventure-scoped packs, while `assets/adventures/` remains the current staging root.
+- `assets/packs/issue-*` remains the future home for issue-scoped adventure packs.
 
 ## Asset sheet, source image, and in-flight reference distinction
 
@@ -70,9 +73,12 @@ Target taxonomy roots:
 
 - `assets/canon/patch/` is global Patch visual canon.
 - `assets/canon/patch/reference_sheets/` is the live Patch canon reference-sheet lane for approved style, anti-pattern, and interaction PNGs.
-- `assets/canon/patch/role-kits/` is the home for Patch role kits and Patch costume variants.
+- `assets/canon/patch/role-kits/asset_packs/` is the active home for Patch role-kit packages.
 - `assets/canon/style/` is global Adventures style canon.
 - `assets/canon/style/reference_sheets/` is the live style-system reference-sheet lane for patterns and anti-patterns.
+- `assets/characters/<family>/asset_packs/` is the active home for current asset-pack families.
+- `assets/environments/<family>/asset_packs/` is the active home for environment-pack families.
+- `assets/adventures/<family>/asset_packs/` is the active home for adventure-scoped packs.
 - `assets/worlds/` holds reusable world bibles, style frames, and setting grammar.
 - `assets/characters/` holds reusable non-Patch character families and individual characters.
 - `assets/characters/heist-crew/` is the target path for the heist crew family.
@@ -88,7 +94,7 @@ Target taxonomy roots:
 ## Naming rules
 
 - Use short, human-readable folder names.
-- Keep Patch role kits under `assets/canon/patch/role-kits/`.
+- Keep Patch role kits under `assets/canon/patch/role-kits/asset_packs/`.
 - Keep issue packs under `assets/packs/issue-*`.
 - Prefer family names that match the real reusable concept, not legacy class prefixes.
 - Preserve the `heist-crew` name exactly.
@@ -223,6 +229,7 @@ assets/canon/
   patch/
     reference_sheets/
     role-kits/
+      asset_packs/
   style/
     reference_sheets/
 ```
@@ -232,12 +239,28 @@ assets/canon/
 ```text
 assets/characters/
   bit-bot/
+    asset_packs/
+    reference_sheets/
   mission-control-team/
+    reference_sheets/
   stakeholders/
+    asset_packs/
   shopkeeper/
+    reference_sheets/
   bouncers/
+    reference_sheets/
   other-agents/
+    reference_sheets/
   heist-crew/
+```
+
+### Adventures
+
+```text
+assets/adventures/
+  Tournament/
+    asset_packs/
+    source_images/
 ```
 
 ### Environments
@@ -245,10 +268,13 @@ assets/characters/
 ```text
 assets/environments/
   mission-control/
+    reference_sheets/
   identity-emporium/
+    reference_sheets/
   override-safehouse/
   tournament-grounds/
   club-db/
+    reference_sheets/
 ```
 
 ### Props
