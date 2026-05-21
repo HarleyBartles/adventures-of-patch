@@ -1,0 +1,157 @@
+{
+  "template_id": "template_asset_sheet_4column_12equal_v1",
+  "template_name": "template_asset_sheet_4column_12equal_v1",
+  "version": "v1",
+  "status": "approved",
+  "png_filename": "template_asset_sheet_4column_12equal_v1.png",
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_4column_12equal_v1_package.zip",
+  "project_source_package_filename": "template_asset_sheet_4column_12equal_v1_package.zip",
+  "project_source_png_filename": "template_asset_sheet_4column_12equal_v1.png",
+  "project_source_spec_filename": "template_asset_sheet_4column_12equal_v1_spec.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "four_column_twelve_equal",
+  "supported_layout": "environment_location_or_trial_reference_sheet",
+  "text_regions": [],
+  "slots": [
+    {
+      "slot_id": "column_1_image_1",
+      "box": [54, 205, 397, 438],
+      "image_box": [70, 221, 381, 422],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_1",
+      "column": 1,
+      "row": 1
+    },
+    {
+      "slot_id": "column_1_image_2",
+      "box": [54, 457, 397, 690],
+      "image_box": [70, 473, 381, 674],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_1",
+      "column": 1,
+      "row": 2
+    },
+    {
+      "slot_id": "column_1_image_3",
+      "box": [54, 709, 397, 942],
+      "image_box": [70, 725, 381, 926],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_1",
+      "column": 1,
+      "row": 3
+    },
+    {
+      "slot_id": "column_2_image_1",
+      "box": [415, 205, 758, 438],
+      "image_box": [431, 221, 742, 422],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_2",
+      "column": 2,
+      "row": 1
+    },
+    {
+      "slot_id": "column_2_image_2",
+      "box": [415, 457, 758, 690],
+      "image_box": [431, 473, 742, 674],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_2",
+      "column": 2,
+      "row": 2
+    },
+    {
+      "slot_id": "column_2_image_3",
+      "box": [415, 709, 758, 942],
+      "image_box": [431, 725, 742, 926],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_2",
+      "column": 2,
+      "row": 3
+    },
+    {
+      "slot_id": "column_3_image_1",
+      "box": [776, 205, 1119, 438],
+      "image_box": [792, 221, 1103, 422],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_3",
+      "column": 3,
+      "row": 1
+    },
+    {
+      "slot_id": "column_3_image_2",
+      "box": [776, 457, 1119, 690],
+      "image_box": [792, 473, 1103, 674],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_3",
+      "column": 3,
+      "row": 2
+    },
+    {
+      "slot_id": "column_3_image_3",
+      "box": [776, 709, 1119, 942],
+      "image_box": [792, 725, 1103, 926],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_3",
+      "column": 3,
+      "row": 3
+    },
+    {
+      "slot_id": "column_4_image_1",
+      "box": [1137, 205, 1480, 438],
+      "image_box": [1153, 221, 1464, 422],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_4",
+      "column": 4,
+      "row": 1
+    },
+    {
+      "slot_id": "column_4_image_2",
+      "box": [1137, 457, 1480, 690],
+      "image_box": [1153, 473, 1464, 674],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_4",
+      "column": 4,
+      "row": 2
+    },
+    {
+      "slot_id": "column_4_image_3",
+      "box": [1137, 709, 1480, 942],
+      "image_box": [1153, 725, 1464, 926],
+      "default_fit": "cover",
+      "role": "equal_image_slot",
+      "group": "column_4",
+      "column": 4,
+      "row": 3
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true
+  },
+  "consistency_checks": [
+    "template_id matches the PNG filename stem",
+    "source_ingress_package matches the ingress zip basename",
+    "project_source_png_filename matches the PNG filename stem",
+    "project_source_spec_filename matches the packaged spec filename",
+    "canvas width and height match the packaged spec and PNG bytes",
+    "slot count and slot boxes match the packaged spec exactly",
+    "image_box coordinates match the packaged spec exactly",
+    "status is approved for discoverable template inventory use"
+  ]
+}

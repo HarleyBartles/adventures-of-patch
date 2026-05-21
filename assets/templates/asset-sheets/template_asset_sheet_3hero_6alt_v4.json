@@ -1,0 +1,108 @@
+{
+  "template_id": "template_asset_sheet_3hero_6alt_v4",
+  "template_name": "template_asset_sheet_3hero_6alt_v4",
+  "version": "v4",
+  "status": "approved",
+  "png_filename": "template_asset_sheet_3hero_6alt_v4.png",
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_3hero_6alt_v4_package.zip",
+  "project_source_package_filename": "template_asset_sheet_3hero_6alt_v4_package.zip",
+  "project_source_png_filename": "template_asset_sheet_3hero_6alt_v4.png",
+  "project_source_spec_filename": "template_asset_sheet_3hero_6alt_v4_spec.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "three_hero_six_alt",
+  "supported_layout": "character_or_role_asset_sheet",
+  "text_regions": [],
+  "slots": [
+    {
+      "slot_id": "hero_1",
+      "box": [54, 205, 514, 575],
+      "default_fit": "cover",
+      "role": "hero",
+      "group": "hero_1",
+      "parent_group": 1
+    },
+    {
+      "slot_id": "hero_2",
+      "box": [538, 205, 998, 575],
+      "default_fit": "cover",
+      "role": "hero",
+      "group": "hero_2",
+      "parent_group": 2
+    },
+    {
+      "slot_id": "hero_3",
+      "box": [1022, 205, 1482, 575],
+      "default_fit": "cover",
+      "role": "hero",
+      "group": "hero_3",
+      "parent_group": 3
+    },
+    {
+      "slot_id": "hero_1_alt_A",
+      "box": [54, 655, 276, 915],
+      "default_fit": "cover",
+      "role": "alternate",
+      "group": "hero_1",
+      "parent_hero": "hero_1"
+    },
+    {
+      "slot_id": "hero_1_alt_B",
+      "box": [292, 655, 514, 915],
+      "default_fit": "cover",
+      "role": "alternate",
+      "group": "hero_1",
+      "parent_hero": "hero_1"
+    },
+    {
+      "slot_id": "hero_2_alt_A",
+      "box": [538, 655, 760, 915],
+      "default_fit": "cover",
+      "role": "alternate",
+      "group": "hero_2",
+      "parent_hero": "hero_2"
+    },
+    {
+      "slot_id": "hero_2_alt_B",
+      "box": [776, 655, 998, 915],
+      "default_fit": "cover",
+      "role": "alternate",
+      "group": "hero_2",
+      "parent_hero": "hero_2"
+    },
+    {
+      "slot_id": "hero_3_alt_A",
+      "box": [1022, 655, 1244, 915],
+      "default_fit": "cover",
+      "role": "alternate",
+      "group": "hero_3",
+      "parent_hero": "hero_3"
+    },
+    {
+      "slot_id": "hero_3_alt_B",
+      "box": [1260, 655, 1482, 915],
+      "default_fit": "cover",
+      "role": "alternate",
+      "group": "hero_3",
+      "parent_hero": "hero_3"
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true
+  },
+  "consistency_checks": [
+    "template_id matches the PNG filename stem",
+    "source_ingress_package matches the ingress zip basename",
+    "project_source_png_filename matches the PNG filename stem",
+    "project_source_spec_filename matches the packaged spec filename",
+    "canvas width and height match the packaged spec and PNG bytes",
+    "slot count and slot boxes match the packaged spec exactly",
+    "status is approved for discoverable template inventory use"
+  ]
+}

@@ -24,6 +24,8 @@ Use the current approved blank asset sheet template as the final layout for ever
 
 For template packages, the repo PNG and JSON sidecar are required source truth, and the matching project-source PNG plus spec are also required and must be discoverable through the index mesh. Do not treat either side as sufficient on its own.
 
+Before deterministic compile, read the repo JSON sidecar first, then use the matching project-source PNG and spec filenames recorded there. Do not compile from the repo PNG alone or from session memory.
+
 The template structure is:
 
 - hard-text header: `ASSET SHEET`;
