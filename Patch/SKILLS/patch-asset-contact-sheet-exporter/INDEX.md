@@ -19,4 +19,4 @@ Repo-resident Patch execution capability for deterministic PNG contact-sheet exp
 
 - `../../../../playbooks/asset-package-landing.md` - closest repo-local packaging discipline reference for output shape and publication hygiene.
 
-Build staging lives under `scratch/contact-sheet-builds/`, while `output-zips/asset-contact-sheets/` stays zip-only plus index mesh docs.
+Build staging lives under `scratch/contact-sheet-builds/`, while `output-zips/` is the disposable emitted-artifact folder for local zip outputs.

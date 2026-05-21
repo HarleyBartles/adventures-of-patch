@@ -14,12 +14,8 @@ temp/
 __pycache__/
 .pytest_cache/
 
-# contact-sheet output staging and package roots
-output-zips/*
-!output-zips/INDEX.md
-!output-zips/asset-contact-sheets/
-output-zips/asset-contact-sheets/*
-!output-zips/asset-contact-sheets/INDEX.md
+# contact-sheet emitted outputs are disposable local artifacts
+output-zips/
 
 # keep scratch local unless explicitly promoted
 scratch/*

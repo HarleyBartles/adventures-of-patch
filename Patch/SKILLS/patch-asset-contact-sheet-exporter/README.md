@@ -67,10 +67,10 @@ Run from the repo root:
 ```bash
 python Patch/SKILLS/patch-asset-contact-sheet-exporter/scripts/build_contact_sheets.py \
   --dispatch Patch/SKILLS/patch-asset-contact-sheet-exporter/examples/sample-dispatch.json \
-  --output-root output-zips/asset-contact-sheets
+  --output-root output-zips
 ```
 
-The command writes staging under `scratch/contact-sheet-builds/` and emits the final zip into `output-zips/asset-contact-sheets/`.
+The command writes staging under `scratch/contact-sheet-builds/` and emits the final zip directly into `output-zips/`.
 
 ## Output shape
 
@@ -90,12 +90,10 @@ scratch/contact-sheet-builds/<request-id-or-timestamp>/
     unresolved.json
   evidence.json
 
-output-zips/asset-contact-sheets/<request-id>.zip
-output-zips/asset-contact-sheets/INDEX.md
-output-zips/INDEX.md
+output-zips/<request-id>.zip
 ```
 
-The staging folder lives under `scratch/` so `output-zips/` stays zip-only plus index mesh docs. The final zip includes the contact sheets, full asset sheets, full reference sheets, in-flight reference inclusions, and manifest files, plus the evidence file for the run.
+The staging folder lives under `scratch/` so `output-zips/` stays a disposable emitted-artifact folder. The final zip includes the contact sheets, full asset sheets, full reference sheets, in-flight reference inclusions, and manifest files, plus the evidence file for the run.
 
 ## Manifest model
 
@@ -116,7 +114,7 @@ The staging folder lives under `scratch/` so `output-zips/` stays zip-only plus 
 - Do not create a contact sheet out of compiled asset sheets.
 - Do not scan the whole repository for vague selectors.
 - Keep build staging in `scratch/contact-sheet-builds/` or another ignored local staging root.
-- Keep `output-zips/` limited to zip packages and mesh docs.
+- Keep `output-zips/` disposable and gitignored; only emitted zip packages belong there during local use.
 
 ## Notes
 

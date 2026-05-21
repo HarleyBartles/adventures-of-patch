@@ -911,7 +911,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--output-root",
         required=True,
-        help="output root under the repository, for example output-zips/asset-contact-sheets",
+        help="output root under the repository, for example output-zips",
     )
     args = parser.parse_args(argv)
 
