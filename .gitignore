@@ -13,6 +13,7 @@ temp/
 # generated caches
 __pycache__/
 .pytest_cache/
+output-zips/
 
 # keep scratch local unless explicitly promoted
 scratch/*

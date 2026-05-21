@@ -1,0 +1,26 @@
+{
+  "request_type": "asset_contact_sheet_export",
+  "project": "adventures-of-patch",
+  "source_repo": "HarleyBartles/adventures-of-patch",
+  "request_id": "sample-contact-sheet-request",
+  "issue": 50,
+  "purpose": "visual inspection for GPT adventure planning",
+  "families": [
+    {
+      "family_id": "mission-control-team",
+      "reason": "GPT needs the full resident support-team family for visual inspection",
+      "png_paths": [
+        "assets/characters/mission-control-team/asset_class__character__pmc__patch_mission_control_team.png",
+        "assets/characters/mission-control-team/asset__character__pmc__bit_and_bot.png",
+        "assets/characters/mission-control-team/asset__character__pmc__mission_controller.png",
+        "assets/characters/mission-control-team/asset__character__pmc__ops_commander.png"
+      ],
+      "selectors": []
+    }
+  ],
+  "output": {
+    "contact_sheet_per_family": true,
+    "zip_all_outputs": true,
+    "include_manifest": true
+  }
+}

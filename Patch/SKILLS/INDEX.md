@@ -10,6 +10,7 @@ None.
 
 ## Subdirectories
 
+- `patch-asset-contact-sheet-exporter/` - repo-resident Patch capability for deterministic PNG contact sheet exports from bounded dispatch JSON, with manifests, skipped records, evidence, and a packaged zip.
 - `patch-asset-zip-ingress/` - planned Patch capability for ingesting asset zips, classifying contents, routing assets to repo taxonomy locations, rebuilding canonical source packages, updating indexes, publishing, and returning evidence.
 - `patch-asset-directory-source-packager/` - repo-resident Patch capability for publishing an existing asset directory into a flat source zip with index updates and publication proof.
 
