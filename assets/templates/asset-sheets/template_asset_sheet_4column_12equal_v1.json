@@ -5,9 +5,9 @@
   "status": "approved",
   "png_filename": "template_asset_sheet_4column_12equal_v1.png",
   "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_4column_12equal_v1_package.zip",
-  "project_source_package_filename": "template_asset_sheet_4column_12equal_v1_package.zip",
+  "project_source_package_filename": "template_asset_sheet_4column_12equal_v1.zip",
   "project_source_png_filename": "template_asset_sheet_4column_12equal_v1.png",
-  "project_source_spec_filename": "template_asset_sheet_4column_12equal_v1_spec.json",
+  "project_source_spec_filename": "template_asset_sheet_4column_12equal_v1.json",
   "canvas": {
     "width": 1536,
     "height": 1008

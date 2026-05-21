@@ -5,9 +5,9 @@
   "status": "approved",
   "png_filename": "template_asset_sheet_3hero_6alt_v4.png",
   "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_3hero_6alt_v4_package.zip",
-  "project_source_package_filename": "template_asset_sheet_3hero_6alt_v4_package.zip",
+  "project_source_package_filename": "template_asset_sheet_3hero_6alt_v4.zip",
   "project_source_png_filename": "template_asset_sheet_3hero_6alt_v4.png",
-  "project_source_spec_filename": "template_asset_sheet_3hero_6alt_v4_spec.json",
+  "project_source_spec_filename": "template_asset_sheet_3hero_6alt_v4.json",
   "canvas": {
     "width": 1536,
     "height": 1008
