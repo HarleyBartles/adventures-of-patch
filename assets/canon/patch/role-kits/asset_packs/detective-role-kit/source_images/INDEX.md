@@ -4,12 +4,12 @@ Approved source images for the Patch Detective role-kit package.
 
 ## Files in this directory
 
-- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_01_side_view__v1.png`
-- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_02_back_view__v1.png`
+- `source_image__character__patch_role_kits__detective_role_kit_source_alt_01_side_view__v1.png`
+- `source_image__character__patch_role_kits__detective_role_kit_source_alt_02_back_view__v1.png`
 - `source_image__character__patch_role_kits__detective_role_kit_source_alt_03_clue_hunt__v1.png`
 - `source_image__character__patch_role_kits__detective_role_kit_source_alt_04_on_the_case__v1.png`
-- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_05_details__v1.png`
-- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_06_props__v1.png`
+- `source_image__character__patch_role_kits__detective_role_kit_source_alt_05_details__v1.png`
+- `source_image__character__patch_role_kits__detective_role_kit_source_alt_06_props__v1.png`
 - `source_image__character__patch_role_kits__detective_role_kit_source_hero_patch_detective__v1.png`
 
 ## Notes for agents
