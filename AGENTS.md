@@ -42,7 +42,7 @@ These are local bindings for one named project agent. They do not redefine Will'
 
 The default workspace route is `Will -> Patch`. There is no Chris-like intermediary and no separate Adventures asset, deck, image, canon, receipt, or publication executor unless a future issue creates one for a real boundary.
 
-Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/canon/patch/`. Repo-canonical image inspection defaults to `assets/view-surfaces/google-slides-registry.json`; source zips stay in the package/import/integrity lane.
+Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/canon/patch/` and its explicit `reference_sheets/` subdirectory. Repo-canonical image inspection defaults to `assets/view-surfaces/google-slides-registry.json`; source zips stay in the package/import/integrity lane.
 
 ## Source-of-truth rules
 
@@ -79,9 +79,9 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 Before planning or generating images featuring Patch, inspect `assets/canon/patch/INDEX.md` and the current repo-tracked Patch visual references:
 
 - `assets/canon/patch/asset__hero__patch_style_bible.md`
-- `assets/canon/patch/asset_class__hero__patch_approved_style.png`
-- `assets/canon/patch/asset__hero__patch_antipatterns.png`
-- `assets/canon/patch/asset__hero__patch_interactions.png`
+- `assets/canon/patch/reference_sheets/canon_reference_sheet__hero_patch__approved_style__v1.png`
+- `assets/canon/patch/reference_sheets/antipattern_sheet__hero_patch__general_drift_risks__v1.png`
+- `assets/canon/patch/reference_sheets/interaction_sheet__hero_patch__scene_behaviour__v1.png`
 
 If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 

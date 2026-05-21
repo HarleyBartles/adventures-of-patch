@@ -21,7 +21,7 @@ No other direct asset files are expected at this level. Navigate into subdirecto
 
 ## Notes for agents
 
-Patch references in `canon/patch/` are canonical for Patch image planning and generation.
+Patch references in `canon/patch/reference_sheets/` are canonical for Patch image planning and generation.
 
 Non-Patch character and environment families are optional. Do not force them into a deck just because they exist.
 

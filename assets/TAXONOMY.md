@@ -19,6 +19,8 @@ The repo's current folder layout remains in place until a migration batch explic
 - Current roots remain live until a later batch migrates them.
 - `source-zips` remains first-class, but only as a canonical input-zip and one-time backfill storage lane organized by asset taxonomy category.
 - `png_chunks` has been retired and is no longer an operating root.
+- `assets/canon/patch/reference_sheets/` is the live home for Patch canon reference, interaction, and anti-pattern sheets.
+- `assets/canon/style/reference_sheets/` is the live home for the style-system pattern and anti-pattern sheets.
 - `assets/views/` is the future name for the current view-surface registry root, but the on-disk path is not renamed in this dispatch.
 - `assets/evidence/receipts/` is the live evidence lane for receipt bundles and migrated receipt packages.
 - `assets/packs/issue-*` is the future home for adventure-scoped packs, while `assets/adventures/` remains the current staging root.
@@ -67,8 +69,10 @@ Target taxonomy roots:
 ## Root boundary rules
 
 - `assets/canon/patch/` is global Patch visual canon.
+- `assets/canon/patch/reference_sheets/` is the live Patch canon reference-sheet lane for approved style, anti-pattern, and interaction PNGs.
 - `assets/canon/patch/role-kits/` is the home for Patch role kits and Patch costume variants.
 - `assets/canon/style/` is global Adventures style canon.
+- `assets/canon/style/reference_sheets/` is the live style-system reference-sheet lane for patterns and anti-patterns.
 - `assets/worlds/` holds reusable world bibles, style frames, and setting grammar.
 - `assets/characters/` holds reusable non-Patch character families and individual characters.
 - `assets/characters/heist-crew/` is the target path for the heist crew family.
@@ -217,8 +221,10 @@ Patch execution for a canonical asset pack zip should follow this order:
 ```text
 assets/canon/
   patch/
+    reference_sheets/
     role-kits/
   style/
+    reference_sheets/
 ```
 
 ### Characters
