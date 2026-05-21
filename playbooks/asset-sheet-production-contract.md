@@ -16,7 +16,7 @@ Asset sheet production is always source-image first and deterministic-sheet seco
 plan asset sheet -> generate focused source images -> stop for Harley review -> QA accepted source images -> deterministic compile into approved asset-sheet template -> final sheet/lane compliance QA -> Harley approval -> zip package -> repo/source-package landing when requested
 ```
 
-Do not ask image generation to create the final sheet layout. Image generation creates the source images only. The final rendered sheet must be built by deterministic compile into the approved blank asset-sheet template.
+Do not ask image generation to create the final sheet layout. Image generation creates the source images only. The final compiled asset sheet must be built by deterministic compile into the approved blank asset-sheet template.
 
 ## Approved template rule
 
@@ -46,7 +46,7 @@ A character sheet is not ready to compile if it lacks the full-body plain-white 
 
 Every image used in the final asset sheet must have an accepted Adventures image QA decision in the correct lane before compile.
 
-Source images should be saved as durable package contents. Do not use unreviewed, rejected, weak, or reference-only images in the rendered sheet.
+Source images should be saved as durable package contents. Do not use unreviewed, rejected, weak, or reference-only images in the compiled asset sheet.
 
 For Patch-bearing source images, enforce current Patch canon and Patch preflight. For non-Patch source images, enforce style-system fit, identity continuity, function, and lane discipline.
 
@@ -69,14 +69,14 @@ If guidance overflows the panel, the compiler must reduce text within a safe ran
 
 The final deliverable for an asset sheet is a zip package containing:
 
-- the rendered asset-sheet PNG;
+- the compiled asset-sheet PNG;
 - every approved source image used in that sheet;
 - a markdown or JSON sidecar/spec recording title, asset type, status, version/source/QA text, guidance bullets, source-image filenames, QA decisions, and any skipped/omitted candidate images with reasons when relevant.
 
-The final canonical artifact is the rendered PNG sheet. HTML files, scratch manifests, and temporary compile scripts are intermediates unless Harley explicitly promotes them as durable source.
+The final canonical artifact is the compiled asset-sheet PNG. HTML files, scratch manifests, and temporary compile scripts are intermediates unless Harley explicitly promotes them as durable source.
 
 ## Landing posture
 
-When landing in the repo, place the rendered sheet and approved source images in the relevant asset directory. Place the zip package in `assets/source-zips/` only when the package is intended as a repo-tracked source/import package or integrity receipt. Update the relevant asset directory index and `assets/source-zips/INDEX.md` when applicable.
+When landing in the repo, place the compiled asset sheet and approved source images in the relevant asset directory. Place the zip package in `assets/source-zips/` only when the package is intended as a repo-tracked source/import package or integrity receipt. Update the relevant asset directory index and `assets/source-zips/INDEX.md` when applicable.
 
 Do not call the sheet canonical solely because the zip exists. Canonical status requires repo/source-package/index evidence and any required Harley approval threshold.

@@ -6,7 +6,7 @@ Bit and Bot Asset Sheet
 
 ## Package type
 
-Character family asset sheet / Bit and Bot support-bot family reference
+Character family compiled asset sheet / Bit and Bot support-bot family reference
 
 ## Current status
 
@@ -20,7 +20,7 @@ Bit and Bot support-bot family reference package for continuity, QA, and determi
 
 Seven Harley-approved PNG source images compiled deterministically with PIL; no image generation or visual editing.
 
-## Rendered sheet file
+## Compiled asset sheet file
 
 - `asset_sheet__character__bit_and_bot_v1.png`
 

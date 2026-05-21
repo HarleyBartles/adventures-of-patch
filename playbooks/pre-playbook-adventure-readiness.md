@@ -110,7 +110,7 @@ The end-to-end PPTX production playbook should stop when an issue is not playboo
 - If frame-ready exists but asset-ready is missing, route to `playbooks/visual-preproduction.md`.
 - If either state is absent, do not build a deck, generate body-slide images, or treat the issue as a completed proof run.
 
-Preproduction asset sheets are references for later generation. They must not be used as substitute body-slide art in proof/full/final-candidate runs unless Harley explicitly approves a separate storyboard mode.
+Preproduction compiled asset sheets are references for later generation. They must not be used as substitute body-slide art in proof/full/final-candidate runs unless Harley explicitly approves a separate storyboard mode.
 
 ## Standard readiness output
 

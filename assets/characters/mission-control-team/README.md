@@ -20,7 +20,7 @@ Reusable mission-readiness support team for stories that need Patch-facing ops, 
 
 Existing Mission Control Team family images and overview sheet moved from the legacy class-prefixed root.
 
-## Rendered sheet files
+## Compiled asset sheet files
 
 - `asset_class__character__pmc__patch_mission_control_team.png`
 - `asset__character__pmc__bit_and_bot.png`

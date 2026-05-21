@@ -18,8 +18,8 @@ Patch may execute this workflow through `Patch / execution`, but the project wor
 
 1. Classify each input file by repo taxonomy.
 2. Copy accepted individual assets into the target `assets/**` directory.
-3. Copy rendered asset-sheet PNGs into the target `assets/**` directory.
-4. Copy approved source images used by the rendered sheet beside the sheet or into the appropriate assembly/source folder according to the asset directory convention.
+3. Copy compiled asset-sheet PNGs into the target `assets/**` directory.
+4. Copy approved source images used by the compiled asset sheet beside the sheet or into the appropriate assembly/source folder according to the asset directory convention.
 5. Copy markdown or JSON sidecars/specs beside the relevant image sheets or documentation.
 6. Copy repo-tracked source packages into `assets/source-zips/` when appropriate.
 7. Update the target asset directory `INDEX.md`.
@@ -34,7 +34,7 @@ Patch may execute this workflow through `Patch / execution`, but the project wor
 
 A final asset sheet package must contain:
 
-- the rendered asset-sheet PNG compiled into the approved blank template;
+- the compiled asset-sheet PNG rendered from the approved blank template;
 - every QA-accepted source image used in that sheet;
 - a sidecar/spec recording title, type, status, version/source/QA text, guidance bullets, source-image filenames, QA decisions, and omissions or skipped candidates when relevant.
 

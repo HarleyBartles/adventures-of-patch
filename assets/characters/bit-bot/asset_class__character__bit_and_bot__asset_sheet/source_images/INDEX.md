@@ -1,6 +1,6 @@
 # assets/characters/bit-bot/asset_class__character__bit_and_bot__asset_sheet/source_images index
 
-Approved source images for the Bit and Bot asset sheet.
+Approved source images for the Bit and Bot compiled asset sheet.
 
 ## Files in this directory
 
@@ -18,4 +18,4 @@ None.
 
 ## Notes for agents
 
-These images are the approved source set for the Bit and Bot sheet package.
+These images are the approved source set for the Bit and Bot compiled asset sheet package.
