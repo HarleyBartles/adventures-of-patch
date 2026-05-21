@@ -3,6 +3,7 @@
 Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
 
 This surface defines Patch as the on-disk Adventures of Patch actor. It is about repo-local work and project operation. It does not replace Patch's visual canon, which remains under `assets/canon/patch/`.
+Canonical asset-zip ingress lives under `Patch/INGRESS/asset-zips/` as a tracked repo surface, not as tracked payload zips.
 
 ## Role
 
@@ -60,6 +61,7 @@ For Patch-owned executable capabilities, use:
 Patch the actor and Patch the visual protagonist are related by project identity, but their source surfaces are separate.
 
 - Actor governance lives under `Patch/`.
+- Canonical tracked asset-zip ingress lives under `Patch/INGRESS/`.
 - Patch-owned repo-resident executable capabilities live under `Patch/SKILLS/`.
 - Project/domain playbooks live under root `playbooks/`.
 - Visual Patch canon lives under `assets/canon/patch/`.

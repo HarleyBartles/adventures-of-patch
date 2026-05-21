@@ -1,6 +1,6 @@
 # Patch asset zip ingress
 
-Planned Patch execution capability for ingesting asset zips into `HarleyBartles/adventures-of-patch`.
+Repo-resident Patch execution capability for ingesting asset zips into `HarleyBartles/adventures-of-patch`.
 
 ## Purpose
 
@@ -8,9 +8,16 @@ Given an incoming zip of accepted or candidate assets, Patch should inspect the 
 
 This skill is for package handling and import/rebuild work, not the default GPT visual-inspection route for repo-canonical images.
 
+## Canonical ingress contract
+
+- Canonical local drop zone: `Patch/INGRESS/asset-zips/`
+- Incoming zip payloads are evidence and input, not canon.
+- Repo-preserved source packages belong under `assets/source-zips/` only after inspection, classification, or rebuild.
+- Successfully ingressed zips are deleted from the ingress lane only after the landed repo files are committed, pushed, and remote-verified.
+
 ## Current status
 
-Planned capability surface. This folder defines the intended on-disk skill tree shape before implementation.
+Operational capability surface. This folder defines the implemented on-disk ingress lane and its required cleanup contract.
 
 ## Required behaviour
 
@@ -19,7 +26,7 @@ Planned capability surface. This folder defines the intended on-disk skill tree 
 - Classify contents before writing them into `assets/**`.
 - Rebuild repo-shaped source packages to match the on-disk taxonomy when needed.
 - Update `assets/INDEX.md`, target asset directory indexes, and `assets/source-zips/INDEX.md`.
-- Commit, push, and verify before returning green.
+- Commit, push, verify, and clean the ingress lane before returning green.
 
 ## Related project playbook
 

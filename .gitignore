@@ -20,3 +20,9 @@ output-zips/
 # keep scratch local unless explicitly promoted
 scratch/*
 !scratch/.gitkeep
+
+# Patch ingress lane: track the folder docs, not incoming zip payloads or scratch extractions
+Patch/INGRESS/asset-zips/*.zip
+Patch/INGRESS/asset-zips/**/*.zip
+Patch/INGRESS/asset-zips/_work/
+Patch/INGRESS/asset-zips/_extracted/
