@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Patch Detective Role Kit",
   "asset_type": "Character / Patch costume variant",
   "status": "approved_source_set",
@@ -7,13 +7,13 @@
   "production": "deterministic Pillow compile; no image generation used for final sheet",
   "fit_policy": "contain/no-crop for hero and all alternate view slots",
   "source_images": [
-    "source_hero_patch_detective.png",
-    "source_alt_01_side_view.png",
-    "source_alt_02_back_view.png",
-    "source_alt_03_clue_hunt.png",
-    "source_alt_04_on_the_case.png",
-    "source_alt_05_details.png",
-    "source_alt_06_props.png"
+    "source_image__character__patch_role_kits__detective_role_kit_source_hero_patch_detective__v1.png",
+    "source_image__character__patch_role_kits__cowboy_role_kit_source_alt_01_side_view__v1.png",
+    "source_image__character__patch_role_kits__cowboy_role_kit_source_alt_02_back_view__v1.png",
+    "source_image__character__patch_role_kits__detective_role_kit_source_alt_03_clue_hunt__v1.png",
+    "source_image__character__patch_role_kits__detective_role_kit_source_alt_04_on_the_case__v1.png",
+    "source_image__character__patch_role_kits__cowboy_role_kit_source_alt_05_details__v1.png",
+    "source_image__character__patch_role_kits__cowboy_role_kit_source_alt_06_props__v1.png"
   ],
   "captions": [
     "HERO IMAGE",

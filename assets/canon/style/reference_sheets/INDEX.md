@@ -1,4 +1,4 @@
-# assets/canon/style/reference_sheets index
+﻿# assets/canon/style/reference_sheets index
 
 Style-system reference sheets for Adventures of Patch.
 
@@ -6,10 +6,10 @@ This directory holds the approved style-system pattern sheet and anti-pattern sh
 
 ## Files in this directory
 
-- `canon_reference_sheet__style__approved_patterns__v1.png` - approved style-system pattern sheet.
-- `antipattern_sheet__style__general_drift_risks__v1.png` - general anti-pattern sheet.
-- `antipattern_sheet__style__environment_drift_risks__v1.png` - environment anti-pattern sheet.
-- `antipattern_sheet__style__props_drift_risks__v1.png` - props anti-pattern sheet.
+- `canon_reference_sheet__style__style__approved_patterns__v1.png` - approved style-system pattern sheet.
+- `antipattern_sheet__style__style__general_drift_risks__v1.png` - general anti-pattern sheet.
+- `antipattern_sheet__style__style__environment_drift_risks__v1.png` - environment anti-pattern sheet.
+- `antipattern_sheet__style__style__props_drift_risks__v1.png` - props anti-pattern sheet.
 
 ## Subdirectories
 

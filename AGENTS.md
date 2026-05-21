@@ -1,4 +1,4 @@
-# Agent navigation for Adventures of Patch
+﻿# Agent navigation for Adventures of Patch
 
 This repository is the canonical source of truth for the Presentation Planner / Adventures of Patch project.
 
@@ -79,9 +79,9 @@ Patch is the constant protagonist for Adventures of Patch presentations unless H
 Before planning or generating images featuring Patch, inspect `assets/canon/patch/INDEX.md` and the current repo-tracked Patch visual references:
 
 - `assets/canon/patch/asset__hero__patch_style_bible.md`
-- `assets/canon/patch/reference_sheets/canon_reference_sheet__hero_patch__approved_style__v1.png`
-- `assets/canon/patch/reference_sheets/antipattern_sheet__hero_patch__general_drift_risks__v1.png`
-- `assets/canon/patch/reference_sheets/interaction_sheet__hero_patch__scene_behaviour__v1.png`
+- `assets/canon/patch/reference_sheets/canon_reference_sheet__hero_patch__patch__approved_style__v1.png`
+- `assets/canon/patch/reference_sheets/antipattern_sheet__hero_patch__patch__general_drift_risks__v1.png`
+- `assets/canon/patch/reference_sheets/interaction_sheet__hero_patch__patch__scene_behaviour__v1.png`
 
 If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 

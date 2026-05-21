@@ -1,4 +1,4 @@
-# Identity Emporium Shopkeeper
+﻿# Identity Emporium Shopkeeper
 
 ## Package name
 
@@ -30,7 +30,7 @@ No accepted source images or compiled character sheet are landed yet, so this re
 
 ## Reference sheets
 
-- `reference_sheets/character_reference_sheet__identity_emporium_shopkeeper__three_view_sheet__v1.png`
+- `reference_sheets/member_reference_sheet__character__identity_emporium__shopkeeper_three_view_sheet__v1.png`
 
 ## Canon / provisional warning
 

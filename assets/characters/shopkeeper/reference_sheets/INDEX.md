@@ -1,10 +1,10 @@
-# assets/characters/shopkeeper/reference_sheets index
+﻿# assets/characters/shopkeeper/reference_sheets index
 
 Identity Emporium Shopkeeper reference sheets.
 
 ## Files in this directory
 
-- `character_reference_sheet__identity_emporium_shopkeeper__three_view_sheet__v1.png` - provisional three-view shopkeeper reference sheet.
+- `member_reference_sheet__character__identity_emporium__shopkeeper_three_view_sheet__v1.png` - provisional three-view shopkeeper reference sheet.
 
 ## Subdirectories
 

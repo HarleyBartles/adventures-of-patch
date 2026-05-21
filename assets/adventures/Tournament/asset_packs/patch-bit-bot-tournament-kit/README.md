@@ -1,4 +1,4 @@
-# Patch / Bit / Bot Tournament Kit
+﻿# Patch / Bit / Bot Tournament Kit
 
 ## Package name
 
@@ -22,7 +22,7 @@ Approved PNG source images compiled deterministically into the tournament kit as
 
 ## Compiled asset sheet file
 
-- `compiled_asset_sheets/asset_sheet__character__patch_bit_bot_tournament_kit_v1.png`
+- `compiled_asset_sheets/asset_sheet__adventure__tournament__patch_bit_bot_tournament_kit__v1.png`
 
 ## Manifest file
 

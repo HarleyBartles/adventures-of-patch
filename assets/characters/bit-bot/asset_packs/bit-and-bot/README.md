@@ -1,4 +1,4 @@
-# Bit and Bot Asset Pack
+﻿# Bit and Bot Asset Pack
 
 ## Package name
 
@@ -22,7 +22,7 @@ Seven Harley-approved PNG source images compiled deterministically with PIL; no 
 
 ## Compiled asset sheet file
 
-- `compiled_asset_sheets/asset_sheet__character__bit_and_bot_v1.png`
+- `compiled_asset_sheets/asset_sheet__character__bit_bot__bit_and_bot__v1.png`
 
 ## Source image folder
 

@@ -1,4 +1,4 @@
-# Identity Emporium Environment Family
+﻿# Identity Emporium Environment Family
 
 ## Package name
 
@@ -26,12 +26,12 @@ Existing Identity Emporium environment proof, storefront sheets, and the provisi
 
 ## Reference sheets
 
-- `reference_sheets/class_reference_sheet__environment__identity_emporium__v1.png`
-- `reference_sheets/environment_reference_sheet__identity_emporium__world_proof__v1.png`
-- `reference_sheets/environment_reference_sheet__identity_emporium__storefront_exterior__three_view_sheet__v1.png`
-- `reference_sheets/environment_reference_sheet__identity_emporium__storefront_interior__three_view_sheet__v1.png`
+- `reference_sheets/class_reference_sheet__environment__identity_emporium__overview__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__identity_emporium__world_proof__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__identity_emporium__storefront_exterior__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__identity_emporium__storefront_interior__v1.png`
 
-The shopkeeper reference sheet now lives at `assets/characters/shopkeeper/reference_sheets/character_reference_sheet__identity_emporium_shopkeeper__three_view_sheet__v1.png`.
+The shopkeeper reference sheet now lives at `assets/characters/shopkeeper/reference_sheets/member_reference_sheet__character__identity_emporium__shopkeeper_three_view_sheet__v1.png`.
 
 ## Canon / provisional warning
 

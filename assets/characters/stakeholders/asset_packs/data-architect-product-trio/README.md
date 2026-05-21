@@ -1,4 +1,4 @@
-# Data Analyst / Software Architect / Product Manager Trio
+﻿# Data Analyst / Software Architect / Product Manager Trio
 
 ## Package name
 
@@ -22,7 +22,7 @@ Nine approved PNG source images compiled deterministically into the stakeholder 
 
 ## Compiled asset sheet file
 
-- `compiled_asset_sheets/asset_sheet__stakeholders__data_architect_product_v1.png`
+- `compiled_asset_sheets/asset_sheet__character__stakeholders__data_architect_product_trio__v1.png`
 
 ## Manifest file
 

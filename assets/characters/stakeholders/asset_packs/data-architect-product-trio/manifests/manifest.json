@@ -1,7 +1,7 @@
-{
+﻿{
   "artifact_kind": "asset_sheet",
-  "asset_sheet": "asset_sheet__stakeholders__data_architect_product_v1.png",
-  "compiled_asset_sheet": "asset_sheet__stakeholders__data_architect_product_v1.png",
+  "asset_sheet": "asset_sheet__character__stakeholders__data_architect_product_trio__v1.png",
+  "compiled_asset_sheet": "asset_sheet__character__stakeholders__data_architect_product_trio__v1.png",
   "title": "Tournament Stakeholders: Data Analyst / Software Architect / Product Manager",
   "type": "Data Analyst / Software Architect / Product Manager",
   "status": "approved_preproduction_reference",
@@ -10,37 +10,37 @@
   "template": "template_asset_sheet_3hero_6alt_v4.png",
   "source_images_dir": "source_images",
   "source_image_paths": [
-    "source_images/data_analyst_hero.png",
-    "source_images/data_analyst_alt.png",
-    "source_images/data_analyst_props.png",
-    "source_images/software_architect_hero.png",
-    "source_images/software_architect_alt.png",
-    "source_images/software_architect_props.png",
-    "source_images/product_manager_hero.png",
-    "source_images/product_manager_alt.png",
-    "source_images/product_manager_props.png"
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_data_analyst_hero__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_data_analyst_alt__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_data_analyst_props__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_software_architect_hero__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_software_architect_alt__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_software_architect_props__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_product_manager_hero__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_product_manager_alt__v1.png",
+    "source_images/source_image__character__stakeholders__data_architect_product_trio_product_manager_props__v1.png"
   ],
   "column_order": [
     {
       "column": 1,
       "role": "Data Analyst",
-      "hero": "source_images/data_analyst_hero.png",
-      "alt": "source_images/data_analyst_alt.png",
-      "props": "source_images/data_analyst_props.png"
+      "hero": "source_images/source_image__character__stakeholders__data_architect_product_trio_data_analyst_hero__v1.png",
+      "alt": "source_images/source_image__character__stakeholders__data_architect_product_trio_data_analyst_alt__v1.png",
+      "props": "source_images/source_image__character__stakeholders__data_architect_product_trio_data_analyst_props__v1.png"
     },
     {
       "column": 2,
       "role": "Software Architect",
-      "hero": "source_images/software_architect_hero.png",
-      "alt": "source_images/software_architect_alt.png",
-      "props": "source_images/software_architect_props.png"
+      "hero": "source_images/source_image__character__stakeholders__data_architect_product_trio_software_architect_hero__v1.png",
+      "alt": "source_images/source_image__character__stakeholders__data_architect_product_trio_software_architect_alt__v1.png",
+      "props": "source_images/source_image__character__stakeholders__data_architect_product_trio_software_architect_props__v1.png"
     },
     {
       "column": 3,
       "role": "Product Manager",
-      "hero": "source_images/product_manager_hero.png",
-      "alt": "source_images/product_manager_alt.png",
-      "props": "source_images/product_manager_props.png"
+      "hero": "source_images/source_image__character__stakeholders__data_architect_product_trio_product_manager_hero__v1.png",
+      "alt": "source_images/source_image__character__stakeholders__data_architect_product_trio_product_manager_alt__v1.png",
+      "props": "source_images/source_image__character__stakeholders__data_architect_product_trio_product_manager_props__v1.png"
     }
   ],
   "compiled_at": "2026-05-19T18:21:10Z"

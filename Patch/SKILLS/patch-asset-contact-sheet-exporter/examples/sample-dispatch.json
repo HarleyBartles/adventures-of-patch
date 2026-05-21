@@ -1,4 +1,4 @@
-{
+﻿{
   "request_type": "asset_contact_sheet_export",
   "project": "adventures-of-patch",
   "source_repo": "HarleyBartles/adventures-of-patch",
@@ -14,7 +14,7 @@
       ],
       "source_png_paths": [],
       "asset_sheet_paths": [
-        "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/compiled_asset_sheets/asset_sheet__character__patch_bit_bot_tournament_kit_v1.png"
+        "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/compiled_asset_sheets/asset_sheet__adventure__tournament__patch_bit_bot_tournament_kit__v1.png"
       ]
     }
   ],

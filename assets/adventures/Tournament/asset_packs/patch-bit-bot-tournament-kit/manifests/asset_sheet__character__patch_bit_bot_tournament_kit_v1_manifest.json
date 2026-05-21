@@ -1,6 +1,6 @@
-{
+﻿{
   "artifact_kind": "asset_sheet",
-  "compiled_asset_sheet": "asset_sheet__character__patch_bit_bot_tournament_kit_v1.png",
+  "compiled_asset_sheet": "asset_sheet__adventure__tournament__patch_bit_bot_tournament_kit__v1.png",
   "title": "Patch / Bit / Bot Tournament Kit",
   "type": "Patch / Bit / Bot tournament role kit",
   "status": "approved_preproduction_reference",
@@ -9,15 +9,15 @@
   "template": "template_asset_sheet_3hero_6alt_v4",
   "source_images_dir": "source_images",
   "source_image_paths": [
-    "source_images/patch_hero.png",
-    "source_images/patch_startline_quizzical.png",
-    "source_images/patch_notebook_focus.png",
-    "source_images/bit_hero.png",
-    "source_images/bit_race_off.png",
-    "source_images/bit_hazard_tape.png",
-    "source_images/bot_hero.png",
-    "source_images/bot_side_stretch.png",
-    "source_images/bot_wrong_line.png"
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_patch_hero__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_patch_startline_quizzical__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_patch_notebook_focus__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_bit_hero__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_bit_race_off__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_bit_hazard_tape__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_bot_hero__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_bot_side_stretch__v1.png",
+    "source_images/source_image__adventure__tournament__patch_bit_bot_tournament_kit_bot_wrong_line__v1.png"
   ],
   "slot_order": [
     {

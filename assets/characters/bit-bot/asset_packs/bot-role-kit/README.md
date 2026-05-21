@@ -1,4 +1,4 @@
-# Bit and Bot Role Kit
+﻿# Bit and Bot Role Kit
 
 ## Package name
 
@@ -22,7 +22,7 @@ Harley-approved source images compiled deterministically; no image generation or
 
 ## Rendered sheet file
 
-- `asset_sheet__bot_role_kit_4column_v1.png`
+- `asset_sheet__character__bit_bot__bot_role_kit__v1.png`
 
 ## Source image folder
 

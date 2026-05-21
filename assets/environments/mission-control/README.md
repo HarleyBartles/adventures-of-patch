@@ -1,4 +1,4 @@
-# Patch Mission Control Centre Environment Family
+﻿# Patch Mission Control Centre Environment Family
 
 ## Package name
 
@@ -22,12 +22,12 @@ Existing mission control overview and location views moved from the legacy class
 
 ## Reference sheets
 
-- `reference_sheets/class_reference_sheet__environment__pmc__patch_mission_control__v1.png`
-- `reference_sheets/environment_reference_sheet__pmc__control_desk__v1.png`
-- `reference_sheets/environment_reference_sheet__pmc__launch_gate__v1.png`
-- `reference_sheets/environment_reference_sheet__pmc__launch_pad__v1.png`
-- `reference_sheets/environment_reference_sheet__pmc__operations_room__v1.png`
-- `reference_sheets/environment_reference_sheet__pmc__review_bay__v1.png`
+- `reference_sheets/class_reference_sheet__environment__pmc__overview__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__pmc__control_desk__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__pmc__launch_gate__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__pmc__launch_pad__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__pmc__operations_room__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__pmc__review_bay__v1.png`
 
 ## Canon / provisional warning
 

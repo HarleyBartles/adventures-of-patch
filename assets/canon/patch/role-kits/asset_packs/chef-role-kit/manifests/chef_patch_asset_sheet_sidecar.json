@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Chef Patch",
   "asset_type": "Individual character sheet",
   "status": "provisional_asset",
@@ -6,25 +6,25 @@
   "version": "v4",
   "source_qa": "Seven Harley-approved Chef Patch images supplied in the current conversation on 2026-05-17. Deterministic Pillow compile; no image generation.",
   "template": "template_final_asset_sheet_blank_v4.png",
-  "rendered_asset_sheet": "chef_patch_asset_sheet_v4.png",
+  "rendered_asset_sheet": "asset_sheet__character__patch_role_kits__chef_role_kit__v4.png",
   "source_images": {
-    "alt_side_view": "chef_patch_alt_side_view.png",
-    "alt_back_view": "chef_patch_alt_back_view.png",
-    "alt_action_rolling_dough": "chef_patch_alt_action_rolling_dough.png",
-    "alt_action_mixing_bowl": "chef_patch_alt_action_mixing_bowl.png",
-    "alt_detail_split": "chef_patch_alt_detail_split.png",
-    "alt_prop_sheet": "chef_patch_alt_prop_sheet.png",
-    "hero_front": "chef_patch_hero_front.png"
+    "alt_side_view": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_side_view__v1.png",
+    "alt_back_view": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_back_view__v1.png",
+    "alt_action_rolling_dough": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_action_rolling_dough__v1.png",
+    "alt_action_mixing_bowl": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_action_mixing_bowl__v1.png",
+    "alt_detail_split": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_detail_split__v1.png",
+    "alt_prop_sheet": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_prop_sheet__v1.png",
+    "hero_front": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_hero_front__v1.png"
   },
   "panel_order": {
-    "main_hero_image": "chef_patch_hero_front.png",
+    "main_hero_image": "source_image__character__patch_role_kits__chef_role_kit_chef_patch_hero_front__v1.png",
     "alternate_views": [
-      "chef_patch_alt_side_view.png",
-      "chef_patch_alt_back_view.png",
-      "chef_patch_alt_action_rolling_dough.png",
-      "chef_patch_alt_action_mixing_bowl.png",
-      "chef_patch_alt_detail_split.png",
-      "chef_patch_alt_prop_sheet.png"
+      "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_side_view__v1.png",
+      "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_back_view__v1.png",
+      "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_action_rolling_dough__v1.png",
+      "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_action_mixing_bowl__v1.png",
+      "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_detail_split__v1.png",
+      "source_image__character__patch_role_kits__chef_role_kit_chef_patch_alt_prop_sheet__v1.png"
     ]
   },
   "guidance_bullets": [

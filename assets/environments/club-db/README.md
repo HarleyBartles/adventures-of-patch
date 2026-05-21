@@ -1,4 +1,4 @@
-# Club DB Environment Family
+﻿# Club DB Environment Family
 
 ## Package name
 
@@ -22,11 +22,11 @@ Existing Club DB overview and environment views moved from the legacy class-pref
 
 ## Reference sheets
 
-- `reference_sheets/class_reference_sheet__environment__clubdb__v1.png`
-- `reference_sheets/environment_reference_sheet__clubdb__back_interior__v1.png`
-- `reference_sheets/environment_reference_sheet__clubdb__front_exterior__v1.png`
-- `reference_sheets/environment_reference_sheet__clubdb__front_interior__v1.png`
-- `reference_sheets/environment_reference_sheet__clubdb__queue_lane__v1.png`
+- `reference_sheets/class_reference_sheet__environment__clubdb__overview__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__clubdb__back_interior__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__clubdb__front_exterior__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__clubdb__front_interior__v1.png`
+- `reference_sheets/environment_reference_sheet__environment__clubdb__queue_lane__v1.png`
 
 ## Canon / provisional warning
 

@@ -1,10 +1,10 @@
-# assets/characters/other-agents/reference_sheets index
+﻿# assets/characters/other-agents/reference_sheets index
 
 Other agents reference sheets.
 
 ## Files in this directory
 
-- `class_reference_sheet__character__other_agents__v1.png` - class overview for the other agents family.
+- `class_reference_sheet__character__other_agents__overview__v1.png` - class overview for the other agents family.
 
 ## Subdirectories
 

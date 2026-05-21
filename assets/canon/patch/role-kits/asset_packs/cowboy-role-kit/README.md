@@ -1,4 +1,4 @@
-# Patch Cowboy Role Kit
+﻿# Patch Cowboy Role Kit
 
 ## Package name
 
@@ -31,7 +31,7 @@ Approved source images supplied and accepted in-chat before deterministic compil
 
 ## Rendered sheet file
 
-- `compiled_asset_sheets/asset_sheet__character__patch_cowboy_role_kit_v1.png`
+- `compiled_asset_sheets/asset_sheet__character__patch_role_kits__cowboy_role_kit__v1.png`
 
 ## Canon / provisional warning
 

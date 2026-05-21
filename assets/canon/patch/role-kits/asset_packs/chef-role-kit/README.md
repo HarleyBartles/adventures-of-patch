@@ -1,4 +1,4 @@
-# Chef Patch Role Kit
+﻿# Chef Patch Role Kit
 
 ## Package name
 
@@ -30,7 +30,7 @@ Seven Harley-approved Chef Patch images supplied in-chat and compiled determinis
 
 ## Rendered sheet file
 
-- `compiled_asset_sheets/chef_patch_asset_sheet_v4.png`
+- `compiled_asset_sheets/asset_sheet__character__patch_role_kits__chef_role_kit__v4.png`
 
 ## Canon / provisional warning
 

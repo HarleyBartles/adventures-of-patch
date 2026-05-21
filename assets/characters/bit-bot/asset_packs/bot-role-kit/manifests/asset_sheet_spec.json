@@ -1,5 +1,5 @@
-{
-  "asset_sheet": "asset_sheet__bot_role_kit_4column_v1.png",
+﻿{
+  "asset_sheet": "asset_sheet__character__bit_bot__bot_role_kit__v1.png",
   "template": "template_asset_sheet_4column_4hero_8alt_v2",
   "compile_method": "deterministic PIL contain-fit; no image generation",
   "columns": [
@@ -7,40 +7,40 @@
       "column": 1,
       "role": "mechanic",
       "title": "Mechanic Bot",
-      "hero_source": "source_mechanic_hero.png",
+      "hero_source": "source_image__character__bit_bot__bot_role_kit_mechanic_hero__v1.png",
       "alt_sources": [
-        "source_mechanic_alt_hammer_screw.png",
-        "source_mechanic_alt_speedy_toolbox.png"
+        "source_image__character__bit_bot__bot_role_kit_mechanic_alt_hammer_screw__v1.png",
+        "source_image__character__bit_bot__bot_role_kit_mechanic_alt_speedy_toolbox__v1.png"
       ]
     },
     {
       "column": 2,
       "role": "detective",
       "title": "Detective Bot",
-      "hero_source": "source_detective_hero.png",
+      "hero_source": "source_image__character__bit_bot__bot_role_kit_detective_hero__v1.png",
       "alt_sources": [
-        "source_detective_alt_tiny_clue.png",
-        "source_detective_alt_clue_chase.png"
+        "source_image__character__bit_bot__bot_role_kit_detective_alt_tiny_clue__v1.png",
+        "source_image__character__bit_bot__bot_role_kit_detective_alt_clue_chase__v1.png"
       ]
     },
     {
       "column": 3,
       "role": "cowboy",
       "title": "Cowboy Bot",
-      "hero_source": "source_cowboy_hero.png",
+      "hero_source": "source_image__character__bit_bot__bot_role_kit_cowboy_hero__v1.png",
       "alt_sources": [
-        "source_cowboy_alt_lasso_pose.png",
-        "source_cowboy_alt_chicken_chase.png"
+        "source_image__character__bit_bot__bot_role_kit_cowboy_alt_lasso_pose__v1.png",
+        "source_image__character__bit_bot__bot_role_kit_cowboy_alt_chicken_chase__v1.png"
       ]
     },
     {
       "column": 4,
       "role": "chef",
       "title": "Chef Bot",
-      "hero_source": "source_chef_hero.png",
+      "hero_source": "source_image__character__bit_bot__bot_role_kit_chef_hero__v1.png",
       "alt_sources": [
-        "source_chef_alt_mixing_bowl.png",
-        "source_chef_alt_cupcake_delivery.png"
+        "source_image__character__bit_bot__bot_role_kit_chef_alt_mixing_bowl__v1.png",
+        "source_image__character__bit_bot__bot_role_kit_chef_alt_cupcake_delivery__v1.png"
       ]
     }
   ],

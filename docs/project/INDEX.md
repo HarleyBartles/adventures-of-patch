@@ -1,4 +1,4 @@
-# Adventures of Patch project index
+﻿# Adventures of Patch project index
 
 This index is the first-class navigation surface for repo-grounded project work inside `docs/project/`.
 
@@ -97,9 +97,9 @@ Patch is the constant protagonist unless explicitly excluded.
 Current canonical Patch references in repo:
 
 - `assets/canon/patch/asset__hero__patch_style_bible.md` - current Patch visual design guide, including style, palette, hoodie, antennae, bag, strap, eye canon, expression, pose, and prompt guidance. v1.3 hardens Patch eye canon: black oval eyes with small white shine highlights only.
-- `assets/canon/patch/reference_sheets/canon_reference_sheet__hero_patch__approved_style__v1.png` - Patch reference sheet.
-- `assets/canon/patch/reference_sheets/antipattern_sheet__hero_patch__general_drift_risks__v1.png` - Patch anti-pattern sheet.
-- `assets/canon/patch/reference_sheets/interaction_sheet__hero_patch__scene_behaviour__v1.png` - Patch interaction guide.
+- `assets/canon/patch/reference_sheets/canon_reference_sheet__hero_patch__patch__approved_style__v1.png` - Patch reference sheet.
+- `assets/canon/patch/reference_sheets/antipattern_sheet__hero_patch__patch__general_drift_risks__v1.png` - Patch anti-pattern sheet.
+- `assets/canon/patch/reference_sheets/interaction_sheet__hero_patch__patch__scene_behaviour__v1.png` - Patch interaction guide.
 
 Patch generation must preserve the style guide requirements: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, two hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 

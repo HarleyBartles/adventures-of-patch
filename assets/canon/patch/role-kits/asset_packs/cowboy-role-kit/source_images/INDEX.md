@@ -1,16 +1,16 @@
-# assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images index
+﻿# assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images index
 
 Approved source images for the Patch Cowboy role-kit package.
 
 ## Files in this directory
 
-- `source_alt_01_side_view.png`
-- `source_alt_02_back_view.png`
-- `source_alt_03_lasso_pose.png`
-- `source_alt_04_close_view.png`
-- `source_alt_05_details.png`
-- `source_alt_06_props.png`
-- `source_hero_patch_cowboy_waistcoat.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_01_side_view__v1.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_02_back_view__v1.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_03_lasso_pose__v1.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_04_close_view__v1.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_05_details__v1.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_alt_06_props__v1.png`
+- `source_image__character__patch_role_kits__cowboy_role_kit_source_hero_patch_cowboy_waistcoat__v1.png`
 
 ## Notes for agents
 
