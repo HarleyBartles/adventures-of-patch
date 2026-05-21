@@ -8,8 +8,8 @@ Stakeholders are cross-deck human counterparties who define needs, priorities, c
 
 - `README.md` - canonical human-readable package summary and companion status note.
 - `asset_class__character__stakeholders.png` - stakeholder character class overview with all eight reusable stakeholder roles.
-- `asset_sheet__stakeholders__data_architect_product_v1.png` - rendered stakeholder trio sheet for issue #47.
-- `manifest.json` - structured manifest for the stakeholder trio sheet.
+- `asset_sheet__stakeholders__data_architect_product_v1.png` - compiled stakeholder trio asset sheet for issue #47.
+- `manifest.json` - structured manifest for the compiled stakeholder trio asset sheet.
 
 ## Subdirectories
 

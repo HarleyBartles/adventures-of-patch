@@ -2,12 +2,12 @@
 
 Patch / Bit / Bot Tournament Kit approved preproduction reference for issue #47.
 
-This folder holds the rendered sheet, its manifest, and the approved source-image set for the tournament kit.
+This folder holds the compiled asset sheet, its manifest, and the approved source-image set for the tournament kit.
 
 ## Files in this directory
 
-- `asset_sheet__character__patch_bit_bot_tournament_kit_v1.png` - rendered Patch / Bit / Bot tournament kit sheet.
-- `asset_sheet__character__patch_bit_bot_tournament_kit_v1_manifest.json` - structured manifest for the tournament kit sheet.
+- `asset_sheet__character__patch_bit_bot_tournament_kit_v1.png` - compiled Patch / Bit / Bot tournament kit asset sheet.
+- `asset_sheet__character__patch_bit_bot_tournament_kit_v1_manifest.json` - structured manifest for the compiled tournament kit asset sheet.
 
 ## Subdirectories
 

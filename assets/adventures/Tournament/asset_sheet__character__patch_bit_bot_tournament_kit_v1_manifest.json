@@ -1,10 +1,24 @@
 {
+  "artifact_kind": "asset_sheet",
+  "compiled_asset_sheet": "asset_sheet__character__patch_bit_bot_tournament_kit_v1.png",
   "title": "Patch / Bit / Bot Tournament Kit",
   "type": "Patch / Bit / Bot tournament role kit",
   "status": "approved_preproduction_reference",
   "version": "v1",
   "source_qa": "9 approved PNGs / deterministic PIL compile",
   "template": "template_asset_sheet_3hero_6alt_v4",
+  "source_images_dir": "source_images",
+  "source_image_paths": [
+    "source_images/patch_hero.png",
+    "source_images/patch_startline_quizzical.png",
+    "source_images/patch_notebook_focus.png",
+    "source_images/bit_hero.png",
+    "source_images/bit_race_off.png",
+    "source_images/bit_hazard_tape.png",
+    "source_images/bot_hero.png",
+    "source_images/bot_side_stretch.png",
+    "source_images/bot_wrong_line.png"
+  ],
   "slot_order": [
     {
       "slot": "hero_1",
