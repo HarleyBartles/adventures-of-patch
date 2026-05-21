@@ -9,7 +9,7 @@ Identity Emporium Shopkeeper provisional individual character asset.
 
 ## Subdirectories
 
-None.
+- `reference_sheets/` - shopkeeper reference sheets. See `reference_sheets/INDEX.md`.
 
 ## Notes for agents
 

@@ -20,14 +20,14 @@ Use this family when the story needs the Patch Mission Control Centre setting. I
 
 Existing mission control overview and location views moved from the legacy class-prefixed root.
 
-## Rendered views
+## Reference sheets
 
-- `asset_class__environment__pmc__patch_mission_control.png`
-- `asset__environment__pmc__control_desk.png`
-- `asset__environment__pmc__launch_gate.png`
-- `asset__environment__pmc__launch_pad.png`
-- `asset__environment__pmc__operations_room.png`
-- `asset__environment__pmc__review_bay.png`
+- `reference_sheets/class_reference_sheet__environment__pmc__patch_mission_control__v1.png`
+- `reference_sheets/environment_reference_sheet__pmc__control_desk__v1.png`
+- `reference_sheets/environment_reference_sheet__pmc__launch_gate__v1.png`
+- `reference_sheets/environment_reference_sheet__pmc__launch_pad__v1.png`
+- `reference_sheets/environment_reference_sheet__pmc__operations_room__v1.png`
+- `reference_sheets/environment_reference_sheet__pmc__review_bay__v1.png`
 
 ## Canon / provisional warning
 

@@ -5,15 +5,11 @@ Club DB environment/location asset family.
 ## Files in this directory
 
 - `README.md` - canonical human-readable package summary and companion status note.
-- `asset_class__environment__clubdb.png` - class/contact-style overview for the Club DB environment family.
-- `asset__environment__clubdb__back_interior.png` - back interior environment view.
-- `asset__environment__clubdb__front_exterior.png` - front exterior environment view.
-- `asset__environment__clubdb__front_interior.png` - front interior environment view.
-- `asset__environment__clubdb__queue_lane.png` - queue lane environment view.
+None.
 
 ## Subdirectories
 
-None.
+- `reference_sheets/` - Club DB reference sheets. See `reference_sheets/INDEX.md`.
 
 ## Notes for agents
 

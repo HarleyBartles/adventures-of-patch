@@ -4,19 +4,11 @@ Bouncer supporting-character asset family.
 
 ## Files in this directory
 
-- `asset_class__character__bouncers.png` - class/contact-style overview for the bouncer family.
-- `asset__character__chaperone_bouncer.png` - chaperone bouncer variant.
-- `asset__character__door_bouncer.png` - door bouncer variant.
-- `asset__character__payload_bouncer.png` - payload bouncer variant.
-- `asset__character__peacekeeper_bouncer.png` - peacekeeper bouncer variant.
-- `asset__character__recovery_bouncer.png` - recovery bouncer variant.
-- `asset__character__route_bouncer.png` - route bouncer variant.
-- `asset__character__stamp_bouncer.png` - stamp bouncer variant.
-- `asset__character__wristband_bouncer.png` - wristband bouncer variant.
+None.
 
 ## Subdirectories
 
-None.
+- `reference_sheets/` - bouncer family reference sheets. See `reference_sheets/INDEX.md`.
 
 ## Notes for agents
 

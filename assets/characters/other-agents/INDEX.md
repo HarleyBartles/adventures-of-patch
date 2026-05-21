@@ -4,11 +4,11 @@ Other agents character asset class.
 
 ## Files in this directory
 
-- `asset_class__character__other_agents.png` - class/contact-style overview for the other agents family.
+None.
 
 ## Subdirectories
 
-None.
+- `reference_sheets/` - other agents reference sheets. See `reference_sheets/INDEX.md`.
 
 ## Notes for agents
 

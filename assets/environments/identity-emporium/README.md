@@ -24,13 +24,14 @@ Existing Identity Emporium environment proof, storefront sheets, and the provisi
 
 - `asset_class__environment__identity_emporium__bible.md`
 
-## Rendered views
+## Reference sheets
 
-- `asset_class__environment__identity_emporium.png`
-- `asset__environment__identity_emporium__world_proof.png`
-- `asset__environment__identity_emporium__storefront_exterior__three_view_sheet.png`
-- `asset__environment__identity_emporium__storefront_interior__three_view_sheet.png`
-- `asset__character__identity_emporium_shopkeeper__three_view_sheet.png`
+- `reference_sheets/class_reference_sheet__environment__identity_emporium__v1.png`
+- `reference_sheets/environment_reference_sheet__identity_emporium__world_proof__v1.png`
+- `reference_sheets/environment_reference_sheet__identity_emporium__storefront_exterior__three_view_sheet__v1.png`
+- `reference_sheets/environment_reference_sheet__identity_emporium__storefront_interior__three_view_sheet__v1.png`
+
+The shopkeeper reference sheet now lives at `assets/characters/shopkeeper/reference_sheets/character_reference_sheet__identity_emporium_shopkeeper__three_view_sheet__v1.png`.
 
 ## Canon / provisional warning
 

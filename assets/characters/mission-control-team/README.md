@@ -20,14 +20,14 @@ Reusable mission-readiness support team for stories that need Patch-facing ops, 
 
 Existing Mission Control Team family images and overview sheet moved from the legacy class-prefixed root.
 
-## Compiled asset sheet files
+## Reference sheets
 
-- `asset_class__character__pmc__patch_mission_control_team.png`
-- `asset__character__pmc__bit_and_bot.png`
-- `asset__character__pmc__mission_controller.png`
-- `asset__character__pmc__ops_commander.png`
-- `asset__character__pmc__prep_officer.png`
-- `asset__character__pmc__verification_lead.png`
+- `reference_sheets/class_reference_sheet__character__pmc__patch_mission_control_team__v1.png`
+- `reference_sheets/character_reference_sheet__pmc__bit_and_bot__v1.png`
+- `reference_sheets/character_reference_sheet__pmc__mission_controller__v1.png`
+- `reference_sheets/character_reference_sheet__pmc__ops_commander__v1.png`
+- `reference_sheets/character_reference_sheet__pmc__prep_officer__v1.png`
+- `reference_sheets/character_reference_sheet__pmc__verification_lead__v1.png`
 
 ## Canon / provisional warning
 

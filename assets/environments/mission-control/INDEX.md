@@ -5,16 +5,11 @@ Patch Mission Control Centre environment family.
 ## Files in this directory
 
 - `README.md` - canonical human-readable package summary and companion status note.
-- `asset__environment__pmc__control_desk.png` - mission control desk environment view.
-- `asset__environment__pmc__launch_gate.png` - launch gate environment view.
-- `asset__environment__pmc__launch_pad.png` - launch pad environment view.
-- `asset__environment__pmc__operations_room.png` - operations room environment view.
-- `asset__environment__pmc__review_bay.png` - mission review bay environment view.
-- `asset_class__environment__pmc__patch_mission_control.png` - class/contact-style overview for the Patch Mission Control Centre family.
+None.
 
 ## Subdirectories
 
-None.
+- `reference_sheets/` - Patch Mission Control Centre reference sheets. See `reference_sheets/INDEX.md`.
 
 ## Notes for agents
 

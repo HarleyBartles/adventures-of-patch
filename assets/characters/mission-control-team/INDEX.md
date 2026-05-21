@@ -5,16 +5,10 @@ Reusable Patch Mission Control Team supporting-character family.
 ## Files in this directory
 
 - `README.md` - canonical human-readable package summary and companion status note.
-- `asset__character__pmc__bit_and_bot.png` - shared Bit and Bot support-bot sheet.
-- `asset__character__pmc__mission_controller.png` - Mission Controller support-role sheet.
-- `asset__character__pmc__ops_commander.png` - Operations Commander support-role sheet.
-- `asset__character__pmc__prep_officer.png` - Launch Prep Officer support-role sheet.
-- `asset__character__pmc__verification_lead.png` - Verification Lead support-role sheet.
-- `asset_class__character__pmc__patch_mission_control_team.png` - class/contact-style overview for the Patch Mission Control Team family.
 
 ## Subdirectories
 
-None.
+- `reference_sheets/` - mission control team reference sheets. See `reference_sheets/INDEX.md`.
 
 ## Notes for agents
 

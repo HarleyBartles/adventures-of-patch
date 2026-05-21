@@ -23,6 +23,8 @@ No other direct asset files are expected at this level. Navigate into subdirecto
 
 Patch references in `canon/patch/reference_sheets/` are canonical for Patch image planning and generation.
 
+Many character and environment families place non-source PNGs in local `reference_sheets/` subdirectories to make the artifact class obvious at the path level.
+
 Non-Patch character and environment families are optional. Do not force them into a deck just because they exist.
 
 Repo image files remain canonical source truth. When GPT needs a durable visual inspection surface for a repo image, use `view-surfaces/google-slides-registry.json`. Do not add Google Slides links or per-image view pointers to ordinary asset-family indexes unless Harley explicitly requests a human-facing report.

@@ -20,13 +20,13 @@ Use Club DB only when a story or deck benefits from the Club DB setting. It is n
 
 Existing Club DB overview and environment views moved from the legacy class-prefixed root.
 
-## Rendered views
+## Reference sheets
 
-- `asset_class__environment__clubdb.png`
-- `asset__environment__clubdb__back_interior.png`
-- `asset__environment__clubdb__front_exterior.png`
-- `asset__environment__clubdb__front_interior.png`
-- `asset__environment__clubdb__queue_lane.png`
+- `reference_sheets/class_reference_sheet__environment__clubdb__v1.png`
+- `reference_sheets/environment_reference_sheet__clubdb__back_interior__v1.png`
+- `reference_sheets/environment_reference_sheet__clubdb__front_exterior__v1.png`
+- `reference_sheets/environment_reference_sheet__clubdb__front_interior__v1.png`
+- `reference_sheets/environment_reference_sheet__clubdb__queue_lane__v1.png`
 
 ## Canon / provisional warning
 

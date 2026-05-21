@@ -28,6 +28,10 @@ Grounded in the existing Identity Emporium world proof and the moved provisional
 
 No accepted source images or compiled character sheet are landed yet, so this remains provisional.
 
+## Reference sheets
+
+- `reference_sheets/character_reference_sheet__identity_emporium_shopkeeper__three_view_sheet__v1.png`
+
 ## Canon / provisional warning
 
 This is not Patch canon. Do not promote it to accepted character-sheet status without the missing source-image and sheet evidence.
