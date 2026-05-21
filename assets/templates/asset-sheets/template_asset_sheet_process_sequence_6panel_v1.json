@@ -1,0 +1,154 @@
+{
+  "template_id": "template_asset_sheet_process_sequence_6panel_v1",
+  "template_name": "template_asset_sheet_process_sequence_6panel_v1",
+  "version": "v1",
+  "status": "approved",
+  "png_filename": "template_asset_sheet_process_sequence_6panel_v1.png",
+  "project_source_package_filename": "template_asset_sheet_process_sequence_6panel_v1.zip",
+  "project_source_png_filename": "template_asset_sheet_process_sequence_6panel_v1.png",
+  "project_source_spec_filename": "template_asset_sheet_process_sequence_6panel_v1.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "process_sequence_six_panel",
+  "supported_layout": "six ordered panels for process, ticket refinement, staged object states, or before-to-after continuity",
+  "text_regions": [],
+  "slots": [
+    {
+      "slot_id": "step_1",
+      "box": [
+        54,
+        205,
+        514,
+        445
+      ],
+      "image_box": [
+        70,
+        221,
+        498,
+        429
+      ],
+      "default_fit": "cover",
+      "role": "sequence_step",
+      "group": "process_sequence",
+      "step": 1
+    },
+    {
+      "slot_id": "step_2",
+      "box": [
+        538,
+        205,
+        998,
+        445
+      ],
+      "image_box": [
+        554,
+        221,
+        982,
+        429
+      ],
+      "default_fit": "cover",
+      "role": "sequence_step",
+      "group": "process_sequence",
+      "step": 2
+    },
+    {
+      "slot_id": "step_3",
+      "box": [
+        1022,
+        205,
+        1482,
+        445
+      ],
+      "image_box": [
+        1038,
+        221,
+        1466,
+        429
+      ],
+      "default_fit": "cover",
+      "role": "sequence_step",
+      "group": "process_sequence",
+      "step": 3
+    },
+    {
+      "slot_id": "step_4",
+      "box": [
+        54,
+        536,
+        514,
+        830
+      ],
+      "image_box": [
+        70,
+        552,
+        498,
+        814
+      ],
+      "default_fit": "cover",
+      "role": "sequence_step",
+      "group": "process_sequence",
+      "step": 4
+    },
+    {
+      "slot_id": "step_5",
+      "box": [
+        538,
+        536,
+        998,
+        830
+      ],
+      "image_box": [
+        554,
+        552,
+        982,
+        814
+      ],
+      "default_fit": "cover",
+      "role": "sequence_step",
+      "group": "process_sequence",
+      "step": 5
+    },
+    {
+      "slot_id": "step_6",
+      "box": [
+        1022,
+        536,
+        1482,
+        830
+      ],
+      "image_box": [
+        1038,
+        552,
+        1466,
+        814
+      ],
+      "default_fit": "cover",
+      "role": "sequence_step",
+      "group": "process_sequence",
+      "step": 6
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true
+  },
+  "consistency_checks": [
+    "template_id matches the PNG filename stem",
+    "source_ingress_package matches the ingress zip basename",
+    "project_source_png_filename matches the PNG filename stem",
+    "project_source_spec_filename matches the packaged spec filename",
+    "canvas width and height match the packaged spec and PNG bytes",
+    "slot count and slot boxes match the packaged spec exactly",
+    "image_box coordinates match the packaged spec exactly",
+    "status is approved for discoverable template inventory use"
+  ],
+  "notes_for_agents": [
+    "Use when order matters. Not for independent character or environment families."
+  ],
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_process_sequence_6panel_v1.zip"
+}

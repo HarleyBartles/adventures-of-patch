@@ -1,0 +1,106 @@
+{
+  "template_id": "template_asset_sheet_1location_3view_v1",
+  "template_name": "template_asset_sheet_1location_3view_v1",
+  "version": "v1",
+  "status": "approved",
+  "png_filename": "template_asset_sheet_1location_3view_v1.png",
+  "project_source_package_filename": "template_asset_sheet_1location_3view_v1.zip",
+  "project_source_png_filename": "template_asset_sheet_1location_3view_v1.png",
+  "project_source_spec_filename": "template_asset_sheet_1location_3view_v1.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "single_location_three_view",
+  "supported_layout": "one reusable environment or location with one large hero view and two support views",
+  "text_regions": [
+    {
+      "region_id": "guidance_notes",
+      "box": [
+        54,
+        742,
+        1482,
+        930
+      ],
+      "role": "human_guidance",
+      "editable": false
+    }
+  ],
+  "slots": [
+    {
+      "slot_id": "hero_establishing",
+      "box": [
+        54,
+        205,
+        1000,
+        710
+      ],
+      "image_box": [
+        70,
+        221,
+        984,
+        694
+      ],
+      "default_fit": "cover",
+      "role": "hero_establishing",
+      "group": "location"
+    },
+    {
+      "slot_id": "support_detail",
+      "box": [
+        1024,
+        205,
+        1482,
+        446
+      ],
+      "image_box": [
+        1040,
+        221,
+        1466,
+        430
+      ],
+      "default_fit": "cover",
+      "role": "support_detail",
+      "group": "location"
+    },
+    {
+      "slot_id": "support_reverse_or_approach",
+      "box": [
+        1024,
+        469,
+        1482,
+        710
+      ],
+      "image_box": [
+        1040,
+        485,
+        1466,
+        694
+      ],
+      "default_fit": "cover",
+      "role": "support_view",
+      "group": "location"
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true
+  },
+  "consistency_checks": [
+    "template_id matches the PNG filename stem",
+    "source_ingress_package matches the ingress zip basename",
+    "project_source_png_filename matches the PNG filename stem",
+    "project_source_spec_filename matches the packaged spec filename",
+    "canvas width and height match the packaged spec and PNG bytes",
+    "slot count and slot boxes match the packaged spec exactly",
+    "image_box coordinates match the packaged spec exactly",
+    "status is approved for discoverable template inventory use"
+  ],
+  "notes_for_agents": [
+    "Use when the asset family is one place, not multiple parallel environments."
+  ],
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_1location_3view_v1.zip"
+}

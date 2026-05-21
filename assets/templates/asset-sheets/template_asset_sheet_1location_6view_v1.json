@@ -1,0 +1,184 @@
+{
+  "template_id": "template_asset_sheet_1location_6view_v1",
+  "template_name": "template_asset_sheet_1location_6view_v1",
+  "version": "v1",
+  "status": "approved",
+  "png_filename": "template_asset_sheet_1location_6view_v1.png",
+  "project_source_package_filename": "template_asset_sheet_1location_6view_v1.zip",
+  "project_source_png_filename": "template_asset_sheet_1location_6view_v1.png",
+  "project_source_spec_filename": "template_asset_sheet_1location_6view_v1.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "single_location_six_view",
+  "supported_layout": "one reusable environment or location with one hero view and six support/detail references",
+  "text_regions": [
+    {
+      "region_id": "location_notes",
+      "box": [
+        776,
+        638,
+        1480,
+        930
+      ],
+      "role": "human_guidance",
+      "editable": false
+    }
+  ],
+  "slots": [
+    {
+      "slot_id": "hero_establishing",
+      "box": [
+        54,
+        205,
+        758,
+        590
+      ],
+      "image_box": [
+        70,
+        221,
+        742,
+        574
+      ],
+      "default_fit": "cover",
+      "role": "hero_establishing",
+      "group": "location"
+    },
+    {
+      "slot_id": "support_1",
+      "box": [
+        776,
+        205,
+        1119,
+        402
+      ],
+      "image_box": [
+        792,
+        221,
+        1103,
+        386
+      ],
+      "default_fit": "cover",
+      "role": "detail",
+      "group": "location_support",
+      "row": 1
+    },
+    {
+      "slot_id": "support_2",
+      "box": [
+        1137,
+        205,
+        1480,
+        402
+      ],
+      "image_box": [
+        1153,
+        221,
+        1464,
+        386
+      ],
+      "default_fit": "cover",
+      "role": "detail",
+      "group": "location_support",
+      "row": 1
+    },
+    {
+      "slot_id": "support_3",
+      "box": [
+        776,
+        422,
+        1119,
+        619
+      ],
+      "image_box": [
+        792,
+        438,
+        1103,
+        603
+      ],
+      "default_fit": "cover",
+      "role": "support_view",
+      "group": "location_support",
+      "row": 2
+    },
+    {
+      "slot_id": "support_4",
+      "box": [
+        1137,
+        422,
+        1480,
+        619
+      ],
+      "image_box": [
+        1153,
+        438,
+        1464,
+        603
+      ],
+      "default_fit": "cover",
+      "role": "support_view",
+      "group": "location_support",
+      "row": 2
+    },
+    {
+      "slot_id": "support_5",
+      "box": [
+        54,
+        638,
+        397,
+        930
+      ],
+      "image_box": [
+        70,
+        654,
+        381,
+        914
+      ],
+      "default_fit": "cover",
+      "role": "prop_detail",
+      "group": "location_support",
+      "row": 3
+    },
+    {
+      "slot_id": "support_6",
+      "box": [
+        415,
+        638,
+        758,
+        930
+      ],
+      "image_box": [
+        431,
+        654,
+        742,
+        914
+      ],
+      "default_fit": "cover",
+      "role": "interaction_zone",
+      "group": "location_support",
+      "row": 3
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true
+  },
+  "consistency_checks": [
+    "template_id matches the PNG filename stem",
+    "source_ingress_package matches the ingress zip basename",
+    "project_source_png_filename matches the PNG filename stem",
+    "project_source_spec_filename matches the packaged spec filename",
+    "canvas width and height match the packaged spec and PNG bytes",
+    "slot count and slot boxes match the packaged spec exactly",
+    "image_box coordinates match the packaged spec exactly",
+    "status is approved for discoverable template inventory use"
+  ],
+  "notes_for_agents": [
+    "Use for richer one-place environments when three views are not enough."
+  ],
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_1location_6view_v1.zip"
+}

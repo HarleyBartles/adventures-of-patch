@@ -8,7 +8,7 @@ None.
 
 ## Subdirectories
 
-- `asset-sheets/` - discoverable template lane for asset-sheet PNGs and their JSON sidecars.
+- `asset-sheets/` - discoverable template lane for asset-sheet PNGs and their JSON sidecars. Read the child index for the approved use of each template.
 
 ## Notes for agents
 

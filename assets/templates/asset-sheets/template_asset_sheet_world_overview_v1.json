@@ -1,0 +1,202 @@
+{
+  "template_id": "template_asset_sheet_world_overview_v1",
+  "template_name": "template_asset_sheet_world_overview_v1",
+  "version": "v1",
+  "status": "approved",
+  "png_filename": "template_asset_sheet_world_overview_v1.png",
+  "project_source_package_filename": "template_asset_sheet_world_overview_v1.zip",
+  "project_source_png_filename": "template_asset_sheet_world_overview_v1.png",
+  "project_source_spec_filename": "template_asset_sheet_world_overview_v1.json",
+  "canvas": {
+    "width": 1536,
+    "height": 1008
+  },
+  "layout_type": "world_overview_eight_grammar",
+  "supported_layout": "world or adventure visual-bible overview with one hero and eight grammar/reference panels",
+  "text_regions": [],
+  "slots": [
+    {
+      "slot_id": "world_hero",
+      "box": [
+        54,
+        205,
+        1482,
+        500
+      ],
+      "image_box": [
+        70,
+        221,
+        1466,
+        484
+      ],
+      "default_fit": "cover",
+      "role": "world_hero",
+      "group": "world"
+    },
+    {
+      "slot_id": "grammar_1_palette",
+      "box": [
+        54,
+        536,
+        397,
+        735
+      ],
+      "image_box": [
+        70,
+        552,
+        381,
+        719
+      ],
+      "default_fit": "cover",
+      "role": "palette",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_2_signage",
+      "box": [
+        415,
+        536,
+        758,
+        735
+      ],
+      "image_box": [
+        431,
+        552,
+        742,
+        719
+      ],
+      "default_fit": "cover",
+      "role": "signage",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_3_materials",
+      "box": [
+        776,
+        536,
+        1119,
+        735
+      ],
+      "image_box": [
+        792,
+        552,
+        1103,
+        719
+      ],
+      "default_fit": "cover",
+      "role": "materials",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_4_architecture",
+      "box": [
+        1137,
+        536,
+        1480,
+        735
+      ],
+      "image_box": [
+        1153,
+        552,
+        1464,
+        719
+      ],
+      "default_fit": "cover",
+      "role": "architecture",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_5_crowd_scale",
+      "box": [
+        54,
+        760,
+        397,
+        930
+      ],
+      "image_box": [
+        70,
+        776,
+        381,
+        914
+      ],
+      "default_fit": "cover",
+      "role": "crowd_scale",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_6_props",
+      "box": [
+        415,
+        760,
+        758,
+        930
+      ],
+      "image_box": [
+        431,
+        776,
+        742,
+        914
+      ],
+      "default_fit": "cover",
+      "role": "props",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_7_anti_pattern",
+      "box": [
+        776,
+        760,
+        1119,
+        930
+      ],
+      "image_box": [
+        792,
+        776,
+        1103,
+        914
+      ],
+      "default_fit": "cover",
+      "role": "anti_pattern",
+      "group": "world_grammar"
+    },
+    {
+      "slot_id": "grammar_8_continuity",
+      "box": [
+        1137,
+        760,
+        1480,
+        930
+      ],
+      "image_box": [
+        1153,
+        776,
+        1464,
+        914
+      ],
+      "default_fit": "cover",
+      "role": "continuity",
+      "group": "world_grammar"
+    }
+  ],
+  "compile_rules": {
+    "read_sidecar_before_compile": true,
+    "use_matching_project_source_png": true,
+    "use_matching_project_source_spec": true,
+    "do_not_infer_slots_from_recent_session_memory": true,
+    "do_not_infer_geometry_from_filename": true
+  },
+  "consistency_checks": [
+    "template_id matches the PNG filename stem",
+    "source_ingress_package matches the ingress zip basename",
+    "project_source_png_filename matches the PNG filename stem",
+    "project_source_spec_filename matches the packaged spec filename",
+    "canvas width and height match the packaged spec and PNG bytes",
+    "slot count and slot boxes match the packaged spec exactly",
+    "image_box coordinates match the packaged spec exactly",
+    "status is approved for discoverable template inventory use"
+  ],
+  "notes_for_agents": [
+    "Use for a minimal world visual bible or adventure style overview, not for a single location asset sheet."
+  ],
+  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_world_overview_v1.zip"
+}
