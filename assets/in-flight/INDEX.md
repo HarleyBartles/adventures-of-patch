@@ -32,7 +32,7 @@ In-flight images are working references only. Do not treat this lane as canonica
 
 ## How GPT and Patch should request these
 
-Use `in_flight_image_paths` for contact-sheetable in-flight panels.
+Use `in_flight_image_paths` for full-size in-flight PNG inclusions.
 
 Use `in_flight_reference_paths` for full-size in-flight inclusions such as storyboard diagrams or detail references that GPT needs to inspect at native resolution.
 
