@@ -10,7 +10,7 @@ These files are non-canonical working references. They may be included in visual
 
 ## Files in this directory
 
-None
+event_official_at_sports_ceremony.png
 
 ## Subdirectories
 
