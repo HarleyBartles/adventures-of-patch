@@ -1,0 +1,29 @@
+{
+  "domain": "adventures",
+  "family": "tournament",
+  "package_id": "long-course-route-check-booth",
+  "package_type": "compiled_asset_pack",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "source_01_hand_scribbled_long_course_map.png",
+      "source_02_patch_at_route_check_booth.png",
+      "source_03_route_check_booth_detail.png",
+      "source_04_route_check_booth_establishing.png"
+    ],
+    "compiled_asset_sheets": [
+      "long_course_route_check_booth_asset_sheet_v1.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Deterministic four-up compile of the approved issue #47 long-course route package.",
+    "The four approved source images were copied unchanged into the repo pack.",
+    "The template bundle was used for compile only and was not landed in repo canon."
+  ]
+}

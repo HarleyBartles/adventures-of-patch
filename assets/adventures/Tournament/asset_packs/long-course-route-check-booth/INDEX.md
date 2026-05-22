@@ -1,16 +1,16 @@
-# assets/adventures/Tournament/asset_packs index
+# assets/adventures/Tournament/asset_packs/long-course-route-check-booth index
 
 Live directory listing.
 
 ## Files in this directory
 
-None.
+- `README.md`
 
 ## Subdirectories
 
-- `patch-bit-bot-tournament-kit/`
-- `long-course-route-check-booth/`
-- `tournament-trial-environments/`
+- `compiled_asset_sheets/`
+- `manifests/`
+- `source_images/`
 
 ## Notes for agents
 
