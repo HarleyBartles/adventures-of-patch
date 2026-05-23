@@ -10,7 +10,11 @@ These files are non-canonical working references. They may be included in visual
 
 ## Files in this directory
 
-event_official_at_sports_ceremony.png
+score_keeper.png
+medal_official.png
+judge_official_props.png
+head_judge.png
+awards_table.png
 
 ## Subdirectories
 
