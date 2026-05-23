@@ -1,10 +1,10 @@
-# assets/source-zips/packs index
+# assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests index
 
 Live directory listing.
 
 ## Files in this directory
 
-- `judges_officials_acceptance_authority_asset_sheet_v1_pack.zip`
+- `manifest.json`
 
 ## Subdirectories
 

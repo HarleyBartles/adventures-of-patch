@@ -8,6 +8,7 @@ None.
 
 ## Subdirectories
 
+- `judges-officials-acceptance-authority/`
 - `patch-bit-bot-tournament-kit/`
 - `long-course-route-check-booth/`
 - `tournament-trial-environments/`
