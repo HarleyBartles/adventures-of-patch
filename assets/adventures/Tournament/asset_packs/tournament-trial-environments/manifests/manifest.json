@@ -1,280 +1,37 @@
 {
-  "asset_sheet": "tournament_trial_environments_asset_sheet_v1.png",
-  "title": "Tournament Trial Environments",
-  "issue": 47,
-  "template": "template_asset_sheet_4column_12equal_v1",
-  "status": "accepted working set",
-  "version": "v1",
-  "compile_method": "deterministic PIL placement using template slot image_box coordinates",
-  "column_order": {
-    "1": "Trial 1 - Seven-Day Sprint / Reasonable Defaults Track",
-    "2": "Trial 2 - Industry Standard High Jump",
-    "3": "Trial 3 - Hedge Maze / Prize Map",
-    "4": "Trial 4 - Long Course / False Lines / Ceremony"
+  "domain": "adventures",
+  "family": "tournament",
+  "package_id": "tournament-trial-environments",
+  "package_type": "compiled_asset_pack",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
   },
-  "rows": {
-    "1": "hero",
-    "2": "alternate/detail",
-    "3": "alternate/map/secondary plate"
+  "files": {
+    "source_images": [
+      "c1_r1_hero__v1.png",
+      "c1_r2_alt_course_view__v1.png",
+      "c1_r3_alt_direction_signs__v1.png",
+      "c2_r1_hero__v1.png",
+      "c2_r2_alt_lower_bar_detail__v1.png",
+      "c2_r3_alt_ladder_and_sign__v1.png",
+      "c3_r1_hero__v1.png",
+      "c3_r2_alt_overhead_maze__v1.png",
+      "c3_r3_alt_annotated_map__v1.png",
+      "c4_r1_hero__v1.png",
+      "c4_r2_alt_false_line_risks__v1.png",
+      "c4_r3_alt_podium_judging__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v1.png"
+    ],
+    "reference_sheets": []
   },
-  "items": [
-    {
-      "column": 1,
-      "row": 1,
-      "slot_id": "column_1_image_1",
-      "trial": "Trial 1 - Seven-Day Sprint",
-      "role": "hero",
-      "source_file": "ChatGPT Image May 20, 2026, 06_48_30 AM.png",
-      "source_size": [
-        1536,
-        1024
-      ],
-      "fit": "cover",
-      "image_box": [
-        70,
-        221,
-        381,
-        422
-      ],
-      "packed_source_copy": "source_images/c1_r1_hero__ChatGPT Image May 20, 2026, 06_48_30 AM.png"
-    },
-    {
-      "column": 1,
-      "row": 2,
-      "slot_id": "column_1_image_2",
-      "trial": "Trial 1 - Seven-Day Sprint",
-      "role": "alt_course_view",
-      "source_file": "ChatGPT Image May 20, 2026, 07_14_52 AM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        70,
-        473,
-        381,
-        674
-      ],
-      "packed_source_copy": "source_images/c1_r2_alt_course_view__ChatGPT Image May 20, 2026, 07_14_52 AM.png"
-    },
-    {
-      "column": 1,
-      "row": 3,
-      "slot_id": "column_1_image_3",
-      "trial": "Trial 1 - Seven-Day Sprint",
-      "role": "alt_direction_signs",
-      "source_file": "ChatGPT Image May 20, 2026, 06_59_23 AM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        70,
-        725,
-        381,
-        926
-      ],
-      "packed_source_copy": "source_images/c1_r3_alt_direction_signs__ChatGPT Image May 20, 2026, 06_59_23 AM.png"
-    },
-    {
-      "column": 2,
-      "row": 1,
-      "slot_id": "column_2_image_1",
-      "trial": "Trial 2 - Industry Standard High Jump",
-      "role": "hero",
-      "source_file": "ChatGPT Image May 20, 2026, 08_58_02 AM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        431,
-        221,
-        742,
-        422
-      ],
-      "packed_source_copy": "source_images/c2_r1_hero__ChatGPT Image May 20, 2026, 08_58_02 AM.png"
-    },
-    {
-      "column": 2,
-      "row": 2,
-      "slot_id": "column_2_image_2",
-      "trial": "Trial 2 - Industry Standard High Jump",
-      "role": "alt_lower_bar_detail",
-      "source_file": "ChatGPT Image May 20, 2026, 07_43_58 AM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        431,
-        473,
-        742,
-        674
-      ],
-      "packed_source_copy": "source_images/c2_r2_alt_lower_bar_detail__ChatGPT Image May 20, 2026, 07_43_58 AM.png"
-    },
-    {
-      "column": 2,
-      "row": 3,
-      "slot_id": "column_2_image_3",
-      "trial": "Trial 2 - Industry Standard High Jump",
-      "role": "alt_ladder_and_sign",
-      "source_file": "ChatGPT Image May 20, 2026, 08_58_10 AM.png",
-      "source_size": [
-        1447,
-        1087
-      ],
-      "fit": "cover",
-      "image_box": [
-        431,
-        725,
-        742,
-        926
-      ],
-      "packed_source_copy": "source_images/c2_r3_alt_ladder_and_sign__ChatGPT Image May 20, 2026, 08_58_10 AM.png"
-    },
-    {
-      "column": 3,
-      "row": 1,
-      "slot_id": "column_3_image_1",
-      "trial": "Trial 3 - Hedge Maze / Prize Map",
-      "role": "hero",
-      "source_file": "ChatGPT Image May 20, 2026, 09_35_23 AM.png",
-      "source_size": [
-        1447,
-        1087
-      ],
-      "fit": "cover",
-      "image_box": [
-        792,
-        221,
-        1103,
-        422
-      ],
-      "packed_source_copy": "source_images/c3_r1_hero__ChatGPT Image May 20, 2026, 09_35_23 AM.png"
-    },
-    {
-      "column": 3,
-      "row": 2,
-      "slot_id": "column_3_image_2",
-      "trial": "Trial 3 - Hedge Maze / Prize Map",
-      "role": "alt_overhead_maze",
-      "source_file": "ChatGPT Image May 20, 2026, 06_49_03 PM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        792,
-        473,
-        1103,
-        674
-      ],
-      "packed_source_copy": "source_images/c3_r2_alt_overhead_maze__ChatGPT Image May 20, 2026, 06_49_03 PM.png"
-    },
-    {
-      "column": 3,
-      "row": 3,
-      "slot_id": "column_3_image_3",
-      "trial": "Trial 3 - Hedge Maze / Prize Map",
-      "role": "alt_annotated_map",
-      "source_file": "ChatGPT Image May 20, 2026, 09_22_21 PM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "contain",
-      "image_box": [
-        792,
-        725,
-        1103,
-        926
-      ],
-      "packed_source_copy": "source_images/c3_r3_alt_annotated_map__ChatGPT Image May 20, 2026, 09_22_21 PM.png"
-    },
-    {
-      "column": 4,
-      "row": 1,
-      "slot_id": "column_4_image_1",
-      "trial": "Trial 4 - Long Course / Ceremony",
-      "role": "hero",
-      "source_file": "ChatGPT Image May 21, 2026, 06_04_42 AM.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        1153,
-        221,
-        1464,
-        422
-      ],
-      "packed_source_copy": "source_images/c4_r1_hero__ChatGPT Image May 21, 2026, 06_04_42 AM.png"
-    },
-    {
-      "column": 4,
-      "row": 2,
-      "slot_id": "column_4_image_2",
-      "trial": "Trial 4 - Long Course / Ceremony",
-      "role": "alt_false_line_risks",
-      "source_file": "colorful_countryside_path_with_barriers.png",
-      "source_size": [
-        1672,
-        941
-      ],
-      "fit": "cover",
-      "image_box": [
-        1153,
-        473,
-        1464,
-        674
-      ],
-      "packed_source_copy": "source_images/c4_r2_alt_false_line_risks__colorful_countryside_path_with_barriers.png"
-    },
-    {
-      "column": 4,
-      "row": 3,
-      "slot_id": "column_4_image_3",
-      "trial": "Trial 4 - Long Course / Ceremony",
-      "role": "alt_podium_judging",
-      "source_file": "cheerful_outdoor_festival_celebration_stage.png",
-      "source_size": [
-        1448,
-        1086
-      ],
-      "fit": "cover",
-      "image_box": [
-        1153,
-        725,
-        1464,
-        926
-      ],
-      "packed_source_copy": "source_images/c4_r3_alt_podium_judging__cheerful_outdoor_festival_celebration_stage.png"
-    }
-  ],
-  "excluded_from_sheet": [
-    {
-      "file": "trial4_image2_storyboard_diagram_v2_corrected_bit_line.png",
-      "reason": "storyboard geometry preflight artifact, not final environment art"
-    },
-    {
-      "file": "trial4_image2_prompt_board_v1.png",
-      "reason": "prompt-board preflight artifact, not final environment art"
-    },
-    {
-      "file": "trial4_image3_podium_judging_storyboard_v1.png",
-      "reason": "storyboard geometry preflight artifact, not final environment art"
-    },
-    {
-      "file": "trial4_image3_podium_judging_prompt_board_v1.png",
-      "reason": "prompt-board preflight artifact, not final environment art"
-    }
+  "provenance_notes": [
+    "Deterministic four-up compile of the issue #47 tournament trial environment set.",
+    "Source PNGs were normalized to local-name taxonomy while preserving the packed visual content.",
+    "Prompt-board and storyboard artifacts remain excluded from the compiled sheet and are tracked separately in repo history."
   ]
 }

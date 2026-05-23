@@ -9,32 +9,32 @@
     {
       "slot": "hero_1",
       "label": "Head Judge hero",
-      "filename": "head_judge.png"
+      "filename": "head_judge__v1.png"
     },
     {
       "slot": "hero_2",
       "label": "Medal Official hero",
-      "filename": "medal_official.png"
+      "filename": "medal_official__v1.png"
     },
     {
       "slot": "hero_3",
       "label": "Route Official hero",
-      "filename": "route_official.png"
+      "filename": "route_official__v1.png"
     },
     {
       "slot": "merged_1",
       "label": "Judges table / acceptance station",
-      "filename": "awards_table.jpeg"
+      "filename": "awards_table__v1.jpeg"
     },
     {
       "slot": "merged_2",
       "label": "Officials prop pack",
-      "filename": "judge_official_props.png"
+      "filename": "judge_official_props__v1.png"
     },
     {
       "slot": "merged_3",
       "label": "Medal decision moment",
-      "filename": "medal_decision_moment.png"
+      "filename": "medal_decision_moment__v1.png"
     }
   ],
   "notes": [

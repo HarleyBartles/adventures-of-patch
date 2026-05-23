@@ -11,13 +11,13 @@
   },
   "files": {
     "source_images": [
-      "source_01_hand_scribbled_long_course_map.png",
-      "source_02_patch_at_route_check_booth.png",
-      "source_03_route_check_booth_detail.png",
-      "source_04_route_check_booth_establishing.png"
+      "source_01_hand_scribbled_long_course_map__v1.png",
+      "source_02_patch_at_route_check_booth__v1.png",
+      "source_03_route_check_booth_detail__v1.png",
+      "source_04_route_check_booth_establishing__v1.png"
     ],
     "compiled_asset_sheets": [
-      "long_course_route_check_booth_asset_sheet_v1.png"
+      "sheet__v1.png"
     ],
     "reference_sheets": []
   },

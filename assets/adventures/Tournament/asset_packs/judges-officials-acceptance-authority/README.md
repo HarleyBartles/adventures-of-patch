@@ -16,8 +16,11 @@ Package id: `judges-officials-acceptance-authority`
 ## Manifest
 
 - `manifests/manifest.json`
-  - `source_images`: `head_judge.png`, `medal_official.png`, `route_official.png`, `awards_table.jpeg`, `judge_official_props.png`, `medal_decision_moment.png`
-  - `compiled_asset_sheets`: `asset_sheet__judges_officials_acceptance_authority_v1.png`
+  - `source_images`: `head_judge__v1.png`, `judge_official_props__v1.png`, `medal_decision_moment__v1.png`, `medal_official__v1.png`, `route_official__v1.png`
+  - `compiled_asset_sheets`: `sheet__v1.png`
+- `manifests/asset_sheet_manifest.json`
+  - legacy source-sheet provenance manifest preserved alongside the pack manifest.
+  - auxiliary reference: `source_images/awards_table__v1.jpeg`
 
 ## Notes
 

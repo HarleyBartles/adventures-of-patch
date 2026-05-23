@@ -10,4 +10,6 @@ Column order:
 
 Rows are hero, alternate/detail, and alternate/map/secondary plate. See the JSON manifest for exact source filename mapping.
 
+Supplemental doctrine now lives at `manifests/environment_assets_style_bible_issue_56.md`.
+
 No image generation was used in this compile step.

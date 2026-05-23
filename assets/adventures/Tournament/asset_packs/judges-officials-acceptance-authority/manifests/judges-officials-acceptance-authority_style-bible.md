@@ -3,7 +3,7 @@
 Project: *Adventures of Patch*  
 Adventure issue: #56  
 Asset family: Judges, route officials, medal officials, awards table, and judging props  
-Reference assets: `route_official.png`, `awards_table.jpeg`, `head_judge.png`, `judge_official_props.png`, `medal_decision_moment.png`, `medal_official.png`  
+Reference assets: `route_official__v1.png`, `awards_table__v1.jpeg`, `head_judge__v1.png`, `judge_official_props__v1.png`, `medal_decision_moment__v1.png`, `medal_official__v1.png`  
 Status: visual style bible derived from the attached approved/working assets in this chat, not from a fresh live repo verification pass.
 
 ## 1. Purpose of the Pack
@@ -285,14 +285,14 @@ Before accepting a new judges/officials asset, check:
 
 ## 17. Reference Asset Notes
 
-`route_official.png` establishes the route-official role: flag, clipboard, whistle, rope barrier, route signage, blue banner, and clear outdoor path setting.
+`route_official__v1.png` establishes the route-official role: flag, clipboard, whistle, rope barrier, route signage, blue banner, and clear outdoor path setting.
 
-`awards_table.jpeg` establishes the table-prop system: blue cloth, gold emblem, organized object zones, checklists, cards, stamp, whistle, medals, envelope, flags, and tournament background.
+`awards_table__v1.jpeg` establishes the table-prop system: blue cloth, gold emblem, organized object zones, checklists, cards, stamp, whistle, medals, envelope, flags, and tournament background.
 
-`head_judge.png` establishes the senior-judge archetype: older judge, blue-and-gold sash, clipboard, medal/podium context, and calm authority.
+`head_judge__v1.png` establishes the senior-judge archetype: older judge, blue-and-gold sash, clipboard, medal/podium context, and calm authority.
 
-`judge_official_props.png` establishes isolated reusable prop vocabulary: forms, cards, stamp, pencils, whistle, flags, lanyard, envelope, and medal tray.
+`judge_official_props__v1.png` establishes isolated reusable prop vocabulary: forms, cards, stamp, pencils, whistle, flags, lanyard, envelope, and medal tray.
 
-`medal_decision_moment.png` establishes medal handling and validation moment language: medal tray, official holding medal, checklist, validation sign, and awards table continuity.
+`medal_decision_moment__v1.png` establishes medal handling and validation moment language: medal tray, official holding medal, checklist, validation sign, and awards table continuity.
 
-`medal_official.png` establishes medal-official continuity: lanyard badge, sealed envelope, medal tray, award release card, chest, tent, banner, and clean standing pose.
+`medal_official__v1.png` establishes medal-official continuity: lanyard badge, sealed envelope, medal tray, award release card, chest, tent, banner, and clean standing pose.

@@ -9,4 +9,6 @@ The landed pack preserves:
 - the package manifest for repo taxonomy;
 - the repo-preserved source zip in `assets/source-zips/environments/`.
 
+Supplemental doctrine now lives at `manifests/stakeholder_dugout_style_bible_issue_56.md`.
+
 No image generation was used in the compile step.

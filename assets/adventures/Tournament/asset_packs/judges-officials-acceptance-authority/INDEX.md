@@ -5,7 +5,6 @@ Live directory listing.
 ## Files in this directory
 
 - `README.md`
-- `asset_sheet_manifest.json`
 
 ## Subdirectories
 
@@ -16,3 +15,4 @@ Live directory listing.
 ## Notes for agents
 
 This directory uses path, lane, and manifest metadata for taxonomy.
+The legacy source-sheet manifest now lives at `manifests/asset_sheet_manifest.json`.

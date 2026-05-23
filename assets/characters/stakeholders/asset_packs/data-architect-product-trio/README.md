@@ -18,6 +18,8 @@ Package id: `data-architect-product-trio`
   - `source_images`: data_analyst_alt__v1.png, data_analyst_hero__v1.png, data_analyst_props__v1.png, product_manager_alt__v1.png, product_manager_hero__v1.png, product_manager_props__v1.png, software_architect_alt__v1.png, software_architect_hero__v1.png, software_architect_props__v1.png
   - `compiled_asset_sheets`: sheet__v1.png
 
+Supplemental doctrine now lives at `manifests/stakeholder_character_pack_style_bible_issue_56.md`.
+
 ## Notes
 
 Path and lane carry taxonomy; filenames stay local to their lane.

@@ -1,45 +1,30 @@
 {
-  "asset_sheet_id": "asset_sheet__judges_officials_acceptance_authority_v1",
-  "title": "Judges & Officials / Acceptance Authority",
-  "status": "accepted_source_set_compiled",
-  "version": "v1",
-  "template_id": "template_asset_sheet_3hero_6alt_v4",
-  "compile_mode": "deterministic_no_credit_pillow; three hero slots plus three merged support panels",
-  "sources": [
-    {
-      "slot": "hero_1",
-      "label": "Head Judge hero",
-      "filename": "head_judge.png"
-    },
-    {
-      "slot": "hero_2",
-      "label": "Medal Official hero",
-      "filename": "medal_official.png"
-    },
-    {
-      "slot": "hero_3",
-      "label": "Route Official hero",
-      "filename": "route_official.png"
-    },
-    {
-      "slot": "merged_1",
-      "label": "Judges table / acceptance station",
-      "filename": "awards_table.jpeg"
-    },
-    {
-      "slot": "merged_2",
-      "label": "Officials prop pack",
-      "filename": "judge_official_props.png"
-    },
-    {
-      "slot": "merged_3",
-      "label": "Medal decision moment",
-      "filename": "medal_decision_moment.png"
-    }
-  ],
-  "notes": [
-    "Scorekeeper portrait intentionally excluded to keep official count to three.",
-    "Three officials: Head Judge, Medal Official, Route Official.",
-    "Three support/action panels: acceptance station, prop pack, medal decision moment."
+  "domain": "adventures",
+  "family": "tournament",
+  "package_id": "judges-officials-acceptance-authority",
+  "package_type": "compiled_asset_pack",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "present",
+    "compiled_asset_sheets": "present",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "head_judge__v1.png",
+      "judge_official_props__v1.png",
+      "medal_decision_moment__v1.png",
+      "medal_official__v1.png",
+      "route_official__v1.png"
+    ],
+    "compiled_asset_sheets": [
+      "sheet__v1.png"
+    ],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "Legacy judges/officials pack normalized into the taxonomy schema.",
+    "The awards table remains as an auxiliary JPEG reference at source_images/awards_table__v1.jpeg and is not counted in the validator PNG inventory.",
+    "The legacy source-sheet manifest is preserved at manifests/asset_sheet_manifest.json."
   ]
 }
