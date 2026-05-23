@@ -10,11 +10,16 @@ These files are non-canonical working references. They may be included in visual
 
 ## Files in this directory
 
-issue_48_override_heist_visual_bibles.md
+None.
 
 ## Subdirectories
 
-None.
+- `issue_48_override_heist_style_framework_v0_2/`
+
+## Entry points
+
+- [issue_48_override_heist_style_framework_v0_2/INDEX.md](issue_48_override_heist_style_framework_v0_2/INDEX.md)
+- [issue_48_override_heist_style_framework_v0_2/README.md](issue_48_override_heist_style_framework_v0_2/README.md)
 
 ## Non-canon warning
 

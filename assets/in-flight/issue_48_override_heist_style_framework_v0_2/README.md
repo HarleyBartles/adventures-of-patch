@@ -18,22 +18,23 @@ The goal is to preserve everything currently known, make it easier to compose co
 
 ## File map
 
-- `00_framework_index.md` — packet posture, evidence basis, composition rules, and update triggers.
-- `style-bibles/01_override_heist_world.md` — global world and tone bible.
-- `style-bibles/02_patch_comic_adaptation.md` — repo-grounded Patch adaptation layer.
-- `style-bibles/03_crew_character_class.md` — shared ontology for the six recruits.
-- `style-bibles/04_composable_panel_framing.md` — shared panel rules and no-floating-arrow doctrine.
-- `style-bibles/05_vault_keycard_prop_system.md` — vault and programmable keycard prop system.
-- `style-bibles/06_safehouse_specialist_zone_environment.md` — shared safehouse and specialist zones.
-- `style-bibles/07_planning_table_layer_diagram.md` — planning-table and keycard-layer process bible.
-- `style-bibles/08_panel_grammar_montage.md` — deck-level panel grammar and montage bible.
-- `character-bibles/index.md` — Index recruitment/character-language bible.
-- `character-bibles/silk.md` — Silk recruitment/character-language bible.
-- `character-bibles/rollback.md` — Rollback recruitment/character-language bible.
-- `character-bibles/writ.md` — Writ recruitment/character-language bible.
-- `character-bibles/klause.md` — Klause recruitment/character-language bible.
-- `character-bibles/receipt.md` — Receipt recruitment/character-language bible.
-- `source/issue_48_override_heist_visual_bibles_combined_v0_1.md` — original combined source preserved unchanged.
+- [INDEX.md](INDEX.md) — packet directory entry point and discoverability alias.
+- [00_framework_index.md](00_framework_index.md) — packet posture, evidence basis, composition rules, and update triggers.
+- [style-bibles/01_override_heist_world.md](style-bibles/01_override_heist_world.md) — global world and tone bible.
+- [style-bibles/02_patch_comic_adaptation.md](style-bibles/02_patch_comic_adaptation.md) — repo-grounded Patch adaptation layer.
+- [style-bibles/03_crew_character_class.md](style-bibles/03_crew_character_class.md) — shared ontology for the six recruits.
+- [style-bibles/04_composable_panel_framing.md](style-bibles/04_composable_panel_framing.md) — shared panel rules and no-floating-arrow doctrine.
+- [style-bibles/05_vault_keycard_prop_system.md](style-bibles/05_vault_keycard_prop_system.md) — vault and programmable keycard prop system.
+- [style-bibles/06_safehouse_specialist_zone_environment.md](style-bibles/06_safehouse_specialist_zone_environment.md) — shared safehouse and specialist zones.
+- [style-bibles/07_planning_table_layer_diagram.md](style-bibles/07_planning_table_layer_diagram.md) — planning-table and keycard-layer process bible.
+- [style-bibles/08_panel_grammar_montage.md](style-bibles/08_panel_grammar_montage.md) — deck-level panel grammar and montage bible.
+- [character-bibles/index.md](character-bibles/index.md) — Index recruitment/character-language bible.
+- [character-bibles/silk.md](character-bibles/silk.md) — Silk recruitment/character-language bible.
+- [character-bibles/rollback.md](character-bibles/rollback.md) — Rollback recruitment/character-language bible.
+- [character-bibles/writ.md](character-bibles/writ.md) — Writ recruitment/character-language bible.
+- [character-bibles/klause.md](character-bibles/klause.md) — Klause recruitment/character-language bible.
+- [character-bibles/receipt.md](character-bibles/receipt.md) — Receipt recruitment/character-language bible.
+- [source/issue_48_override_heist_visual_bibles_combined_v0_1.md](source/issue_48_override_heist_visual_bibles_combined_v0_1.md) — original combined source preserved unchanged.
 
 ## Locking posture
 
