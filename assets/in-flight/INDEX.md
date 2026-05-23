@@ -10,7 +10,7 @@ These files are non-canonical working references. They may be included in visual
 
 ## Files in this directory
 
-None
+issue_48_override_heist_visual_bibles.md
 
 ## Subdirectories
 
