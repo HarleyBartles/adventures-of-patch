@@ -12,6 +12,7 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 - visual-bible-interpretation.md - canonical workflow for discovering repo-indexed visual bibles and converting them into prompt, QA, and repair constraints.
 - image-generation-resource-discipline.md - canonical resource-discipline doctrine for conserving scarce image-generation credits, separating deterministic/no-credit visual workflows from credit-spending visual mutation, and preventing image-tool churn.
 - gpt-pig-image-production-actor-contract.md - canonical GPT/PIG actor split doctrine covering planning authority, production authority, self-QA boundaries, shared-skill posture, and PIG-preferred/GPT-permitted image-production cadence.
+- gpt-to-pig-image-production-handoff.md - canonical GPT-side routing and bounded handoff contract for Adventures image-production work normally materialised by Patch Image Gen (PIG).
 - image-inspection-source-contract.md - canonical contract for GPT visual inspection through repo-indexed contact-sheet dispatch/intake packages.
 - image-qa-contract.md - canonical multi-lane image QA contract; generated images are candidates until accepted by adventures-image-qa.
 - asset-sheet-production-contract.md - canonical final-layout and zip-package contract for source-image-first, template-compiled asset sheets.
@@ -27,7 +28,7 @@ None.
 
 - Skills own local runtime behaviour.
 - Playbooks own project orchestration across skills, production gates, stop conditions, and failure reporting.
-- Image generation is scarce production capacity for GPT-side workflow governance. Use `image-generation-resource-discipline.md` together with `gpt-pig-image-production-actor-contract.md` before visual-production decisions that could confuse deterministic/no-credit workflows with credit-spending image mutation.
+- Image generation is scarce production capacity for GPT-side workflow governance. Use `image-generation-resource-discipline.md`, `gpt-pig-image-production-actor-contract.md`, and `gpt-to-pig-image-production-handoff.md` together before visual-production decisions that could confuse deterministic/no-credit workflows with credit-spending image mutation.
 - External app connector stages must use bound-connector-action-gate.md before selecting actions or reporting tool absence.
 - Pre-playbook readiness is separate from PPTX production. Production should stop if frame-ready or asset-ready state is missing.
 - Visual preproduction is separate from PPTX production and must not generate body-slide scene art directly through GPT-side workflow momentum.
