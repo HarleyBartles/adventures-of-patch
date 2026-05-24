@@ -11,6 +11,7 @@ Use this directory for project workflows that coordinate issues, assets, decks, 
 - visual-bible-creation.md - canonical workflow for creating, updating, normalising, and locking standardized visual bibles with composable prompt, QA, repair, and extrapolation blocks.
 - visual-bible-interpretation.md - canonical workflow for discovering repo-indexed visual bibles and converting them into prompt, QA, and repair constraints.
 - image-generation-resource-discipline.md - canonical resource-discipline doctrine for conserving scarce image-generation credits, separating deterministic/no-credit visual workflows from credit-spending visual mutation, and preventing image-tool churn.
+- gpt-pig-image-production-actor-contract.md - canonical GPT/PIG actor split doctrine covering planning authority, production authority, self-QA boundaries, shared-skill posture, and PIG-preferred/GPT-permitted image-production cadence.
 - image-inspection-source-contract.md - canonical contract for GPT visual inspection through repo-indexed contact-sheet dispatch/intake packages.
 - image-qa-contract.md - canonical multi-lane image QA contract; generated images are candidates until accepted by adventures-image-qa.
 - asset-sheet-production-contract.md - canonical final-layout and zip-package contract for source-image-first, template-compiled asset sheets.
@@ -26,10 +27,10 @@ None.
 
 - Skills own local runtime behaviour.
 - Playbooks own project orchestration across skills, production gates, stop conditions, and failure reporting.
-- Image generation is scarce production capacity. Use `image-generation-resource-discipline.md` before visual-production decisions that could confuse deterministic no-credit workflows with credit-spending image mutation.
+- Image generation is scarce production capacity for GPT-side workflow governance. Use `image-generation-resource-discipline.md` together with `gpt-pig-image-production-actor-contract.md` before visual-production decisions that could confuse deterministic/no-credit workflows with credit-spending image mutation.
 - External app connector stages must use bound-connector-action-gate.md before selecting actions or reporting tool absence.
 - Pre-playbook readiness is separate from PPTX production. Production should stop if frame-ready or asset-ready state is missing.
-- Visual preproduction is separate from PPTX production and must not generate body-slide scene art.
+- Visual preproduction is separate from PPTX production and must not generate body-slide scene art directly through GPT-side workflow momentum.
 - Visual bible creation authors or updates standardized bibles before generation, after accepted overview references, and when locking accepted asset families.
 - Visual bible interpretation converts repo-indexed canon into prompt, QA, and repair constraints without hard-coding brittle paths or source-package visual truth assumptions.
 - Image inspection should default to repo-indexed contact-sheet intake documented in `image-inspection-source-contract.md`.
