@@ -1,6 +1,6 @@
 # Silk Character / Recruitment-Language Bible
 
-Version: v0.7 accepted hero/style/anti-pattern lock  
+Version: v0.8 accepted hero/style/anti-pattern lock with rendering recipe  
 State: `accepted_v1_character_visual_lock`  
 Operation class: deterministic no-credit recruitment / character-language bible
 
@@ -169,6 +169,28 @@ When Silk appears in a scene, preserve the accepted hero-shot design and approve
 - slightly glossy comic-book heist finish when the Override Heist style is active.
 
 Do not re-explore her costume, species, body type, colour motif, or tool system during ordinary scene generation.
+
+## Silk rendering recipe
+
+Use this compact recipe when the task needs Silk in a scene and does not need a redesign, alternate outfit, damage state, or special scene-specific variant.
+
+Positive prompt kernel:
+
+```text
+Render Silk exactly as the accepted v1 compact grey-hooded Threadline Inspector: small Patch-scale autonomous-agent tomboy girl, compact stocky low-centre-of-gravity proportions, solid grey soft-shell hoodie, darker fitted leg coverings, sturdy grey/dark shoes, pale narrow-eyed faceplate, exactly one antenna, compact red-thread spool pack, light harness, LINE 07 tag when visible, small hook/probe/clamp/chalk/line-tag/field-reader tools, red only for thread/tools/anchors/clips/tiny accents, quiet technical pressure-tester posture, slightly glossy comic-book heist finish when Override Heist style is active.
+```
+
+Negative prompt kernel:
+
+```text
+Do not make Silk tall, leggy, human-scale, adult-human, tactical-mannequin, superhero-like, spider-like, Patch-recoloured, girly-coded, ninja/assassin-like, villainous, over-gadgeted, red-costumed, two-antennaed, antenna-less, weapon-focused, web-shooter-equipped, cream-panelled, or third-party-recognisable.
+```
+
+Operational rule:
+
+```text
+Use the accepted hero shot and approved style sheet as positive reference. Use the anti-pattern sheet only to reject failure modes. Boring continuity beats novelty.
+```
 
 ## Positive constraint block
 
