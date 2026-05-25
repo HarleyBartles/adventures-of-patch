@@ -18,8 +18,8 @@ None.
 
 ## Entry points
 
-- [issue_48_override_heist_style_framework_v0_2/INDEX.md](issue_48_override_heist_style_framework_v0_2/INDEX.md)
-- [issue_48_override_heist_style_framework_v0_2/README.md](issue_48_override_heist_style_framework_v0_2/README.md)
+- [issue_48_override_heist_style_framework_v0_3/INDEX.md](issue_48_override_heist_style_framework_v0_3/INDEX.md)
+- [issue_48_override_heist_style_framework_v0_3/README.md](issue_48_override_heist_style_framework_v0_3/README.md)
 
 ## Non-canon warning
 
