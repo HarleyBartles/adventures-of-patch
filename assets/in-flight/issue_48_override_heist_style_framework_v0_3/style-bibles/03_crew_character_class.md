@@ -53,6 +53,11 @@ Patch is the protagonist and anchor. Crew members should share the Adventures fi
 - `>` symbol;
 - Patch’s full silhouette.
 
+
+## Character bible / frame bible boundary
+
+Crew character identity and recruitment posture belong in `character-bibles/`. Character-specific panel, frame, gutter, and superframe grammar belongs in `frame-bibles/`. For character design sheets, use this crew class bible plus the relevant character bible. For recruitment slides or frame-heavy references, add the global frame bible and the relevant character frame bible.
+
 ## Recruitment repetition rule
 
 The six recruitment slides intentionally repeat the same beat: Patch asks, the recruit's domain reveals the missing lawful layer, the recruit's system validates the answer, and the recruit joins. The repetition is the lesson: a lawful agent override requires repeated thought experiments from different angles.

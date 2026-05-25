@@ -14,7 +14,7 @@ None.
 
 ## Subdirectories
 
-- `issue_48_override_heist_style_framework_v0_2/`
+- `issue_48_override_heist_style_framework_v0_3/`
 
 ## Entry points
 

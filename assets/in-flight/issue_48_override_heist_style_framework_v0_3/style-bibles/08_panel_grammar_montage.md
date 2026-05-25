@@ -10,6 +10,11 @@ Operation class: deterministic no-credit visual framework work
 These notes are provisional visual-preproduction doctrine. They constrain future planning and generation, but do not authorize image generation, image editing, deck building, asset-sheet compilation, or repo mutation. Update after accepted visual evidence and QA learnings.
 
 
+
+## Boundary with frame bibles
+
+This file owns deck-level montage, sequence, cut-ins, and comic rhythm. It does not own the detailed frame grammar for Index, Silk, Rollback, Writ, Klause, or Receipt. Use `../frame-bibles/` for those character-specific grammars.
+
 ## Asset overview
 
 Panel grammar controls how the heist world stages story beats. It is not a character or prop bible. Its job is to govern montage, sequence, cut-ins, and comic-book rhythm while preserving slide readability.

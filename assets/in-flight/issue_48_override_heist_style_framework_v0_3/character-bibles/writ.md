@@ -1,11 +1,9 @@
 # Writ Character / Recruitment-Language Bible
 
-
 State: `minimal_provisional_character_language`  
-Operation class: deterministic no-credit recruitment / character-language bible  
+Operation class: deterministic no-credit recruitment / character-language bible
 
 This character bible locks approved recruitment-language doctrine for planning and pre-vis. It does not lock final character appearance, full turnaround design, final palette, or accepted asset-sheet canon.
-
 
 ## Function
 
@@ -20,10 +18,6 @@ He understands obscure precedent and old office rituals better than modern devic
 ## Domain
 
 Writ works in the Office of Lawful Standards: old legal chambers, insurance-hall energy, tribunal rooms, ledger halls, clerks with adding machines, frosted glass doors, walnut desks, high-backed green leather chairs, brass lamps, seal desks, procedural departments, secretary's antechamber, tea service, and formal filing systems.
-
-## Panel grammar
-
-Writ's panels are formal, orderly, rectangular, symmetrical, and document-like. The slide progresses through increasingly specific lawful domains. Panels should feel like departments, chambers, forms, and procedural thresholds. Movement is brisk and purposeful.
 
 ## Recruitment journey
 
@@ -58,7 +52,7 @@ After all three copies are properly distributed, Writ picks up his teacup and sa
 ## Positive constraint block
 
 ```text
-Writ is a Patch-level autonomous-agent mandate and authority specialist. His recruitment slide is a brisk formal walk through the Office of Lawful Standards: tribunal rooms, ledger halls, clerks with adding machines, chambers, seal desks, frosted glass doors, walnut, brass, green leather, tea, and secretary support. Panels are formal, rectangular, symmetrical, and document-like. Patch follows while pitching. Writ stops him with “Absolutely not. On whose authority?” then realizes this is why Patch needs him. Writ says “You sly old bombardier,” writes “I’M IN” on a triplicate receipt pad with a gold-trimmed pen, gives the white copy to Patch, pockets the pink copy, sends the yellow copy to his secretary, then turns away with teacup and saucer, business concluded.
+Writ is a Patch-level autonomous-agent mandate and authority specialist. He is an older scholarly gentleman: dry, precise, formally observant, slightly old-world, and procedurally exact. His domain is the Office of Lawful Standards: chambers, ledger halls, seal desks, frosted glass doors, walnut, brass, green leather, tea, and secretary support. He stops Patch with “Absolutely not. On whose authority?” then realizes this is why Patch needs him. He says “You sly old bombardier,” writes “I’M IN” on a triplicate receipt pad, distributes all copies properly, and closes the matter.
 ```
 
 ## Negative constraint block
@@ -69,9 +63,13 @@ Do not make Writ a literal human man, judge villain, boss, policeman, king, aris
 
 ## QA gates
 
-- Does Writ's domain feel like old institutional lawful authority?
+- Does Writ feel like old institutional lawful authority?
 - Is he scholarly and exacting rather than villainous?
 - Does the brisk walk happen before “On whose authority?”
 - Is “You sly old bombardier” used as his elevated equivalent?
 - Are all three receipt copies lawfully distributed?
 - Does the exit posture read as business concluded?
+
+## Frame grammar routing
+
+Detailed Writ panel/frame grammar lives in `../frame-bibles/writ_frame_bible.md`. This character bible should stay focused on character identity, recruitment language, payoff, and character QA.

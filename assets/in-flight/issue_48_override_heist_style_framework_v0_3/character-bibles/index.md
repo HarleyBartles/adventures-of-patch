@@ -1,11 +1,9 @@
 # Index Character / Recruitment-Language Bible
 
-
 State: `minimal_provisional_character_language`  
-Operation class: deterministic no-credit recruitment / character-language bible  
+Operation class: deterministic no-credit recruitment / character-language bible
 
 This character bible locks approved recruitment-language doctrine for planning and pre-vis. It does not lock final character appearance, full turnaround design, final palette, or accepted asset-sheet canon.
-
 
 ## Function
 
@@ -18,21 +16,6 @@ Index is stoic, quiet, bookish, and mission-focused. She gives little away. She 
 ## Domain
 
 Index's domain is old files, dusty wrinkled documents, design and revision plans, folded blueprints, dog-eared records, old notes, marginalia, and paper-trail evidence. It should feel archived, handled, and slightly neglected, not cursed, mouldy, or horror-like.
-
-## Panel grammar
-
-Index's panels are archive artifacts. The slide behaves like documents spread across a table and walked through as a world:
-
-- folded blueprints;
-- dog-eared corners;
-- faded paper;
-- pinholes and moth holes;
-- overlapping document panels;
-- lost details where papers cover one another;
-- clipped panels at the slide edge suggesting unrelated archive sub-stories just off-page;
-- reveal windows where one paper partly exposes the crucial clue beneath.
-
-Panel motion is evidence excavation: buried route → source evidence → candidate path.
 
 ## Recruitment journey
 
@@ -51,20 +34,23 @@ The humour comes from the contrast between stoic archive archaeology and the dir
 ## Positive constraint block
 
 ```text
-Index is a Patch-level autonomous-agent design-history and source-evidence specialist. Her recruitment slide is an archive journey through old documents, folded blueprints, revision plans, dog-eared records, faded paper, pinholes, moth holes, marginal notes, overlapping panels, and clipped off-page archive fragments. Index says little or nothing; Patch follows her through the paper trail while clarifying the heist. The panel layout should behave like physical archive artifacts spread across a table and walked through. The final serious old file contains the payoff: “You son of a gun, I’m in.”
+Index is a Patch-level autonomous-agent design-history and source-evidence specialist. She is stoic, quiet, bookish, and mission-focused. Her domain is old files, wrinkled documents, design and revision plans, folded blueprints, dog-eared records, old notes, marginalia, and paper-trail evidence. Index says little or nothing; Patch follows while clarifying the heist. The final serious old file contains the payoff: “You son of a gun, I’m in.”
 ```
 
 ## Negative constraint block
 
 ```text
-Do not make Index a literal human woman, schoolgirl stereotype, librarian caricature, animal, Patch clone, Bit/Bot-style robot, or generic helper bot. Do not make the archive magical, cursed, horror-like, mouldy, or derelict. Do not make Index solve everything by exposition. Do not use clean modern UI panels as her main grammar. Do not make her panel style feel like Klause's decision grid or Receipt's receipt rolls.
+Do not make Index a literal human woman, schoolgirl stereotype, librarian caricature, animal, Patch clone, Bit/Bot-style robot, or generic helper bot. Do not make the archive magical, cursed, horror-like, mouldy, or derelict. Do not make Index solve everything by exposition. Do not make her character role feel like Klause's decision function or Receipt's audit role.
 ```
 
 ## QA gates
 
-- Does the slide feel like a walk through provenance?
+- Does Index feel like source/provenance made into character?
 - Is Index mostly stoic and quiet?
-- Does Patch physically follow through the paper trail?
-- Do overlapping documents reveal and obscure evidence meaningfully?
+- Does Patch physically follow through the paper trail if the recruitment journey is shown?
 - Does the final document deliver the payoff line?
 - Is the archive tactile without becoming grimy or horror-like?
+
+## Frame grammar routing
+
+Detailed Index panel/frame grammar lives in `../frame-bibles/index_frame_bible.md`. This character bible should stay focused on character identity, recruitment language, payoff, and character QA.
