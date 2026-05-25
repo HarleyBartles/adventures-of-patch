@@ -16,11 +16,11 @@ Detailed Silk panel/frame grammar lives in `../frame-bibles/silk_frame_bible.md`
 
 Use these references in this order when generating, QAing, or briefing Silk:
 
-1. **Accepted Silk v1 hero shot** — highest authority for Silk's character identity, body proportions, hoodie silhouette, compact crouched working posture, face read, single antenna, red-thread spool pack, and approved heist-comic finish.
-2. **Accepted Silk v1 approved style sheet** — highest authority for multi-view consistency, front / 3/4 / profile / rear views, approved action poses, canonical props, canonical colour relationships, and boring-repeatable rendering.
-3. **This `silk.md` bible** — prose authority for role, identity, positive constraints, negative constraints, and QA gates.
-4. **Accepted Silk v1 anti-pattern sheet v2** — negative-control authority only. It shows known failure modes to reject. Do not use it as positive design reference.
-5. **Frame bible** — use only for panel-boundary and route-transition behaviour, not for changing Silk's base character design.
+1. [Accepted Silk v1 hero shot](../style-sheets/silk/Silk%20Approved%20Hero.png) - highest authority for Silk's character identity, body proportions, hoodie silhouette, compact crouched working posture, face read, single antenna, red-thread spool pack, and approved heist-comic finish.
+2. [Accepted Silk v1 approved style sheet](../style-sheets/silk/Silk%20Approved%20Style%20Sheet.png) - highest authority for multi-view consistency, front / 3/4 / profile / rear views, approved action poses, canonical props, canonical colour relationships, and boring-repeatable rendering.
+3. [This `silk.md` bible](silk.md) - prose authority for role, identity, positive constraints, negative constraints, and QA gates.
+4. [Accepted Silk v1 anti-pattern sheet](../style-sheets/silk/Silk%20Anti-Patterns.png) - negative-control authority only. It shows known failure modes to reject. Do not use it as positive design reference.
+5. [Frame bible](../frame-bibles/silk_frame_bible.md) - use only for panel-boundary and route-transition behaviour, not for changing Silk's base character design.
 
 When generating Silk, boring continuity beats novelty. Preserve the accepted hero shot and approved style sheet unless the task explicitly asks for redesign or alternate state.
 
@@ -79,7 +79,7 @@ The approved sheet is positive reference. It may be used for prompt grounding, v
 
 ## Accepted anti-pattern sheet lock
 
-The accepted Silk v1 anti-pattern sheet v2 is a negative-control reference. It is not a style target and must not be used as positive reference.
+The accepted Silk v1 anti-pattern sheet is a negative-control reference. It is not a style target and must not be used as positive reference.
 
 Some anti-pattern panels intentionally resemble known-problem visual categories strongly enough to be rejected. That is the point of the sheet. They are warnings, not alternatives.
 

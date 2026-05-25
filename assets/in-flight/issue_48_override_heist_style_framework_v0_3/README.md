@@ -40,7 +40,10 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [frame-bibles/klause_frame_bible.md](frame-bibles/klause_frame_bible.md) — Klause internal decision-grid frame grammar.
 - [frame-bibles/receipt_frame_bible.md](frame-bibles/receipt_frame_bible.md) — Receipt audit-roll frame grammar.
 - [character-bibles/index.md](character-bibles/index.md) — Index recruitment/character-language bible.
-- [character-bibles/silk.md](character-bibles/silk.md) — Silk recruitment/character-language bible and current design direction.
+- [character-bibles/silk.md](character-bibles/silk.md) â€” Silk recruitment/character-language bible and current design direction.
+- [style-sheets/silk/Silk Approved Hero.png](style-sheets/silk/Silk%20Approved%20Hero.png) â€” accepted Silk v1 hero shot, primary character reference.
+- [style-sheets/silk/Silk Approved Style Sheet.png](style-sheets/silk/Silk%20Approved%20Style%20Sheet.png) â€” accepted Silk v1 approved style sheet, primary multi-view reference.
+- [style-sheets/silk/Silk Anti-Patterns.png](style-sheets/silk/Silk%20Anti-Patterns.png) â€” accepted Silk v1 anti-pattern sheet, negative-control reference only.
 - [character-bibles/rollback.md](character-bibles/rollback.md) — Rollback recruitment/character-language bible.
 - [character-bibles/writ.md](character-bibles/writ.md) — Writ recruitment/character-language bible.
 - [character-bibles/klause.md](character-bibles/klause.md) — Klause recruitment/character-language bible.
