@@ -8,6 +8,9 @@ This directory holds in-flight style-sheet image references for the Issue #48 st
 
 ## Subdirectories
 
+- [index/](index/) - Index visual references.
+- [klause/](klause/) - Klause visual references.
+- [receipt/](receipt/) - Receipt visual references.
 - [rollback/](rollback/) - Rollback visual references.
 - [silk/](silk/) - Silk visual references.
 - [writ/](writ/) - Writ visual references.

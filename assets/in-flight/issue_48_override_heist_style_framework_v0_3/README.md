@@ -41,7 +41,7 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [frame-bibles/receipt_frame_bible.md](frame-bibles/receipt_frame_bible.md) — Receipt audit-roll frame grammar.
 - [character-bibles/index.md](character-bibles/index.md) — Index recruitment/character-language bible.
 - [character-bibles/silk.md](character-bibles/silk.md) â€” Silk recruitment/character-language bible and current design direction.
-- [style-sheets/INDEX.md](style-sheets/INDEX.md) â€” in-flight style-sheet image references for Patch, Silk, Rollback, and Writ.
+- [style-sheets/INDEX.md](style-sheets/INDEX.md) â€” in-flight style-sheet image references for Index, Klause, Patch, Receipt, Rollback, Silk, and Writ.
 - [style-sheets/silk/Silk Approved Hero.png](style-sheets/silk/Silk%20Approved%20Hero.png) â€” accepted Silk v1 hero shot, primary character reference.
 - [style-sheets/silk/Silk Approved Style Sheet.png](style-sheets/silk/Silk%20Approved%20Style%20Sheet.png) â€” accepted Silk v1 approved style sheet, primary multi-view reference.
 - [style-sheets/silk/Silk Anti-Patterns.png](style-sheets/silk/Silk%20Anti-Patterns.png) â€” accepted Silk v1 anti-pattern sheet, negative-control reference only.

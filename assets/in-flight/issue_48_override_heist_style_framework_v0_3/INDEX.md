@@ -15,7 +15,7 @@ Entry points:
 Subdirectories:
 
 - [style-bibles/](style-bibles/) - global world, Patch, crew class, frame, prop, environment, planning, and montage systems.
-- [style-sheets/](style-sheets/) - in-flight visual references for Patch, Silk, Rollback, and Writ.
+- [style-sheets/](style-sheets/) - in-flight visual references for Index, Klause, Patch, Receipt, Rollback, Silk, and Writ.
 - [frame-bibles/](frame-bibles/)  — character-specific panel/frame grammars extracted from character bibles.
 - [character-bibles/](character-bibles/) — character and recruitment-language bibles, kept free of heavy frame taxonomy.
 - [source/](source/) — historical combined source material, preserved unchanged.
