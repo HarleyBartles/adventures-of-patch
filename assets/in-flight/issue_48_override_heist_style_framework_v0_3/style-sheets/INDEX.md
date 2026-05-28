@@ -8,6 +8,7 @@ This directory holds in-flight style-sheet image references for the Issue #48 st
 
 ## Subdirectories
 
+- [heist_pitch_folder/](heist_pitch_folder/) - joined continuity-object references for the Issue #48 style framework packet.
 - [index/](index/) - Index visual references.
 - [klause/](klause/) - Klause visual references.
 - [receipt/](receipt/) - Receipt visual references.
