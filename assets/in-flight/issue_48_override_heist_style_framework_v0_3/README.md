@@ -32,6 +32,7 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [style-bibles/06_safehouse_specialist_zone_environment.md](style-bibles/06_safehouse_specialist_zone_environment.md) — shared safehouse and specialist zones.
 - [style-bibles/07_planning_table_layer_diagram.md](style-bibles/07_planning_table_layer_diagram.md) — planning-table and keycard-layer process bible.
 - [style-bibles/08_panel_grammar_montage.md](style-bibles/08_panel_grammar_montage.md) — deck-level panel rhythm and montage bible.
+- [style-bibles/09_pitch_folder_and_assent_marker_system.md](style-bibles/09_pitch_folder_and_assent_marker_system.md) — pitch-folder continuity and assent-marker lock.
 - [frame-bibles/00_frame_bible_index.md](frame-bibles/00_frame_bible_index.md) — frame-bible routing map.
 - [frame-bibles/index_frame_bible.md](frame-bibles/index_frame_bible.md) — Index archive-document frame grammar.
 - [frame-bibles/silk_frame_bible.md](frame-bibles/silk_frame_bible.md) — Silk broken-boundary route-testing frame grammar.
