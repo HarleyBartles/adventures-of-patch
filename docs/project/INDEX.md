@@ -44,6 +44,7 @@ For a fresh agent session or repo-sensitive task:
 - `playbooks/image-generation-resource-discipline.md` - durable image-credit stewardship doctrine for deterministic/no-credit visual work.
 - `INDEX.md` - root directory index and top-level navigation surface.
 - `repo-resident-visual-sidecar-proof.md` - repo proof note for PATCH-21 sidecar coverage.
+- `assets/visual-sidecars/` - repo-resident image-sidecar selection and routing mesh for tracked repo images.
 - `Patch/` - Patch project-local actor surface, with project-director and execution lanes.
 - `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.
 - `playbooks/` - first-class Adventures project/domain playbooks.

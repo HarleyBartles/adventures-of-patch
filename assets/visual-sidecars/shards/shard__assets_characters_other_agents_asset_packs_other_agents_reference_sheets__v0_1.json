@@ -1,0 +1,61 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_characters_other_agents_asset_packs_other_agents_reference_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 1,
+  "records": [
+    {
+      "source_path": "assets/characters/other-agents/asset_packs/other-agents/reference_sheets/overview__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "e8382ed7b835e7d006c7160fc41bde9a3a78a9df",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2045499,
+      "width": 1536,
+      "height": 1024,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "other-agents",
+      "package_id": "other-agents",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/other-agents/asset_packs/other-agents",
+      "manifest_path": "assets/characters/other-agents/asset_packs/other-agents/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_other_agents_asset_packs_other_agents_reference_sheets__v0_1.json"
+    }
+  ]
+}

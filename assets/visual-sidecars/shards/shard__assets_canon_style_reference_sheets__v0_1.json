@@ -1,0 +1,217 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_canon_style_reference_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 4,
+  "records": [
+    {
+      "source_path": "assets/canon/style/reference_sheets/approved_patterns__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "8e6b43ab76f3fd568b20fecd76312645d2b1faaa",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1973387,
+      "width": 1536,
+      "height": 1024,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "reference_sheet",
+      "role": "canon_reference",
+      "acceptance_state": "canonical",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_style_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/style/reference_sheets/environment_drift_risks__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "b67988f6bfc5d2a8fe072a4800a6a3ecb5707d77",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2230617,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "reference_sheet",
+      "role": "canon_reference",
+      "acceptance_state": "canonical",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_style_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/style/reference_sheets/general_drift_risks__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "defb27d198f3c2bd58a7e0d30f8543945b0a244c",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1998595,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "reference_sheet",
+      "role": "canon_reference",
+      "acceptance_state": "canonical",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_style_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/style/reference_sheets/props_drift_risks__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "6d4578f94d819898c935b5310625ecc62f3676c1",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2054114,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "reference_sheet",
+      "role": "canon_reference",
+      "acceptance_state": "canonical",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_style_reference_sheets__v0_1.json"
+    }
+  ]
+}

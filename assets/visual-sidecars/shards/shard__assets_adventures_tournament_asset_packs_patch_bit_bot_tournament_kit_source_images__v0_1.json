@@ -1,0 +1,477 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 9,
+  "records": [
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/bit_hazard_tape__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "c463bd30fb5d7d6097c6e7e34e5c561e2c4cd8cd",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1879984,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/bit_hero__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "fb858c7f2b7923a8d5fecaca90c36b54c0cb6a52",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1991501,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/bit_race_off__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "d447bae42f47ed4d5361d1cca5186ecc4de208dc",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1884985,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/bot_hero__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "cf4f1c5cb4bd61c4fa96cb6f89ff280b994f6643",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2134377,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/bot_side_stretch__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "2609866075174c0a590e69b3a1aea563f6e1f99e",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1993896,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/bot_wrong_line__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "3d7070f84b70e0434b1d7b14d494504ca5c33a9c",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2106352,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/patch_hero__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "4f405af74b871758882a0c17fe10fc45b61ffb73",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1913212,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/patch_notebook_focus__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "edc5cb6ea8e4e019d2384b67058aa289ccd788b2",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1899901,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/patch_startline_quizzical__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "4ea76e668aaa9736eadf9a21b2d65ef45177335c",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2465400,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "patch-bit-bot-tournament-kit",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_patch_bit_bot_tournament_kit_source_images__v0_1.json"
+    }
+  ]
+}

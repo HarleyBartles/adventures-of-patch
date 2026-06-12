@@ -3,100 +3,45 @@
 Status: repo-backed proof note for PATCH-21.
 Date: 2026-06-12.
 
-This note proves that the repo's tracked visual surfaces are carried by repo-resident sidecars or lane metadata. It does not promote any in-flight asset to canon.
+This note proves that the repo's tracked visual surfaces are carried by a repo-resident image-sidecar mesh. It does not promote any in-flight asset to canon.
 
 ## Sidecar Schema
 
 The repo uses a small set of lane-specific sidecar shapes:
 
-| Lane | Tracked visual surface | Required sidecar or index surface |
+| Lane | Tracked visual surface | Sidecar or index surface |
 |---|---|---|
-| Reusable asset packs | `assets/<domain>/<family>/asset_packs/<pack>/` | `manifests/manifest.json`, plus `INDEX.md` and usually `README.md` |
-| Template asset sheets | `assets/templates/asset-sheets/` | Sibling JSON sidecars recorded beside each template PNG |
+| Reusable asset packs | `assets/<domain>/<family>/asset_packs/<pack>/` | `manifests/manifest.json`, plus package indexes and readmes |
+| Template asset sheets | `assets/templates/asset-sheets/` | Sibling JSON compile sidecars beside each template PNG |
 | Canon roots | `assets/canon/patch/reference_sheets/`, `assets/canon/style/reference_sheets/` | Canon root markdown plus the reference-sheet index mesh |
 | In-flight working references | `assets/in-flight/` | Subtree `INDEX.md` and `README.md`, plus child `INDEX.md` files for each working folder |
+| Repo image selection mesh | `assets/visual-sidecars/` | `schema.v0.1.json`, `index.v0.1.json`, and sharded records keyed by tracked image path |
 
-The sidecar contract differs by lane, but the common rule is the same: the visual surface is never left floating without repo-resident metadata.
+The sidecar contract differs by lane, but the common rule is the same: the visual surface is never left floating without repo-resident metadata. The new repo image-selection mesh is the durable routing layer PATCH-21 asked for.
 
 ## Repository Proof
 
 The current repository state contains:
 
-- 173 tracked raster images across `assets/`.
-- 18 reusable asset packs with `manifests/manifest.json`.
-- 130 tracked images inside those reusable asset packs.
-- 8 template PNGs with 8 matching JSON sidecars.
-- 5 Patch canon reference PNGs.
-- 4 style canon reference PNGs.
-- 26 in-flight PNGs in the active style-framework working subtree.
+- 173 tracked image files discovered from `git ls-files` across `*.png`, `*.jpg`, and `*.jpeg`.
+- 172 tracked PNGs and 1 tracked JPEG.
+- `assets/visual-sidecars/schema.v0.1.json`.
+- `assets/visual-sidecars/index.v0.1.json`.
+- 40 shard JSON records under `assets/visual-sidecars/shards/`.
 
-Those counts are enough to show that the repo's tracked visual content is not relying on loose, untracked, or outside-repo sidecar state.
+Those files show that the repo's tracked visual content is no longer relying on loose, unindexed metadata. It has a dedicated, repo-resident selection/routing layer that maps image path to machine-legible sidecar record.
 
-## Pack Coverage
+## Shard Coverage
 
-The 18 reusable packs all resolve to repo-resident manifest-backed package roots:
+The shard mesh covers the tracked image inventory by source directory. Representative shard families include:
 
-- `assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority` - 7 images.
-- `assets/adventures/Tournament/asset_packs/long-course-route-check-booth` - 5 images.
-- `assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit` - 10 images.
-- `assets/adventures/Tournament/asset_packs/tournament-trial-environments` - 13 images.
-- `assets/canon/patch/role-kits/asset_packs/chef-role-kit` - 8 images.
-- `assets/canon/patch/role-kits/asset_packs/cowboy-role-kit` - 8 images.
-- `assets/canon/patch/role-kits/asset_packs/detective-role-kit` - 8 images.
-- `assets/canon/patch/role-kits/asset_packs/mechanic-role-kit` - 8 images.
-- `assets/characters/bit-bot/asset_packs/bit-and-bot` - 8 images.
-- `assets/characters/bit-bot/asset_packs/bot-role-kit` - 13 images.
-- `assets/characters/bouncers/asset_packs/bouncer-family` - 9 images.
-- `assets/characters/mission-control-team/asset_packs/mission-control-team` - 6 images.
-- `assets/characters/other-agents/asset_packs/other-agents` - 1 image.
-- `assets/characters/shopkeeper/asset_packs/shopkeeper` - 1 image.
-- `assets/characters/stakeholders/asset_packs/data-architect-product-trio` - 10 images.
-- `assets/environments/club-db/asset_packs/club-db` - 5 images.
-- `assets/environments/identity-emporium/asset_packs/identity-emporium` - 4 images.
-- `assets/environments/mission-control/asset_packs/mission-control` - 6 images.
-
-All 18 packs were checked by `scripts/validate_asset_taxonomy.py` against the repo's manifest contract.
-
-## Template Sidecars
-
-The asset-sheet template lane is also repo-resident and sidecar-driven:
-
-- `assets/templates/asset-sheets/template_asset_sheet_1location_3view_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_1location_3view_v1.json`
-- `assets/templates/asset-sheets/template_asset_sheet_1location_6view_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_1location_6view_v1.json`
-- `assets/templates/asset-sheets/template_asset_sheet_3hero_6alt_v4.png`
-- `assets/templates/asset-sheets/template_asset_sheet_3hero_6alt_v4.json`
-- `assets/templates/asset-sheets/template_asset_sheet_4column_12equal_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_4column_12equal_v1.json`
-- `assets/templates/asset-sheets/template_asset_sheet_4up_equal_header_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_4up_equal_header_v1.json`
-- `assets/templates/asset-sheets/template_asset_sheet_process_sequence_6panel_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_process_sequence_6panel_v1.json`
-- `assets/templates/asset-sheets/template_asset_sheet_prop_pack_12grid_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_prop_pack_12grid_v1.json`
-- `assets/templates/asset-sheets/template_asset_sheet_world_overview_v1.png`
-- `assets/templates/asset-sheets/template_asset_sheet_world_overview_v1.json`
-
-Each JSON sidecar records the compile contract for the matching template PNG.
-
-## Canon Root Proof
-
-The explicit canon roots also carry their own repo-local documentation:
-
-- `assets/canon/patch/asset__hero__patch_style_bible.md`
-- `assets/canon/patch/reference_sheets/approved_style__v1.png`
-- `assets/canon/patch/reference_sheets/general_drift_risks__v1.png`
-- `assets/canon/patch/reference_sheets/scene_behaviour__v1.png`
-- `assets/canon/patch/reference_sheets/style_drift_risks__v1_0.png`
-- `assets/canon/patch/reference_sheets/style_drift_risks__v1_1.png`
-- `assets/canon/style/asset__style__approved_styleguide.md`
-- `assets/canon/style/reference_sheets/approved_patterns__v1.png`
-- `assets/canon/style/reference_sheets/environment_drift_risks__v1.png`
-- `assets/canon/style/reference_sheets/general_drift_risks__v1.png`
-- `assets/canon/style/reference_sheets/props_drift_risks__v1.png`
-
-These lanes do not use package manifests because they are explicit canon roots rather than reusable asset packs.
+- `assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images` -> `assets/visual-sidecars/shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json`
+- `assets/canon/patch/reference_sheets` -> `assets/visual-sidecars/shards/shard__assets_canon_patch_reference_sheets__v0_1.json`
+- `assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images` -> `assets/visual-sidecars/shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json`
+- `assets/characters/bit-bot/asset_packs/bot-role-kit/source_images` -> `assets/visual-sidecars/shards/shard__assets_characters_bit_bot_asset_packs_bot_role_kit_source_images__v0_1.json`
+- `assets/environments/mission-control/asset_packs/mission-control/reference_sheets` -> `assets/visual-sidecars/shards/shard__assets_environments_mission_control_asset_packs_mission_control_reference_sheets__v0_1.json`
+- `assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets` -> `assets/visual-sidecars/shards/shard__assets_in_flight_issue_48_override_heist_style_framework_v0_3_style_sheets__v0_1.json`
+- `assets/templates/asset-sheets` -> `assets/visual-sidecars/shards/shard__assets_templates_asset_sheets__v0_1.json`
 
 ## Validation
 
@@ -108,17 +53,13 @@ python scripts/validate_asset_taxonomy.py --json
 
 Result:
 
-- reusable package manifests present on every checked asset pack root;
-- no missing manifest paths or lane mismatches;
-- no over-encoded filenames;
-- one stale absolute-path reference was corrected in `assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/INDEX.md`.
+- `git ls-files` inventory counted 173 tracked image files;
+- `assets/visual-sidecars/` was generated from that inventory;
+- each shard maps to real tracked image paths;
+- no image binaries were changed;
+- `scripts/validate_asset_taxonomy.py --json` still passes after the sidecar mesh was added;
+- semantic pixel inspection remains unavailable in this worker shell, so visual-facts fields are honestly marked metadata-only.
 
 ## Conclusion
 
-The repo already proves the visual-sidecar model in three different ways:
-
-1. reusable packs use `manifests/manifest.json`;
-2. templates use sibling JSON compile sidecars;
-3. canon and in-flight lanes keep their own repo-resident documentation and index surfaces.
-
-That is enough to show that the tracked repo images are not orphaned from their sidecar metadata.
+PATCH-21 is now satisfied at the level the PR comment asked for: the repo has a discoverable image-sidecar selection mesh keyed by tracked image path, with a schema, a global index, and shard files that future GPT work can use for routing and text constraint selection without pretending the sidecars are visual canon.

@@ -1,0 +1,217 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_adventures_tournament_asset_packs_long_course_route_check_booth_source_images__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 4,
+  "records": [
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/source_images/source_01_hand_scribbled_long_course_map__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "b86d84a3737a8eecc833e8d6547d5536bd22898d",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3446814,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "long-course-route-check-booth",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_long_course_route_check_booth_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/source_images/source_02_patch_at_route_check_booth__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "4b223ce51e9d75a6bf1cc5c81b376ba960a0e936",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3790212,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "long-course-route-check-booth",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_long_course_route_check_booth_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/source_images/source_03_route_check_booth_detail__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "887b4e231f0fb91d9e8b34d569b1608897b77c13",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3930632,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "long-course-route-check-booth",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_long_course_route_check_booth_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/source_images/source_04_route_check_booth_establishing__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "fd5b26b9b45d1c29f18ae6287c43e0bd0b669a5c",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3758796,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "long-course-route-check-booth",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/long-course-route-check-booth/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_long_course_route_check_booth_source_images__v0_1.json"
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 6,
+  "records": [
+    {
+      "source_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/reference_sheets/bit_and_bot__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "c3a9c4ab732f2e7e5d6263d50f3ae85464b3cda9",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2115271,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "mission-control-team",
+      "package_id": "mission-control-team",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/mission-control-team/asset_packs/mission-control-team",
+      "manifest_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/reference_sheets/mission_controller__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "559a3dab96680e86fe83d41901afd5bc8f9d45c4",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2186294,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "mission-control-team",
+      "package_id": "mission-control-team",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/mission-control-team/asset_packs/mission-control-team",
+      "manifest_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/reference_sheets/ops_commander__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "dd30aad3fba74f3890d57d181169d890e240b9f8",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2181724,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "mission-control-team",
+      "package_id": "mission-control-team",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/mission-control-team/asset_packs/mission-control-team",
+      "manifest_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/reference_sheets/overview__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "6ffb3499dd4606432c09ec6820173fccc6816fdb",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2306086,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "mission-control-team",
+      "package_id": "mission-control-team",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/mission-control-team/asset_packs/mission-control-team",
+      "manifest_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/reference_sheets/prep_officer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "17e058aaa1e129a180eebbc505666ace6549def5",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2189942,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "mission-control-team",
+      "package_id": "mission-control-team",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/mission-control-team/asset_packs/mission-control-team",
+      "manifest_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/reference_sheets/verification_lead__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "63f7e2382a622471c3a5d76d5ba4cb54684ae296",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2184998,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "mission-control-team",
+      "package_id": "mission-control-team",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/mission-control-team/asset_packs/mission-control-team",
+      "manifest_path": "assets/characters/mission-control-team/asset_packs/mission-control-team/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_mission_control_team_asset_packs_mission_control_team_reference_sheets__v0_1.json"
+    }
+  ]
+}

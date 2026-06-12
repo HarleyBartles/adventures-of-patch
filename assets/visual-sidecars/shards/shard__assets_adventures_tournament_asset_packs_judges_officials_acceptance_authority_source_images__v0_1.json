@@ -1,0 +1,321 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 6,
+  "records": [
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images/awards_table__v1.jpeg",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "82aec3007938b3a40a5cbfcb2ea39e7cd6059775",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "byte_size": 485484,
+      "width": 1448,
+      "height": 1086,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "judges-officials-acceptance-authority",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images/head_judge__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "e6de603ebf3bcbdc89b6f13091fd8d6125b87f5b",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3326686,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "judges-officials-acceptance-authority",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images/judge_official_props__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "48f5cca5ebd7a3510c28f2cca1df815dbf45ea7a",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2752832,
+      "width": 1402,
+      "height": 1122,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "judges-officials-acceptance-authority",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images/medal_decision_moment__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "c7b82c8dac70fa65fe615e9772291fc018cc18ee",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3500536,
+      "width": 1402,
+      "height": 1122,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "judges-officials-acceptance-authority",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images/medal_official__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "2efcb7edc70f57581513de9b81de8386105aa848",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3408765,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "judges-officials-acceptance-authority",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/source_images/route_official__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "5bc8b4ac219b8c2b683e8c76bec56ac63f34c12b",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3639847,
+      "width": 1086,
+      "height": 1448,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "judges-officials-acceptance-authority",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/judges-officials-acceptance-authority/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_judges_officials_acceptance_authority_source_images__v0_1.json"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_templates_asset_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 8,
+  "records": [
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_1location_3view_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "2476d44e2305a7ce56a902314847c1e5aba1c49d",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 56008,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_1location_6view_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "8ef7b472a07602f8644d514506b8dded6e394ec1",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 63198,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_3hero_6alt_v4.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "6dfa70ee61b5c134b22b7397634c262921bad13d",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 33006,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_4column_12equal_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "f47e178fbdaa2fe7f7be6cb49f3cb3dec557f957",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 24562,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_4up_equal_header_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "3cfb64947ea50fec43d6a058966236c7be478601",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 10333,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_process_sequence_6panel_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "74bf0f6a8da17e04f4447af6a0a0ec25135a3c9d",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 38311,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_prop_pack_12grid_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "130998ecae2ac8813e13f3a7ae384008d7567e1a",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 36450,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_world_overview_v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "f1d3c523cad16b40509ad9578e4227ab4d71da13",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 46119,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": null,
+      "family": null,
+      "package_id": null,
+      "package_type": null,
+      "package_status": null,
+      "package_root": null,
+      "manifest_path": null,
+      "lane": "template_asset_sheet",
+      "role": "template_inventory",
+      "acceptance_state": "approved",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_templates_asset_sheets__v0_1.json"
+    }
+  ]
+}
