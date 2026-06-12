@@ -1,0 +1,373 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 7,
+  "records": [
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/alt_01_side_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "db3af4d591a2f7dbf0990dbc0365e312e042371e",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1024688,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/alt_02_back_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "825f0acfaf0694cb04f0a7fad4d75b26ff9022ab",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2265024,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/alt_03_lasso_pose__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "c553c8b081c7c2e39cdb6f6c1cabd75c000d2216",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2012688,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/alt_04_close_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "5fd02bd0f0847e4cc26aed16961528f34e20be4b",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2200118,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/alt_05_details__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "c5e96ab81e5e9a30a469609809d923e69be7c791",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2937664,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/alt_06_props__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "935b6df6bb3921be9ed4708035a219967971ac07",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1807298,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/source_images/hero_patch_cowboy_waistcoat__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "3b8f014e5e4c480300ffdc85bd33c060d593fc6a",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1841146,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "cowboy-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/cowboy-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_cowboy_role_kit_source_images__v0_1.json"
+    }
+  ]
+}

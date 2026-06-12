@@ -4,7 +4,7 @@ This directory holds in-flight style-sheet image references for the Issue #48 st
 
 ## Files in this directory
 
-- [Patch Approved Silhouette.png](Patch%20Approved%20Silhouette.png) - current Patch silhouette reference.
+- [Patch Approved Silhouette.png](Patch Approved Silhouette.png) - current Patch silhouette reference.
 
 ## Subdirectories
 

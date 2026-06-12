@@ -1,0 +1,62 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "version": "v0.1",
+  "purpose": "Repo-resident image selection and routing sidecar for tracked assets.",
+  "record_shape": {
+    "required": [
+      "source_path",
+      "source_commit",
+      "source_blob_sha",
+      "extension",
+      "mime_type",
+      "byte_size",
+      "lane",
+      "role",
+      "acceptance_state",
+      "inspection_mode",
+      "observed_visual_facts_state",
+      "confidence",
+      "sidecar_schema",
+      "sidecar_shard"
+    ],
+    "optional": [
+      "width",
+      "height",
+      "dimension_note",
+      "domain",
+      "family",
+      "package_id",
+      "package_type",
+      "package_status",
+      "package_root",
+      "manifest_path",
+      "observed_visual_facts",
+      "positive_constraints",
+      "negative_constraints",
+      "prompt_positive_fragments",
+      "prompt_negative_fragments",
+      "qa_hard_gates",
+      "repair_guidance",
+      "safe_variation_rules",
+      "blockers",
+      "linear_image_view_route"
+    ]
+  },
+  "acceptance_states": [
+    "package_source_image",
+    "package_compiled_sheet",
+    "package_reference_sheet",
+    "canon_reference",
+    "template_inventory",
+    "working_reference"
+  ],
+  "inspection_modes": [
+    "metadata_only",
+    "pixel_inspected"
+  ],
+  "notes": [
+    "Derived text sidecars are selection aids, not visual canon.",
+    "Only the inspected subset in inspected_subset.v0.1.json carries pixel-observed facts in this branch.",
+    "Remaining records are metadata-only because the worker shell cannot semantically inspect every tracked image here."
+  ]
+}

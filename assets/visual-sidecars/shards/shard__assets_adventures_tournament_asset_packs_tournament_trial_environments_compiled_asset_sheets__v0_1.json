@@ -1,0 +1,61 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_adventures_tournament_asset_packs_tournament_trial_environments_compiled_asset_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 1,
+  "records": [
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/tournament-trial-environments/compiled_asset_sheets/sheet__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "6fa6567a99948008ba4838ecc8c406782e0f08e1",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1619556,
+      "width": 1536,
+      "height": 1008,
+      "dimension_note": null,
+      "domain": "adventures",
+      "family": "tournament",
+      "package_id": "tournament-trial-environments",
+      "package_type": "compiled_asset_pack",
+      "package_status": "approved",
+      "package_root": "assets/adventures/Tournament/asset_packs/tournament-trial-environments",
+      "manifest_path": "assets/adventures/Tournament/asset_packs/tournament-trial-environments/manifests/manifest.json",
+      "lane": "compiled_asset_sheet",
+      "role": "package_compiled_sheet",
+      "acceptance_state": "package_compiled_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_adventures_tournament_asset_packs_tournament_trial_environments_compiled_asset_sheets__v0_1.json"
+    }
+  ]
+}

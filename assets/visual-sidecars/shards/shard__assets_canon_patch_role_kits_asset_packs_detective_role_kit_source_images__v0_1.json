@@ -1,0 +1,373 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 7,
+  "records": [
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/alt_01_side_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "381cd6d52a7b19d840c160d26d3e3237dda9f512",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1020478,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/alt_02_back_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "b59e0b9be0034323c00de81969a9771bfc5281a4",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1005161,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/alt_03_clue_hunt__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "f293d11cb936c21bf3016db11026642ab1d62d0f",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1966869,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/alt_04_on_the_case__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "4d33a81a7869a8c74562e46d538625970415969b",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2053218,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/alt_05_details__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "ea62e3914e9191159ffe8584886983725ba9f3f0",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2698140,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/alt_06_props__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "025a48bf97a735d670ef342c5fd7adeba46d4213",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2001970,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/source_images/hero_patch_detective__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "070004d0977809df579c7a9f949f32ac3af85745",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1903937,
+      "width": 1086,
+      "height": 1448,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "detective-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/detective-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/detective-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_detective_role_kit_source_images__v0_1.json"
+    }
+  ]
+}

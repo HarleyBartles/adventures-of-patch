@@ -1,0 +1,373 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 7,
+  "records": [
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/alt_action_mixing_bowl__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "d3a69a0bae8c041c5548b08267b46d368bd82e37",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2308428,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/alt_action_rolling_dough__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "e35edcf9eae5ab42c5d265cf7aa8a0461e137690",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1809848,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/alt_back_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "de2dc5080e21f18a45af061fc1f2695d01c91fa3",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1732665,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/alt_detail_split__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "ac01d41fcd0413022569b54212df9f22a4bbc3aa",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2165937,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/alt_prop_sheet__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "adf91e0f71686ce9f00d3ae5fe9122174ac8a977",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2237131,
+      "width": 1254,
+      "height": 1254,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/alt_side_view__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "21329a40661b1b8c36032031eac843d86949718f",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1019385,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    },
+    {
+      "source_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/source_images/hero_front__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "51d074eebdd6dae45266ecc351a8d19f1cd14169",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1900776,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "canon",
+      "family": "patch",
+      "package_id": "chef-role-kit",
+      "package_type": "role_kit",
+      "package_status": "provisional",
+      "package_root": "assets/canon/patch/role-kits/asset_packs/chef-role-kit",
+      "manifest_path": "assets/canon/patch/role-kits/asset_packs/chef-role-kit/manifests/manifest.json",
+      "lane": "source_image",
+      "role": "package_source_image",
+      "acceptance_state": "package_source_image",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_canon_patch_role_kits_asset_packs_chef_role_kit_source_images__v0_1.json"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 9,
+  "records": [
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/chaperone_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "37526e2d3b95171155834f1e548599f9c139d4e0",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1470287,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/door_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "66a76827035eed226c25c35468a242234cb919f5",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1727647,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/overview__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "a29202bd2ff5e0fb1fe4982fb66ddcac9c8d9831",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1630727,
+      "width": 1491,
+      "height": 1055,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/payload_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "0ac19eb9182c9477eae56dbabf6f40960814899d",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1569922,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/peacekeeper_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "ce6c3fe5e3d161fbf9fa6b434f39d5dd2ff7b0fa",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1817623,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/recovery_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "325978d0710dabfac113095baf8ec704342e934b",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1549189,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/route_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "789e982f2e8804cf4a0ff66f859b9db6adf32239",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1545987,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/stamp_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "892bf214db3b0f3f9c72862c5320356fab873b9f",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1653744,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/characters/bouncers/asset_packs/bouncer-family/reference_sheets/wristband_bouncer__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "9a6b177c5508470b55abbc67b6c9dee86b33f720",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1484741,
+      "width": 1122,
+      "height": 1402,
+      "dimension_note": null,
+      "domain": "characters",
+      "family": "bouncers",
+      "package_id": "bouncer-family",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/characters/bouncers/asset_packs/bouncer-family",
+      "manifest_path": "assets/characters/bouncers/asset_packs/bouncer-family/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_characters_bouncers_asset_packs_bouncer_family_reference_sheets__v0_1.json"
+    }
+  ]
+}

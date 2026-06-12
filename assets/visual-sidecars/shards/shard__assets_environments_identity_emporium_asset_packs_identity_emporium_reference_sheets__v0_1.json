@@ -1,0 +1,217 @@
+{
+  "schema_id": "visual_sidecar_schema.v0.1",
+  "shard_name": "shard__assets_environments_identity_emporium_asset_packs_identity_emporium_reference_sheets__v0_1.json",
+  "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+  "generated_at": "2026-06-12T12:59:40.619602Z",
+  "record_count": 4,
+  "records": [
+    {
+      "source_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/reference_sheets/overview__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "08ecc3e8cffa555d92dab26dea7569e077cce888",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2707860,
+      "width": 1491,
+      "height": 1055,
+      "dimension_note": null,
+      "domain": "environments",
+      "family": "identity-emporium",
+      "package_id": "identity-emporium",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/environments/identity-emporium/asset_packs/identity-emporium",
+      "manifest_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_environments_identity_emporium_asset_packs_identity_emporium_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/reference_sheets/storefront_exterior__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "7beba5f6f848c7bbf445ee1e8c4c81012608d189",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 3653058,
+      "width": 2400,
+      "height": 1600,
+      "dimension_note": null,
+      "domain": "environments",
+      "family": "identity-emporium",
+      "package_id": "identity-emporium",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/environments/identity-emporium/asset_packs/identity-emporium",
+      "manifest_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_environments_identity_emporium_asset_packs_identity_emporium_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/reference_sheets/storefront_interior__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "cbb2fb10c8827205f9abe26502d931da863977e9",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 1559273,
+      "width": 1600,
+      "height": 1050,
+      "dimension_note": null,
+      "domain": "environments",
+      "family": "identity-emporium",
+      "package_id": "identity-emporium",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/environments/identity-emporium/asset_packs/identity-emporium",
+      "manifest_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_environments_identity_emporium_asset_packs_identity_emporium_reference_sheets__v0_1.json"
+    },
+    {
+      "source_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/reference_sheets/world_proof__v1.png",
+      "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
+      "source_blob_sha": "2833182bc399c9aacfc5a5df58627b56bdf311e7",
+      "extension": ".png",
+      "mime_type": "image/png",
+      "byte_size": 2532874,
+      "width": 1402,
+      "height": 1122,
+      "dimension_note": null,
+      "domain": "environments",
+      "family": "identity-emporium",
+      "package_id": "identity-emporium",
+      "package_type": "reference_pack",
+      "package_status": "legacy_reference",
+      "package_root": "assets/environments/identity-emporium/asset_packs/identity-emporium",
+      "manifest_path": "assets/environments/identity-emporium/asset_packs/identity-emporium/manifests/manifest.json",
+      "lane": "reference_sheet",
+      "role": "package_reference_sheet",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "metadata_only",
+      "observed_visual_facts": [],
+      "observed_visual_facts_state": "unavailable",
+      "positive_constraints": [
+        "Use the repo path and lane to route future selection.",
+        "Treat metadata here as a text-selection aid, not canon by itself."
+      ],
+      "negative_constraints": [
+        "Do not infer uninspected pixel details from this record."
+      ],
+      "prompt_positive_fragments": [],
+      "prompt_negative_fragments": [],
+      "qa_hard_gates": [
+        "pixel_semantics_unavailable_in_worker_shell"
+      ],
+      "repair_guidance": [
+        "Use a real image inspection route if pixel semantics are needed."
+      ],
+      "safe_variation_rules": [
+        "Metadata-only sidecar; variation decisions belong to downstream visual QA."
+      ],
+      "confidence": "metadata_only",
+      "blockers": [
+        "Cannot semantically inspect repo-resident pixels in this shell."
+      ],
+      "linear_image_view_route": {
+        "state": "unavailable",
+        "notes": "No durable repo-to-Linear image viewing route is available in this pass."
+      },
+      "sidecar_schema": "schema.v0.1",
+      "sidecar_shard": "shards/shard__assets_environments_identity_emporium_asset_packs_identity_emporium_reference_sheets__v0_1.json"
+    }
+  ]
+}
