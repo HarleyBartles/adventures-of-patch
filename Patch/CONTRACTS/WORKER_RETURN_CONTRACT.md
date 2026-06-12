@@ -14,8 +14,8 @@ If `tracked_repo_mutation` is `true`, then `green_allowed` must be `false` unles
 - commit SHA or exact no-op classification;
 - push to a worker branch;
 - worker branch head verification;
-- pull request opened into `main`;
-- PR verification or merge verification;
+- PR opened into `main`;
+- PR or merge verification;
 - working tree cleanliness or exact remaining dirty state.
 
 A generated file, local package, report, or ledger is evidence only. It does not certify completion without publication proof.
@@ -41,8 +41,8 @@ repo_publication:
   committed: "true | false | not_applicable"
   pushed_worker_branch: "true | false | not_applicable"
   worker_branch_head_verified: "true | false | not_applicable"
-  pull_request_opened_into_main: "true | false | not_applicable"
-  pr_verified_or_merged: "true | false | not_applicable"
+  pr_opened_into_main: "true | false | not_applicable"
+  pr_or_merge_verified: "true | false | not_applicable"
   working_tree_clean: "true | false | not_applicable"
   green_allowed: "true | false"
   green_blocker_if_false: "<exact blocker or not_applicable>"
