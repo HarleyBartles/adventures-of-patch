@@ -31,6 +31,8 @@ For any visual-production decision that could touch image credits, also read:
 
 - `playbooks/image-generation-resource-discipline.md`
 
+When navigating into a directory, also read that directory's `INDEX.md` and `AGENTS.md` if present before relying on broad search or assumptions.
+
 Use any live GitHub-capable route that can fetch canonical material from this repo. Prefer the live GitHub API connector for known repo paths, issues, and writes when available, but do not treat it as the only possible proof of access. Treat code-search/index access as useful but potentially lagging.
 
 ## Visual resource discipline
