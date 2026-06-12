@@ -46,8 +46,8 @@ Allowed execution work includes:
 - landing approved PNGs, markdown sidecars, receipts, and source zips;
 - updating `INDEX.md` navigation surfaces;
 - updating GitHub issues and comments;
-- committing and pushing tracked repo changes;
-- verifying remote `origin/main` state;
+- committing and pushing tracked repo changes to a worker branch;
+- opening and verifying a PR into `main`, or verifying the merge if the PR has already landed;
 - returning changed paths, commit evidence, and unresolved caveats.
 
 Execution is limited to this repo unless a future issue and workspace route explicitly authorize a broader operation.
@@ -80,8 +80,8 @@ For tracked repo mutation, GREEN is blocked until the return includes:
 
 - changed paths;
 - commit SHA or no-op classification;
-- push proof when mutation occurred;
-- remote head verification when mutation occurred;
+- worker branch push proof when mutation occurred;
+- PR proof into `main` and branch-head or merge verification when mutation occurred;
 - working tree cleanliness or the exact unresolved dirty state;
 - issue references addressed;
 - source/package provenance;

@@ -13,7 +13,7 @@ Given an approved or otherwise source-authorized asset directory already present
 - create a flat source zip named after the containing folder;
 - land that zip in `assets/source-zips/`;
 - update `assets/source-zips/INDEX.md`;
-- commit, push, and return publication evidence.
+- commit to a worker branch, push, open or verify the PR into `main`, and return publication evidence.
 
 ## Trigger
 
@@ -49,8 +49,8 @@ This skill handles source/package publishing only; repo-canonical image inspecti
 9. Land the zip in `assets/source-zips/`.
 10. Update `assets/source-zips/INDEX.md`.
 11. Validate index entries and archive shape.
-12. Commit and push to `origin/main`.
-13. Verify remote `origin/main` contains the committed paths.
+12. Commit and push to a worker branch.
+13. Open or verify the PR into `main`, then verify the worker branch head or merged result contains the committed paths.
 14. Return using the worker return contract.
 
 ## Validation
@@ -59,7 +59,7 @@ This skill handles source/package publishing only; repo-canonical image inspecti
 - The parent asset-family index includes the target directory when needed.
 - `assets/source-zips/INDEX.md` lists the landed source zip.
 - The zip root contains only files.
-- Remote `origin/main` shows the committed path set after push.
+- The worker branch head or merged result shows the committed path set after push.
 
 ## Stop conditions
 
