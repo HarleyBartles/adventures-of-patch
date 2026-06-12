@@ -43,13 +43,11 @@
     ]
   },
   "acceptance_states": [
-    "candidate_inspection",
     "package_source_image",
     "package_compiled_sheet",
     "package_reference_sheet",
     "canon_reference",
     "template_inventory",
-    "in_flight_reference",
     "working_reference"
   ],
   "inspection_modes": [
@@ -58,6 +56,7 @@
   ],
   "notes": [
     "Derived text sidecars are selection aids, not visual canon.",
-    "If semantic pixel inspection becomes available later, the same schema can carry pixel-observed facts."
+    "Only the inspected subset in inspected_subset.v0.1.json carries pixel-observed facts in this branch.",
+    "Remaining records are metadata-only because the worker shell cannot semantically inspect every tracked image here."
   ]
 }

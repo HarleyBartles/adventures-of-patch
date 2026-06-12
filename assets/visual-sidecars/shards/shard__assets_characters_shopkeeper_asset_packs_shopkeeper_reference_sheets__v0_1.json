@@ -24,7 +24,7 @@
       "manifest_path": "assets/characters/shopkeeper/asset_packs/shopkeeper/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_reference_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",

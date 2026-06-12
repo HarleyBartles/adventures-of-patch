@@ -7,6 +7,7 @@ Repo-resident image-sidecar selection and routing layer.
 - `INDEX.md`
 - `schema.v0.1.json`
 - `index.v0.1.json`
+- `inspected_subset.v0.1.json`
 
 ## Subdirectories
 
@@ -18,4 +19,4 @@ This lane is a text-first selection mesh for tracked repo images. Use `index.v0.
 
 Tracked image inventory: 173 files (172 png, 1 jpeg/jpg, 0 webp, 0 gif, 0 svg).
 
-Inspection mode for this pass: metadata-only.
+Inspection mode for this pass: mixed; 5 records are pixel_inspected and 168 remain metadata_only.

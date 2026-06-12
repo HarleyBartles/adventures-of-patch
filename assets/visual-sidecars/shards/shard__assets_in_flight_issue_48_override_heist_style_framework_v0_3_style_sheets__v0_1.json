@@ -24,10 +24,13 @@
       "manifest_path": null,
       "lane": "working_reference",
       "role": "in_flight_reference",
-      "acceptance_state": "working",
-      "inspection_mode": "metadata_only",
-      "observed_visual_facts": [],
-      "observed_visual_facts_state": "unavailable",
+      "acceptance_state": "working_reference",
+      "inspection_mode": "pixel_inspected",
+      "observed_visual_facts": [
+        "High-contrast black silhouette of Patch with antennae, hoodie shape, and a visible crossbody bag strap.",
+        "The image is a silhouette reference rather than a detailed turntable or scene illustration."
+      ],
+      "observed_visual_facts_state": "present",
       "positive_constraints": [
         "Use the repo path and lane to route future selection.",
         "Treat metadata here as a text-selection aid, not canon by itself."
@@ -35,8 +38,12 @@
       "negative_constraints": [
         "Do not infer uninspected pixel details from this record."
       ],
-      "prompt_positive_fragments": [],
-      "prompt_negative_fragments": [],
+      "prompt_positive_fragments": [
+        "Use the observed structure as a selection aid."
+      ],
+      "prompt_negative_fragments": [
+        "Do not overgeneralize beyond the viewed pixel facts."
+      ],
       "qa_hard_gates": [
         "pixel_semantics_unavailable_in_worker_shell"
       ],
@@ -46,7 +53,7 @@
       "safe_variation_rules": [
         "Metadata-only sidecar; variation decisions belong to downstream visual QA."
       ],
-      "confidence": "metadata_only",
+      "confidence": "high",
       "blockers": [
         "Cannot semantically inspect repo-resident pixels in this shell."
       ],

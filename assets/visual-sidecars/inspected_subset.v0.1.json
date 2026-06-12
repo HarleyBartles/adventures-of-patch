@@ -1,0 +1,51 @@
+{
+  "subset_id": "repo_resident_visual_sidecars_inspected_subset.v0.1",
+  "version": "v0.1",
+  "sample_count": 5,
+  "samples": [
+    {
+      "source_path": "assets/canon/patch/reference_sheets/approved_style__v1.png",
+      "observed_visual_facts": [
+        "Patch style reference sheet with a large top-banner summary and grouped panels for full-body views, action poses, expressions, accessories, and color palette.",
+        "Canonical Patch read stays teal hoodie, black oval eyes with tiny shine highlights, dark pants, teal shoes, and crossbody bag."
+      ],
+      "confidence": "high"
+    },
+    {
+      "source_path": "assets/templates/asset-sheets/template_asset_sheet_3hero_6alt_v4.png",
+      "observed_visual_facts": [
+        "Blank asset-sheet template with ASSET SHEET title, three hero slots, and six alternate slots.",
+        "Layout is a clean framing skeleton with placeholders only, intended for deterministic compile rather than image generation."
+      ],
+      "confidence": "high"
+    },
+    {
+      "source_path": "assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit/source_images/patch_hero__v1.png",
+      "observed_visual_facts": [
+        "Full-body Patch on a white background with teal hoodie, antennae, crossbody bag, dark pants, and teal shoes with white soles.",
+        "He wears a race bib labeled PATCH 042 and reads as a bright, presentation-safe hero reference."
+      ],
+      "confidence": "high"
+    },
+    {
+      "source_path": "assets/environments/mission-control/asset_packs/mission-control/reference_sheets/overview__v1.png",
+      "observed_visual_facts": [
+        "Environment class sheet for a mission control centre with a wide panoramic hero scene and lower grammar panels.",
+        "Blue and teal palette, launch gate signage, control desks, and reference callouts make the room read as an operational hub."
+      ],
+      "confidence": "high"
+    },
+    {
+      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/Patch Approved Silhouette.png",
+      "observed_visual_facts": [
+        "High-contrast black silhouette of Patch with antennae, hoodie shape, and a visible crossbody bag strap.",
+        "The image is a silhouette reference rather than a detailed turntable or scene illustration."
+      ],
+      "confidence": "high"
+    }
+  ],
+  "notes": [
+    "These are the only records in this branch with actual pixel-observed facts from this worker session.",
+    "All other image records remain metadata-only because full semantic inspection of 173 tracked images is not available in this shell."
+  ]
+}

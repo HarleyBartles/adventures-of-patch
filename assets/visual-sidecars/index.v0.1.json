@@ -260,6 +260,13 @@
   ],
   "selection_notes": [
     "Use this index to route from repo image path to the relevant shard before reading the record.",
+    "The inspected subset is the only pixel-observed sample set in this branch.",
     "Metadata-only records are honest about the lack of semantic pixel inspection in this shell."
-  ]
+  ],
+  "inspected_subset_path": "inspected_subset.v0.1.json",
+  "inspection_coverage": {
+    "pixel_inspected": 5,
+    "metadata_only": 168,
+    "total": 173
+  }
 }

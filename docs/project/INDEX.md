@@ -18,6 +18,7 @@ When project work reaches an external app connector action, use `docs/project/co
 
 - `INDEX.md` - this file; project index and source map for docs/project.
 - `repo-resident-visual-sidecar-proof.md` - repo-backed proof note showing how tracked visual surfaces are anchored by repo-resident sidecars and lane metadata.
+- `repo-resident-visual-sidecar-amber-report.md` - AMBER return note with inspected subset and blocker.
 
 ## Subdirectories
 
@@ -45,6 +46,7 @@ For a fresh agent session or repo-sensitive task:
 - `INDEX.md` - root directory index and top-level navigation surface.
 - `repo-resident-visual-sidecar-proof.md` - repo proof note for PATCH-21 sidecar coverage.
 - `assets/visual-sidecars/` - repo-resident image-sidecar selection and routing mesh for tracked repo images.
+- `assets/visual-sidecars/inspected_subset.v0.1.json` - representative pixel-inspected subset for PATCH-21.
 - `Patch/` - Patch project-local actor surface, with project-director and execution lanes.
 - `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.
 - `playbooks/` - first-class Adventures project/domain playbooks.

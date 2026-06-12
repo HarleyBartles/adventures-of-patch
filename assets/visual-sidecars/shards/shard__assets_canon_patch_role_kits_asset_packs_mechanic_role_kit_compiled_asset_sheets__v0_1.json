@@ -24,7 +24,7 @@
       "manifest_path": "assets/canon/patch/role-kits/asset_packs/mechanic-role-kit/manifests/manifest.json",
       "lane": "compiled_asset_sheet",
       "role": "package_compiled_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_compiled_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",

@@ -24,7 +24,7 @@
       "manifest_path": "assets/environments/mission-control/asset_packs/mission-control/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_reference_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",
@@ -76,7 +76,7 @@
       "manifest_path": "assets/environments/mission-control/asset_packs/mission-control/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_reference_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",
@@ -128,7 +128,7 @@
       "manifest_path": "assets/environments/mission-control/asset_packs/mission-control/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_reference_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",
@@ -180,7 +180,7 @@
       "manifest_path": "assets/environments/mission-control/asset_packs/mission-control/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_reference_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",
@@ -232,10 +232,13 @@
       "manifest_path": "assets/environments/mission-control/asset_packs/mission-control/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
-      "inspection_mode": "metadata_only",
-      "observed_visual_facts": [],
-      "observed_visual_facts_state": "unavailable",
+      "acceptance_state": "package_reference_sheet",
+      "inspection_mode": "pixel_inspected",
+      "observed_visual_facts": [
+        "Environment class sheet for a mission control centre with a wide panoramic hero scene and lower grammar panels.",
+        "Blue and teal palette, launch gate signage, control desks, and reference callouts make the room read as an operational hub."
+      ],
+      "observed_visual_facts_state": "present",
       "positive_constraints": [
         "Use the repo path and lane to route future selection.",
         "Treat metadata here as a text-selection aid, not canon by itself."
@@ -243,8 +246,12 @@
       "negative_constraints": [
         "Do not infer uninspected pixel details from this record."
       ],
-      "prompt_positive_fragments": [],
-      "prompt_negative_fragments": [],
+      "prompt_positive_fragments": [
+        "Use the observed structure as a selection aid."
+      ],
+      "prompt_negative_fragments": [
+        "Do not overgeneralize beyond the viewed pixel facts."
+      ],
       "qa_hard_gates": [
         "pixel_semantics_unavailable_in_worker_shell"
       ],
@@ -254,7 +261,7 @@
       "safe_variation_rules": [
         "Metadata-only sidecar; variation decisions belong to downstream visual QA."
       ],
-      "confidence": "metadata_only",
+      "confidence": "high",
       "blockers": [
         "Cannot semantically inspect repo-resident pixels in this shell."
       ],
@@ -284,7 +291,7 @@
       "manifest_path": "assets/environments/mission-control/asset_packs/mission-control/manifests/manifest.json",
       "lane": "reference_sheet",
       "role": "package_reference_sheet",
-      "acceptance_state": "package",
+      "acceptance_state": "package_reference_sheet",
       "inspection_mode": "metadata_only",
       "observed_visual_facts": [],
       "observed_visual_facts_state": "unavailable",
