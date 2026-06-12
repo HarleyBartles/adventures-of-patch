@@ -29,9 +29,9 @@ Patch may execute this workflow through `Patch / execution`, but the project wor
 8. Update `assets/INDEX.md` if a new asset directory is introduced.
 9. Update `assets/source-zips/INDEX.md` for committed source packages.
 10. Update issue or receipt surfaces required by the task.
-11. Commit and push to `main`.
-12. Verify remote `origin/main` contains the expected paths.
-13. For green Patch ingress runs, delete the successfully ingressed zip from `Patch/INGRESS/asset-zips/` only after the landed repo files are committed, pushed, and remote-verified.
+11. Commit and push to a worker branch.
+12. Open or verify the PR into `main`, and verify the worker branch head or merged result.
+13. For green Patch ingress runs, delete the successfully ingressed zip from `Patch/INGRESS/asset-zips/` only after the landed repo files are committed, pushed, PR-verified, and remote-verified.
 14. Delete any extraction or scratch folders created for the ingress after successful publication.
 15. Return with publication evidence.
 

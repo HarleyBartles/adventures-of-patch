@@ -38,8 +38,10 @@ Use for:
 - source zip landing;
 - index updates;
 - issue mutation when part of execution;
-- commit and push;
-- remote verification and worker return.
+- commit and push to a worker branch;
+- open or verify the PR into `main`;
+- branch-head or merge verification;
+- worker return.
 
 ## No separate domain executors
 
@@ -56,7 +58,7 @@ Any Patch worker return must disclose:
 - lane label;
 - issue number if issue-backed;
 - whether tracked repo mutation occurred;
-- publication and verification state if mutation occurred.
+- worker branch, PR, and publication verification state if mutation occurred.
 
 ## Will workspace binding
 

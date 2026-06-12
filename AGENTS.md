@@ -44,7 +44,7 @@ Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
 Patch may be explicitly bound in either of two local lanes:
 
 - `Patch / project-director` - planning, issue shaping, source discipline, gate checks, routing decisions, verification, and repo-state judgement.
-- `Patch / execution` - repo-local file mutation, binary asset landing, source zip creation, index updates, issue updates, commit/push, and return evidence.
+- `Patch / execution` - repo-local file mutation, binary asset landing, source zip creation, index updates, issue updates, worker-branch commit/push, PR verification or merge verification, and return evidence.
 
 These are local bindings for one named project agent. They do not redefine Will's shared Project Director or execution actor role classes globally.
 

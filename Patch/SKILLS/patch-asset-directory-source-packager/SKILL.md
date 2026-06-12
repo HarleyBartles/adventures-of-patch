@@ -50,8 +50,8 @@ This skill handles source/package publishing only; repo-canonical image inspecti
 12. Update `assets/source-zips/INDEX.md` to list the new package.
 13. Validate that every index entry points to a real file.
 14. Validate zip contents by listing the archive and confirming there is no nested root folder.
-15. Commit and push to `origin/main`.
-16. Verify remote `origin/main` contains the asset directory files, updated indexes, and source zip.
+15. Commit and push to a worker branch.
+16. Open or verify the PR into `main`, then verify the worker branch head or merged result contains the asset directory files, updated indexes, and source zip.
 17. Return using `Patch/CONTRACTS/WORKER_RETURN_CONTRACT.md`.
 
 ## Validation
@@ -60,7 +60,7 @@ This skill handles source/package publishing only; repo-canonical image inspecti
 - The parent asset-family index includes the target directory entry when needed.
 - `assets/source-zips/INDEX.md` lists the landed source zip.
 - The zip root contains only files, never a wrapper directory.
-- Remote `origin/main` shows the committed path set after push.
+- The worker branch head or merged result shows the committed path set after push.
 
 ## Stop conditions
 

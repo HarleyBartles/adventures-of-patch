@@ -45,9 +45,9 @@ This skill handles package or import work only; repo-canonical image inspection 
 7. Decide target paths for individual assets, sidecars, receipts, and source packages.
 8. Rebuild repo-shaped source zips when the incoming zip is not already the canonical taxonomy package.
 9. Update all relevant `INDEX.md` files and playbook/doc surfaces.
-10. Commit and push to `main`.
-11. Verify remote `origin/main` contains the expected paths.
-12. Delete the ingress zip and any scratch extraction folders only after the landed repo files are committed, pushed, and remote-verified.
+10. Commit and push to a worker branch.
+11. Open or verify the PR into `main`, then verify the worker branch head or merged result contains the expected paths.
+12. Delete the ingress zip and any scratch extraction folders only after the landed repo files are committed, pushed, PR-verified, and remote-verified.
 13. Return using `Patch/CONTRACTS/WORKER_RETURN_CONTRACT.md`.
 
 ## Stop conditions

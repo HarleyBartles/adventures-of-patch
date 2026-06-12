@@ -12,8 +12,10 @@ If `tracked_repo_mutation` is `true`, then `green_allowed` must be `false` unles
 
 - local changes complete;
 - commit SHA or exact no-op classification;
-- push to `origin/main`;
-- remote head verification;
+- push to a worker branch;
+- worker branch head verification;
+- pull request opened into `main`;
+- PR verification or merge verification;
 - working tree cleanliness or exact remaining dirty state.
 
 A generated file, local package, report, or ledger is evidence only. It does not certify completion without publication proof.
@@ -33,12 +35,14 @@ issue_tracking:
   issue_backing_state: "issue-backed | not_applicable"
   issue_verification_state: "open | verified_pending_closure | blocked | follow-up-needed | not_applicable"
 repo_publication:
-  branch: "main | not_applicable"
+  branch: "<worker branch name | not_applicable>"
   tracked_repo_mutation: true
   local_changes_complete: "true | false | not_applicable"
   committed: "true | false | not_applicable"
-  pushed_origin_main: "true | false | not_applicable"
-  remote_head_verified: "true | false | not_applicable"
+  pushed_worker_branch: "true | false | not_applicable"
+  worker_branch_head_verified: "true | false | not_applicable"
+  pull_request_opened_into_main: "true | false | not_applicable"
+  pr_verified_or_merged: "true | false | not_applicable"
   working_tree_clean: "true | false | not_applicable"
   green_allowed: "true | false"
   green_blocker_if_false: "<exact blocker or not_applicable>"
