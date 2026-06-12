@@ -17,7 +17,7 @@ No repo-tracked payload zips:
 
 Cleanup contract:
 
-- Patch deletes successfully ingressed zips after the landed repo files are committed, pushed, and remote-verified.
+- Patch deletes successfully ingressed zips after the landed repo files are committed, pushed on a worker branch, and PR/merge-verified.
 - Patch deletes `_work/` and `_extracted/` scratch folders created for the ingress after successful publication.
 
 Scope reminder:
