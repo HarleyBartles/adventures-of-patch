@@ -1,0 +1,151 @@
+{
+  "schema": "adventures.visual_sidecar.v0.1",
+  "created_at": "2026-06-13T07:40:44Z",
+  "project": "Adventures of Patch",
+  "character": "Index",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for GPT/worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "uploaded_source_path": "/mnt/data/Index Anti-Patterns.png",
+    "uploaded_filename": "Index Anti-Patterns.png",
+    "sha256": "e862412832805eca7d0f745d954ca7adee9ca18642269a57d8b5d473f26b43cd",
+    "byte_size": 4044711,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "suggested_repo_path": "assets/characters/index/reference_sheets/index-anti-patterns.png",
+    "suggested_sidecar_path": "assets/characters/index/reference_sheets/index-anti-patterns-sidecar.json",
+    "asset_role": "anti_pattern_sheet",
+    "acceptance_state": "accepted_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high"
+  },
+  "summary": "Anti-pattern reference board for Index v1. It explicitly documents rejected designs, roles, props, materials, proportions, and behavior drifts that must not be replicated.",
+  "observed_visual_facts": {
+    "layout": [
+      "Landscape warning/reference board with cream panels, red rejection headers, red X overlays, and a dark green footer.",
+      "Top title reads INDEX v1 — ANTI-PATTERNS / DO NOT REPLICATE.",
+      "Multiple numbered sections show wrong Index interpretations with red strike-through marks.",
+      "Bottom strip gives Index identity at a glance with small approved cue icons."
+    ],
+    "main_rejection": [
+      "Large left panel rejects human librarian / archivist drift.",
+      "Rejected example shows a realistic human archivist/librarian in glasses holding books in a library-like setting.",
+      "Panel notes this is too human, real-world librarian/archive read, not an autonomous agent, wrong ontology, wrong face, wrong scale."
+    ],
+    "wrong_turnaround_variants": [
+      "Human archivist drift: human-like woman with glasses and clipboard/book, crossed out.",
+      "Elderly librarian drift: older human librarian styling with grey hair and skirt, crossed out.",
+      "Generic robot drift: small chrome/white robot with antennae and screen face, crossed out.",
+      "Patch clone drift: teal hoodie/antenna character resembling Patch, crossed out."
+    ],
+    "wrong_actions_roles": [
+      "Desk-bound Klause drift: Index at computers/dashboard, rejected as parser-trail/desk decision work.",
+      "Legal/Writ drift: records and assent/legal authority imagery, rejected as wrong jurisdiction.",
+      "Magic library drift: glowing purple magical archive with candles/runes, rejected as wrong genre.",
+      "Cute helper/mascot drift: waving, hearts, over-cute behavior, rejected as losing provenance role.",
+      "Paperwork storm drift: character swallowed by flying papers, rejected as evidence consuming the character.",
+      "Sad downcast drift: looking down as sadness, rejected because looking down should indicate attention.",
+      "Explorer/field drift: expedition scarf/bag energy, rejected as wrong role."
+    ],
+    "wrong_kit_props": [
+      "Literal glasses.",
+      "Human eyes with irises, pupils, catches, lashes.",
+      "Patch bag / terminal pouch.",
+      "Legal seals, gavels, ledgers.",
+      "Dashboards, laptops, stamp desk.",
+      "Magic books, runes, cursed items.",
+      "Field satchel / explorer gear.",
+      "Teal trainers / teal hoodie."
+    ],
+    "wrong_materials_colours": [
+      "Human skin tones.",
+      "Bright teal / Patch palette.",
+      "Glossy robot white / chrome.",
+      "Black tactical / stealth.",
+      "Purple magic / glow.",
+      "Sterile office blue / white.",
+      "Horror grime / mould.",
+      "Pink cute / doll palette."
+    ],
+    "wrong_scale_relationships": [
+      "Too tall / human scale reads too human.",
+      "Too small / toy scale loses presence.",
+      "Patch clone / two antennae gives wrong silhouette, colour, and gear.",
+      "Generic robot scale is not autonomous-agent identity.",
+      "Correct scale is compact Patch-level autonomous agent, not human-sized and not Bit/Bot simplification."
+    ],
+    "hard_nos": [
+      "No human woman, child, or exposed human face.",
+      "No elderly librarian caricature.",
+      "No schoolgirl/cute child styling.",
+      "No animal/chipmunk/furry/muzzle/ears/paws/tail.",
+      "No generic robot/helper bot/Bit/Bot simplification.",
+      "No Patch teal hoodie, two antennae, crossbody terminal bag, or teal trainers.",
+      "No literal glasses or removable eyewear.",
+      "No human eyes, irises, pupils, catches, lashes, or glossy wet-eye rendering.",
+      "No sad/worried/downcast emotion as substitute for attention direction.",
+      "No Writ seals, assent language, legal authority, gavels, courtrooms, legal ledgers.",
+      "No Klause desk/dashboard/office decision role/stamp workflow posture.",
+      "No magic/cursed/horror/mouldy/derelict/glowing archive.",
+      "No paperwork storm that swallows the character.",
+      "No robe/cloak/scarf/shawl/sporty hoodie/tactical hood/cowl replacing the slouchy hooded cardigan.",
+      "No bag/field satchel/explorer kit/expedition gear.",
+      "No bright toy colors or plastic feel."
+    ],
+    "identity_at_a_glance": [
+      "Autonomous agent, not human.",
+      "Source evidence / provenance specialist.",
+      "Fixed circular face surrounds.",
+      "Flat purplish-pink movable eye marks.",
+      "Muted-blue pencil bun.",
+      "Dowdy hooded cardigan, hood down.",
+      "Paper trail, not decision desk.",
+      "Stoic attention, not sad expression."
+    ],
+    "text_visible": [
+      "INDEX v1 — ANTI-PATTERNS / DO NOT REPLICATE",
+      "DO NOT REPLICATE THESE DESIGNS, POSES, PROPS, PROPORTIONS OR TREATMENTS. THESE BREAK INDEX’S ONTOLOGY AND VISUAL IDENTITY.",
+      "DO NOT MAKE INDEX HUMAN, ELDERLY, A GENERIC ROBOT, OR A PATCH RECOLOR.",
+      "INDEX PRINCIPLE: SOURCE FIRST. FOLLOW THE PAPER TRAIL. PRESERVE CONTEXT. REPORT WHAT IS, NOT WHAT SHOULD BE.",
+      "RECORDS • EVIDENCE • CONTEXT • TRACEABILITY"
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet primarily as negative guidance and QA rejection criteria.",
+    "Keep Index autonomous-agent ontology, not human or robot archetype.",
+    "Keep source-evidence identity: paper trail, records, provenance, careful retrieval.",
+    "Use the approved style sheet and approved hero for positive visual design; use this sheet to prevent drift.",
+    "Treat looking down as attentive source review when shown in valid contexts."
+  ],
+  "negative_constraints": [
+    "Do not replicate any crossed-out design, pose, prop set, color palette, scale, or role drift shown on this board.",
+    "Do not make Index human, elderly, generic robot, Patch recolor, explorer, lawyer, magical librarian, desk clerk, cute helper, or sad mascot.",
+    "Do not use human facial anatomy, glasses, teal hoodie, terminal bag, legal props, dashboards, magic props, field gear, pink doll colors, chrome robot materials, black stealth styling, or sterile office blue/white."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA rejection checks.",
+      "Prompt negative constraints.",
+      "Preventing role/ontology drift.",
+      "Differentiating Index from Patch, Bit/Bot, Writ, Klause, and generic human librarian imagery."
+    ],
+    "not_sufficient_for": [
+      "Positive generation by itself; pair with approved hero/style sheet.",
+      "Detailed final outfit rendering without the approved style sheet.",
+      "Treating any rejected example as a fallback design."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:index",
+      "asset:anti-patterns",
+      "state:accepted-reference",
+      "role:source-provenance"
+    ]
+  }
+}

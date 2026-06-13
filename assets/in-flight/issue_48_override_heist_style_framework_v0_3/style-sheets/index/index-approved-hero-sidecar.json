@@ -1,0 +1,117 @@
+{
+  "schema": "adventures.visual_sidecar.v0.1",
+  "created_at": "2026-06-13T07:40:44Z",
+  "project": "Adventures of Patch",
+  "character": "Index",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for GPT/worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "uploaded_source_path": "/mnt/data/Index Approved Hero.png",
+    "uploaded_filename": "Index Approved Hero.png",
+    "sha256": "722a9dcede500375ea37ce6060a2f3a8f6696ae0aa4814a2e10df51bb492c2f2",
+    "byte_size": 3130741,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "suggested_repo_path": "assets/characters/index/hero/index-approved-hero.png",
+    "suggested_sidecar_path": "assets/characters/index/hero/index-approved-hero-sidecar.json",
+    "asset_role": "approved_hero_image",
+    "acceptance_state": "accepted_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high"
+  },
+  "summary": "Approved hero image of Index carefully lifting and reviewing a parchment plan from a table stack. It is the clearest single-image reference for her source-first demeanor, faceplate, pencil-bun silhouette, cardigan texture, and archival document handling.",
+  "observed_visual_facts": {
+    "composition": [
+      "Portrait-oriented image with Index occupying the left and center foreground.",
+      "Warm parchment-toned background with soft painterly texture and no hard scene clutter.",
+      "Index stands at a table or work surface on the lower right.",
+      "A layered stack of parchment plans and source papers lies on the table.",
+      "Index lifts the top sheet with both hands, bending it upward to inspect the content.",
+      "The composition focuses on careful retrieval and review rather than action spectacle."
+    ],
+    "character_design": [
+      "Index has a large rounded pale faceplate with a thick cream rim.",
+      "Fixed circular eye surrounds are visible as two large pale rings on the faceplate.",
+      "Small purplish-pink eye marks sit low and to the side inside the eye surrounds, directed toward the lifted paper.",
+      "Tiny curved smile and small brow marks give a gentle, attentive, analytical expression.",
+      "Hair is dark indigo/blue-black and gathered into a high messy braided bun.",
+      "A yellow-orange pencil passes horizontally through the bun; red eraser end visible on one side and sharpened graphite tip visible on the other.",
+      "No antennae, no human ears, no human skin texture, and no literal human eyes."
+    ],
+    "costume": [
+      "Bulky brown knit hooded cardigan with heavy woven texture, large cuffs, pockets, and visible buttons.",
+      "Hood is down, bunching around the shoulders and neck.",
+      "Beige/tan collared blouse visible under the cardigan, with small buttons down the front.",
+      "Dark charcoal trousers are partly visible below the blouse/cardigan.",
+      "Grounded dark shoes are visible at the bottom.",
+      "Hands are cream/off-white simplified autonomous-agent hands."
+    ],
+    "props_and_environment": [
+      "Lifted parchment sheet contains faint diagrammatic markings, plans, and source notes.",
+      "Table stack includes multiple aged papers and folders with worn edges.",
+      "Small red paper tabs or markers are visible in the lower table stack.",
+      "The papers read as archival source material, plans, blueprints, or provenance records rather than magic scrolls or legal documents.",
+      "No computer, dashboard, legal seal, magic glow, field satchel, or terminal bag is present."
+    ],
+    "mood_and_role": [
+      "Mood is calm, source-first, careful, and observant.",
+      "Index’s downward gaze is attention to evidence, not sadness or dejection.",
+      "The action shows retrieval and inspection of source documents.",
+      "The image reinforces Index as provenance/source specialist rather than decision-maker, lawyer, librarian, or explorer."
+    ],
+    "style": [
+      "Clean Adventures editorial/vector-adjacent style with painterly shading.",
+      "Rounded readable linework and simplified forms.",
+      "Warm parchment and archive-paper color world.",
+      "Tactile textures on knit cardigan and aged papers."
+    ]
+  },
+  "positive_constraints": [
+    "Index is an autonomous agent, not a human, elderly librarian, generic robot, mascot, or Patch recolor.",
+    "Large pale faceplate with fixed circular eye surrounds.",
+    "Purplish-pink eye marks move inside the circular surrounds to show attention.",
+    "Indigo messy top bun secured with pencils.",
+    "Dowdy brown hooded cardigan, beige/tan blouse, charcoal dark trousers, grounded dark shoes.",
+    "Compact grounded proportions; not tall human scale, not toy/chibi mascot scale.",
+    "Gentle, analytical, observant demeanor; attention is shown through eye position, not sadness.",
+    "Source-evidence identity: records, paper trail, provenance, archival retrieval, careful context.",
+    "Use this image as the primary hero cue for Index’s calm document-inspection posture.",
+    "Preserve the large faceplate, circular eye surrounds, purplish-pink movable eye marks, and pencil-bun silhouette.",
+    "Preserve the bulky brown textured cardigan and beige blouse combination.",
+    "Use parchment plans, folded papers, source bundles, red tabs, and table stacks as source-evidence props.",
+    "Make her looking down read as attentive review of evidence."
+  ],
+  "negative_constraints": [
+    "Do not make Index sad, frightened, magical, legalistic, desk-bound, or field-adventurer coded.",
+    "Do not add human eyes, glasses, ears, nose, skin texture, or human librarian anatomy.",
+    "Do not give Patch’s teal hoodie, antennae, terminal bag, race-bib energy, or teal shoes.",
+    "Do not replace the paper source stack with laptop screens, dashboards, legal ledgers, magic books, or glowing archives.",
+    "Do not over-enlarge the scene into a paper storm; papers should remain manageable evidence."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Single-image Index hero reference.",
+      "Face, hair, outfit, and prop continuity.",
+      "Prompting document-inspection scenes.",
+      "QA for demeanor and ontology."
+    ],
+    "not_sufficient_for": [
+      "Full turnaround; use approved style sheet.",
+      "Complete prop inventory; use style sheet canonical kit panel.",
+      "Anti-pattern checks; use anti-pattern sheet."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:index",
+      "asset:hero",
+      "state:accepted-reference",
+      "role:source-provenance"
+    ]
+  }
+}
