@@ -1,130 +1,130 @@
 {
-  "schema": "adventures.visual_sidecar.v0.1",
-  "created_at": "2026-06-13T07:40:44Z",
-  "project": "Adventures of Patch",
-  "character": "Index",
-  "sidecar_purpose": "Repo-resident semantic image sidecar for GPT/worker selection, visual continuity, QA, and prompt constraint extraction.",
-  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
-  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
-  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
-  "image": {
-    "repo_image_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet.png",
-    "relative_image_path": "index-approved-style-sheet.png",
-    "repo_sidecar_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet-sidecar.json",
-    "relative_sidecar_path": "index-approved-style-sheet-sidecar.json",
-    "image_filename": "index-approved-style-sheet.png",
-    "sha256": "d60b9dd6ab9fb53b55a5f325ac2c50de6cd4c4f2d312b2cea68f68187abf3a36",
-    "byte_size": 3554108,
-    "mime_type": "image/png",
-    "dimensions": {
-      "width": 1448,
-      "height": 1086
-    },
-    "mode": "RGBA",
-    "asset_role": "approved_style_sheet",
-    "acceptance_state": "accepted_reference",
-    "inspection_mode": "pixel_inspected",
-    "confidence": "high"
-  },
-  "summary": "Approved full style sheet for Index, the Source & Provenance Specialist. It defines the canonical design, turnaround, action poses, canonical kit/props, material palette, identity locks, and guiding principle.",
-  "observed_visual_facts": {
-    "layout": [
-      "Large landscape reference-board layout with cream parchment background, dark green framing lines, and old archival document styling.",
-      "Left hero panel labeled INDEX, Source & Provenance Specialist, with an Approved Hero Reference banner.",
-      "Top right turnaround panel shows front, 3/4 view, profile, and rear views.",
-      "Middle right action/utility pose strip shows six labeled source-work actions.",
-      "Bottom left canonical kit and props strip shows source documents and stationery.",
-      "Bottom middle material and colour palette strip shows swatches with labels.",
-      "Bottom right identity lock/style rules strip lists canonical design rules.",
-      "Footer line states Index’s principle and small box repeats source/retrieval/context motto."
-    ],
-    "character_design": [
-      "Index has a large pale circular faceplate set into a cream ring, with fixed circular eye surrounds and small purplish-pink eye marks.",
-      "Index’s eyes are not human eyes; the eye marks sit within large circular surrounds and shift direction to show attention.",
-      "Index has dark indigo hair formed into a high messy braided top bun.",
-      "Two pencils pass through the bun as practical hair fasteners and identity props.",
-      "Index wears a beige/tan collared blouse with small buttons.",
-      "Index wears a textured brown knit hooded cardigan with visible bulky weave, pockets, cuffs, and buttons.",
-      "Index wears charcoal dark trousers and grounded dark shoes.",
-      "Index has compact, grounded, autonomous-agent proportions with a small body beneath the large faceplate."
-    ],
-    "turnaround": [
-      "Front view shows symmetrical faceplate, high pencil bun, cardigan open over blouse, dark trousers, and dark shoes.",
-      "3/4 view keeps the faceplate rounded and shows the eye marks looking diagonally downward/sideways.",
-      "Profile view shows the faceplate and cream ring as a thick rounded disc with hair mass behind it.",
-      "Rear view emphasizes the indigo bun, pencil crossing the back of the head, cardigan hood, and brown knit back texture."
-    ],
-    "action_utility_poses": [
-      "Pose 1: Review folded plan at a table; Index leans over parchment, eye marks aimed down at the source.",
-      "Pose 2: Compare sources while holding two papers, checking one against another.",
-      "Pose 3: Retrieve file from a tall filing cabinet, standing slightly lifted to reach a drawer.",
-      "Pose 4: Check archive box while kneeling over a labeled box, hands working through records.",
-      "Pose 5: Lift to reveal notes from a layered plan/paper stack on the table.",
-      "Pose 6: Carry source bundle while walking with a document bundle held close."
-    ],
-    "canonical_kit_props": [
-      "Folded blueprint or plan.",
-      "Tied/folded source bundle.",
-      "Archival sheets and notes.",
-      "Pair of pencils.",
-      "Clipboard.",
-      "Index tabs or slips."
-    ],
-    "text_visible": [
-      "INDEX",
-      "SOURCE & PROVENANCE SPECIALIST",
-      "APPROVED HERO REFERENCE",
-      "TURNAROUND",
-      "ACTION / UTILITY POSES",
-      "CANONICAL KIT & PROPS",
-      "MATERIALS & COLOUR PALETTE",
-      "IDENTITY LOCK / STYLE RULES",
-      "INDEX’S PRINCIPLE: THROUGH CAREFUL SOURCES AND ATTENTIVE RETRIEVAL, TRUTH CAN BE FOUND AND PRESERVED.",
-      "ACCURATE SOURCES. CAREFUL RETRIEVAL. CLEAR CONTEXT."
-    ]
-  },
-  "positive_constraints": [
-    "Index is an autonomous agent, not a human, elderly librarian, generic robot, mascot, or Patch recolor.",
-    "Large pale faceplate with fixed circular eye surrounds.",
-    "Purplish-pink eye marks move inside the circular surrounds to show attention.",
-    "Indigo messy top bun secured with pencils.",
-    "Dowdy brown hooded cardigan, beige/tan blouse, charcoal dark trousers, grounded dark shoes.",
-    "Compact grounded proportions; not tall human scale, not toy/chibi mascot scale.",
-    "Gentle, analytical, observant demeanor; attention is shown through eye position, not sadness.",
-    "Source-evidence identity: records, paper trail, provenance, archival retrieval, careful context.",
-    "Keep Index source-first: paper trail, provenance, retrieval, comparison, and context are her visual language.",
-    "Use warm parchment/archive materials, muted scholarly colors, and tactile paper props.",
-    "Represent activity through careful handling of documents, file retrieval, comparison, and archival sorting.",
-    "Maintain the pencil-bun silhouette and textured hooded cardigan as strong identity anchors.",
-    "Attention may shift by moving the purplish-pink eye marks inside fixed circular surrounds."
-  ],
-  "negative_constraints": [
-    "Do not make Index a human woman, elderly librarian, office clerk, legal authority, dashboard worker, explorer, magician, or robot.",
-    "Do not give Index literal human eyes, glasses, irises, lashes, human skin texture, or human facial anatomy.",
-    "Do not make her a Patch clone, teal-hoodie character, or generic mascot.",
-    "Do not replace source papers with laptops, dashboards, legal ledgers, magic books, field satchels, or terminal bags.",
-    "Do not make the paper storm consume the character; evidence supports Index, it does not swallow her.",
-    "Do not show sadness by making her look down; looking down means attention to sources."
-  ],
-  "sidecar_usage": {
-    "best_for": [
-      "Canonical Index design reference.",
-      "Turnaround/proportion checks.",
-      "Prompt constraints for Index scenes.",
-      "Prop and palette extraction.",
-      "QA against character drift."
-    ],
-    "not_sufficient_for": [
-      "Final acceptance of new generated images without image QA.",
-      "Precise OCR of every small label if exact wording matters.",
-      "Authorizing non-Index character design changes."
-    ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:index",
-      "asset:style-sheet",
-      "state:accepted-reference",
-      "role:source-provenance"
-    ]
-  }
+    "schema":  "adventures.visual_sidecar.v0.1",
+    "project":  "Adventures of Patch",
+    "character":  "Index",
+    "sidecar_purpose":  "Repo-resident semantic image sidecar for GPT/worker selection, visual continuity, QA, and prompt constraint extraction.",
+    "source_truth_note":  "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+    "runtime_use_note":  "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+    "do_not_infer_note":  "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+    "image":  {
+                  "repo_image_path":  "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet.png",
+                  "relative_image_path":  "index-approved-style-sheet.png",
+                  "repo_sidecar_path":  "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet-sidecar.json",
+                  "relative_sidecar_path":  "index-approved-style-sheet-sidecar.json",
+                  "image_filename":  "index-approved-style-sheet.png",
+                  "sha256":  "d60b9dd6ab9fb53b55a5f325ac2c50de6cd4c4f2d312b2cea68f68187abf3a36",
+                  "byte_size":  3554108,
+                  "mime_type":  "image/png",
+                  "dimensions":  {
+                                     "width":  1448,
+                                     "height":  1086
+                                 },
+                  "mode":  "RGBA",
+                  "asset_role":  "approved_style_sheet",
+                  "acceptance_state":  "accepted_reference",
+                  "inspection_mode":  "pixel_inspected",
+                  "confidence":  "high"
+              },
+    "summary":  "Approved full style sheet for Index, the Source \u0026 Provenance Specialist. It defines the canonical design, turnaround, action poses, canonical kit/props, material palette, identity locks, and guiding principle.",
+    "observed_visual_facts":  {
+                                  "layout":  [
+                                                 "Large landscape reference-board layout with cream parchment background, dark green framing lines, and old archival document styling.",
+                                                 "Left hero panel labeled INDEX, Source \u0026 Provenance Specialist, with an Approved Hero Reference banner.",
+                                                 "Top right turnaround panel shows front, 3/4 view, profile, and rear views.",
+                                                 "Middle right action/utility pose strip shows six labeled source-work actions.",
+                                                 "Bottom left canonical kit and props strip shows source documents and stationery.",
+                                                 "Bottom middle material and colour palette strip shows swatches with labels.",
+                                                 "Bottom right identity lock/style rules strip lists canonical design rules.",
+                                                 "Footer line states Index’s principle and small box repeats source/retrieval/context motto."
+                                             ],
+                                  "character_design":  [
+                                                           "Index has a large pale circular faceplate set into a cream ring, with fixed circular eye surrounds and small purplish-pink eye marks.",
+                                                           "Index’s eyes are not human eyes; the eye marks sit within large circular surrounds and shift direction to show attention.",
+                                                           "Index has dark indigo hair formed into a high messy braided top bun.",
+                                                           "Two pencils pass through the bun as practical hair fasteners and identity props.",
+                                                           "Index wears a beige/tan collared blouse with small buttons.",
+                                                           "Index wears a textured brown knit hooded cardigan with visible bulky weave, pockets, cuffs, and buttons.",
+                                                           "Index wears charcoal dark trousers and grounded dark shoes.",
+                                                           "Index has compact, grounded, autonomous-agent proportions with a small body beneath the large faceplate."
+                                                       ],
+                                  "turnaround":  [
+                                                     "Front view shows symmetrical faceplate, high pencil bun, cardigan open over blouse, dark trousers, and dark shoes.",
+                                                     "3/4 view keeps the faceplate rounded and shows the eye marks looking diagonally downward/sideways.",
+                                                     "Profile view shows the faceplate and cream ring as a thick rounded disc with hair mass behind it.",
+                                                     "Rear view emphasizes the indigo bun, pencil crossing the back of the head, cardigan hood, and brown knit back texture."
+                                                 ],
+                                  "action_utility_poses":  [
+                                                               "Pose 1: Review folded plan at a table; Index leans over parchment, eye marks aimed down at the source.",
+                                                               "Pose 2: Compare sources while holding two papers, checking one against another.",
+                                                               "Pose 3: Retrieve file from a tall filing cabinet, standing slightly lifted to reach a drawer.",
+                                                               "Pose 4: Check archive box while kneeling over a labeled box, hands working through records.",
+                                                               "Pose 5: Lift to reveal notes from a layered plan/paper stack on the table.",
+                                                               "Pose 6: Carry source bundle while walking with a document bundle held close."
+                                                           ],
+                                  "canonical_kit_props":  [
+                                                              "Folded blueprint or plan.",
+                                                              "Tied/folded source bundle.",
+                                                              "Archival sheets and notes.",
+                                                              "Pair of pencils.",
+                                                              "Clipboard.",
+                                                              "Index tabs or slips."
+                                                          ],
+                                  "text_visible":  [
+                                                       "INDEX",
+                                                       "SOURCE \u0026 PROVENANCE SPECIALIST",
+                                                       "APPROVED HERO REFERENCE",
+                                                       "TURNAROUND",
+                                                       "ACTION / UTILITY POSES",
+                                                       "CANONICAL KIT \u0026 PROPS",
+                                                       "MATERIALS \u0026 COLOUR PALETTE",
+                                                       "IDENTITY LOCK / STYLE RULES",
+                                                       "INDEX’S PRINCIPLE: THROUGH CAREFUL SOURCES AND ATTENTIVE RETRIEVAL, TRUTH CAN BE FOUND AND PRESERVED.",
+                                                       "ACCURATE SOURCES. CAREFUL RETRIEVAL. CLEAR CONTEXT."
+                                                   ]
+                              },
+    "positive_constraints":  [
+                                 "Index is an autonomous agent, not a human, elderly librarian, generic robot, mascot, or Patch recolor.",
+                                 "Large pale faceplate with fixed circular eye surrounds.",
+                                 "Purplish-pink eye marks move inside the circular surrounds to show attention.",
+                                 "Indigo messy top bun secured with pencils.",
+                                 "Dowdy brown hooded cardigan, beige/tan blouse, charcoal dark trousers, grounded dark shoes.",
+                                 "Compact grounded proportions; not tall human scale, not toy/chibi mascot scale.",
+                                 "Gentle, analytical, observant demeanor; attention is shown through eye position, not sadness.",
+                                 "Source-evidence identity: records, paper trail, provenance, archival retrieval, careful context.",
+                                 "Keep Index source-first: paper trail, provenance, retrieval, comparison, and context are her visual language.",
+                                 "Use warm parchment/archive materials, muted scholarly colors, and tactile paper props.",
+                                 "Represent activity through careful handling of documents, file retrieval, comparison, and archival sorting.",
+                                 "Maintain the pencil-bun silhouette and textured hooded cardigan as strong identity anchors.",
+                                 "Attention may shift by moving the purplish-pink eye marks inside fixed circular surrounds."
+                             ],
+    "negative_constraints":  [
+                                 "Do not make Index a human woman, elderly librarian, office clerk, legal authority, dashboard worker, explorer, magician, or robot.",
+                                 "Do not give Index literal human eyes, glasses, irises, lashes, human skin texture, or human facial anatomy.",
+                                 "Do not make her a Patch clone, teal-hoodie character, or generic mascot.",
+                                 "Do not replace source papers with laptops, dashboards, legal ledgers, magic books, field satchels, or terminal bags.",
+                                 "Do not make the paper storm consume the character; evidence supports Index, it does not swallow her.",
+                                 "Do not show sadness by making her look down; looking down means attention to sources."
+                             ],
+    "sidecar_usage":  {
+                          "best_for":  [
+                                           "Canonical Index design reference.",
+                                           "Turnaround/proportion checks.",
+                                           "Prompt constraints for Index scenes.",
+                                           "Prop and palette extraction.",
+                                           "QA against character drift."
+                                       ],
+                          "not_sufficient_for":  [
+                                                     "Final acceptance of new generated images without image QA.",
+                                                     "Precise OCR of every small label if exact wording matters.",
+                                                     "Authorizing non-Index character design changes."
+                                                 ],
+                          "linear_view_route":  null,
+                          "repo_index_tags":  [
+                                                  "character:index",
+                                                  "asset:style-sheet",
+                                                  "state:accepted-reference",
+                                                  "role:source-provenance"
+                                              ]
+                      },
+    "created_at":  "2026-06-13T07:40:44Z"
 }

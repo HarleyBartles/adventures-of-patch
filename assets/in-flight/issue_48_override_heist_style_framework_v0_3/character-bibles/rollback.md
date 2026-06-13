@@ -14,10 +14,10 @@ Detailed Rollback panel/frame grammar lives in `../frame-bibles/rollback_frame_b
 
 Use these references in this order when generating, QAing, or briefing Rollback:
 
-1. [Accepted Rollback v1 hero reference](../style-sheets/rollback/Rollback%20Approved%20Hero.png) - highest authority for Rollback's character identity, largest-believable-agent proportions, warm rich-brown faceplate, close-cropped beard, one antenna, one loose hood, olive-drab workwear, calm planted posture, and controlled light-painterly finish.
-2. [Accepted Rollback v1 approved style sheet](../style-sheets/rollback/Rollback%20Approved%20Style%20Sheet.png) - highest authority for multi-view consistency, front / 3/4 / profile / rear views, approved action poses, canonical kit, materials/colours, Patch-vs-Rollback scale silhouette relationship, and boring-repeatable rendering.
+1. [Accepted Rollback v1 hero reference](../style-sheets/rollback/rollback-approved-hero.png) - highest authority for Rollback's character identity, largest-believable-agent proportions, warm rich-brown faceplate, close-cropped beard, one antenna, one loose hood, olive-drab workwear, calm planted posture, and controlled light-painterly finish.
+2. [Accepted Rollback v1 approved style sheet](../style-sheets/rollback/rollback-approved-style-sheet.png) - highest authority for multi-view consistency, front / 3/4 / profile / rear views, approved action poses, canonical kit, materials/colours, Patch-vs-Rollback scale silhouette relationship, and boring-repeatable rendering.
 3. [This `rollback.md` bible](rollback.md) - prose authority for role, identity, positive constraints, negative constraints, reference hierarchy, and QA gates.
-4. [Accepted Rollback v1 anti-pattern sheet](../style-sheets/rollback/Rollback%20Anti-Patterns.png) - negative-control authority only. It shows known failure modes to reject. Do not use it as positive design reference.
+4. [Accepted Rollback v1 anti-pattern sheet](../style-sheets/rollback/rollback-prohibited-anti-patterns.png) - negative-control authority only. It shows known failure modes to reject. Do not use it as positive design reference.
 5. [Frame bible](../frame-bibles/rollback_frame_bible.md) - use only for containment observation-deck frame grammar, not for changing Rollback's base character design.
 
 When generating Rollback, boring continuity beats novelty. Preserve the accepted hero reference and approved style sheet unless the task explicitly asks for redesign or alternate state.
@@ -215,3 +215,4 @@ Do not make Rollback a literal human soldier, human security guard, realistic hu
 ## Frame grammar routing
 
 Detailed Rollback panel/frame grammar lives in `../frame-bibles/rollback_frame_bible.md`. This character bible should stay focused on character identity, recruitment language, accepted v1 visual direction, approved style reference, anti-pattern boundaries, payoff, and character QA.
+

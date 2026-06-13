@@ -6,7 +6,7 @@
   "record_count": 3,
   "records": [
     {
-      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/klause/Klause Anti-Patterns.png",
+      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/klause/klause-prohibited-anti-patterns.png",
       "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
       "source_blob_sha": "9af63921a510c3e86672889d327a09849bad66ec",
       "extension": ".png",
@@ -58,7 +58,7 @@
       "sidecar_shard": "shards/shard__assets_in_flight_issue_48_override_heist_style_framework_v0_3_style_sheets_klause__v0_1.json"
     },
     {
-      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/klause/Klause Approved Hero.png",
+      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/klause/klause-approved-hero.png",
       "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
       "source_blob_sha": "1d4035bd010e140540b44941312d5222ea3e57a1",
       "extension": ".png",
@@ -110,7 +110,7 @@
       "sidecar_shard": "shards/shard__assets_in_flight_issue_48_override_heist_style_framework_v0_3_style_sheets_klause__v0_1.json"
     },
     {
-      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/klause/Klause Approved Style Sheet.png",
+      "source_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/klause/klause-approved-style-sheet.png",
       "source_commit": "5881103fabbe0aa253f0811a671e488b57cc65ba",
       "source_blob_sha": "3d0cd66699e8fbedb96d4d8840bc8f4ac3502142",
       "extension": ".png",
@@ -163,3 +163,4 @@
     }
   ]
 }
+

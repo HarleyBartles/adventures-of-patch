@@ -4,6 +4,7 @@ This directory holds in-flight Rollback style-sheet image references.
 
 ## Files in this directory
 
-- [Rollback Approved Hero.png](Rollback%20Approved%20Hero.png) - accepted Rollback hero reference.
-- [Rollback Approved Style Reference.png](Rollback%20Approved%20Style%20Reference.png) - accepted Rollback style reference.
-- [Rollback Anti-Pattenrs.png](Rollback%20Anti-Pattenrs.png) - negative-control reference only; keep clearly rejected.
+- [rollback-approved-hero.png](rollback-approved-hero.png) - accepted Rollback hero reference.
+- [rollback-approved-style-sheet.png](rollback-approved-style-sheet.png) - accepted Rollback style reference.
+- [rollback-prohibited-anti-patterns.png](rollback-prohibited-anti-patterns.png) - negative-control reference only; keep clearly rejected.
+

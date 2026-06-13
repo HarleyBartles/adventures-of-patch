@@ -16,10 +16,10 @@ Detailed Silk panel/frame grammar lives in `../frame-bibles/silk_frame_bible.md`
 
 Use these references in this order when generating, QAing, or briefing Silk:
 
-1. [Accepted Silk v1 hero shot](../style-sheets/silk/Silk%20Approved%20Hero.png) - highest authority for Silk's character identity, body proportions, hoodie silhouette, compact crouched working posture, face read, single antenna, red-thread spool pack, and approved heist-comic finish.
-2. [Accepted Silk v1 approved style sheet](../style-sheets/silk/Silk%20Approved%20Style%20Sheet.png) - highest authority for multi-view consistency, front / 3/4 / profile / rear views, approved action poses, canonical props, canonical colour relationships, and boring-repeatable rendering.
+1. [Accepted Silk v1 hero shot](../style-sheets/silk/silk-approved-hero.png) - highest authority for Silk's character identity, body proportions, hoodie silhouette, compact crouched working posture, face read, single antenna, red-thread spool pack, and approved heist-comic finish.
+2. [Accepted Silk v1 approved style sheet](../style-sheets/silk/silk-approved-style-sheet.png) - highest authority for multi-view consistency, front / 3/4 / profile / rear views, approved action poses, canonical props, canonical colour relationships, and boring-repeatable rendering.
 3. [This `silk.md` bible](silk.md) - prose authority for role, identity, positive constraints, negative constraints, and QA gates.
-4. [Accepted Silk v1 anti-pattern sheet](../style-sheets/silk/Silk%20Anti-Patterns.png) - negative-control authority only. It shows known failure modes to reject. Do not use it as positive design reference.
+4. [Accepted Silk v1 anti-pattern sheet](../style-sheets/silk/silk-prohibited-anti-patterns.png) - negative-control authority only. It shows known failure modes to reject. Do not use it as positive design reference.
 5. [Frame bible](../frame-bibles/silk_frame_bible.md) - use only for panel-boundary and route-transition behaviour, not for changing Silk's base character design.
 
 When generating Silk, boring continuity beats novelty. Preserve the accepted hero shot and approved style sheet unless the task explicitly asks for redesign or alternate state.
@@ -224,3 +224,4 @@ Do not make Silk a literal spider, animal, monster, horror creature, spider-pers
 - Does the result avoid third-party-recognisable superhero, spider-hero, or masked-mercenary costume language?
 - If the anti-pattern sheet is included in a package, is it clearly labelled and visibly marked as rejected / do not replicate?
 - Does the character bible stay focused on identity while frame grammar is delegated to `silk_frame_bible.md`?
+

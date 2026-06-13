@@ -43,9 +43,9 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [character-bibles/index.md](character-bibles/index.md) — Index recruitment/character-language bible.
 - [character-bibles/silk.md](character-bibles/silk.md) â€” Silk recruitment/character-language bible and current design direction.
 - [style-sheets/INDEX.md](style-sheets/INDEX.md) â€” in-flight style-sheet image references for Index, Klause, Patch, Receipt, Rollback, Silk, and Writ.
-- [style-sheets/silk/Silk Approved Hero.png](style-sheets/silk/Silk%20Approved%20Hero.png) â€” accepted Silk v1 hero shot, primary character reference.
-- [style-sheets/silk/Silk Approved Style Sheet.png](style-sheets/silk/Silk%20Approved%20Style%20Sheet.png) â€” accepted Silk v1 approved style sheet, primary multi-view reference.
-- [style-sheets/silk/Silk Anti-Patterns.png](style-sheets/silk/Silk%20Anti-Patterns.png) â€” accepted Silk v1 anti-pattern sheet, negative-control reference only.
+- [style-sheets/silk/silk-approved-hero.png](style-sheets/silk/silk-approved-hero.png) â€” accepted Silk v1 hero shot, primary character reference.
+- [style-sheets/silk/silk-approved-style-sheet.png](style-sheets/silk/silk-approved-style-sheet.png) â€” accepted Silk v1 approved style sheet, primary multi-view reference.
+- [style-sheets/silk/silk-prohibited-anti-patterns.png](style-sheets/silk/silk-prohibited-anti-patterns.png) â€” accepted Silk v1 anti-pattern sheet, negative-control reference only.
 - [character-bibles/rollback.md](character-bibles/rollback.md) — Rollback recruitment/character-language bible.
 - [character-bibles/writ.md](character-bibles/writ.md) — Writ recruitment/character-language bible.
 - [character-bibles/klause.md](character-bibles/klause.md) — Klause recruitment/character-language bible.
@@ -57,3 +57,4 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 The six recruitment-language outcomes are approved carry-forward doctrine for planning. They are not final character appearance sheets.
 
 The Silk character bible now includes the accepted working design direction from the sketch/contact-sheet pass: Threadline Inspector A as base, grey hoodie, single antenna, compact red-thread rigging kit, and light Clipwright/Quiet Pin borrowing. This is a working design direction, not final turnaround canon.
+
