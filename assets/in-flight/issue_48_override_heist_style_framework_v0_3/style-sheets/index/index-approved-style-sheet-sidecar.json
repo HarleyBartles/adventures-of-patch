@@ -8,8 +8,11 @@
   "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
   "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
   "image": {
-    "uploaded_source_path": "/mnt/data/Index Approved Style Sheet.png",
-    "uploaded_filename": "Index Approved Style Sheet.png",
+    "repo_image_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet.png",
+    "relative_image_path": "index-approved-style-sheet.png",
+    "repo_sidecar_path": "assets/in-flight/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet-sidecar.json",
+    "relative_sidecar_path": "index-approved-style-sheet-sidecar.json",
+    "image_filename": "index-approved-style-sheet.png",
     "sha256": "d60b9dd6ab9fb53b55a5f325ac2c50de6cd4c4f2d312b2cea68f68187abf3a36",
     "byte_size": 3554108,
     "mime_type": "image/png",
@@ -18,8 +21,6 @@
       "height": 1086
     },
     "mode": "RGBA",
-    "suggested_repo_path": "assets/characters/index/reference_sheets/index-approved-style-sheet.png",
-    "suggested_sidecar_path": "assets/characters/index/reference_sheets/index-approved-style-sheet-sidecar.json",
     "asset_role": "approved_style_sheet",
     "acceptance_state": "accepted_reference",
     "inspection_mode": "pixel_inspected",
