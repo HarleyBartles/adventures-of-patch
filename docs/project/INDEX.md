@@ -122,7 +122,7 @@ The short version:
 4. Create a deck plan.
 5. Create an image plan and prompt pack.
 6. Run visual-intent gate and Patch image preflight.
-7. Inspect repo-tracked Patch references and the view-surface registry for pixel-backed Patch assets.
+7. Inspect repo-tracked Patch references and repo-indexed contact-sheet intake packages for pixel-backed Patch assets.
 8. Generate images, or stop and report a blocker.
 9. Build the PPTX only after required image status is explicit.
 10. Create presenter sidecar, preferably PDF.

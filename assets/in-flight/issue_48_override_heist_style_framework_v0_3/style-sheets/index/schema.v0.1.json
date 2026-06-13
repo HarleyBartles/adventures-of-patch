@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adventures.visual_sidecar.adjacent.v1",
+  "title": "Adventures adjacent visual sidecar schema v0.1",
+  "type": "object",
+  "required": [
+    "schema",
+    "project",
+    "image",
+    "summary",
+    "observed_visual_facts",
+    "sidecar_usage"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "adventures.visual_sidecar.adjacent.v1"
+    },
+    "project": {
+      "type": "string"
+    },
+    "character": {
+      "type": "string"
+    },
+    "sidecar_purpose": {
+      "type": "string"
+    },
+    "source_truth_note": {
+      "type": "string"
+    },
+    "runtime_use_note": {
+      "type": "string"
+    },
+    "do_not_infer_note": {
+      "type": "string"
+    },
+    "image": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "observed_visual_facts": {
+      "type": "object"
+    },
+    "positive_constraints": {
+      "type": "array"
+    },
+    "negative_constraints": {
+      "type": "array"
+    },
+    "sidecar_usage": {
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
