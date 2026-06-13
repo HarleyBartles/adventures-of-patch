@@ -13,3 +13,4 @@ None.
 ## Notes for agents
 
 Template discovery starts here. The JSON sidecar is the GPT-readable compile contract, and the matching project-source PNG/spec filenames are recorded beside each template entry.
+Template PNGs and their JSON sidecars live together in the local `asset-sheets/` mesh; read the adjacent sidecar rather than looking for a central sidecar registry.

@@ -17,8 +17,6 @@ When project work reaches an external app connector action, use `docs/project/co
 ## Files in this directory
 
 - `INDEX.md` - this file; project index and source map for docs/project.
-- `repo-resident-visual-sidecar-proof.md` - repo-backed proof note showing how tracked visual surfaces are anchored by repo-resident sidecars and lane metadata.
-- `repo-resident-visual-sidecar-amber-report.md` - AMBER return note with inspected subset and blocker.
 
 ## Subdirectories
 
@@ -44,14 +42,12 @@ For a fresh agent session or repo-sensitive task:
 - `AGENTS.md` - agent navigation, source discipline, Patch actor routing, visual Patch rules, and production gates.
 - `playbooks/image-generation-resource-discipline.md` - durable image-credit stewardship doctrine for deterministic/no-credit visual work.
 - `INDEX.md` - root directory index and top-level navigation surface.
-- `repo-resident-visual-sidecar-proof.md` - repo proof note for PATCH-21 sidecar coverage.
-- `assets/visual-sidecars/` - repo-resident image-sidecar selection and routing mesh for tracked repo images.
-- `assets/visual-sidecars/inspected_subset.v0.1.json` - representative pixel-inspected subset for PATCH-21.
 - `Patch/` - Patch project-local actor surface, with project-director and execution lanes.
 - `Patch/SKILLS/` - Patch-owned repo-resident executable capabilities.
 - `playbooks/` - first-class Adventures project/domain playbooks.
 - `docs/adventures/future-patch-adventures.md` - seed list of future Patch adventure concepts.
 - `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
+- Adjacent image semantic sidecars live beside the images they describe as `*-sidecar.json` files and are discovered through local directory indexes rather than a central registry.
 - `assets/canon/patch/` - canonical Patch visual guidance and asset surfaces, including `reference_sheets/` for explicit canon/reference PNGs with local filenames.
 - `assets/source-zips/` - committed source packages or legacy/import bundles. These are not automatically active canon unless indexed or documented and are not the default image-inspection route.
 - `assets/evidence/receipts/` - committed receipt packages and evidence bundles.

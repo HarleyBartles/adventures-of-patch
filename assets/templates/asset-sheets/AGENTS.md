@@ -10,3 +10,4 @@ Read, in order:
 4. `INDEX.md`
 
 Use the sidecar as the compile contract and keep the template/source pair discoverable through the index mesh.
+Template sidecars are adjacent to the template PNGs and use matching basenames; do not infer a separate central sidecar mesh.

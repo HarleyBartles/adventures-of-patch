@@ -11,3 +11,4 @@ When working in `assets/`, start with:
 5. the relevant child directory `INDEX.md`
 
 Treat repo-tracked indexes, receipts, and canon as authoritative. Treat source-zips as package/import/integrity material unless the repo explicitly promotes them into active canon.
+Adjacent image semantic sidecars use `"{image-basename}-sidecar.json"` and should be discovered through the local directory index mesh rather than a central registry.

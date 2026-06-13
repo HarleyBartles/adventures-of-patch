@@ -15,10 +15,10 @@ Live directory listing.
 - `environments/`
 - `evidence/`
 - `source-zips/`
-- `visual-sidecars/`
 - `templates/`
 
 ## Notes for agents
 
 This directory uses path, lane, and manifest metadata for taxonomy.
 Active reusable asset families live under `asset_packs/`; filenames inside lanes are local identifiers only.
+Image-sidecar pairs are discovered through the normal directory index mesh and live beside the images they describe as `*-sidecar.json` files.
