@@ -1,5 +1,5 @@
 {
-    "schema":  "adventures.visual_sidecar.v0.1",
+    "schema":  "adventures.visual_sidecar.adjacent.v1",
     "project":  "Adventures of Patch",
     "character":  "Index",
     "sidecar_purpose":  "Repo-resident semantic image sidecar for GPT/worker selection, visual continuity, QA, and prompt constraint extraction.",

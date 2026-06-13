@@ -35,3 +35,4 @@ Live directory listing for discoverable asset-sheet templates.
 ## Notes for agents
 
 Read the sibling JSON sidecar before deterministic compile. The sidecar is the repo-discoverable compile contract and records the matching project-source filenames, slot geometry, and intended use.
+Each template PNG is paired with a sibling `template_asset_sheet_*.json` sidecar in this directory; the local index is the discoverability surface, not a central registry.

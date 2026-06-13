@@ -11,3 +11,4 @@ Read, in order:
 5. the relevant in-flight issue subtree `INDEX.md`
 
 Treat this area as temporary working space until an issue or repo guide promotes the work elsewhere.
+When in-flight image references carry semantic sidecars, expect the JSON file to live beside the image in the same local folder with a `-sidecar.json` suffix.
