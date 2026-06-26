@@ -58,6 +58,8 @@ Patch actor governance lives under `Patch/`. Patch-owned executable capabilities
 
 The repo is canonical. Do not treat uploaded project-source zips, chat attachments, or local scratch files as active project truth unless the repo points to them or the user explicitly scopes the task to that artifact.
 
+For Adventures plugin installs, use `.agents/plugins/marketplace.json` and the pinned `adventures-pack` source entry. Do not treat `.agents/skills` as canonical for this bundle unless the issue explicitly documents a fallback.
+
 Repo files, repo issues, repo-tracked receipts, and repo-tracked asset documentation are authoritative project state.
 
 If a required guide or asset is missing from the repo, report it as a blocker or repo hygiene gap. Do not silently substitute memory or uploaded zips.

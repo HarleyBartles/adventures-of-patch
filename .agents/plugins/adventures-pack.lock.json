@@ -1,0 +1,22 @@
+{
+  "plugin": "adventures-pack",
+  "source_repo": "https://github.com/HarleyBartles/agent-asset-marketplace.git",
+  "source_path": "codex-marketplace/plugins/adventures-pack",
+  "source_sha": "2ae5f3a33670c212a8e09345302c5b47bbc0d873",
+  "plugin_version": "1.0.0",
+  "expected_skills": [
+    "adventures-project-doctrine",
+    "adventures-bootstrap",
+    "adventures-github-operations",
+    "adventures-visual-preproduction",
+    "adventures-storyboard-preflight",
+    "adventures-visual-bible-creator",
+    "adventures-visual-bible-interpreter",
+    "adventures-image-qa",
+    "adventures-asset-sheet-compiler",
+    "adventures-frame-buster",
+    "don-logan-boundary",
+    "linear"
+  ],
+  "updated_at": "2026-06-26"
+}
