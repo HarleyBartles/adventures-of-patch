@@ -11,6 +11,7 @@ No direct documentation files are expected at this level. Navigate into subdirec
 - `adventures/` - Patch adventure concept lists and narrative seeds. See `adventures/INDEX.md`.
 - `principles/` - software-agent working principles and teaching notes. See `principles/INDEX.md`.
 - `project/` - project indexes, workflow notes, doctrine summaries, and bootstrap/navigation material. See `project/INDEX.md`.
+- `superpowers/` - repo-local planning artifacts for superpowers-driven workflows. See `superpowers/INDEX.md`.
 
 ## Notes for agents
 
