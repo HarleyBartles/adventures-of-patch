@@ -13,7 +13,7 @@ metadata:
   provenance-name: Work Mode Router first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when cross-runtime bootstrap router for new project sessions and workflow-sensitive
     starts after repo adoption. Use when a project context begins, a session resumes,
     or a request may involve continuity ingress, repo/source evidence, coding dispatch,

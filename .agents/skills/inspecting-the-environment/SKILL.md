@@ -10,7 +10,7 @@ metadata:
   provenance-name: Inspecting The Environment first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when about to take action and environment constraints could change the
     next step — discovers shell syntax, worktree state, repo state, path style, CLI
     availability, auth, connectors, mutation authority, and protected surfaces before

@@ -7,7 +7,7 @@ metadata:
   provenance-name: Repo Worker Base first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Portable repo-worker routing, hygiene, stage composition, and publication boundaries.
   use_when:
   - Use when repo work needs worktree, branch, scratch, source, layout, validation, evidence, review, closeout, or publication guidance.

@@ -1,16 +1,18 @@
 # Remaining agent-workspace slices
 
-Status: approved continuation for draft PR #73
+Status: complete in draft PR #73
 
 ## Objective
 
 Finish the repository-local agent workspace cleanup and refresh from the
-merged upstream marketplace main.
+merged upstream marketplace main. This plan records the completed slice; it
+is not a living inventory of later repository changes.
 
 ## Decisions
 
 - The four canonical stage overlays live in `.agents/guides/`.
 - The retained local skill set is:
+  - `adventures-project-doctrine`
   - `adventures-project-readiness`
   - `adventures-visual-preproduction`
   - `adventures-image-qa`
@@ -29,12 +31,12 @@ merged upstream marketplace main.
 - The marketplace submodule moves to merged upstream main and refreshes the
   marketplace-derived projection.
 
-## Skill authoring gate
+## Skill authoring gate used
 
-For each retained skill, record a pressure scenario and baseline ambiguity,
-author the smallest control plane, run structural/application checks, and
-record the disposition and validation in the skill or plan. Do not bulk-copy
-the retired marketplace pack.
+For each retained skill, a pressure scenario and baseline ambiguity were
+recorded, the smallest control plane was authored, and structural/application
+checks were run. The disposition record below is the final record for this
+slice. Do not bulk-copy the retired marketplace pack.
 
 ## Skill authoring evidence
 
@@ -53,6 +55,19 @@ a router; readiness and visual preproduction own judgment boundaries; image
 QA owns acceptance. Deterministic compilation, packaging, and indexing remain
 runbook/script concerns. No generated image was created for this assessment.
 
+## Candidate dispositions for this slice
+
+| Candidate or capability | Final disposition | Owning surface or reason |
+| --- | --- | --- |
+| `adventures-project-doctrine` | Retain as a thin local router | `.agents/doctrine/` and the composed base-doctrine/repo-worker surfaces own durable law. |
+| `adventures-project-readiness` | Retain; absorb frame-buster judgment | `.agents/runbooks/project-readiness.md` owns the readiness gates and handoff vocabulary. |
+| `adventures-visual-preproduction` | Retain; absorb storyboard and visual-bible judgment | Visual-preproduction runbooks own reusable reference planning and candidate handoff. |
+| `adventures-image-qa` | Retain as the image acceptance lane | `.agents/runbooks/image-qa.md` owns acceptance outcomes and promotion boundaries. |
+| Adventures-specific bootstrap and GitHub routing | Retire | Generic work-mode and GitHub evidence skills already own these decisions. |
+| Contact-sheet export, asset-directory packaging, asset-zip ingress, and asset-package landing | Retire | These were stale capabilities with no live repo workflow. |
+| Image-credit/resource discipline | Retire | No local policy pressures agents to use or avoid image-generation tooling. |
+| Patch/PIG/Don Logan agent identities and actor lanes | Retire/remove | Patch remains only as the project character and visual canon; no agent identity is retained. |
+
 ## Exclusions
 
 - No line-ending normalization.
@@ -65,6 +80,7 @@ runbook/script concerns. No generated image was created for this assessment.
 - Four guides are reachable from `.agents/AGENTS.md`.
 - Every retained local skill has valid frontmatter, clear triggers, local
   custody metadata, boundaries, stop conditions, and a live-repo reference.
-- Retired candidates and reclassifications are recorded.
+- Retired candidates and reclassifications from this completed slice are
+  recorded above; future repository changes should be assessed afresh.
 - No operative Patch agent identity remains in active routing or skill docs.
 - The mesh generator and all validation checks pass on the final head.

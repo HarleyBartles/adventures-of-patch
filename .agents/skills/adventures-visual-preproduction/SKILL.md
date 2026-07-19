@@ -54,7 +54,7 @@ call a final deck green. For asset classes, use the required
 `minimal bible -> overview -> accepted learning -> member sheets` sequence and
 deterministic template compilation.
 
-Stop at generation for Harley review. On continuation, send the latest
+Stop at generation for your human partner review. On continuation, send the latest
 candidate to `adventures-image-qa`; do not skip acceptance or restart planning.
 
 ## Hard boundaries

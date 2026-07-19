@@ -8,5 +8,6 @@
 
 ## Files
 - [test_generate_index_mesh.py](test_generate_index_mesh.py)
+- [test_install_agent_skills.py](test_install_agent_skills.py)
 - [test_script_entrypoints.py](test_script_entrypoints.py)
 - [test_validate_agent_mesh.py](test_validate_agent_mesh.py)

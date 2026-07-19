@@ -12,7 +12,7 @@ metadata:
   provenance-name: Connector Safety first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when use this skill to keep connector and tool-side-effect work safe,
     auditable, and boring when a connector or tool call is blocked, rejected, safety-filtered,
     permission-rejected, schema-rejected, or validation-rejected, when a planned action

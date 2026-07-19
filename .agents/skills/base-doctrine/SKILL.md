@@ -12,7 +12,7 @@ metadata:
   provenance-name: Base Doctrine first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when cross-runtime doctrine store for cross-project operating invariants
     not owned by a more specific skill. Use when work involves system-prompt limits,
     tool/source evidence honesty, durable doctrine routing, bounded skill/reference

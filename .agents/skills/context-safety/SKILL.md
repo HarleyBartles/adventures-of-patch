@@ -10,7 +10,7 @@ metadata:
   provenance-name: Context Safety first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: large text write safety, bounded composition, compaction boundaries, and atomic replacement
   use_when:
   - Use when composing or editing large text files

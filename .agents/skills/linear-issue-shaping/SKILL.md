@@ -11,7 +11,7 @@ metadata:
   provenance-name: Linear Issue Shaping first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: 'Use when Linear-backed issue, project, and document shaping: create or update
     worker-ready Linear issues, inspect Linear comments/attachments/state, prepare
     paste-ready worker handoffs when explicitly requested, and route GitHub PR proof

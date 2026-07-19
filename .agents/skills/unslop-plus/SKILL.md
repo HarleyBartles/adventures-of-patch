@@ -10,7 +10,7 @@ metadata:
   provenance-name: Unslop Plus first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when apply domain-specific anti-slop profiles for common software development
     workflows, with thirteen portable profiles for writing, technical-writing, implementation-plans,
     code-review, worker-returns, debugging, frontend-react, frontend-ui, api-design,

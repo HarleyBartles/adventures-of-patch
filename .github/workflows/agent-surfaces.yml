@@ -5,6 +5,9 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - ".agents/**"
+      - "assets/**"
+      - "docs/**"
+      - "decks/**"
       - ".gitattributes"
       - ".gitignore"
       - "AGENTS.md"
@@ -16,6 +19,9 @@ on:
     branches: [main]
     paths:
       - ".agents/**"
+      - "assets/**"
+      - "docs/**"
+      - "decks/**"
       - ".gitattributes"
       - ".gitignore"
       - "AGENTS.md"

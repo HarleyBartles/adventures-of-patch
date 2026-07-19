@@ -51,7 +51,7 @@ sheets, and no one-shot generated sheet replacing deterministic compilation.
 
 ## Loop and stop conditions
 
-After generation, stop for Harley review. On continuation, QA the latest
+After generation, stop for your human partner review. On continuation, QA the latest
 candidate; do not restart planning or ask whether QA is needed. Return one of
 `accepted_scene_art`, `accepted_preproduction_reference`,
 `accepted_antipattern_reference`, `edit_required`, `regenerate_required`, or
