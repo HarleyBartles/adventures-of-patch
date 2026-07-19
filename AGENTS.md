@@ -97,7 +97,7 @@ Before planning or generating images featuring Patch, inspect `assets/canon/patc
 
 If required visual references cannot be inspected with the available tools, report the gap rather than silently substituting memory or uploaded zips.
 
-Patch image generation must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
+Any rendered Patch visual must preserve the canonical Patch style: clean editorial vector style, thick rounded outlines, soft shading, teal hoodie, hoodie antennae, compact rounded proportions, black oval eyes with small white shine highlights only, dark pants, teal shoes with white soles, and teal crossbody bag with visible `>` symbol and consistent strap placement.
 
 Patch canon reference sheets use local filenames inside `assets/canon/patch/reference_sheets/`; the path tells you they are canon references, and the filename only labels the sheet locally.
 
