@@ -7,6 +7,7 @@
 - Up: [parent index](../INDEX.md)
 
 ## Files
+- [adventures-project-doctrine.md](adventures-project-doctrine.md)
 - [AGENTS.md](AGENTS.md)
 - [mesh-policy.md](mesh-policy.md)
 - [skill-authoring-policy.md](skill-authoring-policy.md)

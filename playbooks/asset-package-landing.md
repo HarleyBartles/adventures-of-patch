@@ -2,20 +2,26 @@
 
 Use this project playbook when approved visual assets, markdown sidecars, receipt packages, or source zips need to be landed in `HarleyBartles/adventures-of-patch`. Source zips are package/import/receipt artifacts, not the default GPT visual inspection route. For visual inspection, use repo-indexed contact-sheet dispatch/intake packages built by the Patch contact-sheet exporter.
 
-For Patch-routed asset zip ingress, the canonical local drop zone is `Patch/INGRESS/asset-zips/`. Incoming ingress zips are evidence/input artifacts, not canon.
+For incoming asset zip ingress, the canonical local drop zone is
+`assets/source-zips/incoming/`. Incoming zips are evidence/input artifacts, not
+canon.
 
-Patch may execute this workflow through `Patch / execution`, but the project workflow belongs in root `/playbooks/`. Patch-specific executable helpers belong under `Patch/SKILLS/`.
+The project workflow belongs in root `/playbooks/`; repo-local executable
+helpers belong under `.agents/skills/`.
 
 ## Preflight
 
 1. Read root `INDEX.md`, `AGENTS.md`, and `playbooks/INDEX.md`.
-2. If Patch executes the work, read `Patch/README.md`, `Patch/GOVERNANCE.md`, `Patch/ROUTING.md`, and `Patch/CONTRACTS/WORKER_RETURN_CONTRACT.md`.
+2. Read `.agents/contracts/worker-return-contract.md` when tracked mutation or
+   package publication is involved.
 3. Read the relevant issue and comments.
 4. Read the relevant asset directory `INDEX.md` files.
 5. Read `assets/source-zips/INDEX.md` when a repo-preserved source package is involved.
 6. When an asset sheet package is involved, read `playbooks/asset-sheet-production-contract.md`.
 7. Confirm target paths do not collide with existing files unless replacement is explicitly intended.
-8. For Patch ingress, confirm the selected zip is in `Patch/INGRESS/asset-zips/` and that only one unscoped zip is present unless the dispatch explicitly authorizes a batch.
+8. For incoming ingress, confirm the selected zip is in
+   `assets/source-zips/incoming/` and that only one unscoped zip is present
+   unless the dispatch explicitly authorizes a batch.
 
 ## Landing workflow
 
@@ -31,7 +37,9 @@ Patch may execute this workflow through `Patch / execution`, but the project wor
 10. Update issue or receipt surfaces required by the task.
 11. Commit and push to a worker branch.
 12. Open or verify the PR into `main`, and verify the worker branch head or merged result.
-13. For green Patch ingress runs, delete the successfully ingressed zip from `Patch/INGRESS/asset-zips/` only after the landed repo files are committed, pushed on a worker branch, and PR/merge-verified.
+13. For green ingress runs, delete the successfully ingressed zip from
+    `assets/source-zips/incoming/` only after the landed repo files are
+    committed, pushed on a worker branch, and PR/merge-verified.
 14. Delete any extraction or scratch folders created for the ingress after successful publication.
 15. Return with publication evidence.
 
@@ -71,4 +79,9 @@ Issue #20 identifies the first smoke case: inspect the approved style-system ass
 
 ## Stop conditions
 
-Stop and return blocked or amber if source files are missing, approval is unclear, target paths are ambiguous, the package contents disagree with the intended index entry, required asset sheet package contents are missing, publication fails, an ingress run finds multiple unscoped zips in `Patch/INGRESS/asset-zips/`, cleanup would delete a zip before publication proof exists, or an index would point at files that were not actually landed.
+Stop and return blocked or amber if source files are missing, approval is
+unclear, target paths are ambiguous, the package contents disagree with the
+intended index entry, required asset sheet package contents are missing,
+publication fails, an ingress run finds multiple unscoped zips in
+`assets/source-zips/incoming/`, cleanup would delete a zip before publication
+proof exists, or an index would point at files that were not actually landed.

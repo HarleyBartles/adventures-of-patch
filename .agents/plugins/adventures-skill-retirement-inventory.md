@@ -19,24 +19,23 @@ marketplace providers. Its two non-local entries are handled elsewhere:
   installed.
 
 All ten `adventures-*` entries are retired from marketplace custody. This is a
-custody decision, not a claim that every capability is discarded: retained
-capabilities are proposed for later repository-local adaptation in the
-companion proposal.
+custody decision, not a claim that every capability is discarded: the retained
+local skills and reclassifications are recorded in the companion disposition.
 
 ## Marketplace entries
 
 | Skill | Marketplace source | Retirement decision | Validity note |
 | --- | --- | --- | --- |
-| `adventures-asset-sheet-compiler` | `sources/first_party/skills/adventures-asset-sheet-compiler` | Retire from pack; local candidate | Relevant to the repo's asset-sheet templates and production contract; adapt bundled `/home/oai/skills` examples to portable repo-derived paths. |
-| `adventures-bootstrap` | `sources/first_party/skills/adventures-bootstrap` | Retire from pack; local candidate | Relevant as a project bootstrap router; remove assumptions that Patch is an agent identity. |
-| `adventures-frame-buster` | `sources/first_party/skills/adventures-frame-buster` | Retire from pack; local candidate | Relevant to frame-readiness and storyboard gates; retain Patch as character, not actor. |
-| `adventures-github-operations` | `sources/first_party/skills/adventures-github-operations` | Retire from pack; local candidate | Relevant as an Adventures-specific layer over generic GitHub proof; align with this repo's live workflows. |
-| `adventures-image-qa` | `sources/first_party/skills/adventures-image-qa` | Retire from pack; local candidate | Relevant to visual QA and existing image QA playbooks; adapt actor-boundary language. |
-| `adventures-project-doctrine` | `sources/first_party/skills/adventures-project-doctrine` | Retire from pack; local candidate | Relevant project doctrine; split durable project law from retired Patch governance. |
-| `adventures-storyboard-preflight` | `sources/first_party/skills/adventures-storyboard-preflight` | Retire from pack; local candidate | Relevant to storyboard and prompt-board preparation; update downstream actor/tool names to current repo surfaces. |
-| `adventures-visual-bible-creator` | `sources/first_party/skills/adventures-visual-bible-creator` | Retire from pack; local candidate | Relevant to the repo's visual-bible creation playbook and Patch canon. |
-| `adventures-visual-bible-interpreter` | `sources/first_party/skills/adventures-visual-bible-interpreter` | Retire from pack; local candidate | Relevant to interpreting the visual bible; keep interpretation separate from generation authority. |
-| `adventures-visual-preproduction` | `sources/first_party/skills/adventures-visual-preproduction` | Retire from pack; local candidate | Relevant to the existing visual-preproduction playbook and source-first readiness checks. |
+| `adventures-asset-sheet-compiler` | `sources/first_party/skills/adventures-asset-sheet-compiler` | Retire; reclassify to playbook/script | Deterministic template compilation is governed by the asset-sheet production contract. |
+| `adventures-bootstrap` | `sources/first_party/skills/adventures-bootstrap` | Retire | The repository router, stage guides, and generic work-mode routing already own session entry. |
+| `adventures-frame-buster` | `sources/first_party/skills/adventures-frame-buster` | Retire from pack; retain locally | Owns the recurring frame/world/lesson readiness decision. |
+| `adventures-github-operations` | `sources/first_party/skills/adventures-github-operations` | Retire | Generic GitHub proof already owns this capability. |
+| `adventures-image-qa` | `sources/first_party/skills/adventures-image-qa` | Retire from pack; retain locally | Owns the single visual acceptance decision and composes the image-QA contract. |
+| `adventures-project-doctrine` | `sources/first_party/skills/adventures-project-doctrine` | Retire from pack; retain locally | The local skill is a thin triggerable router; durable project law belongs in `.agents/doctrine/adventures-project-doctrine.md`. |
+| `adventures-storyboard-preflight` | `sources/first_party/skills/adventures-storyboard-preflight` | Retire; merge into local routes | Its readiness packet is owned by project readiness and visual preproduction. |
+| `adventures-visual-bible-creator` | `sources/first_party/skills/adventures-visual-bible-creator` | Retire; merge into local route | Bible creation is part of visual preproduction orchestration. |
+| `adventures-visual-bible-interpreter` | `sources/first_party/skills/adventures-visual-bible-interpreter` | Retire; merge into local route | Bible interpretation is supporting preproduction judgment, not a separate owner. |
+| `adventures-visual-preproduction` | `sources/first_party/skills/adventures-visual-preproduction` | Retire from pack; retain locally | Owns image requirements, prompt governance, and asset readiness before production. |
 
 ## Proof of local exclusion
 

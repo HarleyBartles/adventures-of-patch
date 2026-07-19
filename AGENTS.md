@@ -15,19 +15,22 @@ When beginning project work from this repo, read these in order:
 For agent-workspace policy, skill authoring, or mesh work, also read:
 
 - `.agents/AGENTS.md`
+- `.agents/doctrine/adventures-project-doctrine.md` for Adventures identity,
+  source truth, readiness, and publication invariants;
 - `.agents/doctrine/mesh-policy.md`
 - `.agents/doctrine/skill-authoring-policy.md`
 
-For Patch actor-governed work, also read:
+For Adventures readiness or visual work, also read:
 
-- `Patch/README.md`
-- `Patch/GOVERNANCE.md`
-- `Patch/ROUTING.md`
-- `Patch/CONTRACTS/WORKER_RETURN_CONTRACT.md` when tracked repo mutation may occur.
+- `.agents/guides/design-guide.md` or `.agents/guides/planning-guide.md`;
+- `playbooks/pre-playbook-adventure-readiness.md`;
+- `playbooks/visual-preproduction.md`;
+- `playbooks/image-qa-contract.md` when an image candidate is involved.
 
-For Patch-owned executable capabilities, start with:
+For tracked repo mutation or source-package work, read:
 
-- `Patch/SKILLS/INDEX.md`
+- `.agents/guides/implementing-guide.md`;
+- `.agents/contracts/worker-return-contract.md`.
 
 For issue-to-PPTX production, also read:
 
@@ -45,20 +48,16 @@ Use any live GitHub-capable route that can fetch canonical material from this re
 
 Image-generation credits are scarce production capacity. Deterministic workflows exist to reduce failed image-generation calls and conserve those credits. Do not spend image credits during deterministic work such as QA, prompt-board creation, asset-sheet compilation, contact-sheet rendering, receipts, repo work, or policy discussion.
 
-## Patch actor surface
+## Patch character surface
 
-Patch is the sole project-local agent for `HarleyBartles/adventures-of-patch`.
+Patch is the constant project character and visual canon. Patch has no agent
+identity, actor lane, execution authority, or repository ownership role.
 
-Patch may be explicitly bound in either of two local lanes:
-
-- `Patch / project-director` - planning, issue shaping, source discipline, gate checks, routing decisions, verification, and repo-state judgement.
-- `Patch / execution` - repo-local file mutation, binary asset landing, source zip creation, index updates, issue updates, worker-branch commit/push, PR verification or merge verification, and return evidence.
-
-These are local bindings for one named project agent. They do not redefine Will's shared Project Director or execution actor role classes globally.
-
-The default workspace route is `Will -> Patch`. There is no Chris-like intermediary and no separate Adventures asset, deck, image, canon, receipt, or publication executor unless a future issue creates one for a real boundary.
-
-Patch actor governance lives under `Patch/`. Patch-owned executable capabilities live under `Patch/SKILLS/`. Project/domain playbooks live under root `playbooks/`. Patch visual canon remains under `assets/canon/patch/` and its explicit `reference_sheets/` subdirectory. Repo-canonical image inspection now flows through repo-indexed contact-sheet dispatch/intake packages built by the Patch contact-sheet exporter; source zips stay in the package/import/integrity lane. Template packages are the exception: the repo template PNG+JSON sidecar and matching project-source PNG/spec must both be discoverable and reconciled through the index mesh.
+Patch visual canon remains under `assets/canon/patch/` and its explicit
+`reference_sheets/` subdirectory. Repo-canonical image inspection flows
+through the repo-local contact-sheet capability under
+`.agents/skills/adventures-asset-contact-sheet-exporter`; source zips stay in
+the package/import/integrity lane.
 
 ## Source-of-truth rules
 

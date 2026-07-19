@@ -11,7 +11,6 @@
 - [assets](assets/INDEX.md)
 - [decks](decks/INDEX.md)
 - [docs](docs/INDEX.md)
-- [Patch](Patch/INDEX.md)
 - [playbooks](playbooks/INDEX.md)
 - [scratch](scratch/INDEX.md)
 - [scripts](scripts/INDEX.md)

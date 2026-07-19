@@ -7,7 +7,9 @@
 - Up: [parent index](../INDEX.md)
 
 ## Directories
+- [contracts](contracts/INDEX.md)
 - [doctrine](doctrine/INDEX.md)
+- [guides](guides/INDEX.md)
 - [plugins](plugins/INDEX.md)
 - [skills](skills/INDEX.md)
 - [superpowers](superpowers/INDEX.md)

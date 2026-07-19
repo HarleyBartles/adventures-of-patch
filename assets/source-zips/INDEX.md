@@ -10,6 +10,7 @@
 - [canon](canon/INDEX.md)
 - [characters](characters/INDEX.md)
 - [environments](environments/INDEX.md)
+- [incoming](incoming/INDEX.md)
 - [legacy](legacy/INDEX.md)
 - [packs](packs/INDEX.md)
 - [templates](templates/INDEX.md)

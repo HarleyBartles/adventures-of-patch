@@ -10,4 +10,6 @@ When working in `playbooks/`, start with:
 4. `INDEX.md`
 5. the relevant playbook file
 
-Keep project workflows in playbooks rather than burying them inside `Patch/`.
+Keep project workflows in playbooks rather than burying them inside agent
+infrastructure. Put repo-local executable capabilities under `.agents/skills/`
+and keep Patch-specific visual canon under `assets/canon/patch/`.

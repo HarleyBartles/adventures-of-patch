@@ -276,5 +276,5 @@
   "notes_for_agents": [
     "Use contain-fit by default for objects so silhouettes are not cropped."
   ],
-  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_prop_pack_12grid_v1.zip"
+  "source_ingress_package": "assets/source-zips/incoming/templates/template_asset_sheet_prop_pack_12grid_v1.zip"
 }

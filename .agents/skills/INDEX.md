@@ -7,6 +7,14 @@
 - Up: [parent index](../INDEX.md)
 
 ## Directories
+- [adventures-asset-contact-sheet-exporter](adventures-asset-contact-sheet-exporter/SKILL.md)
+- [adventures-asset-directory-source-packager](adventures-asset-directory-source-packager/SKILL.md)
+- [adventures-asset-zip-ingress](adventures-asset-zip-ingress/SKILL.md)
+- [adventures-frame-buster](adventures-frame-buster/SKILL.md)
+- [adventures-image-qa](adventures-image-qa/SKILL.md)
+- [adventures-project-doctrine](adventures-project-doctrine/SKILL.md)
+- [adventures-project-readiness](adventures-project-readiness/SKILL.md)
+- [adventures-visual-preproduction](adventures-visual-preproduction/SKILL.md)
 - [base-doctrine](base-doctrine/SKILL.md)
 - [brainstorming](brainstorming/SKILL.md)
 - [cleanup-custody](cleanup-custody/SKILL.md)
