@@ -12,6 +12,12 @@ When beginning project work from this repo, read these in order:
 4. The relevant GitHub issue, if the user named one.
 5. Any repo-tracked asset guides, receipts, deck plans, or source files linked from the index mesh, project index, or issue.
 
+For agent-workspace policy, skill authoring, or mesh work, also read:
+
+- `.agents/AGENTS.md`
+- `.agents/doctrine/mesh-policy.md`
+- `.agents/doctrine/skill-authoring-policy.md`
+
 For Patch actor-governed work, also read:
 
 - `Patch/README.md`
@@ -58,7 +64,7 @@ Patch actor governance lives under `Patch/`. Patch-owned executable capabilities
 
 The repo is canonical. Do not treat uploaded project-source zips, chat attachments, or local scratch files as active project truth unless the repo points to them or the user explicitly scopes the task to that artifact.
 
-For Adventures plugin installs, use `.agents/plugins/marketplace.json` and the pinned `adventures-pack` source entry. Do not treat `.agents/skills` as canonical for this bundle unless the issue explicitly documents a fallback.
+For marketplace skill refreshes, use `.agents/plugins/marketplace.json` and the pinned `.agents/plugins/marketplace-source` gitlink. The retired `adventures-pack` must not be reintroduced. Marketplace-derived skills are projections; repo-local `adventures-*` skills are local custody and must be preserved by refresh tooling.
 
 Repo files, repo issues, repo-tracked receipts, and repo-tracked asset documentation are authoritative project state.
 

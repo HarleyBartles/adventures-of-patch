@@ -1,0 +1,16 @@
+# Agent workspace routing
+
+Read the applicable doctrine before changing agent-facing surfaces:
+
+- `.agents/doctrine/mesh-policy.md` for routing, generated navigation,
+  discoverability, and surface custody;
+- `.agents/doctrine/skill-authoring-policy.md` before creating, migrating,
+  reviewing, or retiring any repo-local skill;
+- `.agents/guides/` stage guides once the required guide surface exists;
+- `.agents/plugins/marketplace.json` and `.agents/skills/.provenance.json` for
+  marketplace-derived skill custody.
+
+`.agents/` is agent-facing infrastructure. Keep ordinary project work in its
+canonical project homes. The pinned marketplace source is a gitlink boundary;
+local `adventures-*` skills are repository-owned custody and must survive
+marketplace refresh.
