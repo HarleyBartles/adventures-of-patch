@@ -1,47 +1,76 @@
 # Adventures of Patch
 
-Canonical repository for the Presentation Planner / Adventures of Patch project.
+Adventures of Patch is a repository for developing short, visual adventures
+that explain agentic workflows. The current practical output is PowerPoint
+presentations used as mini talks for colleagues and peers at work.
 
-This project develops presentation narratives through Patch's adventures as a
-character and visual through-line. Patch is the constant protagonist unless
-explicitly excluded. Supporting characters, environments, props, and visual
-systems may be reused, ignored, extended, or newly created for each
-presentation.
+## What this project does
 
-## Source discipline
+Agentic workflows can be difficult to explain as process diagrams or abstract
+terminology. This project turns those ideas into a small story: Patch enters a
+world, encounters a problem, and makes the workflow visible through what he
+does next. The result is intended to be memorable enough to discuss in a
+short workplace presentation.
 
-The repository is canonical project truth. Do not rely on memory when asset availability, Patch continuity, visual planning, actor routing, or runbook status matters. Inspect the current repo files first.
+This is a working development repository, not an application or an agent
+runtime. Some material is exploratory, some is reusable project canon, and
+some work eventually becomes a finished deck. The repository describes the
+project as it is now: evolving, presentation-led, and grounded in real
+explanations for real audiences.
 
-## Connector action gate
+## What gets developed here
 
-When work reaches an external connector action, refresh the named connector at that boundary before choosing actions or reporting action availability. See `docs/project/connector-action-gate-note.md` and `.agents/runbooks/bound-connector-action-gate.md`.
+- adventure ideas and narrative frames for explaining workflow concepts;
+- Patch's visual canon, environments, props, and supporting assets;
+- deck plans, presentation structure, and presenter material;
+- PowerPoint/PPTX presentations and the supporting review or receipt material
+  needed when a package is ready to use.
 
-## Agent workspace
+## The usual journey
 
-Agent-facing infrastructure lives under `.agents/`. Local Adventures skills
-live under `.agents/skills/adventures-*/`; repository doctrine lives under
-`.agents/doctrine/`; stage overlays live under `.agents/guides/`.
+1. Start with an agentic-workflow idea that needs explaining.
+2. Turn the lesson into a bounded Patch adventure with visible stakes and
+   choices.
+3. Develop the visual language, assets, and story continuity needed to make
+   the lesson happen on the slide.
+4. Build and review the presentation, adding presenter notes or a sidecar when
+   useful.
+5. Use the finished deck as a short presentation with colleagues and peers,
+   then carry the learning into the next adventure.
 
-## Repository layout
+## Repository map
 
-- `.agents/` - agent workspace infrastructure, doctrine, guides, and local skills.
-- `.agents/runbooks/` - first-class project/domain runbooks for Adventures workflows.
-- `assets/source-zips/` - canonical uploaded asset packages and reusable source/import bundles; not the default visual-inspection route.
-- `assets/canon/patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
-- `assets/evidence/receipts/` - receipt packages and evidence bundles derived from decks or asset work.
-- `docs/adventures/` - Patch adventure concepts and deck narrative frames.
-- `docs/principles/` - software-agent working principles expressed through Patch stories.
-- `docs/project/` - project indexes, bootstrap notes, and workflow guidance.
-- `decks/` - presentation artifacts or deck working folders when committed.
-- `.agents/skills/` - packaged marketplace projections and repository-local skills.
-- `scratch/` - local working area, ignored by git except for `.gitkeep`.
+- [`docs/adventures/`](docs/adventures/) contains adventure concepts and
+  narrative frames.
+- [`docs/principles/`](docs/principles/) contains working principles expressed
+  through Patch stories.
+- [`assets/canon/patch/`](assets/canon/patch/) holds reusable Patch canon and
+  related visual source material.
+- [`assets/evidence/receipts/`](assets/evidence/receipts/) holds evidence and
+  receipt packages produced from asset or deck work.
+- [`decks/`](decks/) is the home for committed presentation artifacts and deck
+  working folders.
+- [`scripts/`](scripts/) contains deterministic maintenance and validation
+  helpers.
+- [`.agents/`](.agents/) contains project doctrine, runbooks, local skills, and
+  other agent-facing infrastructure.
+- [`scratch/`](scratch/) is local working space, not a source of project truth.
 
-## Core rule
+## Patch's role
 
-Repo-canonical image inspection should default to repo-indexed visual
-inspection packages. Source zips remain useful for package/import/receipt/
-integrity work, not as the ordinary source of visual truth. For template work,
-the repo template PNG+JSON sidecar and matching project-source PNG/spec are
-both required and must be discoverable through the index mesh.
+Patch is the recurring project character and visual through-line unless a
+particular presentation explicitly excludes him. He is not an agent, owner,
+or authority figure. His job is to give abstract workflow ideas a consistent
+character, setting, and point of view that people can follow.
 
-Patch is the through-line. Existing non-Patch assets are optional. New presentation-specific asset generation is expected and first-class. Reusable results should later be canonicalised into asset sheets, style guides, contact sheets, anti-pattern sheets, interaction guides, environment sheets, or receipt packages.
+## Finding your way around
+
+Start with the generated [repository index](INDEX.md) for the current map of
+the tree. The [project index](docs/project/INDEX.md) points to project-specific
+sources and guidance. [`AGENTS.md`](AGENTS.md) explains the repository rules
+for contributors and automated work.
+
+The repository is the canonical project source. Scratch files, uploaded source
+packages, generated projections, and old presentation material are not
+automatically current just because they exist locally; follow the indexed repo
+paths to find the active source.
