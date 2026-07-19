@@ -38,6 +38,11 @@ The portfolio policy is the structural reference:
   and the initialized marketplace source submodule.
 - `.agents/skills/` contains repository-local skills and marketplace-derived
   skills, with generated provenance identifying the latter.
+- `.agents/guides/` is a required workflow surface containing the portfolio
+  pattern's `AGENTS.md`, `INDEX.md`, `design-guide.md`, `planning-guide.md`,
+  `implementing-guide.md`, and `code-review-guide.md`. The four stage guides
+  must be adapted to Adventures-specific paths, policies, and validation while
+  preserving their design, planning, implementation, and review handoffs.
 - `.agents/superpowers/plans/` is the only tracked superpowers content.
 - `README.md` files remain human-facing.
 - Project documentation, playbooks, source assets, and Patch character canon
@@ -139,6 +144,10 @@ gitlink boundary. Regenerate the complete mesh; do not hand-edit generated
 indexes. Update the human-facing root README only for orientation and links,
 not as a replacement for agent routing.
 
+The `.agents/guides/` router and index must explicitly expose all four stage
+guides. A repository is not considered aligned if the directory exists but
+one of the four guides is missing or still points at Portfolio-only paths.
+
 Repair stale paths discovered during the mesh pass, including existing
 references to the retired `assets/hero-patch/` layout where the live canonical
 path is `assets/canon/patch/`. Update affected workflows and validation docs
@@ -169,6 +178,8 @@ The implementation is complete only when all of the following are proven:
 - non-local skills from a surviving Adventures-related provider are imported;
 - an empty or removed provider is diagnosed and converges after manifest repair;
 - provenance identifies the exact source revision and derived skill set;
+- `.agents/guides/` contains the four required stage guides, its router and
+  index are current, and each guide points at live Adventures policy surfaces;
 - the full agent/index mesh regenerates cleanly and has no stale retired paths;
 - no active agent identity named Patch remains, while Patch character/canon
   remains discoverable;
