@@ -10,7 +10,7 @@ metadata:
   provenance-name: Risk Gates first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when a pre-action risk gate is needed before a mutation, dispatch, canon
     claim, analogy reliance, or resolution that could violate scope, authority, source
     truth, canon, safety, or user intent. Routes to the relevant gate reference docs

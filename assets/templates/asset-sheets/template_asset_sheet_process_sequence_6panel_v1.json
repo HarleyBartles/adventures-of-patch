@@ -150,5 +150,5 @@
   "notes_for_agents": [
     "Use when order matters. Not for independent character or environment families."
   ],
-  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_process_sequence_6panel_v1.zip"
+  "source_ingress_package": "assets/source-zips/templates/template_asset_sheet_process_sequence_6panel_v1.zip"
 }

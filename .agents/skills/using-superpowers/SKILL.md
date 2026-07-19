@@ -8,7 +8,7 @@ metadata:
   source_repo: https://github.com/obra/superpowers
   source_path: sources/third_party/superpowers/obra-superpowers/v6.1.0/skills/using-superpowers/SKILL.md
   content_mode: adapted
-  adapted_author: Harley Bartles
+  adapted_author: your human partner
   adaptation_note: Trimmed to core Superpowers plus environment inspection only.
 ---
 

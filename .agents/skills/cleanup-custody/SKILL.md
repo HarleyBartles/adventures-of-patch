@@ -9,7 +9,7 @@ metadata:
   provenance-name: Cleanup Custody first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when use this skill to classify whether a workspace or repository surface
     should stay live, move to cold store, move to governed trash, be deleted now,
     or block and route to an owning authority.

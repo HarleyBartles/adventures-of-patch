@@ -13,7 +13,7 @@ metadata:
   provenance-name: Github Operations first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when verify GitHub repository evidence without taking over coding workflow
     routing. Use after a Linear/Codex task has a GitHub PR, branch, commit, review,
     merge, status, or file-state question; when checking publication proof, PR diff

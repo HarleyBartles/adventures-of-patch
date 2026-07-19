@@ -27,6 +27,16 @@ MISSING_SOURCE_REMEDIATION = (
     "If this is a fresh worktree, initialize the pinned submodule with "
     "`git submodule update --init --checkout -- .agents/plugins/marketplace-source`."
 )
+# Marketplace metadata may name the marketplace maintainer. The local skill
+# surface addresses the human participant by role, so normalize that wording
+# while projecting marketplace skills without changing the pinned source.
+SKILL_TEXT_REPLACEMENTS = (
+    (b"HarleyBartles", b"your human partner"),
+    (b"Harley Bartles", b"your human partner"),
+    (b"Harley", b"your human partner"),
+    (b"HARLEY", b"your human partner"),
+    (b"harley", b"your human partner"),
+)
 
 
 @dataclasses.dataclass(frozen=True)
@@ -486,7 +496,7 @@ def trees_match(source: Path, destination: Path) -> bool:
         return False
 
     for rel_path, (kind, _executable_bits) in source_entries.items():
-        if kind == "file" and (source / rel_path).read_bytes() != (destination / rel_path).read_bytes():
+        if kind == "file" and normalized_skill_bytes(source / rel_path) != normalized_skill_bytes(destination / rel_path):
             return False
     return True
 
@@ -506,6 +516,28 @@ def tree_inventory(root: Path) -> dict[Path, tuple[str, int]]:
     return inventory
 
 
+def normalized_skill_bytes(path: Path) -> bytes:
+    """Return projected skill text with the local human-partner vocabulary."""
+    content = path.read_bytes()
+    try:
+        content.decode("utf-8")
+    except UnicodeDecodeError:
+        return content
+    for old, new in SKILL_TEXT_REPLACEMENTS:
+        content = content.replace(old, new)
+    return content
+
+
+def normalize_skill_tree(root: Path) -> None:
+    for path in root.rglob("*"):
+        if not path.is_file():
+            continue
+        original = path.read_bytes()
+        normalized = normalized_skill_bytes(path)
+        if normalized != original:
+            path.write_bytes(normalized)
+
+
 def copy_tree(source: Path, destination: Path, *, force: bool) -> None:
     if destination.exists():
         if force or not trees_match(source, destination):
@@ -514,8 +546,10 @@ def copy_tree(source: Path, destination: Path, *, force: bool) -> None:
             else:
                 destination.unlink()
         else:
+            normalize_skill_tree(destination)
             return
     shutil.copytree(source, destination)
+    normalize_skill_tree(destination)
 
 
 def is_local_skill_name(name: str, prefixes: tuple[str, ...]) -> bool:

@@ -28,12 +28,10 @@ REUSABLE_FAMILY_ROOTS = {
     ASSETS_ROOT / "canon" / "patch" / "role-kits",
 }
 TEXT_EXTENSIONS = {".md", ".json"}
-STALE_REFERENCE_EXCLUDE_FILES = {
-    REPO_ROOT / "Patch" / "SKILLS" / "patch-asset-contact-sheet-exporter" / "README.md",
-}
+STALE_REFERENCE_EXCLUDE_FILES: set[Path] = set()
 LOCAL_REF_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*__v\d+(?:_\d+)?\.png$")
 SHEET_RE = re.compile(r"^sheet__v\d+(?:_\d+)?\.png$")
-PNG_REF_RE = re.compile(r"(?P<path>(?:[A-Za-z]:[\\/])?(?:assets|Patch|docs|playbooks|skills)[^\"'\s)]+?\.png)")
+PNG_REF_RE = re.compile(r"(?P<path>(?:[A-Za-z]:[\\/])?(?:assets|Patch|docs|skills|\.agents[\\/]runbooks)[^\"'\s)]+?\.png)")
 INDEX_REF_RE = re.compile(r"`([^`]+)`")
 
 

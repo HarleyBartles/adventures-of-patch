@@ -9,7 +9,7 @@ metadata:
   provenance-name: Using Linear first-party skill
   source-category: first_party
   status: active
-  owner: Harley Bartles
+  owner: your human partner
   scope: Use when working with the Linear connector surface, choosing the right tool
     call, or finding create/update tools exposed under save_* rather than create_*
     or update_*.

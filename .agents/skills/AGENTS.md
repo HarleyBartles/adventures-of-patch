@@ -1,13 +1,14 @@
-# skills directory guidance
+# Derived and local skills routing
 
-This directory holds packaged or source copies of project-specific skills when intentionally committed.
+Use this routing file before inspecting or refreshing `.agents/skills/`.
 
-When working in `skills/`, start with:
+- Marketplace-derived skills are copied from the pinned source recorded in
+  `.provenance.json`.
+- Repository-owned skills use the reserved `adventures-*` prefix and must
+  survive marketplace refreshes.
+- Do not hand-edit marketplace-derived skill content; change source custody and
+  refresh it deterministically.
+- `INDEX.md` is generated navigation, not an inventory to maintain by hand.
 
-1. `../INDEX.md`
-2. `../AGENTS.md`
-3. this file
-4. `INDEX.md`
-5. the relevant skill package
-
-Treat this directory only as committed skill source/package storage.
+Use `scripts/refresh_agent_surfaces.*` for the combined refresh and
+`scripts/validate_agent_mesh.*` for custody, route, and doctrine checks.

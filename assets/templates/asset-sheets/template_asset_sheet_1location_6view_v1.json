@@ -180,5 +180,5 @@
   "notes_for_agents": [
     "Use for richer one-place environments when three views are not enough."
   ],
-  "source_ingress_package": "Patch/INGRESS/asset-zips/templates/template_asset_sheet_1location_6view_v1.zip"
+  "source_ingress_package": "assets/source-zips/templates/template_asset_sheet_1location_6view_v1.zip"
 }

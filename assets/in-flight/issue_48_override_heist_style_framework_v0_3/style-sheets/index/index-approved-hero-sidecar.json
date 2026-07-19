@@ -2,7 +2,7 @@
     "schema":  "adventures.visual_sidecar.adjacent.v1",
     "project":  "Adventures of Patch",
     "character":  "Index",
-    "sidecar_purpose":  "Repo-resident semantic image sidecar for GPT/worker selection, visual continuity, QA, and prompt constraint extraction.",
+    "sidecar_purpose":  "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
     "source_truth_note":  "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
     "runtime_use_note":  "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
     "do_not_infer_note":  "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
