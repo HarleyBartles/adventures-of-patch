@@ -4,15 +4,13 @@ This playbook defines the pre-deck visual preproduction workflow for Adventures 
 
 Visual preproduction creates or verifies reusable visual references before the end-to-end PPTX production playbook starts. It is the stage where the deck world, cast, locations, prop grammar, continuity objects, interaction patterns, and visual style become repeatable enough that later body-slide image generation does not need to invent the core asset language from scratch.
 
-Before any image-generation decision in this playbook, read `playbooks/image-generation-resource-discipline.md`. Deterministic work inside visual preproduction is credit-conservation work, not implicit spend authority.
-
 ## Scope
 
 Use this playbook after an issue is frame-ready and before `playbooks/end-to-end-pptx-production.md` when the issue is not yet asset-ready.
 
 Use this playbook for Patch-in-world proofs, world or theme visual-language sheets, character class and individual character sheets, environment class and location sheets, prop class and hero prop sheets, interaction/handoff/scale/style sheets, anti-pattern sheets, and readiness reports.
 
-This playbook may generate or edit preproduction reference images. It must not generate deck body-slide scene images. Body-slide image generation belongs inside the production playbook after deck planning and image planning, and only after resource-discipline checks confirm that the current turn is actually authorized to spend a credit.
+This playbook may generate or edit preproduction reference images. It must not generate deck body-slide scene images. Body-slide image generation belongs inside the production playbook after deck planning and image planning.
 
 Asset sheet deliverables produced through this playbook must also follow `playbooks/asset-sheet-production-contract.md`: generate and QA source images first, then deterministically compile the final asset sheet into the approved blank asset-sheet template, then package the compiled PNG, all approved source images, and the sidecar/spec together.
 

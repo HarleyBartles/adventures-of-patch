@@ -11,7 +11,6 @@
 - [asset-sheet-production-contract.md](asset-sheet-production-contract.md)
 - [bound-connector-action-gate.md](bound-connector-action-gate.md)
 - [end-to-end-pptx-production.md](end-to-end-pptx-production.md)
-- [image-generation-resource-discipline.md](image-generation-resource-discipline.md)
 - [image-inspection-source-contract.md](image-inspection-source-contract.md)
 - [image-qa-contract.md](image-qa-contract.md)
 - [pre-playbook-adventure-readiness.md](pre-playbook-adventure-readiness.md)
