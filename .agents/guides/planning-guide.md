@@ -6,8 +6,7 @@ This is the repository-specific overlay for planning work. It does not replace
 ## Route
 
 1. Start from the live repository mesh and, when named, the live GitHub issue.
-2. Keep implementation plans under `.agents/superpowers/plans/`; do not add
-   new plans under `docs/superpowers/plans/`.
+2. Keep implementation plans under `.agents/superpowers/plans/`.
 3. For issue-to-PPTX work, classify the issue as seed-ready, frame-ready,
    asset-ready, or runbook-ready using
    `.agents/runbooks/pre-runbook-adventure-readiness.md`.

@@ -7,8 +7,4 @@
 - Up: [parent index](../INDEX.md)
 
 ## Files
-- [2026-07-19-agent-workspace-policy-design.md](2026-07-19-agent-workspace-policy-design.md)
-- [2026-07-19-mesh-tooling-implementation.md](2026-07-19-mesh-tooling-implementation.md)
-- [2026-07-19-plugin-skill-refresh-implementation.md](2026-07-19-plugin-skill-refresh-implementation.md)
 - [2026-07-19-remaining-agent-workspace-slices.md](2026-07-19-remaining-agent-workspace-slices.md)
-- [2026-07-19-skill-authoring-and-mesh-policy.md](2026-07-19-skill-authoring-and-mesh-policy.md)
