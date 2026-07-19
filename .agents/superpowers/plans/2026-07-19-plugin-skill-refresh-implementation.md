@@ -8,8 +8,10 @@
 
 **Tech Stack:** Git submodules, Python 3 standard library, PowerShell, Bash, JSON, Markdown.
 
-**Execution status:** Complete for the plugin/skill slice; local `adventures-*`
-skill authoring remains intentionally deferred.
+**Execution status:** Complete for the plugin refresh slice. Local
+`adventures-*` skill authoring was intentionally deferred here and is covered
+by the continuation plan at
+`.agents/superpowers/plans/2026-07-19-remaining-agent-workspace-slices.md`.
 
 ## Global Constraints
 

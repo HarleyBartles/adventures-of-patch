@@ -19,12 +19,12 @@ When work reaches an external connector action, refresh the named connector at t
 ## Agent workspace
 
 Agent-facing infrastructure lives under `.agents/`. Local Adventures skills
-live under `.agents/skills/adventures-*/`; repository contracts live under
-`.agents/contracts/`; stage overlays live under `.agents/guides/`.
+live under `.agents/skills/adventures-*/`; repository doctrine lives under
+`.agents/doctrine/`; stage overlays live under `.agents/guides/`.
 
 ## Repository layout
 
-- `.agents/` - agent workspace infrastructure, doctrine, guides, contracts, and local skills.
+- `.agents/` - agent workspace infrastructure, doctrine, guides, and local skills.
 - `.agents/runbooks/` - first-class project/domain runbooks for Adventures workflows.
 - `assets/source-zips/` - canonical uploaded asset packages and reusable source/import bundles; not the default visual-inspection route.
 - `assets/canon/patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.

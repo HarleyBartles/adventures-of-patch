@@ -59,8 +59,6 @@ candidate to `adventures-image-qa`; do not skip acceptance or restart planning.
 
 ## Hard boundaries
 
-- Deterministic prep, QA, indexing, and policy work does not spend image
-  credits.
 - A generated candidate is not an accepted asset.
 - An asset sheet is not body-slide art.
 - Patch is a character and canon reference, never an agent or actor identity.
