@@ -22,7 +22,7 @@ smallest canonical rule surface needed for the task.
 
 | Need | Read |
 | --- | --- |
-| Adventures identity, source truth, readiness, image-credit, or publication invariants | `.agents/doctrine/adventures-project-doctrine.md` |
+| Adventures identity, source truth, readiness, or publication invariants | `.agents/doctrine/adventures-project-doctrine.md` |
 | Agent/documentation custody, generated indexes, gitlinks, or mesh safety | `.agents/doctrine/mesh-policy.md` |
 | Creating, adapting, assessing, or retiring a local skill | `.agents/doctrine/skill-authoring-policy.md` |
 | Design, planning, implementation, or review overlay | matching file under `.agents/guides/` |

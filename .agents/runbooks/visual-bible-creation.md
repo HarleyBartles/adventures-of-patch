@@ -1,8 +1,8 @@
-# Visual bible creation playbook
+# Visual bible creation runbook
 
-This playbook defines how Adventures visual bibles are created, updated, normalised, and locked for reusable asset classes.
+This runbook defines how Adventures visual bibles are created, updated, normalised, and locked for reusable asset classes.
 
-Use this playbook when a visual-preproduction task needs a new minimal provisional bible before image generation, when accepted Pass A imagery should update a bible, when accepted Pass B family sheets should lock a bible, or when an older bible needs to be normalised into the Patch v1.4 operational shape.
+Use this runbook when a visual-preproduction task needs a new minimal provisional bible before image generation, when accepted Pass A imagery should update a bible, when accepted Pass B family sheets should lock a bible, or when an older bible needs to be normalised into the Patch v1.4 operational shape.
 
 ## Primary skill route
 
@@ -12,7 +12,7 @@ Compose with:
 
 - `adventures-visual-bible-interpreter` after a bible exists and must be converted into prompt, QA, repair, and extrapolation packets;
 - `adventures-visual-preproduction` when the bible is part of a preproduction image-generation loop;
-- `adventures-image-preflight` when the bible blocks must be turned into a concrete prompt contract;
+- the visual preflight section of `.agents/runbooks/visual-preproduction.md` when bible blocks must be turned into a concrete prompt contract;
 - `adventures-image-qa` when a generated image candidate must be accepted, repaired, regenerated, or blocked.
 
 The creator writes or updates the bible. The interpreter reads a repo-indexed or provisional bible and extracts operational constraints. Image QA accepts or rejects generated images. Do not collapse those responsibilities into one step.
@@ -130,4 +130,4 @@ A bible creation/update pass should return either the bible itself or a concise 
 
 ## Boundaries
 
-Do not generate images. Do not run image QA. Do not claim asset-ready. Do not land repo files unless Harley explicitly asks for durable repo updates or the active playbook requires a repo landing step.
+Do not generate images. Do not run image QA. Do not claim asset-ready. Do not land repo files unless Harley explicitly asks for durable repo updates or the active runbook requires a repo landing step.

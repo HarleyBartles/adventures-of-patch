@@ -1,0 +1,59 @@
+name: Agent surfaces
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - ".agents/**"
+      - ".gitattributes"
+      - ".gitignore"
+      - "AGENTS.md"
+      - "INDEX.md"
+      - "README.md"
+      - "scripts/**"
+      - ".github/workflows/agent-surfaces.yml"
+  push:
+    branches: [main]
+    paths:
+      - ".agents/**"
+      - ".gitattributes"
+      - ".gitignore"
+      - "AGENTS.md"
+      - "INDEX.md"
+      - "README.md"
+      - "scripts/**"
+      - ".github/workflows/agent-surfaces.yml"
+  workflow_dispatch:
+
+jobs:
+  agent-surfaces:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Bash preflight
+        if: runner.os != 'Windows'
+        shell: bash
+        run: bash scripts/ci-preflight.sh --check --changed-from origin/main
+
+      - name: Run PowerShell preflight
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/ci-preflight.ps1 -Check -ChangedFrom origin/main

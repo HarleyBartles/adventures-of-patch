@@ -45,7 +45,7 @@ The portfolio policy is the structural reference:
   preserving their design, planning, implementation, and review handoffs.
 - `.agents/superpowers/plans/` is the only tracked superpowers content.
 - `README.md` files remain human-facing.
-- Project documentation, playbooks, source assets, and Patch character canon
+- Project documentation, runbooks, source assets, and Patch character canon
   remain repository work outside `.agents/`.
 
 Any existing Patch actor-governance, actor-routing, or worker-identity material
@@ -106,7 +106,7 @@ an implicit winner.
 ## Local skill assessment and custody
 
 Assess every `adventures-*` skill currently supplied by the Adventures project
-pack against this repository's live project docs, playbooks, asset paths, and
+pack against this repository's live project docs, runbooks, asset paths, and
 workflow boundaries. The assessment must record one of:
 
 - retain and adapt as a repository-local skill;
@@ -122,7 +122,7 @@ project character when that is relevant to visual or presentation work.
 Existing repo-local Patch capability skills must be classified in the same
 pass. Relevant executable guidance moves into `.agents\skills\` with stable
 `adventures-*` local names where appropriate; project-specific production
-contracts remain in project playbooks or asset documentation. No local skill
+contracts remain in project runbooks or asset documentation. No local skill
 may rely on a vanished `Patch/` agent governance surface.
 
 Non-local skills such as `using-linear` or `don-logan-boundary` remain

@@ -5,7 +5,7 @@ metadata:
   source_id: adventures-project-readiness
   status: active-local
   scope: Adventures project readiness routing
-  use_when: issue or idea may be seed-ready, frame-ready, asset-ready, or playbook-ready, or its frame may be weak
+  use_when: issue or idea may be seed-ready, frame-ready, asset-ready, or runbook-ready, or its frame may be weak
   do_not_use_when: generic repository work has no Adventures production or readiness boundary
 ---
 
@@ -14,7 +14,7 @@ metadata:
 ## Overview
 
 An Adventures idea is not production-ready merely because it has a good theme.
-Use the readiness ladder to prevent the production playbook from inventing a
+Use the readiness ladder to prevent the production runbook from inventing a
 frame, lesson, cast, world, visual language, or asset package while working.
 
 ## Owned decision
@@ -25,8 +25,8 @@ Classify the current source as exactly one of:
 | --- | --- | --- |
 | `seed-ready` | useful topic or adventure idea, but core teaching/frame decisions are open | frame gate in this skill |
 | `frame-ready` | world, lesson, anti-pattern, positive pattern, Patch role, mappings, continuity, and audience application are green | `adventures-visual-preproduction` |
-| `asset-ready` | reusable visual language and required references are QA-accepted and packaged | end-to-end PPTX playbook |
-| `playbook-ready` | frame-ready and asset-ready; production may begin without inventing missing foundations | end-to-end PPTX playbook |
+| `asset-ready` | reusable visual language and required references are QA-accepted and packaged | end-to-end PPTX runbook |
+| `runbook-ready` | frame-ready and asset-ready; production may begin without inventing missing foundations | end-to-end PPTX runbook |
 
 ## Frame gate
 
@@ -49,7 +49,7 @@ carefully” are not green. If the mapping or story spine is missing, remain
 
 ## Required handoff
 
-Read `playbooks/pre-playbook-adventure-readiness.md` and return a compact
+Read `.agents/runbooks/pre-runbook-adventure-readiness.md` and return a compact
 readiness record containing:
 
 - source issue or brief and evidence location;

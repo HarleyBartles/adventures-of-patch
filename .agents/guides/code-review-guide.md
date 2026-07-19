@@ -8,7 +8,7 @@ This is the repository-specific overlay for review work. It does not replace
 
 1. Review the exact branch head and draft PR, not a stale local summary.
 2. Check scope against the plan, doctrine, and current local skill inventory.
-3. Check that doctrine, guides, skills, playbooks, and scripts each remain in
+3. Check that doctrine, guides, skills, runbooks, and scripts each remain in
    their smallest canonical surface.
 4. For skills, verify frontmatter, trigger-only descriptions, local metadata,
    stop conditions, references, pressure scenario evidence, and no stale Patch

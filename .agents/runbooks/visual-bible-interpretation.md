@@ -1,8 +1,8 @@
-# Visual bible interpretation playbook
+# Visual bible interpretation runbook
 
-This playbook defines how Adventures visual bibles are discovered and converted into image-generation, image-QA, and repair constraints.
+This runbook defines how Adventures visual bibles are discovered and converted into image-generation, image-QA, and repair constraints.
 
-Use this playbook whenever a visual-preproduction, image-preflight, or image-QA task involves a subject, style system, character, environment, prop, or asset class that has a repo-indexed visual bible or style guide. Also use it when creating a minimal provisional bible before generating a new reusable asset class.
+Use this runbook whenever a visual-preproduction, image-preflight, or image-QA task involves a subject, style system, character, environment, prop, or asset class that has a repo-indexed visual bible or style guide. Also use it when creating a minimal provisional bible before generating a new reusable asset class.
 
 ## Core rule
 
@@ -43,7 +43,7 @@ For every visual-bible interpretation task:
 7. Consider matching contact sheets, style guides, anti-pattern sheets, interaction sheets, and asset sheets.
 8. Distinguish repo text evidence, visual evidence, inference, and uncertainty.
 
-If the relevant mature bible cannot be located through the index mesh but the task is creating a new asset class, create a minimal provisional bible as a preproduction artifact instead of substituting stale path memory. If the task requires an existing canonical bible and it cannot be found, block or mark reduced confidence according to the owning playbook.
+If the relevant mature bible cannot be located through the index mesh but the task is creating a new asset class, create a minimal provisional bible as a preproduction artifact instead of substituting stale path memory. If the task requires an existing canonical bible and it cannot be found, block or mark reduced confidence according to the owning runbook.
 
 ## Interpretation packet
 

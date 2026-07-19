@@ -1,10 +1,10 @@
 # Canonical image QA contract
 
-This playbook defines the project-level image QA contract for Adventures of Patch.
+This runbook defines the project-level image QA contract for Adventures of Patch.
 
-Use this playbook whenever generated or edited images may become preproduction references, body-slide art, anti-pattern references, package evidence, or reusable assets.
+Use this runbook whenever generated or edited images may become preproduction references, body-slide art, anti-pattern references, package evidence, or reusable assets.
 
-Asset-sheet QA must also apply `playbooks/asset-sheet-production-contract.md`. Source images and final compiled sheets are different QA moments: generated source images must be accepted before compile, and the final compiled asset sheet must then be checked against the approved template/package contract.
+Asset-sheet QA must also apply `.agents/runbooks/asset-sheet-production-contract.md`. Source images and final compiled sheets are different QA moments: generated source images must be accepted before compile, and the final compiled asset sheet must then be checked against the approved template/package contract.
 
 ## Canonical image QA authority
 
@@ -15,10 +15,10 @@ Retired or legacy image QA skills, including Patch-specific QA wrappers, must ro
 Other skills may orchestrate image work, but they do not own acceptance:
 
 - `adventures-visual-preproduction` owns preproduction generation loops.
-- `adventures-deck-image-planner` owns image plans and inventories.
+- the image-planning stage in `.agents/runbooks/end-to-end-pptx-production.md` owns image plans and inventories.
 - `adventures-pptx-builder` owns build gating.
 - `adventures-presentation-qa` owns package/stage QA.
-- `adventures-asset-sheet-canoniser` owns canonisation and landing posture after image QA.
+- `.agents/runbooks/asset-sheet-production-contract.md` owns sheet canonisation and landing posture after image QA.
 
 ## Core rule
 
@@ -82,7 +82,7 @@ Accepted output: `accepted_preproduction_reference`.
 
 This lane makes the image usable as a reference for later generation. It does not make the image body-slide art.
 
-For Patch-bearing asset sheets, apply the source-image and compiled-sheet checks from `playbooks/asset-sheet-production-contract.md` after Patch canon and non-Patch distinction checks.
+For Patch-bearing asset sheets, apply the source-image and compiled-sheet checks from `.agents/runbooks/asset-sheet-production-contract.md` after Patch canon and non-Patch distinction checks.
 
 ### non_patch_preproduction_reference
 
@@ -110,7 +110,7 @@ Use when the image is intended as an asset sheet. Check whether it matches its d
 
 Reject omnibus posters unless the requested lane explicitly calls for one.
 
-For final compiled asset sheets, this lane must verify compliance with `playbooks/asset-sheet-production-contract.md`: approved blank template layout, compiled asset-sheet PNG, all used source images previously QA-accepted, sidecar/spec present, shadow placeholders covered where needed, guidance text contained in the right panel, alternate views in the bottom rail, unused alternate slots left empty rather than squeezed, and no durable inclusion of HTML/scratch/helper intermediates unless explicitly promoted.
+For final compiled asset sheets, this lane must verify compliance with `.agents/runbooks/asset-sheet-production-contract.md`: approved blank template layout, compiled asset-sheet PNG, all used source images previously QA-accepted, sidecar/spec present, shadow placeholders covered where needed, guidance text contained in the right panel, alternate views in the bottom rail, unused alternate slots left empty rather than squeezed, and no durable inclusion of HTML/scratch/helper intermediates unless explicitly promoted.
 
 For character asset sheets, the main/hero source image must be a full-body character shot on a plain white background. A compiled character sheet lacking that source image is not accepted.
 

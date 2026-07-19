@@ -1,36 +1,36 @@
-# Visual preproduction playbook
+# Visual preproduction runbook
 
-This playbook defines the pre-deck visual preproduction workflow for Adventures of Patch issues that are frame-ready but not asset-ready.
+This runbook defines the pre-deck visual preproduction workflow for Adventures of Patch issues that are frame-ready but not asset-ready.
 
-Visual preproduction creates or verifies reusable visual references before the end-to-end PPTX production playbook starts. It is the stage where the deck world, cast, locations, prop grammar, continuity objects, interaction patterns, and visual style become repeatable enough that later body-slide image generation does not need to invent the core asset language from scratch.
+Visual preproduction creates or verifies reusable visual references before the end-to-end PPTX production runbook starts. It is the stage where the deck world, cast, locations, prop grammar, continuity objects, interaction patterns, and visual style become repeatable enough that later body-slide image generation does not need to invent the core asset language from scratch.
 
 ## Scope
 
-Use this playbook after an issue is frame-ready and before `playbooks/end-to-end-pptx-production.md` when the issue is not yet asset-ready.
+Use this runbook after an issue is frame-ready and before `.agents/runbooks/end-to-end-pptx-production.md` when the issue is not yet asset-ready.
 
-Use this playbook for Patch-in-world proofs, world or theme visual-language sheets, character class and individual character sheets, environment class and location sheets, prop class and hero prop sheets, interaction/handoff/scale/style sheets, anti-pattern sheets, and readiness reports.
+Use this runbook for Patch-in-world proofs, world or theme visual-language sheets, character class and individual character sheets, environment class and location sheets, prop class and hero prop sheets, interaction/handoff/scale/style sheets, anti-pattern sheets, and readiness reports.
 
-This playbook may generate or edit preproduction reference images. It must not generate deck body-slide scene images. Body-slide image generation belongs inside the production playbook after deck planning and image planning.
+This runbook may generate or edit preproduction reference images. It must not generate deck body-slide scene images. Body-slide image generation belongs inside the production runbook after deck planning and image planning.
 
-Asset sheet deliverables produced through this playbook must also follow `playbooks/asset-sheet-production-contract.md`: generate and QA source images first, then deterministically compile the final asset sheet into the approved blank asset-sheet template, then package the compiled PNG, all approved source images, and the sidecar/spec together.
+Asset sheet deliverables produced through this runbook must also follow `.agents/runbooks/asset-sheet-production-contract.md`: generate and QA source images first, then deterministically compile the final asset sheet into the approved blank asset-sheet template, then package the compiled PNG, all approved source images, and the sidecar/spec together.
 
 For character asset sheets, including Patch variants and non-Patch characters, the hero/main source image must be a full-body character shot on a plain white background before compilation. Alternate views may use close-ups, in-world shots, pose studies, detail shots, or other lane-appropriate support images after QA acceptance.
 
 ## Primary skill route
 
-Use `adventures-visual-preproduction` as the primary orchestration skill for this playbook.
+Use `adventures-visual-preproduction` as the primary orchestration skill for this runbook.
 
 Compose with:
 
 - `visual-intent-gate` after the lane and stage semantics are clear;
 - `adventures-visual-bible-interpreter` when a mature visual bible exists or a provisional asset-class bible must be created;
-- `adventures-patch-image-preflight` as the Patch identity and interaction subcheck when Patch appears;
+- the Patch visual preflight section in this runbook as the identity and interaction subcheck when Patch appears;
 - `adventures-image-qa` after Harley asks to continue from a generated or edited candidate;
-- `adventures-asset-sheet-canoniser` after QA acceptance, when sheet-format, landing, or promotion guidance is needed.
+- `.agents/runbooks/asset-sheet-production-contract.md` after QA acceptance, when sheet-format, landing, or promotion guidance is needed.
 
 `adventures-image-qa` is the single authoritative acceptance gate. Visual preproduction owns the stage, bible/preflight packet, prompt contract, and generation cadence. Image QA owns the decision.
 
-For sheet-format, final-layout, package-shape, and repo/source-package landing questions, defer to `playbooks/asset-sheet-production-contract.md` as the canonical contract.
+For sheet-format, final-layout, package-shape, and repo/source-package landing questions, defer to `.agents/runbooks/asset-sheet-production-contract.md` as the canonical contract.
 
 ## Asset discovery
 
@@ -71,13 +71,13 @@ Visual asset preflight converts inspected assets and current visual bible guidan
 
 The preflight packet must include source issue and frame basis, selected lane, first-level asset index inspection, relevant asset/source packages, mandatory style-system package, task-specific packages, mature bible interpretation or minimal provisional bible, positive constraints, hard negatives, generated prompt contract, Patch sub-preflight when Patch appears, selected QA lane, and known risk notes.
 
-For asset-sheet lanes, the preflight packet must also identify the intended source images/views, the deterministic compile target, the guidance/sidecar basis, and any character hero-shot requirement from `playbooks/asset-sheet-production-contract.md`.
+For asset-sheet lanes, the preflight packet must also identify the intended source images/views, the deterministic compile target, the guidance/sidecar basis, and any character hero-shot requirement from `.agents/runbooks/asset-sheet-production-contract.md`.
 
 If the packet is incomplete, block generation. If the packet is complete and Harley has not explicitly forbidden generation, generate one governed candidate and then stop at the natural generation boundary for Harley review.
 
 ## Prompt-governance discipline
 
-Visual preproduction must reduce predictable generation failures before QA. Prompt contracts must use the hierarchy and quarantine rules from `adventures-image-preflight`.
+Visual preproduction must reduce predictable generation failures before QA. Prompt contracts must use the hierarchy and quarantine rules in this runbook.
 
 For Patch-bearing prompts:
 
@@ -112,7 +112,7 @@ Update the provisional bible after accepted Pass A imagery and again after accep
 
 Any reusable asset class must be produced through a required two-pass workflow. Do not ask image generation to create an asset class overview and all related member asset sheets in one instruction unless Harley explicitly overrides this rule for a narrow exception.
 
-Asset sheet production inside either pass is governed by `playbooks/asset-sheet-production-contract.md`. Image generation creates focused source images or views only; it does not create the final sheet layout. The final sheet must be compiled deterministically into the approved template and delivered as a package containing the compiled asset-sheet PNG, every approved source image used in it, and a markdown or JSON sidecar/spec.
+Asset sheet production inside either pass is governed by `.agents/runbooks/asset-sheet-production-contract.md`. Image generation creates focused source images or views only; it does not create the final sheet layout. The final sheet must be compiled deterministically into the approved template and delivered as a package containing the compiled asset-sheet PNG, every approved source image used in it, and a markdown or JSON sidecar/spec.
 
 ### Pass A: asset class overview
 
@@ -140,7 +140,7 @@ Do not begin with the final environment class sheet, character class sheet, prop
 
 ## Patch sub-preflight
 
-When Patch appears, compose with `adventures-patch-image-preflight` for Patch identity, singularity, non-Patch distinction, and Patch interaction grammar.
+When Patch appears, use the Patch visual preflight section in this runbook for Patch identity, singularity, non-Patch distinction, and Patch interaction grammar.
 
 Patch sub-preflight does not replace the mandatory general visual asset preflight. It must not be used as a shortcut around style-system inspection, non-Patch asset inspection, environment/prop constraints, physical-logic checks, or prompt contract shaping.
 
@@ -232,7 +232,7 @@ Stop or mark blocked when:
 - generated candidates fail QA and cannot be repaired without a new direction;
 - image generation or image QA is unavailable;
 - an asset-sheet package lacks the approved compiled template sheet, approved source images, required sidecar/spec, or character full-body plain-white hero source image when applicable;
-- the task tries to generate deck body-slide art before the production playbook stage.
+- the task tries to generate deck body-slide art before the production runbook stage.
 
 Expected pauses after generated candidates are not blockers and not process failures. They are the review insertion point in the default semi-autonomous cadence.
 
@@ -261,12 +261,12 @@ Use this report shape when returning visual-preproduction status:
 - Remaining required assets:
 - Provisional vs repo-tracked status:
 - Asset-ready: yes/no
-- Playbook-ready: yes/no
+- Runbook-ready: yes/no
 - Blockers:
 - Required next action:
 ```
 
-For asset-sheet package work, also record the `playbooks/asset-sheet-production-contract.md` compliance basis: approved source image filenames, compiled sheet PNG, sidecar/spec, skipped candidates if relevant, and character hero-shot confirmation when applicable.
+For asset-sheet package work, also record the `.agents/runbooks/asset-sheet-production-contract.md` compliance basis: approved source image filenames, compiled sheet PNG, sidecar/spec, skipped candidates if relevant, and character hero-shot confirmation when applicable.
 
 ## Boundaries
 

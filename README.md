@@ -10,11 +10,11 @@ presentation.
 
 ## Source discipline
 
-The repository is canonical project truth. Do not rely on memory when asset availability, Patch continuity, visual planning, actor routing, or playbook status matters. Inspect the current repo files first.
+The repository is canonical project truth. Do not rely on memory when asset availability, Patch continuity, visual planning, actor routing, or runbook status matters. Inspect the current repo files first.
 
 ## Connector action gate
 
-When work reaches an external connector action, refresh the named connector at that boundary before choosing actions or reporting action availability. See `docs/project/connector-action-gate-note.md` and `playbooks/bound-connector-action-gate.md`.
+When work reaches an external connector action, refresh the named connector at that boundary before choosing actions or reporting action availability. See `docs/project/connector-action-gate-note.md` and `.agents/runbooks/bound-connector-action-gate.md`.
 
 ## Agent workspace
 
@@ -25,7 +25,7 @@ live under `.agents/skills/adventures-*/`; repository contracts live under
 ## Repository layout
 
 - `.agents/` - agent workspace infrastructure, doctrine, guides, contracts, and local skills.
-- `playbooks/` - first-class project/domain playbooks for Adventures workflows.
+- `.agents/runbooks/` - first-class project/domain runbooks for Adventures workflows.
 - `assets/source-zips/` - canonical uploaded asset packages and reusable source/import bundles; not the default visual-inspection route.
 - `assets/canon/patch/` - reusable visual assets, source packages, receipts, and Patch canon. See `assets/INDEX.md`.
 - `assets/evidence/receipts/` - receipt packages and evidence bundles derived from decks or asset work.

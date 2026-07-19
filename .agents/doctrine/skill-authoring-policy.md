@@ -31,7 +31,7 @@ Use the smallest surface that owns the decision.
 | Skill | A triggerable, reusable technique, pattern, tool capability, or reference guide that addresses recurring agent judgment | One-off solutions, project law, or a deterministic procedure only |
 | Doctrine/policy | Durable invariants, authority, source truth, protected boundaries, and must/must-not rules | A task recipe or a triggerable capability |
 | Stage guide | Repo-specific, non-binding overlay for design, planning, implementation, or review | Replacing the generic workflow or storing durable law |
-| Runbook/playbook | A repeatable procedure with known inputs, paths, commands, outputs, and stop conditions | Judgment that should compose as a skill |
+| Runbook | A repeatable procedure with known inputs, paths, commands, outputs, and stop conditions | Judgment that should compose as a skill |
 | Reference/contract | Schemas, factual lookup, acceptance criteria, or operating details read on demand | Routing or broad workflow control |
 | Script/tool | Mechanical checking, transformation, generation, or enforcement | Instructions that require agent judgment |
 | README | Human orientation and usage context | Agent law or read-when routing |
@@ -50,7 +50,7 @@ Retain a candidate as a skill only when all of these are true:
 2. It owns a decision or capability with a clear boundary.
 3. The same judgment recurs across multiple Adventures tasks.
 4. The behavior is not already owned by a generic skill, local guide,
-   doctrine, playbook, reference, or script.
+   doctrine, runbook, reference, or script.
 5. A baseline scenario demonstrates a meaningful failure without it.
 6. The guidance can be kept compact, with heavy material moved to
    `references/`.

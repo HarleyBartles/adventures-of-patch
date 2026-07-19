@@ -1,14 +1,14 @@
-# Pre-playbook adventure readiness playbook
+# Pre-runbook adventure readiness runbook
 
-This playbook defines the required planning state before an Adventures of Patch issue may enter the end-to-end PPTX production playbook.
+This runbook defines the required planning state before an Adventures of Patch issue may enter the end-to-end PPTX production runbook.
 
-The production playbook should remain strict and staged. It should not privately invent a frame, teaching model, cast, world, or visual language while building a deck. If a source issue is thin, the production playbook stops and routes outward to this readiness process.
+The production runbook should remain strict and staged. It should not privately invent a frame, teaching model, cast, world, or visual language while building a deck. If a source issue is thin, the production runbook stops and routes outward to this readiness process.
 
 ## Scope
 
-Use this playbook before running `playbooks/end-to-end-pptx-production.md` on an adventure-plan issue, deck-plan issue, proof run, production pass, or similar issue-to-PPTX request when the issue is not already known to be playbook-ready.
+Use this runbook before running `.agents/runbooks/end-to-end-pptx-production.md` on an adventure-plan issue, deck-plan issue, proof run, production pass, or similar issue-to-PPTX request when the issue is not already known to be runbook-ready.
 
-A seed issue may still be valuable and in scope for future Adventures of Patch decks even when it is not production-ready. The purpose of this pre-playbook pass is to mature the issue, not to reject it as an idea.
+A seed issue may still be valuable and in scope for future Adventures of Patch decks even when it is not production-ready. The purpose of this pre-runbook pass is to mature the issue, not to reject it as an idea.
 
 ## Readiness ladder
 
@@ -52,17 +52,17 @@ Asset-ready normally requires:
 - interaction sheet when recurring handoffs, scale, or staged relationships matter;
 - readiness report identifying provisional versus repo-tracked/canonical status.
 
-Asset preproduction may use image generation, but it must not generate body-slide scene images. Body-slide image generation belongs inside the production playbook after deck and image planning.
+Asset preproduction may use image generation, but it must not generate body-slide scene images. Body-slide image generation belongs inside the production runbook after deck and image planning.
 
 Generated or edited preproduction images are only candidates until accepted by `adventures-image-qa` in the correct lane. Unreviewed, rejected, weak, or generated-only sheets do not count toward asset-ready.
 
 For new Patch-bearing worlds, visual preproduction must normally begin with a Patch-in-world interaction or scale proof. This proof must show canonical Patch inhabiting the theme, interacting with the core hook and relevant non-Patch people, agents, systems, gates, or props. If that proof fails Patch canon, world fit, or interaction grammar, do not continue into the broader asset package.
 
-### Playbook-ready
+### Runbook-ready
 
-The issue is both frame-ready and asset-ready. The end-to-end PPTX production playbook may start.
+The issue is both frame-ready and asset-ready. The end-to-end PPTX production runbook may start.
 
-Playbook-ready means production can begin from issue ingestion without deck planning or image planning having to invent the core story, teaching model, cast, locations, prop grammar, or reusable visual language.
+Runbook-ready means production can begin from issue ingestion without deck planning or image planning having to invent the core story, teaching model, cast, locations, prop grammar, or reusable visual language.
 
 ## Framing family route
 
@@ -96,21 +96,21 @@ The positive pattern should be something the audience can apply in real workflow
 
 ## Visual preproduction route
 
-After frame-ready, run `playbooks/visual-preproduction.md` before the production playbook.
+After frame-ready, run `.agents/runbooks/visual-preproduction.md` before the production runbook.
 
 Visual preproduction consumes the frame-greenlight output and produces the asset package needed for consistent later body-slide image generation. `adventures-visual-preproduction` owns the local orchestration skill route.
 
-Use `playbooks/image-qa-contract.md` as the canonical image QA contract. `adventures-image-qa` is the single authoritative image QA skill. Visual preproduction owns candidate planning and generation loops, but `adventures-image-qa` owns acceptance.
+Use `.agents/runbooks/image-qa-contract.md` as the canonical image QA contract. `adventures-image-qa` is the single authoritative image QA skill. Visual preproduction owns candidate planning and generation loops, but `adventures-image-qa` owns acceptance.
 
 Only QA-accepted candidates may count as asset-ready references.
 
-## Production playbook gate
+## Production runbook gate
 
-The end-to-end PPTX production playbook should stop when an issue is not playbook-ready:
+The end-to-end PPTX production runbook should stop when an issue is not runbook-ready:
 
 - If frame-ready is missing, remain in `adventures-project-readiness` and run
   its frame gate before routing onward.
-- If frame-ready exists but asset-ready is missing, route to `playbooks/visual-preproduction.md`.
+- If frame-ready exists but asset-ready is missing, route to `.agents/runbooks/visual-preproduction.md`.
 - If either state is absent, do not build a deck, generate body-slide images, or treat the issue as a completed proof run.
 
 Preproduction compiled asset sheets are references for later generation. They must not be used as substitute body-slide art in proof/full/final-candidate runs unless Harley explicitly approves a separate storyboard mode.
@@ -126,7 +126,7 @@ Use this compact readiness report when handing a matured issue to production:
 - Seed state:
 - Frame-ready: yes/no
 - Asset-ready: yes/no
-- Playbook-ready: yes/no
+- Runbook-ready: yes/no
 
 ### Frame basis
 - Theme/world:
@@ -151,7 +151,7 @@ Use this compact readiness report when handing a matured issue to production:
 - Provisional vs repo-tracked status:
 
 ### Production handoff
-- Ready for end-to-end PPTX playbook: yes/no
+- Ready for end-to-end PPTX runbook: yes/no
 - Blockers:
 - Required next action:
 ```

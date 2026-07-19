@@ -6,7 +6,7 @@ This is the repository-specific overlay for design work. It does not replace
 ## Route
 
 1. Read the root `AGENTS.md`, `README.md`, `docs/project/INDEX.md`, and the
-   relevant project playbook.
+   relevant project runbook.
 2. For an adventure or deck, establish the teaching problem and a concrete
    frame/world before visual styling. Use `adventures-project-readiness` when
    the issue is not already green; its frame gate is part of the readiness
@@ -18,10 +18,9 @@ This is the repository-specific overlay for design work. It does not replace
 
 ## Local boundaries
 
-- Use `playbooks/pre-playbook-adventure-readiness.md` for readiness contracts.
-- Use `playbooks/visual-preproduction.md` for reusable visual language and
+- Use `.agents/runbooks/pre-runbook-adventure-readiness.md` for readiness contracts.
+- Use `.agents/runbooks/visual-preproduction.md` for reusable visual language and
   image requirements.
-- Do not generate images during deterministic design, QA, or policy work.
 - Patch is a character and visual canon, not an agent, actor lane, or owner.
 - Do not turn a doctrine rule, one-off frame, or deterministic asset procedure
   into a new skill.

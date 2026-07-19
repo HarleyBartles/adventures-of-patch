@@ -1,12 +1,12 @@
-# End-to-end PPTX production playbook
+# End-to-end PPTX production runbook
 
-This playbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
+This runbook is the canonical orchestration guide for turning an Adventures of Patch GitHub issue into a finished presentation package.
 
 It owns process flow, required evidence, production gates, stop conditions, downgrade rules, artifact expectations, and failure reporting. It does not prescribe a fixed skill invocation script. At each stage, select currently available skills and tools that satisfy the required evidence and gates.
 
 ## Scope
 
-Use this playbook when the user asks to take an adventure-plan issue, deck-plan issue, or related GitHub issue through to a delivered presentation package.
+Use this runbook when the user asks to take an adventure-plan issue, deck-plan issue, or related GitHub issue through to a delivered presentation package.
 
 A finished package normally includes:
 
@@ -22,9 +22,9 @@ A finished package normally includes:
 
 ## Proof-run semantics
 
-A proof run is a full live run of this end-to-end production playbook.
+A proof run is a full live run of this end-to-end production runbook.
 
-"Proof" describes the purpose of the run: proving whether the playbook, skills, tools, assets, and artifact pipeline can complete correctly from source issue to package. It does not describe a weaker output mode.
+"Proof" describes the purpose of the run: proving whether the runbook, skills, tools, assets, and artifact pipeline can complete correctly from source issue to package. It does not describe a weaker output mode.
 
 A proof run must execute the same required stages as a full production run:
 
@@ -42,7 +42,7 @@ A proof run must execute the same required stages as a full production run:
 12. presentation QA;
 13. receipt and canonisation follow-up.
 
-If a proof run fails at any mandatory gate, the proof result is Red or Amber with exact evidence. The assistant must stop at the failed gate unless this playbook explicitly allows continuation and Harley explicitly approves the mode change.
+If a proof run fails at any mandatory gate, the proof result is Red or Amber with exact evidence. The assistant must stop at the failed gate unless this runbook explicitly allows continuation and Harley explicitly approves the mode change.
 
 A proof run must not be downgraded to storyboard, draft, placeholder, asset-sheet deck, or plan-only mode merely because a gate is difficult, unavailable, or inconvenient. Storyboard and draft modes are separate requested modes, not implicit proof-run fallbacks.
 
@@ -50,7 +50,7 @@ A proof run must not be downgraded to storyboard, draft, placeholder, asset-shee
 
 Use appropriate currently installed skills and available tools at each stage. A stage may require multiple skills, no skill, or a future skill not named here.
 
-Do not skip a gate because a named skill is unavailable. If a skill is unavailable, stale, renamed, or superseded, still satisfy the playbook's required evidence, outputs, and stop conditions with the best available route.
+Do not skip a gate because a named skill is unavailable. If a skill is unavailable, stale, renamed, or superseded, still satisfy the runbook's required evidence, outputs, and stop conditions with the best available route.
 
 Expected compositions include:
 
@@ -59,13 +59,13 @@ Expected compositions include:
 - `adventures-issue-ingestor` for issue briefs;
 - `adventures-project-readiness` when the frame is missing or weak;
 - `adventures-deck-doctrine` and `adventures-deck-planner` for deck planning;
-- `adventures-deck-image-planner` for shot lists, prompt packs, and the image inventory skeleton;
+- the image-planning stage in this runbook for shot lists, prompt packs, and the image inventory skeleton;
 - `visual-intent-gate` before generation/editing;
-- `adventures-patch-image-preflight` before generating Patch images;
-- `adventures-patch-image-qa` after generation and before slides;
+- the Patch visual preflight section in this runbook before generating Patch images;
+- `adventures-image-qa` after generation and before slides;
 - `adventures-pptx-builder` for PPTX assembly;
 - `adventures-presentation-qa` for package/stage QA;
-- `adventures-receipt-gen` for embedded-image receipt packages.
+- the receipt and canonisation follow-up described in this runbook for embedded-image receipt packages.
 
 ### Required discovery before unavailability claims
 
@@ -107,16 +107,16 @@ Required proof:
 5. Fetch `AGENTS.md` from `main`.
 6. Fetch `docs/project/INDEX.md` from `main`.
 7. Fetch `assets/INDEX.md` and `assets/source-zips/INDEX.md` when project-source or zipped asset inspection may be needed.
-8. Fetch this playbook from `main` unless this file is already the active source being read from the repo.
+8. Fetch this runbook from `main` unless this file is already the active source being read from the repo.
 9. Fetch the named issue and relevant issue comments when comments may contain decisions.
 
-A broad search or index miss is not repo unavailability. If the source issue or required playbook cannot be fetched through any available GitHub-capable route, valid outputs are limited to a blocked status, tooling/access diagnostic, or user-approved plan-only fallback.
+A broad search or index miss is not repo unavailability. If the source issue or required runbook cannot be fetched through any available GitHub-capable route, valid outputs are limited to a blocked status, tooling/access diagnostic, or user-approved plan-only fallback.
 
 No PPTX, storyboard, draft, proof artifact, sidecar, receipt, or QA result may be presented as valid for a source issue when the repo gate was skipped.
 
 ## Run-state ledger and mode-switch continuity
 
-Every playbook run must maintain an explicit run-state ledger. The ledger prevents mode switches from resetting source truth or silently changing run mode.
+Every runbook run must maintain an explicit run-state ledger. The ledger prevents mode switches from resetting source truth or silently changing run mode.
 
 Create the ledger immediately after hard preflight and carry it forward through chat reasoning, artifact handoff, image generation, local file/container work, zip inspection, PPTX building, sidecar creation, QA, and receipt work.
 
@@ -142,19 +142,19 @@ Before any mode switch, re-check the ledger. If the ledger is lost or contradict
 
 Project-source zips may be used only after the ledger records repo proof, the current repo-tracked source package name from `assets/source-zips/INDEX.md`, and the specific non-visual reason for local inspection. Identify the current zip package in the repo index only when package, import, or integrity work actually needs it; do not treat the matching zip as the default visual truth for repo-canonical images.
 
-Patch visual source packages are never a substitute for issue, playbook, deck, image generation, image QA, or repo truth. They are inspection mirrors for package/integrity fallback only when repo text and paths are already confirmed and the repo-indexed contact-sheet route is blocked or explicitly unavailable.
+Patch visual source packages are never a substitute for issue, runbook, deck, image generation, image QA, or repo truth. They are inspection mirrors for package/integrity fallback only when repo text and paths are already confirmed and the repo-indexed contact-sheet route is blocked or explicitly unavailable.
 
 A production artifact is invalid if the ledger is absent, contradicts claimed status, loses repo-green state during a mode switch, or shows a proof/full run without the accepted scene-image inventory required for PPTX build.
 
 ## Default interpretation of run requests
 
-When the user asks to run an issue-to-PPTX proof, end-to-end pass, production pass, proof pass, rerun, or playbook run, interpret that as staged playbook execution.
+When the user asks to run an issue-to-PPTX proof, end-to-end pass, production pass, proof pass, rerun, or runbook run, interpret that as staged runbook execution.
 
 Do not treat the request as immediate image generation or immediate PPTX build, even when the final package will need images and a PPTX.
 
 Default behaviour:
 
-1. Start at the playbook entry point.
+1. Start at the runbook entry point.
 2. Complete hard repo access preflight and fetch the source issue.
 3. Create the run-state ledger.
 4. Read repo navigation surfaces and source issue.
@@ -169,15 +169,15 @@ Default behaviour:
 
 Useful shorthand meanings:
 
-- "Run the #3 proof pass" means run the whole staged playbook in order as a full live run, including image generation, image QA, PPTX build, sidecar, QA, and receipt/canonisation status.
+- "Run the #3 proof pass" means run the whole staged runbook in order as a full live run, including image generation, image QA, PPTX build, sidecar, QA, and receipt/canonisation status.
 - "Run the #3 proof pass but stop before image generation" means stop after image planning and Patch/image readiness; this is not a completed proof run.
 - "Generate the images for #3" means run the image stage only, still requiring image plan, visual-intent gating, Patch preflight, generation, and Patch image QA.
 
 ## Important trigger boundary
 
-A user request for a PPTX package may trigger artifact tooling because a PPTX is eventually required. Artifact preparation does not authorize skipping the playbook. After any mandatory artifact handoff/tool preparation, return to this playbook and continue from the ledger.
+A user request for a PPTX package may trigger artifact tooling because a PPTX is eventually required. Artifact preparation does not authorize skipping the runbook. After any mandatory artifact handoff/tool preparation, return to this runbook and continue from the ledger.
 
-A user request for a deck with images may look like an image-generation request. That does not authorize generation before the image-generation stage. Treat image generation as one stage inside the playbook.
+A user request for a deck with images may look like an image-generation request. That does not authorize generation before the image-generation stage. Treat image generation as one stage inside the runbook.
 
 ## Downgrade approval rule
 
@@ -236,7 +236,7 @@ Allowed local/project-source uses after repo proof:
 
 Disallowed uses:
 
-- using source zips, receipt zips, old decks, memory, or source-package contents as a replacement for issue #3, issue comments, playbook, deck plan, image plan, image generation, image QA, or generated scene images;
+- using source zips, receipt zips, old decks, memory, or source-package contents as a replacement for issue #3, issue comments, runbook, deck plan, image plan, image generation, image QA, or generated scene images;
 - treating local unzip work as evidence that repo access is unavailable;
 - continuing artifact production after the ledger is lost or contradicted;
 - using asset sheets, contact sheets, style sheets, anti-pattern sheets, location sheets, or package thumbnails as body-slide art in a proof/full/final run unless Harley explicitly approves separate storyboard mode.
@@ -301,7 +301,7 @@ Use image generation only after:
 
 At the image-generation stage, invoke the image-generation route, report exact route failure, or record exact route absence after discovery. Do not infer unavailability.
 
-After generation, run `adventures-patch-image-qa` or equivalent post-generation QA. Reject, edit, or regenerate any image that fails Patch identity, scene fit, frame fit, slide mapping, or text posture.
+After generation, run `adventures-image-qa` or equivalent post-generation QA. Reject, edit, or regenerate any image that fails Patch identity, scene fit, frame fit, slide mapping, or text posture.
 
 Reject Patch images if Patch becomes a dog, animal, glossy 3D, generic robot, plush, or photoreal; the bag is missing; the bag symbol is wrong; strap continuity fails; antennae are missing; hoodie is not teal; eyes have white sclera, visible irises, coloured pupils, or alternate eye style; proportions drift; Patch is multiplied; supporting agents become Patch clones; in-world text is unreadable/misleading; or the image does not support the slide concept.
 
@@ -415,13 +415,13 @@ Stop if title/end cards receive prompts without override, Patch is decorative, P
 
 Required work:
 
-- confirm image generation/editing is the current playbook stage;
+- confirm image generation/editing is the current runbook stage;
 - re-check ledger before local zip extraction or image tool use;
 - inspect repo Patch references and the repo-indexed contact-sheet intake package when needed;
 - incorporate style guide, contact sheet, anti-pattern sheet, and interaction guide into prompts when available;
 - record image-generation route status.
 
-Gate 5: generation is playbook-authorized and Patch preflight is complete.
+Gate 5: generation is runbook-authorized and Patch preflight is complete.
 
 Stop if image generation is unavailable, Patch references cannot be inspected sufficiently, prompts cannot satisfy Patch identity, or availability has been inferred rather than tested/discovered.
 
@@ -443,7 +443,7 @@ Stop if image generation is not actually invoked, fails without recoverable rout
 
 Required work:
 
-- run `adventures-patch-image-qa` or equivalent post-generation QA on every generated body-slide image before PPTX build;
+- run `adventures-image-qa` or equivalent post-generation QA on every generated body-slide image before PPTX build;
 - decide per image: `accepted`, `edit_required`, `regenerate_required`, or `blocked`;
 - send weak/non-compliant images back for edit or full regeneration;
 - repeat generation -> image QA until every required body-slide image is accepted, or stop blocked/Red;
@@ -538,14 +538,14 @@ Use this template:
 
 ### Proof-run validity
 
-- Full playbook run attempted: yes/no
+- Full runbook run attempted: yes/no
 - Stage reached:
 - Mandatory gate failed:
 - Accepted generated scene-image inventory exists: yes/no
 - Post-generation Patch image QA completed: yes/no
 - Reference assets used as substitute art: yes/no
 - Downgrade explicitly approved by Harley: yes/no + quote/comment ID
-- PPTX build permitted by playbook: yes/no
+- PPTX build permitted by runbook: yes/no
 - Sidecar produced: yes/no
 - QA produced: yes/no
 - Receipt produced: yes/no

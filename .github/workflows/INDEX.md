@@ -7,5 +7,6 @@
 - Up: [parent index](../INDEX.md)
 
 ## Files
+- [agent-surfaces.yml](agent-surfaces.yml)
 - [hero-patch-pages-proof.yml](hero-patch-pages-proof.yml)
 - [hero-patch-visual-artifact.yml](hero-patch-visual-artifact.yml)

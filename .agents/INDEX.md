@@ -10,6 +10,7 @@
 - [doctrine](doctrine/INDEX.md)
 - [guides](guides/INDEX.md)
 - [plugins](plugins/INDEX.md)
+- [runbooks](runbooks/INDEX.md)
 - [skills](skills/INDEX.md)
 - [superpowers](superpowers/INDEX.md)
 

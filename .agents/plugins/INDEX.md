@@ -10,4 +10,5 @@
 - [marketplace-source](marketplace-source)/
 
 ## Files
+- [AGENTS.md](AGENTS.md)
 - [marketplace.json](marketplace.json)

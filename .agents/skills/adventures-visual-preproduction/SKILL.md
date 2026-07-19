@@ -21,10 +21,10 @@ body-slide production. It owns the requirements and candidate-planning lane;
 
 Read, in order:
 
-1. `playbooks/visual-preproduction.md`;
+1. `.agents/runbooks/visual-preproduction.md`;
 2. the relevant `assets/` indexes and current visual-bible/style references;
 3. `assets/canon/patch/INDEX.md` and current Patch references when Patch appears;
-4. `playbooks/asset-sheet-production-contract.md` for sheet work.
+4. `.agents/runbooks/asset-sheet-production-contract.md` for sheet work.
 
 Discover assets through the index mesh. Do not hard-code source-zip names,
 fixed sheet counts, or bundled paths. Record relevant references, skipped files,

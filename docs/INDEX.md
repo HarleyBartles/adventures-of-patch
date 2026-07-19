@@ -10,7 +10,6 @@
 - [adventures](adventures/INDEX.md)
 - [principles](principles/INDEX.md)
 - [project](project/INDEX.md)
-- [superpowers](superpowers/INDEX.md)
 
 ## Files
 - [AGENTS.md](AGENTS.md)

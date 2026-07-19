@@ -1,0 +1,8 @@
+# Generated navigation is written with LF line endings on every platform.
+**/INDEX.md eol=lf
+
+# Deterministic source and wrapper tooling uses LF to prevent Windows churn.
+scripts/*.py eol=lf
+scripts/*.ps1 eol=lf
+scripts/*.sh eol=lf
+.gitattributes eol=lf

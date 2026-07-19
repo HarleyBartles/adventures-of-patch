@@ -23,9 +23,9 @@ For agent-workspace policy, skill authoring, or mesh work, also read:
 For Adventures readiness or visual work, also read:
 
 - `.agents/guides/design-guide.md` or `.agents/guides/planning-guide.md`;
-- `playbooks/pre-playbook-adventure-readiness.md`;
-- `playbooks/visual-preproduction.md`;
-- `playbooks/image-qa-contract.md` when an image candidate is involved.
+- `.agents/runbooks/pre-runbook-adventure-readiness.md`;
+- `.agents/runbooks/visual-preproduction.md`;
+- `.agents/runbooks/image-qa-contract.md` when an image candidate is involved.
 
 For tracked repo mutation or source-package work, read:
 
@@ -34,7 +34,7 @@ For tracked repo mutation or source-package work, read:
 
 For issue-to-PPTX production, also read:
 
-- `playbooks/end-to-end-pptx-production.md`
+- `.agents/runbooks/end-to-end-pptx-production.md`
 
 When navigating into a directory, also read that directory's `INDEX.md` and `AGENTS.md` if present before relying on broad search or assumptions.
 
@@ -62,7 +62,7 @@ If a required guide or asset is missing from the repo, report it as a blocker or
 
 ## Bound connector action gate
 
-When a turn, skill step, or playbook stage clearly becomes an external connector action, refresh the named connector namespace at that boundary before selecting actions or reporting action availability. Use `playbooks/bound-connector-action-gate.md` for the full gate. Do not treat earlier sparse connector listings as final evidence.
+When a turn, skill step, or runbook stage clearly becomes an external connector action, refresh the named connector namespace at that boundary before selecting actions or reporting action availability. Use `.agents/runbooks/bound-connector-action-gate.md` for the full gate. Do not treat earlier sparse connector listings as final evidence.
 
 ## Issue-to-PPTX repo gate
 
@@ -72,7 +72,7 @@ Repo access is a state established by evidence, not by one preferred tool route.
 
 A search or index miss is not proof that repo access is unavailable. Check all currently available GitHub-capable routes and prefer direct known-path or known-issue reads over broad search. If any direct repo read succeeds for `HarleyBartles/adventures-of-patch`, do not claim repo access is unavailable.
 
-If the source issue or required repo playbook surfaces cannot be fetched through any available GitHub-capable route, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Do not create a PPTX, storyboard, draft, or proof artifact from uploaded zips, receipt packages, old deck assets, memory, or inferred structure.
+If the source issue or required repo runbook surfaces cannot be fetched through any available GitHub-capable route, valid outputs are limited to a blocked status, a tooling/access diagnostic, or a user-approved plan-only fallback. Do not create a PPTX, storyboard, draft, or proof artifact from uploaded zips, receipt packages, old deck assets, memory, or inferred structure.
 
 Any artifact produced after a skipped repo gate is not valid for issue progress, QA, receipt, asset canonisation, or closure.
 
@@ -105,7 +105,7 @@ Do not drift into generic robot, glossy 3D mascot, plush realism, photorealism, 
 
 ## Presentation production pipeline
 
-For an adventure-plan issue intended to become a finished presentation package, follow `playbooks/end-to-end-pptx-production.md`.
+For an adventure-plan issue intended to become a finished presentation package, follow `.agents/runbooks/end-to-end-pptx-production.md`.
 
 The short version:
 
@@ -124,7 +124,7 @@ The short version:
 
 Do not skip a required production gate. If image generation, Patch references, sidecar creation, or QA cannot be completed, stop and report the blocker rather than downgrading the package silently.
 
-Mandatory artifact-handoff preparation for a PPTX request is not production progress. After any artifact handoff/tool preparation, resume the playbook at the repo-access proof gate. Do not report a completed artifact unless every required playbook stage for the claimed output mode actually completed.
+Mandatory artifact-handoff preparation for a PPTX request is not production progress. After any artifact handoff/tool preparation, resume the runbook at the repo-access proof gate. Do not report a completed artifact unless every required runbook stage for the claimed output mode actually completed.
 
 ## Finished deck expectations
 

@@ -20,7 +20,7 @@ the governed subtree.
 
 - Root `AGENTS.md` supplies repository identity and the main route.
 - Scoped `AGENTS.md` files inherit root law and point outward to doctrine,
-  guides, playbooks, scripts, and human context.
+  guides, runbooks, scripts, and human context.
 - Doctrine must not be duplicated in routers.
 - A router carrying substantial doctrine must be split: move the rule to a
   canonical policy and leave a read-when pointer.
@@ -60,11 +60,11 @@ operative rules.
   other execution material must remain ignored or external.
 
 Ordinary project work belongs in the repository's project, asset, docs, and
-playbook homes rather than being hidden under `.agents/`.
+runbook homes rather than being hidden under `.agents/`.
 
 ## Link and discovery direction
 
-- Routers point outward to doctrine, guides, scripts, playbooks, and READMEs.
+- Routers point outward to doctrine, guides, scripts, runbooks, and READMEs.
 - Doctrine and guidance must not link back to `AGENTS.md` as their authority.
 - Generated indexes may list any surface for navigation.
 - Every active doctrine, guide, runbook, and skill lane must be reachable from

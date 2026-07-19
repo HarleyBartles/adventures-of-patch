@@ -1,10 +1,10 @@
 # Bound connector action gate
 
-This playbook hardens Adventures workflows against stale, sparse, or partially hydrated connector manifests.
+This runbook hardens Adventures workflows against stale, sparse, or partially hydrated connector manifests.
 
 ## Scope
 
-Use this gate whenever a turn, skill step, or project playbook stage clearly requires a bound external app connector such as Canva, GitHub, Google Drive, Adobe Photoshop, or a future external app connector.
+Use this gate whenever a turn, skill step, or project runbook stage clearly requires a bound external app connector such as Canva, GitHub, Google Drive, Adobe Photoshop, or a future external app connector.
 
 ## Required gate
 
@@ -35,7 +35,7 @@ If a needed action is still missing after namespace refresh, report only the obs
 
 ## Required ledger fields
 
-When this gate is used inside a longer playbook run, record:
+When this gate is used inside a longer runbook run, record:
 
 - `connector_namespace_refreshed`;
 - `connector_action_sought`;

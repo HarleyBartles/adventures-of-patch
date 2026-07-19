@@ -11,11 +11,11 @@
 - [assets](assets/INDEX.md)
 - [decks](decks/INDEX.md)
 - [docs](docs/INDEX.md)
-- [playbooks](playbooks/INDEX.md)
 - [scratch](scratch/INDEX.md)
 - [scripts](scripts/INDEX.md)
 
 ## Files
+- [.gitattributes](.gitattributes)
 - [.gitignore](.gitignore)
 - [.gitmodules](.gitmodules)
 - [AGENTS.md](AGENTS.md)

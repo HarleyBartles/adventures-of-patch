@@ -20,7 +20,7 @@ merged upstream marketplace main.
 - The frame gate is absorbed by `adventures-project-readiness`.
 - Storyboard preflight and visual-bible interpretation/creation are composed
   into readiness and visual preproduction rather than separate skills.
-- Asset-sheet compilation and canonisation remain playbook/script concerns;
+- Asset-sheet compilation and canonisation remain runbook/script concerns;
   deterministic packaging is not a judgment skill.
 - The stale contact-sheet, asset-directory packaging, and asset-zip ingress
   capabilities are removed.

@@ -16,7 +16,7 @@ It is generation-ready for Stage 2b location sheets, but not locked. It should b
 
 Repo text evidence: Issue #37 establishes the Identity Emporium / costume shop as the agent identity setup environment, where costumes represent identity surfaces and props represent tools with domain purpose. The issue also defines the current visual-preproduction state and says Stage 1 is complete, while asset readiness and deck readiness are not yet complete.
 
-Repo playbook evidence: The current playbook index includes `visual-bible-creation.md` as the workflow for creating, updating, normalising, and locking standardized visual bibles with composable prompt, QA, repair, and extrapolation blocks.
+Repo runbook evidence: The current runbook index includes `visual-bible-creation.md` as the workflow for creating, updating, normalising, and locking standardized visual bibles with composable prompt, QA, repair, and extrapolation blocks.
 
 Visual evidence: Two Harley-supplied approved artifacts in this session:
 - Stage 1 Patch-in-world costume shop proof. Used only for environmental texture, counter/shop signage feel, role gear density, and warm shop mood. Character content is excluded.
@@ -478,7 +478,7 @@ For Stage 2b, build prompts in this order:
 6. Add text hygiene and no-character constraints.
 7. Keep any visible labels minimal and in-world.
 
-Do not begin the prompt with story doctrine. Do not mention repo state, QA results, candidate history, skill names, session busters, or playbook mechanics. The prompt should describe only the visual subject.
+Do not begin the prompt with story doctrine. Do not mention repo state, QA results, candidate history, skill names, session busters, or runbook mechanics. The prompt should describe only the visual subject.
 
 ## Stage 2b location-specific clauses
 

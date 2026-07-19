@@ -28,8 +28,8 @@ they may not accept their own output.
 | `anti_pattern_reference` | `accepted_antipattern_reference` |
 | `deck_package_image_review` | package consistency after per-image QA |
 
-Read `playbooks/image-qa-contract.md` and
-`playbooks/asset-sheet-production-contract.md` when the candidate is a sheet.
+Read `.agents/runbooks/image-qa-contract.md` and
+`.agents/runbooks/asset-sheet-production-contract.md` when the candidate is a sheet.
 Record the image identifier, intended use, source issue/package, references
 considered, Patch presence, lane, decision, exact failures, repair guidance,
 and whether it counts toward `asset_ready` or scene inventory readiness.
