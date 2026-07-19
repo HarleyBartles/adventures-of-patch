@@ -113,6 +113,21 @@ def skill_findings() -> list[str]:
     if provenance_path.is_file():
         data = json.loads(read_text(provenance_path))
         copied = data.get("copied_skills", [])
+        expected = {str(name) for name in copied}
+        actual = {
+            path.name
+            for path in skills_root.iterdir()
+            if path.is_dir() and not path.name.startswith("adventures-")
+        }
+        missing = sorted(expected - actual)
+        extra = sorted(actual - expected)
+        if missing:
+            findings.append(f".provenance.json projected skills are missing: {', '.join(missing)}")
+        if extra:
+            findings.append(f".agents/skills contains unprovenanced projections: {', '.join(extra)}")
+        for name in sorted(expected):
+            if not (skills_root / name / "SKILL.md").is_file():
+                findings.append(f".agents/skills/{name} is missing SKILL.md")
         for name in copied:
             if str(name).startswith("adventures-"):
                 findings.append(f".provenance.json claims local skill is marketplace-derived: {name}")

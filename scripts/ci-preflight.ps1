@@ -5,7 +5,8 @@
 [CmdletBinding()]
 param(
     [switch]$Check,
-    [string]$ChangedFrom
+    [string]$ChangedFrom,
+    [switch]$CommittedOnly
 )
 
 $ErrorActionPreference = 'Stop'
@@ -30,6 +31,7 @@ function Invoke-PythonScript {
 
 $checkArgs = @()
 if ($Check) { $checkArgs += '--check' }
+if ($CommittedOnly) { $checkArgs += '--committed-only' }
 Invoke-PythonScript 'refresh_agent_surfaces.py' $checkArgs
 
 $meshArgs = @()

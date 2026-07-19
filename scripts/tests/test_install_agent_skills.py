@@ -10,6 +10,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 INSTALLER_PATH = ROOT / "scripts" / "install_agent_skills.py"
+MARKETPLACE_SOURCE_AVAILABLE = (ROOT / ".agents" / "plugins" / "marketplace-source").is_dir()
 
 
 def load_installer_module():
@@ -23,6 +24,7 @@ def load_installer_module():
 
 
 class InstallAgentSkillsTests(unittest.TestCase):
+    @unittest.skipUnless(MARKETPLACE_SOURCE_AVAILABLE, "marketplace source is unavailable in CI")
     def test_check_mode_validates_the_current_installation(self) -> None:
         result = subprocess.run(
             [sys.executable, str(INSTALLER_PATH), "--check"],
@@ -34,6 +36,7 @@ class InstallAgentSkillsTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertRegex(result.stdout, r"^OK checked skills: \d+ copied from [0-9a-f]{40}$")
 
+    @unittest.skipUnless(MARKETPLACE_SOURCE_AVAILABLE, "marketplace source is unavailable in CI")
     def test_provenance_matches_manifest_and_pinned_marketplace_revision(self) -> None:
         installer = load_installer_module()
         manifest = installer.load_manifest(installer.DEFAULT_MANIFEST_PATH)

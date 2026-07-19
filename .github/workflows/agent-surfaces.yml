@@ -47,7 +47,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: recursive
+          # The marketplace source is private. CI validates the committed
+          # projection; refreshes run locally with marketplace access.
+          submodules: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -57,9 +59,9 @@ jobs:
       - name: Run Bash preflight
         if: runner.os != 'Windows'
         shell: bash
-        run: bash scripts/ci-preflight.sh --check --changed-from origin/main
+        run: bash scripts/ci-preflight.sh --check --committed-only --changed-from origin/main
 
       - name: Run PowerShell preflight
         if: runner.os == 'Windows'
         shell: pwsh
-        run: ./scripts/ci-preflight.ps1 -Check -ChangedFrom origin/main
+        run: ./scripts/ci-preflight.ps1 -Check -CommittedOnly -ChangedFrom origin/main

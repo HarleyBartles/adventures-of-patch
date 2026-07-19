@@ -4,6 +4,7 @@ set -euo pipefail
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 check_args=()
 changed_from=""
+committed_only="false"
 
 while (($# > 0)); do
   case "$1" in
@@ -18,6 +19,10 @@ while (($# > 0)); do
       fi
       changed_from="$2"
       shift 2
+      ;;
+    --committed-only)
+      committed_only="true"
+      shift
       ;;
     *)
       echo "Unknown argument: $1" >&2
@@ -47,7 +52,11 @@ run_python() {
   fi
 }
 
-run_python "$script_dir/refresh_agent_surfaces.py" "${check_args[@]}"
+refresh_args=("${check_args[@]}")
+if [[ "$committed_only" == "true" ]]; then
+  refresh_args+=(--committed-only)
+fi
+run_python "$script_dir/refresh_agent_surfaces.py" "${refresh_args[@]}"
 
 mesh_args=()
 if ((${#check_args[@]} > 0)); then

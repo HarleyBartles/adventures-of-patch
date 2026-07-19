@@ -22,12 +22,19 @@ def run(script: Path, args: Sequence[str]) -> None:
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="validate without writing")
+    parser.add_argument(
+        "--committed-only",
+        action="store_true",
+        help="validate committed projections without requiring the private marketplace source",
+    )
     args = parser.parse_args(argv)
     check_args = ("--check",) if args.check else ()
-    run(ROOT / "scripts" / "install_agent_skills.py", check_args)
+    if not args.committed_only:
+        run(ROOT / "scripts" / "install_agent_skills.py", check_args)
     run(ROOT / "scripts" / "generate_index_mesh.py", check_args)
     mode = "checked" if args.check else "refreshed"
-    print(f"OK {mode} agent surfaces: derived skills, index mesh")
+    source_mode = "committed projections" if args.committed_only else "derived skills"
+    print(f"OK {mode} agent surfaces: {source_mode}, index mesh")
     return 0
 
 
