@@ -10,6 +10,4 @@
 - [marketplace-source](marketplace-source)/
 
 ## Files
-- [adventures-local-skill-proposal.md](adventures-local-skill-proposal.md)
-- [adventures-skill-retirement-inventory.md](adventures-skill-retirement-inventory.md)
 - [marketplace.json](marketplace.json)
