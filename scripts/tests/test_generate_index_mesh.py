@@ -107,7 +107,9 @@ class GenerateIndexMeshTests(unittest.TestCase):
             self.configure(module, root, {"docs/INDEX.md"})
 
             with patch.object(module, "repo_root", return_value=root.resolve()):
-                failures = module.validate_links(docs / "INDEX.md", "- [missing](missing.md)\n")
+                failures = module.validate_links(
+                    docs.resolve() / "INDEX.md", "- [missing](missing.md)\n"
+                )
 
             self.assertEqual(failures, ["broken-link: docs/INDEX.md -> missing.md"])
 
