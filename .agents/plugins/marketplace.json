@@ -1,22 +1,27 @@
 {
-  "name": "adventures-repo-plugins",
-  "interface": {
-    "displayName": "Adventures Repo Plugins"
+  "schema_version": 1,
+  "marketplace_source": {
+    "repository": "https://github.com/HarleyBartles/agent-asset-marketplace.git",
+    "path": ".agents/plugins/marketplace-source"
   },
-  "plugins": [
-    {
-      "name": "adventures-pack",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/HarleyBartles/agent-asset-marketplace.git",
-        "path": "./codex-marketplace/plugins/adventures-pack",
-        "sha": "2ae5f3a33670c212a8e09345302c5b47bbc0d873"
-      },
-      "policy": {
-        "installation": "INSTALLED_BY_DEFAULT",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
+  "local_skill_prefixes": [
+    "adventures-"
+  ],
+  "default_plugins": [
+    "repo-worker-pack",
+    "superpowers-plus"
+  ],
+  "excluded_plugins": [],
+  "plugins": {
+    "repo-worker-pack": {
+      "version": "1.0.0",
+      "source_path": "codex-marketplace/plugins/repo-worker-pack",
+      "skills_path": "skills"
+    },
+    "superpowers-plus": {
+      "version": "5.1.0",
+      "source_path": "codex-marketplace/plugins/superpowers-plus",
+      "skills_path": "skills"
     }
-  ]
+  }
 }

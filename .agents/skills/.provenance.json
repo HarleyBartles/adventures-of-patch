@@ -1,0 +1,121 @@
+{
+  "copied_skills": [
+    "base-doctrine",
+    "cleanup-custody",
+    "connector-safety",
+    "context-safety",
+    "github-operations",
+    "linear-issue-shaping",
+    "repo-worker-base",
+    "risk-gates",
+    "unslop-plus",
+    "using-linear",
+    "work-mode-router",
+    "brainstorming",
+    "dispatching-parallel-agents",
+    "executing-plans",
+    "finishing-a-development-branch",
+    "inspecting-the-environment",
+    "receiving-code-review",
+    "requesting-code-review",
+    "subagent-driven-development",
+    "systematic-debugging",
+    "test-driven-development",
+    "using-git-worktrees",
+    "using-superpowers",
+    "verification-before-completion",
+    "writing-plans",
+    "writing-skills"
+  ],
+  "default_plugins": [
+    "repo-worker-pack",
+    "superpowers-plus"
+  ],
+  "excluded_plugins": [],
+  "local_skill_prefixes": [
+    "adventures-"
+  ],
+  "schema_version": 1,
+  "skill_providers": {
+    "base-doctrine": [
+      "repo-worker-pack"
+    ],
+    "brainstorming": [
+      "superpowers-plus"
+    ],
+    "cleanup-custody": [
+      "repo-worker-pack"
+    ],
+    "connector-safety": [
+      "repo-worker-pack"
+    ],
+    "context-safety": [
+      "repo-worker-pack"
+    ],
+    "dispatching-parallel-agents": [
+      "superpowers-plus"
+    ],
+    "executing-plans": [
+      "superpowers-plus"
+    ],
+    "finishing-a-development-branch": [
+      "superpowers-plus"
+    ],
+    "github-operations": [
+      "repo-worker-pack"
+    ],
+    "inspecting-the-environment": [
+      "superpowers-plus"
+    ],
+    "linear-issue-shaping": [
+      "repo-worker-pack"
+    ],
+    "receiving-code-review": [
+      "superpowers-plus"
+    ],
+    "repo-worker-base": [
+      "repo-worker-pack"
+    ],
+    "requesting-code-review": [
+      "superpowers-plus"
+    ],
+    "risk-gates": [
+      "repo-worker-pack"
+    ],
+    "subagent-driven-development": [
+      "superpowers-plus"
+    ],
+    "systematic-debugging": [
+      "superpowers-plus"
+    ],
+    "test-driven-development": [
+      "superpowers-plus"
+    ],
+    "unslop-plus": [
+      "repo-worker-pack"
+    ],
+    "using-git-worktrees": [
+      "superpowers-plus"
+    ],
+    "using-linear": [
+      "repo-worker-pack"
+    ],
+    "using-superpowers": [
+      "superpowers-plus"
+    ],
+    "verification-before-completion": [
+      "superpowers-plus"
+    ],
+    "work-mode-router": [
+      "repo-worker-pack"
+    ],
+    "writing-plans": [
+      "superpowers-plus"
+    ],
+    "writing-skills": [
+      "superpowers-plus"
+    ]
+  },
+  "source_revision": "44571abcc1c369d62e316b4694a89c7c2c1bd3bd",
+  "source_root": ".agents/plugins/marketplace-source"
+}

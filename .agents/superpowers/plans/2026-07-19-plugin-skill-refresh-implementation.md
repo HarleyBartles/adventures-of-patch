@@ -4,9 +4,12 @@
 
 **Goal:** Install a deterministic repository-local skill set from the latest marketplace submodule, retire `adventures-*` from marketplace custody, and leave an evidence-backed proposal for the repo-local Adventures skill set.
 
-**Architecture:** Follow the portfolio installer pattern with a nested marketplace git submodule, a manifest-driven Python refresh command, thin PowerShell and shell launchers, and `.agents/skills/.provenance.json`. The configured providers are `repo-worker-pack`, `superpowers-plus`, and `adventures-pack`; the reserved local prefix is `adventures-`. Marketplace skills with identical content from multiple providers are materialized once and recorded with all providers.
+**Architecture:** Follow the portfolio installer pattern with a nested marketplace git submodule, a manifest-driven Python refresh command, thin PowerShell and shell launchers, and `.agents/skills/.provenance.json`. The configured providers are `repo-worker-pack` and `superpowers-plus`; the reserved local prefix is `adventures-`. The retired `adventures-pack` is inspected for the inventory only, not installed. Marketplace skills with identical content from multiple providers are materialized once and recorded with all providers.
 
 **Tech Stack:** Git submodules, Python 3 standard library, PowerShell, Bash, JSON, Markdown.
+
+**Execution status:** Complete for the plugin/skill slice; local `adventures-*`
+skill authoring remains intentionally deferred.
 
 ## Global Constraints
 
@@ -30,11 +33,11 @@
 
 **Steps:**
 
-- [ ] Fetch `origin/main` in the main checkout and record the current `HEAD`, remote main SHA, and pre-existing dirty state before mutation.
-- [ ] Add `https://github.com/HarleyBartles/agent-asset-marketplace.git` at `.agents/plugins/marketplace-source`.
-- [ ] Fetch the marketplace submodule's `origin/main`, check out that exact latest main revision, and stage the gitlink.
-- [ ] Configure the local manifest with `repo-worker-pack`, `superpowers-plus`, and `adventures-pack`, exact source paths/versions, and `local_skill_prefixes: ["adventures-"]`.
-- [ ] Keep `adventures-pack` configured while it contributes `don-logan-boundary` or another non-local skill; remove it from the local manifest only after the marketplace removes all eligible contributions.
+- [x] Fetch `origin/main` in the main checkout and record the current `HEAD`, remote main SHA, and pre-existing dirty state before mutation.
+- [x] Add `https://github.com/HarleyBartles/agent-asset-marketplace.git` at `.agents/plugins/marketplace-source`.
+- [x] Fetch the marketplace submodule's `origin/main`, check out that exact latest main revision, and stage the gitlink.
+- [x] Configure the local manifest with `repo-worker-pack` and `superpowers-plus`, exact source paths/versions, and `local_skill_prefixes: ["adventures-"]`.
+- [x] Retire `adventures-pack` from this repository's configured provider set; retain the marketplace source submodule for the generic providers.
 
 **Checks:**
 
@@ -54,14 +57,14 @@ python -c "import json; json.load(open('.agents/plugins/marketplace.json', encod
 
 **Steps:**
 
-- [ ] Adapt the portfolio installer pattern to this repo's manifest and source path.
-- [ ] Load the reserved local prefixes from the manifest and preserve tracked local skill directories matching them.
-- [ ] Enumerate configured plugin skill directories, excluding reserved `adventures-*` names.
-- [ ] Accept duplicate marketplace skill names only when their complete trees match; materialize one deterministic copy and record all providers in provenance.
-- [ ] Reject missing plugins, version mismatches, source/gitlink mismatches, links/reparse points, path escapes, reserved output names, untracked local skills, and configured providers with no eligible skills.
-- [ ] Remove any dependency on Portfolio-only linked-worktree scripts so the command can validate this repository's authorized main checkout.
-- [ ] Preserve `AGENTS.md`, `INDEX.md`, `.provenance.json`, and tracked local skills while pruning stale marketplace-derived entries.
-- [ ] Make `--check` read-only and make write mode idempotent.
+- [x] Adapt the portfolio installer pattern to this repo's manifest and source path.
+- [x] Load the reserved local prefixes from the manifest and preserve tracked local skill directories matching them.
+- [x] Enumerate configured plugin skill directories, excluding reserved `adventures-*` names.
+- [x] Accept duplicate marketplace skill names only when their complete trees match; materialize one deterministic copy and record all providers in provenance.
+- [x] Reject missing plugins, version mismatches, source/gitlink mismatches, links/reparse points, path escapes, reserved output names, untracked local skills, and configured providers with no eligible skills.
+- [x] Remove any dependency on Portfolio-only linked-worktree scripts so the command can validate this repository's authorized main checkout.
+- [x] Preserve `AGENTS.md`, `INDEX.md`, `.provenance.json`, and tracked local skills while pruning stale marketplace-derived entries.
+- [x] Make `--check` read-only and make write mode idempotent.
 
 **Checks:**
 
@@ -80,11 +83,11 @@ python scripts/install_agent_skills.py --check
 
 **Steps:**
 
-- [ ] Run the installer in write mode from the repository root.
-- [ ] Confirm the derived output contains generic repo-worker and Superpowers skills plus `don-logan-boundary` and one canonical `using-linear`, with no `adventures-*` directories.
-- [ ] Inventory all `adventures-*` directories present in the latest marketplace pack, recording source path, current role, retirement-from-marketplace decision, and local assessment.
-- [ ] Propose the local `adventures-*` skill set, including adapted candidates from the 10 marketplace skills and renamed candidates for the existing `Patch/SKILLS` capabilities.
-- [ ] Mark local skill authoring as deferred to a later bounded pass; do not copy unreviewed marketplace skills into local custody in this slice.
+- [x] Run the installer in write mode from the repository root.
+- [x] Confirm the derived output contains generic repo-worker and Superpowers skills, including the canonical `using-linear`, with no `adventures-*` directories and no `don-logan-boundary`.
+- [x] Inventory all `adventures-*` directories present in the latest marketplace pack, recording source path, current role, retirement-from-marketplace decision, and local assessment.
+- [x] Propose the local `adventures-*` skill set, including adapted candidates from the 10 marketplace skills and renamed candidates for the existing `Patch/SKILLS` capabilities.
+- [x] Mark local skill authoring as deferred to a later bounded pass; do not copy unreviewed marketplace skills into local custody in this slice.
 
 **Checks:**
 
@@ -98,10 +101,10 @@ git diff --check -- .agents/plugins .agents/skills scripts .gitmodules
 
 **Steps:**
 
-- [ ] Run the installer a second time and prove the derived tree is unchanged.
-- [ ] Run `--check` after the second refresh.
-- [ ] Compare the inventory against the live marketplace submodule at the recorded gitlink SHA.
-- [ ] Review the staged diff to ensure no guides, mesh-wide cleanup, Patch identity cleanup, or unrelated project files entered this slice.
+- [x] Run the installer a second time and prove the derived tree is unchanged.
+- [x] Run `--check` after the second refresh.
+- [x] Compare the inventory against the live marketplace submodule at the recorded gitlink SHA.
+- [x] Review the staged diff to ensure no guides, mesh-wide cleanup, Patch identity cleanup, or unrelated project files entered this slice.
 - [ ] Commit the plugin/skill slice and report the exact source SHA, derived skill inventory, retirement inventory, local proposal, validation output, and remaining follow-up.
 
 **Checks:**
