@@ -88,7 +88,11 @@ Any artifact produced after a skipped repo gate is not valid for issue progress,
 
 ## Directory index mesh
 
-Every visible directory should contain an `INDEX.md` file listing direct files and pointing to child directory indexes. Navigate through that mesh before relying on broad search.
+Every in-scope directory should contain a generated `INDEX.md` file listing
+direct files and pointing to child directory indexes. Skill roots and gitlink
+boundaries are intentional leaves: link to their entrypoint or repository
+boundary without descending or creating nested indexes. Navigate through that
+mesh before relying on broad search.
 
 ## Patch rules
 
