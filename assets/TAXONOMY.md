@@ -26,7 +26,7 @@ assets/in-flight/
 This lane is separate from reusable asset packs and canon roots.
 
 - In-flight images are repo-tracked visual evidence and working references, not final canonical asset-pack contents.
-- In-flight images may be contact-sheeted for GPT visual intake when requested.
+- In-flight images may be included in a repo-indexed visual inspection package when requested.
 - In-flight images may also be included full-size when the dispatch marks them as storyboard, diagram, or full-size reference.
 - Manifest and evidence output must label them as `in_flight_image` or `in_flight_reference`, not `source_image`, `asset_sheet`, `compiled_asset_sheet`, or canon reference.
 - If an in-flight image later becomes reusable or canonical, promote it through a separate asset-pack or canonisation workflow.

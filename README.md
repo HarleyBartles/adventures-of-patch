@@ -42,12 +42,10 @@ live under `.agents/skills/adventures-*/`; repository contracts live under
 
 ## Core rule
 
-Repo-canonical image inspection should default to repo-indexed contact-sheet
-dispatch/intake packages built by
-`.agents/skills/adventures-asset-contact-sheet-exporter`. Source zips remain
-useful for package/import/receipt/integrity work, not as the ordinary source of
-visual truth. For template work, the repo template PNG+JSON sidecar and
-matching project-source PNG/spec are both required and must be discoverable
-through the index mesh.
+Repo-canonical image inspection should default to repo-indexed visual
+inspection packages. Source zips remain useful for package/import/receipt/
+integrity work, not as the ordinary source of visual truth. For template work,
+the repo template PNG+JSON sidecar and matching project-source PNG/spec are
+both required and must be discoverable through the index mesh.
 
 Patch is the through-line. Existing non-Patch assets are optional. New presentation-specific asset generation is expected and first-class. Reusable results should later be canonicalised into asset sheets, style guides, contact sheets, anti-pattern sheets, interaction guides, environment sheets, or receipt packages.

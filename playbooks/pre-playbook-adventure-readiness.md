@@ -68,7 +68,9 @@ Playbook-ready means production can begin from issue ingestion without deck plan
 
 ## Framing family route
 
-Use `adventures-frame-buster` as the umbrella router for the framing family. A green frame-buster result means the family is green, not merely that a single theme sounds appealing.
+Use `adventures-project-readiness` as the umbrella router for the framing and
+readiness family. A green readiness result means the frame is green, not merely
+that a single theme sounds appealing.
 
 Expected composition:
 
@@ -108,7 +110,8 @@ Only QA-accepted candidates may count as asset-ready references.
 
 The end-to-end PPTX production playbook should stop when an issue is not playbook-ready:
 
-- If frame-ready is missing, route to the framing family through `adventures-frame-buster`.
+- If frame-ready is missing, remain in `adventures-project-readiness` and run
+  its frame gate before routing onward.
 - If frame-ready exists but asset-ready is missing, route to `playbooks/visual-preproduction.md`.
 - If either state is absent, do not build a deck, generate body-slide images, or treat the issue as a completed proof run.
 

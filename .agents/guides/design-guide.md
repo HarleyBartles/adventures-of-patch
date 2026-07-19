@@ -8,8 +8,9 @@ This is the repository-specific overlay for design work. It does not replace
 1. Read the root `AGENTS.md`, `README.md`, `docs/project/INDEX.md`, and the
    relevant project playbook.
 2. For an adventure or deck, establish the teaching problem and a concrete
-   frame/world before visual styling. Use `adventures-project-readiness` and
-   `adventures-frame-buster` when the issue is not already green.
+   frame/world before visual styling. Use `adventures-project-readiness` when
+   the issue is not already green; its frame gate is part of the readiness
+   decision.
 3. For Patch-bearing work, inspect `assets/canon/patch/INDEX.md` and the
    repo-tracked Patch references before choosing visual direction.
 4. Record the decision in the canonical issue, plan, or project document; do

@@ -4,28 +4,30 @@ Status: approved continuation for draft PR #73
 
 ## Objective
 
-Finish the repository-local agent workspace cleanup without moving the
-marketplace submodule while the upstream Adventures Pack removal is unmerged.
+Finish the repository-local agent workspace cleanup and refresh from the
+merged upstream marketplace main.
 
 ## Decisions
 
 - The four canonical stage overlays live in `.agents/guides/`.
 - The retained local skill set is:
   - `adventures-project-readiness`
-  - `adventures-frame-buster`
   - `adventures-visual-preproduction`
   - `adventures-image-qa`
 - `adventures-bootstrap` and `adventures-github-operations` are retired.
-- `adventures-project-doctrine` is reclassified into repository doctrine.
+- `adventures-project-doctrine` remains a thin triggerable router into
+  repository doctrine; durable law remains in `.agents/doctrine/`.
+- The frame gate is absorbed by `adventures-project-readiness`.
 - Storyboard preflight and visual-bible interpretation/creation are composed
   into readiness and visual preproduction rather than separate skills.
 - Asset-sheet compilation and canonisation remain playbook/script concerns;
   deterministic packaging is not a judgment skill.
-- The three useful existing asset capabilities move under `.agents/skills` with
-  `adventures-` names and no Patch actor binding.
+- The stale contact-sheet, asset-directory packaging, and asset-zip ingress
+  capabilities are removed.
 - Patch remains the character and visual canon only; Patch actor governance,
   actor lanes, and actor-bound return contracts are retired.
-- The marketplace submodule remains pinned until the upstream removal merges.
+- The marketplace submodule moves to merged upstream main and refreshes the
+  marketplace-derived projection.
 
 ## Skill authoring gate
 

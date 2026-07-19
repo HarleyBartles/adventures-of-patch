@@ -8,12 +8,9 @@
 
 ## Files
 - [AGENTS.md](AGENTS.md)
-- [asset-package-landing.md](asset-package-landing.md)
 - [asset-sheet-production-contract.md](asset-sheet-production-contract.md)
 - [bound-connector-action-gate.md](bound-connector-action-gate.md)
 - [end-to-end-pptx-production.md](end-to-end-pptx-production.md)
-- [gpt-pig-image-production-actor-contract.md](gpt-pig-image-production-actor-contract.md)
-- [gpt-to-pig-image-production-handoff.md](gpt-to-pig-image-production-handoff.md)
 - [image-generation-resource-discipline.md](image-generation-resource-discipline.md)
 - [image-inspection-source-contract.md](image-inspection-source-contract.md)
 - [image-qa-contract.md](image-qa-contract.md)

@@ -12,7 +12,7 @@ This packet contains stage-fit visual bibles for the first visual-preproduction 
 
 The bibles are mutable. They should be revised after accepted visual evidence, failed-candidate patterns, QA findings, and deterministic asset sheets teach durable visual lessons.
 
-These bibles do **not** authorize image generation, image editing, asset-sheet compilation, deck planning, deck building, issue mutation, or repo mutation. They provide reusable constraint language for later GPT and Patch Image Gen work when the proper downstream stage is explicitly authorized.
+These bibles do **not** authorize image generation, image editing, asset-sheet compilation, deck planning, deck building, issue mutation, or repo mutation. They provide reusable constraint language for later Codex or Devin agent image work when the proper downstream stage is explicitly authorized.
 
 ## Evidence basis
 
@@ -1280,4 +1280,3 @@ Recommended next deterministic route:
 2. Decide which bibles need first visual tests and which can remain text-only longer.
 3. Decide whether individual crew members need full reusable asset sheets or deck-specific one-off designs.
 4. Only after current-turn authorization and proper visual preflight should any image generation be considered.
-

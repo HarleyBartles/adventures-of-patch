@@ -1,32 +1,39 @@
 # Image inspection source contract
 
-This contract defines how GPT should visually inspect repo-canonical image assets.
+This contract defines how Codex and Devin agents should visually inspect repo-canonical image assets.
 
 ## Source truth
 
 Repo image files are canonical source truth. Asset-family indexes describe what images exist and what they are for.
 
-Repo-indexed contact-sheet dispatch/intake packages built by the Patch contact-sheet exporter are the default visual inspection surface for repo-canonical images. They are inspection packages, not source truth.
+Repo-indexed visual inspection packages are the default visual inspection
+surface for repo-canonical images. They are inspection packages, not source
+truth.
 
-Source zips, project-source zips, source-package mirrors, and receipt packages are not the default image-inspection truth for GPT.
+Source zips, project-source zips, source-package mirrors, and receipt packages are not the default image-inspection truth for the agent.
 
 ## Default inspection route
 
-When GPT needs to inspect a repo-canonical image:
+When a Codex or Devin agent needs to inspect a repo-canonical image:
 
 1. Start from `assets/INDEX.md`.
 2. Read the relevant asset-family `INDEX.md`.
-3. Discover the current repo-indexed contact-sheet dispatch or intake package through the repo index mesh.
-4. Open the rendered contact-sheet PNGs or included full-size references from that package.
+3. Discover the current repo-indexed visual inspection package through the repo
+   index mesh.
+4. Open the rendered image surfaces or included full-size references from that
+   package.
 5. Visually inspect the rendered image surface.
 
-If the needed contact-sheet package is missing or stale, use the Patch contact-sheet exporter and the repo index mesh to produce or refresh the package, then inspect the resulting contact-sheet PNGs. Do not promote the package itself to canon.
+If the needed visual inspection package is missing or stale, report the exact
+blocker or use an explicitly approved alternate inspection route. Do not
+invent a retired exporter or promote the package itself to canon.
 
 ## Contact-sheet package contract
 
-- Contact sheets are built from bounded, repo-relative dispatches.
+- Visual inspection packages are built from bounded, repo-relative inputs.
 - One package may cover one or more asset families, but the dispatch must name the explicit files or bounded selectors.
-- The package records the rendered contact-sheet PNGs, included full-size references, manifests, and evidence.
+- The package records rendered image surfaces, included full-size references,
+  manifests, and evidence.
 - The package is an inspection input, not a canonical asset surface.
 
 ## Source zips and project sources
@@ -50,6 +57,7 @@ For template packages only, the repo template PNG plus its JSON sidecar and the 
 
 A run is not green if it claims image inspection was complete because a source zip existed, a package was listed, a repo path was known, or a project-source package name matched.
 
-A run may claim visual inspection only when GPT inspected a rendered image surface from a repo-indexed contact-sheet package.
+A run may claim visual inspection only when the agent inspected a rendered image
+surface from a repo-indexed visual inspection package.
 
 If the required package is blocked, report the exact blocker and either stop or mark reduced confidence before using any package fallback.

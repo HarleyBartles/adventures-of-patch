@@ -198,5 +198,5 @@
   "notes_for_agents": [
     "Use for a minimal world visual bible or adventure style overview, not for a single location asset sheet."
   ],
-  "source_ingress_package": "assets/source-zips/incoming/templates/template_asset_sheet_world_overview_v1.zip"
+  "source_ingress_package": "assets/source-zips/templates/template_asset_sheet_world_overview_v1.zip"
 }

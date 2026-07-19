@@ -4,7 +4,7 @@
   "version": "v1",
   "status": "candidate",
   "png_filename": "template_asset_sheet_4up_equal_header_v1.png",
-  "source_ingress_package": "assets/source-zips/incoming/templates/template_asset_sheet_4up_equal_header_v1.zip",
+  "source_ingress_package": "assets/source-zips/templates/template_asset_sheet_4up_equal_header_v1.zip",
   "project_source_package_filename": "template_asset_sheet_4up_equal_header_v1.zip",
   "project_source_png_filename": "template_asset_sheet_4up_equal_header_v1.png",
   "project_source_spec_filename": "template_asset_sheet_4up_equal_header_v1.json",

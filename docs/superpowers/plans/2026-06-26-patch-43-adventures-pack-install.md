@@ -76,7 +76,7 @@
     "adventures-visual-bible-interpreter",
     "adventures-image-qa",
     "adventures-asset-sheet-compiler",
-    "adventures-frame-buster",
+    "adventures-project-readiness",
     "don-logan-boundary",
     "linear"
   ],

@@ -1,7 +1,8 @@
 # Adventures Marketplace Skill Retirement Inventory
 
-Status: assessed against the marketplace submodule at revision
-`44571abcc1c369d62e316b4694a89c7c2c1bd3bd`.
+Status: assessed against the retired marketplace pack originally present at
+revision `44571abcc1c369d62e316b4694a89c7c2c1bd3bd`; latest marketplace main is
+`70a7bb0f8181f81f2a063ddce4458dea1a2debcb`.
 
 Source:
 
@@ -28,7 +29,7 @@ local skills and reclassifications are recorded in the companion disposition.
 | --- | --- | --- | --- |
 | `adventures-asset-sheet-compiler` | `sources/first_party/skills/adventures-asset-sheet-compiler` | Retire; reclassify to playbook/script | Deterministic template compilation is governed by the asset-sheet production contract. |
 | `adventures-bootstrap` | `sources/first_party/skills/adventures-bootstrap` | Retire | The repository router, stage guides, and generic work-mode routing already own session entry. |
-| `adventures-frame-buster` | `sources/first_party/skills/adventures-frame-buster` | Retire from pack; retain locally | Owns the recurring frame/world/lesson readiness decision. |
+| `adventures-frame-buster` | `sources/first_party/skills/adventures-frame-buster` | Retire | Its frame gate is absorbed by the local `adventures-project-readiness` router. |
 | `adventures-github-operations` | `sources/first_party/skills/adventures-github-operations` | Retire | Generic GitHub proof already owns this capability. |
 | `adventures-image-qa` | `sources/first_party/skills/adventures-image-qa` | Retire from pack; retain locally | Owns the single visual acceptance decision and composes the image-QA contract. |
 | `adventures-project-doctrine` | `sources/first_party/skills/adventures-project-doctrine` | Retire from pack; retain locally | The local skill is a thin triggerable router; durable project law belongs in `.agents/doctrine/adventures-project-doctrine.md`. |
@@ -46,4 +47,6 @@ marketplace-derived output.
 
 Current derived output is recorded in
 `.agents/skills/.provenance.json`; it contains `using-linear` from
-`repo-worker-pack`, no `don-logan-boundary`, and no `adventures-*` directories.
+`repo-worker-pack`, no `don-logan-boundary`, and no marketplace-derived
+`adventures-*` directories. Local `adventures-*` skills are repository-owned
+and preserved separately.

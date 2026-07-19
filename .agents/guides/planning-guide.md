@@ -11,8 +11,8 @@ This is the repository-specific overlay for planning work. It does not replace
 3. For issue-to-PPTX work, classify the issue as seed-ready, frame-ready,
    asset-ready, or playbook-ready using
    `playbooks/pre-playbook-adventure-readiness.md`.
-4. Route framing to `adventures-frame-buster`, visual preparation to
-   `adventures-visual-preproduction`, and acceptance to
+4. Use the frame gate in `adventures-project-readiness`, route visual
+   preparation to `adventures-visual-preproduction`, and acceptance to
    `adventures-image-qa`.
 
 ## Plan contents

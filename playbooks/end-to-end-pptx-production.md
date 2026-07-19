@@ -32,7 +32,7 @@ A proof run must execute the same required stages as a full production run:
 
 1. repo access proof;
 2. issue ingestion;
-3. frame verification or frame-buster resolution;
+3. frame verification or the project-readiness frame gate;
 4. deck planning;
 5. image planning;
 6. visual intent gate;
@@ -59,7 +59,7 @@ Expected compositions include:
 - `adventures-bootstrap` at fresh project start when available;
 - `adventures-repo` and `github-issue-management` for repo and issue discipline;
 - `adventures-issue-ingestor` for issue briefs;
-- `adventures-frame-buster` when the frame is missing or weak;
+- `adventures-project-readiness` when the frame is missing or weak;
 - `adventures-deck-doctrine` and `adventures-deck-planner` for deck planning;
 - `adventures-deck-image-planner` for shot lists, prompt packs, and the image inventory skeleton;
 - `visual-intent-gate` before generation/editing;

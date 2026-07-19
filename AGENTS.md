@@ -30,7 +30,7 @@ For Adventures readiness or visual work, also read:
 For tracked repo mutation or source-package work, read:
 
 - `.agents/guides/implementing-guide.md`;
-- `.agents/contracts/worker-return-contract.md`.
+- `repo-worker-base` and the matching publication/review guidance.
 
 For issue-to-PPTX production, also read:
 
@@ -54,10 +54,9 @@ Patch is the constant project character and visual canon. Patch has no agent
 identity, actor lane, execution authority, or repository ownership role.
 
 Patch visual canon remains under `assets/canon/patch/` and its explicit
-`reference_sheets/` subdirectory. Repo-canonical image inspection flows
-through the repo-local contact-sheet capability under
-`.agents/skills/adventures-asset-contact-sheet-exporter`; source zips stay in
-the package/import/integrity lane.
+`reference_sheets/` subdirectory. Repo-canonical image inspection uses the
+current indexed visual-inspection route; source zips stay in the
+package/import/integrity lane.
 
 ## Source-of-truth rules
 

@@ -10,7 +10,7 @@ Image generation credits are scarce production capacity. Deterministic workflows
 
 Image generation is not a casual helper in this project. It is a limited production resource. If credits run out, visual preproduction stalls, visual-preprod-ready issues cannot advance, deck-ready issues that need art cannot proceed, and production can be blocked until credits refresh.
 
-The deterministic workflow stack exists to avoid exactly that failure mode. Prompt boards, storyboard diagrams, locked reference sets, QA, deterministic crops and callouts, contact sheets, asset-sheet compilation, template packages, receipts, and package validation all reduce the chance of failed image calls. If GPT fires image generation during those deterministic stages, the project pays the workflow-prep cost and still wastes the credits the workflow was designed to protect.
+The deterministic workflow stack exists to avoid exactly that failure mode. Prompt boards, storyboard diagrams, locked reference sets, QA, deterministic crops and callouts, contact sheets, asset-sheet compilation, template packages, receipts, and package validation all reduce the chance of failed image calls. If a Codex or Devin agent fires image generation during those deterministic stages, the project pays the workflow-prep cost and still wastes the credits the workflow was designed to protect.
 
 This is not merely an authorization nicety. It is production-capacity stewardship.
 
