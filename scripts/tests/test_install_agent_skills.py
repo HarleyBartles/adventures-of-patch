@@ -10,7 +10,9 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 INSTALLER_PATH = ROOT / "scripts" / "install_agent_skills.py"
-MARKETPLACE_SOURCE_AVAILABLE = (ROOT / ".agents" / "plugins" / "marketplace-source").is_dir()
+MARKETPLACE_SOURCE_AVAILABLE = (
+    ROOT / ".agents" / "plugins" / "marketplace-source" / "codex-marketplace" / "plugins"
+).is_dir()
 
 
 def load_installer_module():
