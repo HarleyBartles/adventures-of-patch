@@ -27,6 +27,7 @@
 - [requesting-code-review](requesting-code-review/SKILL.md)
 - [risk-gates](risk-gates/SKILL.md)
 - [subagent-driven-development](subagent-driven-development/SKILL.md)
+- [subagent-model-routing](subagent-model-routing/SKILL.md)
 - [systematic-debugging](systematic-debugging/SKILL.md)
 - [test-driven-development](test-driven-development/SKILL.md)
 - [unslop-plus](unslop-plus/SKILL.md)
@@ -37,6 +38,7 @@
 - [work-mode-router](work-mode-router/SKILL.md)
 - [writing-plans](writing-plans/SKILL.md)
 - [writing-skills](writing-skills/SKILL.md)
+- [writing-with-clarity](writing-with-clarity/SKILL.md)
 
 ## Files
 - [.provenance.json](.provenance.json)
