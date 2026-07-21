@@ -8,9 +8,11 @@
     "linear-issue-shaping",
     "repo-worker-base",
     "risk-gates",
+    "subagent-model-routing",
     "unslop-plus",
     "using-linear",
     "work-mode-router",
+    "writing-with-clarity",
     "brainstorming",
     "dispatching-parallel-agents",
     "executing-plans",
@@ -85,6 +87,9 @@
     "subagent-driven-development": [
       "superpowers-plus"
     ],
+    "subagent-model-routing": [
+      "repo-worker-pack"
+    ],
     "systematic-debugging": [
       "superpowers-plus"
     ],
@@ -114,8 +119,11 @@
     ],
     "writing-skills": [
       "superpowers-plus"
+    ],
+    "writing-with-clarity": [
+      "repo-worker-pack"
     ]
   },
-  "source_revision": "0404c71aa38b475f5e0e2f94cdcd1006bdc901ab",
+  "source_revision": "e62475b5bd0b89e651a4deee8a5766c76382f554",
   "source_root": ".agents/plugins/marketplace-source"
 }
