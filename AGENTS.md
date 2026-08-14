@@ -143,3 +143,57 @@ A finished deck package includes:
 ## Issue discipline
 
 Use GitHub issues as durable work packets. Do not close or mark work complete without evidence. Comment with red/amber/green status when a proof run or production pass exposes failures.
+
+## Repository purpose
+
+This repository is the canonical source of truth for the Presentation Planner / Adventures of Patch project.
+
+## Source-of-truth split
+
+The repository tree holds durable project state. Linear, chat, and worker reports are coordination surfaces; they do not override the committed repository state.
+
+## Build and test commands
+
+- `py -3 tools/run.py ci --check`
+- `py -3 tools/run.py ci --apply`
+
+## Testing instructions
+
+Run `py -3 tools/run.py ci --check` to execute the local test, mesh, and validation suite.
+
+## Code style guidelines
+
+Keep prose and scripts consistent with the existing project patterns. Regenerate `INDEX.md` and agent surfaces through `py -3 tools/run.py ci --apply`, and do not hand-edit generated navigation.
+
+## Review guidelines
+
+Use `REVIEW.md` and `.devin/rules/pr.md` for review and merge readiness. Subagent and human review both require evidence from the repo's mechanical checks.
+
+## PR instructions
+
+Open pull requests as draft, keep them in draft while validating, and flip to ready for review only after `py -3 tools/run.py ci --check` passes.
+
+## Contributing
+
+See `CONTRIBUTING.md` for contributor conventions. The `AGENTS.md` and `.agents/doctrine/` surfaces own the durable project law.
+
+## Security considerations
+
+Do not commit secrets, credentials, or unpublished personal data. Keep agent-facing scripts deterministic and avoid non-reproducible side effects.
+
+## Publication proof
+
+Local file changes are not completion. Publish changes through an open PR or an authorized direct-main commit with a verifiable SHA. See `.devin/rules/pr.md`.
+
+## Routing pointers
+
+- [`README.md`](README.md)
+- [`.agents/AGENTS.md`](.agents/AGENTS.md)
+- [`.agents/doctrine/adventures-project-doctrine.md`](.agents/doctrine/adventures-project-doctrine.md)
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`REVIEW.md`](REVIEW.md)
+- [`.devin/rules/completed-plans.md`](.devin/rules/completed-plans.md)
+
+## Maintenance responsibility
+
+This repository is maintained by Harley Bartles. Keep project-specific law in `AGENTS.md` and `.agents/doctrine/`; route marketplace skill refreshes through `.agents/plugins/marketplace.json`.
