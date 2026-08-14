@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for worker selection, visual continuity, QA, prompt constraint extraction, and later Goldilocks deck planning.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed scene and stated intended use.",
+  "created_at": "2026-08-14T06:58:19Z",
+  "image": {
+    "repo_image_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/just_right__v1.png",
+    "relative_image_path": "just_right__v1.png",
+    "repo_sidecar_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/just_right__v1-sidecar.json",
+    "relative_sidecar_path": "just_right__v1-sidecar.json",
+    "image_filename": "just_right__v1.png",
+    "sha256": "81ee50ce884b4811651276648df0cec66c228d19046c6f959e87b5fbe93b75fe",
+    "byte_size": 2216256,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mode": "RGB",
+    "asset_role": "approved_scene_art",
+    "acceptance_state": "accepted_scene_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high"
+  },
+  "summary": "Approved Goldilocks ‘just right’ scene: Patch stands on the floor behind a clearly defined planning workbench in a warm, organized resource room. Abundant maps, tools, guides, records, and planning materials are neatly labelled and available for selection without overwhelming him.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape planning-room scene from a slightly elevated three-quarter angle.",
+      "A substantial wooden workbench occupies the foreground with a clear front edge and visible tabletop surface.",
+      "Patch stands on the floor behind the workbench; the bench naturally occludes most of his lower body.",
+      "Shelving, filing/storage units, maps, documents, and tools fill the background while remaining orderly and legible.",
+      "The framing is open and stable, contrasting with the compressed overload of ‘too much’ and the subjective POV of ‘not enough’."
+    ],
+    "patch_design": [
+      "Canonical teal hood frames an off-white face panel with simple black oval eyes and small white highlights.",
+      "Two dark hood antennae with rounded tips are visible.",
+      "Patch wears the canonical dark crossbody bag with white greater-than mark.",
+      "Patch appears calm, attentive, and ready to choose rather than confused or immobilized.",
+      "Patch has exactly one left arm and one right arm; visible hand placement is physically plausible."
+    ],
+    "props_and_environment": [
+      "The workbench carries maps, documents, notebooks, tools, and planning materials arranged into clear usable groups.",
+      "Background shelving and filing/storage surfaces hold additional resources without spilling into chaotic clutter.",
+      "Labels and organization cues make categories understandable at a glance.",
+      "The room contains both informational resources and practical journey tools, reinforcing balanced preparation rather than paperwork alone.",
+      "Warm daylight and wood tones make the resource room feel inviting and functional."
+    ],
+    "scene_semantics": [
+      "The core metaphor is curated abundance: Patch has enough context and tools, but they are organized so he can choose what is relevant for the journey.",
+      "The image represents agency through selection rather than total prescription.",
+      "The table/room geometry is intentionally unambiguous: Patch is behind the table, not standing on it."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the clearly defined workbench in the foreground and keep Patch standing on the floor behind it.",
+    "Allow the workbench to hide Patch’s lower body naturally; do not force full-body visibility.",
+    "Keep plentiful resources neatly organized and clearly selectable rather than sparse or chaotic.",
+    "Include both practical tools and information resources so the metaphor stays broader than document management.",
+    "Preserve canonical Patch identity and calm, confident body language.",
+    "Use the image as the ‘just right’ pole of a three-image Goldilocks guidance-balance set."
+  ],
+  "negative_constraints": [
+    "Do not place Patch on top of the table or make the table/floor relationship ambiguous.",
+    "Do not turn the room into a cluttered overload scene; abundance must remain organized and navigable.",
+    "Do not reduce the room to a sparse desk with only one or two resources.",
+    "Do not add duplicated arms, extra hands, or impossible limb attachments.",
+    "Do not make Patch a generic robot, human, toy, or glossy mascot."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Goldilocks guidance-balance scene selection.",
+      "Later deck image planning and slide-story continuity.",
+      "Reference for organized-choice environments and resource-room staging.",
+      "QA of table/floor geometry and just-right semantic balance."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces.",
+      "Exact OCR of incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:scene",
+      "adventure:goldilocks",
+      "pattern:just-right",
+      "state:approved",
+      "theme:guidance-balance",
+      "environment:planning-room"
+    ]
+  }
+}
