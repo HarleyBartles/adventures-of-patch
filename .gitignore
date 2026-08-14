@@ -16,7 +16,3 @@ __pycache__/
 
 # contact-sheet emitted outputs are disposable local artifacts
 output-zips/
-
-# keep scratch local unless explicitly promoted
-scratch/*
-!scratch/.gitkeep

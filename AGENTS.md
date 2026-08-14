@@ -11,6 +11,7 @@ The Adventures of Patch repo produces reusable presentation packages and the ass
 - The repository tree, live issue/PR evidence, repo-tracked receipts, asset guides, and indexed project sources are authoritative.
 - Linear issues and chat reports coordinate work but do not override committed repo state.
 - GitHub pull requests are the publication proof for repo-backed work.
+- Scratch files and session artifacts belong in the off-repo scratch workspace and are not durable.
 - Uploaded zips, chat attachments, scratch files, memory, and marketplace caches are context until the repo explicitly adopts them.
 
 ## Build and test commands
@@ -44,6 +45,7 @@ The Adventures of Patch repo produces reusable presentation packages and the ass
 ### Doctrine and stage runbooks
 
 - [Adventures project doctrine](.agents/doctrine/adventures-project-doctrine.md)
+- [Non-repo locations policy](.agents/doctrine/non-repo-locations-policy.md)
 - [Mesh policy](.agents/doctrine/mesh-policy.md)
 - [Repo runbook policy](.agents/doctrine/repo-runbook-policy.md)
 - [Runbooks router](.agents/runbooks/AGENTS.md)
