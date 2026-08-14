@@ -1,4 +1,4 @@
-# Adventures design guide
+# Design runbook
 
 This is the repository-specific overlay for design work. It does not replace
 `repo-worker-base`, `brainstorming`, or `risk-gates`.

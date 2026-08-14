@@ -22,14 +22,14 @@ For agent-workspace policy, skill authoring, or mesh work, also read:
 
 For Adventures readiness or visual work, also read:
 
-- `.agents/guides/design-guide.md` or `.agents/guides/planning-guide.md`;
+- `.agents/runbooks/design.md` or `.agents/runbooks/planning.md`;
 - `.agents/runbooks/pre-runbook-adventure-readiness.md`;
 - `.agents/runbooks/visual-preproduction.md`;
 - `.agents/runbooks/image-qa-contract.md` when an image candidate is involved.
 
 For tracked repo mutation or source-package work, read:
 
-- `.agents/guides/implementing-guide.md`;
+- `.agents/runbooks/implementing.md`;
 - `repo-worker-base` and the matching publication/review guidance.
 
 For issue-to-PPTX production, also read:
@@ -167,7 +167,7 @@ Keep prose and scripts consistent with the existing project patterns. Regenerate
 
 ## Review guidelines
 
-Use `REVIEW.md` and `.devin/rules/pr.md` for review and merge readiness. Subagent and human review both require evidence from the repo's mechanical checks.
+Use `REVIEW.md` and `.agents/runbooks/code-review.md` for review and merge readiness. Subagent and human review both require evidence from the repo's mechanical checks.
 
 ## PR instructions
 
@@ -183,13 +183,25 @@ Do not commit secrets, credentials, or unpublished personal data. Keep agent-fac
 
 ## Publication proof
 
-Local file changes are not completion. Publish changes through an open PR or an authorized direct-main commit with a verifiable SHA. See `.devin/rules/pr.md`.
+Local file changes are not completion. Publish changes through an open PR or an authorized direct-main commit with a verifiable SHA. See `.agents/runbooks/pr.md`.
 
 ## Routing pointers
 
 - [`README.md`](README.md)
 - [`.agents/AGENTS.md`](.agents/AGENTS.md)
 - [`.agents/doctrine/adventures-project-doctrine.md`](.agents/doctrine/adventures-project-doctrine.md)
+- [`.agents/runbooks/AGENTS.md`](.agents/runbooks/AGENTS.md)
+- [`.agents/runbooks/design.md`](.agents/runbooks/design.md)
+- [`.agents/runbooks/planning.md`](.agents/runbooks/planning.md)
+- [`.agents/runbooks/implementing.md`](.agents/runbooks/implementing.md)
+- [`.agents/runbooks/code-review.md`](.agents/runbooks/code-review.md)
+- [`.agents/runbooks/pr.md`](.agents/runbooks/pr.md)
+- [`.agents/runbooks/testing.md`](.agents/runbooks/testing.md)
+- [`.agents/runbooks/security.md`](.agents/runbooks/security.md)
+- [`.agents/runbooks/code-style.md`](.agents/runbooks/code-style.md)
+- [`.agents/runbooks/skill-authoring.md`](.agents/runbooks/skill-authoring.md)
+- [`.agents/runbooks/marketplace-generation.md`](.agents/runbooks/marketplace-generation.md)
+- [`.agents/runbooks/completing-plans.md`](.agents/runbooks/completing-plans.md)
 - [`CONTRIBUTING.md`](CONTRIBUTING.md)
 - [`REVIEW.md`](REVIEW.md)
 - [`.devin/rules/completed-plans.md`](.devin/rules/completed-plans.md)
