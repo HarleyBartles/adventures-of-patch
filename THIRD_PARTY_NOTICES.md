@@ -67,4 +67,4 @@ For a repo-local summary, see `docs/project/provenance-skills.md`.
 
 ## Current status
 
-This is no longer a scaffold. The repository boundary and verified items are recorded. The visual and media asset audit and the per-skill marketplace summary remain thin surfaces for the next review pass.
+This is a proper audit surface rather than an empty scaffold. The repository boundary and verified items are recorded. The visual and media asset audit and the per-skill marketplace summary remain thin surfaces for the next review pass.

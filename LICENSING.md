@@ -26,7 +26,7 @@ In practical terms, for an asset actually covered by CC BY-ND 4.0:
 
 A simple attribution is preferred where practical:
 
-`Adventures of Patch asset by Harley Bartles — CC BY-ND 4.0`
+`Adventures of Patch asset by Harley Bartles - CC BY-ND 4.0`
 
 Include a link to the licence where the publication medium reasonably supports one.
 
