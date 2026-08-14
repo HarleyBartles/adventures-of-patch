@@ -11,6 +11,7 @@
 - [assets](assets/INDEX.md)
 - [decks](decks/INDEX.md)
 - [docs](docs/INDEX.md)
+- [fairytales](fairytales/INDEX.md)
 - [scratch](scratch/INDEX.md)
 - [scripts](scripts/INDEX.md)
 

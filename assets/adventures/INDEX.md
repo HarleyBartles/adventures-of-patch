@@ -7,7 +7,6 @@
 - Up: [parent index](../INDEX.md)
 
 ## Directories
-- [Goldilocks](Goldilocks/INDEX.md)
 - [Tournament](Tournament/INDEX.md)
 
 ## Files

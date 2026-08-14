@@ -1,8 +1,9 @@
 # Adventures of Patch
 
 Adventures of Patch is a repository for developing short, visual adventures
-that explain agentic workflows. The current practical output is PowerPoint
-presentations used as mini talks for colleagues and peers at work.
+that explain agentic workflows. The current practical outputs are PowerPoint
+presentations used as mini talks for colleagues and peers at work, and one-page
+fairytale images that land a single principle.
 
 ## What this project does
 
@@ -23,6 +24,7 @@ explanations for real audiences.
 - adventure ideas and narrative frames for explaining workflow concepts;
 - Patch's visual canon, environments, props, and supporting assets;
 - deck plans, presentation structure, and presenter material;
+- one-page fairytales that land a concise agentic or operational principle;
 - PowerPoint/PPTX presentations and the supporting review or receipt material
   needed when a package is ready to use.
 
@@ -50,6 +52,8 @@ explanations for real audiences.
   receipt packages produced from asset or deck work.
 - [`decks/`](decks/) is the home for committed presentation artifacts and deck
   working folders.
+- [`fairytales/`](fairytales/) is the home for one-page fairytale artifacts and
+  their source scenes.
 - [`scripts/`](scripts/) contains deterministic maintenance and validation
   helpers.
 - [`.agents/`](.agents/) contains project doctrine, runbooks, local skills, and

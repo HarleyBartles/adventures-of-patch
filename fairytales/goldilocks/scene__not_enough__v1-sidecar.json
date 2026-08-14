@@ -1,18 +1,18 @@
 {
   "schema": "adventures.visual_sidecar.adjacent.v1",
-  "project": "Adventures of Patch",
+  "project": "Patch Fairytales",
   "character": "Patch",
-  "sidecar_purpose": "Repo-resident semantic image sidecar for worker selection, visual continuity, QA, prompt constraint extraction, and later Goldilocks deck planning.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for worker selection, visual continuity, QA, prompt constraint extraction, and later Goldilocks fairytale selection and page planning.",
   "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
   "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
   "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed scene and stated intended use.",
   "created_at": "2026-08-14T06:58:19Z",
   "image": {
-    "repo_image_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/not_enough__v1.png",
-    "relative_image_path": "not_enough__v1.png",
-    "repo_sidecar_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/not_enough__v1-sidecar.json",
-    "relative_sidecar_path": "not_enough__v1-sidecar.json",
-    "image_filename": "not_enough__v1.png",
+    "repo_image_path": "fairytales/goldilocks/scene__not_enough__v1.png",
+    "relative_image_path": "scene__not_enough__v1.png",
+    "repo_sidecar_path": "fairytales/goldilocks/scene__not_enough__v1-sidecar.json",
+    "relative_sidecar_path": "scene__not_enough__v1-sidecar.json",
+    "image_filename": "scene__not_enough__v1.png",
     "sha256": "3cb640e4f4539871aeae8aa6c966838526df1dbebdd3583418cff71ac1544cf3",
     "byte_size": 2268990,
     "mime_type": "image/png",
@@ -71,7 +71,7 @@
     "best_for": [
       "Goldilocks guidance-balance scene selection.",
       "Camera-angle reference for subjective Patch POV imagery.",
-      "Later deck image planning and slide-story continuity.",
+      "Later fairytale page planning and scene continuity.",
       "QA of the not-enough concept and arm/hand physical logic."
     ],
     "not_sufficient_for": [
@@ -83,7 +83,7 @@
     "repo_index_tags": [
       "character:patch",
       "asset:scene",
-      "adventure:goldilocks",
+      "fairytale:goldilocks",
       "pattern:not-enough",
       "state:approved",
       "theme:guidance-balance",
