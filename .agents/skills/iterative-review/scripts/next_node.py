@@ -57,8 +57,7 @@ GRAPH: dict[str, list[tuple[str, str]]] = {
         ("green", "scope-honesty"),
     ],
     "fast-fix": [("always", "preflight")],
-    "scope-honesty": [("always", "orchestrator-self-review")],
-    "orchestrator-self-review": [("always", "lens-dispatch")],
+    "scope-honesty": [("always", "lens-dispatch")],
     "lens-dispatch": [("always", "normalize-inputs")],
     "normalize-inputs": [
         ("after_lens_dispatch", "lens-triage"),
@@ -81,13 +80,13 @@ GRAPH: dict[str, list[tuple[str, str]]] = {
     ],
     "reviewer-fixes": [
         ("blocked", "blocked"),
-        ("new_issue", "metrics-track"),
+        ("regressions", "metrics-track"),
         ("non_trivial", "regression-scan"),
-        ("fixed", "resolved-ledger"),
+        ("reviewer_fixes_clean", "resolved-ledger"),
         ("not_fixed", "finding-fix"),
     ],
     "regression-scan": [
-        ("clean", "resolved-ledger"),
+        ("regression_scan_clean", "resolved-ledger"),
         ("new_issue", "metrics-track"),
     ],
     "resolved-ledger": [
@@ -146,6 +145,19 @@ def _load_metrics(path: Path) -> dict:
         return {}
 
 
+def _lens_log_clean(scratch: Path, lens: str) -> bool:
+    """Return True if the lens's log ends with '<lens>: clean'."""
+    log = scratch / f"review-log-{lens}.md"
+    if not log.exists():
+        return False
+    for line in reversed(log.read_text(encoding="utf-8").splitlines()):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        return stripped == f"{lens}: clean"
+    return False
+
+
 def _unresolved_findings(state: dict) -> list[str]:
     """Return finding_ids of unresolved blocking/important findings."""
     if "rounds_per_finding" in state:
@@ -192,7 +204,7 @@ def _findings_by_node(state: dict) -> dict[str, int]:
 def _contested(state: dict) -> bool:
     """Return True if any unresolved finding is marked as contested."""
     if "rounds_per_finding" in state:
-        return any(f.get("contested") for f in state.get("rounds_per_finding", []))
+        return any(f.get("contested") for f in state.get("rounds_per_finding", []) if not f.get("resolved_at_node"))
     scratch = Path(state.get("scratch_dir", "."))
     blockers = _load_jsonl(scratch / "blockers.jsonl")
     unresolved = set(_unresolved_findings(state))
@@ -215,6 +227,7 @@ def _condition_holds(condition: str, state: dict, ledger: Path, current_node: st
     findings_by_node = _findings_by_node(state)
     ledger_missing = not ledger.exists()
     previous_node = state.get("previous_node", "")
+    scratch = Path(state.get("scratch_dir", "."))
 
     if condition == "always":
         return True
@@ -244,6 +257,8 @@ def _condition_holds(condition: str, state: dict, ledger: Path, current_node: st
         return not unresolved and not ledger_missing
     if condition == "clean":
         return not unresolved
+    if condition == "non_trivial":
+        return _lens_log_clean(scratch, "reviewer-fixes") and state.get("non_trivial_fix", False)
     if condition == "trivial":
         if "rounds_per_finding" in state:
             rounds = state.get("rounds_per_finding", [])
@@ -288,8 +303,10 @@ def _condition_holds(condition: str, state: dict, ledger: Path, current_node: st
         return bool(unresolved)
     if condition == "new_issue":
         return bool(unresolved) or bool(regressions)
-    if condition == "non_trivial":
-        return state.get("non_trivial_fix", False)
+    if condition == "reviewer_fixes_clean":
+        return _lens_log_clean(scratch, "reviewer-fixes") and not regressions
+    if condition == "regression_scan_clean":
+        return not unresolved and not regressions
 
     return False
 
