@@ -37,6 +37,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Python dependencies
+        shell: pwsh
+        run: pip install -r requirements.txt
+
       - name: Run preflight checks
         shell: pwsh
         run: python tools/run.py ci --check
