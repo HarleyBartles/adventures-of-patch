@@ -78,3 +78,32 @@ The repository is the canonical project source. Scratch files, uploaded source
 packages, generated projections, and old presentation material are not
 automatically current just because they exist locally; follow the indexed repo
 paths to find the active source.
+
+## Licensing
+
+This is a mixed-licence repository rather than a single-licence project.
+
+- Original project-authored software is intended to be MIT-licensed where the
+  project has the rights needed to grant MIT and no more specific notice
+  applies.
+- Original visual and media assets are intended to be CC BY-ND 4.0 where the
+  project has the rights needed to grant that licence and no more specific
+  notice applies. In practical terms, the supplied licensed assets may be
+  used and redistributed in their licensed form with attribution, but adapted
+  versions may not be publicly shared under that licence.
+- Patch, Bit, Bot, the Heist Crew, other original Adventures of Patch
+  characters, their distinctive designs and identities, and Adventures of
+  Patch world/branding rights are not offered as an open character universe.
+  The asset licence does not grant a general right to publish new or adapted
+  character depictions, derivative characters, or new Adventures of Patch
+  stories without separate permission.
+- Third-party, vendored, adapted, or upstream-derived material keeps its own
+  applicable licence and attribution requirements.
+
+Private experimentation is not the boundary this policy is trying to police;
+the practical reservation is around publishing and distributing transformative
+Adventures of Patch character/world material.
+
+See [`LICENSE`](LICENSE), [`LICENSING.md`](LICENSING.md), and
+[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the licensing map and
+current audit posture.
