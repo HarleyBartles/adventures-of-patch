@@ -1,0 +1,12 @@
+Creative Commons Attribution-NoDerivatives 4.0 International
+SPDX-License-Identifier: CC-BY-ND-4.0
+
+Canonical licence deed:
+https://creativecommons.org/licenses/by-nd/4.0/
+
+Canonical legal code:
+https://creativecommons.org/licenses/by-nd/4.0/legalcode
+
+This repository uses CC BY-ND 4.0 for original visual and media assets where `LICENSING.md` says that default applies and no more specific notice overrides it.
+
+This file is a repository pointer to the canonical Creative Commons licence, not a rewritten substitute for the legal code. The on-disk licensing audit may replace this pointer with the canonical full licence text if required by the repository's eventual SPDX/REUSE implementation.
