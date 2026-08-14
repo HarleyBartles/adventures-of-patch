@@ -1,0 +1,33 @@
+{
+  "domain": "fairytales",
+  "family": "sorcerers-apprentice",
+  "package_id": "delegation-without-boundaries",
+  "package_type": "fairytale_page",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_scenes": "present",
+    "finished_page": "present",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_scenes": [
+      "scene__runaway_recursive_delegation__v1.png",
+      "scene__five_worker_handoff__v1.png",
+      "detail__delegation_instruction_closeup__v1.png",
+      "detail__delegation_instruction_circle__v1.png",
+      "prop__delegation_policy__v1.png"
+    ],
+    "finished_page": "page__delegation_without_boundaries__v1.png",
+    "compiled_asset_sheets": [],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "All six Sorcerer's Apprentice visual assets were approved by Harley in the originating ChatGPT production session on 2026-08-14.",
+    "The approved semantic set includes the runaway recursive delegation background, the five-worker opening handoff, the delegation-instruction close-up and circular insert, the Delegation Policy prop, and the finished one-page Patch Fairytale composition.",
+    "The finished page is a one-page Patch Fairytale deterministically composed from the five approved source assets.",
+    "The image bytes are repo-custodied in this directory with adjacent visual sidecars for selection, continuity, QA, and fairytale page planning.",
+    "These assets are retained as reusable Sorcerer's Apprentice fairytale source and page assets; they are not a future Adventure or deck."
+  ],
+  "core_lesson": "Delegation needs a boundary, not just permission."
+}

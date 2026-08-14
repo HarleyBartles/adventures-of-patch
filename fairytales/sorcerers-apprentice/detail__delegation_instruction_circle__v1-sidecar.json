@@ -1,1 +1,75 @@
-{"schema":"adventures.visual_sidecar.adjacent.v1","project":"Patch Fairytales","character":"Patch","source_truth_note":"This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.","runtime_use_note":"Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.","do_not_infer_note":"Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.","sidecar_purpose":"Repo-resident semantic image sidecar for the approved circular magnifier insert derived deterministically from the delegation-instruction close-up.","image":{"repo_image_path":"fairytales/sorcerers-apprentice/detail__delegation_instruction_circle__v1.png","relative_image_path":"detail__delegation_instruction_circle__v1.png","repo_sidecar_path":"fairytales/sorcerers-apprentice/detail__delegation_instruction_circle__v1-sidecar.json","relative_sidecar_path":"detail__delegation_instruction_circle__v1-sidecar.json","image_filename":"detail__delegation_instruction_circle__v1.png","sha256":"4a930d5e7918012f70eeb74a68fde2b7ee52a51b3217d84381974946219bd102","byte_size":2725716,"mime_type":"image/png","dimensions":{"width":1240,"height":1240},"mode":"RGBA","asset_role":"approved_detail_crop","acceptance_state":"accepted_detail_crop","inspection_mode":"pixel_inspected","confidence":"high","repo_custody_state":"pending_matching_image_bytes"},"summary":"Approved circular insert for the fairytale page: a deterministic circular crop of the delegation-instruction close-up that preserves several ordinary checklist items and the full line “Hire anyone else you need to get the work done.” The final instruction is visually ordinary; the magnification, not special document styling, makes it narratively important.","observed_visual_facts":{"composition":["Square RGBA asset whose visible source content is masked to a circle with transparency outside the circle.","Several preceding checklist rows remain visible to establish that the final instruction is one ordinary item among other work instructions.","The full recursive-delegation instruction remains legible inside the circular boundary without clipping."],"derivation":["Derived deterministically from detail__delegation_instruction_closeup__v1.png using a circular Pillow mask.","No new scene pixels were generated for the circular crop."],"scene_semantics":["The insert is an editorial magnifier attached to the job sheet in the opening scene.","Its purpose is to expose the mundane instruction that enables recursive delegation, not merely to decorate the page with a circle."]},"positive_constraints":["Use as the approved circular overlay in the finished Sorcerer’s Apprentice page.","Keep the full final instruction legible and preserve enough preceding rows for mundane-list context.","Keep transparency outside the circle for deterministic page composition."],"negative_constraints":["Do not add an internal square background, padding band, warning color, bold emphasis, or special separator around the final instruction.","Do not crop away the complete final instruction.","Do not treat this crop as a substitute for the uncropped source detail when full source pixels are needed."],"sidecar_usage":{"best_for":["Sorcerer’s Apprentice fairytale source selection and deterministic page reconstruction.","Visual continuity and QA against the accepted production-session asset.","Prompt or layout constraints for semantically related future work."],"not_sufficient_for":["Proving image-byte repo custody until a matching PNG is present at repo_image_path.","Authorizing derivative images without image QA.","Patch character canon in general; use the canonical Patch reference surfaces."],"linear_view_route":null,"repo_index_tags":["asset:detail-crop","fairytale:sorcerers-apprentice","pattern:delegation-instruction","state:approved","theme:delegation-boundaries"]}}
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "source_truth_note": "This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved circular magnifier insert derived deterministically from the delegation-instruction close-up.",
+  "image": {
+    "repo_image_path": "fairytales/sorcerers-apprentice/detail__delegation_instruction_circle__v1.png",
+    "relative_image_path": "detail__delegation_instruction_circle__v1.png",
+    "repo_sidecar_path": "fairytales/sorcerers-apprentice/detail__delegation_instruction_circle__v1-sidecar.json",
+    "relative_sidecar_path": "detail__delegation_instruction_circle__v1-sidecar.json",
+    "image_filename": "detail__delegation_instruction_circle__v1.png",
+    "sha256": "d1f6cd3c14c326b69e281af7b25f1500aebc64c99114d11ec583cd78bf262e22",
+    "byte_size": 2110736,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1240,
+      "height": 1240
+    },
+    "mode": "RGBA",
+    "asset_role": "approved_detail_crop",
+    "acceptance_state": "accepted_detail_crop",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "repo_custody_state": "repo_custodied"
+  },
+  "summary": "Approved circular insert for the fairytale page: a deterministic circular crop of the delegation-instruction close-up that preserves several ordinary checklist items and the full line \u201cHire anyone else you need to get the work done.\u201d The final instruction is visually ordinary; the magnification, not special document styling, makes it narratively important.",
+  "observed_visual_facts": {
+    "composition": [
+      "Square RGBA asset whose visible source content is masked to a circle with transparency outside the circle.",
+      "Several preceding checklist rows remain visible to establish that the final instruction is one ordinary item among other work instructions.",
+      "The full recursive-delegation instruction remains legible inside the circular boundary without clipping."
+    ],
+    "derivation": [
+      "Derived deterministically from detail__delegation_instruction_closeup__v1.png using a circular Pillow mask.",
+      "No new scene pixels were generated for the circular crop."
+    ],
+    "scene_semantics": [
+      "The insert is an editorial magnifier attached to the job sheet in the opening scene.",
+      "Its purpose is to expose the mundane instruction that enables recursive delegation, not merely to decorate the page with a circle."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the approved circular overlay in the finished Sorcerer\u2019s Apprentice page.",
+    "Keep the full final instruction legible and preserve enough preceding rows for mundane-list context.",
+    "Keep transparency outside the circle for deterministic page composition."
+  ],
+  "negative_constraints": [
+    "Do not add an internal square background, padding band, warning color, bold emphasis, or special separator around the final instruction.",
+    "Do not crop away the complete final instruction.",
+    "Do not treat this crop as a substitute for the uncropped source detail when full source pixels are needed."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Sorcerer\u2019s Apprentice fairytale source selection and deterministic page reconstruction.",
+      "Visual continuity and QA against the accepted production-session asset.",
+      "Prompt or layout constraints for semantically related future work."
+    ],
+    "not_sufficient_for": [
+      "Proving image-byte repo custody until a matching PNG is present at repo_image_path.",
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:detail-crop",
+      "fairytale:sorcerers-apprentice",
+      "pattern:delegation-instruction",
+      "state:approved",
+      "theme:delegation-boundaries"
+    ]
+  }
+}

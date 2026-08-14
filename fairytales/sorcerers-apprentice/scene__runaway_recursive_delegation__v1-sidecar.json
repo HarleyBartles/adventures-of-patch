@@ -5,28 +5,28 @@
   "source_truth_note": "This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.",
   "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
   "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.",
-  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved Sorcerer’s Apprentice runaway-delegation background scene, later page reconstruction, visual continuity, and QA.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved Sorcerer\u2019s Apprentice runaway-delegation background scene, later page reconstruction, visual continuity, and QA.",
   "image": {
     "repo_image_path": "fairytales/sorcerers-apprentice/scene__runaway_recursive_delegation__v1.png",
     "relative_image_path": "scene__runaway_recursive_delegation__v1.png",
     "repo_sidecar_path": "fairytales/sorcerers-apprentice/scene__runaway_recursive_delegation__v1-sidecar.json",
     "relative_sidecar_path": "scene__runaway_recursive_delegation__v1-sidecar.json",
     "image_filename": "scene__runaway_recursive_delegation__v1.png",
-    "sha256": "2d0bc14c8683f0b2d0e39a9c15e600ed11540dc77e7410c0d9b24d81c9dd5dd0",
-    "byte_size": 3436633,
+    "sha256": "0c202f4e0e9989aecf2df1483a0405422584b4f18a42cabb43622f0500f18f0f",
+    "byte_size": 2472462,
     "mime_type": "image/png",
     "dimensions": {
       "width": 1672,
       "height": 941
     },
-    "mode": "RGBA",
+    "mode": "RGB",
     "asset_role": "approved_scene_art",
     "acceptance_state": "accepted_scene_art",
     "inspection_mode": "pixel_inspected",
     "confidence": "high",
-    "repo_custody_state": "pending_matching_image_bytes"
+    "repo_custody_state": "repo_custodied"
   },
-  "summary": "Approved system-scale Sorcerer’s Apprentice background scene: Patch stands near the left-side origin while repeated anonymous single-antenna worker bots branch outward across the canvas in increasingly dense generations, connected by directional dotted arrows and carrying ordinary work materials. The visual expresses locally sensible delegation becoming uncontrolled recursive fan-out rather than malicious or incompetent behavior.",
+  "summary": "Approved system-scale Sorcerer\u2019s Apprentice background scene: Patch stands near the left-side origin while repeated anonymous single-antenna worker bots branch outward across the canvas in increasingly dense generations, connected by directional dotted arrows and carrying ordinary work materials. The visual expresses locally sensible delegation becoming uncontrolled recursive fan-out rather than malicious or incompetent behavior.",
   "observed_visual_facts": {
     "composition": [
       "Landscape 16:9-style system-scale scene on a warm off-white field with broad quiet space on the left and a dense worker field expanding toward the upper-right and lower-right.",
@@ -57,7 +57,7 @@
   ],
   "sidecar_usage": {
     "best_for": [
-      "Sorcerer’s Apprentice fairytale source selection and deterministic page reconstruction.",
+      "Sorcerer\u2019s Apprentice fairytale source selection and deterministic page reconstruction.",
       "Visual continuity and QA against the accepted production-session asset.",
       "Prompt or layout constraints for semantically related future work."
     ],

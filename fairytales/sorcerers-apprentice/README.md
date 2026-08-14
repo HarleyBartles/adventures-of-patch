@@ -1,8 +1,8 @@
 # The Sorcerer’s Apprentice — Delegation Without Boundaries
 
-This directory is the custody surface for the approved Patch Fairytales Sorcerer’s Apprentice visual set.
+This directory holds the repo-custodied approved Patch Fairytales Sorcerer’s Apprentice visual set.
 
-The image bytes are intentionally not part of this scaffold. Each adjacent sidecar records the exact expected filename, SHA-256, byte size, dimensions, semantic role, and accepted visual constraints so an on-disk custody agent can place and verify the approved PNGs without renaming ambiguity.
+The image bytes are now in this directory. Each adjacent sidecar records the exact filename, SHA-256, byte size, dimensions, semantic role, and accepted visual constraints for its image.
 
 ## Expected approved image files
 
@@ -15,14 +15,8 @@ The image bytes are intentionally not part of this scaffold. Each adjacent sidec
 
 Each image has an adjacent `-sidecar.json` already scaffolded in this directory.
 
-## Custody handoff
+## Provenance
 
-The on-disk custody pass should:
+All six Sorcerer’s Apprentice visual assets were approved by Harley in the originating ChatGPT production session on 2026-08-14.
 
-1. place the six approved image bytes at the exact filenames above;
-2. verify each image against the SHA-256, byte size, and dimensions recorded in its adjacent sidecar;
-3. update sidecar custody state only after matching bytes are present;
-4. add the normal package manifest/provenance surface if required by current Fairytales custody conventions;
-5. regenerate the repository index mesh rather than hand-editing `INDEX.md`.
-
-Until the PNG bytes are present and verified, the sidecars are scaffolding and do not by themselves prove repo custody of the images.
+The image bytes, adjacent visual sidecars, and `manifest.json` together form the package provenance. The sidecars are the canonical selection, continuity, and QA source for each image.

@@ -1,1 +1,76 @@
-{"schema":"adventures.visual_sidecar.adjacent.v1","project":"Patch Fairytales","character":"Patch","source_truth_note":"This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.","runtime_use_note":"Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.","do_not_infer_note":"Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.","sidecar_purpose":"Repo-resident semantic image sidecar for the approved Sorcerer’s Apprentice opening delegation scene, later page reconstruction, continuity, and QA.","image":{"repo_image_path":"fairytales/sorcerers-apprentice/scene__five_worker_handoff__v1.png","relative_image_path":"scene__five_worker_handoff__v1.png","repo_sidecar_path":"fairytales/sorcerers-apprentice/scene__five_worker_handoff__v1-sidecar.json","relative_sidecar_path":"scene__five_worker_handoff__v1-sidecar.json","image_filename":"scene__five_worker_handoff__v1.png","sha256":"d101d174b303a73c613a0d7cf789ee7598cd1514ebb5fe2d43f4a2c0286614de","byte_size":2878774,"mime_type":"image/png","dimensions":{"width":1448,"height":1086},"mode":"RGBA","asset_role":"approved_scene_art","acceptance_state":"accepted_scene_art","inspection_mode":"pixel_inspected","confidence":"high","repo_custody_state":"pending_matching_image_bytes"},"summary":"Approved opening scene: Patch stands beside a simple work table and hands a normal-looking job sheet to one of exactly five anonymous single-antenna worker bots while the other four move away carrying work packages. The scene intentionally makes the initial five-way parallel delegation look sensible, calm, and competent.","observed_visual_facts":{"composition":["Landscape scene with Patch on the left beside a simple work table and five worker bots distributed through the middle and right side.","One worker receives the handoff document directly from Patch while the remaining four workers peel away into depth carrying clipboards, files, or a crate.","The background is sparse warm off-white, leaving the handoff readable without adventure-world or tournament scenery."],"patch_design":["Patch uses the teal hood, two hood antennae, off-white face panel, black oval eyes, dark trousers, teal shoes, and dark crossbody terminal bag.","The five workers are a distinct repeated cream mechanical class with single antennae and no hoodies."],"scene_semantics":["The initial fan-out to five workers is the healthy pattern and should not read as the mistake.","The causal mistake is contained in the job-sheet instruction later revealed by the close-up detail."]},"positive_constraints":["Keep exactly five anonymous worker bots in the opening delegation beat.","Keep the dispatch calm, competent, and sparse so the later runaway canvas provides the contrast.","Preserve the handed-over document as the physical object linked to the close-up insert."],"negative_constraints":["Do not turn the scene into an expedition, trail, tournament, or other full Adventure frame.","Do not add literal sorcerer imagery.","Do not make the five workers look like named autonomous Crew characters or clones of Patch."],"sidecar_usage":{"best_for":["Sorcerer’s Apprentice fairytale source selection and deterministic page reconstruction.","Visual continuity and QA against the accepted production-session asset.","Prompt or layout constraints for semantically related future work."],"not_sufficient_for":["Proving image-byte repo custody until a matching PNG is present at repo_image_path.","Authorizing derivative images without image QA.","Patch character canon in general; use the canonical Patch reference surfaces."],"linear_view_route":null,"repo_index_tags":["character:patch","asset:scene","fairytale:sorcerers-apprentice","pattern:initial-delegation","state:approved","theme:delegation-boundaries"]}}
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "source_truth_note": "This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved Sorcerer\u2019s Apprentice opening delegation scene, later page reconstruction, continuity, and QA.",
+  "image": {
+    "repo_image_path": "fairytales/sorcerers-apprentice/scene__five_worker_handoff__v1.png",
+    "relative_image_path": "scene__five_worker_handoff__v1.png",
+    "repo_sidecar_path": "fairytales/sorcerers-apprentice/scene__five_worker_handoff__v1-sidecar.json",
+    "relative_sidecar_path": "scene__five_worker_handoff__v1-sidecar.json",
+    "image_filename": "scene__five_worker_handoff__v1.png",
+    "sha256": "16b2d9c1ea3d65f7bc3902b85c21dd649ebbc576fff9025470efc28ae9a76b74",
+    "byte_size": 1975727,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "approved_scene_art",
+    "acceptance_state": "accepted_scene_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "repo_custody_state": "repo_custodied"
+  },
+  "summary": "Approved opening scene: Patch stands beside a simple work table and hands a normal-looking job sheet to one of exactly five anonymous single-antenna worker bots while the other four move away carrying work packages. The scene intentionally makes the initial five-way parallel delegation look sensible, calm, and competent.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape scene with Patch on the left beside a simple work table and five worker bots distributed through the middle and right side.",
+      "One worker receives the handoff document directly from Patch while the remaining four workers peel away into depth carrying clipboards, files, or a crate.",
+      "The background is sparse warm off-white, leaving the handoff readable without adventure-world or tournament scenery."
+    ],
+    "patch_design": [
+      "Patch uses the teal hood, two hood antennae, off-white face panel, black oval eyes, dark trousers, teal shoes, and dark crossbody terminal bag.",
+      "The five workers are a distinct repeated cream mechanical class with single antennae and no hoodies."
+    ],
+    "scene_semantics": [
+      "The initial fan-out to five workers is the healthy pattern and should not read as the mistake.",
+      "The causal mistake is contained in the job-sheet instruction later revealed by the close-up detail."
+    ]
+  },
+  "positive_constraints": [
+    "Keep exactly five anonymous worker bots in the opening delegation beat.",
+    "Keep the dispatch calm, competent, and sparse so the later runaway canvas provides the contrast.",
+    "Preserve the handed-over document as the physical object linked to the close-up insert."
+  ],
+  "negative_constraints": [
+    "Do not turn the scene into an expedition, trail, tournament, or other full Adventure frame.",
+    "Do not add literal sorcerer imagery.",
+    "Do not make the five workers look like named autonomous Crew characters or clones of Patch."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Sorcerer\u2019s Apprentice fairytale source selection and deterministic page reconstruction.",
+      "Visual continuity and QA against the accepted production-session asset.",
+      "Prompt or layout constraints for semantically related future work."
+    ],
+    "not_sufficient_for": [
+      "Proving image-byte repo custody until a matching PNG is present at repo_image_path.",
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:scene",
+      "fairytale:sorcerers-apprentice",
+      "pattern:initial-delegation",
+      "state:approved",
+      "theme:delegation-boundaries"
+    ]
+  }
+}

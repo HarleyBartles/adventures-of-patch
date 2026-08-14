@@ -8,6 +8,7 @@
 
 ## Directories
 - [goldilocks](goldilocks/INDEX.md)
+- [sorcerers-apprentice](sorcerers-apprentice/INDEX.md)
 
 ## Files
 - [README.md](README.md)
