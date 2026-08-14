@@ -1,0 +1,77 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved one-page Patch Fairytale, Goldilocks guidance-balance scene continuity, and fairytale page planning.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed page and stated intended use.",
+  "created_at": "2026-08-14T07:00:00Z",
+  "image": {
+    "repo_image_path": "fairytales/goldilocks/page__right_amount_of_guidance__v1.png",
+    "relative_image_path": "page__right_amount_of_guidance__v1.png",
+    "repo_sidecar_path": "fairytales/goldilocks/page__right_amount_of_guidance__v1-sidecar.json",
+    "relative_sidecar_path": "page__right_amount_of_guidance__v1-sidecar.json",
+    "image_filename": "page__right_amount_of_guidance__v1.png",
+    "sha256": "3ecd0a1052de65f222fb9ea2a6c4f8ffbec11cc0f509fac6bb51cfc432ddd92c",
+    "byte_size": 1568600,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 2400,
+      "height": 1350
+    },
+    "mode": "RGB",
+    "asset_role": "approved_fairytale_page",
+    "acceptance_state": "accepted_fairytale_page",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high"
+  },
+  "summary": "Approved one-page Patch Fairytale, The Right Amount of Guidance: the three approved Goldilocks guidance-balance scenes are composed into a single fairytale page. The page expresses that good agent guidance is not maximum context, but enough relevant context for a confident next decision.",
+  "observed_visual_facts": {
+    "composition": [
+      "One-page Patch Fairytale composition that deterministically combines the three approved Goldilocks guidance-balance scenes.",
+      "Patch remains Patch throughout: teal hoodie, antennae, compact rounded proportions, and canonical black oval eyes with small white highlights.",
+      "The three scenes read as too much, not enough, and just right guidance for the same decision problem.",
+      "The page is designed to land one concise agentic principle rather than a full multi-slide Adventure."
+    ],
+    "scene_semantics": [
+      "The core lesson is that good agent guidance is not maximum context, but enough relevant context for a confident next decision.",
+      "The too-much scene shows excess guidance and tooling becoming a burden that prevents a confident next move.",
+      "The not-enough scene shows under-specification leaving too many valid next moves.",
+      "The just-right scene shows curated, organised resources that let Patch choose what is relevant."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Patch's canonical identity across all three composed scenes.",
+    "Use this image as the approved one-page Patch Fairytale for the right-amount-of-guidance principle.",
+    "Treat the three scenes as a deterministic source set: too much, not enough, and just right.",
+    "Land the core lesson that good agent guidance is enough relevant context, not maximum context."
+  ],
+  "negative_constraints": [
+    "Do not add new characters, story beats, or props beyond the three approved source scenes.",
+    "Do not reframe the page as a multi-slide Adventure or finished deck.",
+    "Do not alter the core lesson into a claim about maximum context."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Goldilocks right-amount-of-guidance fairytale page selection.",
+      "One-page Patch Fairytale page planning and layout reference.",
+      "Prompt constraints for fairytale pages with a clear agentic principle.",
+      "QA of the three-scene composition and guidance-balance message."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces.",
+      "Exact OCR of incidental small text."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:fairytale-page",
+      "fairytale:goldilocks",
+      "pattern:right-amount-of-guidance",
+      "state:approved",
+      "theme:guidance-balance"
+    ]
+  }
+}

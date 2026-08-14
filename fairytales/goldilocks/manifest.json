@@ -1,0 +1,31 @@
+{
+  "domain": "fairytales",
+  "family": "goldilocks",
+  "package_id": "right-amount-of-guidance",
+  "package_type": "fairytale_page",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_scenes": "present",
+    "finished_page": "present",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_scenes": [
+      "scene__too_much__v1.png",
+      "scene__not_enough__v1.png",
+      "scene__just_right__v1.png"
+    ],
+    "finished_page": "page__right_amount_of_guidance__v1.png",
+    "compiled_asset_sheets": [],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "All three Goldilocks source scenes and the finished one-page composition were approved by Harley in the originating ChatGPT production session on 2026-08-14.",
+    "The approved semantic set is too much, not enough, and just right guidance-balance scenes featuring Patch.",
+    "The finished page is a one-page Patch Fairytale deterministically composed from the three approved source scenes.",
+    "The image bytes are repo-custodied in this directory with adjacent visual sidecars for selection, continuity, QA, and fairytale page planning.",
+    "These assets are retained as reusable Goldilocks fairytale source and page assets; they are not a future Adventure or deck."
+  ],
+  "core_lesson": "Good agent guidance is not maximum context, but enough relevant context for a confident next decision."
+}
