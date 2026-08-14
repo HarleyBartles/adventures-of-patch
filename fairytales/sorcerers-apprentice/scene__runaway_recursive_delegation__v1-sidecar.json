@@ -1,0 +1,79 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "source_truth_note": "This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved Sorcerer’s Apprentice runaway-delegation background scene, later page reconstruction, visual continuity, and QA.",
+  "image": {
+    "repo_image_path": "fairytales/sorcerers-apprentice/scene__runaway_recursive_delegation__v1.png",
+    "relative_image_path": "scene__runaway_recursive_delegation__v1.png",
+    "repo_sidecar_path": "fairytales/sorcerers-apprentice/scene__runaway_recursive_delegation__v1-sidecar.json",
+    "relative_sidecar_path": "scene__runaway_recursive_delegation__v1-sidecar.json",
+    "image_filename": "scene__runaway_recursive_delegation__v1.png",
+    "sha256": "2d0bc14c8683f0b2d0e39a9c15e600ed11540dc77e7410c0d9b24d81c9dd5dd0",
+    "byte_size": 3436633,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mode": "RGBA",
+    "asset_role": "approved_scene_art",
+    "acceptance_state": "accepted_scene_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "repo_custody_state": "pending_matching_image_bytes"
+  },
+  "summary": "Approved system-scale Sorcerer’s Apprentice background scene: Patch stands near the left-side origin while repeated anonymous single-antenna worker bots branch outward across the canvas in increasingly dense generations, connected by directional dotted arrows and carrying ordinary work materials. The visual expresses locally sensible delegation becoming uncontrolled recursive fan-out rather than malicious or incompetent behavior.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape 16:9-style system-scale scene on a warm off-white field with broad quiet space on the left and a dense worker field expanding toward the upper-right and lower-right.",
+      "Patch is near the left-side origin of the branching structure; later worker generations become smaller and denser as they spread away from him.",
+      "Colored dotted arrows form branching directional fans that make the multiplication path readable without turning the scene into a formal diagram.",
+      "Repeated papers, clipboards, tools, boxes, carts, and work materials keep the swarm grounded in ordinary productive work."
+    ],
+    "patch_design": [
+      "Patch is visually distinct from the anonymous worker class through the teal hood, two hood antennae, dark trousers, teal shoes, and dark crossbody terminal bag.",
+      "The worker bots use a repeated cream mechanical body class with a single antenna and do not wear Patch hoodies."
+    ],
+    "scene_semantics": [
+      "The workers look cheerful and productive; the failure is missing delegation policy, not worker malice or incompetence.",
+      "The scene is the runaway consequence layer of the fairytale and is intended to sit behind editorial overlays in the finished page."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the approved full-canvas runaway consequence background for this fairytale.",
+    "Preserve the contrast between Patch and the repeated anonymous worker class.",
+    "Preserve the sense of increasing density and branching recursive delegation.",
+    "Keep the warm off-white negative space as part of the same image field when composing overlays."
+  ],
+  "negative_constraints": [
+    "Do not reframe the workers as malicious, panicked, or incompetent.",
+    "Do not add literal sorcerer robes, hats, brooms, water, or magic effects.",
+    "Do not treat the image as evidence that delegation itself is bad; the failure is unbounded recursive delegation.",
+    "Do not substitute a regenerated or cropped variant for the accepted bytes without explicit QA and acceptance."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Sorcerer’s Apprentice fairytale source selection and deterministic page reconstruction.",
+      "Visual continuity and QA against the accepted production-session asset.",
+      "Prompt or layout constraints for semantically related future work."
+    ],
+    "not_sufficient_for": [
+      "Proving image-byte repo custody until a matching PNG is present at repo_image_path.",
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:scene",
+      "fairytale:sorcerers-apprentice",
+      "pattern:runaway-recursion",
+      "state:approved",
+      "theme:delegation-boundaries"
+    ]
+  }
+}
