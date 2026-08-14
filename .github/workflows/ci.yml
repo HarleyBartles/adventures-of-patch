@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repo-hygiene:
+    name: Repo hygiene
+    if: github.event_name == 'push' || github.event.pull_request.draft == false
+    runs-on: windows-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # The marketplace source is private. CI validates the committed
+          # projection; refreshes run locally with marketplace access.
+          submodules: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run preflight checks
+        shell: pwsh
+        run: python tools/run.py ci --check

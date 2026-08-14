@@ -1,27 +1,56 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "marketplace_source": {
     "repository": "https://github.com/HarleyBartles/agent-asset-marketplace.git",
     "path": ".agents/plugins/marketplace-source"
   },
-  "local_skill_prefixes": [
-    "adventures-"
-  ],
-  "default_plugins": [
-    "repo-worker-pack",
-    "superpowers-plus"
-  ],
-  "excluded_plugins": [],
-  "plugins": {
-    "repo-worker-pack": {
+  "repo": {
+    "local_skills": [
+      "adventures-image-qa",
+      "adventures-project-doctrine",
+      "adventures-project-readiness",
+      "adventures-visual-preproduction"
+    ]
+  },
+  "plugins": [
+    {
+      "name": "repo-worker-pack",
       "version": "1.0.0",
-      "source_path": "codex-marketplace/plugins/repo-worker-pack",
-      "skills_path": "skills"
+      "source": {
+        "source": "github",
+        "owner": "HarleyBartles",
+        "repo": "agent-asset-marketplace",
+        "path": "codex-marketplace/plugins/repo-worker-pack"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT"
+      }
     },
-    "superpowers-plus": {
-      "version": "5.1.0",
-      "source_path": "codex-marketplace/plugins/superpowers-plus",
-      "skills_path": "skills"
+    {
+      "name": "superpowers-plus",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "owner": "HarleyBartles",
+        "repo": "agent-asset-marketplace",
+        "path": "codex-marketplace/plugins/superpowers-plus"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT"
+      }
+    },
+    {
+      "name": "mcp-usage-pack",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "owner": "HarleyBartles",
+        "repo": "agent-asset-marketplace",
+        "path": "codex-marketplace/plugins/mcp-usage-pack"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT"
+      }
     }
-  }
+  ]
 }

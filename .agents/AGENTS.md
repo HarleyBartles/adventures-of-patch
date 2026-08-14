@@ -8,7 +8,7 @@ Read the applicable doctrine before changing agent-facing surfaces:
   source truth, readiness, resource, and publication invariants;
 - `.agents/doctrine/skill-authoring-policy.md` before creating, migrating,
   reviewing, or retiring any repo-local skill;
-- `.agents/guides/` stage guides once the required guide surface exists;
+- `.agents/runbooks/AGENTS.md` for stage runbook routing;
 - `.agents/plugins/marketplace.json` and `.agents/skills/.provenance.json` for
   marketplace-derived skill custody.
 

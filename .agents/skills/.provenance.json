@@ -1,129 +1,23 @@
 {
-  "copied_skills": [
-    "base-doctrine",
-    "cleanup-custody",
-    "connector-safety",
-    "context-safety",
-    "github-operations",
-    "linear-issue-shaping",
-    "repo-worker-base",
-    "risk-gates",
-    "subagent-model-routing",
-    "unslop-plus",
-    "using-linear",
-    "work-mode-router",
-    "writing-with-clarity",
-    "brainstorming",
-    "dispatching-parallel-agents",
-    "executing-plans",
-    "finishing-a-development-branch",
-    "inspecting-the-environment",
-    "receiving-code-review",
-    "requesting-code-review",
-    "subagent-driven-development",
-    "systematic-debugging",
-    "test-driven-development",
-    "using-git-worktrees",
-    "using-superpowers",
-    "verification-before-completion",
-    "writing-plans",
-    "writing-skills"
-  ],
-  "default_plugins": [
+  "manifestSha": "f3792c9f2f39666c32edcdb68209e652b43888d2",
+  "syncedPlugins": [
     "repo-worker-pack",
-    "superpowers-plus"
+    "superpowers-plus",
+    "mcp-usage-pack"
   ],
-  "excluded_plugins": [],
-  "local_skill_prefixes": [
-    "adventures-"
+  "syncedSkills": 39,
+  "localSkills": [
+    "adventures-image-qa",
+    "adventures-project-doctrine",
+    "adventures-project-readiness",
+    "adventures-visual-preproduction"
   ],
-  "schema_version": 1,
-  "skill_providers": {
-    "base-doctrine": [
-      "repo-worker-pack"
-    ],
-    "brainstorming": [
-      "superpowers-plus"
-    ],
-    "cleanup-custody": [
-      "repo-worker-pack"
-    ],
-    "connector-safety": [
-      "repo-worker-pack"
-    ],
-    "context-safety": [
-      "repo-worker-pack"
-    ],
-    "dispatching-parallel-agents": [
-      "superpowers-plus"
-    ],
-    "executing-plans": [
-      "superpowers-plus"
-    ],
-    "finishing-a-development-branch": [
-      "superpowers-plus"
-    ],
-    "github-operations": [
-      "repo-worker-pack"
-    ],
-    "inspecting-the-environment": [
-      "superpowers-plus"
-    ],
-    "linear-issue-shaping": [
-      "repo-worker-pack"
-    ],
-    "receiving-code-review": [
-      "superpowers-plus"
-    ],
-    "repo-worker-base": [
-      "repo-worker-pack"
-    ],
-    "requesting-code-review": [
-      "superpowers-plus"
-    ],
-    "risk-gates": [
-      "repo-worker-pack"
-    ],
-    "subagent-driven-development": [
-      "superpowers-plus"
-    ],
-    "subagent-model-routing": [
-      "repo-worker-pack"
-    ],
-    "systematic-debugging": [
-      "superpowers-plus"
-    ],
-    "test-driven-development": [
-      "superpowers-plus"
-    ],
-    "unslop-plus": [
-      "repo-worker-pack"
-    ],
-    "using-git-worktrees": [
-      "superpowers-plus"
-    ],
-    "using-linear": [
-      "repo-worker-pack"
-    ],
-    "using-superpowers": [
-      "superpowers-plus"
-    ],
-    "verification-before-completion": [
-      "superpowers-plus"
-    ],
-    "work-mode-router": [
-      "repo-worker-pack"
-    ],
-    "writing-plans": [
-      "superpowers-plus"
-    ],
-    "writing-skills": [
-      "superpowers-plus"
-    ],
-    "writing-with-clarity": [
-      "repo-worker-pack"
-    ]
+  "marketplace": {
+    "source": "HarleyBartles/agent-asset-marketplace",
+    "sourcePath": "codex-marketplace/plugins"
   },
-  "source_revision": "e62475b5bd0b89e651a4deee8a5766c76382f554",
-  "source_root": ".agents/plugins/marketplace-source"
+  "localPlugins": [],
+  "marketplaceFile": ".agents/plugins/marketplace.json",
+  "vendorProfiles": [],
+  "syncedAt": "2026-08-14T14:02:11.761739"
 }
