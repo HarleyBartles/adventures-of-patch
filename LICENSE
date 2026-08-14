@@ -1,0 +1,35 @@
+Adventures of Patch - mixed licensing notice
+
+Copyright (c) 2026 Harley Bartles
+
+This repository contains material under multiple licences. A single licence does not apply to the whole repository.
+
+1. Original project-authored software
+
+Original software authored for this repository, where Harley Bartles holds the rights needed to license it and no more specific notice applies, is licensed under the MIT License. See `LICENSES/MIT.txt` and `LICENSING.md`.
+
+2. Original visual and media assets
+
+Original visual and media assets authored for this repository, where Harley Bartles holds the rights needed to license them and no more specific notice applies, are licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). See `LICENSES/CC-BY-ND-4.0.txt`, `LICENSING.md`, and the canonical Creative Commons licence.
+
+This permits use and redistribution of the licensed assets, including commercially, subject to the licence conditions including attribution and NoDerivatives. It does not grant permission to publish adapted versions of those licensed assets.
+
+3. Adventures of Patch characters, world and branding
+
+Except for the rights necessary to exercise a licence that expressly applies to a particular asset, no general licence is granted to publish new or adapted depictions, derivative characters, stories, adventures, or other derivative works based on the Adventures of Patch character and world IP.
+
+This reservation includes, to the extent protected by applicable law, Patch, Bit, Bot, the Heist Crew, other current and future original Adventures of Patch characters, their distinctive designs and identities, and Adventures of Patch names and branding.
+
+Private, non-public experimentation is addressed in `LICENSING.md`.
+
+4. Other original project material
+
+Original narrative, story-world, presentation, project-development, or other material that is not expressly covered by the MIT or CC BY-ND grants above remains copyright Harley Bartles with all rights reserved unless a more specific notice says otherwise.
+
+5. Third-party, vendored and derived material
+
+Third-party, vendored, adapted, or upstream-derived material is not relicensed merely because it appears in this repository. Its own licence, copyright notice, or upstream terms control. See `THIRD_PARTY_NOTICES.md` and any file- or subtree-specific notices.
+
+More specific file, directory, SPDX, REUSE, licence, attribution, or upstream notices take precedence over this summary.
+
+See `LICENSING.md` for the human-readable licensing map and attribution guidance.
