@@ -6,7 +6,6 @@
   "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
   "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
   "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed page and stated intended use.",
-  "created_at": "2026-08-14T07:00:00Z",
   "image": {
     "repo_image_path": "fairytales/goldilocks/page__right_amount_of_guidance__v1.png",
     "relative_image_path": "page__right_amount_of_guidance__v1.png",

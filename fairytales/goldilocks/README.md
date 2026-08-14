@@ -4,7 +4,7 @@ This Patch Fairytale uses the Goldilocks pattern to land one concise operational
 
 ## Purpose
 
-The three source scenes show Patch at a trail junction with too much guidance, not enough guidance, and just the right amount of guidance. The finished one-page composition places the three scenes together as a single fairytale page.
+The three source scenes show too much guidance, not enough guidance, and just the right amount of guidance, using two route-choice scenes and an organised planning-room scene. The finished one-page composition places the three scenes together as a single fairytale page.
 
 ## Files
 
