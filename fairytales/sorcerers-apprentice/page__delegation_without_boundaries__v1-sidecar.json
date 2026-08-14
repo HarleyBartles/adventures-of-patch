@@ -1,0 +1,84 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "source_truth_note": "This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved one-page Patch Fairytale, The Sorcerer\u2019s Apprentice, and deterministic reconstruction of its layered composition.",
+  "image": {
+    "repo_image_path": "fairytales/sorcerers-apprentice/page__delegation_without_boundaries__v1.png",
+    "relative_image_path": "page__delegation_without_boundaries__v1.png",
+    "repo_sidecar_path": "fairytales/sorcerers-apprentice/page__delegation_without_boundaries__v1-sidecar.json",
+    "relative_sidecar_path": "page__delegation_without_boundaries__v1-sidecar.json",
+    "image_filename": "page__delegation_without_boundaries__v1.png",
+    "sha256": "10a78af6a1e49dc9d7b3f60e2919a22c479590a833aa930f21a12b6519671d1b",
+    "byte_size": 4491081,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 2400,
+      "height": 1350
+    },
+    "mode": "RGB",
+    "asset_role": "approved_fairytale_page",
+    "acceptance_state": "accepted_fairytale_page",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "repo_custody_state": "repo_custodied"
+  },
+  "summary": "Approved one-page Patch Fairytale, The Sorcerer\u2019s Apprentice: a layered editorial composition combines the healthy five-worker opening handoff, a circular magnified view of the mundane recursive-delegation instruction, the full-canvas runaway worker field, and a corrective Delegation Policy prop. The page lands the lesson that delegation needs a boundary, not just permission.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape one-page fairytale with PATCH FAIRYTALES branding and the title \u201cThe Sorcerer\u2019s Apprentice\u201d.",
+      "The approved runaway recursive-delegation scene supplies the full background canvas.",
+      "The opening handoff scene is overlaid in the upper-left as a bordered panel.",
+      "The circular instruction insert hangs from the lower-right region of the opening panel and is connected by a straight leader line to the lower part of Patch\u2019s handed-over document.",
+      "The Delegation Policy prop is overlaid at bottom-right while the runaway background remains visible around and behind it.",
+      "The lesson block sits in lower-left negative space and reads \u201cDelegation needs a boundary, not just permission.\u201d"
+    ],
+    "scene_semantics": [
+      "The opening delegation looks competent and sensible; the failure is not the initial use of subagents.",
+      "The magnified instruction identifies the missing operating-policy boundary that allows each worker to repeat the same locally sensible delegation choice.",
+      "The runaway background shows uncontrolled recursive fan-out without portraying workers as malicious or incompetent.",
+      "The policy prop provides the corrective pattern: explicit limits on fan-out, depth, inherited capability, and escalation."
+    ],
+    "composition_sources": [
+      "scene__runaway_recursive_delegation__v1.png",
+      "scene__five_worker_handoff__v1.png",
+      "detail__delegation_instruction_circle__v1.png",
+      "prop__delegation_policy__v1.png"
+    ]
+  },
+  "positive_constraints": [
+    "Use as the approved final-candidate one-page Sorcerer\u2019s Apprentice fairytale.",
+    "Preserve the reading order from opening handoff to magnified causal instruction to runaway consequence to corrective policy.",
+    "Keep delegation itself framed as useful; the lesson is controlled delegation rather than anti-delegation.",
+    "Treat the page as deterministic composition from the accepted source assets rather than a single generated scene."
+  ],
+  "negative_constraints": [
+    "Do not convert this fairytale into a triptych, deck, or literal sorcerer-cosplay scene.",
+    "Do not remove the circular magnifier or make the causal instruction visually special inside the document itself.",
+    "Do not obscure the distinction between initial parallel fan-out and later uncontrolled recursive delegation."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Sorcerer\u2019s Apprentice fairytale source selection and deterministic page reconstruction.",
+      "Visual continuity and QA against the accepted production-session asset.",
+      "Prompt or layout constraints for semantically related future work."
+    ],
+    "not_sufficient_for": [
+      "Proving image-byte repo custody until a matching PNG is present at repo_image_path.",
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:fairytale-page",
+      "fairytale:sorcerers-apprentice",
+      "pattern:delegation-without-boundaries",
+      "state:approved",
+      "theme:delegation-boundaries"
+    ]
+  }
+}
