@@ -7,6 +7,9 @@
 - Up: [parent index](../INDEX.md)
 
 ## Files
+- [just_right__v1-sidecar.json](just_right__v1-sidecar.json)
 - [just_right__v1.png](just_right__v1.png)
+- [not_enough__v1-sidecar.json](not_enough__v1-sidecar.json)
 - [not_enough__v1.png](not_enough__v1.png)
+- [too_much__v1-sidecar.json](too_much__v1-sidecar.json)
 - [too_much__v1.png](too_much__v1.png)
