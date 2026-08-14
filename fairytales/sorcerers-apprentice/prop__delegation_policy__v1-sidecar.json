@@ -1,0 +1,70 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "source_truth_note": "This sidecar records an accepted image from the originating ChatGPT production session and the exact bytes expected at the referenced repo image path. Until matching image bytes land in the repo, this file is custody scaffolding rather than complete repo custody proof. The sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, QA, and prompt/layout planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed asset and stated intended use.",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved delegation-policy document hero image used as the corrective closeout in the Sorcerer’s Apprentice fairytale.",
+  "image": {
+    "repo_image_path": "fairytales/sorcerers-apprentice/prop__delegation_policy__v1.png",
+    "relative_image_path": "prop__delegation_policy__v1.png",
+    "repo_sidecar_path": "fairytales/sorcerers-apprentice/prop__delegation_policy__v1-sidecar.json",
+    "relative_sidecar_path": "prop__delegation_policy__v1-sidecar.json",
+    "image_filename": "prop__delegation_policy__v1.png",
+    "sha256": "132bb7e0b5c9009daf40c3816c8dcbc73e16cb736723278592abcb5e5817c39a",
+    "byte_size": 2809599,
+    "mime_type": "image/png",
+    "dimensions": {"width": 1448, "height": 1086},
+    "mode": "RGBA",
+    "asset_role": "approved_prop_art",
+    "acceptance_state": "accepted_prop_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "repo_custody_state": "pending_matching_image_bytes"
+  },
+  "summary": "Approved hero image of a plausible repo-style Delegation Policy represented in the fairytale visual grammar. A clean clipboard presents six concrete boundaries covering defined tasks, direct fan-out, recursive delegation authorization, delegation depth, inherited tools/data, and escalation when scope changes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Front-facing warm brown clipboard on a warm off-white field with a simple clipped policy sheet and no surrounding characters or scenery.",
+      "The document title is “DELEGATION POLICY” with six numbered checked rules in a clean, orderly vertical layout.",
+      "The composition is calm, rectilinear, finite, and visually opposite to the runaway worker field."
+    ],
+    "document_semantics": [
+      "The policy limits direct delegates to five and delegation depth to one in this illustrative version.",
+      "Recursive delegation requires explicit authorization.",
+      "Delegated tools and data should be only those required for the task.",
+      "Escalation is required when more help is needed or scope changes."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the approved corrective policy prop in the bottom-right closeout of the fairytale page.",
+    "Keep the document generic as “DELEGATION POLICY”, not Patch-branded.",
+    "Preserve the restrained repo-document feel and absence of motivational or decorative clutter."
+  ],
+  "negative_constraints": [
+    "Do not retitle it “Patch Delegation Policy”.",
+    "Do not add slogans, inspiration copy, shields, badges, sticky notes, characters, or decorative signage.",
+    "Do not broaden the lesson into a claim that recursive delegation is always forbidden; the policy is about explicit bounded use."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Sorcerer’s Apprentice fairytale source selection and deterministic page reconstruction.",
+      "Visual continuity and QA against the accepted production-session asset.",
+      "Prompt or layout constraints for semantically related future work."
+    ],
+    "not_sufficient_for": [
+      "Proving image-byte repo custody until a matching PNG is present at repo_image_path.",
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:prop",
+      "fairytale:sorcerers-apprentice",
+      "pattern:delegation-policy",
+      "state:approved",
+      "theme:delegation-boundaries"
+    ]
+  }
+}
