@@ -1,0 +1,93 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for worker selection, visual continuity, QA, prompt constraint extraction, and later Goldilocks deck planning.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed scene and stated intended use.",
+  "created_at": "2026-08-14T06:58:19Z",
+  "image": {
+    "repo_image_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/not_enough__v1.png",
+    "relative_image_path": "not_enough__v1.png",
+    "repo_sidecar_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/not_enough__v1-sidecar.json",
+    "relative_sidecar_path": "not_enough__v1-sidecar.json",
+    "image_filename": "not_enough__v1.png",
+    "sha256": "3cb640e4f4539871aeae8aa6c966838526df1dbebdd3583418cff71ac1544cf3",
+    "byte_size": 2268990,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mode": "RGB",
+    "asset_role": "approved_scene_art",
+    "acceptance_state": "accepted_scene_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high"
+  },
+  "summary": "Approved Goldilocks ‘not enough’ scene: a dirty over-the-shoulder view anchors the camera to Patch’s point of view as he studies a tiny vague note while multiple equally plausible forest routes branch ahead. The image visualizes insufficient guidance leaving too many valid next moves.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape forest crossroads scene viewed over Patch’s right shoulder.",
+      "Patch’s hood, head, and right shoulder occupy the extreme foreground on one side, creating a strong point-of-view anchor.",
+      "Patch’s right hand holds the small note in the foreground, consistent with the visible right shoulder and arm geometry.",
+      "The branching paths and many directional signs sit deeper in the frame, creating clear foreground-to-background depth.",
+      "The camera perspective deliberately differs from a standard centered mid-shot."
+    ],
+    "patch_design": [
+      "Canonical teal hood and antennae are visible in close foreground.",
+      "Only the portion of Patch required by the over-the-shoulder composition is shown.",
+      "Patch has exactly one left arm and one right arm; the right hand is the hand holding the note.",
+      "Patch’s attention is directed toward the note and the route choices beyond it."
+    ],
+    "props_and_environment": [
+      "The note is a small physical scrap held by Patch rather than floating in space.",
+      "The note carries a deliberately vague instruction/question rather than a detailed plan.",
+      "The background is a warm, bright forest junction with many wooden directional signs and multiple usable paths.",
+      "Several route markers appear equally plausible rather than one being obviously correct."
+    ],
+    "scene_semantics": [
+      "The core metaphor is ambiguity caused by under-specification rather than danger or lack of options.",
+      "Patch has enough agency to move but insufficient guidance to distinguish among many valid next moves.",
+      "The point-of-view framing places the audience inside Patch’s decision problem."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the dirty over-the-shoulder camera angle and strong foreground Patch anchor.",
+    "Keep the vague note physically held in Patch’s right hand and keep his attention on it.",
+    "Keep multiple plausible routes visible in the background with no single route visually crowned as correct.",
+    "Preserve canonical Patch colors, hood, antennae, and simple face architecture where visible.",
+    "Use the image as the ‘not enough’ pole of a three-image Goldilocks guidance-balance set."
+  ],
+  "negative_constraints": [
+    "Do not float the note independently of Patch.",
+    "Do not put the note in Patch’s left hand when the visible foreground geometry clearly exposes his right shoulder and right arm.",
+    "Do not add duplicated arms, extra hands, or impossible limb connections.",
+    "Do not make one path obviously correct through lighting, scale, signage, or compositional emphasis.",
+    "Do not turn the scene into a generic centered mid-shot; the POV framing is identity-critical to this asset."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Goldilocks guidance-balance scene selection.",
+      "Camera-angle reference for subjective Patch POV imagery.",
+      "Later deck image planning and slide-story continuity.",
+      "QA of the not-enough concept and arm/hand physical logic."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces.",
+      "Exact OCR of incidental small sign text."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:scene",
+      "adventure:goldilocks",
+      "pattern:not-enough",
+      "state:approved",
+      "theme:guidance-balance",
+      "camera:over-the-shoulder"
+    ]
+  }
+}
