@@ -1,0 +1,93 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for worker selection, visual continuity, QA, prompt constraint extraction, and later Goldilocks deck planning.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed scene and stated intended use.",
+  "created_at": "2026-08-14T06:58:19Z",
+  "image": {
+    "repo_image_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/too_much__v1.png",
+    "relative_image_path": "too_much__v1.png",
+    "repo_sidecar_path": "assets/adventures/Goldilocks/asset_packs/guidance-balance-scenes/source_images/too_much__v1-sidecar.json",
+    "relative_sidecar_path": "too_much__v1-sidecar.json",
+    "image_filename": "too_much__v1.png",
+    "sha256": "17bb208fe41f70eb37ab679b5873c143d5f566d1e4c8ddf14308d90214e93fba",
+    "byte_size": 2564418,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mode": "RGB",
+    "asset_role": "approved_scene_art",
+    "acceptance_state": "accepted_scene_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high"
+  },
+  "summary": "Approved Goldilocks ‘too much’ scene: Patch stands stalled at an outdoor trail junction while physically overloaded by expedition tools, maps, notes, guides, bags, and conflicting route signs. The scene visualizes excessive context and tooling becoming a burden that prevents a confident next move.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape outdoor adventure scene with Patch centered in the foreground at a branching forest trail.",
+      "Patch is shown full body and fills much of the central frame, with signposts on both sides and mountains/trees behind.",
+      "The camera is a close-to-medium frontal three-quarter view that makes the accumulated gear visually dominant.",
+      "Loose maps, plans, a checklist, and a guidebook occupy the ground around Patch, extending the overload beyond what he can carry."
+    ],
+    "patch_design": [
+      "Canonical teal hood frames an off-white face panel with simple black oval eyes and small white highlights.",
+      "Two dark hood antennae with rounded tips are visible.",
+      "Patch wears dark trousers, teal shoes with white soles, and a dark crossbody bag with a white greater-than mark.",
+      "Patch has exactly one left arm and one right arm; the visible hands are occupied naturally without duplicated limbs.",
+      "Facial expression is worried and uncertain rather than angry or villainous."
+    ],
+    "props_and_environment": [
+      "A pickaxe and shovel are strapped behind Patch as practical expedition tools.",
+      "A heavy coil of rope hangs around Patch’s shoulder and upper body.",
+      "Additional kit includes rolled maps, lantern, compass, pouches, notebooks, guidebooks, clipped notes, and planning sheets.",
+      "Conflicting wooden route signs include directions such as THIS WAY, THAT WAY, SCENIC ROUTE, SHORTCUT, SAFE PATH, ADVANCED TRAIL, EXPERT ONLY, and NOPE.",
+      "The setting is a bright wooded mountain trail with warm daylight and clear adventure framing."
+    ],
+    "scene_semantics": [
+      "The core metaphor is overload: more information and more tools do not automatically create a better next move.",
+      "The physical weight of tools and guidance is as important as the volume of documents.",
+      "Patch is ready for an adventure in principle but is immobilized by competing instructions and excessive preparation."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve canonical Patch identity and the single visible crossbody bag with white greater-than mark.",
+    "Keep the outdoor trail/junction framing and bright Adventures editorial style.",
+    "Make the overload physical as well as informational: real expedition tools, rope, maps, guides, notes, and route signs should visibly burden Patch.",
+    "Keep Patch worried/confused but friendly and non-aggressive.",
+    "Use the image as the ‘too much’ pole of a three-image Goldilocks guidance-balance set."
+  ],
+  "negative_constraints": [
+    "Do not simplify the scene into paperwork-only clutter; practical tools are part of the metaphor.",
+    "Do not turn Patch into a generic robot, human, toy, or glossy mascot.",
+    "Do not add extra arms, duplicated hands, duplicated Patch figures, or impossible limb attachments.",
+    "Do not make the overload feel like random hoarding; props should read as plausible journey preparation, guidance, and route-selection material.",
+    "Do not treat any individual sign or guide as the uniquely correct route; the problem is competing abundance."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Goldilocks guidance-balance scene selection.",
+      "Later deck image planning and slide-story continuity.",
+      "Prompt constraints for semantically related scenes.",
+      "Visual QA against the intended too-much / not-enough / just-right distinction."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Patch character canon in general; use the canonical Patch reference surfaces.",
+      "Exact OCR of incidental small text when wording matters."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:scene",
+      "adventure:goldilocks",
+      "pattern:too-much",
+      "state:approved",
+      "theme:guidance-balance"
+    ]
+  }
+}
