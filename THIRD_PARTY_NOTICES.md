@@ -16,7 +16,7 @@ The rule is simple: third-party, vendored, adapted, or upstream-derived material
 
 - **Path:** `.agents/plugins/marketplace-source`
 - **Source:** https://github.com/HarleyBartles/agent-asset-marketplace
-- **Pinned commit:** f3792c9f2f39666c32edcdb68209e652b43888d2
+- **Pinning:** The submodule is tracked by git; the current checkout is recorded in `.gitmodules` and the working tree. The installed snapshot is also recorded in `.agents/skills/.provenance.json`.
 - **License:** governed by the upstream repository; see `.agents/plugins/marketplace-source/LICENSE`
 - **Status:** repo-boundary
 
