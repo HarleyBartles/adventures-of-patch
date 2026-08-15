@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://adventures-of-patch/.agents/contracts/image-sidecar-provenance.schema.json",
+  "title": "Adventures of Patch image sidecar provenance",
+  "description": "Provenance metadata for images described by adventures.visual_sidecar.adjacent.v1 sidecars.",
+  "type": "object",
+  "properties": {
+    "generator": {
+      "type": "string",
+      "description": "The tool or service that generated or produced the image."
+    },
+    "model": {
+      "type": "string",
+      "description": "The model or engine used to generate the image."
+    },
+    "generated_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "UTC timestamp of generation if known; null if unknown."
+    },
+    "prompt_language": {
+      "type": ["string", "null"],
+      "description": "Language of the prompt if known."
+    },
+    "prompt": {
+      "type": ["string", "null"],
+      "description": "The exact prompt used to generate the image. Null or absent when the prompt was not retained."
+    },
+    "prompt_retained": {
+      "type": "boolean",
+      "description": "True if the exact prompt is preserved in this sidecar; false otherwise."
+    },
+    "prompt_unretained_note": {
+      "type": ["string", "null"],
+      "description": "Human-readable explanation when the exact prompt was not retained."
+    }
+  },
+  "required": ["generator", "model", "prompt_retained"],
+  "additionalProperties": false
+}
