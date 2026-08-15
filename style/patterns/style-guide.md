@@ -19,13 +19,13 @@ This sidecar is based on the approved second-pass style pair from the current se
 
 Current repo doctrine remains authoritative for Patch identity and source discipline. Before future final/proof Patch image work, inspect:
 
-- `assets/canon/patch/INDEX.md`
+- `style/patch/INDEX.md`
 - the current repo-indexed Patch style guide
 - the current repo-indexed Patch contact sheet
 - the current repo-indexed Patch anti-pattern sheet
 - the current repo-indexed Patch interaction guide
 - repo-indexed contact-sheet dispatch/intake packages when repo-canonical image inspection is needed
-- `assets/source-zips/INDEX.md` when package or integrity fallback is needed
+- package manifests under `build/<domain>/<family>/<package>/manifests/manifest.json` for integrity and provenance fallback
 
 The current approved sheets should be treated as accepted session outputs until Harley lands them in the repo and project sources.
 

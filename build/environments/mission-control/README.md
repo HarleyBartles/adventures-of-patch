@@ -1,4 +1,4 @@
-# assets/environments/mission-control
+# build/environments/mission-control
 
 Package or family summary.
 

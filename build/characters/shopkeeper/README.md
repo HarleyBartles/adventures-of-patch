@@ -1,4 +1,4 @@
-# assets/characters/shopkeeper
+# build/characters/shopkeeper
 
 Package or family summary.
 

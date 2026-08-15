@@ -48,7 +48,7 @@ For a repo-local summary, see `docs/project/provenance-skills.md`.
 
 ### Visual and media assets
 
-- **Paths:** `assets/`, `fairytales/`, `decks/`
+- **Paths:** `build/`, `style/`, `published/`, `workbench/`
 - **Status:** needs-review
 - **Notes:** Individual image, zip, and PPTX provenance must be confirmed. See `docs/project/provenance-assets.md`.
 

@@ -25,5 +25,5 @@ Package id: `judges-officials-acceptance-authority`
 ## Notes
 
 - Deterministic no-credit compile from six Harley-accepted source images using a three-official / three-support-panel layout.
-- The repo-preserved source zip is stored under `assets/source-zips/packs/judges_officials_acceptance_authority_asset_sheet_v1_pack.zip`.
+- The source images and compiled sheet are the canonical record; no separate source-zip is preserved.
 - The template bundle was used for compile only and was not landed as new canon.

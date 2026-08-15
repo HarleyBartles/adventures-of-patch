@@ -7,7 +7,7 @@ The landed pack preserves:
 - the compiled asset-sheet PNG;
 - the four approved source images used in the sheet;
 - the package manifest for repo taxonomy;
-- the repo-preserved source zip in `assets/source-zips/environments/`.
+- the source images and compiled sheet as the canonical record.
 
 Supplemental doctrine now lives at `manifests/stakeholder_dugout_style_bible_issue_56.md`.
 

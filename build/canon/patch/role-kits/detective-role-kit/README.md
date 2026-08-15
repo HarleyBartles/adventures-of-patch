@@ -1,4 +1,4 @@
-# assets/canon/patch/role-kits/asset_packs/detective-role-kit
+# build/canon/patch/role-kits/detective-role-kit
 
 Package type: `role_kit`
 Status: `provisional`

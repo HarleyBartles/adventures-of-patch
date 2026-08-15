@@ -1,4 +1,4 @@
-# assets/characters/stakeholders
+# build/characters/stakeholders
 
 Package or family summary.
 

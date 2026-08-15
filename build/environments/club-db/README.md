@@ -1,4 +1,4 @@
-# assets/environments/club-db
+# build/environments/club-db
 
 Package or family summary.
 

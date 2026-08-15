@@ -1,4 +1,4 @@
-# assets/characters/bit-bot/asset_packs/bot-role-kit
+# build/characters/bit-bot/bot-role-kit
 
 Package type: `compiled_asset_pack`
 Status: `approved`

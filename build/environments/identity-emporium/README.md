@@ -1,4 +1,4 @@
-# assets/environments/identity-emporium
+# build/environments/identity-emporium
 
 Package or family summary.
 

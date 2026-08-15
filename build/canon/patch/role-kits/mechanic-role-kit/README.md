@@ -1,4 +1,4 @@
-# assets/canon/patch/role-kits/asset_packs/mechanic-role-kit
+# build/canon/patch/role-kits/mechanic-role-kit
 
 Package type: `role_kit`
 Status: `provisional`

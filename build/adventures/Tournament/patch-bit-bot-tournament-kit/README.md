@@ -1,4 +1,4 @@
-# assets/adventures/Tournament/asset_packs/patch-bit-bot-tournament-kit
+# build/adventures/Tournament/patch-bit-bot-tournament-kit
 
 Package type: `compiled_asset_pack`
 Status: `approved`

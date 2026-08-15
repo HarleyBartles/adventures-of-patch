@@ -8,7 +8,7 @@ The Adventures of Patch repo produces reusable presentation packages and the ass
 
 ## Source-of-truth split
 
-- The repository tree, live issue/PR evidence, repo-tracked receipts, asset guides, and indexed project sources are authoritative.
+- The repository tree, live issue/PR evidence, repo-tracked manifests and asset guides, and indexed project sources are authoritative.
 - Linear issues and chat reports coordinate work but do not override committed repo state.
 - GitHub pull requests are the publication proof for repo-backed work.
 - Scratch files and session artifacts belong in the off-repo scratch workspace and are not durable.

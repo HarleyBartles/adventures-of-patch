@@ -1,4 +1,4 @@
-# assets/canon/patch/role-kits/asset_packs/cowboy-role-kit
+# build/canon/patch/role-kits/cowboy-role-kit
 
 Package type: `role_kit`
 Status: `provisional`

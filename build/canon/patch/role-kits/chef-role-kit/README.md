@@ -1,4 +1,4 @@
-# assets/canon/patch/role-kits/asset_packs/chef-role-kit
+# build/canon/patch/role-kits/chef-role-kit
 
 Package type: `role_kit`
 Status: `provisional`
