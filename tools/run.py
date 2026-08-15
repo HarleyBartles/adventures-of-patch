@@ -92,6 +92,14 @@ def main(argv: list[str] | None = None) -> int:
         ]
     )
 
+    # Validate image sidecars.
+    _run(
+        [
+            sys.executable,
+            "tools/validate_image_sidecars.py",
+        ]
+    )
+
     # Check for whitespace/diff issues.
     _run(["git", "diff", "--check", "--", ".", ":(exclude).agents/skills"])
 
