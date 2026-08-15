@@ -1,4 +1,4 @@
-# assets/characters/mission-control-team
+# build/characters/mission-control-team
 
 Package or family summary.
 

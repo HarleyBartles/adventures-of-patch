@@ -4,15 +4,16 @@ This is a thin surface. It lists asset categories and what must be filled in bef
 
 ## Asset categories
 
-- `assets/adventures/` - adventure-specific asset packs
-- `assets/canon/` - canonical Patch style and reference sheets
-- `assets/characters/` - character asset packs
-- `assets/environments/` - environment reference sheets
-- `assets/source-zips/` - packaged source assets
-- `assets/templates/` - asset sheet templates
-- `assets/evidence/receipts/` - receipt packages
-- `fairytales/` - one-page fairytale pages and scenes
-- `decks/` - PowerPoint presentation artifacts
+- `build/adventures/` - adventure-specific asset packs
+- `build/canon/` - canonical Patch style, role kits, and reference sheets
+- `build/characters/` - character asset packs
+- `build/environments/` - environment reference sheets
+- `build/templates/` - asset sheet templates
+- `style/patch/` - Patch style bible and reference sheets
+- `style/patterns/` - general visual pattern and style reference sheets
+- `published/adventures/` - finished presentation packages and deck artifacts
+- `published/fairytales/` - one-page fairytale pages and scenes
+- `workbench/` - active experiments and drafts (not licensable)
 
 ## To be filled in for each item
 
@@ -29,4 +30,4 @@ For each asset, image, zip, or deck:
 
 - AI-generated images should record the model and prompt provenance if possible.
 - PowerPoint files should record any embedded fonts, templates, or media that are not original.
-- `assets/in-flight/` contains exploratory work and may not ship in a release.
+- The old `assets/`, `fairytales/`, `decks/`, `assets/source-zips/`, `assets/evidence/receipts/`, and `assets/in-flight/` paths were removed or restructured into the four layers above during the repo-shape cleanup.

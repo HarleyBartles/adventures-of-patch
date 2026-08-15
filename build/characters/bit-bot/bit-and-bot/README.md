@@ -1,4 +1,4 @@
-# assets/characters/bit-bot/asset_packs/bit-and-bot
+# build/characters/bit-bot/bit-and-bot
 
 Package type: `compiled_asset_pack`
 Status: `approved`

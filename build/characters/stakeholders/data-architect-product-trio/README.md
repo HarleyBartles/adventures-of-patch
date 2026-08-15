@@ -1,4 +1,4 @@
-# assets/characters/stakeholders/asset_packs/data-architect-product-trio
+# build/characters/stakeholders/data-architect-product-trio
 
 Package type: `compiled_asset_pack`
 Status: `approved`
