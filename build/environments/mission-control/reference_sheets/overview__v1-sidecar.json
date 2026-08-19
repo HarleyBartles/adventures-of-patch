@@ -1,0 +1,88 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Mission Control Centre environment class overview. Supports high-level environment planning, prompt extraction, and QA across the Mission Control asset family.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer unseen rooms, additional locations, or final canon status beyond the observed views and support panels.",
+  "image": {
+    "repo_image_path": "build/environments/mission-control/reference_sheets/overview__v1.png",
+    "relative_image_path": "overview__v1.png",
+    "repo_sidecar_path": "build/environments/mission-control/reference_sheets/overview__v1-sidecar.json",
+    "relative_sidecar_path": "overview__v1-sidecar.json",
+    "image_filename": "overview__v1.png",
+    "sha256": "7ef43440f8e5f83428c87ea7322bc81f354e0d7c5ed53856ebac70b57aa293b4",
+    "byte_size": 1975435,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1491,
+      "height": 1055
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Environment class overview for the Mission Control Centre. The sheet presents the main operations room, launch gate, launch pad, review bay, and control desk, with a clean, technical, and friendly command-centre palette of blues, greys, and warm accent lighting.",
+  "observed_visual_facts": {
+    "composition": [
+      "Header 'PATCH MISSION CONTROL CENTRE ENVIRONMENT CLASS SHEET'.",
+      "Main illustration of the operations room with consoles, screens, and an overhead circular structure.",
+      "Labelled panels: Control Desk, Launch Gate, Launch Pad, Review Bay.",
+      "Footer with continuity notes and status badges."
+    ],
+    "palette": [
+      "Cool blues and greys.",
+      "Warm wood and brass accents.",
+      "Soft screen glow and warm lamp light.",
+      "White and cream panels."
+    ],
+    "notable_features": [
+      "Overhead circular gantry or lighting ring.",
+      "Consoles with screens and chairs.",
+      "Large windows or screens showing the launch area.",
+      "Organised, calm command-centre mood."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the canonical Mission Control Centre overview.",
+    "Preserve the cool blue-grey palette, consoles, and overhead structure.",
+    "Keep the organised, friendly command-centre atmosphere."
+  ],
+  "negative_constraints": [
+    "Do not add extra locations beyond the four shown support panels.",
+    "Do not make the centre hostile or militaristic.",
+    "Do not remove the organised console layout."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Mission Control environment planning.",
+      "High-level QA of Mission Control scenes.",
+      "Prompt extraction for the command centre."
+    ],
+    "not_sufficient_for": [
+      "Exact per-room details; use the per-view sheets.",
+      "Final canon without image QA.",
+      "Detailed prop or signage transcription."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:mission-control",
+      "asset:reference-sheet",
+      "state:accepted"
+    ]
+  }
+}

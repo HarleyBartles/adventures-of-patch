@@ -1,0 +1,90 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Identity Emporium world proof. Supports source-of-truth verification, prompt extraction, and QA of Patch-in-world shots at the Identity Emporium.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer unseen shop areas, alternate outfits, or final canon status beyond the observed interaction.",
+  "image": {
+    "repo_image_path": "build/environments/identity-emporium/reference_sheets/world_proof__v1.png",
+    "relative_image_path": "world_proof__v1.png",
+    "repo_sidecar_path": "build/environments/identity-emporium/reference_sheets/world_proof__v1-sidecar.json",
+    "relative_sidecar_path": "world_proof__v1-sidecar.json",
+    "image_filename": "world_proof__v1.png",
+    "sha256": "8bbaaeb2c4499eb560092787aafbd0e439d2746c4db467f86e922c7f607d233b",
+    "byte_size": 2532874,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "World proof image showing Patch at the counter of the Identity Emporium, interacting with the shopkeeper. The shopkeeper, an older human with a measuring tape, burgundy waistcoat, green bow tie, and cream shirt, stands behind a wooden counter. The shop interior has green walls, hanging garments, hats, warm lamps, and paper tags.",
+  "observed_visual_facts": {
+    "composition": [
+      "Interior counter scene with Patch on the left and the shopkeeper behind the counter.",
+      "Patch is the canonical teal-hooded figure with a crossbody bag.",
+      "Shopkeeper is an older human with bald crown, dark curly side hair, thick moustache, round glasses, cream shirt, burgundy waistcoat, green bow tie, and measuring tape.",
+      "Counter has paper bags, tags, a clipboard, and a brass lamp.",
+      "Background: green painted walls, hanging coats, hats, and shelves."
+    ],
+    "palette": [
+      "Teal for Patch.",
+      "Burgundy, cream, and green for the shopkeeper and shop.",
+      "Aged wood and brass.",
+      "Warm amber light."
+    ],
+    "notable_features": [
+      "Shopkeeper measuring tape around the neck.",
+      "Patch's crossbody bag with '>' symbol.",
+      "Paper tags, bags, and receipt book on the counter.",
+      "Hanging costumes and hats in the background."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the shopkeeper's core identity and the Identity Emporium palette.",
+    "Use as the canonical world proof for the shopkeeper and Patch interaction.",
+    "Keep the warm, grounded costume-shop atmosphere."
+  ],
+  "negative_constraints": [
+    "Do not change the shopkeeper's face, wardrobe, or measuring tape.",
+    "Do not remove Patch's canonical features.",
+    "Do not add magical or villainous cues."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical Identity Emporium interaction reference.",
+      "Shopkeeper character QA.",
+      "World-proof continuity checks."
+    ],
+    "not_sufficient_for": [
+      "Full shop layout; use the overview sheets.",
+      "Exact prop labels.",
+      "Final canon without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:identity-emporium",
+      "role:world-proof",
+      "character:shopkeeper",
+      "state:accepted"
+    ]
+  }
+}

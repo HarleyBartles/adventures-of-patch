@@ -1,0 +1,89 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Identity Emporium storefront exterior. Supports environment selection, prompt extraction, and QA for the shop exterior.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer the full street, adjacent buildings, or final canon status beyond the observed storefront view.",
+  "image": {
+    "repo_image_path": "build/environments/identity-emporium/reference_sheets/storefront_exterior__v1.png",
+    "relative_image_path": "storefront_exterior__v1.png",
+    "repo_sidecar_path": "build/environments/identity-emporium/reference_sheets/storefront_exterior__v1-sidecar.json",
+    "relative_sidecar_path": "storefront_exterior__v1-sidecar.json",
+    "image_filename": "storefront_exterior__v1.png",
+    "sha256": "c4d9e95790f49c31ce01c177219c24bba4c986908c6e6c3be978875b27c8c00a",
+    "byte_size": 3653058,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 2400,
+      "height": 1600
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet showing the Identity Emporium storefront exterior. A warm green-and-cream painted shop front with a striped awning, large display windows, hanging garments, and a wooden door. The shop sign reads 'IDENTITY EMPORIUM'.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single exterior establishing view.",
+      "Two-story shop front with green painted wood and cream trim.",
+      "Green-and-cream striped awning over the display windows.",
+      "Display windows show costumes, hats, and props.",
+      "Wooden door, potted plants, and warm lamp light."
+    ],
+    "palette": [
+      "Deep green and cream trim.",
+      "Aged wood and brass.",
+      "Warm amber window light.",
+      "Potted plant greens and terracotta."
+    ],
+    "notable_features": [
+      "'IDENTITY EMPORIUM' sign.",
+      "Striped awning.",
+      "Costumes and hats in windows.",
+      "Warm inviting storefront lighting."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the green-and-cream storefront, striped awning, and 'IDENTITY EMPORIUM' sign.",
+    "Use as the canonical exterior reference.",
+    "Keep the warm, approachable shop front."
+  ],
+  "negative_constraints": [
+    "Do not add adjacent buildings or a full street.",
+    "Do not change the shop name or colour identity.",
+    "Do not make the exterior generic or modern retail."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Identity Emporium exterior scene prompting.",
+      "QA of generated storefronts.",
+      "Continuity for the shop front."
+    ],
+    "not_sufficient_for": [
+      "Interior rooms or back-of-house.",
+      "Exact text transcription.",
+      "Final canon without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:identity-emporium",
+      "location:storefront-exterior",
+      "state:accepted"
+    ]
+  }
+}
