@@ -1,0 +1,125 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the accepted Props Drift Risks / Anti-Patterns reference sheet. Supports prop QA, drift-risk identification, and prompt constraint extraction for props and set dressing in Adventures of Patch scenes.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the accepted reference sheet.",
+  "runtime_use_note": "Use this sidecar for prop selection, anti-pattern checks, continuity, and prompt planning. Inspect the image pixels directly when exact wording of captions, check-mark labels, or small anti-pattern icons matters.",
+  "do_not_infer_note": "Do not infer unseen anti-patterns, additional core rules, or acceptance of derivatives beyond the observed sheet and stated intended use.",
+  "image": {
+    "repo_image_path": "style/patterns/reference_sheets/props_drift_risks__v1.png",
+    "relative_image_path": "props_drift_risks__v1.png",
+    "repo_sidecar_path": "style/patterns/reference_sheets/props_drift_risks__v1-sidecar.json",
+    "relative_sidecar_path": "props_drift_risks__v1-sidecar.json",
+    "image_filename": "props_drift_risks__v1.png",
+    "sha256": "42147052c14fe54bcc266e1c90ee9300d95c853ebf82d84b18d0fca204943a16",
+    "byte_size": 2054114,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "style_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Accepted reference sheet titled 'ADVENTURES OF PATCH | PROPS ANTI-PATTERNS SHEET (v1)' that catalogs prop drift risks for the Adventures of Patch visual style. The sheet is divided into a top banner with purpose, core rules, and check-before-approval prompts, a central field of illustrated anti-pattern cards, and a footer that reads 'ONE WORLD. ONE STYLE. KEEP IT CLEAR, FRIENDLY, AND ADVENTURES OF PATCH.' with a date stamp.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape reference-sheet layout with a cream field, dark framing, and structured rule banners.",
+      "Top banner carries the title 'ADVENTURES OF PATCH | PROPS ANTI-PATTERNS SHEET (v1)' and three labelled columns: 'PURPOSE', 'CORE RULES', and 'CHECK BEFORE APPROVAL'.",
+      "Central area presents a grid of illustrated anti-pattern cards, each with a caption describing a prop drift risk.",
+      "Bottom banner shows the footer text and a row of small icon/status badges plus a date stamp."
+    ],
+    "core_rules": [
+      "Respect physical logic, contact, and construction.",
+      "Keep designs simple and consistent with the world and story-relevant style.",
+      "Use the anti-patterns to keep props believable, consistent, and supportive of the story and world.",
+      "When in doubt, remove, simplify, or revise."
+    ],
+    "check_before_approval_prompts": [
+      "Does it make physical sense?",
+      "Is it simple, friendly, and consistent?",
+      "Are attachments/connections believable?",
+      "Is it readable at a glance?",
+      "Is the style consistent and on-palette?",
+      "Does it look maintained and purposefully placed?"
+    ],
+    "anti_pattern_cards": [
+      "Too big",
+      "Too small",
+      "Important feature hidden",
+      "Hand blocked",
+      "Awkward or unreachable position",
+      "Mixed rendering",
+      "Too realistic",
+      "Off-palette",
+      "Design changes mid-scene",
+      "Extra greebles",
+      "Wrong proportions",
+      "Looks from an outside style",
+      "Extra prop in background",
+      "Duplicate prop in scene",
+      "Hidden prop partially shown",
+      "Same prop appears twice",
+      "Text on wall adds nothing",
+      "Unnecessary stickers/labels on the floor",
+      "Random objects",
+      "Extra shelf items not part of the scene",
+      "Unexplained background UI",
+      "Extreme or intrusive signage",
+      "Distractions pull focus from Patch"
+    ],
+    "footer": [
+      "Footer reads 'ONE WORLD. ONE STYLE. KEEP IT CLEAR, FRIENDLY, AND ADVENTURES OF PATCH.'",
+      "A date stamp and small status badges appear at the right of the footer."
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet as the accepted props anti-patterns / drift-risks reference for Adventures of Patch.",
+    "Keep props physically believable, simple, and consistent with the world and story.",
+    "Use the core rules and check-before-approval prompts as a QA checklist for props and set dressing.",
+    "Preserve the reference-sheet layout and the anti-pattern grid when reproducing or referencing the sheet.",
+    "Maintain the Adventures of Patch palette and friendly illustrative style for props.",
+    "Remove, simplify, or revise props that match the listed anti-patterns."
+  ],
+  "negative_constraints": [
+    "Do not treat this sheet as final approval for every prop design; inspect image pixels for exact wording.",
+    "Do not add new anti-patterns or core rules beyond those shown on the sheet.",
+    "Do not infer that the listed anti-patterns are absolute bans; they are drift risks to check against.",
+    "Do not reproduce small text, labels, or icon captions exactly without pixel-level verification.",
+    "Do not use this sheet to authorize derivative prop reference images."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prop QA and anti-pattern review in Adventures of Patch scenes.",
+      "Prompt constraints for prop generation and set dressing.",
+      "Style continuity checks for props and environmental objects.",
+      "Teaching and identifying common prop drift risks."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of generated props without image QA.",
+      "Exact transcription of small labels, badges, or icon captions.",
+      "Authorizing derivative prop reference sheets."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "style:patterns",
+      "asset:reference-sheet",
+      "theme:props",
+      "state:accepted-source-reference"
+    ]
+  }
+}

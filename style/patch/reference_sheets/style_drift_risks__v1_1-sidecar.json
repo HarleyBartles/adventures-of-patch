@@ -1,0 +1,113 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident negative reference sidecar cataloguing style anti-patterns and drift risks for the Adventures of Patch visual style. Use it for prompt negation, QA style-drift checks, worker onboarding on what not to render, and style gatekeeping.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to extract forbidden style variants and phrasing for negative prompts and to guide QA of generated Adventures of Patch assets. Inspect the image pixels directly when matching a draft to a specific anti-pattern.",
+  "do_not_infer_note": "Do not infer these anti-patterns as acceptable designs or as positive canon. The image is an explicit do-not-generate reference. Do not reproduce any of the designs shown.",
+  "image": {
+    "repo_image_path": "style/patch/reference_sheets/style_drift_risks__v1_1.png",
+    "relative_image_path": "style_drift_risks__v1_1.png",
+    "repo_sidecar_path": "style/patch/reference_sheets/style_drift_risks__v1_1-sidecar.json",
+    "relative_sidecar_path": "style_drift_risks__v1_1-sidecar.json",
+    "image_filename": "style_drift_risks__v1_1.png",
+    "sha256": "acde358795e9c1a8124890e0282f48352327a67802818becdc725579258bb310",
+    "byte_size": 2142116,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "mode": "RGB",
+    "asset_role": "anti_pattern_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Style Anti-Patterns Sheet v1.1 for Adventures of Patch, cataloguing six categories of visual drift to avoid across characters, props, and environments. The sheet lays out purpose, core rules, Patch canon, a pre-approval checklist, and a grid of red-marked anti-pattern examples, plus a 'WHEN IN DOUBT: DON'T' callout.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape reference sheet with a dark navy top banner, structured rule columns on the left and right, and a central six-panel anti-pattern grid.",
+      "Top banner reads 'ADVENTURES OF PATCH | STYLE ANTI-PATTERNS SHEET' with version 'v1.1'.",
+      "Left column contains the PURPOSE statement, four CORE RULES, the 'PATCH - THE CANON' callout with a canonical Patch thumbs-up figure, and a red 'ANTI-PATTERN - DON'T DO THIS' callout.",
+      "Right column contains the 'CHECK BEFORE APPROVAL' checklist and a red 'WHEN IN DOUBT: DON'T' callout.",
+      "Central area is split into six numbered panels, each titled with a red category label and populated with rows of thumbnail examples with red X marks and short captions.",
+      "Bottom footer reads 'ONE WORLD. ONE STYLE. KEEP IT CLEAR, FRIENDLY, AND ADVENTURES OF PATCH.' with four trait badges: CURIOUS, RELIABLE, ORGANIZED, HELPFUL, and the date 2025-05-13."
+    ],
+    "patch_canon": [
+      "Canonical Patch is shown in the top-center 'PATCH - THE CANON' callout as a small humanoid in a teal hooded suit with an off-white face panel, black oval eyes, two dark antennae, and a dark crossbody bag.",
+      "The canon callout states that Patch is the visual anchor of the world and any deviation from this design is not approved unless explicitly noted."
+    ],
+    "content_panels": [
+      "1. PATCH STYLE DRIFT - NOT PATCH CANON: Photoreal, Glossy 3D, Plush / Toy, Anime / Chibi, Over-Detailed, Over-Simplified, Gritty / Scary, Wrong Palette, Wrong Eyes, Missing Bag, No Hoodie, Generic Robot.",
+      "2. COMPLEXITY & SIMPLIFICATION ERRORS: Too Many Details, Noisy Texture, Too Many Accessories, Unreadable Small, No Visual Hierarchy, Over-Simplified, Proportions Off, Busy Background, Tiny Features.",
+      "3. LINE, SHADING & FINISH ERRORS: Sketchy Lines, Inconsistent Lines, Airbrushed, Heavy Realism, Broken Outlines, Wrong Shadows, Muddy Rendering, Harsh Highlights.",
+      "4. FAMILY STYLE DRIFT: Humans - Too Realistic, Anime Style; Other Agents - Too Close to Patch, Patched-Up Robot; Mixed Styles in One Scene - Style Mismatch; Props & Environments - Too Realistic, Too Gritty.",
+      "5. MOOD, PALETTE & TONE DRIFT: Too Dark, Over-Saturated, Muddy / Desaturated, Harsh Contrast, Hostile Tone, Violent / Creepy, Palette Mismatch.",
+      "6. ACCIDENTAL STYLE SMUGGLING / RED FLAGS: Stock Icon Look, Clip Art Feel, Real Logos / Brands, Text Overload, Meme Style, Out-of-World, Weapons / Gear, Politics / Symbols, Horror Imagery."
+    ],
+    "check_before_approval": [
+      "Is the character clearly Patch or a non-Patch agent?",
+      "Does it match Patch canon exactly when it should?",
+      "Is the style clean, friendly, and easy to read?",
+      "Are outlines thick, smooth, and consistent?",
+      "Is shading soft and simple with clear light direction?",
+      "Is the palette on-brand and harmonious?",
+      "Is the composition clear with a strong hierarchy?",
+      "Are props and environments consistent with the world?",
+      "Does the tone feel positive, curious, and helpful?",
+      "Would this still look great at small sizes?"
+    ]
+  },
+  "positive_constraints": [
+    "Treat the sheet as a reference of forbidden style variants, not as a positive example to reproduce.",
+    "Use the canonical Patch baseline as the only acceptable design source: teal hood, off-white face, black oval eyes, antennae, and correct crossbody bag.",
+    "Keep all assets clean, friendly, and easy to read, and maintain a coherent family style across characters, props, and environments.",
+    "Protect Patch canon and do not deviate from the approved design unless explicitly noted.",
+    "Use the pre-approval checklist to gate new assets before acceptance.",
+    "Preserve the clearly labelled anti-pattern categories when matching generated drift to the reference."
+  ],
+  "negative_constraints": [
+    "Do not reproduce any of the anti-pattern designs shown in this sheet.",
+    "Do not drift toward photorealism, glossy 3D, plush/toy, anime/chibi, over-detailed, over-simplified, or gritty/scary render styles.",
+    "Do not over-detail with greeble, tiny text, excess accessories, visual clutter, or over-complicated mechanisms.",
+    "Do not produce sketchy or inconsistent lines, muddy or harsh shading, or broken outlines.",
+    "Do not make humans too realistic or anime, other agents too close to Patch, or mix unrelated styles in one scene.",
+    "Do not use oversaturated neon, muddy desaturated colors, harsh contrast, hostile/violent/creepy moods, or off-brand palettes.",
+    "Do not smuggle stock icons, clip-art, real logos, text overload, meme styles, out-of-world symbols, weapons, political symbols, or horror imagery into Adventures of Patch assets."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA review of generated Adventures of Patch assets for style drift.",
+      "Building negative prompt phrases for image generation tasks.",
+      "Worker onboarding on what not to generate.",
+      "Cataloguing specific style anti-pattern names for bug reports and style feedback."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Canonical Patch positive reference; use the approved Patch reference sheets.",
+      "Exact OCR of all incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:reference-sheet",
+      "style:drift",
+      "style:risk",
+      "style:anti-pattern",
+      "pattern:anti-pattern",
+      "state:accepted",
+      "purpose:negative-reference"
+    ]
+  }
+}

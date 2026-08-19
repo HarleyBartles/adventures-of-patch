@@ -1,0 +1,106 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident negative reference sidecar cataloguing style anti-patterns and drift risks across Adventures of Patch assets. Use it for prompt negation, QA drift checks, style guidance, and worker onboarding on what not to render.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to extract forbidden style variants and phrasing for negative prompts and to guide QA of generated assets. Inspect the image pixels directly when identifying which anti-pattern a draft matches.",
+  "do_not_infer_note": "Do not infer these anti-patterns as acceptable designs or as positive canon. The image is an explicit do-not-generate reference. Do not reproduce any of the designs shown.",
+  "image": {
+    "repo_image_path": "style/patch/reference_sheets/style_drift_risks__v1_0.png",
+    "relative_image_path": "style_drift_risks__v1_0.png",
+    "repo_sidecar_path": "style/patch/reference_sheets/style_drift_risks__v1_0-sidecar.json",
+    "relative_sidecar_path": "style_drift_risks__v1_0-sidecar.json",
+    "image_filename": "style_drift_risks__v1_0.png",
+    "sha256": "0cc4a7f2d5c968754d7b6ac6e4b13e9f8e487fcffd797248835d8dd7466f9a77",
+    "byte_size": 2166781,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "anti_pattern_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Style anti-patterns reference sheet v1.0 for the Adventures of Patch world, cataloguing seven categories of visual drift risks (realism, complexity, shape, line/texture/shading, mood/palette, mixed style, and accidental smuggling) with a canon callout, core rules, pre-approval checklist, and trust footer.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape grid reference sheet with a dark top banner, a left guidance column, a main seven-panel anti-pattern grid, a right-side checklist, and a bottom trust footer.",
+      "Top banner reads 'ADVENTURES OF PATCH' and 'STYLE ANTI-PATTERNS SHEET' with version 'v1.0'.",
+      "Left column contains the PURPOSE statement, four CORE RULES, the 'PATCH - THE CANON' callout with a canonical Patch thumbs-up figure, and an 'ANTI-PATTERN - DON'T DO THIS' callout.",
+      "Main grid is organized into seven numbered panels, each titled with a red category label and showing two rows of thumbnail examples with red X marks and captions.",
+      "Right column contains a 'CHECK BEFORE APPROVAL' checklist and an 'IF IN DOUBT, SIMPLIFY AND CLARIFY' callout.",
+      "Bottom footer reads 'ONE WORLD. ONE STYLE. KEEP IT CLEAR, FRIENDLY, AND ADVENTURES OF PATCH.' with trait badges for CURIOUS, RELIABLE, ORGANIZED, and HELPFUL and a date of 2025-05-13."
+    ],
+    "patch_canon": [
+      "Canonical Patch appears in the top-center canon callout as a small humanoid in a teal hooded suit with an off-white face panel, black oval eyes, two dark antennae, and a dark crossbody bag.",
+      "The canon callout states that Patch is the visual anchor of the world and that any deviation from this design is not approved unless explicitly noted."
+    ],
+    "content_panels": [
+      "1. REALISM & RENDER DRIFT: photorealistic render, glossy 3D mascot, plush/toy real-world look, painterly concept art, cinematic live-action style, heavy subsurface skin, unrealistic materials, overly realistic lighting and shadows, high-poly film quality, and too gritty or violent.",
+      "2. COMPLEXITY & SIMPLIFICATION ERRORS: over-detailed greeble overload, tiny unreadable decals/text, too many accessories, visual clutter/no focal point, over-complicated mechanisms, over-simplified blob, missing key features, flat lifeless shape, no visual hierarchy, and iconic details left out.",
+      "3. SHAPE & SILHOUETTE DRIFT: thin spindly limbs, overly sharp angles, overly organic/slimy forms, unnatural proportions, unclear silhouette, long neck/tiny head, stick-figure construction, unbalanced visual weight, floating parts/no grounding, and crowded silhouette.",
+      "4. LINE, TEXTURE & SHADING PROBLEMS: inconsistent line weight, sketchy/scratchy lines, trembling/wobbly lines, broken/jagged outlines, too many line styles, no line clarity (too soft), noisy/gritty textures, overly detailed textures, harsh airbrush shading, and wrong shadow logic.",
+      "5. MOOD, PALETTE & FINISH DRIFT: overly saturated/neon overload, muddy/desaturated colors, too high contrast/crushed blacks, cold and bleak mood, inconsistent finishes, plastic shine everywhere, metalness on everything, too glossy/mirrored, no depth/flat lighting, and wrong time of day.",
+      "6. MIXED STYLE / ASSET FAMILY DRIFT: different line weights mixed, mixed 3D and hand-drawn, mixed realism and cartoon, different art styles together, different shadow styles, photoreal prop in cartoon scene, UI/text style mismatch, vector/flat clip in same scene, AI-generic look/off-brand, and inconsistent perspective.",
+      "7. ACCIDENTAL STYLE SMUGGLING OR COMMON RED FLAGS: corporate clip-art, stock icon look, photo backgrounds, real-world brand logos/text, watermarks/placeholder text, overly busy or filler text, unreadable UI screens, unreadable small text, real-world signage, too many fonts in one asset, random cultural mismatch, violence/scary tone, gore/scary tone, assets that lose friendliness, uncanny human faces, anime/manga style, chibi/super deformed, superhero muscle look, fantasy medieval realism, sci-fi hard-surface realism, horror body horror, overly abstract/conceptual, over-sarcastic meme style, memes/internet slang, references to real politics, real-world weapons, and out-of-world content."
+    ],
+    "check_before_approval": [
+      "The right-hand checklist asks: Is the character clearly Patch or a non-Patch agent? Does it match Patch canon exactly when it should? Is the style clean, friendly, and easy to read? Are outlines thick, smooth, and consistent? Is shading soft and simple with clear light direction? Is the palette on-brand and harmonious? Is the composition clear with a strong hierarchy? Are props and environments consistent with the world? Does the tone feel positive, curious, and helpful? Would this still look great at small sizes?"
+    ]
+  },
+  "positive_constraints": [
+    "Treat the sheet as a reference of forbidden style variants, not as a positive example to reproduce.",
+    "Use the canonical Patch baseline as the only acceptable design source: teal hood, off-white face, black oval eyes, antennae, and correct crossbody bag.",
+    "Keep all assets clean, friendly, and easy to read, and maintain a coherent family style across characters, props, and environments.",
+    "Protect Patch canon and do not deviate from the approved design unless explicitly noted.",
+    "Use the pre-approval checklist to gate new assets before acceptance.",
+    "Preserve the clearly labeled anti-pattern categories when matching generated drift to the reference."
+  ],
+  "negative_constraints": [
+    "Do not reproduce any of the anti-pattern designs shown in this sheet.",
+    "Do not drift toward photorealism, glossy 3D, plush/toy, painterly, cinematic, or gritty render styles.",
+    "Do not over-detail with greeble, tiny text, excess accessories, visual clutter, or over-complicated mechanisms.",
+    "Do not produce thin spindly limbs, sharp angles, organic/slimy forms, unnatural proportions, unclear silhouettes, or crowded constructions.",
+    "Do not use inconsistent line weight, sketchy or wobbly lines, noisy textures, harsh airbrush shading, or wrong shadow logic.",
+    "Do not use oversaturated neon, muddy desaturated colors, crushed blacks, cold bleak moods, plastic/metallic/glossy finishes, or flat lighting without depth.",
+    "Do not mix line weights, 3D and hand-drawn, realism and cartoon, different art styles, different shadow systems, photoreal props in cartoon scenes, mismatched UI/text styles, or inconsistent perspective.",
+    "Do not smuggle corporate clip-art, stock icons, photo backgrounds, real-world brand logos, watermarks, placeholder text, unreadable text, real-world signage, multiple fonts, cultural mismatches, violence/gore, uncanny faces, anime/manga, chibi/super deformed, superhero, fantasy medieval, sci-fi hard-surface, horror, abstract/conceptual, over-sarcastic memes, internet slang, political references, or real-world weapons into Adventures of Patch assets."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA review of generated Patch assets for style drift.",
+      "Building negative prompt phrases for image generation tasks.",
+      "Worker onboarding on what not to generate.",
+      "Cataloguing specific style anti-pattern names for bug reports and style feedback."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Canonical Patch positive reference; use the approved Patch reference sheets.",
+      "Exact OCR of all incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:reference-sheet",
+      "style:drift",
+      "style:risk",
+      "style:anti-pattern",
+      "pattern:anti-pattern",
+      "state:accepted",
+      "purpose:negative-reference"
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident positive style reference sidecar documenting approved visual patterns for all Adventures of Patch assets. Use it for style guidance, prompt constraint extraction, character/environment/prop QA, and worker onboarding on what to render.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the approved patterns shown.",
+  "runtime_use_note": "Use this sidecar to extract approved visual patterns and phrasing for positive prompts and to guide QA of generated assets. Inspect the image pixels directly when exact color, line, or layout details matter.",
+  "do_not_infer_note": "Do not infer additional patterns, unseen variants, or acceptance of derivatives beyond the observed approved patterns and stated intended use.",
+  "image": {
+    "repo_image_path": "style/patterns/reference_sheets/approved_patterns__v1.png",
+    "relative_image_path": "approved_patterns__v1.png",
+    "repo_sidecar_path": "style/patterns/reference_sheets/approved_patterns__v1-sidecar.json",
+    "relative_sidecar_path": "approved_patterns__v1-sidecar.json",
+    "image_filename": "approved_patterns__v1.png",
+    "sha256": "adfd677eee95d2b1f4ecfc754f4552f33be6d3c868406f3b16d1a448e95a1d94",
+    "byte_size": 1973387,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "mode": "RGB",
+    "asset_role": "approved_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Approved Style Patterns Sheet v1.1 for Adventures of Patch, defining the positive visual style across characters, environments, props, and composition. The sheet presents core rules, the canonical Patch figure, a check-before-approval checklist, and six numbered pattern sections plus a quick-tests footer.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape reference sheet with a dark navy top banner, a left rule column, a main six-section pattern grid, a right checklist column, and a bottom quick-tests footer.",
+      "Top banner reads 'ADVENTURES OF PATCH | APPROVED STYLE PATTERNS SHEET' with version 'v1.1'.",
+      "Left column contains the PURPOSE statement, four CORE RULES, and a large canonical Patch figure with the title 'PATCH World Anchor & Protagonist'.",
+      "Right column contains the 'CHECK BEFORE APPROVAL' checklist.",
+      "Central area is split into six numbered sections, each with a green label and illustrative examples.",
+      "Bottom footer reads 'BUILD A CLEAR, FRIENDLY WORLD. KEEP IT SIMPLE, PURPOSEFUL, and CONSISTENT.' with four trait badges: CURIOUS, RELIABLE, ORGANIZED, HELPFUL."
+    ],
+    "patch_canon": [
+      "Canonical Patch is shown in the top-center as a small humanoid in a teal hooded suit with an off-white face panel, black oval eyes, two dark antennae, and a dark crossbody bag.",
+      "Patch is described as a friendly ambassador of the Adventures of Patch world, the default exemplar for tone and style, and present in most general style examples."
+    ],
+    "content_panels": [
+      "1. PATCH AS STYLE ANCHOR: Readable silhouette, friendly expression, correct proportions, approved pose energy, clear identity details, balanced detail, correct palette.",
+      "2. CORE STYLE LANGUAGE: Thick rounded outlines, clean simplified shapes, soft controlled shading, readable silhouettes, purposeful iconography, consistent visual hierarchy, balanced detail (no clutter).",
+      "3. CHARACTER CLASS APPLICATION: HUMANS - clearly human, friendly expressive simple forms and clothing; OTHER AGENTS - clearly robotic, distinctly robotic, never wear hoodies or resemble Patch; PATCH - protected protagonist, unique identity, do not alter core features or silhouette.",
+      "4. ENVIRONMENT STYLE PATTERNS: Clear perspective, readable spaces, purposeful props, uncluttered, clean lighting hierarchy, logical worldbuilding.",
+      "5. PROP STYLE PATTERNS: Functional and readable, believable contact, clean silhouettes, practical detail, purpose-led labels and icons.",
+      "6. COLOR, LINE & CONTINUITY: Approved palette discipline, consistent line weight, coherent family resemblance, continuity between scenes."
+    ],
+    "style_quick_tests": [
+      "Instantly readable at small size?",
+      "Clear role at a glance?",
+      "Feels friendly and inviting?",
+      "Purposeful and not busy?",
+      "Matches world style family?",
+      "Different from other agents?",
+      "Consistent across scenes?"
+    ],
+    "check_before_approval": [
+      "Is it clearly Adventures of Patch?",
+      "Is it clear, friendly, and purposeful?",
+      "Is Patch's identity preserved (hoodie, antennae, face, bag)?",
+      "Are other agents clearly robotic and not Patch?",
+      "Are humans clearly human?",
+      "Is the silhouette readable at small size?",
+      "Is line weight consistent and rounded?",
+      "Is shading soft and controlled?",
+      "Is detail purposeful and not cluttered?",
+      "Does it fit the world palette and style?"
+    ]
+  },
+  "positive_constraints": [
+    "Treat the sheet as the approved positive style reference for all Adventures of Patch assets.",
+    "Keep the canonical Patch design as the style anchor: teal hood, off-white face, black oval eyes, antennae, and correct crossbody bag.",
+    "Maintain clean, friendly, purposeful, and consistent style across characters, environments, and props.",
+    "Use thick rounded outlines, soft controlled shading, readable silhouettes, and a consistent visual hierarchy.",
+    "Preserve clear distinction between humans, other agents, and Patch.",
+    "Use the pre-approval checklist to gate new assets before acceptance."
+  ],
+  "negative_constraints": [
+    "Do not treat this sheet as authorization to reproduce exact figures or derivative images without QA.",
+    "Do not alter Patch's core identity: hoodie, antennae, face panel, bag, or '>' symbol.",
+    "Do not make other agents resemble Patch or wear hoodies.",
+    "Do not clutter, over-detail, or introduce busy backgrounds that compete with the subject.",
+    "Do not use harsh lighting, inconsistent line weight, muddy shading, or off-brand palettes.",
+    "Do not mix rendering styles within a scene or across assets."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Style guidance for character, environment, and prop generation.",
+      "Positive prompt extraction for image generation tasks.",
+      "QA of generated assets against approved patterns.",
+      "Worker onboarding on the Adventures of Patch visual style."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Exact color values; inspect the image pixels or use the palette reference.",
+      "Animation rigging or 3D model construction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "style:approved",
+      "asset:reference-sheet",
+      "pattern:approved",
+      "state:accepted",
+      "purpose:positive-reference",
+      "domain:style-guide"
+    ]
+  }
+}

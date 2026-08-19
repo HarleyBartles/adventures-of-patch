@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident negative reference sidecar cataloguing common Adventures of Patch environment generation anti-patterns. Use it for prompt negation, QA drift checks, environment guidance, and worker onboarding on what not to render.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to extract forbidden environment variants and phrasing for negative prompts and to guide QA of generated Adventures of Patch environments. Inspect the image pixels directly when identifying which anti-pattern a draft matches.",
+  "do_not_infer_note": "Do not infer these anti-patterns as acceptable designs or as positive canon. The image is an explicit do-not-generate reference. Do not reproduce any of the designs shown.",
+  "image": {
+    "repo_image_path": "style/patterns/reference_sheets/environment_drift_risks__v1.png",
+    "relative_image_path": "environment_drift_risks__v1.png",
+    "repo_sidecar_path": "style/patterns/reference_sheets/environment_drift_risks__v1-sidecar.json",
+    "relative_sidecar_path": "environment_drift_risks__v1-sidecar.json",
+    "image_filename": "environment_drift_risks__v1.png",
+    "sha256": "17112ca4182d204149cc3e9fbf69302a4a9172ca960c6c815fa840587021d90f",
+    "byte_size": 2230617,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "anti_pattern_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Anti-pattern reference sheet for Adventures of Patch environments, organised as labelled panels of common generation mistakes including cluttered spaces, empty or generic rooms, lighting and palette drift, geometry and perspective errors, signage and text overload, and mixed rendering styles.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape grid reference sheet with a top banner, numbered anti-pattern panels, and a bottom trust footer.",
+      "Top banner identifies the sheet as an environment-focused anti-pattern reference.",
+      "Each panel is titled with a category label and shows an environment variant with a clear rejection marker.",
+      "A bottom footer reinforces that consistent, readable, story-relevant environments keep the world coherent."
+    ],
+    "environment_design": [
+      "Environments are shown as stylised interior and exterior spaces in the approved Adventures of Patch editorial-vector finish.",
+      "Canonical environment read includes clear focal points, controlled perspective, consistent lighting, and purposeful props.",
+      "Anti-pattern variants deviate from this canon in density, geometry, lighting, palette, signage, or rendering style."
+    ],
+    "content_panels": [
+      "1. CLUTTER AND NOISE: environments overstuffed with irrelevant props and surfaces, hiding the focal point.",
+      "2. EMPTY OR GENERIC: rooms with no story clue, no focal point, or flat blank space.",
+      "3. LIGHTING AND PALETTE DRIFT: inconsistent or harsh lighting, random palette shifts, and mood that breaks the friendly tone.",
+      "4. GEOMETRY AND PERSPECTIVE ERRORS: impossible room geometry, inconsistent scale, or blocked paths without story reason.",
+      "5. SIGNAGE AND TEXT OVERLOAD: excessive signs, lorem-style filler text, or embedded text that does not support the story.",
+      "6. MIXED RENDERING STYLE: photorealistic texture, glossy 3D finish, painterly realism, or flat icon style mixed with the approved vector look."
+    ]
+  },
+  "positive_constraints": [
+    "Treat the sheet as a reference of forbidden variants, not as a positive example to reproduce.",
+    "Use the canonical environment baseline as the only acceptable design source: clear focal point, readable layout, consistent lighting, coherent palette, and purposeful props.",
+    "Preserve the clearly labelled anti-pattern categories when matching generated drift to the reference.",
+    "Keep the sheet available for prompt negation and QA checklists."
+  ],
+  "negative_constraints": [
+    "Do not reproduce any of the anti-pattern designs shown in this sheet.",
+    "Do not render environments with irrelevant object stuffing, every surface covered, or visual noise that hides the teaching point.",
+    "Do not use generic empty rooms, lorem-style filler text, or signage overload.",
+    "Do not apply inconsistent lighting, random palette shifts, or mixed rendering styles.",
+    "Do not create impossible room geometry, blocked paths without story reason, or mismatched scale.",
+    "Do not drift into photorealism, glossy 3D, painterly realism, anime, or flat icon style for environments."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA review of generated Adventures of Patch environments for style drift.",
+      "Building negative prompt phrases for image generation tasks.",
+      "Worker onboarding on what not to generate for environments.",
+      "Cataloguing specific anti-pattern names for bug reports and style feedback."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Canonical positive environment reference; use the approved environment reference surfaces.",
+      "Exact OCR of all incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "style:drift",
+      "style:risk",
+      "pattern:anti-pattern",
+      "asset:reference-sheet",
+      "state:accepted",
+      "purpose:negative-reference",
+      "domain:environment"
+    ]
+  }
+}

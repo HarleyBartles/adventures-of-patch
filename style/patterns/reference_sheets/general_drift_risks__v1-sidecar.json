@@ -1,0 +1,109 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident negative reference sidecar cataloguing general image anti-patterns and drift risks for Adventures of Patch assets. Use it for prompt negation, QA drift checks, and worker onboarding on what not to render across anatomy, contact, props, scenes, composition, and identity.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to extract forbidden general image variants and phrasing for negative prompts and to guide QA of generated assets. Inspect the image pixels directly when matching a draft to a specific anti-pattern.",
+  "do_not_infer_note": "Do not infer these anti-patterns as acceptable designs or as positive canon. The image is an explicit do-not-generate reference. Do not reproduce any of the designs shown.",
+  "image": {
+    "repo_image_path": "style/patterns/reference_sheets/general_drift_risks__v1.png",
+    "relative_image_path": "general_drift_risks__v1.png",
+    "repo_sidecar_path": "style/patterns/reference_sheets/general_drift_risks__v1-sidecar.json",
+    "relative_sidecar_path": "general_drift_risks__v1-sidecar.json",
+    "image_filename": "general_drift_risks__v1.png",
+    "sha256": "73c14d2464548413ba5ac0269a9d9617bbc17f3bf22aed208b6f00251614eda3",
+    "byte_size": 1998595,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "anti_pattern_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "General Image Anti-Patterns Sheet v1.1 for Adventures of Patch, cataloguing seven categories of common generation mistakes that apply across characters, props, and environments. The sheet lays out a canon callout, core rules, a pre-approval checklist, and a grid of anti-pattern examples.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape reference sheet with a dark navy top banner, a left rule column, a central seven-panel anti-pattern grid, a right checklist column, and a bottom footer.",
+      "Top banner reads 'ADVENTURES OF PATCH | GENERAL IMAGE ANTI-PATTERNS SHEET' with version 'v1.1'.",
+      "Left column contains the PURPOSE statement, four CORE RULES, and the 'PATCH - THE CANON' callout with a canonical Patch thumbs-up figure.",
+      "Right column contains the 'CHECK BEFORE APPROVAL' checklist.",
+      "Central area is split into seven numbered panels, each titled with a red category label and populated with thumbnail examples with red X marks and short captions.",
+      "Bottom footer reads 'ONE WORLD. ONE STYLE. KEEP IT CLEAR, FRIENDLY, AND ADVENTURES OF PATCH.' with four trait badges: CURIOUS, RELIABLE, ORGANIZED, HELPFUL."
+    ],
+    "patch_canon": [
+      "Canonical Patch is shown in the top-left 'PATCH - THE CANON' callout as a small humanoid in a teal hooded suit with an off-white face panel, black oval eyes, two dark antennae, and a dark crossbody bag.",
+      "The canon callout states that Patch is the visual anchor of the world and any deviation from this design is not approved unless explicitly noted."
+    ],
+    "content_panels": [
+      "1. ANATOMY & BODY LOGIC: Floating limbs, wrong number of joints, disconnected body parts, weird proportions, twisted spine, head too big, head too small.",
+      "2. CONTACT & ATTACHMENT: Hovering objects, no grip on held items, clipping through body, floating bag, strap not on shoulder, item not in hand, wrong contact point.",
+      "3. PROP & OBJECT LOGIC: Missing function, nonsensical parts, wrong scale, impossible mechanism, duplicate prop, prop merged with body, label facing wrong way.",
+      "4. SCENE & ENVIRONMENT LOGIC: No floor/grounding, impossible room, missing wall, wrong perspective, scale mismatch, random light sources, floating furniture.",
+      "5. COMPOSITION & CONTINUITY: Cropped important element, subject too small, subject off-centre with no reason, cut off limbs, busy frame, empty dead space, inconsistent framing.",
+      "6. IDENTITY / STYLE DRIFT: Off-brand palette, wrong line weight, photoreal face, anime face, glossy render, muddy shading, lost silhouette, generic character.",
+      "7. SPOT THE ACCIDENTAL EXTRAS: Extra finger, extra antenna, extra bag, extra logo, random text, watermark, third arm, hidden detail, signature, uncanny reflection."
+    ],
+    "check_before_approval": [
+      "Does the anatomy look physically possible?",
+      "Do all contacts and attachments make sense?",
+      "Do props look functional and correctly scaled?",
+      "Does the scene have consistent perspective and grounding?",
+      "Is the composition clear and intentional?",
+      "Does the identity and style stay on-brand?",
+      "Are there any accidental extras?"
+    ]
+  },
+  "positive_constraints": [
+    "Treat the sheet as a reference of forbidden general image mistakes, not as a positive example to reproduce.",
+    "Use the canonical Patch baseline as the only acceptable design source for Patch: teal hood, off-white face, black oval eyes, antennae, and correct crossbody bag.",
+    "Maintain physically possible anatomy, correct contact and attachment, functional props, consistent scenes, clear composition, and on-brand identity across all assets.",
+    "Use the pre-approval checklist to gate new assets before acceptance.",
+    "Preserve the clearly labelled anti-pattern categories when matching generated drift to the reference."
+  ],
+  "negative_constraints": [
+    "Do not reproduce any of the anti-pattern designs shown in this sheet.",
+    "Do not render floating or disconnected limbs, wrong joints, or impossible body proportions.",
+    "Do not allow props, bags, or held items to hover, clip, or attach at wrong points.",
+    "Do not place assets in impossible rooms, with mismatched scale, or without grounding.",
+    "Do not crop important elements, leave dead space, or create busy/unintentional framing.",
+    "Do not drift into off-brand palettes, photoreal/anime faces, glossy renders, or generic character design.",
+    "Do not introduce extra fingers, antennae, bags, logos, watermarks, or other accidental extras."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA review of generated Adventures of Patch assets for general drift and accidental errors.",
+      "Building negative prompt phrases for image generation tasks.",
+      "Worker onboarding on common image mistakes to avoid.",
+      "Cataloguing specific general anti-pattern names for bug reports and style feedback."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Canonical Patch positive reference; use the approved Patch reference sheets.",
+      "Exact OCR of all incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "style:drift",
+      "style:risk",
+      "pattern:anti-pattern",
+      "asset:reference-sheet",
+      "state:accepted",
+      "purpose:negative-reference",
+      "domain:general-image"
+    ]
+  }
+}
