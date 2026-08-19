@@ -1,0 +1,82 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident template sidecar for a six-panel process-sequence asset sheet. Supports template selection, storyboarding, and QA of step-by-step reference sheets.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to understand the template layout, intended use, and constraints. Inspect the image pixels directly for exact panel labels, dimensions, and spacing.",
+  "do_not_infer_note": "Do not infer additional steps, non-linear ordering, or final canon status beyond the observed six-panel sequence candidate template.",
+  "image": {
+    "repo_image_path": "build/templates/asset-sheets/template_asset_sheet_process_sequence_6panel_v1.png",
+    "relative_image_path": "template_asset_sheet_process_sequence_6panel_v1.png",
+    "repo_sidecar_path": "build/templates/asset-sheets/template_asset_sheet_process_sequence_6panel_v1-sidecar.json",
+    "relative_sidecar_path": "template_asset_sheet_process_sequence_6panel_v1-sidecar.json",
+    "image_filename": "template_asset_sheet_process_sequence_6panel_v1.png",
+    "sha256": "c3296d7e4c42f977772651c99b92d2d970781c70c52cccdac35604b79a93d437",
+    "byte_size": 38311,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "template_asset_sheet",
+    "acceptance_state": "candidate",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Candidate template for a six-panel process-sequence asset sheet. The header has metadata columns, and the main area contains six numbered panels arranged left-to-right for a step-by-step process. A footer provides guidance and continuity notes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape template with dark green border and cream/white field.",
+      "Header reads 'ASSET SHEET' with TITLE, TYPE, STATUS, VERSION, SOURCE/QA columns.",
+      "Metadata: TITLE 'Process Sequence 6 Panel', TYPE 'Sequence / storyboard sheet', STATUS 'candidate', VERSION 'v1', SOURCE/QA 'GPT-authored template'.",
+      "Main area: six numbered panels arranged horizontally, labelled STEP 1 through STEP 6.",
+      "Each panel is the same size and designed for one beat in a sequence.",
+      "Footer contains guidance/continuity notes."
+    ],
+    "guidance_notes": [
+      "Use for a six-step process, workflow, or story beat sequence.",
+      "Good for instructional sequences, mission steps, or interaction flows."
+    ]
+  },
+  "positive_constraints": [
+    "Use this template for six-step linear process sequences.",
+    "Keep the panels numbered and ordered left-to-right.",
+    "Maintain the metadata header and footer notes."
+  ],
+  "negative_constraints": [
+    "Do not treat 'candidate' status as final accepted canon.",
+    "Do not add extra steps or reorder the sequence without layout review.",
+    "Do not use for non-sequential or non-linear layouts."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Planning six-step process or storyboard sheets.",
+      "QA of sheets built from this template.",
+      "Teaching the horizontal six-panel sequence pattern."
+    ],
+    "not_sufficient_for": [
+      "Final canon approval without sheet content and image QA.",
+      "Non-sequential or multi-track processes.",
+      "Exact measurements; inspect the image pixels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:template",
+      "domain:asset-sheet",
+      "state:candidate",
+      "template:process-sequence-6panel",
+      "role:storyboard-sequence"
+    ]
+  }
+}

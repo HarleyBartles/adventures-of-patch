@@ -1,0 +1,82 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident template sidecar for a four-up equal asset sheet with a header. Supports template selection, layout planning, and QA of 2x2 equal-panel sheets.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to understand the template layout, intended use, and constraints. Inspect the image pixels directly for exact panel labels, dimensions, and spacing.",
+  "do_not_infer_note": "Do not infer additional panels, larger hero slots, or final canon status beyond the observed four-up equal candidate template.",
+  "image": {
+    "repo_image_path": "build/templates/asset-sheets/template_asset_sheet_4up_equal_header_v1.png",
+    "relative_image_path": "template_asset_sheet_4up_equal_header_v1.png",
+    "repo_sidecar_path": "build/templates/asset-sheets/template_asset_sheet_4up_equal_header_v1-sidecar.json",
+    "relative_sidecar_path": "template_asset_sheet_4up_equal_header_v1-sidecar.json",
+    "image_filename": "template_asset_sheet_4up_equal_header_v1.png",
+    "sha256": "dfa7c64220a9bc745237f22c97b50d61e7c83cea6f66611ce98524723498b7eb",
+    "byte_size": 10333,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "template_asset_sheet",
+    "acceptance_state": "candidate",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Candidate template for a four-up equal asset sheet. The header has metadata columns, and the main area is a 2x2 grid of equal panels under a common header bar. A footer provides guidance and continuity notes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape template with dark green border and cream/white field.",
+      "Header reads 'ASSET SHEET' with TITLE, TYPE, STATUS, VERSION, SOURCE/QA columns.",
+      "Metadata: TITLE '4 Up Equal Header', TYPE 'Quad / reference sheet', STATUS 'candidate', VERSION 'v1', SOURCE/QA 'GPT-authored template'.",
+      "Main area: 2x2 grid of four equal panels under a common header bar.",
+      "Each cell is the same size and has a placeholder label.",
+      "Footer contains guidance/continuity notes."
+    ],
+    "guidance_notes": [
+      "Use for four equal-weight assets, views, or options.",
+      "Good for small comparison sets, pose options, or prop families."
+    ]
+  },
+  "positive_constraints": [
+    "Use this template for four equal-weight items.",
+    "Keep the 2x2 grid and the common header bar.",
+    "Maintain the metadata header and footer notes."
+  ],
+  "negative_constraints": [
+    "Do not treat 'candidate' status as final accepted canon.",
+    "Do not add extra panels or break the equal-cell layout.",
+    "Do not use for more than four items without layout review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Planning four-up equal comparison reference sheets.",
+      "QA of sheets built from this template.",
+      "Teaching the 2x2 quad layout pattern."
+    ],
+    "not_sufficient_for": [
+      "Final canon approval without sheet content and image QA.",
+      "Hierarchical or multi-row grids.",
+      "Exact measurements; inspect the image pixels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:template",
+      "domain:asset-sheet",
+      "state:candidate",
+      "template:4up-equal-header",
+      "role:quad-reference"
+    ]
+  }
+}
