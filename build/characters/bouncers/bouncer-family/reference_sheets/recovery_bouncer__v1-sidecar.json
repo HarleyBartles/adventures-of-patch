@@ -1,0 +1,120 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Recovery Bouncer",
+  "sidecar_purpose": "Adjacent sidecar for the canonical reference sheet of Recovery Bouncer in the bouncer-family queue. Captures the approved visual reference, poses, signature props, and reuse constraints for this character.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Recovery Bouncer's appearance, costume, poses, props, and color system in the bouncer-family reference set.",
+  "runtime_use_note": "Intended for asset-sheet compilation, prompt anchoring, continuity review, and character pose selection. It is a reference sheet and not a set of cropped runtime sprites; process before direct presentation use.",
+  "do_not_infer_note": "Do not infer Recovery Bouncer's proportions, color codes, or pose details from unrelated sources. Use only this approved reference sheet and the canonical bouncer-family style bible.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/recovery_bouncer__v1.png",
+    "relative_image_path": "recovery_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/recovery_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "recovery_bouncer__v1-sidecar.json",
+    "image_filename": "recovery_bouncer__v1.png",
+    "sha256": "e866d24193a712daba1b2752309fd2cd3192ca6ed2a7eb8259a918852d74e91f",
+    "byte_size": 1549189,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference_sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "source_truth",
+    "confidence": "canonical",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet for Recovery Bouncer, the Club DB security lead responsible for safe rollback and system recovery. Shows four approved poses (neutral standing, stop/rejected, approve/safe to recover, recovery plan/checklist) with signature props and how-to-draw guidance.",
+  "observed_visual_facts": {
+    "character": [
+      "Recovery Bouncer is a heavyset, bald security lead with a large dark beard and black sunglasses.",
+      "He holds rollback authority and protects the club by restoring systems safely and reliably."
+    ],
+    "costume": [
+      "Black short-sleeved Club DB security polo shirt with a blue and white Recovery role badge on the left chest.",
+      "Black trousers and a black belt with a rectangular silver buckle.",
+      "Black work shoes.",
+      "Black sunglasses and a large dark beard."
+    ],
+    "signature_props": [
+      "Recovery Plan clipboard or folder with 'RECOVERY PLAN' text on the cover.",
+      "Recovery icons: backup, rollback, restore, replay (circular icons with arrow and play symbols).",
+      "Recovery role badge (shield with database symbol)."
+    ],
+    "poses": [
+      "1 NEUTRAL STANDING: arms crossed, holding the Recovery Plan clipboard.",
+      "2 STOP / REJECTED: right hand raised in a stop gesture, left hand on hip.",
+      "3 APPROVE / SAFE TO RECOVER: right thumb up, left hand on hip.",
+      "4 RECOVERY PLAN / CHECKLIST: holding the clipboard showing checked items: BACKUP, ROLLBACK, RESTORE, REPLAY."
+    ],
+    "colors": [
+      "Black uniform as the dominant color.",
+      "Warm tan/orange skin tone.",
+      "Blue and white badge and accent colors.",
+      "Tan clipboard with black text and green check marks.",
+      "Off-white/cream background with subtle panel borders."
+    ],
+    "style": [
+      "Clean editorial cartoon illustration with bold outlines.",
+      "Soft cel-shaded or painterly shading.",
+      "Simplified vector-adjacent finish with consistent proportions across the four poses."
+    ],
+    "guidance_notes": [
+      "Biggest build in the group - broad, heavyset, and powerful.",
+      "Steady, grounded stance with squared shoulders.",
+      "Protective authority - calm, confident, and in control.",
+      "Keep sunglasses, beard, and badge consistent.",
+      "Always include a clear recovery-plan prop (clipboard or checklist) in at least one pose."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the heavyset, bald build with large dark beard and black sunglasses in every depiction.",
+    "Keep the black Club DB security polo and Recovery role badge.",
+    "Maintain the black trousers, black belt with rectangular silver buckle, and black shoes.",
+    "Include a clear recovery-plan prop (clipboard or checklist) in at least one pose.",
+    "Keep the four approved poses: neutral standing, stop/rejected, approve/safe to recover, recovery plan/checklist.",
+    "Use the approved color palette: black uniform, warm skin tone, blue and white badge accents, tan clipboard, green check marks.",
+    "Use this image as the canonical reference for Recovery Bouncer's proportions, costume, and props."
+  ],
+  "negative_constraints": [
+    "Do not make Recovery Bouncer slim, hairy, or without a beard.",
+    "Do not remove or change the black sunglasses.",
+    "Do not replace the Club DB security polo with casual clothing.",
+    "Do not omit the Recovery role badge from the chest.",
+    "Do not replace the recovery-plan clipboard with unrelated props.",
+    "Do not change the checked recovery steps (BACKUP, ROLLBACK, RESTORE, REPLAY) to different wording.",
+    "Do not add busy backgrounds or extra characters to the reference poses."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical character reference for Recovery Bouncer in the bouncer-family queue deck.",
+      "Asset-sheet compilation and downstream prompt anchoring for the character.",
+      "Costume, pose, and prop continuity checks for Recovery Bouncer.",
+      "Style bible cross-reference for the security lead role."
+    ],
+    "not_sufficient_for": [
+      "Runtime sprite crops without further cropping and processing.",
+      "Animation frames or non-listed poses (derive from the reference poses).",
+      "Scenes requiring other bouncer characters or Club DB environments.",
+      "Exact color values; inspect the image pixels for precise color codes."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bouncer-family",
+      "role:reference-sheet",
+      "asset:reference-sheet"
+    ]
+  }
+}

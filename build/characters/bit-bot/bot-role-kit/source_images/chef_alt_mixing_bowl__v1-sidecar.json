@@ -1,0 +1,95 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the chef alternate mixing-bowl source image in the Bit/Bot bot-role-kit.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, usage tags, and drawing constraints derived from that image.",
+  "runtime_use_note": "Use this sidecar to locate the source image and route it for downstream asset compilation, role-kit sheets, or scene composition. It is not a final runtime composite.",
+  "do_not_infer_note": "Do not infer unseen poses, additional props, environments, or exact color values beyond what is visible. Do not use this sidecar as a prompt or generation contract.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/chef_alt_mixing_bowl__v1.png",
+    "relative_image_path": "chef_alt_mixing_bowl__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/chef_alt_mixing_bowl__v1-sidecar.json",
+    "relative_sidecar_path": "chef_alt_mixing_bowl__v1-sidecar.json",
+    "image_filename": "chef_alt_mixing_bowl__v1.png",
+    "sha256": "d9c3ba8b3a35f14ebd78354b8d497dc23745b85cc1efb592de84cfeb6a6e00f8",
+    "byte_size": 2025219,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1183,
+      "height": 1329
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "visual",
+    "confidence": "low",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image showing one of the Bit/Bot support robots in a chef-role alternate pose with a mixing-bowl prop, intended as a canonical reference for the bot-role-kit chef alternate.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single-figure alternate source image centered on a clean white or near-white background.",
+      "The character occupies the central vertical space, leaving generous top and bottom margins for framing."
+    ],
+    "character_design": [
+      "One of the Bit/Bot support robots: a rounded, wheeled, friendly-faced robot in the Patch-adjacent vector style.",
+      "The robot retains the simple antenna, rounded head, and wheeled-base silhouette of the bit-bot duo.",
+      "Expression and posture support the action of preparing or mixing something."
+    ],
+    "costume_and_props": [
+      "Chef-role costume and headwear, distinguishing this as the bot-role-kit chef alternate.",
+      "A mixing-bowl prop is central to the pose, giving the image its filename identity.",
+      "The pose reads as an in-role activity (stirring or mixing) rather than a static hero stance."
+    ],
+    "color_and_style": [
+      "Clean, vector-like rendering with black or dark outlines and flat-to-soft shading.",
+      "Background is dominated by white and off-white, consistent with the bit-bot reference style.",
+      "Chef costume and bowl introduce warm browns, tans, and neutral cooking-prop colors.",
+      "Bit/Bot accent colors (red for Bit, blue for Bot) are present but should be verified against the adjacent PNG for exact identity."
+    ]
+  },
+  "positive_constraints": [
+    "Treat this image as a Bit/Bot bot-role-kit chef alternate source image.",
+    "Preserve the rounded, wheeled bit-bot silhouette and simple facial features.",
+    "Keep the chef-role costume, headwear, and mixing-bowl prop in any derived alternate pose.",
+    "Maintain the clean white reference background and vector-friendly line style.",
+    "Keep Bit red and Bot blue; do not swap their accent colors if the robot is identifiable."
+  ],
+  "negative_constraints": [
+    "Do not use this image as a final runtime composite.",
+    "Do not infer additional props, poses, or backgrounds beyond what is visible.",
+    "Do not swap Bit's red and Bot's blue accent colors.",
+    "Do not remove the chef headwear or mixing-bowl prop from the alternate pose.",
+    "Do not treat this sidecar as a prompt or generation contract."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Indexing the chef_alt_mixing_bowl__v1 source image.",
+      "Prompt constraints for Bit/Bot chef-role alternate poses with a mixing-bowl prop.",
+      "Routing the source image for downstream role-kit sheet compilation."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative images without image QA.",
+      "Exact RGB color values or final shader treatment.",
+      "Animation frames, timing, or bone rigging not shown.",
+      "Using directly as a sliced runtime sprite atlas."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character:bit-bot",
+      "role:chef",
+      "asset:source-image",
+      "project:adventures-of-patch"
+    ]
+  }
+}

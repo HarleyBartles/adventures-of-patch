@@ -1,0 +1,98 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Mission Controller",
+  "sidecar_purpose": "Repo-resident semantic sidecar for the Mission Controller reference sheet. Describes the visual canon, role callouts, and usage boundaries for the human Mission Controller of the Patch Mission Support Team.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the accepted source views shown.",
+  "runtime_use_note": "Use this sidecar for Mission Controller selection, continuity, and prompt planning. Inspect the image pixels directly when exact prop labels, small text, or fine uniform details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed views and stated intended use. Do not infer exact color values, animation frames, or scale beyond the sheet.",
+  "image": {
+    "repo_image_path": "build/characters/mission-control-team/reference_sheets/mission_controller__v1.png",
+    "relative_image_path": "mission_controller__v1.png",
+    "repo_sidecar_path": "build/characters/mission-control-team/reference_sheets/mission_controller__v1-sidecar.json",
+    "relative_sidecar_path": "mission_controller__v1-sidecar.json",
+    "image_filename": "mission_controller__v1.png",
+    "sha256": "2adc6d1beea65e44ebd709820cf793774be0872e3dde592c9c6fd0d7eb3068b2",
+    "byte_size": 2186294,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "character_reference_sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Approved character reference sheet for the Patch Mission Controller. The sheet frames the character as the human planner who turns uncertainty into a plan and readiness, showing visual-trait callouts, workspace context, role-in-the-flow statements, and the Patch Mission Support Team footer.",
+  "observed_visual_facts": {
+    "sheet_identity_and_status": [
+      "Top title reads 'MISSION CONTROLLER' with the tagline 'TURNING UNCERTAINTY INTO A PLAN. PLAN INTO READINESS.'",
+      "Asset-class stamp reads 'ASSET CLASS PMC.MC-OI VERSION: 10 DATE: 202505-19 STATUS: APPROVED'.",
+      "Bottom banner reads 'PATCH MISSION SUPPORT TEAM' followed by 'We prepare the plan. You make it happen.' and 'PATCH GETS THE CREDIT. WE GET IT DONE.'"
+    ],
+    "character_views_and_poses": [
+      "The 'CHARACTER VIEWS & POSES' section is present with a 'TRACK TASKS' / 'Trek tasks' callout and a 'UNIFORM TO READY' / 'UNIFOW TO REDY' step.",
+      "A 'COMM HEADSET' prop is highlighted with the quote 'I turn fuzzy information into clear next steps. You focus on the mission. I'll handle the starting line.'"
+    ],
+    "visual_traits": [
+      "The 'VISUAL TRAITS' panel lists 'HAIR BUN', 'BADGE', and 'FACIAL EXPRESSIONS' with 'Aligned' and 'ready' cues.",
+      "The 'WORKSPACE CONTEXT' panel lists 'BADGE & LANYARD' with 'Access and Steady' and 'CONFIDENT POSTURE' with 'Ready to lead' / 'firm.'"
+    ],
+    "workspace_and_flow": [
+      "The workspace is labeled 'PATCH MISSION CONTROL CENTRE' with 'Monitors, data, and team at your fingertips.'",
+      "Role-in-the-flow callouts include 'FROM VAGUE TO READY', 'ROLE IN THE FLOW', and the banner 'I PREPARE THE PLAN. YOU CHANGE THE OUTCOME. CLEAR INTAKE. SMART PLANS. SMOOTH LAUNCHES. ONE TEAM. ONE FLOW. ONE MISSION READY.'",
+      "Additional panels include 'COLOR PALETTE', 'TEAM CONNECTION', and 'CARGO POCKETS' / 'CARGO PCXKETS'."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Mission Controller as the human Patch Mission Support planner with a confident, ready posture.",
+    "Keep the headline 'MISSION CONTROLLER' and the tagline 'TURNING UNCERTAINTY INTO A PLAN. PLAN INTO READINESS.'",
+    "Retain the asset-class stamp 'ASSET CLASS PMC.MC-OI VERSION: 10 DATE: 202505-19 STATUS: APPROVED'.",
+    "Show the character with a comm headset, badge and lanyard, hair bun, and confident posture.",
+    "Use the workspace context as the Patch Mission Control Centre with monitors and data.",
+    "Use the flow callouts 'FROM VAGUE TO READY', 'CLEAR INTAKE', 'SMART PLANS', 'SMOOTH LAUNCHES', and 'ONE TEAM. ONE FLOW. ONE MISSION READY.'",
+    "Keep the footer banner 'PATCH MISSION SUPPORT TEAM' with 'We prepare the plan. You make it happen.' and 'PATCH GETS THE CREDIT. WE GET IT DONE.'"
+  ],
+  "negative_constraints": [
+    "Do not change the Mission Controller's core role as a human mission planner.",
+    "Do not remove or alter the approved asset-class stamp.",
+    "Do not add Patch identity markers such as a teal hoodie, antennae, crossbody bag, or robot body.",
+    "Do not infer exact color values from the color-palette panel without pixel inspection.",
+    "Do not treat this sheet as an exhaustive animation or rig specification.",
+    "Do not infer additional team members or scenes beyond the Mission Controller shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Mission Controller character reference and continuity checks.",
+      "Prompt constraints for new Mission Controller source images.",
+      "QA of uniform, headset, badge, lanyard, and confident posture details.",
+      "Reference for Patch Mission Control Centre workspace scenes."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of new generated images without image QA.",
+      "Exact transcription of small prop labels or color values without pixel inspection.",
+      "Authorizing derivative images or additional views beyond those shown.",
+      "Determining animation frames, bone rigging, or runtime sprite treatment."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character:mission-controller",
+      "project:adventures-of-patch",
+      "team:mission-control",
+      "role:reference-sheet",
+      "status:approved"
+    ]
+  }
+}

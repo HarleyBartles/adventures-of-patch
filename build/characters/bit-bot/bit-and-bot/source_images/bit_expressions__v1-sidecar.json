@@ -1,0 +1,103 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit",
+  "sidecar_purpose": "Adjacent sidecar for Bit's expression reference sheet in the bit-and-bot asset pack. Captures the approved facial-expression variants and reuse constraints for Bit.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Bit's facial-expression variants in the bit-and-bot pack.",
+  "runtime_use_note": "Use for expression selection, asset-sheet compilation, prompt anchoring, and continuity review. It is not a cropped runtime sprite and should be processed before direct presentation use.",
+  "do_not_infer_note": "Do not infer Bit's proportions, color codes, or expression-specific details from unrelated sources. Use only this approved expression sheet and the canonical bit-and-bot style bible.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/source_images/bit_expressions__v1.png",
+    "relative_image_path": "bit_expressions__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/source_images/bit_expressions__v1-sidecar.json",
+    "relative_sidecar_path": "bit_expressions__v1-sidecar.json",
+    "image_filename": "bit_expressions__v1.png",
+    "sha256": "9fe975010969c60884d9631e0d3ea123e471320d70d2a8abb91a2df6c6685f50",
+    "byte_size": 2190857,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "expressions",
+    "acceptance_state": "approved",
+    "inspection_mode": "source_truth",
+    "confidence": "canonical",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Expression reference sheet of Bit, the compact white wheeled robot with red accents, showing a grid of facial-expression variants on an isolated white background.",
+  "observed_visual_facts": {
+    "composition": [
+      "2x2 grid of Bit head-and-shoulders portraits",
+      "Each quadrant contains one facial-expression variant",
+      "Isolated white background across the whole sheet"
+    ],
+    "character": [
+      "Bit, the smaller, faster red-coded wheeled robot",
+      "Rounded head with glossy black face screen",
+      "Red digital eyes and mouth",
+      "Single red-tipped antenna on top of the head"
+    ],
+    "costume_and_form": [
+      "White robot shell with black internal structure",
+      "Red circular joints at ears, shoulders, and wheel hubs",
+      "Two-wheel lower body visible in the portraits"
+    ],
+    "colors": [
+      "Dominant white shell",
+      "Black face screen and mechanical structure",
+      "Red accent system",
+      "Isolated white or near-white background"
+    ],
+    "style": [
+      "Clean editorial illustration with rounded linework",
+      "Light painterly shading",
+      "Simplified vector-adjacent finish"
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Bit's compact wheeled robot silhouette and toy-like proportions in every expression.",
+    "Keep the red accent system: antenna, face marks, circular joints, and wheel trim.",
+    "Maintain the white shell, black face screen, and red digital features across all expression variants.",
+    "Keep the isolated white background and soft pale grey ground shadow where present.",
+    "Use this image as the canonical reference for Bit's expression set in the bit-and-bot pack."
+  ],
+  "negative_constraints": [
+    "Do not give Bit blue accents or any other character's palette.",
+    "Do not redesign Bit as a sleek drone, humanoid android, or menacing machine.",
+    "Do not remove the wheels or change the two-wheel lower body.",
+    "Do not add busy backgrounds, non-Bit accessories, or extra props not in the image.",
+    "Do not swap or invent expression labels not supported by this reference sheet."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Character expression reference for Bit in the bit-and-bot family.",
+      "Asset-sheet compilation and downstream prompt anchoring for expression variants.",
+      "Expression continuity checks for Bit in neutral or dramatic poses.",
+      "Style bible cross-reference for the red-coded robot design."
+    ],
+    "not_sufficient_for": [
+      "Action-specific Bit poses (use bit_action__v1).",
+      "Full-body or profile proportion reference (use bit_profile__v1).",
+      "Environmental storytelling or multi-character tournament scenes.",
+      "Direct runtime crop without further processing or cropping."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bit-bot",
+      "role:expressions",
+      "asset:source-image"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Verification Lead",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Verification Lead reference sheet. Supports character continuity, prompt planning, and visual QA for the Patch Mission Control team.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Verification Lead poses, uniform details, and props for downstream Mission Control assets and scenes. Inspect the image pixels directly for exact color values, patch text, and fine prop details.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the Mission Control verification uniform and approval cues consistent.",
+  "image": {
+    "repo_image_path": "build/characters/mission-control-team/reference_sheets/verification_lead__v1.png",
+    "relative_image_path": "verification_lead__v1.png",
+    "repo_sidecar_path": "build/characters/mission-control-team/reference_sheets/verification_lead__v1-sidecar.json",
+    "relative_sidecar_path": "verification_lead__v1-sidecar.json",
+    "image_filename": "verification_lead__v1.png",
+    "sha256": "af93842d5092fc06f75819bc7eb41c45a3b8787c2e6e68f9700e4885a0807d61",
+    "byte_size": 2184998,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet for the Verification Lead, the quality-assurance officer on the Patch Mission Control team. The sheet presents the character in verification and approval poses with Mission Control uniform and props, intended for character continuity and downstream asset generation.",
+  "observed_visual_facts": {
+    "composition": [
+      "Reference sheet presenting the Verification Lead in one or more verification or approval poses.",
+      "Layout is character-focused with a clear Mission Control or review-bay context.",
+      "Background elements support the verification role without overpowering the figure."
+    ],
+    "character": [
+      "Human mission-control operator with a focused, detail-oriented posture.",
+      "Friendly but careful expression consistent with the Mission Control team.",
+      "Proportions and style align with the Adventures of Patch human cast."
+    ],
+    "costume": [
+      "Mission Control operations uniform: tailored jacket or shirt with verification or approval insignia or patch.",
+      "Coordinated trousers and practical footwear suitable for a command floor.",
+      "Optional cap, headset, or badge as a role cue for verification."
+    ],
+    "props": [
+      "Checklist, clipboard, or tablet showing verification status.",
+      "Magnifying glass, stamp, or approval seal for sign-off cues.",
+      "Console buttons, status lights, or verification paperwork."
+    ],
+    "color_notes": [
+      "Cool blue-grey and navy uniform tones.",
+      "Warm amber, brass, or white accents for screens and lights.",
+      "Clean, technical palette consistent with the Mission Control environment family."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Verification Lead as a human quality-assurance operator on the Mission Control team.",
+    "Keep the verification posture focused but approachable.",
+    "Maintain the Mission Control verification uniform and any visible approval patches or insignia.",
+    "Use this image as a primary reference for Verification Lead continuity.",
+    "Allow the character to remain the dominant subject with minimal competing background elements."
+  ],
+  "negative_constraints": [
+    "Do not replace the Verification Lead with a different role, generic person, or mascot style.",
+    "Do not add props, clothing, or setting details that conflict with the Mission Control team.",
+    "Do not clutter the background with competing narrative elements.",
+    "Do not infer alternate poses, expressions, or angles beyond this reference sheet."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Verification Lead character reference and continuity.",
+      "Prompting new Verification Lead images in the Mission Control team set.",
+      "QA of Verification Lead visual consistency across the Mission Control team."
+    ],
+    "not_sufficient_for": [
+      "Full turnaround or alternate costume details.",
+      "Detailed prop or expression variants; use additional source images if available.",
+      "Authorizing derivative images without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:verification-lead",
+      "asset:reference-sheet",
+      "team:mission-control",
+      "state:accepted-source-reference"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Identity Emporium Shopkeeper",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the accepted Pass A three-view shopkeeper reference sheet. Supports character continuity, source-image QA, and prompt constraint extraction for the Identity Emporium Shopkeeper.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the accepted source views.",
+  "runtime_use_note": "Use this sidecar for shopkeeper selection, continuity, and prompt planning. Inspect the image pixels directly when exact prop labels, small text, or fine counter details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed three views and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/shopkeeper/reference_sheets/three_view_sheet__v1.png",
+    "relative_image_path": "three_view_sheet__v1.png",
+    "repo_sidecar_path": "build/characters/shopkeeper/reference_sheets/three_view_sheet__v1-sidecar.json",
+    "relative_sidecar_path": "three_view_sheet__v1-sidecar.json",
+    "image_filename": "three_view_sheet__v1.png",
+    "sha256": "81ae4a1dde642ce10c29d6f4547930d62bb89ba1b822cf594f8593c43f2f0d5a",
+    "byte_size": 1376160,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1600,
+      "height": 1050
+    },
+    "mode": "RGB",
+    "asset_role": "accepted_character_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Accepted Pass A three-view reference sheet for the Identity Emporium Shopkeeper. The sheet presents the shopkeeper in three counter poses: reviewing a mission route card, handing over an identity kit bag, and standing in a full-body reference pose. The title 'Identity Emporium - Shopkeeper' and the captions 'Route Card Review', 'Identity Kit Handoff', and 'Full-Body Reference' frame the sheet as a provisional character asset for repo canonisation.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape reference-sheet layout with a cream border and dark green double-line frame.",
+      "Top title reads 'IDENTITY EMPORIUM - SHOPKEEPER' in a dark green serif typeface, underlined by thin gold rules.",
+      "Three equal panels arranged horizontally, each showing a different shopkeeper view against the Identity Emporium interior.",
+      "Each panel has a dark green inner background and a cream caption bar below it.",
+      "Bottom of the sheet states 'Pass A individual character asset sheet - accepted source views - provisional until repo canonisation'.",
+      "The background environment shows green painted wood, hanging garments, hats, shelves, a chef's coat, brass lamps, and a wooden counter with props."
+    ],
+    "character_design": [
+      "Older human shopkeeper with a bald crown, high forehead, dark curly hair at the sides and back, thick black moustache, round wire glasses, and a prominent rounded nose.",
+      "Warm, curious, slightly amused expression with small eyes behind glasses.",
+      "Cream long-sleeved shirt with a dark green bow tie and a burgundy waistcoat.",
+      "Yellow/cream measuring tape draped around his neck or shoulder.",
+      "Full-body panel shows dark charcoal or brown trousers and dark shop shoes.",
+      "Proportions are friendly, slightly rounded, and human rather than Patch-like or robotic."
+    ],
+    "p1_route_card_review": [
+      "Left panel: waist-up behind-counter pose, the shopkeeper leans forward and holds a 'MISSION ROUTE CARD' with role icons and labels for Cowboy, Detective, Mechanic, and Chef.",
+      "A brass bell, open receipt book, and paper tags sit on the counter.",
+      "The panel caption reads 'ROUTE CARD REVIEW'."
+    ],
+    "p2_identity_kit_handoff": [
+      "Middle panel: waist-up behind-counter pose, the shopkeeper holds a paper bag labelled 'IDENTITY KIT' with 'CONFIDENCE CRAFTED COURTESY' beneath.",
+      "He gestures with the other hand as if explaining or presenting the kit.",
+      "Counter props include paper tags, a small tray of items, and a brass bell.",
+      "The panel caption reads 'IDENTITY KIT HANDOFF'."
+    ],
+    "p3_full_body_reference": [
+      "Right panel: full-body standing pose to the right of the counter, the shopkeeper holds the mission route card.",
+      "The full silhouette is visible: cream shirt, burgundy waistcoat, measuring tape, green bow tie, dark trousers, and dark shoes.",
+      "The panel caption reads 'FULL-BODY REFERENCE'."
+    ],
+    "props_and_environment": [
+      "Identity Emporium interior with green painted wood, brass lighting, hanging costumes, hats, and folded garments on shelves.",
+      "Counter objects: brass bell, open receipt book, paper tags, string, paper bag, mission route card, banker-style green lamp.",
+      "The shop sign 'IDENTITY EMPORIUM' is visible in the rear of the full-body panel."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the three-view reference-sheet layout and the three captions.",
+    "Preserve the shopkeeper's core identity: bald crown, dark curly side hair, thick black moustache, round wire glasses, cream shirt, burgundy waistcoat, dark green bow tie, and measuring tape.",
+    "Use this image as the accepted Pass A shopkeeper reference for the Identity Emporium.",
+    "Keep the Identity Emporium palette: green painted wood, aged timber, brass, cream paper, and warm amber light.",
+    "Treat the three views as a deterministic source set: route-card review, identity-kit handoff, and full-body reference.",
+    "Use counter props such as the brass bell, receipt book, route card, paper bag, and tags as shopkeeper identity support."
+  ],
+  "negative_constraints": [
+    "Do not change the shopkeeper's core facial or wardrobe identity.",
+    "Do not make the shopkeeper a wizard, villain, sci-fi operator, corporate trainer, or generic NPC.",
+    "Do not add Patch identity markers: no teal hoodie, antennae, crossbody bag with '>' symbol, or robot body.",
+    "Do not add new story beats or extra panels beyond the three shown views.",
+    "Do not infer the exact full-body pose below the counter for panels 1 and 2; only panel 3 shows the full body.",
+    "Do not treat this provisional Pass A sheet as final locked canon without subsequent QA."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Shopkeeper character reference and continuity checks.",
+      "Prompt constraints for new shopkeeper source images.",
+      "QA of shopkeeper facial and wardrobe identity.",
+      "Reference for Identity Emporium counter scenes and role-kit handoffs."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of new generated images without image QA.",
+      "Exact transcription of small prop labels if exact wording matters.",
+      "Authorizing derivative images beyond the three observed views."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:shopkeeper",
+      "asset:reference-sheet",
+      "environment:identity-emporium",
+      "state:accepted-source-reference",
+      "pass:a"
+    ]
+  }
+}

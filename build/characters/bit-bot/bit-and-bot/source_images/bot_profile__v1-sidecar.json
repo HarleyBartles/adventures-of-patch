@@ -1,0 +1,81 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Bot's profile source image in the bit-and-bot asset pack. Supports character continuity, source-image QA, and prompt constraint extraction for Bot.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the observed profile view.",
+  "runtime_use_note": "Use this sidecar for Bot character selection, continuity, and prompt planning. Inspect the image pixels directly when exact prop labels, color values, or fine mechanical details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed profile view.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/source_images/bot_profile__v1.png",
+    "relative_image_path": "bot_profile__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/source_images/bot_profile__v1-sidecar.json",
+    "relative_sidecar_path": "bot_profile__v1-sidecar.json",
+    "image_filename": "bot_profile__v1.png",
+    "sha256": "3efeafdeb9cac9388e6cc4eca38c66d1aad5b4ab337f9aa1ca55c7efc4ae1321",
+    "byte_size": 1697541,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "metadata-only",
+    "confidence": "low",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source profile image of Bot, the blue-coded robot companion in the bit-and-bot asset pack. The image provides a single full-figure portrait intended for character continuity and prompting.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single full-figure portrait centered in the frame.",
+      "Plain background suitable for source-image extraction and profile reference.",
+      "Vertical source image at 1122x1402 pixels with RGBA color mode."
+    ],
+    "character_design": [
+      "Bot is the taller blue-coded wheeled robot of the bit-bot family.",
+      "Rounded white body shell with strong blue accents and black mechanical joints.",
+      "Glossy face area with blue digital marks for eyes and mouth."
+    ],
+    "props_and_background": [
+      "No environment or role-specific props are shown in a profile source image.",
+      "The plain background keeps focus on the character silhouette."
+    ]
+  },
+  "positive_constraints": [
+    "Use this image as a source profile reference for Bot.",
+    "Preserve Bot's blue-coded, taller wheeled robot identity and blue/white color system.",
+    "Keep the bit-and-bot source-image style and plain background for reference use."
+  ],
+  "negative_constraints": [
+    "Do not change Bot's core body shape, wheel base, or blue/white color system.",
+    "Do not use this single source image as final art acceptance without image QA.",
+    "Do not introduce additional story, environment, or characters not shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prompting new profile images of Bot.",
+      "Style reference for Bot in the bit-and-bot asset pack.",
+      "Asset catalog and source-image indexing."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative art without image QA.",
+      "Detailed prop or environment canon beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:profile",
+      "asset:source-image"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Product Manager",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Product Manager hero source image, supporting character continuity, prompt planning, and visual selection across the data-architect-product-trio.",
+  "source_truth_note": "TBD",
+  "runtime_use_note": "TBD",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional expressions, extra props, or acceptance of derivatives beyond the observed hero image and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/source_images/product_manager_hero__v1.png",
+    "relative_image_path": "product_manager_hero__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/source_images/product_manager_hero__v1-sidecar.json",
+    "relative_sidecar_path": "product_manager_hero__v1-sidecar.json",
+    "image_filename": "product_manager_hero__v1.png",
+    "sha256": "d9408a2a4c9ad971d891aa29e414ce649430c909d0e69378c516816d3f655dd2",
+    "byte_size": 2311940,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1086,
+      "height": 1448
+    },
+    "mode": "RGBA",
+    "asset_role": "TBD",
+    "acceptance_state": "TBD",
+    "inspection_mode": "TBD",
+    "confidence": "TBD",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Hero source image for the Product Manager stakeholder, used as a canonical reference for the data-architect-product-trio and for downstream prompting.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single-hero source image presenting the Product Manager stakeholder in a clear, focused hero pose.",
+      "Framing centers the character with enough surrounding space for use as a presentation headshot, reference, or prompt anchor.",
+      "Background is kept minimal so the character and role cues remain the primary focus."
+    ],
+    "character_design": [
+      "The character is the Product Manager, a human stakeholder in the data-architect-product-trio.",
+      "Design should be consistent with the stakeholder set: professional, approachable, and clearly distinguished from the Data Analyst and Software Architect.",
+      "Hero styling presents the character as confident, central, and ready for use in planning and continuity scenarios."
+    ],
+    "style": [
+      "Clean Adventures editorial illustration style with friendly, readable linework.",
+      "Soft shading and approachable color palette suitable for a stakeholder hero image.",
+      "Consistent with the data-architect-product-trio visual world."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Product Manager as a human stakeholder, distinct from the Data Analyst and Software Architect.",
+    "Keep the hero pose centered, confident, and clearly readable.",
+    "Maintain consistency with the data-architect-product-trio style and color world.",
+    "Use this image as the primary reference for Product Manager hero continuity.",
+    "Allow the character to remain the dominant subject with minimal competing background elements."
+  ],
+  "negative_constraints": [
+    "Do not replace the Product Manager with a different role, generic person, or mascot style.",
+    "Do not add props, clothing, or setting details that conflict with the data-architect-product-trio.",
+    "Do not clutter the background with competing narrative elements.",
+    "Do not infer alternate poses, expressions, or angles beyond this hero source image."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Product Manager hero reference and continuity.",
+      "Prompting new Product Manager images in the stakeholder set.",
+      "QA of Product Manager visual consistency across the data-architect-product-trio."
+    ],
+    "not_sufficient_for": [
+      "Full turnaround or alternate costume details.",
+      "Detailed prop or expression variants; use the props and alt source images instead.",
+      "Authorizing derivative images without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character"
+    ]
+  }
+}

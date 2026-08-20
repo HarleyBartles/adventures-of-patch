@@ -1,0 +1,83 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Document the adjacent source PNG for Bit/Bot in the mechanic alt, speedy toolbox variant in the bot role kit.",
+  "source_truth_note": "The image pixels are the source of truth; descriptive text is derived from visual inspection and must not contradict the image.",
+  "runtime_use_note": "Use for canon review, prompt construction, and asset catalog indexing for Bit/Bot mechanic alt speedy toolbox content.",
+  "do_not_infer_note": "Do not infer colors, materials, body proportions, poses, or additional props not clearly visible in the image; do not apply this reference to other characters or variants.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/mechanic_alt_speedy_toolbox__v1.png",
+    "relative_image_path": "mechanic_alt_speedy_toolbox__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/mechanic_alt_speedy_toolbox__v1-sidecar.json",
+    "relative_sidecar_path": "mechanic_alt_speedy_toolbox__v1-sidecar.json",
+    "image_filename": "mechanic_alt_speedy_toolbox__v1.png",
+    "sha256": "b649ccbb03d4943305f9b06679d53e7947570ab145863da7c649f91978103318",
+    "byte_size": 2155685,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "candidate",
+    "inspection_mode": "manual",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image of Bit/Bot in the mechanic alt, speedy toolbox variant, shown in a single-figure pose with a toolbox prop.",
+  "observed_visual_facts": {
+    "subject": [
+      "Bit/Bot"
+    ],
+    "attire": [
+      "mechanic alt work uniform"
+    ],
+    "props": [
+      "toolbox"
+    ],
+    "version": [
+      "v1"
+    ]
+  },
+  "positive_constraints": [
+    "Character must be Bit/Bot.",
+    "Use the mechanic alt variant.",
+    "Include a toolbox as the featured visible prop.",
+    "Preserve the style and proportions of the source image."
+  ],
+  "negative_constraints": [
+    "Do not include other characters.",
+    "Do not omit the toolbox.",
+    "Do not add text, watermarks, or UI elements.",
+    "Do not change the color palette or proportions without approval."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Bit/Bot mechanic alt reference",
+      "Toolbox prop placement",
+      "Style and color review for the speedy toolbox variant"
+    ],
+    "not_sufficient_for": [
+      "Final animation rig",
+      "Stand-alone publication asset",
+      "Other characters or variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:mechanic",
+      "role:alt",
+      "asset:source-image"
+    ]
+  }
+}

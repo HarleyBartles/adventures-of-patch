@@ -1,0 +1,82 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident template sidecar for a world-overview visual-bible asset sheet. Supports world-building template selection, layout planning, and QA of high-level world reference sheets.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to understand the template layout, intended use, and constraints. Inspect the image pixels directly for exact panel labels, dimensions, and spacing.",
+  "do_not_infer_note": "Do not infer additional world regions, locked canon, or final canon status beyond the observed world-overview candidate template.",
+  "image": {
+    "repo_image_path": "build/templates/asset-sheets/template_asset_sheet_world_overview_v1.png",
+    "relative_image_path": "template_asset_sheet_world_overview_v1.png",
+    "repo_sidecar_path": "build/templates/asset-sheets/template_asset_sheet_world_overview_v1-sidecar.json",
+    "relative_sidecar_path": "template_asset_sheet_world_overview_v1-sidecar.json",
+    "image_filename": "template_asset_sheet_world_overview_v1.png",
+    "sha256": "18a3afd63d97fe421cf7951f0f3f8aece56a87fade5b31b796d8f35e08fd202c",
+    "byte_size": 46119,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "template_asset_sheet",
+    "acceptance_state": "candidate",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Candidate template for a world-overview / visual-bible asset sheet. The header has metadata columns. The main area has one large WORLD HERO / OVERVIEW panel and eight support panels arranged in two rows of four: PALETTE/LIGHT, SIGNAGE, MATERIALS, ARCHITECTURE, CROWD/SCALE, PROPS, ANTI-PATTERN, and CONTINUITY.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape template with dark green border and cream/white field.",
+      "Header reads 'ASSET SHEET' with TITLE, TYPE, STATUS, VERSION, SOURCE/QA columns.",
+      "Metadata: TITLE 'World Overview', TYPE 'World / style overview sheet', STATUS 'candidate', VERSION 'v1', SOURCE/QA 'GPT-authored template'.",
+      "Top: one large WORLD_HERO panel labelled 'WORLD HERO / OVERVIEW'.",
+      "Bottom two rows of four support panels each: 'PALETTE / LIGHT', 'SIGNAGE', 'MATERIALS', 'ARCHITECTURE', 'CROWD / SCALE', 'PROPS', 'ANTI-PATTERN', 'CONTINUITY'.",
+      "Footer contains guidance/continuity notes."
+    ],
+    "guidance_notes": [
+      "Use for a world or style overview that needs a hero establishing view plus eight focused support categories.",
+      "Good for world bibles, style guides, and location families."
+    ]
+  },
+  "positive_constraints": [
+    "Use this template for world or style overview sheets.",
+    "Reserve the hero panel for the world establishing view.",
+    "Use the support panels for palette/light, signage, materials, architecture, crowd/scale, props, anti-pattern, and continuity."
+  ],
+  "negative_constraints": [
+    "Do not treat 'candidate' status as final accepted canon.",
+    "Do not add extra world categories beyond the eight prescribed support panels.",
+    "Do not use for single-location deep sheets or character sheets."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Planning world-overview or style-bible reference sheets.",
+      "QA of sheets built from this template.",
+      "Teaching the world-overview layout pattern."
+    ],
+    "not_sufficient_for": [
+      "Final canon approval without sheet content and image QA.",
+      "Single-location deep sheets or character sheets.",
+      "Exact measurements; inspect the image pixels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:template",
+      "domain:asset-sheet",
+      "state:candidate",
+      "template:world-overview",
+      "role:world-style-overview"
+    ]
+  }
+}

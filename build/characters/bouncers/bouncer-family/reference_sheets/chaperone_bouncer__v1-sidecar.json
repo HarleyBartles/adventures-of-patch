@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Chaperone Bouncer",
+  "sidecar_purpose": "Describes the canonical reference sheet for the Chaperone Bouncer, a Club DB queue-deck bouncer who escorts and supervises guests to keep them safe and on the right path.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Chaperone Bouncer poses, props, and color details for downstream assets and scenes.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the black Club DB security uniform and chaperone/escort prop pairing consistent.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/chaperone_bouncer__v1.png",
+    "relative_image_path": "chaperone_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/chaperone_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "chaperone_bouncer__v1-sidecar.json",
+    "image_filename": "chaperone_bouncer__v1.png",
+    "sha256": "baf2ddfc09db68357cbb1523ce30585d745ebd1ad630d710ac3fcd3d59c88946",
+    "byte_size": 1470287,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Four-pose reference sheet for Chaperone Bouncer, the Club DB security bouncer responsible for escorting and supervising guests. Shows neutral/greeting, escort/guiding, supervision, and assistance poses with signature chaperone props.",
+  "observed_visual_facts": {
+    "character": [
+      "Bearded adult man with medium-brown skin",
+      "Wears a black baseball cap and black Club DB security polo",
+      "Friendly but attentive facial expression and posture"
+    ],
+    "costume": [
+      "Black short-sleeve polo with Club DB patch on the chest",
+      "Black trousers with belt and black work shoes",
+      "Employee badge on a lanyard labeled CHAPERONE BOUNCER"
+    ],
+    "signature_props": [
+      "Clipboard or guest list for checking names and groups",
+      "Escort band, ribbon, or wristband marker for supervised guests",
+      "ID badge or small flashlight for visibility and verification"
+    ],
+    "poses": [
+      "1: Neutral standing holding a clipboard or guest list",
+      "2: Greeting/escort pose with open hand and guiding gesture",
+      "3: Supervision pose checking the list or counting a group",
+      "4: Assistance pose offering a steadying hand or escort band"
+    ],
+    "color_notes": [
+      "Dominant black uniform with white badge text",
+      "Neutral white or gray paper props on the clipboard/list",
+      "Subtle accent color on the escort band or ribbon"
+    ]
+  },
+  "positive_constraints": [
+    "Always include a chaperone prop such as a clipboard, guest list, or escort band in every pose",
+    "Keep the black cap, black Club DB polo, black trousers, and black work shoes",
+    "Maintain friendly but attentive body language and clear facial expression",
+    "Retain the lanyard badge labeled CHAPERONE BOUNCER"
+  ],
+  "negative_constraints": [
+    "Do not omit the chaperone/escort prop from any pose",
+    "Do not replace the escort or supervisory props with unrelated items",
+    "Do not add unrelated accessories, alternate costumes, or backstory details",
+    "Do not alter the Club DB patch or badge text"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Generating consistent Chaperone Bouncer character art",
+      "Selecting poses that communicate greeting, escorting, supervising, or assisting guests",
+      "Reference for style-bible or asset-pack documentation"
+    ],
+    "not_sufficient_for": [
+      "Detailed animation rigging or turnaround geometry",
+      "Inferred narrative or dialogue beyond the visual reference",
+      "Non-Chaperone Bouncer character variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bouncer",
+      "role:chaperone",
+      "asset:reference-sheet"
+    ]
+  }
+}

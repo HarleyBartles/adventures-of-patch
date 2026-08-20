@@ -1,0 +1,82 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident template sidecar for a three-hero, six-alternative character asset sheet. Supports character template selection, layout planning, and QA of character sheets with a hero row and an alt row.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to understand the template layout, intended use, and constraints. Inspect the image pixels directly for exact panel labels, dimensions, and spacing.",
+  "do_not_infer_note": "Do not infer additional hero slots, alternate counts, or final canon status beyond the observed three-hero-six-alt candidate template.",
+  "image": {
+    "repo_image_path": "build/templates/asset-sheets/template_asset_sheet_3hero_6alt_v4.png",
+    "relative_image_path": "template_asset_sheet_3hero_6alt_v4.png",
+    "repo_sidecar_path": "build/templates/asset-sheets/template_asset_sheet_3hero_6alt_v4-sidecar.json",
+    "relative_sidecar_path": "template_asset_sheet_3hero_6alt_v4-sidecar.json",
+    "image_filename": "template_asset_sheet_3hero_6alt_v4.png",
+    "sha256": "16c704a1c2f5fcd7dbb60412598fd796a6b79de2ab51dfd9b23b3bbeaa2ecdf7",
+    "byte_size": 33006,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "template_asset_sheet",
+    "acceptance_state": "candidate",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Candidate template for a three-hero, six-alternative character/asset sheet. The top row contains three equal hero panels, and the bottom row contains six smaller alternative panels arranged in two rows of three. A header and footer provide metadata and continuity notes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape template with dark green border and cream/white field.",
+      "Header reads 'ASSET SHEET' with TITLE, TYPE, STATUS, VERSION, SOURCE/QA columns.",
+      "Metadata: TITLE '3 Hero 6 Alt', TYPE 'Character / asset sheet', STATUS 'candidate', VERSION 'v4', SOURCE/QA 'GPT-authored template'.",
+      "Top row: three equal hero panels labelled HERO 1, HERO 2, HERO 3.",
+      "Bottom area: six alt panels arranged in two rows of three, labelled ALT 1 through ALT 6.",
+      "Footer contains guidance/continuity notes."
+    ],
+    "guidance_notes": [
+      "Use for a character or asset family that needs three primary hero views and six smaller alternative variants.",
+      "Good for expression sets, pose variants, prop alternatives, or minor style tests."
+    ]
+  },
+  "positive_constraints": [
+    "Use this template for three-hero, six-alt character or asset families.",
+    "Keep the hero row for primary views and the alt grid for variants.",
+    "Maintain the metadata header and footer notes."
+  ],
+  "negative_constraints": [
+    "Do not treat 'candidate' status as final accepted canon.",
+    "Do not add extra hero or alt slots beyond the prescribed layout.",
+    "Do not use for multi-location or non-character assets without layout review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Planning 3-hero, 6-alt character or prop reference sheets.",
+      "QA of sheets built from this template.",
+      "Teaching the hero/alt layout pattern."
+    ],
+    "not_sufficient_for": [
+      "Final canon approval without sheet content and image QA.",
+      "Environments or multi-location layouts.",
+      "Exact measurements; inspect the image pixels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:template",
+      "domain:asset-sheet",
+      "state:candidate",
+      "template:3hero-6alt",
+      "role:character-asset"
+    ]
+  }
+}

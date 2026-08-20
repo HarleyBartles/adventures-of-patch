@@ -1,0 +1,101 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident negative reference sidecar cataloguing common Patch generation anti-patterns. Use it for prompt negation, QA drift checks, style guidance, and worker onboarding on what not to render.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to extract forbidden variants and phrasing for negative prompts and to guide QA of generated Patch images. Inspect the image pixels directly when identifying which anti-pattern a draft matches.",
+  "do_not_infer_note": "Do not infer these anti-patterns as acceptable designs or as positive canon. The image is an explicit do-not-generate reference. Do not reproduce any of the designs shown.",
+  "image": {
+    "repo_image_path": "style/patch/reference_sheets/general_drift_risks__v1.png",
+    "relative_image_path": "general_drift_risks__v1.png",
+    "repo_sidecar_path": "style/patch/reference_sheets/general_drift_risks__v1-sidecar.json",
+    "relative_sidecar_path": "general_drift_risks__v1-sidecar.json",
+    "image_filename": "general_drift_risks__v1.png",
+    "sha256": "01f6af44d84ffdb9fe2549a398e3c83d42e161599da90ea2b09de3444a0cd939",
+    "byte_size": 2108713,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "anti_pattern_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Anti-pattern reference sheet for the Patch software agent, organized as six labeled panels of common generation mistakes including bag and strap failures, style drift, character drift, personality mistakes, continuity errors, and prop or content mistakes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape grid reference sheet with a top banner, six numbered anti-pattern panels, and a bottom trust footer.",
+      "Top banner reads 'PATCH Software Agent - Do Not Generate' and 'Common generation mistakes to avoid when rendering Patch.'",
+      "Each panel is titled with a red category label and contains one or more Patch variants with red X marks and red captions naming the mistake.",
+      "A top-right callout marks the sheet as 'ANTI-PATTERN REFERENCE' and states 'Do not reproduce these designs.'",
+      "A bottom footer emphasizes that consistency keeps Patch recognizable and trustworthy, paired with four crossed-out negative trait badges."
+    ],
+    "patch_design": [
+      "Canonical Patch appears as a small humanoid in a teal hooded suit with an off-white face panel, black oval eyes, and two dark antennae.",
+      "The correct reference state includes the dark crossbody bag with a white greater-than mark.",
+      "Anti-pattern variants deviate from this canon in bag placement, texture, proportions, palette, facial detail, pose, and surrounding cargo."
+    ],
+    "content_panels": [
+      "1. BAG & STRAP FAILURES: bag missing, bag in hand, detached bag, double bag, shoulder bag, and branching straps.",
+      "2. STYLE DRIFT: too realistic, too flat, too textured, and too robotic.",
+      "3. CHARACTER DRIFT: missing antennae, wrong proportions, wrong palette, and over-detailed face.",
+      "4. PERSONALITY MISTAKES: villain Patch, aggressive pose, and criminal vibe.",
+      "5. CONTINUITY ERRORS: bag side switch and mirror duplicate bag.",
+      "6. PROP / CONTENT MISTAKES: wrong cargo and overloaded clutter."
+    ],
+    "negative_badges": [
+      "The bottom-right row shows four trust traits struck through: NOT CURIOUS, NOT RELIABLE, NOT ORGANIZED, and NOT HELPFUL."
+    ]
+  },
+  "positive_constraints": [
+    "Treat the sheet as a reference of forbidden variants, not as a positive example to reproduce.",
+    "Use the canonical Patch baseline as the only acceptable design source: teal hood, off-white face, black oval eyes, antennae, and correct crossbody bag.",
+    "Preserve the clearly labeled anti-pattern categories when matching generated drift to the reference.",
+    "Keep the sheet available for prompt negation and QA checklists."
+  ],
+  "negative_constraints": [
+    "Do not reproduce any of the anti-pattern designs shown in this sheet.",
+    "Do not render Patch with missing, detached, doubled, shoulder-carried, or branching bags.",
+    "Do not render Patch too realistically, too flatly, too textured, or too robotically.",
+    "Do not remove antennae, distort proportions, change palette, or over-detail the face.",
+    "Do not give Patch villainous, aggressive, criminal, or untrustworthy personality cues.",
+    "Do not switch the bag side or duplicate it in reflections.",
+    "Do not surround Patch with unrelated props or excessive clutter."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA review of generated Patch images for style drift.",
+      "Building negative prompt phrases for image generation tasks.",
+      "Worker onboarding on what not to generate.",
+      "Cataloguing specific anti-pattern names for bug reports and style feedback."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Canonical Patch positive reference; use the canonical Patch reference surfaces.",
+      "Exact OCR of all incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:reference_sheet",
+      "style:drift",
+      "style:risk",
+      "pattern:anti-pattern",
+      "state:accepted",
+      "purpose:negative-reference"
+    ]
+  }
+}

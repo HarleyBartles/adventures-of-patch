@@ -1,0 +1,114 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit and Bot",
+  "sidecar_purpose": "Describes the visual canon and usage boundaries for the QA-accepted v1 compiled asset sheet of Bit and Bot, the Patch Mission Control support-bot duo.",
+  "source_truth_note": "This sheet is compiled from the seven QA-approved Bit and Bot source PNGs and serves as the canonical visual reference for the duo.",
+  "runtime_use_note": "Use as a canonical reference for generating, reviewing, or compositing Bit and Bot visuals. It is not a sliced runtime sprite atlas.",
+  "do_not_infer_note": "Do not infer traits, poses, expressions, accessories, or narrative context that are not explicitly shown. Do not infer exact color values, animation frames, scale beyond the depicted relative sizes, or Patch identity. Do not use this sheet to conclude that these are the only valid expressions or actions.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/compiled_asset_sheets/sheet__v1.png",
+    "relative_image_path": "sheet__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/compiled_asset_sheets/sheet__v1-sidecar.json",
+    "relative_sidecar_path": "sheet__v1-sidecar.json",
+    "image_filename": "sheet__v1.png",
+    "sha256": "f951ec98934cb3dfea08be13915c84c2eb9044848db0bbf0975ecf3d3b0f6f3a",
+    "byte_size": 550310,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1600,
+      "height": 1050
+    },
+    "mode": "RGB",
+    "asset_role": "compiled_character_reference_sheet",
+    "acceptance_state": "qa-accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "adventures-of-patch asset-sheet compiler",
+      "model": "asset-sheet template v4",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Exact prompt not retained. The sheet was compiled from 7 approved source PNGs using the Adventures of Patch asset-sheet compiler."
+    }
+  },
+  "summary": "QA-accepted v1 compiled asset sheet for Bit and Bot, the Patch Mission Control support-bot duo. The sheet uses the Adventures of Patch asset sheet template v4 with a hero/guidance top half and an alternate-view rail showing profile, action, and expression views for both characters.",
+  "observed_visual_facts": {
+    "document_header": [
+      "Title: BIT & BOT",
+      "Type: SUPPORT BOTS / PATCH MISSION CONTROL",
+      "Status: QA-ACCEPTED SOURCE SET",
+      "Version: v1",
+      "Source / QA: 7 APPROVED PNGS / PIL COMPILE"
+    ],
+    "hero_image": [
+      "Bot stands on the left: taller, blue-accented, blue eyes, blue antenna tip, 'BOT' label on chest, wheeled base.",
+      "Bit stands on the right: smaller, red-accented, red eyes, red antenna tip, 'BIT' label on chest, wheeled base.",
+      "Both are white-bodied robots with clean, Patch-compatible vector styling on a white background.",
+      "Neither wears a hoodie, bag, Patch face panel, or Patch silhouette."
+    ],
+    "guidance_text": [
+      "Support-bot duo for Patch Mission Control scenes.",
+      "Bit is smaller, red-accented, more twitchy and expressive.",
+      "Bot is taller, blue-accented, steadier and broader.",
+      "Keep both clearly non-Patch: no hoodie, bag, Patch face panel, or Patch silhouette.",
+      "Use clean Patch-compatible vector styling on white."
+    ],
+    "alternate_views": [
+      "BIT PROFILE: front-facing full-body view of Bit.",
+      "BIT ACTION: Bit with a cart or toolbox in an action pose.",
+      "BIT EXPRESSIONS: 2x2 grid of four Bit expression variations.",
+      "BOT PROFILE: front-facing full-body view of Bot.",
+      "BOT ACTION: Bot holding a clipboard with a checklist.",
+      "BOT EXPRESSIONS: 2x2 grid of four Bot expression variations."
+    ],
+    "layout_footer": [
+      "Adventures of Patch asset sheet template v4",
+      "deterministic 50/50 hero-guidance layout",
+      "expanded no-crop alternate-view rail"
+    ]
+  },
+  "positive_constraints": [
+    "Bit and Bot are a support-bot duo used in Patch Mission Control scenes.",
+    "Bit is smaller, red-accented, more twitchy and expressive.",
+    "Bot is taller, blue-accented, steadier and broader.",
+    "Both use wheeled bases and clean, Patch-compatible vector styling on a white background.",
+    "Bit's chest label reads 'BIT' and Bot's chest label reads 'BOT'.",
+    "Neither character may wear a hoodie, bag, Patch face panel, or use the Patch silhouette.",
+    "Use the hero image and alternate views as canonical references for poses and expressions.",
+    "Bit's antenna tip and accents are red; Bot's are blue."
+  ],
+  "negative_constraints": [
+    "Do not depict Bit or Bot as human, organic, or wearing Patch-style clothing.",
+    "Do not add a Patch face panel, Patch bag, or Patch silhouette to either character.",
+    "Do not swap Bit's red and Bot's blue accent colors.",
+    "Do not scale Bit larger than Bot or change their relative proportions.",
+    "Do not introduce backgrounds, textures, or lighting beyond the clean white reference style.",
+    "Do not treat these sheets as an exhaustive animation or rig specification."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Identifying the Bit and Bot visual canon and color identities.",
+      "Selecting hero poses, profile views, action poses, and expression variations.",
+      "Composing Mission Control scenes and verifying new Bit and Bot assets.",
+      "Confirming that generated or edited Bit and Bot art stays non-Patch."
+    ],
+    "not_sufficient_for": [
+      "Deriving animation frames, timing, or bone rigging not shown.",
+      "Determining exact RGB color values or final shader treatment.",
+      "Inferring dialogue, backstory, or personality beyond the guidance text.",
+      "Using directly as a sliced runtime sprite atlas."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character:bit-bot",
+      "asset:compiled-sheet",
+      "project:adventures-of-patch",
+      "team:mission-control",
+      "status:qa-accepted"
+    ]
+  }
+}

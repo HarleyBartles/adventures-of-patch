@@ -1,0 +1,89 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Mission Control operations room environment reference sheet. Supports environment selection, prompt extraction, and QA for the main command floor.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer the full staff, extra rooms, or final canon status beyond the observed operations room.",
+  "image": {
+    "repo_image_path": "build/environments/mission-control/reference_sheets/operations_room__v1.png",
+    "relative_image_path": "operations_room__v1.png",
+    "repo_sidecar_path": "build/environments/mission-control/reference_sheets/operations_room__v1-sidecar.json",
+    "relative_sidecar_path": "operations_room__v1-sidecar.json",
+    "image_filename": "operations_room__v1.png",
+    "sha256": "8feabcf591c6de5e846a97e0872c3e7783fc3208510b840ff01a323f00d0f5be",
+    "byte_size": 2115440,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1491,
+      "height": 1055
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet showing the Mission Control operations room. A wide command floor with multiple consoles, chairs, large wall displays, an overhead circular gantry, and warm accent lighting. The palette is blue-grey with wood and brass details.",
+  "observed_visual_facts": {
+    "composition": [
+      "Wide interior view with a header 'PATCH MISSION CONTROL CENTRE - OPERATIONS ROOM'.",
+      "Rows of consoles and chairs facing a large display wall.",
+      "Overhead circular gantry with lights.",
+      "Large windows or screens showing mission data.",
+      "Side storage and cable management."
+    ],
+    "palette": [
+      "Cool blue-grey consoles.",
+      "Warm wood and brass.",
+      "Soft screen and lamp light.",
+      "White wall panels."
+    ],
+    "notable_features": [
+      "Multiple operator consoles.",
+      "Large display wall.",
+      "Overhead circular structure.",
+      "Organised command floor."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the console rows, display wall, and overhead gantry.",
+    "Use as the canonical operations room reference.",
+    "Keep the calm, organised command-centre mood."
+  ],
+  "negative_constraints": [
+    "Do not add operators or crowds.",
+    "Do not remove the console rows or display wall.",
+    "Do not make the room dark or hostile."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Operations room scene prompting.",
+      "QA of generated command centres.",
+      "Continuity for the main mission floor."
+    ],
+    "not_sufficient_for": [
+      "Launch pad or review bay details.",
+      "Exact screen content.",
+      "Final canon without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:mission-control",
+      "location:operations-room",
+      "state:accepted"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Identity Emporium storefront interior. Supports environment selection, prompt extraction, and QA for the main shop floor.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer back rooms, staff-only areas, or final canon status beyond the observed shop floor.",
+  "image": {
+    "repo_image_path": "build/environments/identity-emporium/reference_sheets/storefront_interior__v1.png",
+    "relative_image_path": "storefront_interior__v1.png",
+    "repo_sidecar_path": "build/environments/identity-emporium/reference_sheets/storefront_interior__v1-sidecar.json",
+    "relative_sidecar_path": "storefront_interior__v1-sidecar.json",
+    "image_filename": "storefront_interior__v1.png",
+    "sha256": "a698769e52cdeb8ac15a501e483cd0e5eb8ecb7030c30a2cbe527a5459f2f0e1",
+    "byte_size": 1559273,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1600,
+      "height": 1050
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet showing the Identity Emporium main shop interior. Wooden floor, green painted wood panelling, racks of costumes, a central counter with a brass lamp and paper tags, hanging hats, and a warm lamp-lit atmosphere.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single interior establishing view of the main sales floor.",
+      "Racks of folded costumes and hanging garments along the walls.",
+      "Central wooden counter with brass lamp and paper tags.",
+      "Shelving with boxes, hats, and accessories.",
+      "Warm overhead and lamp lighting."
+    ],
+    "palette": [
+      "Green painted wood.",
+      "Warm aged timber.",
+      "Cream paper and tags.",
+      "Brass and amber light."
+    ],
+    "notable_features": [
+      "Costume racks and folded garments.",
+      "Counter with brass lamp and tags.",
+      "Hanging hats and accessories.",
+      "Carpet and wooden floor."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the warm green-wood interior, costume racks, counter, and brass lamp.",
+    "Use as the canonical Identity Emporium shop floor reference.",
+    "Keep the inviting, slightly cluttered costume-shop feel."
+  ],
+  "negative_constraints": [
+    "Do not make the shop empty or generic.",
+    "Do not remove the counter, racks, or brass lamp.",
+    "Do not add staff or customers unless intended."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Identity Emporium interior scene prompting.",
+      "QA of generated shop interiors.",
+      "Continuity for the main sales floor."
+    ],
+    "not_sufficient_for": [
+      "Back rooms or fitting rooms.",
+      "Exact prop labels.",
+      "Final canon without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:identity-emporium",
+      "location:storefront-interior",
+      "state:accepted"
+    ]
+  }
+}

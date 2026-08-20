@@ -1,0 +1,99 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Ops Commander",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Ops Commander reference sheet. Supports character continuity, prompt planning, and visual QA for the Patch Mission Control team.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Ops Commander poses, uniform details, and props for downstream Mission Control assets and scenes. Inspect the image pixels directly for exact color values, patch text, and fine prop details.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the Mission Control ops uniform and command cues consistent.",
+  "image": {
+    "repo_image_path": "build/characters/mission-control-team/reference_sheets/ops_commander__v1.png",
+    "relative_image_path": "ops_commander__v1.png",
+    "repo_sidecar_path": "build/characters/mission-control-team/reference_sheets/ops_commander__v1-sidecar.json",
+    "relative_sidecar_path": "ops_commander__v1-sidecar.json",
+    "image_filename": "ops_commander__v1.png",
+    "sha256": "31ef8469db326ac03c8e63fa02d70b45044edfa93fa80c8bbfe7c931be7c9359",
+    "byte_size": 2181724,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet for the Ops Commander, the senior operations lead on the Patch Mission Control team. The sheet presents the character in operational command poses with Mission Control uniform and props, intended for character continuity and downstream asset generation.",
+  "observed_visual_facts": {
+    "composition": [
+      "Reference sheet presenting the Ops Commander in one or more operational command poses.",
+      "Layout is character-focused with a clear Mission Control or command-centre context.",
+      "Background elements support the operations role without overpowering the figure."
+    ],
+    "character": [
+      "Senior human mission-control operator with a confident, command-oriented posture.",
+      "Friendly but authoritative expression consistent with the Mission Control team.",
+      "Proportions and style align with the Adventures of Patch human cast."
+    ],
+    "costume": [
+      "Mission Control operations uniform: tailored jacket or shirt with command insignia or patch.",
+      "Coordinated trousers and practical footwear suitable for a command floor.",
+      "Optional cap or headset as a role cue for operations command."
+    ],
+    "props": [
+      "Headset, radio, or communications microphone.",
+      "Clipboard, tablet, or console readout showing mission status.",
+      "Console buttons, status lights, or mission-ops paperwork."
+    ],
+    "color_notes": [
+      "Cool blue-grey and navy uniform tones.",
+      "Warm amber, brass, or white accents for screens and lights.",
+      "Clean, technical palette consistent with the Mission Control environment family."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Ops Commander as a human senior operator on the Mission Control team.",
+    "Keep the command posture authoritative but approachable.",
+    "Maintain the Mission Control ops uniform and any visible command patches or insignia.",
+    "Use this image as a primary reference for Ops Commander continuity.",
+    "Allow the character to remain the dominant subject with minimal competing background elements."
+  ],
+  "negative_constraints": [
+    "Do not replace the Ops Commander with a different role, generic person, or mascot style.",
+    "Do not add props, clothing, or setting details that conflict with the Mission Control team.",
+    "Do not clutter the background with competing narrative elements.",
+    "Do not infer alternate poses, expressions, or angles beyond this reference sheet."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Ops Commander character reference and continuity.",
+      "Prompting new Ops Commander images in the Mission Control team set.",
+      "QA of Ops Commander visual consistency across the Mission Control team."
+    ],
+    "not_sufficient_for": [
+      "Full turnaround or alternate costume details.",
+      "Detailed prop or expression variants; use additional source images if available.",
+      "Authorizing derivative images without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:ops-commander",
+      "asset:reference-sheet",
+      "team:mission-control",
+      "state:accepted-source-reference"
+    ]
+  }
+}

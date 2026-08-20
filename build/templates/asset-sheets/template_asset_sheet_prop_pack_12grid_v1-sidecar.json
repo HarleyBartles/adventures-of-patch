@@ -1,0 +1,82 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident template sidecar for a twelve-grid prop-pack asset sheet. Supports prop template selection, layout planning, and QA of prop-pack reference sheets.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to understand the template layout, intended use, and constraints. Inspect the image pixels directly for exact panel labels, dimensions, and spacing.",
+  "do_not_infer_note": "Do not infer prop categories, final prop canon, or final canon status beyond the observed twelve-grid candidate template.",
+  "image": {
+    "repo_image_path": "build/templates/asset-sheets/template_asset_sheet_prop_pack_12grid_v1.png",
+    "relative_image_path": "template_asset_sheet_prop_pack_12grid_v1.png",
+    "repo_sidecar_path": "build/templates/asset-sheets/template_asset_sheet_prop_pack_12grid_v1-sidecar.json",
+    "relative_sidecar_path": "template_asset_sheet_prop_pack_12grid_v1-sidecar.json",
+    "image_filename": "template_asset_sheet_prop_pack_12grid_v1.png",
+    "sha256": "638ee7581f8e86cfd73f962b4b77cd4941a5a538bace49223322d27aa98bab3d",
+    "byte_size": 36450,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "template_asset_sheet",
+    "acceptance_state": "candidate",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Candidate template for a prop-pack asset sheet. The header has metadata columns, and the main area is a 4x3 grid of prop cells. A footer provides guidance and continuity notes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape template with dark green border and cream/white field.",
+      "Header reads 'ASSET SHEET' with TITLE, TYPE, STATUS, VERSION, SOURCE/QA columns.",
+      "Metadata: TITLE 'Prop Pack 12 Grid', TYPE 'Prop pack / asset sheet', STATUS 'candidate', VERSION 'v1', SOURCE/QA 'GPT-authored template'.",
+      "Main area: 4 columns by 3 rows of equal prop cells, totalling 12 slots.",
+      "Each cell is the same size and has a placeholder label.",
+      "Footer contains guidance/continuity notes."
+    ],
+    "guidance_notes": [
+      "Use for a pack of up to 12 props or related objects.",
+      "Good for set dressing, prop families, or inventory sheets."
+    ]
+  },
+  "positive_constraints": [
+    "Use this template for up to 12 props or related objects.",
+    "Keep the 4x3 grid and equal cell sizes.",
+    "Maintain the metadata header and footer notes."
+  ],
+  "negative_constraints": [
+    "Do not treat 'candidate' status as final accepted canon.",
+    "Do not add hero panels or break the equal-cell grid.",
+    "Do not assume prop categories are filled or final."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Planning 12-slot prop-pack reference sheets.",
+      "QA of sheets built from this template.",
+      "Teaching the prop-pack grid layout."
+    ],
+    "not_sufficient_for": [
+      "Final canon approval without sheet content and image QA.",
+      "Hierarchical prop sheets or environment sheets.",
+      "Exact measurements; inspect the image pixels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:template",
+      "domain:asset-sheet",
+      "state:candidate",
+      "template:prop-pack-12grid",
+      "role:prop-pack"
+    ]
+  }
+}

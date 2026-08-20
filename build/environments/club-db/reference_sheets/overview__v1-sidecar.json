@@ -1,0 +1,87 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Club DB location summary reference sheet. Supports high-level environment planning, prompt extraction, and QA across the Club DB asset family.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer unseen rooms, additional locations, or final canon status beyond the four shown views.",
+  "image": {
+    "repo_image_path": "build/environments/club-db/reference_sheets/overview__v1.png",
+    "relative_image_path": "overview__v1.png",
+    "repo_sidecar_path": "build/environments/club-db/reference_sheets/overview__v1-sidecar.json",
+    "relative_sidecar_path": "overview__v1-sidecar.json",
+    "image_filename": "overview__v1.png",
+    "sha256": "2fee9239937f3ce9c41a7ef37ee1f65326ecdd3ba18c0e0db44d2587ed25c0fa",
+    "byte_size": 2083384,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Location summary sheet for Club DB, a controlled all-ages community DB access space. The sheet shows four views: front exterior, front interior, back interior, and queue lane/gate system, with an environment description, signature details, and how-to-draw notes.",
+  "observed_visual_facts": {
+    "composition": [
+      "Header 'CLUB DB LOCATION SUMMARY' with a small club icon.",
+      "Four quadrants: front exterior (top-left), front interior (top-right), back interior (bottom-left), queue lane/gate system (bottom-right).",
+      "Right column: ENVIRONMENT, SIGNATURE DETAILS, and HOW TO DRAW text blocks.",
+      "Footer states 'Patch-run community space for all-ages, controlled DB access'."
+    ],
+    "environment": [
+      "A converted shopfront or club facade with controlled access.",
+      "Neon and velvet-rope queue system.",
+      "Warm interior lobby and restricted back corridor."
+    ],
+    "signature_details": [
+      "Neon 'CLUB DB' signage.",
+      "Purple double doors.",
+      "Velvet ropes and gold stanchions.",
+      "Red/gold accent palette."
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet as the canonical Club DB location summary.",
+    "Preserve the four shown views and the right-column guidance.",
+    "Keep the all-ages, controlled-access community space identity."
+  ],
+  "negative_constraints": [
+    "Do not add locations or views beyond the four shown.",
+    "Do not treat the summary as final without sheet content QA.",
+    "Do not change the club name or core colour identity."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Club DB world-building and location planning.",
+      "High-level QA of Club DB scenes.",
+      "Prompting for the Club DB environment family."
+    ],
+    "not_sufficient_for": [
+      "Exact per-room details; use the per-view sheets.",
+      "Final canon approval without image QA.",
+      "Detailed prop or signage transcription."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:club-db",
+      "asset:reference-sheet",
+      "state:accepted"
+    ]
+  }
+}

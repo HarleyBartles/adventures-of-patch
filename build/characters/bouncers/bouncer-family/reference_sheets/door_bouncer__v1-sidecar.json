@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Door Bouncer",
+  "sidecar_purpose": "Describes the canonical reference sheet for the Door Bouncer, a Club DB queue-deck bouncer who controls access at the club door.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Door Bouncer poses, props, and color details for downstream assets and scenes.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the black Club DB security uniform and door/entry pairing consistent.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/door_bouncer__v1.png",
+    "relative_image_path": "door_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/door_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "door_bouncer__v1-sidecar.json",
+    "image_filename": "door_bouncer__v1.png",
+    "sha256": "eedde099bc19c0be8cbbb9875b9badcc38980e6bb151fb68458d47aa7d3ba1e2",
+    "byte_size": 1727647,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Four-pose reference sheet for Door Bouncer, the Club DB security bouncer responsible for controlling access at the club door. Shows neutral standing, welcome/entry, check/verification, and stop/closed poses with signature door and entry props.",
+  "observed_visual_facts": {
+    "character": [
+      "Bearded adult man with medium-brown skin",
+      "Wears a black baseball cap and black Club DB security polo",
+      "Friendly but authoritative facial expression and posture"
+    ],
+    "costume": [
+      "Black short-sleeve polo with Club DB patch on the chest",
+      "Black trousers with belt and black work shoes",
+      "Employee badge on a lanyard labeled DOOR BOUNCER"
+    ],
+    "signature_props": [
+      "Club DB door or entry barrier such as a rope, gate, or door prop",
+      "Guest list, entry log, or wristband for verification",
+      "Open/closed or welcome/stop sign for access control"
+    ],
+    "poses": [
+      "1: Neutral standing at the door holding an entry prop",
+      "2: Welcome / open pose gesturing guests inside",
+      "3: Check / verification pose with guest list or wristband",
+      "4: Stop / closed pose blocking or holding the door"
+    ],
+    "color_notes": [
+      "Dominant black uniform with white badge text",
+      "Neutral paper and door/rope colors",
+      "Subtle green check marks or red X marks as status accents"
+    ]
+  },
+  "positive_constraints": [
+    "Always include the door/entry prop and an access-check item in every pose",
+    "Keep the black cap, black Club DB polo, black trousers, and black work shoes",
+    "Maintain friendly but authoritative body language and clear facial expression",
+    "Retain the lanyard badge labeled DOOR BOUNCER"
+  ],
+  "negative_constraints": [
+    "Do not omit the door/entry prop or access item from any pose",
+    "Do not change the door color or entry sign away from the reference",
+    "Do not add unrelated accessories, weapons, or alternate costumes",
+    "Do not alter the Club DB patch or badge text"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Generating consistent Door Bouncer character art",
+      "Selecting poses that communicate welcome, check, stop, or door access",
+      "Reference for style-bible or asset-pack documentation"
+    ],
+    "not_sufficient_for": [
+      "Detailed animation rigging or turnaround geometry",
+      "Inferred narrative or dialogue beyond the visual reference",
+      "Non-Door Bouncer character variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bouncer",
+      "role:door",
+      "asset:reference-sheet"
+    ]
+  }
+}

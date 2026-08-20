@@ -1,0 +1,119 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for selecting, describing, and constraining the canonical Patch interaction reference sheet used for style guidance, prompt planning, and QA of Patch behavior in human, agent, gatekeeper, and system-facing scenes.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for selecting interaction panels, extracting prompt constraints, and verifying canonical Patch design and scene labels. Inspect the image pixels directly when exact panel text, layout alignment, or small prop details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate panels, additional characters, extra story beats, or acceptance of derivatives beyond the observed 12-panel reference sheet and stated intended use.",
+  "image": {
+    "repo_image_path": "style/patch/reference_sheets/scene_behaviour__v1.png",
+    "relative_image_path": "scene_behaviour__v1.png",
+    "repo_sidecar_path": "style/patch/reference_sheets/scene_behaviour__v1-sidecar.json",
+    "relative_sidecar_path": "scene_behaviour__v1-sidecar.json",
+    "image_filename": "scene_behaviour__v1.png",
+    "sha256": "eb032e55ad17abe9f927f6ca3544c51b66c756d42def5c7a5877a61b9f9eff07",
+    "byte_size": 1854795,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1535,
+      "height": 1024
+    },
+    "mode": "RGB",
+    "asset_role": "approved_reference_sheet",
+    "acceptance_state": "accepted_reference_art",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "PATCH Interaction Reference sheet: a 12-panel grid (3 rows by 4 columns) showing canonical Patch interacting with people, agents, gatekeepers, and systems in friendly, helpful, and professional ways. Each panel is numbered and titled, with a header logo and a footer that reinforces Patch as helpful, curious, reliable, organized, and detail-oriented.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape reference sheet with a clean, near-white background.",
+      "Top-left header contains the Patch icon, 'PATCH' title, and 'Interaction Reference' subtitle.",
+      "Top-right header text reads: 'Examples of Patch interacting with people, agents, gatekeepers and systems. Friendly, helpful and professional.'",
+      "Twelve panels arranged in a 3-row by 4-column grid, each with a rounded-corner bounding area and a numbered title.",
+      "Bottom banner states: 'Patch is helpful, curious, and detail-oriented. He keeps data organized and verified so teams can move forward with confidence.'",
+      "Bottom-right corner shows four trait badges: CURIOUS, RELIABLE, ORGANIZED, HELPFUL."
+    ],
+    "patch_design": [
+      "Canonical teal hood with rounded top, two dark antennae with rounded tips, and an off-white face panel.",
+      "Simple black oval eyes with small white highlights and a small curved mouth, giving a friendly, neutral-to-positive expression.",
+      "Teal hoodie, dark pants, and teal-and-white sneakers are consistent across all panels.",
+      "Dark crossbody bag with a white greater-than mark is worn in every panel.",
+      "Patch has exactly one left arm and one right arm in each panel; posture is physically plausible."
+    ],
+    "reference_panels": [
+      "1 Listening to request: a woman with a clipboard gestures while speaking to Patch.",
+      "2 Presenting receipt: Patch holds out a receipt/invoice to a man with a clipboard.",
+      "3 Asking clarification: Patch shows a document/flowchart to a thinking woman; a question mark bubble appears above Patch.",
+      "4 Receiving feedback: a man with a clipboard speaks to Patch, who listens attentively.",
+      "5 Team handoff: a young man hands a folder to Patch.",
+      "6 Presenting credentials: Patch shows an ID badge to a security guard at a velvet rope.",
+      "7 Under review: a uniformed figure with a tablet reviews Patch's information.",
+      "8 Approved: a security/official figure holds a green stamp and gives a thumbs-up; Patch mirrors with a thumbs-up.",
+      "9 Redirected: a man in a cap stands beside a multi-arrow signpost labeled CHECKS, REVIEWS, RECORDS; Patch looks on thoughtfully.",
+      "10 Agent handoff: Patch hands a box with data disks to a grey robot agent.",
+      "11 Comparing records: Patch and a grey robot each hold a document or checklist and compare them.",
+      "12 Submitting payload: Patch places a box with data disks into an intake kiosk whose screen reads 'INTAKE READY'."
+    ],
+    "props_and_environment": [
+      "Minimal, neutral backdrops keep attention on the characters and their interaction.",
+      "Recurring props include clipboards, documents, receipts, ID badges, tablets, a velvet rope and stanchion, a multi-arrow signpost, cardboard boxes, data disks, and an intake kiosk.",
+      "Human and robot figures vary per panel to show different roles: requester, reviewer, security guard, agent, and system intake.",
+      "Color palette is dominated by teal, white, dark grey/blue, and small accent colors (green for approval, red/orange/yellow for signpost)."
+    ],
+    "scene_semantics": [
+      "Each panel represents a distinct, ordered interaction in a broader request-to-submission workflow.",
+      "The sequence moves from initial request, through clarification, handoff, credentialing, review, approval, redirection, agent handoff, record comparison, and final payload submission.",
+      "The overall message is that Patch is a capable, cooperative intermediary between people, agents, and systems."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the 3x4 grid of 12 numbered panels and the labeled interaction in each.",
+    "Keep canonical Patch design consistent across every panel: teal hood, antennae, off-white face, crossbody bag, and white greater-than mark.",
+    "Maintain the friendly, helpful, and professional tone of every interaction.",
+    "Keep the header title, subtitle, and footer trait text and badges (CURIOUS, RELIABLE, ORGANIZED, HELPFUL).",
+    "Allow the workbench-style neutral backgrounds so the focus remains on Patch and the interaction partner.",
+    "Use this image as the canonical interaction-behavior reference for Patch style guidance."
+  ],
+  "negative_constraints": [
+    "Do not alter Patch into a generic robot, human, toy, or glossy mascot.",
+    "Do not add extra limbs, duplicated hands, or physically impossible postures.",
+    "Do not remove, reorder, or relabel the numbered panels.",
+    "Do not replace the depicted interaction in a panel with an unrelated scenario.",
+    "Do not introduce busy or detailed environments that compete with the characters and labels.",
+    "Do not treat this reference sheet as authorization for derivative images without separate image QA."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting Patch interaction art for documentation, presentations, and storyboards.",
+      "Prompt planning for similar multi-panel reference sheets and Patch behavior art.",
+      "QA of canonical Patch design and interaction-scene semantics.",
+      "Continuity reference for how Patch should engage with people, agents, gatekeepers, and systems."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Exact OCR of small labels, receipt text, or badge details.",
+      "Canonical Patch anatomy in all contexts; use the canonical Patch reference surfaces for that.",
+      "Animation rigging or 3D model construction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:reference-sheet",
+      "state:approved",
+      "theme:interaction",
+      "role:style-reference",
+      "environment:neutral"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Document the canonical source image for the Bit/Bot cowboy hero pose in the bot role kit.",
+  "source_truth_note": "The image pixels and filename are the source of truth; descriptive text is derived from visual inspection.",
+  "runtime_use_note": "Suitable as a style reference, prompt anchor, and asset catalog entry for the cowboy role.",
+  "do_not_infer_note": "Do not infer canonical backstory, environment, or motion beyond the visible frame; exact provenance is unknown.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/cowboy_hero__v1.png",
+    "relative_image_path": "cowboy_hero__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/cowboy_hero__v1-sidecar.json",
+    "relative_sidecar_path": "cowboy_hero__v1-sidecar.json",
+    "image_filename": "cowboy_hero__v1.png",
+    "sha256": "af8fb7da69c383c1c2fa79c14dc7dc7a0766207c62daa6f905d93f4dcc53dfc1",
+    "byte_size": 2059986,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1405,
+      "height": 1119
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "pixel-inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Hero source image of Bit/Bot in the cowboy role, posed in a full-figure hero stance wearing a cowboy hat, neckerchief, and western accessories against a plain white background.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single full-figure hero pose against a plain white background.",
+      "Bit/Bot is centered, facing the viewer with a slight three-quarter turn.",
+      "Cowboy role costume and props are clearly visible and readable."
+    ],
+    "character_design": [
+      "White and rounded robot head with large glowing eyes and a friendly smile.",
+      "Cowboy hat and tan or brown western accessories matching the cowboy column.",
+      "Wheeled base matching the Bit/Bot support-bot design.",
+      "Chest nameplate or badge indicating the cowboy role."
+    ],
+    "props_and_role_markers": [
+      "Cowboy hat (western) as the primary role marker.",
+      "Neckerchief or bandana at the neck and cowboy-style boots.",
+      "Lasso or rope as a cowboy prop, coiled or held in the hero pose.",
+      "Brown and tan color accents on the hat, belt, and accessories."
+    ]
+  },
+  "positive_constraints": [
+    "Use this image as the canonical cowboy hero reference for Bit/Bot.",
+    "Preserve the western hat, neckerchief, boots, and lasso or rope prop.",
+    "Keep the friendly, confident pose and neutral white background for source-image use.",
+    "Maintain the rounded white body, wheeled base, and simple face of Bit/Bot."
+  ],
+  "negative_constraints": [
+    "Do not change the robot's core body shape, wheel base, or face style.",
+    "Do not use this single source image as final art acceptance without image QA.",
+    "Do not introduce additional story, environment, or characters not shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prompting new cowboy hero images of Bit/Bot.",
+      "Style reference for the bot role kit cowboy hero.",
+      "Asset catalog and role kit indexing."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative art without image QA.",
+      "Detailed ranch, motion, or lasso-action canon beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:cowboy",
+      "role:hero",
+      "asset:source-image"
+    ]
+  }
+}

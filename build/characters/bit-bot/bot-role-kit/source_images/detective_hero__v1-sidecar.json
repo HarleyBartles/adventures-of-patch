@@ -1,0 +1,84 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Document the canonical source image for the Bit/Bot detective hero pose in the bot role kit.",
+  "source_truth_note": "The image pixels and filename are the source of truth; descriptive text is derived from visual inspection.",
+  "runtime_use_note": "Suitable as a style reference, prompt anchor, and asset catalog entry for the detective role.",
+  "do_not_infer_note": "Do not infer canonical backstory, environment, or motion beyond the visible frame; exact provenance is unknown.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/detective_hero__v1.png",
+    "relative_image_path": "detective_hero__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/detective_hero__v1-sidecar.json",
+    "relative_sidecar_path": "detective_hero__v1-sidecar.json",
+    "image_filename": "detective_hero__v1.png",
+    "sha256": "cca1a6d3d2aeb07b7b06bc5dfc18384aa28d1d4a1e2a9e038ee90144a62a8ec9",
+    "byte_size": 2032590,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "pixel-inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Hero source image of Bit/Bot in the detective role, wearing a dark detective coat and hat with a magnifying glass, set against a plain white background.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single full-figure hero pose against a plain white background.",
+      "Bot is centered and facing the viewer with a confident stance.",
+      "Detective role costume and props are clearly visible and readable."
+    ],
+    "character_design": [
+      "White and rounded robot head with large glowing eyes and a friendly smile.",
+      "Dark detective hat and matching coat with role-appropriate trim.",
+      "Wheeled base matching the Bit/Bot support-bot design.",
+      "Chest nameplate or badge indicating the detective role."
+    ],
+    "props_and_role_markers": [
+      "Detective hat and dark coat as primary role markers.",
+      "Magnifying glass held in one hand, with a blue lens accent.",
+      "Subtle brown and tan trim details on the coat and hat."
+    ]
+  },
+  "positive_constraints": [
+    "Use this image as the canonical detective hero reference for Bit/Bot.",
+    "Preserve the dark detective hat, coat, and magnifying glass role markers.",
+    "Keep the friendly, confident pose and neutral white background for source-image use."
+  ],
+  "negative_constraints": [
+    "Do not change the robot's core body shape, wheel base, or face style.",
+    "Do not use this single source image as final art acceptance without image QA.",
+    "Do not introduce additional story, environment, or characters not shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prompting new detective-themed images of Bit/Bot.",
+      "Style reference for the bot role kit detective hero.",
+      "Asset catalog and role kit indexing."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative art without image QA.",
+      "Detailed mystery or environment canon beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:detective",
+      "role:hero",
+      "asset:source-image"
+    ]
+  }
+}

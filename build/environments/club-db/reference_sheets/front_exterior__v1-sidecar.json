@@ -1,0 +1,89 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Club DB front exterior environment reference sheet. Supports environment selection, prompt extraction, and QA for the Club DB controlled-entry exterior.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer interior layout, staff, crowd, or final canon status beyond the observed exterior view.",
+  "image": {
+    "repo_image_path": "build/environments/club-db/reference_sheets/front_exterior__v1.png",
+    "relative_image_path": "front_exterior__v1.png",
+    "repo_sidecar_path": "build/environments/club-db/reference_sheets/front_exterior__v1-sidecar.json",
+    "relative_sidecar_path": "front_exterior__v1-sidecar.json",
+    "image_filename": "front_exterior__v1.png",
+    "sha256": "ab3b0506c0683084d4a49f8447e7ad4809872f5dc6479463b99d5e8726e1e2ad",
+    "byte_size": 2033277,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet showing the Club DB front exterior at night. A neon 'CLUB DB' sign sits above a pair of purple double doors flanked by velvet ropes, brass stanchions, and sandwich-board signs. The facade is dark with purple and pink accent lighting.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single exterior establishing view with a header 'CLUB DB FRONT DOOR EXTERIOR ENVIRONMENT ASSET SHEET'.",
+      "Central building facade with a neon 'CLUB DB' sign and two purple doors.",
+      "Velvet ropes and gold stanchions frame the entrance.",
+      "A-board signs read '2 GATES' and 'NO ACCESS'.",
+      "Potted plants, wall sconces, and a warm street-level glow."
+    ],
+    "palette": [
+      "Dark charcoal/purple building exterior.",
+      "Bright pink and purple neon highlights.",
+      "Warm cream/gold stanchion ropes and door frames.",
+      "Cool night-sky tones."
+    ],
+    "notable_features": [
+      "Neon 'CLUB DB' marquee.",
+      "Two closed purple double doors.",
+      "Red/velvet rope queue system.",
+      "2 GATES and NO ACCESS sandwich boards."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the dark club exterior, neon 'CLUB DB' sign, purple doors, and velvet-rope queue.",
+    "Use the sheet as the canonical Club DB front exterior reference.",
+    "Keep the warm accent lighting and night-time atmosphere."
+  ],
+  "negative_constraints": [
+    "Do not add a crowd, staff, or vehicles without explicit layout review.",
+    "Do not change the club name or signage style.",
+    "Do not remove the velvet ropes or stanchions."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Club DB front exterior scene prompting.",
+      "QA of generated Club DB exteriors.",
+      "Continuity reference for the club entrance."
+    ],
+    "not_sufficient_for": [
+      "Interior rooms or back-of-house areas.",
+      "Exact colour hex values; inspect pixels.",
+      "Final canon without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:club-db",
+      "location:front-exterior",
+      "state:accepted"
+    ]
+  }
+}

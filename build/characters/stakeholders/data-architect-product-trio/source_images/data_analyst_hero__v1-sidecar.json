@@ -1,0 +1,111 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Data Analyst",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Data Analyst hero source image in the data-architect-product-trio stakeholder pack. Supports hero selection, visual continuity, prompt constraint extraction, and QA for Issue #56 analytics and data-interpretation imagery.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for textual hero selection, continuity checks, and prompt planning. Inspect the image pixels directly when exact composition, expression, prop placement, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional expressions, extra props, story state, or acceptance of derivative images beyond the observed hero pose and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/source_images/data_analyst_hero__v1.png",
+    "relative_image_path": "data_analyst_hero__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/source_images/data_analyst_hero__v1-sidecar.json",
+    "relative_sidecar_path": "data_analyst_hero__v1-sidecar.json",
+    "image_filename": "data_analyst_hero__v1.png",
+    "sha256": "a7ff81152e0aff4eee0837d7691ea34fc83e61eeb63b31715afed959f98e54a0",
+    "byte_size": 1837760,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source_image",
+    "acceptance_state": "pending_review",
+    "inspection_mode": "visual_inspection",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Data Analyst hero source image: an isolated full-body hero pose of the Data Analyst stakeholder on a clean white or very light background. The figure is a young adult woman with warm brown skin, large round glasses, and brown curly hair pulled into a loose high bun. She wears a cream oversized cardigan over a white top, high-waisted brown trousers, mustard socks, and light cream sneakers, with a purple lanyard and badge. She holds a clipboard or tablet showing analytics graphics such as a filter funnel, check marks, and bar or donut charts, plus a small paper packet. The style matches the Issue #56 stakeholder pack: clean vector-adjacent painterly rendering, simplified readable props, and a warm, organized, helpful mood. Intended as the canonical hero source for the Data Analyst, pending pixel-level review.",
+  "observed_visual_facts": {
+    "composition": [
+      "Portrait-oriented source render of a single Data Analyst figure, isolated on a clean white or very light background with ample padding.",
+      "Full-body hero framing suitable as a canonical character reference.",
+      "No environment or scene background; the character is the sole subject."
+    ],
+    "character": [
+      "Young adult woman with warm brown skin.",
+      "Large round glasses and a friendly, patient, organized expression.",
+      "Brown curly hair pulled into a loose high bun with stray curls.",
+      "Gold hoop earrings and a small necklace."
+    ],
+    "costume": [
+      "Cream oversized cardigan over a white top.",
+      "High-waisted brown trousers with rolled cuffs.",
+      "Mustard socks and light cream sneakers.",
+      "Purple lanyard and badge with a lightbulb or insight icon."
+    ],
+    "props": [
+      "Clipboard or tablet showing a calendar-style grid and a filter funnel icon.",
+      "Check marks and bar or donut chart graphics.",
+      "Small report pages or analytics summary cards.",
+      "A small paper packet held near the clipboard.",
+      "Cream-and-purple pen or stylus."
+    ],
+    "style": [
+      "Adventures of Patch editorial / vector-adjacent painterly style.",
+      "Clean rounded linework and soft painterly shading.",
+      "Warm, approachable light and simplified, readable forms.",
+      "Slightly oversized expressive eyes and soft facial features."
+    ],
+    "role_cues": [
+      "The purple lanyard badge, filter funnel, and purple-and-gold chart graphics identify the role as Data Analyst.",
+      "The costume and analytics props distinguish the role from Product Manager and Software Architect stakeholders.",
+      "The clean, isolated, full-figure presentation marks the image as a source hero asset."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Data Analyst identity: young adult woman with warm brown skin, large round glasses, brown curly hair in a loose high bun, cream cardigan, white top, brown trousers, mustard socks, and light cream sneakers.",
+    "Keep the purple lanyard and badge with a lightbulb or insight icon.",
+    "Maintain the clipboard or tablet with calendar grid, filter funnel, check marks, bar/donut charts, report pages, small paper packet, and cream-and-purple pen.",
+    "Use the Data Analyst palette: purple, lavender, cream, warm brown, and gold/yellow chart accents.",
+    "Keep the clean white or very light isolated background and full-figure hero presentation for source-asset use.",
+    "Treat this image as the canonical hero source for Data Analyst continuity and prompt variation."
+  ],
+  "negative_constraints": [
+    "Do not mix in Product Manager roadmap/timeline props or Software Architect blue diagram/blueprint props.",
+    "Do not dress the character in judge/official cream polo, khaki, whistle, or race-bib identity.",
+    "Do not use Patch's teal costume, Bit/Bot robot colours, or athlete race bibs.",
+    "Do not infer additional expressions, poses, or final acceptance beyond the observed hero view.",
+    "Do not overload charts or cards with tiny pseudo-text or realistic software UI.",
+    "Do not remove the lanyard/badge cue or replace the purple lightbulb badge with a different role's badge icon."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting the canonical Data Analyst hero pose for scene assembly in the stakeholder set.",
+      "Hero continuity and prompt variation for data-analyst-themed compositions.",
+      "Reference for the Data Analyst's costume, colour, prop, and expression identity in Adventures of Patch.",
+      "QA that generated Data Analyst art remains on-model and on-palette."
+    ],
+    "not_sufficient_for": [
+      "Final Data Analyst character turnaround or full expression reference.",
+      "Final asset acceptance without pixel-level QA against the source image.",
+      "Authorizing derivative images or unobserved alternate poses."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:stakeholder",
+      "role:data-analyst",
+      "pose:hero",
+      "asset:source-image"
+    ]
+  }
+}

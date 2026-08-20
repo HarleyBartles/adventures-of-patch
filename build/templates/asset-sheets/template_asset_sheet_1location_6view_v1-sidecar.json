@@ -1,0 +1,85 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident template sidecar for a one-location, six-view deep asset sheet. Supports environment/location template selection, layout planning, and QA of richer single-location sheets.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar to understand the template layout, intended use, and constraints. Inspect the image pixels directly for exact panel labels, dimensions, and spacing.",
+  "do_not_infer_note": "Do not infer additional locations, separate trials, or final canon status beyond the observed six-view candidate template.",
+  "image": {
+    "repo_image_path": "build/templates/asset-sheets/template_asset_sheet_1location_6view_v1.png",
+    "relative_image_path": "template_asset_sheet_1location_6view_v1.png",
+    "repo_sidecar_path": "build/templates/asset-sheets/template_asset_sheet_1location_6view_v1-sidecar.json",
+    "relative_sidecar_path": "template_asset_sheet_1location_6view_v1-sidecar.json",
+    "image_filename": "template_asset_sheet_1location_6view_v1.png",
+    "sha256": "ac2dd9bebd7ad45a227ee67e4e35853c98ad40aa7ebb069211fd445d9bf5da48",
+    "byte_size": 63198,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "template_asset_sheet",
+    "acceptance_state": "candidate",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Candidate template for a single-location, six-view asset sheet. The header carries the same metadata columns. The main area has one large HERO/ESTABLISHING view, two top-right DETAIL panels, two SUPPORT VIEW panels (REVERSE VIEW and APPROACH VIEW), a bottom-left PROP/SIGNAGE panel, an INTERACTION_ZONE panel, and a LOCATION NOTES / DO NOT USE FOR footer.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape template with dark green border and cream/white field.",
+      "Header reads 'ASSET SHEET' with TITLE, TYPE, STATUS, VERSION, SOURCE/QA columns.",
+      "Metadata: TITLE 'Single Location 6 View', TYPE 'Environment / location deep sheet', STATUS 'candidate', VERSION 'v1', SOURCE/QA 'GPT-authored template'.",
+      "Large HERO_ESTABLISHING panel labelled 'HERO / ESTABLISHING'.",
+      "Top-right: two DETAIL panels 'DETAIL A' and 'DETAIL B'.",
+      "Middle-right: two SUPPORT_VIEW panels 'REVERSE VIEW' and 'APPROACH VIEW'.",
+      "Bottom-left: PROP_DETAIL 'PROP / SIGNAGE' and INTERACTION_ZONE 'INTERACTION ZONE'.",
+      "Bottom-right 'LOCATION NOTES / DO NOT USE FOR' block."
+    ],
+    "guidance_notes": [
+      "Use for a richly documented single location.",
+      "A deeper alternative to the 3-view template when a location needs multiple detail surfaces, props, signage, approach/reverse views, and interaction zones.",
+      "Do not use for four separate trials or independent locations."
+    ]
+  },
+  "positive_constraints": [
+    "Use this template for richly documented single-location deep sheets.",
+    "Keep the six panels in the prescribed layout when populating the template.",
+    "Reserve the hero for establishing, the detail/support panels for surfaces, and the bottom panels for prop/signage and interaction zones."
+  ],
+  "negative_constraints": [
+    "Do not use this template for four separate trials or independent locations.",
+    "Do not treat 'candidate' status as final accepted canon.",
+    "Do not add extra views beyond the six prescribed."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Planning detailed single-location environment reference sheets.",
+      "QA of asset sheets built from this template.",
+      "Teaching the six-view location layout."
+    ],
+    "not_sufficient_for": [
+      "Final canon approval without sheet content and image QA.",
+      "Multi-location or independent-trial sheets.",
+      "Exact measurements; inspect the image pixels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:template",
+      "domain:asset-sheet",
+      "state:candidate",
+      "template:1location-6view",
+      "role:environment-location"
+    ]
+  }
+}

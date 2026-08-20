@@ -1,0 +1,80 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the cowboy alternate 'chicken chase' source image in the Bit and Bot role kit. Supports character continuity, prompt constraint extraction, and source-image QA for the cowboy role.",
+  "source_truth_note": "This sidecar records the committed source image. Descriptive fields are derived from the image itself; canonical visual facts should not be inferred from the filename or other sidecars.",
+  "runtime_use_note": "Use this sidecar to locate the source image and route it for downstream asset compilation or scene composition. It is not a final compiled asset.",
+  "do_not_infer_note": "Do not infer unseen action frames, additional props, or environment beyond the visible pose. Do not use this sidecar as a prompt or generation contract.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/cowboy_alt_chicken_chase__v1.png",
+    "relative_image_path": "cowboy_alt_chicken_chase__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/cowboy_alt_chicken_chase__v1-sidecar.json",
+    "relative_sidecar_path": "cowboy_alt_chicken_chase__v1-sidecar.json",
+    "image_filename": "cowboy_alt_chicken_chase__v1.png",
+    "sha256": "99f23e0e54148a4fa0f6cc6455c5d2c4adf0783093d2c791e1810a0cb694d4e0",
+    "byte_size": 2378814,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "metadata-only",
+    "confidence": "low",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image showing Bit/Bot in a cowboy alternate action pose, chasing a chicken, intended as a source reference for the cowboy role kit.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single-figure action pose of Bit/Bot centered in the frame.",
+      "The pose depicts a cowboy-themed bot in a chicken-chase action.",
+      "Background is minimal or neutral, keeping focus on the character."
+    ],
+    "character_design": [
+      "Bit/Bot is a white-bodied, rounded support robot with a wheeled base.",
+      "Cowboy role accents include western hat, lasso, or ranch-style details consistent with the cowboy column.",
+      "Style matches the bit-bot visual canon: rounded, friendly, non-Patch proportions."
+    ]
+  },
+  "positive_constraints": [
+    "Bit/Bot must remain a rounded white-bodied support bot with a wheeled base.",
+    "Treat this as a source image for the cowboy alternate chicken-chase pose.",
+    "Sidecar metadata must match the exact committed image file.",
+    "Cowboy role accessories must be consistent with the bit-bot role kit."
+  ],
+  "negative_constraints": [
+    "Do not use this image as a final runtime composite.",
+    "Do not assume the background or props are canonical beyond the shown pose.",
+    "Do not treat the sidecar as a prompt or generation contract.",
+    "Do not swap cowboy role elements with other role-kit columns."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Indexing the cowboy_alt_chicken_chase__v1 source image.",
+      "Locating the cowboy alternate chicken-chase pose reference.",
+      "Routing the source image for downstream compilation."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative images without image QA.",
+      "Detailed prop, expression, or environment canon beyond the shown pose."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character:bit-bot",
+      "role:cowboy",
+      "asset:source-image"
+    ]
+  }
+}

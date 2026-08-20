@@ -1,0 +1,129 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident visual sidecar for the approved Patch style reference sheet, supporting character continuity, prompt constraint extraction, color and accessory verification, and downstream asset planning.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The approved style reference image and package manifest remain authoritative for canon; this sidecar does not authorize derivative designs or broaden canon beyond the observed sheet.",
+  "runtime_use_note": "Use this sidecar for quick lookup of canonical Patch views, poses, expressions, accessories, and approved colors. Inspect the image pixels directly for exact hex values, proportions, small labels, or fine details.",
+  "do_not_infer_note": "Do not infer additional views, unseen character variants, accessories, environments, or scenes beyond what appears on the reference sheet. Do not treat the sidecar as approval for derivatives outside the stated runtime use.",
+  "image": {
+    "repo_image_path": "style/patch/reference_sheets/approved_style__v1.png",
+    "relative_image_path": "approved_style__v1.png",
+    "repo_sidecar_path": "style/patch/reference_sheets/approved_style__v1-sidecar.json",
+    "relative_sidecar_path": "approved_style__v1-sidecar.json",
+    "image_filename": "approved_style__v1.png",
+    "sha256": "259ebb9a7cd7767870adf6d74d403366e5c070dcac1e31248458e65d37ff54ae",
+    "byte_size": 2201301,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "TBD",
+    "acceptance_state": "TBD",
+    "inspection_mode": "TBD",
+    "confidence": "TBD",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Approved Patch character style reference sheet. The sheet presents the canonical teal-hooded software agent in full-body turnaround views, common action poses, expressive faces, labeled accessories and contents, and an approved color palette, all organized as a single source-of-truth style guide.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single-page reference sheet laid out in five labeled panels plus a header and footer.",
+      "Header contains the Patch logo icon, the word 'PATCH', the subtitle 'Software Agent', and a one-line role description.",
+      "Sections are numbered and titled: 1. FULL-BODY VIEWS, 2. ACTION POSES, 3. EXPRESSIONS, 4. ACCESSORIES & CONTENTS, 5. COLOR PALETTE.",
+      "Footer contains a concise personality sentence and four labeled trait badges: CURIOUS, RELIABLE, ORGANIZED, HELPFUL."
+    ],
+    "patch_design": [
+      "Canonical teal hood with rounded black antennae tips.",
+      "Off-white face panel with simple black oval eyes and small white highlights, plus a friendly, minimal mouth.",
+      "Teal hoodie with drawstrings, dark navy pants, and teal-and-white sneakers.",
+      "Black crossbody bag with a white greater-than mark on the front flap.",
+      "Proportions are small, rounded, and mascot-like across all views and poses."
+    ],
+    "full_body_views": [
+      "Front view shows Patch facing forward with both arms at sides, full bag visible.",
+      "3/4 view shows a slight turn with one foot forward and the bag strap crossing the torso.",
+      "Side view shows the profile, confirming the hood shape, antenna placement, and bag depth.",
+      "Back view shows the hood from behind, the back of the hoodie, and the bag from the rear."
+    ],
+    "action_poses": [
+      "Walking pose with one leg and arm forward, suggesting motion.",
+      "Checking bag pose with both hands opening the bag flap.",
+      "Presenting documents pose with one hand extended and the other holding a clipboard with checked items.",
+      "Organizing records pose with both hands holding a tray of labeled folders: RECEIPTS, PLANS, RECORDS."
+    ],
+    "expressions": [
+      "Curious: hand near chin, questioning upward glance.",
+      "Determined: fists clenched, eyebrows lowered, resolute gaze.",
+      "Uncertain: hand near mouth, worried brows, downcast eyes.",
+      "Relieved: eyes closed, wide open happy mouth, relaxed posture."
+    ],
+    "accessories_and_contents": [
+      "Crossbody bag with a white '>' symbol, shown as a separate prop.",
+      "Receipts: a small paper stack with a dollar sign and a check mark.",
+      "Plans: a document with a flowchart or block diagram.",
+      "Records: a card or page with a database cylinder icon and a warm tan/orange label.",
+      "Rows: a grid or table card in teal."
+    ],
+    "color_palette": [
+      "Primary teal: #17B1A6.",
+      "Darker teal: #0E8D84.",
+      "Deep navy: #1D2B3A.",
+      "Dark gray: #2B2F33.",
+      "Off-white/light gray: #F5F6F7.",
+      "Pure white: #FFFFFF.",
+      "Near black: #0D0D0D."
+    ],
+    "style_presentation": [
+      "Clean, flat illustration style with soft shading and rounded linework.",
+      "Labels are set in simple sans-serif capitals under each figure or prop.",
+      "Layout is spacious and readable, suitable for print or on-screen reference."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the canonical teal hood, off-white face, black oval eyes, antennae, and greater-than crossbody bag across all views and poses.",
+    "Keep the approved color hex values as the primary and secondary palette for Patch and related assets.",
+    "Maintain rounded, friendly, mascot-like proportions in every view and pose.",
+    "Use the five reference panels to guide full-body views, action poses, expressions, accessories, and color choices.",
+    "Keep labels clear and legible beneath each figure or prop.",
+    "Treat this sheet as the approved style reference for all Patch character work."
+  ],
+  "negative_constraints": [
+    "Do not change the core color palette or introduce unapproved colors as primary fills.",
+    "Do not omit the crossbody bag or replace the greater-than mark with another symbol.",
+    "Do not add extra limbs, inconsistent antennae, or non-canonical facial features.",
+    "Do not flatten the character into a generic robot, human, toy, or glossy mascot.",
+    "Do not recompose the reference sheet into a scene or imply story context beyond the style guide."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Quick lookup of canonical Patch design, colors, and proportions.",
+      "Prompt extraction for character images, poses, and expressions.",
+      "QA of generated Patch art against the approved reference.",
+      "Accessory and color-palette verification."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images or new character variants without image QA.",
+      "Exact typeface or layout measurements; inspect the image directly.",
+      "Inferring full story scenes or environments not shown on the sheet."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "style:approved",
+      "state:ready-for-qa",
+      "asset:reference-sheet",
+      "role:style-bible",
+      "domain:character-design"
+    ]
+  }
+}

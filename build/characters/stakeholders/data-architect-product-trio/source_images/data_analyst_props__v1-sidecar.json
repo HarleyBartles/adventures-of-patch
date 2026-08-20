@@ -1,0 +1,104 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Data Analyst",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Data Analyst prop sheet in the data-architect-product-trio stakeholder pack. Supports prop selection, visual continuity, prompt constraint extraction, and QA for Issue #56 analytics and data-interpretation imagery.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for textual prop selection, continuity checks, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/source_images/data_analyst_props__v1.png",
+    "relative_image_path": "data_analyst_props__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/source_images/data_analyst_props__v1-sidecar.json",
+    "relative_sidecar_path": "data_analyst_props__v1-sidecar.json",
+    "image_filename": "data_analyst_props__v1.png",
+    "sha256": "05514744e7f013a9091545dfc965a2359648567019349662fcffd25ce18950b3",
+    "byte_size": 1031728,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1086,
+      "height": 1448
+    },
+    "mode": "RGB",
+    "asset_role": "source_props_image",
+    "acceptance_state": "pending_review",
+    "inspection_mode": "visual_inspection",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source prop sheet for the Data Analyst stakeholder in the data-architect-product-trio pack. The sheet arranges analytics-themed tools on a plain white background: a tablet or clipboard with a calendar grid, a filter funnel icon, check marks, donut and bar charts, small report pages, a purple lanyard badge with a lightbulb icon, a cream-and-purple pen, and clean cards showing analytics summaries. The style matches the Issue #56 stakeholder prop language: clean vector-adjacent painterly rendering, isolated readable objects, purple and gold accents, and a warm, organized, helpful mood.",
+  "observed_visual_facts": {
+    "composition": [
+      "Role-specific prop sheet on a clean white or very light background.",
+      "The tablet or clipboard is the largest item and anchors the layout.",
+      "Supporting papers, cards, a lanyard badge, a pen, charts, and analytics tools are arranged around the tablet.",
+      "Each object is isolated, readable, and consistent with the Data Analyst colour palette."
+    ],
+    "props": [
+      "Tablet or clipboard showing a calendar-style grid.",
+      "Filter funnel icon suggesting filtering and interpretation.",
+      "Check marks or done-state indicators.",
+      "Donut charts and bar charts rendered in purple and gold tones.",
+      "Small report pages or analytics summary cards.",
+      "Purple lanyard and badge with a lightbulb or insight icon.",
+      "Cream-and-purple pen or stylus.",
+      "Clean cards showing analytics summaries."
+    ],
+    "style_and_colour": [
+      "Clean Adventures editorial / vector-adjacent painterly style.",
+      "Rounded readable linework and simplified forms.",
+      "Purple, lavender, cream, warm brown, and gold/yellow chart accents.",
+      "Soft painterly shading and warm lighting.",
+      "No real brand logos, realistic UI detail, or tiny pseudo-text."
+    ],
+    "role_cues": [
+      "The props collectively signal data interpretation, filtering, and evidence checking.",
+      "Calendar grid, filter funnel, check marks, and charts anchor the Data Analyst identity.",
+      "The absence of roadmap lanes, feature cards, system diagrams, or architecture blocks distinguishes this role from Product Manager and Software Architect props."
+    ]
+  },
+  "positive_constraints": [
+    "Treat this image as the Data Analyst prop source for Issue #56 stakeholder assets.",
+    "Arrange the tablet/clipboard as the largest prop, with supporting analytics tools around it.",
+    "Use the Data Analyst palette: purple, lavender, cream, warm brown, and gold/yellow chart accents.",
+    "Keep props simplified but unmistakably data-analytics themed: calendar grid, filter funnel, check marks, donut charts, bar charts, reports, lightbulb badge, cream-and-purple pen.",
+    "Maintain the clean white background and isolated, reusable source-asset presentation.",
+    "Preserve the warm, organized, patient, and helpful Data Analyst mood."
+  ],
+  "negative_constraints": [
+    "Do not add unrelated role props such as roadmap lanes, feature cards, system diagrams, database cylinders, or architecture blueprints.",
+    "Do not introduce additional stakeholder characters unless the sheet explicitly includes them.",
+    "Do not overload charts or cards with tiny pseudo-text or realistic software UI.",
+    "Do not remove the lanyard/badge cue or replace the purple lightbulb badge with a different role's badge icon.",
+    "Do not turn the prop sheet into a full scene, environment, or group composition.",
+    "Do not introduce other stakeholder colour palettes (olive-brown/blue for software architect, light blue/navy/orange/green for product manager) as dominant accents."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Data Analyst prop selection and layout reference.",
+      "Prompting analytics and data-interpretation props.",
+      "Continuity checks across stakeholder prop sheets.",
+      "QA that the props read as data-analytics rather than generic office supplies."
+    ],
+    "not_sufficient_for": [
+      "Full Data Analyst character turnaround (use the hero and alternate source images).",
+      "Authorizing derivative images without direct image QA.",
+      "Exact OCR of any small chart or card text."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:stakeholder",
+      "role:data-analyst",
+      "role:props",
+      "asset:source-image"
+    ]
+  }
+}

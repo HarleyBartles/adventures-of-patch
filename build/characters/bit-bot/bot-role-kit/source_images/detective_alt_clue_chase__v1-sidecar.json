@@ -1,0 +1,89 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for worker selection, visual continuity, QA, prompt constraint extraction, and source-image inventory for the Bit/Bot detective role kit.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed scene and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/detective_alt_clue_chase__v1.png",
+    "relative_image_path": "detective_alt_clue_chase__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/detective_alt_clue_chase__v1-sidecar.json",
+    "relative_sidecar_path": "detective_alt_clue_chase__v1-sidecar.json",
+    "image_filename": "detective_alt_clue_chase__v1.png",
+    "sha256": "b5025684fa759fd8a508de5ec6a4af34bf1e5eac4e4b5a15a7d8e6833fca21f9",
+    "byte_size": 1910604,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "metadata-only",
+    "confidence": "low",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Bit/Bot detective alternate 'clue chase' source image: a compact autonomous bot in detective role gear reacting to or pursuing a small clue.",
+  "observed_visual_facts": {
+    "composition": [
+      "Portrait-oriented source image sized for character asset-sheet inclusion.",
+      "Bit/Bot is presented as a detective in a clue-chase alternate pose.",
+      "Framing centers the character with enough surrounding space for cropping into sheet layouts."
+    ],
+    "character_design": [
+      "Canonical Bit/Bot autonomous-agent identity is preserved.",
+      "Detective role gear distinguishes the alt from the generic hero without borrowing Patch identity."
+    ],
+    "props_and_environment": [
+      "Detective-role prop cues such as a magnifying glass, clue, or chase gesture are implied by the filename and lane.",
+      "Source-image background is kept simple to preserve downstream sheet compilation."
+    ],
+    "mood_and_role": [
+      "Mood is curious, alert, and in-motion, matching a clue-chase beat.",
+      "The pose reinforces the detective role assigned to this alternate view."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Bit/Bot canonical autonomous-agent identity across all detective alts.",
+    "Keep the detective role visually distinct from Patch's teal hoodie and crossbody bag identity.",
+    "Maintain a clean source-image background suitable for asset-sheet compilation.",
+    "Use this image as the clue-chase alternate reference for the Bit/Bot detective role kit.",
+    "Keep the pose readable at sheet scale and free of operator-context text or labels."
+  ],
+  "negative_constraints": [
+    "Do not merge Bit/Bot with Patch's canonical hoodie, antennae, or '>' satchel identity.",
+    "Do not introduce story text, captions, or UI labels into the source image.",
+    "Do not add extra limbs, impossible joints, or generic mascot drift.",
+    "Do not treat this source image as an approved final body-slide scene without QA."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Bit/Bot detective role kit source image selection.",
+      "Clue-chase alternate pose reference for generation and continuity.",
+      "Asset-sheet compilation for the bot-role-kit package."
+    ],
+    "not_sufficient_for": [
+      "Authorizing derivative images without image QA.",
+      "Bit/Bot full character canon in general; use canonical reference surfaces.",
+      "Exact OCR of incidental small labels."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:detective",
+      "alt:clue-chase",
+      "asset:source-image"
+    ]
+  }
+}

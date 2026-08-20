@@ -1,0 +1,89 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": null,
+  "sidecar_purpose": "Repo-resident sidecar for the Club DB queue lane/gate system environment reference sheet. Supports environment selection, prompt extraction, and QA for the Club DB controlled entry queue.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for environment selection, prompt planning, and QA. Inspect the image pixels directly for exact signage text, colour values, and small prop details.",
+  "do_not_infer_note": "Do not infer crowd, staff, or final canon status beyond the observed queue-lane view.",
+  "image": {
+    "repo_image_path": "build/environments/club-db/reference_sheets/queue_lane__v1.png",
+    "relative_image_path": "queue_lane__v1.png",
+    "repo_sidecar_path": "build/environments/club-db/reference_sheets/queue_lane__v1-sidecar.json",
+    "relative_sidecar_path": "queue_lane__v1-sidecar.json",
+    "image_filename": "queue_lane__v1.png",
+    "sha256": "07b1ca50dab74c029c047e5b3821a8f376c9b1d423056cd6c3b2e760c02420ac",
+    "byte_size": 2050628,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "environment_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet showing the Club DB queue lane and gate system. Velvet ropes on gold stanchions create a winding queue leading to the club entrance, with '2 GATES', 'NO ACCESS', and 'GUEST LIST' signs. The scene is night-time with purple and warm accent lighting.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single view with a header 'CLUB DB QUEUE LANE - GATE SYSTEM ENVIRONMENT ASSET SHEET'.",
+      "Winding queue lane defined by red velvet ropes and gold stanchions.",
+      "Two gate entrances with '2 GATES' signs.",
+      "A-board signs: 'NO ACCESS' and 'GUEST LIST'.",
+      "Street-level view with warm lamp light and a dark purple exterior."
+    ],
+    "palette": [
+      "Dark purple exterior.",
+      "Red velvet and gold stanchions.",
+      "Warm cream/gold lamp light.",
+      "Pink/purple neon accents."
+    ],
+    "notable_features": [
+      "Winding rope queue.",
+      "'2 GATES', 'NO ACCESS', 'GUEST LIST' boards.",
+      "Club entrance with purple doors.",
+      "Potted plants and wall signage."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the velvet-rope queue, gold stanchions, and A-board signs.",
+    "Use as the canonical Club DB queue reference.",
+    "Keep the night-time, controlled-entry atmosphere."
+  ],
+  "negative_constraints": [
+    "Do not add a crowd or staff.",
+    "Do not remove the winding queue structure.",
+    "Do not change the gate signage."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Club DB queue scene prompting.",
+      "QA of generated Club DB entry sequences.",
+      "Continuity for the gate system."
+    ],
+    "not_sufficient_for": [
+      "Interior rooms or stage areas.",
+      "Exact wording transcription.",
+      "Final canon without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "domain:environment",
+      "environment:club-db",
+      "location:queue-lane",
+      "state:accepted"
+    ]
+  }
+}
