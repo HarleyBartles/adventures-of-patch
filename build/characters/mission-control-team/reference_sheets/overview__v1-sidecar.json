@@ -1,0 +1,103 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Mission Control Team",
+  "sidecar_purpose": "Repo-resident sidecar for the Mission Control Team character-class overview. Supports high-level team planning, prompt extraction, and QA across the Mission Control Team reference pack.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the observed overview.",
+  "runtime_use_note": "Use this sidecar for team selection, continuity, and prompt planning. Inspect the image pixels directly when exact prop labels, small text, or fine character details matter.",
+  "do_not_infer_note": "Do not infer unseen individual character details, additional team members, backstories, or final canon status beyond the observed overview and labelled sections. Do not infer exact color values, proportions, or animation specifics beyond what is visible.",
+  "image": {
+    "repo_image_path": "build/characters/mission-control-team/reference_sheets/overview__v1.png",
+    "relative_image_path": "overview__v1.png",
+    "repo_sidecar_path": "build/characters/mission-control-team/reference_sheets/overview__v1-sidecar.json",
+    "relative_sidecar_path": "overview__v1-sidecar.json",
+    "image_filename": "overview__v1.png",
+    "sha256": "f14cd401137d4262187928bd178b99b3a41fce656a1a1b933cad6180ac7b4b7d",
+    "byte_size": 2306086,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "character_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "pixel_inspected",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet for the Patch Mission Control Team, presenting the six team members, their named roles, and operational purpose in a labelled, cartoon-friendly command-centre layout.",
+  "observed_visual_facts": {
+    "composition": [
+      "The image is divided into sections with team members at the centre.",
+      "Text boxes and icons surround the characters to support the overview."
+    ],
+    "team_members": [
+      "Four human characters are depicted: Mission Controller, Operations Commander, Verification Lead, and Launch Prep Officer.",
+      "Two robot characters are included: BIT and BOT."
+    ],
+    "colors": [
+      "The colour scheme is dominated by blue, white, and grey tones.",
+      "Red and green accents are used for emphasis and detail."
+    ],
+    "style": [
+      "The style is cartoonish and detailed, suitable for children's animation.",
+      "Characters have expressive features and distinct outfits."
+    ],
+    "text": [
+      "The title reads 'Patch Mission Control Team'.",
+      "Each character has a role description.",
+      "Sections are labelled 'Our Purpose', 'How We Work', and 'Our Operation Spaces'."
+    ],
+    "props": [
+      "Human characters hold tablets and clipboards.",
+      "Robots carry tools and supplies."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the six visible team members and their named roles: Mission Controller, Operations Commander, Verification Lead, Launch Prep Officer, BIT, and BOT.",
+    "Maintain the blue, white, and grey command-centre palette with red and green accent details.",
+    "Keep the clean, cartoon-friendly editorial illustration style with expressive characters and distinct outfits.",
+    "Preserve the labelled overview layout and the text sections that describe purpose, workflow, and operation spaces.",
+    "Use this sheet as an accepted source reference for the Mission Control Team as a whole."
+  ],
+  "negative_constraints": [
+    "Do not add, remove, or rename the team members shown.",
+    "Do not alter the stated roles, purpose, workflow, or operation-space descriptions.",
+    "Do not introduce a militaristic or hostile tone for the team or environment.",
+    "Do not treat this overview as a substitute for the per-role reference sheets.",
+    "Do not infer exact backstories, personalities, or canon relationships beyond the visible overview."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "High-level Mission Control Team reference and continuity checks.",
+      "Prompt planning for team compositions and command-centre scenes.",
+      "QA of new Mission Control Team assets against the overview.",
+      "Cross-referencing the team against the per-role reference sheets."
+    ],
+    "not_sufficient_for": [
+      "Exact per-role details; use the per-role reference sheets.",
+      "Final canon acceptance of derivative images without image QA.",
+      "Detailed prop or signage transcription if exact wording matters.",
+      "Animation frames, rigging, or expression variants."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:mission-control-team",
+      "asset:reference-sheet",
+      "project:adventures-of-patch",
+      "team:mission-control",
+      "state:accepted"
+    ]
+  }
+}

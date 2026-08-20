@@ -1,0 +1,116 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Software Architect",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Software Architect hero source image in the data-architect-product-trio stakeholder pack. Supports hero selection, visual continuity, prompt constraint extraction, and QA for Issue #56 architecture and systems imagery.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for textual hero selection, continuity checks, and prompt planning. Inspect the image pixels directly when exact composition, expression, prop placement, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional expressions, extra props, story state, or acceptance of derivative images beyond the observed hero pose and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/source_images/software_architect_hero__v1.png",
+    "relative_image_path": "software_architect_hero__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/source_images/software_architect_hero__v1-sidecar.json",
+    "relative_sidecar_path": "software_architect_hero__v1-sidecar.json",
+    "image_filename": "software_architect_hero__v1.png",
+    "sha256": "702a0a3dff5414e2976e7e19c83ec046cc43f36cae4fbbae551107f5d8bbbc91",
+    "byte_size": 1895818,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1086,
+      "height": 1448
+    },
+    "mode": "RGBA",
+    "asset_role": "source_image",
+    "acceptance_state": "pending_review",
+    "inspection_mode": "visual_inspection",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Software Architect hero source image: an isolated full-body hero pose of the Software Architect stakeholder on a clean white or very light background. The figure is an adult man with dark curly hair and a grey side streak, a neatly trimmed beard, and black rectangular glasses. He wears an olive-brown blazer over a cream or white shirt, dark navy trousers, and brown casual shoes, with a blue lanyard and hexagonal system/module badge. He holds a tablet showing a system architecture diagram (cloud icon, central module cube, connected boxes, database cylinder, arrows, and green data blocks) and a rolled blueprint under one arm. The style matches the Issue #56 stakeholder pack: clean vector-adjacent painterly rendering, simplified readable props, and a calm, technically grounded, approachable mood. Intended as the canonical hero source for the Software Architect, pending pixel-level review.",
+  "observed_visual_facts": {
+    "composition": [
+      "Portrait-oriented source render of a single Software Architect figure, isolated on a clean white or very light background with ample padding.",
+      "Full-body hero framing suitable as a canonical character reference.",
+      "No environment or scene background; the character is the sole subject."
+    ],
+    "character": [
+      "Adult man with warm, approachable facial features and slightly oversized expressive eyes.",
+      "Dark curly hair with a grey side streak.",
+      "Neatly trimmed beard and black rectangular glasses.",
+      "Calm, friendly, technically grounded expression with a gentle smile."
+    ],
+    "costume": [
+      "Olive-brown blazer over a cream or white shirt.",
+      "Dark navy trousers with a relaxed, smart-casual cut.",
+      "Brown casual shoes.",
+      "Blue lanyard and badge with a hexagonal system/module icon."
+    ],
+    "props": [
+      "Tablet or clipboard showing a system architecture diagram.",
+      "Central cube or module symbol with connected boxes or nodes.",
+      "Cloud icon and database cylinder icon.",
+      "Arrows indicating dependencies or data flow.",
+      "Green data blocks or architecture blocks on the diagram.",
+      "Rolled blueprint held or tucked under one arm.",
+      "Dark stylus or technical pen."
+    ],
+    "style": [
+      "Adventures of Patch editorial / vector-adjacent painterly style.",
+      "Clean rounded linework and soft painterly shading.",
+      "Warm, approachable light and simplified, readable forms.",
+      "Slightly oversized expressive eyes and soft facial features."
+    ],
+    "role_cues": [
+      "The blue hexagon/module badge, rolled blueprint, and architecture/cloud diagram identify the role as Software Architect.",
+      "The costume and diagram props distinguish the role from the Data Analyst and Product Manager stakeholders.",
+      "The clean, isolated, full-figure presentation marks the image as a source hero asset."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Software Architect identity: adult man with dark curly hair and a grey side streak, neatly trimmed beard, black rectangular glasses, olive-brown blazer, cream or white shirt, dark navy trousers, and brown casual shoes.",
+    "Keep the blue lanyard and badge with a hexagonal system/module icon.",
+    "Maintain the tablet or clipboard with a system architecture diagram showing cloud, central module cube, connected boxes, database cylinder, arrows, and green data blocks.",
+    "Keep the rolled blueprint under one arm and the dark stylus or technical pen.",
+    "Use the Software Architect palette: olive-brown, navy, cream, blue diagram accents, and black tablet frames.",
+    "Keep the clean white or very light isolated background and full-figure hero presentation for source-asset use.",
+    "Treat this image as the canonical hero source for Software Architect continuity and prompt variation.",
+    "Maintain the calm, approachable, technically grounded mood."
+  ],
+  "negative_constraints": [
+    "Do not mix in Data Analyst purple/gold chart props or Product Manager roadmap/timeline cards.",
+    "Do not dress the character in judge/official cream polo, khaki, whistle, or race-bib identity.",
+    "Do not use Patch's teal costume, Bit/Bot robot colours, or athlete race bibs.",
+    "Do not infer additional expressions, poses, or final acceptance beyond the observed hero view.",
+    "Do not overload the architecture diagram with tiny pseudo-text or realistic software UI.",
+    "Do not remove the lanyard/badge cue or replace the blue hexagon badge with a different role's badge icon.",
+    "Do not swap the Software Architect's olive/navy/blue palette with the Data Analyst purple or Product Manager light blue/green/orange palette."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting the canonical Software Architect hero pose for scene assembly in the stakeholder set.",
+      "Hero continuity and prompt variation for software-architect-themed compositions.",
+      "Reference for the Software Architect's costume, colour, prop, and expression identity in Adventures of Patch.",
+      "QA that generated Software Architect art remains on-model and on-palette."
+    ],
+    "not_sufficient_for": [
+      "Final Software Architect character turnaround or full expression reference.",
+      "Final asset acceptance without pixel-level QA against the source image.",
+      "Authorizing derivative images or unobserved alternate poses."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:stakeholder",
+      "role:software-architect",
+      "pose:hero",
+      "asset:source-image"
+    ]
+  }
+}

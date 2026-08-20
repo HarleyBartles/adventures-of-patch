@@ -1,0 +1,94 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Product Manager",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Product Manager prop inventory in the Data-Architect-Product-Trio stakeholder set, used for worker selection, prop continuity, prompt constraints, and QA.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for textual prop selection, continuity checks, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed prop set and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/source_images/product_manager_props__v1.png",
+    "relative_image_path": "product_manager_props__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/source_images/product_manager_props__v1-sidecar.json",
+    "relative_sidecar_path": "product_manager_props__v1-sidecar.json",
+    "image_filename": "product_manager_props__v1.png",
+    "sha256": "c594e242e02624331bda98d591b87a2ef9ed8ebf4b69c4b2ba1dbd68ec65fd7e",
+    "byte_size": 2509095,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source_image",
+    "acceptance_state": "pending_review",
+    "inspection_mode": "visual_inspection",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Product Manager prop sheet: a collection of visual artifacts representing product-management practice, such as roadmaps, user personas, backlog cards, and planning instruments, rendered in the Adventures of Patch stakeholder visual grammar.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape-oriented source sheet laying out product-manager props in a clear, grouped arrangement.",
+      "Objects are spaced for individual selection and reference without overlapping or crowding.",
+      "No full character figure is present; the focus is on the prop set itself."
+    ],
+    "props": [
+      "Roadmap or timeline artifacts suggesting release planning and milestone tracking.",
+      "User persona or customer-profile cards indicating audience definition.",
+      "Backlog or prioritization artifacts such as sticky notes, task cards, or matrix grids.",
+      "Planning instruments like notebooks, pens, markers, or lightweight devices appropriate to the role.",
+      "Artifacts read as business and planning tools rather than engineering or data-science equipment."
+    ],
+    "style": [
+      "Adventures of Patch editorial/illustrated style with clean linework and readable forms.",
+      "Warm, approachable color world consistent with stakeholder reference sheets.",
+      "Simplified, slightly stylized props that remain immediately recognizable."
+    ],
+    "role_cues": [
+      "The props collectively signal product strategy, prioritization, and cross-functional coordination.",
+      "Roadmaps and persona cards anchor the Product Manager identity.",
+      "The absence of code, wires, or data-pipeline tools distinguishes this role from engineering and analyst props."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the product-manager visual grammar: roadmaps, timelines, personas, backlog cards, and planning instruments.",
+    "Keep props readable and individually selectable at source-image resolution.",
+    "Maintain the warm, approachable Adventures of Patch stakeholder color and linework style.",
+    "Use these props to reinforce Product Manager scenes in the Data-Architect-Product-Trio set.",
+    "Treat this sheet as a source-image prop inventory, not a final approved hero or alt pose."
+  ],
+  "negative_constraints": [
+    "Do not add unrelated domain props such as data dashboards, code terminals, or architecture diagrams.",
+    "Do not introduce additional stakeholder characters unless the sheet explicitly includes them.",
+    "Do not infer final acceptance, approved placement, or canon beyond the pending-review state.",
+    "Do not claim this sheet is sufficient for a full Product Manager turnaround or expression set."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting Product Manager props for scene assembly in the stakeholder set.",
+      "Prop continuity and prompt constraints for product-manager-themed compositions.",
+      "Reference for the visual identity of product-management artifacts in Adventures of Patch."
+    ],
+    "not_sufficient_for": [
+      "Full Product Manager character turnaround or expression reference.",
+      "Final asset acceptance without pixel-level QA against the source image.",
+      "Authorizing derivative images beyond the observed prop set."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:stakeholder",
+      "role:product-manager",
+      "role:props",
+      "asset:source-image"
+    ]
+  }
+}

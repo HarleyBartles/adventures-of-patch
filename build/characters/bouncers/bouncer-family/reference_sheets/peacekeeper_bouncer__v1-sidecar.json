@@ -1,0 +1,109 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Peacekeeper Bouncer",
+  "sidecar_purpose": "Adjacent sidecar for the canonical reference sheet of Peacekeeper Bouncer in the bouncer-family queue. Captures the approved visual reference, poses, signature props, and reuse constraints for this character.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Peacekeeper Bouncer's appearance, costume, poses, props, and color system in the bouncer-family reference set.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Peacekeeper Bouncer poses, props, and color details for downstream assets and scenes.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the black Club DB security uniform and peacekeeper pairing consistent.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/peacekeeper_bouncer__v1.png",
+    "relative_image_path": "peacekeeper_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/peacekeeper_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "peacekeeper_bouncer__v1-sidecar.json",
+    "image_filename": "peacekeeper_bouncer__v1.png",
+    "sha256": "3689afc964148eb45ab77e130e7b2b80fdcf9c717f38c04edceb666b187641a0",
+    "byte_size": 1817623,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Four-pose reference sheet for Peacekeeper Bouncer, the Club DB security bouncer responsible for keeping order, de-escalating conflicts, and maintaining a calm environment. Shows neutral standing, de-escalation/listen, approve/calm, and patrol/peace poses with signature peacekeeping props.",
+  "observed_visual_facts": {
+    "character": [
+      "Bearded adult man with medium-brown skin.",
+      "Wears a black baseball cap and black Club DB security polo.",
+      "Calm, composed facial expression and body language."
+    ],
+    "costume": [
+      "Black short-sleeve polo with Club DB patch on the chest.",
+      "Black trousers with belt and black work shoes.",
+      "Employee badge on a lanyard labeled PEACEKEEPER BOUNCER."
+    ],
+    "signature_props": [
+      "Badge or shield labeled PEACEKEEPER BOUNCER.",
+      "Open-palm de-escalation hand signal.",
+      "Small notepad or incident log for recording issues."
+    ],
+    "poses": [
+      "1: Neutral standing with hands at sides or holding the peace badge.",
+      "2: De-escalation/listen pose with open palm raised in a calming gesture.",
+      "3: Approve/calm pose giving a thumbs up or holding a peace sign.",
+      "4: Patrol/peace pose scanning with a calm, authoritative stance."
+    ],
+    "color_notes": [
+      "Dominant black uniform with white badge text.",
+      "Blue and white badge and accent colors.",
+      "Off-white or cream background with subtle panel borders."
+    ],
+    "style": [
+      "Clean editorial cartoon illustration with bold outlines.",
+      "Soft cel-shaded or painterly shading.",
+      "Simplified vector-adjacent finish with consistent proportions across the four poses."
+    ]
+  },
+  "positive_constraints": [
+    "Keep the black cap, black Club DB polo, black trousers, and black work shoes.",
+    "Maintain the lanyard badge labeled PEACEKEEPER BOUNCER.",
+    "Preserve a calm, composed body language and clear facial expression.",
+    "Include a peacekeeping prop such as a badge, shield, or open-palm gesture in every pose.",
+    "Use the approved color palette: black uniform, blue and white badge accents, warm skin tone.",
+    "Use this image as the canonical reference for Peacekeeper Bouncer proportions, costume, and props."
+  ],
+  "negative_constraints": [
+    "Do not omit the peacekeeping prop or badge from any pose.",
+    "Do not replace the badge with unrelated items such as weapons or food.",
+    "Do not add unrelated accessories, alternate costumes, or backstory details.",
+    "Do not alter the Club DB patch or badge text.",
+    "Do not make the character aggressive, armed, or in a combat stance.",
+    "Do not change the calm color palette to bright or aggressive tones."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Generating consistent Peacekeeper Bouncer character art.",
+      "Selecting poses that communicate calm authority, de-escalation, approval, or patrol.",
+      "Reference for style-bible or asset-pack documentation.",
+      "Costume, pose, and prop continuity checks for Peacekeeper Bouncer."
+    ],
+    "not_sufficient_for": [
+      "Detailed animation rigging or turnaround geometry.",
+      "Inferred narrative or dialogue beyond the visual reference.",
+      "Non-Peacekeeper Bouncer character variants.",
+      "Exact color values; inspect the image pixels for precise color codes."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bouncer-family",
+      "role:peacekeeper",
+      "asset:reference-sheet"
+    ]
+  }
+}

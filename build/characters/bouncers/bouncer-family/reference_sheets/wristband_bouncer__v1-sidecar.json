@@ -1,0 +1,98 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Wristband Bouncer",
+  "sidecar_purpose": "Describes the canonical reference sheet for the Wristband Bouncer, a Club DB queue-deck bouncer who applies and validates guest entry wristbands.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Wristband Bouncer poses, props, and color details for downstream assets and scenes.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the black Club DB security uniform and wristband/prop pairing consistent.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/wristband_bouncer__v1.png",
+    "relative_image_path": "wristband_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/wristband_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "wristband_bouncer__v1-sidecar.json",
+    "image_filename": "wristband_bouncer__v1.png",
+    "sha256": "a450f3cf9ded0c7a63f87f09af5c0e967bbfccb308d88ce56922c8c7738cdfdc",
+    "byte_size": 1484741,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Four-pose reference sheet for the Wristband Bouncer, the Club DB security bouncer responsible for applying and validating guest entry wristbands. Shows neutral, handout, check, and stop/invalid poses with signature wristband props.",
+  "observed_visual_facts": {
+    "character": [
+      "Bearded adult man with medium-brown skin",
+      "Wears a black baseball cap and black Club DB security polo",
+      "Friendly but focused facial expression and posture"
+    ],
+    "costume": [
+      "Black short-sleeve polo with Club DB patch on the chest",
+      "Black trousers with belt and black work shoes",
+      "Employee badge on a lanyard labeled WRISTBAND BOUNCER"
+    ],
+    "signature_props": [
+      "Roll or strip of paper entry wristbands for guests",
+      "Marker or stamp for validating wristbands",
+      "Guest list or small scanner for entry verification"
+    ],
+    "poses": [
+      "1: Neutral standing holding a wristband roll or strip",
+      "2: Handout pose extending a wristband toward a guest",
+      "3: Check / validation pose reviewing a wristband or guest list",
+      "4: Stop / invalid pose indicating a refused or unmarked wristband"
+    ],
+    "color_notes": [
+      "Dominant black uniform with white badge text",
+      "Neutral paper wristband colors with subtle accent stripes",
+      "Small green check or red stop accents as status indicators"
+    ]
+  },
+  "positive_constraints": [
+    "Always include a wristband prop and an entry-check item in every pose",
+    "Keep the black cap, black Club DB polo, black trousers, and black work shoes",
+    "Maintain friendly but focused body language and clear facial expression",
+    "Retain the lanyard badge labeled WRISTBAND BOUNCER"
+  ],
+  "negative_constraints": [
+    "Do not omit the wristband prop or entry-check item from any pose",
+    "Do not change the wristband colors or validation mark style away from the reference",
+    "Do not add unrelated accessories, weapons, or alternate costumes",
+    "Do not alter the Club DB patch or badge text"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Generating consistent Wristband Bouncer character art",
+      "Selecting poses that communicate handout, check, stop, or wristband validation",
+      "Reference for style-bible or asset-pack documentation"
+    ],
+    "not_sufficient_for": [
+      "Detailed animation rigging or turnaround geometry",
+      "Inferred narrative or dialogue beyond the visual reference",
+      "Non-Wristband Bouncer character variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bouncer",
+      "role:wristband",
+      "asset:reference-sheet"
+    ]
+  }
+}

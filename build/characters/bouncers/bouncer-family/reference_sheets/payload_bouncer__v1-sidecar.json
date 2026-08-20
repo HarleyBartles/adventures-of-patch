@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Payload Bouncer",
+  "sidecar_purpose": "Describes the canonical reference sheet for the Payload Bouncer, a Club DB queue-deck bouncer who receives, secures, and transports incoming and outgoing payloads.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Payload Bouncer poses, props, and color details for downstream assets and scenes.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the black Club DB security uniform and cargo/box pairing consistent.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/payload_bouncer__v1.png",
+    "relative_image_path": "payload_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/payload_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "payload_bouncer__v1-sidecar.json",
+    "image_filename": "payload_bouncer__v1.png",
+    "sha256": "9ee7544d1bd409dc02ec8520354f86aa436a8cf5a009d3d148f85656358df674",
+    "byte_size": 1569922,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Four-pose reference sheet for Payload Bouncer, the Club DB security bouncer responsible for receiving, securing, and moving payloads. Shows neutral standing, package inspection, carry/transport, and handoff poses with signature cargo box and payload props.",
+  "observed_visual_facts": {
+    "character": [
+      "Bearded adult man with medium-brown skin",
+      "Wears a black baseball cap and black Club DB security polo",
+      "Friendly but focused facial expression and posture"
+    ],
+    "costume": [
+      "Black short-sleeve polo with Club DB patch on the chest",
+      "Black trousers with belt and black work shoes",
+      "Employee badge on a lanyard labeled PAYLOAD BOUNCER"
+    ],
+    "signature_props": [
+      "Cardboard or plastic cargo box with payload contents",
+      "Hand truck or trolley for moving multiple payloads",
+      "Shipping label, manifest, or intake tag for tracking"
+    ],
+    "poses": [
+      "1: Neutral standing holding a small payload box",
+      "2: Package inspection pose checking a label or manifest",
+      "3: Carry/transport pose moving a box or rolling a hand truck",
+      "4: Handoff pose passing a secured payload to another worker"
+    ],
+    "color_notes": [
+      "Dominant black uniform with white badge text",
+      "Neutral brown/tan cargo boxes and white paper labels",
+      "Subtle green check marks or red X marks as status accents"
+    ]
+  },
+  "positive_constraints": [
+    "Always include a payload box, package, or cargo prop in every pose",
+    "Keep the black cap, black Club DB polo, black trousers, and black work shoes",
+    "Maintain friendly but focused body language and clear facial expression",
+    "Retain the lanyard badge labeled PAYLOAD BOUNCER"
+  ],
+  "negative_constraints": [
+    "Do not omit the payload or cargo prop from any pose",
+    "Do not replace the cargo with unrelated items such as weapons or food",
+    "Do not add unrelated accessories, alternate costumes, or backstory details",
+    "Do not alter the Club DB patch or badge text"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Generating consistent Payload Bouncer character art",
+      "Selecting poses that communicate receiving, checking, carrying, or handing off payloads",
+      "Reference for style-bible or asset-pack documentation"
+    ],
+    "not_sufficient_for": [
+      "Detailed animation rigging or turnaround geometry",
+      "Inferred narrative or dialogue beyond the visual reference",
+      "Non-Payload Bouncer character variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bouncer",
+      "role:payload",
+      "asset:reference-sheet"
+    ]
+  }
+}

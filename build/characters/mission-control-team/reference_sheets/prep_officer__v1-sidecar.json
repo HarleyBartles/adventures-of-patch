@@ -1,0 +1,114 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Prep Officer",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Prep Officer reference sheet. Supports character continuity, prompt planning, and visual QA for the Patch Mission Control team.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Prep Officer poses, uniform details, and props for downstream Mission Control assets and scenes. Inspect the image pixels directly for exact color values, patch text, and fine prop details.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the Mission Control launch-prep uniform and readiness cues consistent.",
+  "image": {
+    "repo_image_path": "build/characters/mission-control-team/reference_sheets/prep_officer__v1.png",
+    "relative_image_path": "prep_officer__v1.png",
+    "repo_sidecar_path": "build/characters/mission-control-team/reference_sheets/prep_officer__v1-sidecar.json",
+    "relative_sidecar_path": "prep_officer__v1-sidecar.json",
+    "image_filename": "prep_officer__v1.png",
+    "sha256": "573e9f8d7a5691105b114113a192a91b9380bf24032dec4112b0884d93729537",
+    "byte_size": 2189942,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "character_reference_sheet",
+    "acceptance_state": "accepted_source_reference",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Reference sheet for the Prep Officer (Launch Prep Officer), the launch-readiness specialist on the Patch Mission Control team. The sheet presents the character in launch-prep poses with Mission Control uniform and tools, intended for character continuity and downstream asset generation.",
+  "observed_visual_facts": {
+    "title_and_callouts": [
+      "Title reads 'LAUNCH PREP OFFICER' with the tagline 'WE PREP THE PAYLOAD. YOU LAUNCH THE MISSION.'",
+      "Role at a glance: own launch readiness, verify systems and payload, coordinate final checks, confirm go/no-go, hand off to launch.",
+      "Responsibility steps: Plan and Review, Prep and Assemble, Systems Check, Final Kit Check, Go/No-Go, Hand Off and Launch.",
+      "Status indicators: Green Light (Clear and Green - Proceed to launch), Yellow Light (Standby), Red Light (Hold/Stop - Resolve and adjust)."
+    ],
+    "character": [
+      "Human Mission Control operator with a friendly, reliable, calm demeanor.",
+      "Brown, casually styled hair.",
+      "Methodical, detail-oriented, and check-minded posture."
+    ],
+    "costume": [
+      "Navy and light grey jumpsuit with visible patches and details.",
+      "Light underlayer visible at the collar.",
+      "Name tag and launch ID on the uniform.",
+      "Dark trousers and sturdy footwear.",
+      "Utility pouch and belt gear."
+    ],
+    "props": [
+      "Launch clipboard with launch-prep text.",
+      "Tablet, radio, launch tag, multi-tool, flashlight, tether strap, and utility pouch."
+    ],
+    "poses": [
+      "Front view holding the launch clipboard.",
+      "Three-quarter view showing the side of the uniform and tools.",
+      "Side view showing profile details with hands by the sides."
+    ],
+    "color_notes": [
+      "Navy blue and light grey uniform tones with white accents and details.",
+      "Dark blue, space-themed background."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Prep Officer as a human launch-readiness specialist on the Mission Control team.",
+    "Keep the headline 'LAUNCH PREP OFFICER' and the tagline 'WE PREP THE PAYLOAD. YOU LAUNCH THE MISSION.'",
+    "Show the character in a navy and light grey jumpsuit with Mission Control patches, name tag, and launch ID.",
+    "Include launch-prep props: clipboard, tablet, radio, launch tag, multi-tool, flashlight, tether strap, and utility pouch.",
+    "Maintain the front, three-quarter, and side reference poses shown on the sheet.",
+    "Use the navy, light grey, and white palette with the dark blue space-themed background.",
+    "Retain the readiness flow callouts: Plan and Review, Prep and Assemble, Systems Check, Final Kit Check, Go/No-Go, Hand Off and Launch.",
+    "Use this image as a primary reference for Prep Officer continuity."
+  ],
+  "negative_constraints": [
+    "Do not replace the Prep Officer with a different role, generic person, or mascot style.",
+    "Do not add Patch identity markers such as a teal hoodie, antennae, face panel, crossbody bag, or robot body.",
+    "Do not remove or swap the launch-prep props shown on the sheet.",
+    "Do not clutter the background beyond the space-themed reference style.",
+    "Do not infer exact color values from the color notes without pixel inspection.",
+    "Do not treat this sheet as an exhaustive animation or rig specification.",
+    "Do not infer alternate poses, expressions, or angles beyond those shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prep Officer character reference and continuity.",
+      "Prompting new Prep Officer images in the Mission Control team set.",
+      "QA of Prep Officer visual consistency across the Mission Control team.",
+      "Reference for launch-prep uniform, props, and readiness callouts."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of new generated images without image QA.",
+      "Exact transcription of small prop labels or color values without pixel inspection.",
+      "Authorizing derivative images without image QA.",
+      "Animation frames, rigging, or expression variants."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:prep-officer",
+      "project:adventures-of-patch",
+      "team:mission-control",
+      "role:reference-sheet",
+      "state:accepted-source-reference"
+    ]
+  }
+}

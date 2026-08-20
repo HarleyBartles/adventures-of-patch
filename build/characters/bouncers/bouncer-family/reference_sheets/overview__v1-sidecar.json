@@ -1,0 +1,126 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bouncer Family",
+  "sidecar_purpose": "Adjacent sidecar for the canonical Bouncer Family overview reference sheet. Captures the approved group roster, shared uniform, individual role labels, and reuse constraints for the Club DB queue-deck bouncer family.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual for the Bouncer Family lineup; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or placing a bouncer in a scene, composing group shots, or checking the family roster against downstream assets and prompts.",
+  "do_not_infer_note": "Do not infer additional bouncers, costumes, or backstory beyond what is shown on the approved overview reference sheet. Use the individual bouncer reference sheets for exact costumes, props, and poses.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/overview__v1.png",
+    "relative_image_path": "overview__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/overview__v1-sidecar.json",
+    "relative_sidecar_path": "overview__v1-sidecar.json",
+    "image_filename": "overview__v1.png",
+    "sha256": "247a53824e017a29fda07990bdb9afea446133ce369c0481d72cc05566a57a46",
+    "byte_size": 1630727,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1491,
+      "height": 1055
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Overview reference sheet for the Bouncer Family at Club DB. The sheet is titled 'CLUB DB BOUNCER ASSETS' and shows a numbered grid of the eight role bouncers — Route, Payload, Wristband, Recovery, Chaperone, Peacekeeper, Stamp, and Door — each in the shared black Club DB security uniform with role-specific lanyard badges and props.",
+  "observed_visual_facts": {
+    "title_or_header": [
+      "Header text reads 'CLUB DB BOUNCER ASSETS'."
+    ],
+    "composition": [
+      "Landscape overview sheet with a grid layout showing eight numbered and labeled character illustrations.",
+      "Each bouncer occupies a distinct panel or cell with a visible role label.",
+      "The layout is arranged for quick roster identification and visual consistency checks."
+    ],
+    "characters": [
+      "Route Bouncer",
+      "Payload Bouncer",
+      "Wristband Bouncer",
+      "Recovery Bouncer",
+      "Chaperone Bouncer",
+      "Peacekeeper Bouncer",
+      "Stamp Bouncer",
+      "Door Bouncer"
+    ],
+    "costume": [
+      "Black short-sleeve Club DB security polo shirts with a chest logo or patch.",
+      "Black trousers and black work shoes.",
+      "Utility belts or lanyards carrying ID badges.",
+      "Some members wear black baseball caps, sunglasses, or other shared uniform accents."
+    ],
+    "signature_props": [
+      "Role-specific lanyard badges and ID cards for each bouncer.",
+      "Route signage, clipboards, wristbands, stamps, payload boxes, and recovery-plan checklists.",
+      "Walkie-talkies, door-list sheets, and other duty-specific accessories."
+    ],
+    "poses_or_expressions": [
+      "Most figures stand in a neutral-to-official, confident front-facing or three-quarter pose.",
+      "Facial expressions are focused, friendly-but-professional, and consistent across the family.",
+      "Each character is shown in a static, reference-ready stance rather than an action pose."
+    ],
+    "colors": [
+      "Predominant black and white in the shared Club DB security uniform.",
+      "Accent colors in role-specific props, badges, and small accessories.",
+      "Clean, neutral background with minimal shading to keep focus on the characters."
+    ],
+    "style": [
+      "Cartoonish, stylized editorial character art.",
+      "Flat design with minimal shading and bold outlines.",
+      "Consistent proportions and simplified features across all eight figures."
+    ],
+    "guidance_notes": [
+      "Each character is numbered and labeled; retain these labels in downstream use.",
+      "Maintain the shared Club DB uniform across all family members.",
+      "Preserve role-specific props and color accents for each bouncer.",
+      "Use the individual bouncer reference sheets for detailed costumes and poses."
+    ]
+  },
+  "positive_constraints": [
+    "Keep the eight-role roster in the order and labeling shown on the sheet.",
+    "Preserve the shared black Club DB security uniform (polo, trousers, shoes, chest logo) for every family member.",
+    "Retain each bouncer's role-specific lanyard badge and signature prop.",
+    "Use this image as the canonical group reference for the Bouncer Family.",
+    "Maintain the flat, cartoonish editorial style and minimal shading across the family."
+  ],
+  "negative_constraints": [
+    "Do not add, remove, or rename bouncer family members.",
+    "Do not change the order or labels of the eight characters.",
+    "Do not alter the shared black Club DB uniform to casual or different colors.",
+    "Do not replace role-specific props with unrelated items.",
+    "Do not infer additional backstory or narrative beyond the visual reference."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical group reference for the Bouncer Family.",
+      "Selecting a specific role bouncer for a scene.",
+      "Checking shared costume and style consistency across the family.",
+      "Planning downstream asset sheets or group shots."
+    ],
+    "not_sufficient_for": [
+      "Detailed turnaround or rigging for any individual bouncer.",
+      "Pose variations not shown on the overview.",
+      "Exact color values for each role; inspect the individual reference sheets and image pixels.",
+      "Detailed narrative or dialogue beyond the visual reference."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bouncer-family",
+      "role:overview",
+      "asset:reference-sheet"
+    ]
+  }
+}

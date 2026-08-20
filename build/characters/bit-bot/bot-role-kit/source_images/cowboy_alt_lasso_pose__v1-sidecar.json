@@ -1,0 +1,85 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Document the canonical source image for the Bit/Bot cowboy alternate lasso pose in the bot role kit.",
+  "source_truth_note": "The image pixels and filename are the source of truth; descriptive text is derived from visual inspection.",
+  "runtime_use_note": "Suitable as a style reference, prompt anchor, and asset catalog entry for the cowboy role.",
+  "do_not_infer_note": "Do not infer canonical backstory, environment, or motion beyond the visible frame; exact provenance is unknown.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/cowboy_alt_lasso_pose__v1.png",
+    "relative_image_path": "cowboy_alt_lasso_pose__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/cowboy_alt_lasso_pose__v1-sidecar.json",
+    "relative_sidecar_path": "cowboy_alt_lasso_pose__v1-sidecar.json",
+    "image_filename": "cowboy_alt_lasso_pose__v1.png",
+    "sha256": "24b0370a31ad010bf4672208ec91075149b1c0872ba54dad7ba93ec765d1ef27",
+    "byte_size": 2535445,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "pixel-inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Alternate source image of Bit/Bot in the cowboy role, posed mid-action with a lasso, wearing a cowboy hat, neckerchief, and western boots against a plain white background.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single full-figure alternate pose against a plain white background.",
+      "One bit-bot character is centered, captured mid-motion as if swinging a lasso.",
+      "The pose is dynamic and role-specific, intended as an alternate reference."
+    ],
+    "character_design": [
+      "White rounded robot body with a friendly face and large blue glowing eyes.",
+      "Cowboy hat and matching tan or brown western accessories.",
+      "Neckerchief or bandana at the neck and cowboy-style boots.",
+      "Blue wheel hubs and panel details consistent with the bit-bot base design."
+    ],
+    "props_and_role_markers": [
+      "A coiled or swinging lasso held or looped by the character.",
+      "Cowboy hat and western boots distinguish the role.",
+      "Brown and tan color accents on the hat, belt, and accessories."
+    ]
+  },
+  "positive_constraints": [
+    "Use this image as the canonical cowboy alternate lasso reference for Bit/Bot.",
+    "Preserve the western hat, lasso, and brown or tan color scheme.",
+    "Keep the dynamic lasso pose and plain white background for source-image use."
+  ],
+  "negative_constraints": [
+    "Do not change the robot's core body shape, wheel base, or face style.",
+    "Do not use this single source image as final art acceptance without image QA.",
+    "Do not introduce additional story, environment, or characters not shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prompting new cowboy-themed alternate poses of Bit/Bot.",
+      "Style reference for the bot role kit cowboy lasso pose.",
+      "Asset catalog and role kit indexing."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative art without image QA.",
+      "Detailed lasso motion or environment canon beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:cowboy",
+      "role:alternate",
+      "pose:lasso",
+      "asset:source-image"
+    ]
+  }
+}

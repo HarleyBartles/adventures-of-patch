@@ -1,0 +1,116 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit and Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Bit and Bot hero source image in the bit-and-bot asset pack. Supports hero selection, visual continuity, prompt constraint extraction, and QA for the bit-bot robot duo.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for textual hero selection, continuity checks, and prompt planning. Inspect the image pixels directly when exact composition, expression, prop placement, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional expressions, extra props, story state, or acceptance of derivative images beyond the observed hero pose and stated intended use.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/source_images/hero__v1.png",
+    "relative_image_path": "hero__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/source_images/hero__v1-sidecar.json",
+    "relative_sidecar_path": "hero__v1-sidecar.json",
+    "image_filename": "hero__v1.png",
+    "sha256": "721132445eae8ca4c1097ced7b03c38f785221cc014d5177989973b9be10d870",
+    "byte_size": 1984181,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source_image",
+    "acceptance_state": "pending_review",
+    "inspection_mode": "visual_inspection",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Bit and Bot hero source image: an isolated full-body hero pose of the red-and-blue wheeled robot duo on a clean white or very light background. Bit, the smaller red-coded robot, appears alongside Bot, the taller blue-coded robot, in a friendly paired composition. Both retain the bit-bot visual canon: rounded white shells, glossy black face screens, colored digital marks, and two-wheel lower bodies. The image serves as the canonical hero source for the bit-and-bot duo, pending pixel-level review.",
+  "observed_visual_facts": {
+    "composition": [
+      "Portrait-oriented source render of Bit and Bot centered in the frame, isolated on a clean white or very light background with ample padding.",
+      "Two-figure hero composition showing the paired red-coded and blue-coded robots.",
+      "Full-body or near-full-body framing suitable as a canonical duo reference.",
+      "No detailed environment or scene background; the characters are the sole subjects."
+    ],
+    "character": [
+      "Bit is the smaller, faster red-coded wheeled robot of the bit-and-bot duo.",
+      "Bot is the taller, steadier blue-coded wheeled robot of the bit-and-bot duo.",
+      "Both have rounded white body shells with black internal mechanical structure.",
+      "Glossy black face screens with colored digital marks for eyes and mouth.",
+      "Bit's accent color is red; Bot's accent color is blue.",
+      "Single antenna on each robot, with Bit's tip in red and Bot's in blue.",
+      "Rounded, friendly toy-like proportions and approachable expressions."
+    ],
+    "costume_and_form": [
+      "Two-wheel lower body for each robot, forming the bit-bot mobile base.",
+      "Red circular joints at ears, shoulders, wrists, torso plate, and wheel hubs on Bit.",
+      "Blue circular joints and trim corresponding to Bot's color code.",
+      "Race bibs may be present on one or both robots; exact bib text should be verified against pixels."
+    ],
+    "colors": [
+      "Dominant white shell for both robots.",
+      "Black mechanical structure and glossy face screens.",
+      "Red accent system for Bit.",
+      "Blue accent system for Bot.",
+      "Isolated white or near-white background with soft pale grey ground shadow."
+    ],
+    "style": [
+      "Clean editorial illustration with rounded linework.",
+      "Light painterly shading.",
+      "Soft pale grey ground shadow.",
+      "Simplified vector-adjacent finish."
+    ],
+    "role_cues": [
+      "The paired red-coded and blue-coded wheeled robots identify the characters as Bit and Bot.",
+      "The two-wheel base and rounded robot shells distinguish the bit-bot duo from humanoid or drone designs.",
+      "The clean, isolated, full-figure presentation marks the image as a source hero asset."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Bit as the smaller red-coded wheeled robot and Bot as the taller blue-coded wheeled robot.",
+    "Keep both robots' rounded white shells, black mechanical structure, and glossy black face screens.",
+    "Maintain the red accent system for Bit and the blue accent system for Bot.",
+    "Preserve the two-wheel lower body and toy-like proportions for both characters.",
+    "Keep the isolated white background and soft pale grey ground shadow where present.",
+    "Use this image as the canonical hero source for bit-and-bot duo continuity and prompt variation."
+  ],
+  "negative_constraints": [
+    "Do not swap the color codes: Bit must stay red and Bot must stay blue.",
+    "Do not redesign either robot as a sleek drone, humanoid android, or menacing machine.",
+    "Do not remove the wheels or change the two-wheel lower body on either character.",
+    "Do not add busy backgrounds, non-bit-bot accessories, or extra props not in the image.",
+    "Do not infer additional expressions, poses, or final acceptance beyond the observed hero view."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting the canonical Bit and Bot hero pose for scene assembly in the bit-bot set.",
+      "Hero continuity and prompt variation for bit-and-bot duo compositions.",
+      "Reference for Bit and Bot's color system, silhouette, and paired presentation.",
+      "QA that generated bit-and-bot art remains on-model and on-palette."
+    ],
+    "not_sufficient_for": [
+      "Final character turnaround or full expression reference for either robot.",
+      "Final asset acceptance without pixel-level QA against the source image.",
+      "Authorizing derivative images or unobserved alternate poses.",
+      "Detailed prop or environment canon beyond the visible hero frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bit-bot",
+      "role:hero",
+      "asset:source-image"
+    ]
+  }
+}

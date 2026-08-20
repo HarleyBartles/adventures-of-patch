@@ -1,0 +1,84 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Document the canonical source image for the Bit/Bot mechanic hero pose in the bot role kit.",
+  "source_truth_note": "The image pixels and filename are the source of truth; descriptive text is derived from visual inspection.",
+  "runtime_use_note": "Suitable as a style reference, prompt anchor, and asset catalog entry for the mechanic role.",
+  "do_not_infer_note": "Do not infer canonical backstory, environment, or motion beyond the visible frame; exact provenance is unknown.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/mechanic_hero__v1.png",
+    "relative_image_path": "mechanic_hero__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/mechanic_hero__v1-sidecar.json",
+    "relative_sidecar_path": "mechanic_hero__v1-sidecar.json",
+    "image_filename": "mechanic_hero__v1.png",
+    "sha256": "5ce2266862c7d53da8c9681081156bbc370e85b2bd830e7f998fcde62011f77e",
+    "byte_size": 2537258,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "pixel-inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Hero source image of Bit/Bot in the mechanic role, posed with a hammer and wearing a blue and white work uniform, cap, and tool pocket.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single full-figure hero pose against a plain white background.",
+      "Bot is centered, facing the viewer with a slight three-quarter turn.",
+      "One hand holds a hammer; the other rests on a tool pocket."
+    ],
+    "character_design": [
+      "White and blue rounded robot head with large blue glowing eyes and a friendly smile.",
+      "White work cap with a dark patch showing a wrench icon.",
+      "Dark blue mechanic jacket with rolled sleeves, white gloves, and a 'BOT' chest nameplate.",
+      "White panel torso with a blue belt and matching blue wheel hubs."
+    ],
+    "props_and_role_markers": [
+      "Wooden-handled hammer held upright in the right hand.",
+      "Pocket on the jacket holds a screwdriver and a wrench.",
+      "Wrench icon patch repeated on the cap and jacket pocket."
+    ]
+  },
+  "positive_constraints": [
+    "Use this image as the canonical mechanic hero reference for Bit/Bot.",
+    "Preserve the blue and white color scheme, wrench iconography, and tool props.",
+    "Keep the friendly, confident pose and neutral white background for source-image use."
+  ],
+  "negative_constraints": [
+    "Do not change the robot's core body shape, wheel base, or face style.",
+    "Do not use this single source image as final art acceptance without image QA.",
+    "Do not introduce additional story, environment, or characters not shown."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Prompting new mechanic-themed images of Bit/Bot.",
+      "Style reference for the bot role kit mechanic hero.",
+      "Asset catalog and role kit indexing."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative art without image QA.",
+      "Detailed tool or environment canon beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:mechanic",
+      "role:hero",
+      "asset:source-image"
+    ]
+  }
+}

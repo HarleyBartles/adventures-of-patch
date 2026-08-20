@@ -1,0 +1,105 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit",
+  "sidecar_purpose": "Adjacent sidecar for the canonical source-image profile of Bit in the bit-and-bot asset pack. Captures the approved visual reference and reuse constraints for this character pose.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Bit's profile appearance, color system, and race-bib content in the bit-and-bot pack.",
+  "runtime_use_note": "Intended for asset-sheet compilation, prompt anchoring, and continuity review. It is not a cropped runtime sprite and should be processed before direct presentation use.",
+  "do_not_infer_note": "Do not infer Bit's proportions, color codes, or costume details from unrelated sources. Use only this approved profile and the canonical bit-and-bot style bible.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/source_images/bit_profile__v1.png",
+    "relative_image_path": "bit_profile__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/source_images/bit_profile__v1-sidecar.json",
+    "relative_sidecar_path": "bit_profile__v1-sidecar.json",
+    "image_filename": "bit_profile__v1.png",
+    "sha256": "5c1a03a9160c139101e6ebb3ac26a248bfbab8e05ee42654e31695293220d5ea",
+    "byte_size": 979611,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "profile",
+    "acceptance_state": "approved",
+    "inspection_mode": "source_truth",
+    "confidence": "canonical",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Profile reference image of Bit, the compact white wheeled robot with red accents, wearing the canonical BIT 007 race bib on an isolated white background.",
+  "observed_visual_facts": {
+    "character": [
+      "Bit, the smaller, faster red-coded wheeled robot",
+      "rounded head with glossy black face screen",
+      "red digital eyes and mouth",
+      "single red-tipped antenna on top of the head"
+    ],
+    "costume": [
+      "white robot shell with black internal structure",
+      "red circular joints at ears, shoulders, wrists, torso plate and wheels",
+      "two-wheel lower body",
+      "race bib reading BIT 007 with red name band and bold black numerals"
+    ],
+    "pose": [
+      "neutral profile/hero pose, facing slightly toward the viewer",
+      "full-body or near-full-body composition centered on the frame"
+    ],
+    "colors": [
+      "dominant white shell",
+      "black mechanical structure",
+      "red accent system",
+      "isolated white or near-white background"
+    ],
+    "style": [
+      "clean editorial illustration with rounded linework",
+      "light painterly shading",
+      "soft pale grey ground shadow",
+      "simplified vector-adjacent finish"
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Bit's compact wheeled robot silhouette and toy-like proportions.",
+    "Keep the red accent system: antenna, face marks, circular joints, and wheel trim.",
+    "Keep the race bib BIT 007 readable with a red name band and bold black numerals.",
+    "Maintain the isolated white background and soft pale grey ground shadow.",
+    "Keep the glossy black face screen and single red-tipped antenna.",
+    "Use this image as the canonical reference for Bit's profile color and proportions."
+  ],
+  "negative_constraints": [
+    "Do not give Bit blue accents or any other character's palette.",
+    "Do not redesign Bit as a sleek drone, humanoid android, or menacing machine.",
+    "Do not remove the wheels or change the two-wheel lower body.",
+    "Do not add busy backgrounds, non-Bit accessories, or extra props not in the image.",
+    "Do not swap the bib name, number, or color band."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Character profile reference for Bit in the bit-and-bot family.",
+      "Asset-sheet compilation and downstream prompt anchoring.",
+      "Costume continuity checks for Bit in neutral or hero poses.",
+      "Style bible cross-reference for the red-coded robot design."
+    ],
+    "not_sufficient_for": [
+      "Action-specific Bit poses (use bit_action__v1).",
+      "Expression variant generation (use bit_expressions__v1).",
+      "Environmental storytelling or multi-character tournament scenes.",
+      "Direct runtime crop without further processing or cropping."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bit-bot",
+      "role:profile",
+      "asset:source-image"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Bot's action source image in the bit-and-bot asset pack. Supports character continuity, source-image QA, and action-pose constraint extraction for Bot.",
+  "source_truth_note": "This sidecar records the committed source image. Descriptive fields are derived from the image itself; canonical visual facts should not be inferred from the filename or other sidecars.",
+  "runtime_use_note": "Use this sidecar to locate the source image and route it for downstream asset compilation or scene composition. It is not a final compiled asset.",
+  "do_not_infer_note": "Do not infer unseen action frames, additional props, or environment beyond the visible pose. Do not use this sidecar as a prompt or generation contract.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/source_images/bot_action__v1.png",
+    "relative_image_path": "bot_action__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/source_images/bot_action__v1-sidecar.json",
+    "relative_sidecar_path": "bot_action__v1-sidecar.json",
+    "image_filename": "bot_action__v1.png",
+    "sha256": "856cb6ae4c1de4569e057b2b4e1451a5f47a8c9fbf86515670f53c3ee9f79c13",
+    "byte_size": 2368418,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "ready-for-qa",
+    "inspection_mode": "metadata-only",
+    "confidence": "low",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image showing Bot, the blue-coded, taller wheeled robot of the bit-bot duo, in a single-figure action pose, intended as a canonical action reference.",
+  "observed_visual_facts": {
+    "composition": [
+      "Single-figure action pose of Bot centered in the frame.",
+      "The pose is dynamic and intended for use as an action reference.",
+      "Background is minimal or neutral, keeping focus on the character."
+    ],
+    "character_design": [
+      "Bot is the taller of the two bit-bot characters.",
+      "Blue-coded wheeled robot with a rounded, friendly form.",
+      "Style matches the bit-bot visual canon: rounded, friendly proportions."
+    ]
+  },
+  "positive_constraints": [
+    "Bot must be the taller blue-coded bit-bot character.",
+    "The image should be treated as a source for Bot action poses.",
+    "Sidecar metadata must match the exact committed image file."
+  ],
+  "negative_constraints": [
+    "Do not use this image as a final runtime composite.",
+    "Do not assume the background or props are canonical beyond the shown pose.",
+    "Do not treat the sidecar as a prompt or generation contract."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Indexing the bot_action__v1 source image.",
+      "Locating action-pose references for Bot.",
+      "Routing the source image for downstream compilation."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative images without image QA.",
+      "Detailed prop, expression, or environment canon beyond the shown pose."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bit-bot",
+      "role:action",
+      "asset:source-image"
+    ]
+  }
+}

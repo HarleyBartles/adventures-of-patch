@@ -1,0 +1,140 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Other Agents",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Other Agents character contact sheet v1.0. Supports non-Patch bot continuity, prompt constraint extraction, character-class QA, and worker onboarding for other agents across missions, environments, and asset packages.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the observed contact sheet.",
+  "runtime_use_note": "Use this sidecar for other-agent selection, continuity, and prompt planning. Inspect the image pixels directly when exact color values, small labels, or fine icon details matter.",
+  "do_not_infer_note": "Do not infer unseen agent variants, additional role kits, full canonical names, or acceptance of derivatives beyond the six example types and the guidance shown.",
+  "image": {
+    "repo_image_path": "build/characters/other-agents/reference_sheets/overview__v1.png",
+    "relative_image_path": "overview__v1.png",
+    "repo_sidecar_path": "build/characters/other-agents/reference_sheets/overview__v1-sidecar.json",
+    "relative_sidecar_path": "overview__v1-sidecar.json",
+    "image_filename": "overview__v1.png",
+    "sha256": "1c493ca74f98000a349760d40271befaad2d8fd510bead44a5d1262f82124e91",
+    "byte_size": 2045499,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "mode": "RGB",
+    "asset_role": "TBD",
+    "acceptance_state": "TBD",
+    "inspection_mode": "TBD",
+    "confidence": "TBD",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Other Agents character contact sheet v1.0 for Adventures of Patch. The sheet frames non-Patch, agent-shaped bots with a top banner, purpose statement, core rules, six role-based design-pattern columns (Nav-Bot, Data-Bot, Comm-Bot, Ops-Bot, Sec-Bot, Log-Bot), expression and pose examples, a patterns/anti-patterns panel, an environment-fit scene, an interaction guide, and footer notes. It is intended as a positive style and role reference for other agents while keeping them clearly robotic and visually distinct from Patch.",
+  "observed_visual_facts": {
+    "composition": [
+      "Landscape contact sheet with a dark navy top banner reading 'ADVENTURES OF PATCH | OTHER AGENTS - CHARACTER CONTACT SHEET v1.0'.",
+      "Top-left purpose statement explains that Other Agents are non-Patch, agent-shaped bots that are clearly robotic, not organic, not Patch-shaped, and not wearing hoodies or teal.",
+      "Top core rules: clearly robotic and agent-shaped, no hoodies or teal bodies, distinct silhouettes and color accents, screen faces or simple graphic eyes, friendly/capable/purpose-driven.",
+      "Central design-patterns grid with six role columns, each showing a main bot, alternate variant, accent-color swatches, and key-shape swatches.",
+      "Lower-left expression strip with seven screen-face labels: Neutral, Happy, Thinking, Surprised, Concerned, Excited, Acknowledging.",
+      "Lower-left pose strip with seven body-language labels: Neutral/Idle, Explaining, Thinking, Pointing/Directing, Working/Focused, Confirming, Helping/Offering.",
+      "Right-hand patterns/anti-patterns panel: green 'PATTERNS - DO THIS' row and red 'ANTI-PATTERNS - DON'T DO THIS' row.",
+      "Bottom-right environment-fit scene showing several other agents in a mission control room.",
+      "Bottom banner reads 'OTHER AGENTS ARE NOT PATCH. THEY ARE CLEARLY BOTS.' with version 'v1.0' and date '2025-05-13'."
+    ],
+    "design_patterns": [
+      "NAV-BOT (Navigator/Planner): blue compass/wayfinding accents, rounded body, main bot and shorter side variants, circular and pill key shapes.",
+      "DATA-BOT (Analyst/Researcher): purple chart/graph accents, main bot with data-display chest, side variants, rounded and square key shapes.",
+      "COMM-BOT (Communications/Liaison): green radio/signal accents, main bot with broadcast-style head, side variants, rounded and square key shapes.",
+      "OPS-BOT (Operations/Executor): orange wrench/tool accents, main bot with tool chest, side variants, pill and rectangular key shapes.",
+      "SEC-BOT (Security/Gatekeeper): red shield accents, main bot with badge-shaped chest, side variants, shield and rounded key shapes.",
+      "LOG-BOT (Recorder/Archivist): yellow/gold document/folder accents, main bot with log-book chest, side variants, circular and square key shapes."
+    ],
+    "expressions": [
+      "Seven screen-face icons in a horizontal strip: Neutral, Happy, Thinking, Surprised, Concerned, Excited, Acknowledging."
+    ],
+    "poses": [
+      "Seven body-language examples in a horizontal strip: Neutral/Idle, Explaining, Thinking, Pointing/Directing, Working/Focused, Confirming, Helping/Offering."
+    ],
+    "patterns_do_this": [
+      "Clearly robotic materials and forms.",
+      "Use role icons to signal function.",
+      "Use simple, readable screen-face expressions.",
+      "Maintain distinct silhouettes and accent colors.",
+      "Fit naturally into the environment."
+    ],
+    "anti_patterns": [
+      "Do not make other agents look like Patch: no hoodies, no teal bodies.",
+      "Do not make other agents human or organic.",
+      "Avoid human-like body proportions.",
+      "Do not make designs generic or indistinct.",
+      "Avoid over-cluttered accessories.",
+      "Avoid threatening or aggressive design language.",
+      "Avoid unclear role or iconography.",
+      "Avoid poor contrast for screens or icons.",
+      "Avoid inconsistent style mixing across agents."
+    ],
+    "environment_fit": [
+      "Illustrated mission control room with multiple other agents at consoles and screens.",
+      "Shows other agents working as peers and specialists in a Patch-world setting."
+    ],
+    "interaction_guide": [
+      "Work with Patch as peers or specialists.",
+      "Communicate with clarity and respect.",
+      "Show intent through gestures and face.",
+      "Celebrate wins, learn from setbacks.",
+      "Always agent-shaped, clearly robotic."
+    ],
+    "notes": [
+      "Create new agent types when a story needs an unrepresented capability.",
+      "Keep designs modular to scale across decks and environments.",
+      "Favor readability at thumbnail and full-screen sizes.",
+      "Maintain visual consistency with the Adventures of Patch style: clean lines, bold shapes, friendly energy."
+    ]
+  },
+  "positive_constraints": [
+    "Other agents must be clearly robotic and agent-shaped, not human-shaped or organic.",
+    "No hoodies, no teal Patch-identity bodies, and no Patch crossbody bag or '>' symbol.",
+    "Assign distinct silhouettes and color accents to support role clarity: nav blue, data purple, comm green, ops orange, sec red, log yellow/gold.",
+    "Use screen faces or simple graphic eyes; keep expressions readable.",
+    "Give each agent a role icon or functional detail that signals its job.",
+    "Keep other agents friendly, capable, and purpose-driven.",
+    "Place other agents naturally in mission control rooms, labs, workshops, and field bases.",
+    "Maintain the Adventures of Patch clean editorial style: thick rounded outlines, simplified shapes, soft controlled shading, and uncluttered composition."
+  ],
+  "negative_constraints": [
+    "Do not make other agents human, organic, photoreal, or human-proportioned.",
+    "Do not give other agents Patch's teal hoodie, hood antennae, off-white face panel, crossbody bag, or full silhouette.",
+    "Do not let other agents use the '>' symbol or teal as the main body color.",
+    "Do not create Patch clones, Patch-shaped sidekicks, or other agents that could be mistaken for Patch.",
+    "Do not make other agents generic, indistinct, threatening, aggressive, or over-cluttered.",
+    "Do not use poor icon/screen contrast or unclear role signage.",
+    "Do not mix rendering styles, photoreal finishes, anime, glossy 3D, or plush textures with other agents.",
+    "Do not treat this contact sheet as authorization to create new canonical agent classes without further review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Other-agent character reference and continuity checks.",
+      "Prompt constraints for generating new non-Patch bot source images.",
+      "QA of other-agent designs against role, silhouette, and Patch-distinction rules.",
+      "Worker onboarding for the other-agents character class."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of newly generated other-agent images without image QA.",
+      "Exact color values or hex codes; inspect the image pixels or use a palette reference.",
+      "Authorizing derivative agent classes or role kits beyond the six examples shown."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:other-agents",
+      "asset:reference-sheet"
+    ]
+  }
+}

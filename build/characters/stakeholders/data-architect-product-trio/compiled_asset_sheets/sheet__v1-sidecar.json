@@ -1,0 +1,101 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Data-Architect-Product Trio",
+  "sidecar_purpose": "Describes the visual canon and usage boundaries for the QA-accepted v1 compiled asset sheet of the Data-Architect-Product Trio stakeholder group.",
+  "source_truth_note": "TBD",
+  "runtime_use_note": "TBD",
+  "do_not_infer_note": "Do not infer personality traits, dialogue, backstory, or narrative context not shown. Do not infer exact RGB color values, animation frames, scale beyond the depicted relative sizes, or Patch identity. Do not use this sheet to conclude that these are the only valid poses, props, or expressions for the trio.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/compiled_asset_sheets/sheet__v1.png",
+    "relative_image_path": "sheet__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/compiled_asset_sheets/sheet__v1-sidecar.json",
+    "relative_sidecar_path": "sheet__v1-sidecar.json",
+    "image_filename": "sheet__v1.png",
+    "sha256": "4630c6af3f68b8d24ee931a7c3a09cdd335babbc943d632b65a887219848b733",
+    "byte_size": 517978,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "TBD",
+    "acceptance_state": "TBD",
+    "inspection_mode": "TBD",
+    "confidence": "TBD",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "QA-accepted v1 compiled asset sheet for the Data-Architect-Product Trio. The sheet uses the Adventures of Patch asset sheet template v4 with a 3-hero top row and a 6-panel alternate-view rail showing hero alternates and prop detail sets for each stakeholder.",
+  "observed_visual_facts": {
+    "document_header": [
+      "Title: STAKEHOLDER TRIO",
+      "Type: DATA / ARCHITECTURE / PRODUCT",
+      "Status: QA-ACCEPTED SOURCE SET",
+      "Version: v1",
+      "Source / QA: 9 APPROVED PNGS / PIL COMPILE"
+    ],
+    "hero_image": [
+      "Left: Data Analyst, a woman with dark hair in a bun, glasses, cream cardigan over white shirt, brown trousers, and light sneakers. She holds a clipboard with funnel and chart graphics, plus a small paper packet, and wears a lanyard badge.",
+      "Center: Software/Data Architect, a man with dark wavy hair and beard, glasses, olive jacket over white shirt, dark jeans, and brown shoes. He holds a tablet showing an architecture/cloud diagram and a rolled blueprint, and wears a lanyard badge.",
+      "Right: Product Manager, a man with dark hair, glasses, light blue shirt and dark tie, dark trousers, and brown shoes. He gestures with one hand while holding a tablet with colored cards, and wears a lanyard badge.",
+      "All three are rendered in a clean, friendly, professional vector illustration style on a white background."
+    ],
+    "alternate_views": [
+      "Data Analyst hero alternate: full-body three-quarter pose holding the clipboard.",
+      "Data Analyst prop set: clipboard with funnel/chart, printed bar and donut charts, purple lanyard badge, and pen.",
+      "Software/Data Architect hero alternate: full-body gesturing pose holding the tablet.",
+      "Software/Data Architect prop set: rolled blueprint, tablet with architecture/cloud diagram, dark lanyard badge, and pen.",
+      "Product Manager hero alternate: full-body pose holding the tablet with both hands.",
+      "Product Manager prop set: tablet with colored cards, spiral notebook, sticky notes, lanyard badge, pen, and small document packet."
+    ],
+    "layout_footer": [
+      "Adventures of Patch asset sheet template v4",
+      "3 hero / 6 alternate layout",
+      "clean slot labels"
+    ]
+  },
+  "positive_constraints": [
+    "The trio consists of a Data Analyst, a Software/Data Architect, and a Product Manager.",
+    "All three wear office-casual professional clothing and a lanyard badge.",
+    "Each character has role-specific props: clipboard/charts for the Data Analyst, tablet with architecture diagram and blueprint for the Architect, and tablet with colored cards for the Product Manager.",
+    "Use the hero images and alternate views as canonical references for poses and props.",
+    "Maintain the clean, white-background, vector-style presentation of the asset sheet.",
+    "Do not portray any of the trio as Patch or give them Patch-specific clothing or accessories."
+  ],
+  "negative_constraints": [
+    "Do not depict the characters as robots, animals, or non-human forms.",
+    "Do not add a hoodie, bag, Patch face panel, or Patch silhouette to any character.",
+    "Do not swap role-specific props between characters or remove their professional attire.",
+    "Do not change the relative proportions, heights, or poses beyond what is shown.",
+    "Do not introduce backgrounds, textures, or lighting beyond the clean white reference style.",
+    "Do not treat this sheet as an exhaustive animation or rig specification."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Identifying the Data-Architect-Product Trio visual canon and role identities.",
+      "Selecting hero poses, alternate views, and role-specific props for the three stakeholders.",
+      "Composing stakeholder scenes and verifying newly generated trio assets.",
+      "Confirming that generated or edited trio art stays non-Patch."
+    ],
+    "not_sufficient_for": [
+      "Deriving animation frames, timing, or bone rigging not shown.",
+      "Determining exact RGB color values or final shader treatment.",
+      "Inferring dialogue, backstory, or personality beyond the visual reference.",
+      "Using directly as a sliced runtime sprite atlas."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character"
+    ]
+  }
+}

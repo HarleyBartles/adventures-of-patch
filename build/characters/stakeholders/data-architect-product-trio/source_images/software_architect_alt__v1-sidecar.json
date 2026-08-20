@@ -1,0 +1,112 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Software Architect",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the Software Architect alternate pose in the data-architect-product-trio stakeholder pack. Supports character selection, visual continuity, prompt constraint extraction, and QA for Issue #56 architecture and systems imagery.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. The repo image bytes and package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection, continuity, and prompt planning. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "build/characters/stakeholders/data-architect-product-trio/source_images/software_architect_alt__v1.png",
+    "relative_image_path": "software_architect_alt__v1.png",
+    "repo_sidecar_path": "build/characters/stakeholders/data-architect-product-trio/source_images/software_architect_alt__v1-sidecar.json",
+    "relative_sidecar_path": "software_architect_alt__v1-sidecar.json",
+    "image_filename": "software_architect_alt__v1.png",
+    "sha256": "b7da7f4bb229a16493f4a9a51b7c8e367da3f36b15f692fc35b0b0bbd5b5e6dc",
+    "byte_size": 1845555,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    },
+    "mode": "RGBA",
+    "asset_role": "source_image",
+    "acceptance_state": "pending_review",
+    "inspection_mode": "visual_inspection",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Software Architect alternate pose source image for the Issue #56 stakeholder pack. The image shows a full-body isolated Software Architect figure on a plain white background, in a relaxed standing or three-quarter view that varies from the hero pose through a different hand gesture or prop arrangement. He is a calm, approachable adult man with dark curly hair and a grey side streak, a neatly trimmed beard, black rectangular glasses, an olive-brown blazer over a cream or white shirt, dark navy trousers, and brown casual shoes. A blue lanyard badge with a hexagonal system icon is visible, and he carries architecture props such as a tablet showing a system diagram, a central module cube, cloud and database icons, dependency arrows, and a rolled blueprint held under one arm. The rendering is the clean vector-adjacent Adventures editorial style with soft painterly shading, warm light, and a technically grounded, helpful expression.",
+  "observed_visual_facts": {
+    "composition": [
+      "Full-body isolated figure on a plain white or very light background.",
+      "Relaxed standing or three-quarter pose, suitable for source-asset reuse.",
+      "Alternate pose of the Software Architect, with a slightly different hand gesture or prop arrangement from the hero.",
+      "Generous white space around the figure to keep it readable and composite-ready."
+    ],
+    "character": [
+      "Adult man with dark curly hair and a grey side streak.",
+      "Neatly trimmed beard.",
+      "Black rectangular glasses.",
+      "Calm, approachable, and technically grounded expression."
+    ],
+    "costume": [
+      "Olive-brown blazer over a cream or white shirt.",
+      "Dark navy trousers.",
+      "Brown casual shoes.",
+      "Blue lanyard and badge with a hexagonal system icon."
+    ],
+    "props": [
+      "Tablet or clipboard showing a system architecture diagram.",
+      "Central cube or module symbol with connected boxes or nodes.",
+      "Cloud icon and database cylinder icon.",
+      "Arrows indicating dependencies or data flow.",
+      "Rolled blueprint held or placed under one arm.",
+      "Dark stylus or technical pen.",
+      "Role-appropriate architecture materials rather than roadmaps or analytics charts."
+    ],
+    "style": [
+      "Clean Adventures editorial, vector-adjacent painterly style.",
+      "Soft painterly shading, rounded linework, and warm lighting.",
+      "Role palette of olive-brown, slate blue, navy, cream, and pale green architecture accents.",
+      "Simplified, readable props without tiny pseudo-text or realistic UI."
+    ],
+    "role_cues": [
+      "The costume and tablet/blueprint props identify the role as Software Architect.",
+      "Olive-brown, navy, and blue diagram accents are consistent with the Software Architect palette.",
+      "The lanyard badge and architecture diagrams distinguish the role from Data Analyst and Product Manager stakeholders."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the Software Architect identity: dark curly hair with grey side streak, trimmed beard, black rectangular glasses, olive-brown blazer, cream or white shirt, dark navy trousers, brown shoes, and blue lanyard badge with hexagon icon.",
+    "Keep the alt pose as a full-body isolated figure on a white background with the same costume and identity as the hero, differing only in hand gesture or prop arrangement.",
+    "Include architecture props such as a tablet system diagram, central module cube, cloud, database, arrows, rolled blueprint, and stylus.",
+    "Maintain the calm, approachable Adventures editorial style and the olive-brown-slate-blue-navy role palette.",
+    "Treat this image as a source for Software Architect alternate-pose reference, not as a final compiled asset, prop sheet, or scene."
+  ],
+  "negative_constraints": [
+    "Do not change the Software Architect's hair, glasses, beard, clothing, or colour palette.",
+    "Do not replace architecture props with product-manager roadmaps or data-analyst analytics props.",
+    "Do not turn the alt pose into a full scene, environment, or group composition.",
+    "Do not infer final acceptance, approved placement, or canon beyond the pending-review state.",
+    "Do not use this sidecar as a prompt or generation contract."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Indexing the software_architect_alt__v1 source image.",
+      "Alternate pose reference for the Software Architect in the stakeholder pack.",
+      "Character continuity and prompt constraints for software-architecture-themed compositions.",
+      "QA that the figure reads as the Software Architect and matches the hero design."
+    ],
+    "not_sufficient_for": [
+      "Final asset acceptance without pixel-level QA against the source image.",
+      "Full Software Architect character turnaround or expression set (use the hero, props, and additional views).",
+      "Authorizing derivative images without direct image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:stakeholder",
+      "role:software-architect",
+      "pose:alternate",
+      "asset:source-image"
+    ]
+  }
+}

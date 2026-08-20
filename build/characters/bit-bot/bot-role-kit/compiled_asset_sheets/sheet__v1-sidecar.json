@@ -1,0 +1,116 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit and Bot",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the approved v1 compiled asset sheet of the Bit and Bot role kit. Supports role continuity, prompt constraint extraction, and asset cataloguing.",
+  "source_truth_note": "This sidecar records the compiled sheet image. The repo image bytes and the package manifest remain authoritative for custody; this sidecar does not authorize derivative images or broaden canon beyond the observed panels.",
+  "runtime_use_note": "Use this sidecar to locate the compiled role-kit reference and route it for character selection, prompt planning, and QA. It is not a sliced runtime sprite atlas.",
+  "do_not_infer_note": "Do not infer unseen panels, extra roles, exact caption text, or color values beyond what is visible. Do not use this sidecar as a prompt or generation contract, and do not treat it as final acceptance of new art.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/compiled_asset_sheets/sheet__v1.png",
+    "relative_image_path": "sheet__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/compiled_asset_sheets/sheet__v1-sidecar.json",
+    "relative_sidecar_path": "sheet__v1-sidecar.json",
+    "image_filename": "sheet__v1.png",
+    "sha256": "b6c676adeee34f37fe98f5a06c460f2cf2fe9459606723b7fa466d306b3b2b09",
+    "byte_size": 649170,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "compiled_role_kit_reference_sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "adventures-of-patch asset-sheet compiler",
+      "model": "asset-sheet template v4",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Exact prompt not retained. The sheet was compiled from the 12 bot-role-kit source PNGs listed in the package manifest using the Adventures of Patch asset-sheet compiler."
+    }
+  },
+  "summary": "Approved v1 compiled asset sheet for the Bit and Bot role kit. The sheet is compiled from the 12 source PNGs (chef, cowboy, detective, mechanic) and presents a four-column by three-row grid: the top row shows a full-figure hero pose for each role, and the two lower rows show alternate poses. A dark green document header and rules, a white background, and dark caption bars beneath each panel give the sheet its reference-sheet structure.",
+  "observed_visual_facts": {
+    "document_header": [
+      "A dark green header bar occupies the top of the sheet.",
+      "The header contains the sheet title and role-kit guidance text in a light color.",
+      "Template status and source information are shown in the header area."
+    ],
+    "layout_grid": [
+      "The sheet is arranged as a four-column by three-row grid of panels.",
+      "Each column corresponds to one role in the bot-role-kit (chef, cowboy, detective, mechanic).",
+      "A white background with dark green vertical and horizontal rules separates the panels."
+    ],
+    "hero_views": [
+      "The top row of each column shows a full-figure hero pose for that role.",
+      "Each hero panel is the largest cell in its column.",
+      "Hero poses are centered and face the viewer with role-specific props or costume elements."
+    ],
+    "alternate_views": [
+      "The middle and bottom rows of each column show alternate poses or actions for the same role.",
+      "Alternate panels are smaller than the hero panels but maintain the same column width.",
+      "The panels depict role-specific actions (e.g., mixing, lassoing, investigating, tooling)."
+    ],
+    "panel_captions_and_rules": [
+      "A dark caption bar appears beneath each panel, separated from the image by a thin rule.",
+      "Dark green vertical rules divide the four columns.",
+      "Dark green horizontal rules separate the header, rows, and the footer."
+    ],
+    "character_design": [
+      "Bit and Bot are white-bodied, rounded support robots with wheeled bases and simple faces.",
+      "Neither character wears a teal hoodie, crossbody bag, Patch face panel, or Patch silhouette.",
+      "Role-specific costume pieces and props distinguish the panels without changing the base bot shape."
+    ],
+    "color_and_style": [
+      "White and off-white dominate the background and margins.",
+      "Dark green rules and dark caption bars provide the template structure.",
+      "Role accents include blue, green, brown, and tan from hats, tools, and accessories.",
+      "The art style is clean, vector-like, and Patch-compatible while remaining non-Patch."
+    ]
+  },
+  "positive_constraints": [
+    "Bit and Bot are a support-bot duo used in Patch Mission Control scenes and role-kit scenarios.",
+    "Preserve the four role columns in order: chef, cowboy, detective, and mechanic.",
+    "Preserve the three-row layout: one hero pose on top and two alternate poses below for each role.",
+    "Keep Bit and Bot clearly non-Patch: no hoodie, bag, Patch face panel, or Patch silhouette.",
+    "Use the hero and alternate panels as canonical references for role-specific poses and props.",
+    "Preserve the white background, dark green template rules, and dark caption bars.",
+    "Respect role-specific costume and prop identity (chef, cowboy, detective, mechanic)."
+  ],
+  "negative_constraints": [
+    "Do not depict Bit or Bot as human, organic, or wearing Patch-style clothing.",
+    "Do not add a Patch face panel, Patch bag, or Patch silhouette to either character.",
+    "Do not swap, remove, or rename the four role columns.",
+    "Do not infer exact caption wording beyond what is legible in the image.",
+    "Do not introduce backgrounds, textures, or lighting beyond the clean white reference style.",
+    "Do not treat this compiled sheet as a sliced runtime sprite atlas or animation specification."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting hero and alternate poses for Bit and Bot in each role-kit role.",
+      "Prompt constraints for new Bit and Bot role-kit images.",
+      "QA of role-specific costume and prop identity.",
+      "Composing Mission Control or role-kit scenes with Bit and Bot."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of derivative art without image QA.",
+      "Exact RGB color values or final shader treatment.",
+      "Animation frames, timing, or bone rigging not shown.",
+      "Using directly as a sliced runtime sprite atlas."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character:bit-bot",
+      "asset:compiled-sheet",
+      "role-kit:bot",
+      "project:adventures-of-patch",
+      "status:approved"
+    ]
+  }
+}

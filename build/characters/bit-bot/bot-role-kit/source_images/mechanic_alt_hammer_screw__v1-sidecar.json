@@ -1,0 +1,82 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit/Bot",
+  "sidecar_purpose": "Sidecar for the adjacent source PNG of Bit/Bot in the mechanic alt, hammer and screw variant, used as canon reference for downstream assets.",
+  "source_truth_note": "The adjacent PNG pixels are the source of truth for this character, role, and variant. This sidecar must not contradict the image.",
+  "runtime_use_note": "Use during canon review, asset generation, and prompt construction for Bit/Bot mechanic alt content.",
+  "do_not_infer_note": "Do not infer colors, materials, body proportions, or poses not visible in the image; do not apply this reference to other characters or variants.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bot-role-kit/source_images/mechanic_alt_hammer_screw__v1.png",
+    "relative_image_path": "mechanic_alt_hammer_screw__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bot-role-kit/source_images/mechanic_alt_hammer_screw__v1-sidecar.json",
+    "relative_sidecar_path": "mechanic_alt_hammer_screw__v1-sidecar.json",
+    "image_filename": "mechanic_alt_hammer_screw__v1.png",
+    "sha256": "a93fb6939eba1703e269220d0101e7ee6d83855d6a736ae9e16ae479783df25d",
+    "byte_size": 2103616,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "asset_role": "source_image",
+    "acceptance_state": "candidate",
+    "inspection_mode": "manual",
+    "confidence": "medium",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Bit/Bot mechanic alt source image holding a hammer and a screw, version 1.",
+  "observed_visual_facts": {
+    "subject": [
+      "Bit/Bot"
+    ],
+    "attire": [
+      "mechanic alt variant"
+    ],
+    "props": [
+      "hammer",
+      "screw"
+    ],
+    "version": [
+      "v1"
+    ]
+  },
+  "positive_constraints": [
+    "character must be Bit/Bot",
+    "mechanic alt variant",
+    "include a hammer and a screw as visible props",
+    "preserve the style and proportions of the source image"
+  ],
+  "negative_constraints": [
+    "do not include other characters",
+    "do not omit the hammer or screw",
+    "do not add text, watermarks, or UI elements",
+    "do not change the color palette or proportions without approval"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Bit/Bot mechanic alt reference",
+      "hammer and screw prop placement",
+      "style and color review"
+    ],
+    "not_sufficient_for": [
+      "final animation rig",
+      "stand-alone publication asset",
+      "other characters or variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character"
+    ]
+  }
+}

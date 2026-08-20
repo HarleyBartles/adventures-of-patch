@@ -1,0 +1,99 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bot",
+  "sidecar_purpose": "Adjacent sidecar for Bot's expression reference sheet in the bit-and-bot asset pack. Captures the approved facial-expression variants and reuse constraints for Bot.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Bot's facial-expression variants in the bit-and-bot pack.",
+  "runtime_use_note": "Use for expression selection, asset-sheet compilation, prompt anchoring, and continuity review. It is not a cropped runtime sprite and should be processed before direct presentation use.",
+  "do_not_infer_note": "Do not infer Bot's proportions, color codes, or expression-specific details from unrelated sources. Use only this approved expression sheet and the canonical bit-and-bot style bible.",
+  "image": {
+    "repo_image_path": "build/characters/bit-bot/bit-and-bot/source_images/bot_expressions__v1.png",
+    "relative_image_path": "bot_expressions__v1.png",
+    "repo_sidecar_path": "build/characters/bit-bot/bit-and-bot/source_images/bot_expressions__v1-sidecar.json",
+    "relative_sidecar_path": "bot_expressions__v1-sidecar.json",
+    "image_filename": "bot_expressions__v1.png",
+    "sha256": "4aa5a4a6b0ee8c8b9be44974c0f6513072b343d7ab3dc182e354bd1997d5f916",
+    "byte_size": 2292714,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "expressions",
+    "acceptance_state": "approved",
+    "inspection_mode": "source_truth",
+    "confidence": "canonical",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Expression reference sheet of Bot, the taller blue-coded wheeled robot with a rounded white body, strong blue accents, and a glossy face with blue digital marks, showing a 2x2 grid of facial-expression variants on an isolated white background.",
+  "observed_visual_facts": {
+    "composition": [
+      "2x2 grid of Bot head-and-shoulders portraits",
+      "Each quadrant contains one facial-expression variant",
+      "Bright white dividing cross centered in the square 1254x1254 sheet",
+      "Isolated white background across the whole sheet"
+    ],
+    "character_design": [
+      "Bot, the taller blue-coded wheeled robot of the bit-bot family",
+      "Rounded white body shell with strong blue accents and black mechanical joints",
+      "Glossy face area with blue digital marks for eyes and mouth",
+      "Two-wheel lower body visible in the portraits"
+    ],
+    "colors": [
+      "Dominant white shell",
+      "Black mechanical structure and face screen",
+      "Blue accent system",
+      "Isolated white background"
+    ],
+    "style": [
+      "Clean editorial illustration with rounded linework",
+      "Soft painterly shading",
+      "Simplified vector-adjacent finish"
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Bot's taller wheeled robot silhouette and toy-like proportions in every expression.",
+    "Keep the blue accent system: face marks, joints, and wheel trim.",
+    "Maintain the white shell, black face screen, and blue digital features across all expression variants.",
+    "Keep the isolated white background and the 2x2 expression-sheet layout.",
+    "Use this image as the canonical reference for Bot's expression set in the bit-and-bot pack."
+  ],
+  "negative_constraints": [
+    "Do not give Bot red or any other character's palette.",
+    "Do not redesign Bot as a sleek drone, humanoid android, or menacing machine.",
+    "Do not remove the wheels or change the two-wheel lower body.",
+    "Do not add busy backgrounds, non-Bot accessories, or extra props not in the image.",
+    "Do not swap or invent expression labels not supported by this reference sheet."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Character expression reference for Bot in the bit-and-bot family.",
+      "Asset-sheet compilation and downstream prompt anchoring for expression variants.",
+      "Expression continuity checks for Bot in neutral or dramatic poses.",
+      "Style bible cross-reference for the blue-coded robot design."
+    ],
+    "not_sufficient_for": [
+      "Action-specific Bot poses (use bot_action__v1).",
+      "Full-body or profile proportion reference (use bot_profile__v1).",
+      "Environmental storytelling or multi-character tournament scenes.",
+      "Direct runtime crop without further processing or cropping."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character",
+      "character:bit-bot",
+      "role:expressions",
+      "asset:source-image"
+    ]
+  }
+}

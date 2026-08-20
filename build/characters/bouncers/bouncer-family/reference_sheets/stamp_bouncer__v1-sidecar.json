@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Stamp Bouncer",
+  "sidecar_purpose": "Describes the canonical reference sheet for the Stamp Bouncer, a Club DB queue-deck bouncer who publishes and verifies finished work with a purple completion stamp.",
+  "source_truth_note": "The adjacent PNG is the authoritative visual; this sidecar records observed facts, drawing constraints, and approved usage tags.",
+  "runtime_use_note": "Use this sidecar when selecting or generating Stamp Bouncer poses, props, and color details for downstream assets and scenes.",
+  "do_not_infer_note": "Do not infer additional costumes, props, or character backstory beyond what is shown in the reference sheet; keep the black Club DB security uniform and purple stamp pairing consistent.",
+  "image": {
+    "repo_image_path": "build/characters/bouncers/bouncer-family/reference_sheets/stamp_bouncer__v1.png",
+    "relative_image_path": "stamp_bouncer__v1.png",
+    "repo_sidecar_path": "build/characters/bouncers/bouncer-family/reference_sheets/stamp_bouncer__v1-sidecar.json",
+    "relative_sidecar_path": "stamp_bouncer__v1-sidecar.json",
+    "image_filename": "stamp_bouncer__v1.png",
+    "sha256": "fbd36a9a31c2fa064133954a9cd5340f73c2f7f2c47c95ade54a9370cdc0624d",
+    "byte_size": 1653744,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGB",
+    "asset_role": "reference-sheet",
+    "acceptance_state": "accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Four-pose reference sheet for Stamp Bouncer, the Club DB security bouncer responsible for stamping and verifying completed work. Shows neutral standing, stop / not-published, approve / completion receipt, and stamping / publication proof poses with signature props.",
+  "observed_visual_facts": {
+    "character": [
+      "Bearded adult man with medium-brown skin",
+      "Wears a black baseball cap and black Club DB security polo",
+      "Friendly but official facial expression and posture"
+    ],
+    "costume": [
+      "Black short-sleeve polo with Club DB patch on the chest",
+      "Black trousers with belt and black work shoes",
+      "Employee badge on a lanyard labeled STAMP BOUNCER"
+    ],
+    "signature_props": [
+      "Purple stamp with round handle and base",
+      "Paper receipt held in the other hand",
+      "Publication / completion proof document with APPROVED or COMPLETED seal"
+    ],
+    "poses": [
+      "1: Neutral standing holding stamp and receipt",
+      "2: Stop / not-published pose with raised palm and NOT PUBLISHED sign",
+      "3: Approve / completion receipt with thumbs up and APPROVED paper",
+      "4: Stamping / publication proof pressing stamp onto COMPLETED document"
+    ],
+    "color_notes": [
+      "Dominant black uniform with white badge text",
+      "Purple stamp as the key accent color",
+      "White/grey paper props with green check marks and red X as status marks"
+    ]
+  },
+  "positive_constraints": [
+    "Always include the purple stamp and a paired receipt or proof document in every pose",
+    "Keep the black cap, black Club DB polo, black trousers, and black work shoes",
+    "Maintain friendly but official body language and clear facial expression",
+    "Retain the lanyard badge labeled STAMP BOUNCER"
+  ],
+  "negative_constraints": [
+    "Do not change the stamp color away from purple",
+    "Do not omit the receipt or publication proof from stamped poses",
+    "Do not add unrelated accessories, weapons, or alternate costumes",
+    "Do not alter the Club DB patch or badge text"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Generating consistent Stamp Bouncer character art",
+      "Selecting poses that communicate completion, approval, rejection, or verification",
+      "Reference for style-bible or asset-pack documentation"
+    ],
+    "not_sufficient_for": [
+      "Detailed animation rigging or turnaround geometry",
+      "Inferred narrative or dialogue beyond the visual reference",
+      "Non-Stamp Bouncer character variants"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:bouncer",
+      "role:stamp",
+      "asset:reference-sheet"
+    ]
+  }
+}

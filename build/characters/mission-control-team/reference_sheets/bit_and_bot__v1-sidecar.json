@@ -1,0 +1,93 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bit and Bot",
+  "sidecar_purpose": "Describes the visual canon and usage boundaries for the Mission Control team reference sheet of Bit and Bot, the Patch Mission Control support-bot duo.",
+  "source_truth_note": "This reference sheet is a repo-resident visual reference for Bit and Bot. The compiled asset sheet and source images remain authoritative for canon details; this sidecar does not authorize derivative images or broaden canon.",
+  "runtime_use_note": "Use this reference sheet to identify Bit and Bot for Mission Control team compositions. Inspect the image pixels directly for exact poses, labels, and color values.",
+  "do_not_infer_note": "Do not infer traits, poses, expressions, accessories, or narrative context not explicitly shown. Do not infer exact color values, animation frames, scale beyond the depicted relative sizes, or Patch identity. Do not use this sheet to conclude these are the only valid expressions or actions.",
+  "image": {
+    "repo_image_path": "build/characters/mission-control-team/reference_sheets/bit_and_bot__v1.png",
+    "relative_image_path": "bit_and_bot__v1.png",
+    "repo_sidecar_path": "build/characters/mission-control-team/reference_sheets/bit_and_bot__v1-sidecar.json",
+    "relative_sidecar_path": "bit_and_bot__v1-sidecar.json",
+    "image_filename": "bit_and_bot__v1.png",
+    "sha256": "f95f5a029e08fcf3fab49fefc296df75939da8f776189ebaa9314a240e051d78",
+    "byte_size": 2115271,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "character_reference_sheet",
+    "acceptance_state": "qa-accepted",
+    "inspection_mode": "visual",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Mission Control team reference sheet for Bit and Bot, the Patch support-bot duo. Presents the canonical visual identity for both robots: Bot (taller, blue-accented) and Bit (smaller, red-accented), with guidance on keeping them visually distinct from Patch.",
+  "observed_visual_facts": {
+    "character_identity": [
+      "Bot is the taller support robot with blue accents, blue eyes, blue antenna tip, and a wheeled base.",
+      "Bit is the smaller support robot with red accents, red eyes, red antenna tip, and a wheeled base.",
+      "Both robots have white bodies with clean, Patch-compatible vector styling and chest labels reading 'BOT' and 'BIT' respectively.",
+      "Neither character wears a hoodie, bag, Patch face panel, or Patch silhouette."
+    ],
+    "canon_guidance": [
+      "Bit and Bot are a support-bot duo used in Patch Mission Control scenes.",
+      "Bit is smaller, red-accented, more twitchy and expressive.",
+      "Bot is taller, blue-accented, steadier and broader.",
+      "Both use wheeled bases and clean vector styling on a white background.",
+      "Keep Bit red and Bot blue; do not swap their accent colors."
+    ]
+  },
+  "positive_constraints": [
+    "Bit and Bot are a support-bot duo used in Patch Mission Control scenes.",
+    "Bit is smaller, red-accented, more twitchy and expressive.",
+    "Bot is taller, blue-accented, steadier and broader.",
+    "Both use wheeled bases and clean, Patch-compatible vector styling on a white background.",
+    "Bit's chest label reads 'BIT' and Bot's chest label reads 'BOT'.",
+    "Neither character may wear a hoodie, bag, Patch face panel, or use the Patch silhouette.",
+    "Bit's antenna tip and accents are red; Bot's are blue.",
+    "Use this reference sheet to compose Mission Control scenes and verify new Bit and Bot assets."
+  ],
+  "negative_constraints": [
+    "Do not depict Bit or Bot as human, organic, or wearing Patch-style clothing.",
+    "Do not add a Patch face panel, Patch bag, or Patch silhouette to either character.",
+    "Do not swap Bit's red and Bot's blue accent colors.",
+    "Do not scale Bit larger than Bot or change their relative proportions.",
+    "Do not introduce backgrounds, textures, or lighting beyond the clean white reference style.",
+    "Do not treat this sheet as an exhaustive animation or rig specification."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Identifying the Bit and Bot visual canon and color identities.",
+      "Composing Mission Control scenes and verifying new Bit and Bot assets.",
+      "Confirming that generated or edited Bit and Bot art stays non-Patch."
+    ],
+    "not_sufficient_for": [
+      "Deriving animation frames, timing, or bone rigging not shown.",
+      "Determining exact RGB color values or final shader treatment.",
+      "Inferring dialogue, backstory, or personality beyond the guidance text.",
+      "Using directly as a sliced runtime sprite atlas."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "character:bit-bot",
+      "project:adventures-of-patch",
+      "team:mission-control",
+      "role:reference-sheet",
+      "status:qa-accepted"
+    ]
+  }
+}
