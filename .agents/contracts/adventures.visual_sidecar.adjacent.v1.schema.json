@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://adventures-of-patch/.agents/contracts/adventures.visual_sidecar.adjacent.v1.schema.json",
+  "title": "Adventures of Patch visual sidecar (adjacent) v1",
+  "description": "JSON Schema for an adventures.visual_sidecar.adjacent.v1 sidecar file.",
+  "type": "object",
+  "required": [
+    "schema",
+    "project",
+    "sidecar_purpose",
+    "source_truth_note",
+    "runtime_use_note",
+    "do_not_infer_note",
+    "image",
+    "summary",
+    "observed_visual_facts",
+    "positive_constraints",
+    "negative_constraints",
+    "sidecar_usage"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "adventures.visual_sidecar.adjacent.v1"
+    },
+    "project": {
+      "type": "string"
+    },
+    "character": {
+      "type": ["string", "null"]
+    },
+    "sidecar_purpose": {
+      "type": "string"
+    },
+    "source_truth_note": {
+      "type": "string"
+    },
+    "runtime_use_note": {
+      "type": "string"
+    },
+    "do_not_infer_note": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "image": {
+      "type": "object",
+      "required": [
+        "repo_image_path",
+        "relative_image_path",
+        "repo_sidecar_path",
+        "relative_sidecar_path",
+        "image_filename",
+        "sha256",
+        "byte_size",
+        "mime_type",
+        "dimensions",
+        "mode",
+        "asset_role",
+        "acceptance_state",
+        "inspection_mode",
+        "confidence",
+        "provenance"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "repo_image_path": {
+          "type": "string"
+        },
+        "relative_image_path": {
+          "type": "string"
+        },
+        "repo_sidecar_path": {
+          "type": "string"
+        },
+        "relative_sidecar_path": {
+          "type": "string"
+        },
+        "image_filename": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "byte_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mime_type": {
+          "type": "string"
+        },
+        "dimensions": {
+          "type": "object",
+          "required": ["width", "height"],
+          "additionalProperties": false,
+          "properties": {
+            "width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "mode": {
+          "type": "string"
+        },
+        "asset_role": {
+          "type": "string"
+        },
+        "acceptance_state": {
+          "type": "string"
+        },
+        "inspection_mode": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "image-sidecar-provenance.schema.json"
+        }
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "observed_visual_facts": {
+      "type": "object",
+      "patternProperties": {
+        ".+": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "positive_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "negative_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sidecar_usage": {
+      "type": "object",
+      "required": [
+        "best_for",
+        "not_sufficient_for",
+        "linear_view_route",
+        "repo_index_tags"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "best_for": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "not_sufficient_for": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "linear_view_route": {
+          "type": ["string", "null"]
+        },
+        "repo_index_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

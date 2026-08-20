@@ -38,29 +38,25 @@ def _mime(filename: str) -> str:
 
 
 def _extract_base_project(image_path: Path) -> str:
-    rel = image_path.relative_to(ROOT)
-    # Use the second path component if it makes sense, otherwise Adventures of Patch
-    if len(rel.parts) > 1:
-        return "Adventures of Patch"
     return "Adventures of Patch"
 
 
 def _extract_tags(image_path: Path) -> list[str]:
     rel = image_path.relative_to(ROOT).as_posix()
     tags = ["asset:image"]
-    if "/characters/" in rel:
+    if "/characters/" in rel or rel.startswith("characters/"):
         tags.append("character")
-    if "/environments/" in rel:
+    if "/environments/" in rel or rel.startswith("environments/"):
         tags.append("environment")
-    if "/adventures/" in rel:
+    if "/adventures/" in rel or rel.startswith("adventures/"):
         tags.append("adventure")
-    if "/canon/" in rel:
+    if "/canon/" in rel or rel.startswith("canon/"):
         tags.append("canon")
-    if "/style/" in rel:
+    if rel.startswith("style/") or "/style/" in rel:
         tags.append("style-reference")
-    if "/templates/" in rel:
+    if rel.startswith("templates/") or "/templates/" in rel:
         tags.append("template")
-    if "/workbench/" in rel:
+    if rel.startswith("workbench/") or "/workbench/" in rel:
         tags.append("workbench")
     return tags
 
