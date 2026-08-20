@@ -1,0 +1,93 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Silk",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/silk/silk-prohibited-anti-patterns.png",
+    "relative_image_path": "silk-prohibited-anti-patterns.png",
+    "repo_sidecar_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/silk/silk-prohibited-anti-patterns-sidecar.json",
+    "relative_sidecar_path": "silk-prohibited-anti-patterns-sidecar.json",
+    "image_filename": "silk-prohibited-anti-patterns.png",
+    "sha256": "ce9ff6b11b8b763d812e63869a5c9f5d65eacffc190b55e5d7cbcb3d013f9993",
+    "byte_size": 2640086,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGB",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Prohibited anti-pattern reference board for Silk. It explicitly documents rejected designs, roles, props, materials, proportions, and behavior drifts that must not be replicated.",
+  "observed_visual_facts": {
+    "layout": [
+      "Prohibited anti-pattern reference board for Silk, marked with rejections."
+    ],
+    "rejection_categories": [
+      "tall, leggy, adult-human, or tactical-mannequin proportions;",
+      "human-scale figure read instead of compact Patch-scale autonomous agent;",
+      "black/red or red-body superhero drift;",
+      "recognisable third-party superhero, spider-themed hero, masked mercenary, or copyrighted costume echo;",
+      "masked vigilante, ninja, assassin, acrobat, or action-hero pose language;",
+      "literal spider, spider-person, spider-creature, horror anatomy, or web-costume drift;",
+      "Patch recolor drift: teal hoodie, two antennae, Patch-like silhouette, Patch-like bag, or `>` identity language;",
+      "girly/princess/fairy/cute-girl ornament drift;",
+      "over-gadgeted military/sci-fi backpack clutter;",
+      "weapons, blades, guns, web-shooter-style devices, or combat gadgets replacing inspection tools;"
+    ],
+    "hard_nos": [
+      "Do not make Silk a literal spider, animal, monster, horror creature, spider-person, human woman, child in costume, full-sized masked acrobat, superhero, Patch clone, Bit/Bot-style robot, ninja, assassin, vigilante, villain, black-and-red comic hero, red-body superhero, or recognisable third-party costume echo.",
+      "Do not make her tall, leggy, adult-human, tactical-mannequin, fashion-sheet, or human-scale.",
+      "Do not add extra arms, mandibles, spider abdomen, spider legs, fangs, horror webbing, predatory menace, web-pattern costume language, giant white superhero eyes, katanas, blades, guns, web-shooter-style devices, tactical assassin styling, or bulky gadget overload.",
+      "Do not give her two antennae, omit the antenna, use Patch's teal hoodie, Patch's crossbody terminal bag, Patch's `>` symbol, Patch's full silhouette, or Patch's protagonist colour read.",
+      "Do not add pink trim, flowers, bows, princess/fairy motifs, skirt cues, eyelashes, cute-girl-robot tropes, or girly ornament.",
+      "Do not add pale/cream torso panels or pale/cream cuff costume detailing; keep the hoodie/body mass solid grey.",
+      "Do not use the anti-pattern sheet as positive reference."
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet primarily as negative guidance and QA rejection criteria for Silk.",
+    "Silk is a small Patch-scale autonomous-agent girl and red-team pressure tester. Her accepted v1 design is the compact grey-hooded Threadline Inspector: compact stocky low-centre-of-gravity body, solid grey soft-shell hoodie as the dominant silhouette, subtly tomboy female fit, darker fitted leg coverings, sturdy grey/dark shoes, pale simple faceplate, calm narrow dark eyes, exactly one antenna, compact red test-thread spool pack, small hook/probe/clamp/chalk/line-tag/field-reader tools, light harness, LINE 07 tag when visible, and quiet careful crouched inspector posture. Red belongs mainly to thread, rigging, anchors, clips, and tiny tool accents, not costume pattern. Preserve the accepted hero shot and approved style sheet unless the task explicitly asks for redesign or alternate state."
+  ],
+  "negative_constraints": [
+    "Do not make Silk a literal spider, animal, monster, horror creature, spider-person, human woman, child in costume, full-sized masked acrobat, superhero, Patch clone, Bit/Bot-style robot, ninja, assassin, vigilante, villain, black-and-red comic hero, red-body superhero, or recognisable third-party costume echo. Do not make her tall, leggy, adult-human, tactical-mannequin, fashion-sheet, or human-scale. Do not add extra arms, mandibles, spider abdomen, spider legs, fangs, horror webbing, predatory menace, web-pattern costume language, giant white superhero eyes, katanas, blades, guns, web-shooter-style devices, tactical assassin styling, or bulky gadget overload. Do not give her two antennae, omit the antenna, use Patch's teal hoodie, Patch's crossbody terminal bag, Patch's `>` symbol, Patch's full silhouette, or Patch's protagonist colour read. Do not add pink trim, flowers, bows, princess/fairy motifs, skirt cues, eyelashes, cute-girl-robot tropes, or girly ornament. Do not add pale/cream torso panels or pale/cream cuff costume detailing; keep the hoodie/body mass solid grey. Do not use the anti-pattern sheet as positive reference."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA rejection checks for Silk.",
+      "Prompt negative constraints.",
+      "Preventing role/ontology drift.",
+      "Differentiating Silk from other crew members."
+    ],
+    "not_sufficient_for": [
+      "Positive generation by itself; pair with approved hero/style sheet.",
+      "Detailed final Silk outfit rendering without the approved style sheet.",
+      "Treating any rejected example as a fallback design."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:silk",
+      "asset:source-image",
+      "state:approved",
+      "role:red-team",
+      "workbench"
+    ]
+  },
+  "created_at": "2026-08-20T18:23:13.641039Z"
+}

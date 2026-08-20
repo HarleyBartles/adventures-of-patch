@@ -1,0 +1,95 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for style-reference selection, silhouette continuity, QA, and prompt constraint extraction for Patch.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact outline, proportions, or silhouette details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/Patch Approved Silhouette.png",
+    "relative_image_path": "Patch Approved Silhouette.png",
+    "repo_sidecar_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/Patch Approved Silhouette-sidecar.json",
+    "relative_sidecar_path": "Patch Approved Silhouette-sidecar.json",
+    "image_filename": "Patch Approved Silhouette.png",
+    "sha256": "5623098c0183471d7b73760ae213652b5f2d5fe488662fa06931ef2bab37765b",
+    "byte_size": 684454,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGB",
+    "asset_role": "style-reference",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Approved high-contrast silhouette reference for Patch. The image is a near-pure black silhouette of a compact cat-like figure centered on a light background, suitable as a canonical style reference for outline, proportions, and silhouette continuity.",
+  "observed_visual_facts": {
+    "composition": [
+      "Square 1254x1254 RGB PNG with the silhouette centered and occupying the majority of the canvas.",
+      "The figure is surrounded by generous, even negative space on all sides.",
+      "No text, labels, borders, or additional graphic elements are visible.",
+      "The silhouette is oriented upright and facing forward."
+    ],
+    "silhouette": [
+      "Two upright pointed ear shapes at the top of the head.",
+      "A rounded cranium with a broad, smooth forehead.",
+      "A horizontal band or bar across the face, suggestive of an eye patch or facial marking.",
+      "A compact, rounded torso and a seated or stationary lower body.",
+      "Short limbs and a simple, unbroken outer contour with light anti-aliasing at the edges."
+    ],
+    "color_and_tone": [
+      "The figure is filled with near-pure black (RGB 0,0,0) with no interior color variation.",
+      "The background is a light, near-white tone with minor anti-aliasing pixels around the silhouette edge.",
+      "No gradients, textures, or shading are present inside the silhouette."
+    ]
+  },
+  "positive_constraints": [
+    "Patch must remain a single-color black silhouette on a light background.",
+    "Maintain two upright pointed ears, a rounded head, and the horizontal facial band.",
+    "Keep the compact, seated torso and simple limb proportions.",
+    "Preserve high contrast and a clean, unbroken outer contour.",
+    "Use this image as the canonical silhouette reference for Patch outline and proportions.",
+    "Center the figure on the canvas with even surrounding negative space."
+  ],
+  "negative_constraints": [
+    "Do not add interior facial features, fur texture, or color to the silhouette.",
+    "Do not change the pose, orientation, or proportions of the silhouette.",
+    "Do not introduce gradients, shadows, or background objects.",
+    "Do not crop, rotate, mirror, or distort the silhouette.",
+    "Do not infer unseen views, props, or story context from the silhouette alone.",
+    "Do not use this image as a final production asset without additional QA."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical Patch silhouette reference.",
+      "Style continuity and silhouette QA.",
+      "Prompt constraint extraction for silhouette assets.",
+      "High-contrast composition and proportion checks."
+    ],
+    "not_sufficient_for": [
+      "Detailed color, texture, or facial feature reference.",
+      "Precise anatomy or three-dimensional pose extraction.",
+      "Final acceptance of generated derivatives without image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:style-reference",
+      "state:approved",
+      "role:style-silhouette",
+      "workbench"
+    ]
+  }
+}
