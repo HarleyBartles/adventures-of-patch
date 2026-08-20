@@ -1,0 +1,94 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical hero source image of Patch in the cowboy role kit, waistcoat view, recording observed pixel facts and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference image for Patch's cowboy role waistcoat hero render in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer missing pixels, pose variations, alternate costumes, or provenance beyond what is recorded here; only use the actual image area and metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/cowboy-role-kit/source_images/hero_patch_cowboy_waistcoat__v1.png",
+    "relative_image_path": "hero_patch_cowboy_waistcoat__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/cowboy-role-kit/source_images/hero_patch_cowboy_waistcoat__v1-sidecar.json",
+    "relative_sidecar_path": "hero_patch_cowboy_waistcoat__v1-sidecar.json",
+    "image_filename": "hero_patch_cowboy_waistcoat__v1.png",
+    "sha256": "5f1f8970d5745f683e65bb4960055ecd29b19a59211ce8478d03a1ef1e1d8120",
+    "byte_size": 1841146,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical hero source image of Patch in the cowboy role kit with a waistcoat focus, captured at 1254x1254 in RGBA PNG format.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "alpha values are uniformly 255 (fully opaque)"
+    ],
+    "metadata": [
+      "no PNG text chunks",
+      "no embedded sRGB/gAMA/cHRM/iCCP chunks"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical cowboy role kit hero waistcoat source image.",
+    "Preserve Patch's core identity: teal hoodie, hood antennae, off-white face panel, black oval eyes, and black crossbody bag with > mark.",
+    "Cowboy role reads through brown hat, leather waistcoat over the hoodie, boots, lasso, and sheriff-star prop language; keep the waistcoat over the hoodie so the Patch silhouette remains.",
+    "Honor the exact RGBA pixel data and alpha channel.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not replace the hoodie with western clothing; the waistcoat must sit over the hoodie.",
+    "Do not remove Patch's core identity elements such as the teal hoodie, antennae, face panel, or crossbody bag.",
+    "Do not infer missing pose variations, alternate costumes, or environment details beyond the visible frame.",
+    "Do not remix into non-cowboy role kits without explicit style-guide review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for cowboy role kit hero waistcoat view.",
+      "Style consistency checks across cowboy kit renders.",
+      "Prompt anchor for new Patch cowboy-waistcoat images.",
+      "Presentation covers and marketing hero panels."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Canonical backstory or environment details beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

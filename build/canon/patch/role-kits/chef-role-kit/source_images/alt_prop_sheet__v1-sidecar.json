@@ -1,0 +1,84 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical alt_prop_sheet source image of Patch's chef role kit, recording observed facts and intended usage for prop reference.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical prop sheet reference image for Patch's chef role kit in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer missing props, prop counts, or alternate role kits; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/chef-role-kit/source_images/alt_prop_sheet__v1.png",
+    "relative_image_path": "alt_prop_sheet__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/chef-role-kit/source_images/alt_prop_sheet__v1-sidecar.json",
+    "relative_sidecar_path": "alt_prop_sheet__v1-sidecar.json",
+    "image_filename": "alt_prop_sheet__v1.png",
+    "sha256": "d49f9413a7f04ee29012fdf4841249eef7346f1fdb7d67d1fec1871cb44caec3",
+    "byte_size": 2237131,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Alternative prop sheet source image for Patch's chef role kit, captured at 1254x1254 in RGBA PNG format.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "transparency": [
+      "alpha channel present, all pixels opaque"
+    ],
+    "metadata": [
+      "no PNG text chunks"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical chef role kit alt_prop_sheet source image.",
+    "Honor the exact RGBA pixel data and recorded dimensions.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not assume transparent regions contain hidden detail.",
+    "Do not remix props into non-chef role kits without explicit style-guide review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for chef role kit prop sheet contents.",
+      "Style consistency checks across chef kit props.",
+      "Presentation set dressing and prop inventory planning."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Provenance or prompt reconstruction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical alt_06_props__v1 detective role-kit prop sheet, recording observed pixel facts and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical prop reference image for Patch's detective role kit in downstream asset generation, style consistency checks, and presentation packages.",
+  "do_not_infer_note": "Do not infer missing props, character poses, scale, environment, or narrative context beyond the visible objects; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/detective-role-kit/source_images/alt_06_props__v1.png",
+    "relative_image_path": "alt_06_props__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/detective-role-kit/source_images/alt_06_props__v1-sidecar.json",
+    "relative_sidecar_path": "alt_06_props__v1-sidecar.json",
+    "image_filename": "alt_06_props__v1.png",
+    "sha256": "b1db6e58c341d5156b5304991e9ee35c1d6d5ce229b9a35d86321b65d6f4f47b",
+    "byte_size": 2001970,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical prop source sheet for Patch's detective role kit, captured at 1254x1254 in RGBA PNG format.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "alpha values are uniformly 255 (fully opaque)"
+    ],
+    "metadata": [
+      "no PNG text chunks",
+      "no embedded sRGB/gAMA/cHRM/iCCP chunks"
+    ],
+    "composition": [
+      "Isolated detective-role props arranged on a near-white background."
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical detective role kit prop source sheet.",
+    "Preserve the exact 1254x1254 RGBA pixel data and recorded SHA-256.",
+    "Use as reference for detective-role props and accessories intended for Patch.",
+    "Keep the near-white background and isolated prop arrangement intact."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not infer missing props, character interaction, scale, environment, or story context.",
+    "Do not introduce text, labels, logos, or non-canon colors not present in the source.",
+    "Do not remix into non-detective role kits without explicit style-guide review.",
+    "Do not assume transparency; the image is fully opaque."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for detective role kit props.",
+      "Style consistency checks across detective kit renders.",
+      "Prompt anchor for new Patch detective prop images.",
+      "Asset extraction for individual prop elements."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Canonical character pose or full-body reference.",
+      "Canonical backstory or environment details beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

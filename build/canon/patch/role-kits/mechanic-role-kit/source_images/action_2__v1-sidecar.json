@@ -1,0 +1,81 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacently-tracked source image for the mechanic role kit, capturing the action_2 pose of Patch for canon reference, style grounding, and downstream asset compilation.",
+  "source_truth_note": "This file is a source-of-truth PNG in build/canon/patch/role-kits/mechanic-role-kit/source_images. Its dimensions, byte size, SHA-256, and mode were read directly from the image and must be kept exact.",
+  "runtime_use_note": "Suitable for character reference, presentation planning, and compiled asset sheets. Not a runtime sprite without further cropping, scaling, or sheet packing.",
+  "do_not_infer_note": "Do not infer exact tool labels, color values, or expression details beyond what is visible. Provenance and generation prompt are unknown; verify against committed canon before public use.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/mechanic-role-kit/source_images/action_2__v1.png",
+    "relative_image_path": "action_2__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/mechanic-role-kit/source_images/action_2__v1-sidecar.json",
+    "relative_sidecar_path": "action_2__v1-sidecar.json",
+    "image_filename": "action_2__v1.png",
+    "sha256": "febe1e4196959a2bc7d64ad852c74b1699a84289ee4e96ca8ad22d8aacab34b5",
+    "byte_size": 2011069,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Patch in a mechanic action pose (action_2) rendered as a 1254x1254 RGBA PNG source image for the mechanic role kit.",
+  "observed_visual_facts": {
+    "canvas": [
+      "1254x1254 pixels",
+      "RGBA mode",
+      "opaque sampled alpha (no transparent background observed in the inspected grid)"
+    ],
+    "subject": [
+      "Patch, the mechanic character",
+      "action_2 pose from the mechanic role kit"
+    ],
+    "role_kit": [
+      "mechanic-role-kit",
+      "source_images lane",
+      "canon domain"
+    ]
+  },
+  "positive_constraints": [
+    "Use as a canon source image for mechanic role-kit action poses",
+    "Reference for Patch proportions and mechanic styling",
+    "Compile into approved asset sheets for presentation packages"
+  ],
+  "negative_constraints": [
+    "Do not treat as a final cropped runtime sprite",
+    "Do not assume exact color values are approved without style-bible confirmation",
+    "Do not use as the only canonical view of Patch"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "mechanic role-kit action reference",
+      "asset-sheet compilation",
+      "canon style grounding"
+    ],
+    "not_sufficient_for": [
+      "Final rendered scene without composition",
+      "Runtime animation frames without cropping",
+      "Provenance verification"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

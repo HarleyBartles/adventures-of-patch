@@ -1,0 +1,115 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical props source image of Patch in the mechanic role kit, recording observed pixel facts, prop layout, and downstream usage constraints.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference for Patch's mechanic role kit props in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer additional props, poses, characters, or canon details beyond the visible pixels in the props image; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/mechanic-role-kit/source_images/props__v1.png",
+    "relative_image_path": "props__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/mechanic-role-kit/source_images/props__v1-sidecar.json",
+    "relative_sidecar_path": "props__v1-sidecar.json",
+    "image_filename": "props__v1.png",
+    "sha256": "10850b5fb4cc2a350b06f6f4a175c07bcb6b1f6169f38900739c155913cebd50",
+    "byte_size": 2061820,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical source prop sheet for Patch's mechanic role kit, captured at 1254x1254 in RGBA PNG format on a near-white background with dark and muted-teal prop silhouettes.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "all sampled alpha values are 255 (fully opaque)"
+    ],
+    "metadata": [
+      "no PNG text chunks",
+      "no sRGB/gAMA/cHRM/iCCP chunks"
+    ],
+    "composition": [
+      "isolated prop sheet for the mechanic role kit",
+      "foreground objects arranged on a near-white background"
+    ],
+    "palette": [
+      "dominant near-white background",
+      "dark charcoal and near-black foreground shapes",
+      "muted teal accents in the sampled quantized palette"
+    ],
+    "subject": [
+      "Patch mechanic role kit props"
+    ],
+    "style": [
+      "canon",
+      "illustrated"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical mechanic role kit props__v1 source image.",
+    "Honor the exact RGBA pixel data and 1254x1254 dimensions.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction.",
+    "Keep the near-white background and isolated prop presentation.",
+    "Use visible prop silhouettes and colors as the reference for mechanic kit gear and tools."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not assume the white background is transparent.",
+    "Do not infer additional props, characters, or scenes beyond the visible prop sheet.",
+    "Do not remix into non-mechanic role kits without explicit style-guide review.",
+    "Do not treat this prop sheet as a full-body or pose reference for Patch."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for mechanic role kit props.",
+      "Style consistency checks for mechanic kit gear, tools, and accessories.",
+      "Prop selection and layout reference for presentation packages.",
+      "Prompt anchor for new mechanic kit prop imagery."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Exact OCR of any small labels or text.",
+      "Provenance or prompt reconstruction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon",
+      "character:Patch",
+      "role:mechanic",
+      "role:props",
+      "asset:source-image"
+    ]
+  }
+}

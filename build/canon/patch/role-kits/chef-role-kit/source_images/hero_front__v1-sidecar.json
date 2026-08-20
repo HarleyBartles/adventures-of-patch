@@ -1,0 +1,83 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical hero_front source image of Patch in the chef role kit, recording observed facts and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference image for Patch's chef role front-facing hero render in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer missing pixels, pose variations, or alternate costumes; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/chef-role-kit/source_images/hero_front__v1.png",
+    "relative_image_path": "hero_front__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/chef-role-kit/source_images/hero_front__v1-sidecar.json",
+    "relative_sidecar_path": "hero_front__v1-sidecar.json",
+    "image_filename": "hero_front__v1.png",
+    "sha256": "5ec51f9d9b84b354fa8a1690b793eb312fac1e27df254f90f7c783a0ba107904",
+    "byte_size": 1900776,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical front-facing hero source image of Patch wearing the chef role kit, captured at 1122x1402 in RGBA PNG format.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1122 pixels",
+      "height: 1402 pixels"
+    ],
+    "transparency": [
+      "alpha channel present"
+    ],
+    "metadata": [
+      "no PNG text chunks"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical chef role kit hero_front source image.",
+    "Honor the exact RGBA pixel data and alpha channel.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not assume transparent regions contain hidden detail.",
+    "Do not remix into non-chef role kits without explicit style-guide review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for chef role kit hero front view.",
+      "Style consistency checks across chef kit renders.",
+      "Presentation covers and marketing hero panels."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical alt_05_details source image of Patch in the cowboy role kit, recording observed costume and material details and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference for Patch's cowboy role kit detail source image in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer additional costume elements, poses, or props beyond those visible in the detail image; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/cowboy-role-kit/source_images/alt_05_details__v1.png",
+    "relative_image_path": "alt_05_details__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/cowboy-role-kit/source_images/alt_05_details__v1-sidecar.json",
+    "relative_sidecar_path": "alt_05_details__v1-sidecar.json",
+    "image_filename": "alt_05_details__v1.png",
+    "sha256": "1b96357a4799e11c35e57dd2a228d62d1cbe0534a45626c35a0f0ced2175cdcc",
+    "byte_size": 2937664,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical detail reference source image of Patch in the cowboy role kit, captured at 1254x1254 in RGBA PNG format.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "transparency": [
+      "alpha channel present"
+    ],
+    "metadata": [
+      "no PNG text chunks"
+    ],
+    "composition": [
+      "detail reference sheet for the cowboy role kit",
+      "close-up panels of costume and accessory details",
+      "isolated transparent background"
+    ],
+    "character": [
+      "Patch"
+    ],
+    "style": [
+      "canon",
+      "illustrated"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical cowboy role kit alt_05_details source image.",
+    "Honor the exact RGBA pixel data and alpha channel.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction.",
+    "Use visible detail panels as the reference for cowboy kit costume elements."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not assume transparent regions contain hidden detail.",
+    "Do not remix into non-cowboy role kits without explicit style-guide review.",
+    "Do not infer additional poses, props, or characters beyond the shown details."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for cowboy role kit detail views.",
+      "Style consistency checks for cowboy kit materials and accessories.",
+      "Presentation package planning for detailed costume callouts."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Provenance or prompt reconstruction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon",
+      "character:Patch",
+      "role:cowboy",
+      "asset:source-image"
+    ]
+  }
+}

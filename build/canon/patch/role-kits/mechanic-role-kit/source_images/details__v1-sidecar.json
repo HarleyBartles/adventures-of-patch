@@ -1,0 +1,105 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical details__v1 source image of Patch in the mechanic role kit, recording observed costume, material, and gear details and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference for Patch's mechanic role kit detail source image in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer additional costume elements, poses, or props beyond those visible in the detail image; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/mechanic-role-kit/source_images/details__v1.png",
+    "relative_image_path": "details__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/mechanic-role-kit/source_images/details__v1-sidecar.json",
+    "relative_sidecar_path": "details__v1-sidecar.json",
+    "image_filename": "details__v1.png",
+    "sha256": "16229edf96dfd539ff051d89dfaf58a0d6e49973d27c46b1fa4c4739d8acb30c",
+    "byte_size": 2540521,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical detail reference source image of Patch in the mechanic role kit, captured at 1254x1254 in RGBA PNG format on a white background with multiple close-up panels and small inset callouts.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "transparency": [
+      "alpha channel present (fully opaque pixels; no transparent regions)"
+    ],
+    "background": [
+      "near-white background (RGB ~254,254,254)"
+    ],
+    "metadata": [
+      "no PNG text chunks"
+    ],
+    "composition": [
+      "detail reference sheet for the mechanic role kit",
+      "multiple close-up panels arranged on a white background",
+      "four large detail areas plus three smaller inset callouts",
+      "isolated from other role-kit content"
+    ],
+    "character": [
+      "Patch"
+    ],
+    "style": [
+      "canon",
+      "illustrated"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical mechanic role kit details__v1 source image.",
+    "Honor the exact RGBA pixel data and white background.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction.",
+    "Use visible detail panels as the reference for mechanic kit costume and gear elements."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not assume the white background is transparent.",
+    "Do not remix into non-mechanic role kits without explicit style-guide review.",
+    "Do not infer additional poses, props, or characters beyond the shown details."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for mechanic role kit detail views.",
+      "Style consistency checks for mechanic kit materials, tools, and accessories.",
+      "Presentation package planning for detailed costume and gear callouts."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Provenance or prompt reconstruction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon",
+      "character:Patch",
+      "role:mechanic",
+      "asset:source-image"
+    ]
+  }
+}
