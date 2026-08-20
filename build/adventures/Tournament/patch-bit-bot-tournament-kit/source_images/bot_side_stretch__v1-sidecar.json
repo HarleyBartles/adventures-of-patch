@@ -1,0 +1,95 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Bot",
+  "sidecar_purpose": "Adjacent sidecar for Bot Side Stretch in the patch-bit-bot-tournament-kit. Captures the approved visual reference and reuse constraints for this tournament asset.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Bot Side Stretch in the patch-bit-bot-tournament-kit.",
+  "runtime_use_note": "Intended for tournament planning, asset-sheet compilation, prompt anchoring, and continuity review. It is not a cropped runtime sprite and should be processed before direct presentation use.",
+  "do_not_infer_note": "Do not infer animation timing, dialogue, narrative sequence, or unseen costume details from this single static image. Use only this approved source and the canonical Tournament style bible.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/patch-bit-bot-tournament-kit/source_images/bot_side_stretch__v1.png",
+    "relative_image_path": "bot_side_stretch__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/patch-bit-bot-tournament-kit/source_images/bot_side_stretch__v1-sidecar.json",
+    "relative_sidecar_path": "bot_side_stretch__v1-sidecar.json",
+    "image_filename": "bot_side_stretch__v1.png",
+    "sha256": "3ec2f32a9deeb2b5cdee54776ed88ec331d751aed0198409121727c428678fcf",
+    "byte_size": 1993896,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Tournament reference image of Bot Side Stretch.",
+  "observed_visual_facts": {
+    "character": [
+      "Bot, the larger, steady blue-coded wheeled robot.",
+      "White shell with blue accents and robust wheeled base."
+    ],
+    "scene": [
+      "Bot in the tournament side stretch scene.",
+      "Tournament setting consistent with the approved style bible."
+    ],
+    "pose": [
+      "Bot Side Stretch pose for Bot.",
+      "Full or near-full-body composition centered on the frame."
+    ],
+    "style": [
+      "Clean editorial illustration with soft shading.",
+      "Tournament adventure art style with isolated background."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Bot's larger wheeled robot silhouette and steady proportions.",
+    "Keep the blue accent system: antenna, face marks, circular joints, and wheel trim.",
+    "Maintain the two-wheel lower body and white shell.",
+    "Use this image as the canonical reference for this Bot tournament scene."
+  ],
+  "negative_constraints": [
+    "Do not give Bot red accents or any other character's palette.",
+    "Do not redesign Bot as a sleek drone, humanoid, or menacing machine.",
+    "Do not remove the wheels or change the two-wheel lower body.",
+    "Do not add busy backgrounds or non-Bot accessories not in the image.",
+    "Do not infer animation timing, dialogue, or narrative sequence.",
+    "Do not use this image as a generation contract.",
+    "Do not crop, resize, or recolor without version control."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Character reference for Bot in the side stretch tournament scene.",
+      "Tournament planning and prompt anchoring.",
+      "Asset-sheet compilation for the patch-bit-bot-tournament-kit.",
+      "Continuity checks for Bot in the tournament."
+    ],
+    "not_sufficient_for": [
+      "Direct runtime presentation without processing.",
+      "Exact RGB values beyond the visible color.",
+      "Animation frames, timing, or rigging not shown.",
+      "Final acceptance of derivative art without separate image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "adventure:Tournament",
+      "project:adventures-of-patch",
+      "asset:source-image",
+      "character:bot",
+      "character:bit-bot"
+    ]
+  }
+}

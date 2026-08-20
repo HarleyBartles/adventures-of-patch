@@ -1,0 +1,94 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent sidecar for Patch Notebook Focus in the patch-bit-bot-tournament-kit. Captures the approved visual reference and reuse constraints for this tournament asset.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for Patch Notebook Focus in the patch-bit-bot-tournament-kit.",
+  "runtime_use_note": "Intended for tournament planning, asset-sheet compilation, prompt anchoring, and continuity review. It is not a cropped runtime sprite and should be processed before direct presentation use.",
+  "do_not_infer_note": "Do not infer animation timing, dialogue, narrative sequence, or unseen costume details from this single static image. Use only this approved source and the canonical Tournament style bible.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/patch-bit-bot-tournament-kit/source_images/patch_notebook_focus__v1.png",
+    "relative_image_path": "patch_notebook_focus__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/patch-bit-bot-tournament-kit/source_images/patch_notebook_focus__v1-sidecar.json",
+    "relative_sidecar_path": "patch_notebook_focus__v1-sidecar.json",
+    "image_filename": "patch_notebook_focus__v1.png",
+    "sha256": "1cd27d7307a9a26ff9b4cd5b75d6f3fe442078035e9d32a8047e9990d809d0bd",
+    "byte_size": 1899901,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Tournament reference image of Patch Notebook Focus.",
+  "observed_visual_facts": {
+    "character": [
+      "Patch, the teal-hooded adventurer with a crossbody bag.",
+      "Distinctive face panel and friendly silhouette."
+    ],
+    "scene": [
+      "Patch in the tournament notebook focus scene.",
+      "Tournament setting consistent with the approved style bible."
+    ],
+    "pose": [
+      "Patch Notebook Focus pose for Patch.",
+      "Full or near-full-body composition centered on the frame."
+    ],
+    "style": [
+      "Clean editorial illustration with soft shading.",
+      "Tournament adventure art style with isolated background."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve Patch's teal hoodie, crossbody bag, and friendly silhouette.",
+    "Keep the canonical face panel and color palette.",
+    "Maintain the adventurer proportions and costume details.",
+    "Use this image as the canonical reference for this Patch tournament scene."
+  ],
+  "negative_constraints": [
+    "Do not remove the teal hood or crossbody bag.",
+    "Do not change Patch's color palette or proportions.",
+    "Do not add non-Patch accessories or busy backgrounds.",
+    "Do not depict Patch as a robot or other character.",
+    "Do not infer animation timing, dialogue, or narrative sequence.",
+    "Do not use this image as a generation contract.",
+    "Do not crop, resize, or recolor without version control."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Character reference for Patch in the notebook focus tournament scene.",
+      "Tournament planning and prompt anchoring.",
+      "Asset-sheet compilation for the patch-bit-bot-tournament-kit.",
+      "Continuity checks for Patch in the tournament."
+    ],
+    "not_sufficient_for": [
+      "Direct runtime presentation without processing.",
+      "Exact RGB values beyond the visible color.",
+      "Animation frames, timing, or rigging not shown.",
+      "Final acceptance of derivative art without separate image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "adventure:Tournament",
+      "project:adventures-of-patch",
+      "asset:source-image",
+      "character:patch"
+    ]
+  }
+}

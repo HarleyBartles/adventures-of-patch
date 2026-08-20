@@ -1,0 +1,85 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Route Official",
+  "sidecar_purpose": "Acceptance authority visual reference for Route Official.",
+  "source_truth_note": "This sidecar records the accepted image for Route Official as the canonical visual truth for the Tournament Judges and Officials acceptance authority.",
+  "runtime_use_note": "Approved for style reference, asset compilation, and presentation planning for Route Official within the Tournament adventure.",
+  "do_not_infer_note": "Do not infer personality, dialogue, narrative context, backstory, or relationships not directly visible in the image. Treat only the pixels shown as accepted truth.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/judges-officials-acceptance-authority/source_images/route_official__v1.png",
+    "relative_image_path": "route_official__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/judges-officials-acceptance-authority/source_images/route_official__v1-sidecar.json",
+    "relative_sidecar_path": "route_official__v1-sidecar.json",
+    "image_filename": "route_official__v1.png",
+    "sha256": "47b7f99daff0e3030f2554eb42494a264e86e6b157462130cda3d420c9c05c08",
+    "byte_size": 3639847,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1086,
+      "height": 1448
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image reference for the Route Official in the Tournament Judges and Officials acceptance authority.",
+  "observed_visual_facts": {
+    "character design": [
+      "Visual reference for the Route Official in the Tournament adventure style"
+    ],
+    "costume and accessories": [
+      "Route Official attire and accessories appropriate to the acceptance authority visual canon"
+    ],
+    "pose and composition": [
+      "Single-character reference for acceptance authority use"
+    ],
+    "color and palette": [
+      "Matches the Adventures of Patch Tournament color palette"
+    ]
+  },
+  "positive_constraints": [
+    "Character must remain the Route Official as visually defined",
+    "Keep original color palette, linework, and proportions",
+    "May be used as source for downstream compiled sheets and style references"
+  ],
+  "negative_constraints": [
+    "Do not change the character species or silhouette",
+    "Do not add or remove background elements not present in the source",
+    "Do not infer dialogue, names, or narrative beyond the visible image",
+    "Do not publish without acceptance authority approval"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "visual-reference",
+      "style-guide",
+      "acceptance-review"
+    ],
+    "not_sufficient_for": [
+      "final-publication",
+      "narrative-scripting",
+      "unreviewed-derivatives"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "Tournament",
+      "judges-officials-acceptance-authority",
+      "source-image",
+      "route-official",
+      "acceptance-authority"
+    ]
+  }
+}

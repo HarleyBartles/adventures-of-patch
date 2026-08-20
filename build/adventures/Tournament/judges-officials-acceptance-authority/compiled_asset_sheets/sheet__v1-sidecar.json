@@ -1,0 +1,84 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Officials",
+  "sidecar_purpose": "Acceptance authority visual reference for Tournament Officials.",
+  "source_truth_note": "This sidecar records the accepted image for Tournament Officials as the canonical visual truth for the Tournament Judges and Officials acceptance authority.",
+  "runtime_use_note": "Approved for style reference, asset compilation, and presentation planning for Tournament Officials within the Tournament adventure.",
+  "do_not_infer_note": "Do not infer personality, dialogue, narrative context, backstory, or relationships not directly visible in the image. Treat only the pixels shown as accepted truth.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/judges-officials-acceptance-authority/compiled_asset_sheets/sheet__v1.png",
+    "relative_image_path": "sheet__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/judges-officials-acceptance-authority/compiled_asset_sheets/sheet__v1-sidecar.json",
+    "relative_sidecar_path": "sheet__v1-sidecar.json",
+    "image_filename": "sheet__v1.png",
+    "sha256": "ed4a8ab9f5388aa5c984fcf5f502331d183099434807b3e2af40fcf835ad48ed",
+    "byte_size": 848484,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "compiled_asset_sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Compiled acceptance-authority sheet showing Tournament Officials references for the Judges and Officials acceptance authority.",
+  "observed_visual_facts": {
+    "sheet layout": [
+      "Grid of approved source-image thumbnails for Tournament judges and officials"
+    ],
+    "content": [
+      "Includes Head Judge, Judge Official, Medal Official, Medal Decision Moment, and Route Official references"
+    ],
+    "role": [
+      "Compiled asset sheet for acceptance review and canonical reference"
+    ],
+    "style": [
+      "Tournament adventure visual canon with consistent color palette and linework"
+    ]
+  },
+  "positive_constraints": [
+    "Compiled sheet pixels must remain in the accepted arrangement",
+    "All character cells must retain their accepted names and roles",
+    "Sheet may be used for canonical lookup and acceptance comparison"
+  ],
+  "negative_constraints": [
+    "Do not treat this sheet as a single narrative scene",
+    "Do not crop, reorder, or substitute cells without re-acceptance",
+    "Do not infer relationships between cells beyond visual grouping"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "compiled-sheet-reference",
+      "acceptance-review",
+      "canonical-overview"
+    ],
+    "not_sufficient_for": [
+      "final-publication",
+      "narrative-scripting",
+      "unreviewed-derivatives"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "Tournament",
+      "judges-officials-acceptance-authority",
+      "compiled-asset-sheet",
+      "tournament-officials",
+      "acceptance-authority"
+    ]
+  }
+}

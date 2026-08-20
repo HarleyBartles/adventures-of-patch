@@ -1,0 +1,97 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c1_r1_hero__v1.png",
+    "relative_image_path": "c1_r1_hero__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c1_r1_hero__v1-sidecar.json",
+    "relative_sidecar_path": "c1_r1_hero__v1-sidecar.json",
+    "image_filename": "c1_r1_hero__v1.png",
+    "sha256": "887c304c2ad078580dfb1af14d0b37c6ce8f16dec2ef324ddf8c0fcb0ea93c9a",
+    "byte_size": 3895763,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Wide hero view of Trial 1, the Reasonable Defaults / Multi-Route Finish Course, showing a foreground start line, multiple branching dirt paths, repeated finish gates, penalty boards, a TODAY marker, principle banners, tournament tents, and winding paths.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 1 - Seven-Day Sprint / Reasonable Defaults Track",
+      "Multi-route finish course"
+    ],
+    "setting": [
+      "Outdoor sunny tournament grounds",
+      "Rolling green hills and blue sky",
+      "Dirt and gravel paths"
+    ],
+    "elements": [
+      "Foreground start line",
+      "Multiple branching or parallel paths",
+      "Repeated finish gates",
+      "Penalty boards with negative numbers",
+      "TODAY marker sign",
+      "Principle and value banners",
+      "Tournament tents and bunting"
+    ],
+    "mood": [
+      "Cheerful, fair, orderly",
+      "Ceremonial logic course rather than speed race"
+    ]
+  },
+  "positive_constraints": [
+    "Multiple parallel or branching paths",
+    "Repeated finish gates",
+    "Penalty and TODAY markers",
+    "Banners, bunting, and tents"
+  ],
+  "negative_constraints": [
+    "No racetrack or motorway feel",
+    "No dark or hostile mood"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-1",
+      "hero"
+    ]
+  }
+}

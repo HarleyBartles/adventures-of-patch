@@ -1,0 +1,100 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Course Map",
+  "sidecar_purpose": "Adjacent metadata sidecar for the hand-scribbled long course map source image, recording observed pixel facts and intended usage within the route check booth adventure.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical source image of the hand-scribbled long course map in presentation packages and downstream asset generation for the route check booth.",
+  "do_not_infer_note": "Do not infer missing pixels, legible microtext, alternate map versions, or provenance beyond what is recorded here; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/long-course-route-check-booth/source_images/source_01_hand_scribbled_long_course_map__v1.png",
+    "relative_image_path": "source_01_hand_scribbled_long_course_map__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/long-course-route-check-booth/source_images/source_01_hand_scribbled_long_course_map__v1-sidecar.json",
+    "relative_sidecar_path": "source_01_hand_scribbled_long_course_map__v1-sidecar.json",
+    "image_filename": "source_01_hand_scribbled_long_course_map__v1.png",
+    "sha256": "bed8cceb3fd05385531d8440d2900e734f98718bf933b87bfee8f6c626d4941c",
+    "byte_size": 3446814,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Hand-scribbled long course map on lined notebook paper, documenting true route, tempting wrong paths, and route warnings for the tournament long course.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "transparent background"
+    ],
+    "dimensions": [
+      "width: 1448 pixels",
+      "height: 1086 pixels"
+    ],
+    "subject": [
+      "hand-scribbled long course map",
+      "lined notebook paper"
+    ],
+    "composition": [
+      "single-page notebook map",
+      "hand-drawn route annotations"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical hand-scribbled long course map source image.",
+    "Preserve the hand-drawn notebook style, including teal/blue true route, dashed tempting wrong paths, arrows, checks, X marks, question marks, and short route warnings.",
+    "Honor the exact RGBA pixel data and 1448x1086 dimensions.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction."
+  ],
+  "negative_constraints": [
+    "Do not use as an official booth map without explicit relabeling.",
+    "Do not invent or sharpen illegible microtext beyond what is visible.",
+    "Do not remove the hand-scribbled, slightly anxious notebook style.",
+    "Do not use as a final runtime sprite without downscaling or format conversion."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for the hand-scribbled long course map.",
+      "Route-discussion storyboards and presentation inserts.",
+      "Prompt anchor for map-detail illustrations.",
+      "Planning route-warning visual beats."
+    ],
+    "not_sufficient_for": [
+      "Legible navigation at small sizes.",
+      "Animation frame sequences.",
+      "Texture maps for 3D models.",
+      "Canonical character or environment details beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "character:Course Map",
+      "prop:map",
+      "domain:source-image",
+      "adventure:long-course-route-check-booth"
+    ]
+  }
+}

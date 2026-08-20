@@ -1,0 +1,86 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Judge Official",
+  "sidecar_purpose": "Acceptance authority visual reference for Judge Official.",
+  "source_truth_note": "This sidecar records the accepted image for Judge Official as the canonical visual truth for the Tournament Judges and Officials acceptance authority.",
+  "runtime_use_note": "Approved for style reference, asset compilation, and presentation planning for Judge Official within the Tournament adventure.",
+  "do_not_infer_note": "Do not infer personality, dialogue, narrative context, backstory, or relationships not directly visible in the image. Treat only the pixels shown as accepted truth.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/judges-officials-acceptance-authority/source_images/judge_official_props__v1.png",
+    "relative_image_path": "judge_official_props__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/judges-officials-acceptance-authority/source_images/judge_official_props__v1-sidecar.json",
+    "relative_sidecar_path": "judge_official_props__v1-sidecar.json",
+    "image_filename": "judge_official_props__v1.png",
+    "sha256": "340e7594e4908e261649919107eda1a7e70ea9b7e9eab3b7e0b4f9bc37f29ce9",
+    "byte_size": 2752832,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image reference for Judge Official props and accessories in the Tournament Judges and Officials acceptance authority.",
+  "observed_visual_facts": {
+    "props and accessories": [
+      "Props and accessories associated with the Judge Official role"
+    ],
+    "design": [
+      "Judge Official accessories consistent with the Tournament adventure visual canon"
+    ],
+    "composition": [
+      "Asset reference for props used by the Judge Official"
+    ],
+    "color and palette": [
+      "Matches the Adventures of Patch Tournament color palette"
+    ]
+  },
+  "positive_constraints": [
+    "Props must match the Judge Official visual canon",
+    "Keep original color palette, shape language, and proportions",
+    "May be used as source for compiled sheets and prop references"
+  ],
+  "negative_constraints": [
+    "Do not reassign props to a different official or role",
+    "Do not add or remove elements not present in the source",
+    "Do not infer usage or narrative beyond the visible prop set",
+    "Do not publish without acceptance authority approval"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "visual-reference",
+      "prop-reference",
+      "acceptance-review"
+    ],
+    "not_sufficient_for": [
+      "final-publication",
+      "narrative-scripting",
+      "unreviewed-derivatives"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "Tournament",
+      "judges-officials-acceptance-authority",
+      "source-image",
+      "judge-official",
+      "props",
+      "acceptance-authority"
+    ]
+  }
+}
