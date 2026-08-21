@@ -1,0 +1,92 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c1_r3_alt_direction_signs__v1.png",
+    "relative_image_path": "c1_r3_alt_direction_signs__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c1_r3_alt_direction_signs__v1-sidecar.json",
+    "relative_sidecar_path": "c1_r3_alt_direction_signs__v1-sidecar.json",
+    "image_filename": "c1_r3_alt_direction_signs__v1.png",
+    "sha256": "255a7a0d8440b725aae6e8affbbc58939f5042590a7bf32139be87e79a19f2ea",
+    "byte_size": 4012689,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Direction-sign view of Trial 1, showing confusing finish-direction signage, negative-number markers, course splits, rope barriers, and a mid-course decision point.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 1 - Reasonable Defaults Track",
+      "Decision-point detail"
+    ],
+    "setting": [
+      "Sunny tournament course",
+      "Rope barriers and sign clusters"
+    ],
+    "elements": [
+      "Confusing finish-direction signage",
+      "Negative-number penalty markers",
+      "Course split or choice point",
+      "Rope barriers"
+    ],
+    "mood": [
+      "Decision tension",
+      "Still cheerful and fair"
+    ]
+  },
+  "positive_constraints": [
+    "Readable but ambiguous signage",
+    "Penalty markers present",
+    "Rope barriers and course split"
+  ],
+  "negative_constraints": [
+    "No single obvious correct route",
+    "No dark or frustrating tone"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-1",
+      "alt"
+    ]
+  }
+}

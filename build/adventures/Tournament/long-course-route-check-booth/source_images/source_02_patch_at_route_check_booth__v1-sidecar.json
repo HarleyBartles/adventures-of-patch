@@ -1,0 +1,100 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the source image of Patch at the long-course route check booth, recording observed pixel facts and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference image of Patch at the long-course route check booth in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer missing pixels, pose variations, alternate costumes, or provenance beyond what is recorded here; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/long-course-route-check-booth/source_images/source_02_patch_at_route_check_booth__v1.png",
+    "relative_image_path": "source_02_patch_at_route_check_booth__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/long-course-route-check-booth/source_images/source_02_patch_at_route_check_booth__v1-sidecar.json",
+    "relative_sidecar_path": "source_02_patch_at_route_check_booth__v1-sidecar.json",
+    "image_filename": "source_02_patch_at_route_check_booth__v1.png",
+    "sha256": "74cd76abe10c3d7db2a399f64906141b0e7c657fed4c02d7cc787c67867a1802",
+    "byte_size": 3790212,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image of Patch at the long-course route check booth, interacting with stakeholders and route paperwork in canonical tournament costume.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "transparent background"
+    ],
+    "dimensions": [
+      "width: 1448 pixels",
+      "height: 1086 pixels"
+    ],
+    "subject": [
+      "Patch",
+      "route check booth",
+      "stakeholders"
+    ],
+    "composition": [
+      "interior stakeholder moment",
+      "Patch beside booth table"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical source image of Patch at the long-course route check booth.",
+    "Preserve Patch's canonical tournament costume: teal hoodie with antennae, white/cream bib layer, race number 042, black shoulder bag with terminal prompt mark, and teal shoes.",
+    "Keep the route check booth as a friendly stakeholder dugout, not a judge's podium.",
+    "Honor the exact RGBA pixel data and 1448x1086 dimensions."
+  ],
+  "negative_constraints": [
+    "Do not replace Patch's tournament costume with non-canonical clothing.",
+    "Do not make stakeholders look like strict officials in identical uniforms.",
+    "Do not infer missing pose variations or alternate costumes beyond the visible frame.",
+    "Do not use as a final runtime sprite without downscaling or format conversion."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for Patch at the route check booth.",
+      "Story beats showing Patch seeking route clarification.",
+      "Prompt anchor for new Patch-and-booth illustrations.",
+      "Presentation panels featuring stakeholder interaction."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Canonical backstory or environment details beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "character:Patch",
+      "domain:source-image",
+      "adventure:long-course-route-check-booth"
+    ]
+  }
+}

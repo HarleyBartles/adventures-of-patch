@@ -1,0 +1,100 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Route Check Booth",
+  "sidecar_purpose": "Adjacent metadata sidecar for the route check booth detail source image, recording observed pixel facts and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical detail reference for the long-course route check booth in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer missing pixels, additional props or characters, or provenance beyond what is recorded here; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/long-course-route-check-booth/source_images/source_03_route_check_booth_detail__v1.png",
+    "relative_image_path": "source_03_route_check_booth_detail__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/long-course-route-check-booth/source_images/source_03_route_check_booth_detail__v1-sidecar.json",
+    "relative_sidecar_path": "source_03_route_check_booth_detail__v1-sidecar.json",
+    "image_filename": "source_03_route_check_booth_detail__v1.png",
+    "sha256": "4b6d244502783dfc4036feb0ba1a6b5d31562c67c363188a9b8c3281212b7f38",
+    "byte_size": 3930632,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Detail view of the long-course route check booth, focusing on route documents, clipboards, maps, and branded materials.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "transparent background"
+    ],
+    "dimensions": [
+      "width: 1448 pixels",
+      "height: 1086 pixels"
+    ],
+    "subject": [
+      "Route Check Booth",
+      "route documents",
+      "clipboards and maps"
+    ],
+    "composition": [
+      "detail table view",
+      "close-up of booth interior props"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical detail source image of the long-course route check booth.",
+    "Preserve the paper-driven, process-focused props: clipboards, notebooks, route maps, ledgers, pens, crates, and blue branded materials.",
+    "Keep the booth as a friendly stakeholder dugout rather than a formal judging stand.",
+    "Honor the exact RGBA pixel data and 1448x1086 dimensions."
+  ],
+  "negative_constraints": [
+    "Do not infer additional props or characters beyond the visible detail.",
+    "Do not use as an establishing shot; it is a detail frame.",
+    "Do not remove the booth's blue-and-gold branding or rustic wood character.",
+    "Do not use as a final runtime sprite without downscaling or format conversion."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical detail reference for the route check booth.",
+      "Close-up story beats about route documentation.",
+      "Prop continuity checks across the asset pack.",
+      "Presentation inserts of booth paperwork and tools."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Wide establishing context of the long course.",
+      "Provenance or prompt reconstruction."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "character:Route Check Booth",
+      "domain:source-image",
+      "adventure:long-course-route-check-booth"
+    ]
+  }
+}

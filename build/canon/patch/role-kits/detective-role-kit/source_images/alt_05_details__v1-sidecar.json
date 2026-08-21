@@ -1,0 +1,111 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Adjacent metadata sidecar for the canonical alt_05_details source image of Patch in the detective role kit, recording observed costume and accessory details and intended usage.",
+  "source_truth_note": "The PNG file is the source of truth for visual content; this sidecar mirrors its exact dimensions, byte size, SHA-256, and mode.",
+  "runtime_use_note": "Approved for use as a canonical reference for Patch's detective role kit detail source image in presentation packages and downstream asset generation.",
+  "do_not_infer_note": "Do not infer additional costume elements, poses, or props beyond those visible in the detail image; only use the actual image area and recorded metadata.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/detective-role-kit/source_images/alt_05_details__v1.png",
+    "relative_image_path": "alt_05_details__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/detective-role-kit/source_images/alt_05_details__v1-sidecar.json",
+    "relative_sidecar_path": "alt_05_details__v1-sidecar.json",
+    "image_filename": "alt_05_details__v1.png",
+    "sha256": "fe670ac97ad376c4fb3860bc1d945708076d2c43fe1cfa2fb3751c88f32f25f5",
+    "byte_size": 2698140,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Canonical detail reference source image (alt_05) of Patch in the detective role kit, captured at 1254x1254 in RGBA PNG format.",
+  "observed_visual_facts": {
+    "format": [
+      "PNG"
+    ],
+    "color_mode": [
+      "RGBA"
+    ],
+    "dimensions": [
+      "width: 1254 pixels",
+      "height: 1254 pixels"
+    ],
+    "bit_depth": [
+      "8 bits per channel"
+    ],
+    "transparency": [
+      "alpha channel present",
+      "alpha values are uniformly 255 (fully opaque)"
+    ],
+    "metadata": [
+      "no PNG text chunks",
+      "no embedded sRGB/gAMA/cHRM/iCCP chunks"
+    ],
+    "character": [
+      "Patch"
+    ],
+    "role": [
+      "Detective role kit variant"
+    ],
+    "style": [
+      "canon",
+      "illustrated"
+    ],
+    "composition": [
+      "detail reference sheet for the detective role kit",
+      "close-up panels of costume and accessory details"
+    ]
+  },
+  "positive_constraints": [
+    "Use only as the canonical detective role kit alt_05_details source image.",
+    "Preserve Patch's core identity elements whenever visible in the detail frame: teal hoodie, hood antennae, off-white face panel, black oval eyes with white shine highlights, and teal crossbody bag with > mark.",
+    "Layer detective role accessories over Patch's core look without replacing the hoodie, antennae, or core silhouette.",
+    "Honor the exact RGBA pixel data and 1254x1254 dimensions.",
+    "Adhere to the recorded SHA-256 and byte size for cache and reproduction.",
+    "Use visible detail panels as the reference for detective kit costume elements."
+  ],
+  "negative_constraints": [
+    "Do not use as a final runtime sprite without downscaling or format conversion.",
+    "Do not replace the teal hoodie with a full detective coat that obscures Patch's core identity.",
+    "Do not remove visible core identity elements such as the teal hoodie, antennae, face panel, or crossbody bag.",
+    "Do not infer additional poses, props, or characters beyond the shown details.",
+    "Do not infer missing pose variations, alternate costumes, or environment details beyond the visible frame.",
+    "Do not remix into non-detective role kits without explicit style-guide review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical reference for detective role kit detail views.",
+      "Style consistency checks for detective kit materials and accessories.",
+      "Prompt anchor for new Patch detective detail images.",
+      "Presentation package planning for detailed costume callouts."
+    ],
+    "not_sufficient_for": [
+      "Animation frame sequences.",
+      "Real-time game sprites at target resolutions.",
+      "Texture maps for 3D models.",
+      "Provenance or prompt reconstruction.",
+      "Canonical backstory or environment details beyond the visible frame."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

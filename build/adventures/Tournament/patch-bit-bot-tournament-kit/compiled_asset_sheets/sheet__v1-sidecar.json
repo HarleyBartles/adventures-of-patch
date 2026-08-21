@@ -1,0 +1,95 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch / Bit / Bot Tournament Kit",
+  "sidecar_purpose": "Adjacent sidecar for the Patch, Bit, and Bot Tournament Kit compiled asset sheet in the patch-bit-bot-tournament-kit. Captures the approved visual reference and reuse constraints for this tournament asset.",
+  "source_truth_note": "This sidecar and the accompanying PNG are the source of truth for the Patch, Bit, and Bot Tournament Kit compiled asset sheet in the patch-bit-bot-tournament-kit.",
+  "runtime_use_note": "Intended for tournament planning, asset-sheet compilation, prompt anchoring, and continuity review. It is not a cropped runtime sprite and should be processed before direct presentation use.",
+  "do_not_infer_note": "Do not infer animation timing, dialogue, narrative sequence, or unseen costume details from this single static image. Use only this approved source and the canonical Tournament style bible.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/patch-bit-bot-tournament-kit/compiled_asset_sheets/sheet__v1.png",
+    "relative_image_path": "sheet__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/patch-bit-bot-tournament-kit/compiled_asset_sheets/sheet__v1-sidecar.json",
+    "relative_sidecar_path": "sheet__v1-sidecar.json",
+    "image_filename": "sheet__v1.png",
+    "sha256": "34c77bd403d6722a861b169e16c3badeb07e0b59655ee3ae88ba304f4e8a4daa",
+    "byte_size": 636283,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1008
+    },
+    "mode": "RGB",
+    "asset_role": "compiled_asset_sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Tournament reference image of the Patch, Bit, and Bot Tournament Kit compiled asset sheet.",
+  "observed_visual_facts": {
+    "document_header": [
+      "Compiled tournament asset sheet with title and status information.",
+      "Header labels the Patch, Bit, and Bot Tournament Kit."
+    ],
+    "layout_grid": [
+      "Grid of tournament source-image panels.",
+      "Panels are arranged in rows and columns with rules."
+    ],
+    "panel_captions_and_rules": [
+      "Dark caption bars or rules separate panels.",
+      "Each panel is labeled for its scene and character."
+    ],
+    "character_design": [
+      "Patch, Bit, and Bot are shown in tournament-ready designs.",
+      "Costumes and props remain consistent with the approved style bible."
+    ],
+    "color_and_style": [
+      "Clean white or neutral background.",
+      "Tournament reference-sheet style with clear panel separation."
+    ]
+  },
+  "positive_constraints": [
+    "Preserve the compiled sheet layout, panel order, and caption structure.",
+    "Keep the header, rules, and panel separation as shown.",
+    "Use only the visible panels as canonical tournament references.",
+    "Maintain the approved source image metadata and file custody."
+  ],
+  "negative_constraints": [
+    "Do not treat the compiled sheet as a sliced runtime sprite atlas.",
+    "Do not infer exact caption text or color values beyond what is visible.",
+    "Do not add, remove, or reorder panels without version control.",
+    "Do not use the sheet as a final acceptance of new derivative art."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Selecting tournament source panels for scenes.",
+      "Prompt constraints for new tournament images.",
+      "QA of compiled asset sheet layout and panel identity.",
+      "Composing tournament adventure scenes with Patch, Bit, and Bot."
+    ],
+    "not_sufficient_for": [
+      "Direct runtime presentation without processing.",
+      "Exact RGB values beyond the visible color.",
+      "Animation frames, timing, or rigging not shown.",
+      "Final acceptance of derivative art without separate image QA."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "adventure:Tournament",
+      "project:adventures-of-patch",
+      "asset:compiled-sheet",
+      "character:patch-bit-bot-tournament-kit"
+    ]
+  }
+}

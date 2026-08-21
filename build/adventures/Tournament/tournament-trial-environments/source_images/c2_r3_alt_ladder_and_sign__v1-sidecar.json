@@ -1,0 +1,91 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c2_r3_alt_ladder_and_sign__v1.png",
+    "relative_image_path": "c2_r3_alt_ladder_and_sign__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c2_r3_alt_ladder_and_sign__v1-sidecar.json",
+    "relative_sidecar_path": "c2_r3_alt_ladder_and_sign__v1-sidecar.json",
+    "image_filename": "c2_r3_alt_ladder_and_sign__v1.png",
+    "sha256": "671d770d33088f18514b1018d55c5f167c5611c2e4b30de6c89f7df866e0c164",
+    "byte_size": 3448645,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1447,
+      "height": 1087
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Apparatus view of Trial 2 with ladder and 'INDUSTRY STANDARD' sign context, adding maintenance and calibration texture while preserving the sunny tournament world.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 2 - Industry Standard High Jump"
+    ],
+    "setting": [
+      "Sunny tournament field"
+    ],
+    "elements": [
+      "High-jump-like apparatus",
+      "Wooden ladder",
+      "Wooden 'INDUSTRY STANDARD' sign",
+      "Calibration and maintenance texture"
+    ],
+    "mood": [
+      "Official",
+      "Handmade",
+      "Sunny"
+    ]
+  },
+  "positive_constraints": [
+    "Ladder and sign context",
+    "Maintenance and calibration texture",
+    "Bright toy-like apparatus"
+  ],
+  "negative_constraints": [
+    "Do not make the scene dark or cluttered",
+    "Do not drift to technical-diagram style"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-2",
+      "alt"
+    ]
+  }
+}

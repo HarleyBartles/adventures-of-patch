@@ -1,8 +1,25 @@
-# Generated navigation is written with LF line endings on every platform.
-**/INDEX.md eol=lf
+# All text files are stored and checked out with LF line endings.
+* text=auto eol=lf
 
-# Deterministic source and wrapper tooling uses LF to prevent Windows churn.
-scripts/*.py eol=lf
-scripts/*.ps1 eol=lf
-scripts/*.sh eol=lf
+# Explicitly mark known binary formats so Git never treats them as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.webp binary
+*.pptx binary
+*.zip binary
+*.7z binary
+*.tar binary
+*.gz binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Ensure .gitattributes itself stays LF.
 .gitattributes eol=lf

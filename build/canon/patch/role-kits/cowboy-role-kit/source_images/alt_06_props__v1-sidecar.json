@@ -1,0 +1,79 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Canonical visual annotation and source-of-truth metadata for the alt_06_props__v1 cowboy role-kit prop sheet.",
+  "source_truth_note": "This sidecar is paired with the exact alt_06_props__v1.png source image; its visual facts describe only the objects visible in that file.",
+  "runtime_use_note": "Use as canonical reference for cowboy prop designs (lasso and sheriff badge) when building downstream assets, style bibles, or scene compositions.",
+  "do_not_infer_note": "Do not infer character pose, scale, environment, narrative sequence, or use context beyond the props shown. Do not assume these props are worn, held, or in a specific scene.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/cowboy-role-kit/source_images/alt_06_props__v1.png",
+    "relative_image_path": "alt_06_props__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/cowboy-role-kit/source_images/alt_06_props__v1-sidecar.json",
+    "relative_sidecar_path": "alt_06_props__v1-sidecar.json",
+    "image_filename": "alt_06_props__v1.png",
+    "sha256": "5ced0b6dc3fcd0bccef8b0496713654c081d739ddc2033c47e9464aba6faf32d",
+    "byte_size": 1807298,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "A coiled brown braided lasso with a knotted loop and a golden six-pointed sheriff star badge, isolated on a plain white background.",
+  "observed_visual_facts": {
+    "objects": [
+      "A coiled brown braided lasso/rope with a twisted texture and one end finished with a small knob.",
+      "A golden six-pointed sheriff star badge with rounded ball tips and a raised circular center, placed to the right of the lasso."
+    ],
+    "composition": [
+      "Props are arranged on a plain white background with soft drop shadows beneath each object."
+    ],
+    "style": [
+      "Clean cartoon/illustrated style with bold outlines, smooth cel-shading, and no photographic detail."
+    ]
+  },
+  "positive_constraints": [
+    "The lasso is brown, braided/twisted, and coiled in a loose loop.",
+    "The sheriff badge is golden/brass colored and has six points with rounded tips.",
+    "Both props are isolated against a plain white background.",
+    "Art style is illustrative with bold outlines and soft shading."
+  ],
+  "negative_constraints": [
+    "No character or character body parts are visible.",
+    "No environment, landscape, sky, or ground plane is shown.",
+    "No text, labels, numbers, or logos are present.",
+    "No motion, action pose, or interaction with a character is depicted."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical cowboy prop reference for Patch.",
+      "Style guide source for rope texture and sheriff badge shape.",
+      "Asset extraction for individual lasso or badge elements."
+    ],
+    "not_sufficient_for": [
+      "Full character or scene composition.",
+      "Animation frames or motion reference.",
+      "Inferences about environment lighting, scale, or story context."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

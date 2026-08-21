@@ -1,0 +1,74 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Heist Index Folder",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the heist style-framework pitch folder; supports selection, visual continuity, QA, and style constraint extraction.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/heist_pitch_folder/02_index_joined.png",
+    "relative_image_path": "02_index_joined.png",
+    "repo_sidecar_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/heist_pitch_folder/02_index_joined-sidecar.json",
+    "relative_sidecar_path": "02_index_joined-sidecar.json",
+    "image_filename": "02_index_joined.png",
+    "sha256": "392e4a93d2a84cf01df1771413bbc62b950a564d847ebd3ce01ea73dc2d1d8ed",
+    "byte_size": 2167218,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1491,
+      "height": 1055
+    },
+    "mode": "RGB",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Heist pitch source-image of the joined Index folder; the source-and-provenance reference panel for the heist planning table.",
+  "observed_visual_facts": {
+    "pitch_panel": [
+      "Joined panel for the Index role in the heist pitch context.",
+      "Carries source-first, archival, and provenance visual language."
+    ]
+  },
+  "positive_constraints": [
+    "This is a heist-pitch style reference within the Adventures of Patch style framework.",
+    "Treat the folder or joined panel as the named role reference for continuity.",
+    "Preserve the tonal and compositional conventions established by the style framework.",
+    "Use this image as a source-image cue for the named heist role or character folder."
+  ],
+  "negative_constraints": [
+    "Do not treat this pitch image as a final approved hero without additional QA.",
+    "Do not infer canonical prop or costume details not visible in the image.",
+    "Do not use this image to override committed style-sheet locks without review."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Heist pitch-folder source-image reference.",
+      "Style-framework continuity and selection.",
+      "Prompt and QA context for the named role."
+    ],
+    "not_sufficient_for": [
+      "Final approved hero reference without separate hero sidecar.",
+      "Exact OCR or small-type verification.",
+      "Authorizing design changes outside the style framework."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "workbench",
+      "style-framework",
+      "heist"
+    ]
+  }
+}

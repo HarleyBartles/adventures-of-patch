@@ -1,0 +1,92 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c4_r2_alt_false_line_risks__v1.png",
+    "relative_image_path": "c4_r2_alt_false_line_risks__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c4_r2_alt_false_line_risks__v1-sidecar.json",
+    "relative_sidecar_path": "c4_r2_alt_false_line_risks__v1-sidecar.json",
+    "image_filename": "c4_r2_alt_false_line_risks__v1.png",
+    "sha256": "7b2c8341338435c1e89001df3339cbdcfb99c3774d931084724328e5303ad232",
+    "byte_size": 2289065,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "mode": "RGB",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "False-line risk view of Trial 4, showing a road crossing, course line continuation, barricaded hole, cones, hazard tape, and open countryside route continuity.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 4 - Long Course / False Lines"
+    ],
+    "setting": [
+      "Open countryside route"
+    ],
+    "elements": [
+      "Road crossing",
+      "Course line continuation",
+      "Barricaded hole",
+      "Cones and hazard tape",
+      "Open countryside route"
+    ],
+    "mood": [
+      "Tense but fair",
+      "Deceptive but legible"
+    ]
+  },
+  "positive_constraints": [
+    "Visible false-line risk",
+    "Road crossing and barricaded hole",
+    "Cones and hazard tape",
+    "Open countryside continuity"
+  ],
+  "negative_constraints": [
+    "No dangerous disaster imagery",
+    "No urban or construction clutter"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-4",
+      "alt"
+    ]
+  }
+}

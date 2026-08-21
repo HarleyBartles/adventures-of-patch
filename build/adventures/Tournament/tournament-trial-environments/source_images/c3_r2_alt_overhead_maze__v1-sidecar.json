@@ -1,0 +1,92 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c3_r2_alt_overhead_maze__v1.png",
+    "relative_image_path": "c3_r2_alt_overhead_maze__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c3_r2_alt_overhead_maze__v1-sidecar.json",
+    "relative_sidecar_path": "c3_r2_alt_overhead_maze__v1-sidecar.json",
+    "image_filename": "c3_r2_alt_overhead_maze__v1.png",
+    "sha256": "7f5856fa59e71a35a6d97565055801b4b6dae18f7a4f53e810233e7ca1e4f737",
+    "byte_size": 4405914,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Overhead view of the Trial 3 hedge maze, showing circular or structured hedge geometry, internal prize stations on blue-and-gold plinths, surrounding tents, flags, banners, and full-site continuity.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 3 - Hedge Maze / Prize Map"
+    ],
+    "setting": [
+      "Sunny tournament grounds"
+    ],
+    "elements": [
+      "Overhead maze geometry",
+      "Circular or structured hedge walls",
+      "Internal prize stations on blue-and-gold plinths",
+      "Surrounding tents, flags, and banners"
+    ],
+    "mood": [
+      "Clear",
+      "Ceremonial",
+      "Puzzle-like"
+    ]
+  },
+  "positive_constraints": [
+    "Clear overhead maze geometry",
+    "Visible prize stations",
+    "Surrounding tournament continuity",
+    "Warm editorial style"
+  ],
+  "negative_constraints": [
+    "Do not become a sterile infographic",
+    "Do not introduce dark or maze-horror mood"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-3",
+      "alt"
+    ]
+  }
+}

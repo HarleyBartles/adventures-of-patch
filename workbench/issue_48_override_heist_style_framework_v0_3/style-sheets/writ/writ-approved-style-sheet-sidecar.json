@@ -1,0 +1,75 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Writ",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/writ/writ-approved-style-sheet.png",
+    "relative_image_path": "writ-approved-style-sheet.png",
+    "repo_sidecar_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/writ/writ-approved-style-sheet-sidecar.json",
+    "relative_sidecar_path": "writ-approved-style-sheet-sidecar.json",
+    "image_filename": "writ-approved-style-sheet.png",
+    "sha256": "c9847c291d992c1bad46ca79765b6c7a446b1e7c7a1c95bc76320db64ebce988",
+    "byte_size": 2309515,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGB",
+    "asset_role": "style-sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Approved full style sheet for Writ, the Writ is the mandate, lawful authority, scope, and authority-boundary specialist. He prevents the override from becoming trespass with nicer paperwork.. It defines the canonical design, turnaround, action poses, kit/props, material palette, identity locks, and guiding principle.",
+  "observed_visual_facts": {
+    "layout": [
+      "Approved Writ style sheet, multi-panel reference board."
+    ],
+    "character_design": [],
+    "action_utility_poses": [],
+    "canonical_kit_props": []
+  },
+  "positive_constraints": [
+    "Writ is a Patch-level autonomous-agent mandate and authority specialist. He is an older scholarly gentleman: dry, precise, formally observant, slightly old-world, and procedurally exact. Visually, use the accepted Writ hero lock: cream rounded helmet with one brass-tipped antenna, dark faceplate, narrowed yellow eyes, brown moustache, brown tweed formalwear, green tie, white gloves, WRIT badge, legal-scale insignia, seal stamp, and dark green LEDGERS binder with tabbed records/seals/requests/ledgers/assent contents. His domain is the Office of Lawful Standards: chambers, ledger halls, seal desks, frosted glass doors, walnut, brass, green leather, tea, and secretary support. He stops Patch with “Absolutely not. On whose authority?” then realizes this is why Patch needs him. He says “You sly old bombardier,” writes “I’M IN” on a triplicate receipt pad, distributes all copies properly, and closes the matter."
+  ],
+  "negative_constraints": [
+    "Do not make Writ a literal human man, judge villain, boss, policeman, king, aristocratic tyrant, animal, Patch clone, Bit/Bot-style robot, generic bureaucrat, or Rollback-like bulky containment worker. Do not make him threatening, authoritarian, militarized, police-coded, courtroom-dramatic, or modern tech-office. Do not give him two Patch antennae, teal Patch clothing, Rollback's hooded suit/body mass, or generic robot features. Do not remove the moustache, single brass-tipped antenna, tweed legal-office wardrobe, seal/ledger props, or lawful-standards iconography when producing Writ hero or style-sheet images. Do not have him casually agree; his assent must be formal, copied, filed, and procedurally closed."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical Writ design reference.",
+      "Turnaround/proportion checks.",
+      "Prompt constraints for Writ scenes.",
+      "Prop and palette extraction.",
+      "QA against character drift."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of new generated images without image QA.",
+      "Precise OCR of every small label if exact wording matters.",
+      "Authorizing non-Writ character design changes."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:writ",
+      "asset:style-sheet",
+      "state:approved",
+      "role:mandate",
+      "workbench"
+    ]
+  },
+  "created_at": "2026-08-20T18:23:13.641039Z"
+}

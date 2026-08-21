@@ -1,0 +1,94 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c1_r2_alt_course_view__v1.png",
+    "relative_image_path": "c1_r2_alt_course_view__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c1_r2_alt_course_view__v1-sidecar.json",
+    "relative_sidecar_path": "c1_r2_alt_course_view__v1-sidecar.json",
+    "image_filename": "c1_r2_alt_course_view__v1.png",
+    "sha256": "5ef0bf4bd0a8ff8a032b05de08f9953f3e71e1cdf5c28856477c1ffffdc1cf28",
+    "byte_size": 3898602,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Alternate course view of Trial 1, emphasizing three prominent finish gates, lush route borders, flower beds, bunting, and a path-heavy composition without the foreground start lanes.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 1 - Reasonable Defaults Track",
+      "Alternate course view"
+    ],
+    "setting": [
+      "Sunny tournament grounds",
+      "Lush green route borders",
+      "Flower beds"
+    ],
+    "elements": [
+      "Three prominent finish gates",
+      "Path-heavy composition",
+      "Bunting and route borders",
+      "Tournament tents in the background"
+    ],
+    "mood": [
+      "Cheerful",
+      "Orderly",
+      "Route-focused"
+    ]
+  },
+  "positive_constraints": [
+    "Multiple finish gates visible",
+    "Lush route borders and flower beds",
+    "Bunting and path emphasis"
+  ],
+  "negative_constraints": [
+    "No foreground start lanes",
+    "No speed-race atmosphere"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-1",
+      "alt"
+    ]
+  }
+}

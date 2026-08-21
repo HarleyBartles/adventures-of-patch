@@ -1,0 +1,91 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Canonical back-view source image for the chef role kit, used for rear-angle reference and continuity.",
+  "source_truth_note": "Authoritative rear-view depiction of Patch in the chef role. Image metadata matches the committed PNG.",
+  "runtime_use_note": "Use as a source reference for back-view renders, cropping, scaling, and downstream composition in the chef role kit.",
+  "do_not_infer_note": "Do not infer front-view facial details, eye expression, or bag placement from this rear view. Do not assume the chef role gear replaces Patch's canonical hoodie, bag, or antennae.",
+  "image": {
+    "repo_image_path": "build/canon/patch/role-kits/chef-role-kit/source_images/alt_back_view__v1.png",
+    "relative_image_path": "alt_back_view__v1.png",
+    "repo_sidecar_path": "build/canon/patch/role-kits/chef-role-kit/source_images/alt_back_view__v1-sidecar.json",
+    "relative_sidecar_path": "alt_back_view__v1-sidecar.json",
+    "image_filename": "alt_back_view__v1.png",
+    "sha256": "3dad78ad2e71d59689c45ae493f758d6d3915c3b6231244831e411fbd877c424",
+    "byte_size": 1732665,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Back view of Patch in the chef role kit.",
+  "observed_visual_facts": {
+    "subject": [
+      "Patch is shown from the back"
+    ],
+    "viewpoint": [
+      "Rear-facing view of the character"
+    ],
+    "role": [
+      "Chef role kit variant"
+    ],
+    "composition": [
+      "Figure is centered in the frame",
+      "Opaque white background"
+    ],
+    "canon": [
+      "Canonical teal hoodie and hood silhouette visible from behind",
+      "Two antennae protrude from the top of the hood",
+      "Crossbody bag strap is visible across the back"
+    ]
+  },
+  "positive_constraints": [
+    "Patch's long-sleeved teal hoodie remains the main body garment",
+    "Chef role accessories or costume pieces may layer over the hoodie without replacing it",
+    "Crossbody bag stays distinct with a dark strap and white greater-than mark",
+    "Two slim dark antennae protrude from the hood with small rounded tips",
+    "Dark trousers and teal shoes with white soles remain canonical",
+    "Rear view is used for back-angle continuity and reference only"
+  ],
+  "negative_constraints": [
+    "Do not replace the teal hoodie with a chef coat as the primary identity garment",
+    "Do not show facial or eye details because this is a back view",
+    "Do not switch the bag to the opposite hip without explicit continuity",
+    "Do not duplicate the bag or show it both in front and behind",
+    "Do not introduce non-canonical logos, badges, or substitute identity marks",
+    "Do not expose segmented robot limbs or a separate robot body"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Back-view chef role reference",
+      "Rear-angle continuity checks",
+      "Costume and silhouette extraction from behind"
+    ],
+    "not_sufficient_for": [
+      "Front-view facial detail",
+      "Eye canon verification",
+      "Front-view bag placement reference"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "canon"
+    ]
+  }
+}

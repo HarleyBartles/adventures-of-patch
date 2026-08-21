@@ -1,0 +1,93 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Rollback",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It does not by itself promote the image to canon beyond the acceptance state stated here.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/rollback/rollback-prohibited-anti-patterns.png",
+    "relative_image_path": "rollback-prohibited-anti-patterns.png",
+    "repo_sidecar_path": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/rollback/rollback-prohibited-anti-patterns-sidecar.json",
+    "relative_sidecar_path": "rollback-prohibited-anti-patterns-sidecar.json",
+    "image_filename": "rollback-prohibited-anti-patterns.png",
+    "sha256": "6d797fbea85d3b3b698bd43ecb4b4e5c29369d0eda4ecffa6624102ec57d55bb",
+    "byte_size": 2176907,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGB",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Prohibited anti-pattern reference board for Rollback. It explicitly documents rejected designs, roles, props, materials, proportions, and behavior drifts that must not be replicated.",
+  "observed_visual_facts": {
+    "layout": [
+      "Prohibited anti-pattern reference board for Rollback, marked with rejections."
+    ],
+    "rejection_categories": [
+      "realistic human Black man in field gear / human-scale tactical operator drift;",
+      "real-world security guard, police, military, commando, camo, or tactical pose language;",
+      "guns, knives, ammo, weapon racks, tactical shields, or weapon stances;",
+      "blocky humanoid robot, mech, robot tank, or armored containment-unit drift;",
+      "bouncer, brute, thug, wrestler, angry strongman, or intimidation posture;",
+      "dark bunker swallow, where Rollback becomes a moody background figure instead of a clear character reference;",
+      "Patch recolor drift: teal hoodie, two antennae, Patch silhouette, Patch bag, or Patch protagonist colour read;",
+      "wrong scale: human-scale, tall/leggy, too slim, too large/mech, or not in correct Patch/Rollback scale relationship;",
+      "giant full beard or beard-over-face drift;",
+      "pale Patch/Silk faceplate, hard rectangular robot mask, or exposed realistic human skin face;"
+    ],
+    "hard_nos": [
+      "Do not make Rollback a literal human soldier, human security guard, realistic human Black man in field gear, gun-happy commando, weapons dealer, villain, bodyguard stereotype, thug, wrestler, angry brute, animal, Patch clone, Bit/Bot-style robot, generic robot tank, blocky humanoid robot, generic strongman, or Black man pasted onto a robot body.",
+      "Do not make him human-sized, long-legged, tactical-mannequin, gung-ho, combat-ready, military fantasy, camouflage-clad, armored, armed, or security-coded.",
+      "Do not show guns, knives, ammo, weapons racks, tactical violence, war scenes, flags, real military insignia, aggressive combat posing, police/security uniform language, or soldier kit.",
+      "Do not give him Patch's teal hoodie, two antennae, crossbody terminal bag, `>` symbol, pale Patch/Silk-style faceplate, or protagonist colour read.",
+      "Do not use a hard rectangular robot mask, exposed realistic human skin face, nested/double hoods, giant full beard, full camouflage pattern, Silk's LINE 07 tag language, threadline identity cues, or dark bunker scenery that overwhelms the character.",
+      "Do not make the bunker a static storeroom, war room, armoury, command bridge, generic warehouse, or combat bunker instead of an active contingency environment.",
+      "Do not use the anti-pattern sheet as positive reference."
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet primarily as negative guidance and QA rejection criteria for Rollback.",
+    "Rollback is a Patch-level autonomous-agent contingency and recovery specialist. He is the largest believable agent in the room: taller and broader than Patch, almost improbably large for an agent, but still not human-scale. He reads as a broad, burly Black bearded man through integrated warm rich-brown agent faceplate, neat close-cropped black afro-beard / short boxed beard, head shape, stance, warmth, and wry calm. He has calm narrow dark eye slits, exactly one antenna, one loose outer hood pulled up over his head, olive-drab hooded workwear or heavy soft-shell containment-operator outerwear, darker underlayers, muted hardware, compact containment / rollback / restore tools, Rollback-specific tag language such as PLAN B / RESTORE / FAILSAFE / ROLLBACK, and a grounded planted posture. Use a clean character-reference read with controlled light painterly material richness; do not push him into full dark bunker style. His domain is an active contingency bunker with observation-deck windows, controlled simulations, Plan B / Plan C labels, recovery logic, and failure-on-failure rooms, but hero-reference images should keep him primary and use only light domain cues. He asks “What’s your Plan B?” and, when Patch has none, says “Then you ain’t got no plan.” He realizes this is exactly why Patch needs him, says “You son of a gun,” and joins."
+  ],
+  "negative_constraints": [
+    "Do not make Rollback a literal human soldier, human security guard, realistic human Black man in field gear, gun-happy commando, weapons dealer, villain, bodyguard stereotype, thug, wrestler, angry brute, animal, Patch clone, Bit/Bot-style robot, generic robot tank, blocky humanoid robot, generic strongman, or Black man pasted onto a robot body. Do not make him human-sized, long-legged, tactical-mannequin, gung-ho, combat-ready, military fantasy, camouflage-clad, armored, armed, or security-coded. Do not show guns, knives, ammo, weapons racks, tactical violence, war scenes, flags, real military insignia, aggressive combat posing, police/security uniform language, or soldier kit. Do not give him Patch's teal hoodie, two antennae, crossbody terminal bag, `>` symbol, pale Patch/Silk-style faceplate, or protagonist colour read. Do not use a hard rectangular robot mask, exposed realistic human skin face, nested/double hoods, giant full beard, full camouflage pattern, Silk's LINE 07 tag language, threadline identity cues, or dark bunker scenery that overwhelms the character. Do not make the bunker a static storeroom, war room, armoury, command bridge, generic warehouse, or combat bunker instead of an active contingency environment. Do not use the anti-pattern sheet as positive reference."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA rejection checks for Rollback.",
+      "Prompt negative constraints.",
+      "Preventing role/ontology drift.",
+      "Differentiating Rollback from other crew members."
+    ],
+    "not_sufficient_for": [
+      "Positive generation by itself; pair with approved hero/style sheet.",
+      "Detailed final Rollback outfit rendering without the approved style sheet.",
+      "Treating any rejected example as a fallback design."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:rollback",
+      "asset:source-image",
+      "state:approved",
+      "role:contingency",
+      "workbench"
+    ]
+  },
+  "created_at": "2026-08-20T18:23:13.641039Z"
+}

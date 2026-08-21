@@ -1,0 +1,96 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Tournament Trial Environment",
+  "sidecar_purpose": "Adjacent sidecar for a tournament trial environment source image; records approved semantics, observed visual facts, and usage constraints.",
+  "source_truth_note": "The PNG pixel content is the source of truth; this sidecar is a mechanical and semantic descriptor only.",
+  "runtime_use_note": "May be used for environment continuity, prompt-board reference, and slide planning; do not use as a generation seed without provenance approval.",
+  "do_not_infer_note": "Do not infer character actions, scores, or off-screen narrative; do not generate new imagery from this sidecar alone.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c3_r1_hero__v1.png",
+    "relative_image_path": "c3_r1_hero__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/tournament-trial-environments/source_images/c3_r1_hero__v1-sidecar.json",
+    "relative_sidecar_path": "c3_r1_hero__v1-sidecar.json",
+    "image_filename": "c3_r1_hero__v1.png",
+    "sha256": "138b3a18b72477760b90fc264f423de758d3cf0ccc468338c75180e9bae80d69",
+    "byte_size": 3920476,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1447,
+      "height": 1087
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Hero view of Trial 3, the Hedge Maze / Ambiguous Path trial, showing the hedge maze entrance, tall rounded green hedge walls, arch signage, banners, flowers, tents, and ceremonial framing.",
+  "observed_visual_facts": {
+    "course": [
+      "Trial 3 - Hedge Maze / Prize Map"
+    ],
+    "setting": [
+      "Sunny tournament grounds",
+      "Lush hedges and flower beds"
+    ],
+    "elements": [
+      "Hedge maze entrance",
+      "Tall rounded green hedge walls",
+      "Arch 'HEDGE MAZE' sign",
+      "Banners and bunting",
+      "Tournament tents and pavilions",
+      "Flowers and ceremonial framing"
+    ],
+    "mood": [
+      "Lush",
+      "Tidy",
+      "Ceremonial",
+      "Legible"
+    ]
+  },
+  "positive_constraints": [
+    "Tall rounded hedges",
+    "Hedge maze entrance sign",
+    "Tents, banners, and flowers",
+    "Ceremonial and legible layout"
+  ],
+  "negative_constraints": [
+    "No horror-maze or overgrown atmosphere",
+    "No dungeon or sterile infographic look"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Environment continuity reference",
+      "Slide or deck background",
+      "Prompt-board source material",
+      "Tournament location establishing shot"
+    ],
+    "not_sufficient_for": [
+      "Character-specific scene generation",
+      "Narrative action sequencing",
+      "Final publication crop without review",
+      "Provenance-unaware re-generation"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "tournament",
+      "trial-environments",
+      "environment",
+      "source-image",
+      "course-3",
+      "hero"
+    ]
+  }
+}

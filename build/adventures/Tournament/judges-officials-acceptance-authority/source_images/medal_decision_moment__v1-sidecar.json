@@ -1,0 +1,86 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Medal Official",
+  "sidecar_purpose": "Acceptance authority visual reference for Medal Official.",
+  "source_truth_note": "This sidecar records the accepted image for Medal Official as the canonical visual truth for the Tournament Judges and Officials acceptance authority.",
+  "runtime_use_note": "Approved for style reference, asset compilation, and presentation planning for Medal Official within the Tournament adventure.",
+  "do_not_infer_note": "Do not infer personality, dialogue, narrative context, backstory, or relationships not directly visible in the image. Treat only the pixels shown as accepted truth.",
+  "image": {
+    "repo_image_path": "build/adventures/Tournament/judges-officials-acceptance-authority/source_images/medal_decision_moment__v1.png",
+    "relative_image_path": "medal_decision_moment__v1.png",
+    "repo_sidecar_path": "build/adventures/Tournament/judges-officials-acceptance-authority/source_images/medal_decision_moment__v1-sidecar.json",
+    "relative_sidecar_path": "medal_decision_moment__v1-sidecar.json",
+    "image_filename": "medal_decision_moment__v1.png",
+    "sha256": "acdfe68adf1ca9601bdcb3fff90201816508f00de2da623b017c0167fdd0361e",
+    "byte_size": 3500536,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGBA",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Source image reference for the Medal Decision Moment in the Tournament Judges and Officials acceptance authority.",
+  "observed_visual_facts": {
+    "character design": [
+      "Visual reference for the Medal Official during the medal decision moment"
+    ],
+    "action and pose": [
+      "Medal presentation or decision pose for the Tournament scene"
+    ],
+    "costume and accessories": [
+      "Medal Official attire and accessories consistent with the visual canon"
+    ],
+    "color and palette": [
+      "Matches the Adventures of Patch Tournament color palette"
+    ]
+  },
+  "positive_constraints": [
+    "Character must remain the Medal Official as visually defined",
+    "Keep the medal decision pose, color palette, and proportions",
+    "May be used as source for compiled sheets and style references"
+  ],
+  "negative_constraints": [
+    "Do not change the character species or silhouette",
+    "Do not add or remove medal, background, or scene elements not present",
+    "Do not infer dialogue, scores, or narrative beyond the visible image",
+    "Do not publish without acceptance authority approval"
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "visual-reference",
+      "style-guide",
+      "acceptance-review"
+    ],
+    "not_sufficient_for": [
+      "final-publication",
+      "narrative-scripting",
+      "unreviewed-derivatives"
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "asset:image",
+      "adventure",
+      "Tournament",
+      "judges-officials-acceptance-authority",
+      "source-image",
+      "medal-official",
+      "medal-decision-moment",
+      "acceptance-authority"
+    ]
+  }
+}
