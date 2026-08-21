@@ -11,6 +11,7 @@ import sys
 from pathlib import Path
 
 import jsonschema
+import referencing
 
 ROOT = Path(__file__).resolve().parent.parent
 PROVENANCE_SCHEMA = ROOT / ".agents/contracts/image-sidecar-provenance.schema.json"
@@ -51,20 +52,33 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
-def validate(sidecar_path: Path, sidecar_schema: dict, provenance_schema: dict) -> list[str]:
+def _validator():
+    sidecar = load_json(SIDECAR_SCHEMA)
+    provenance = load_json(PROVENANCE_SCHEMA)
+    registry = referencing.Registry().with_resources(
+        [
+            (
+                str(SIDECAR_SCHEMA.as_uri()),
+                referencing.Resource.from_contents(sidecar),
+            ),
+            (
+                str(PROVENANCE_SCHEMA.as_uri()),
+                referencing.Resource.from_contents(provenance),
+            ),
+        ]
+    )
+    return jsonschema.Draft7Validator(sidecar, registry=registry), provenance
+
+
+_SIDECAR_VALIDATOR, _PROVENANCE_SCHEMA = _validator()
+
+
+def validate(sidecar_path: Path) -> list[str]:
     errors = []
     data = load_json(sidecar_path)
 
-    resolver = jsonschema.RefResolver(
-        base_uri=str(SIDECAR_SCHEMA.as_uri()),
-        referrer=sidecar_schema,
-        store={
-            str(SIDECAR_SCHEMA.as_uri()): sidecar_schema,
-            str(PROVENANCE_SCHEMA.as_uri()): provenance_schema,
-        },
-    )
     try:
-        jsonschema.validate(data, sidecar_schema, resolver=resolver)
+        _SIDECAR_VALIDATOR.validate(data)
     except jsonschema.ValidationError as e:
         errors.append(f"{sidecar_path}: JSON schema validation failed: {e.message}")
 
@@ -75,7 +89,7 @@ def validate(sidecar_path: Path, sidecar_schema: dict, provenance_schema: dict) 
         errors.append(f"{sidecar_path}: missing image.provenance")
         return errors
 
-    for key in provenance_schema.get("required", []):
+    for key in _PROVENANCE_SCHEMA.get("required", []):
         if provenance.get(key) is None and key in ("generator", "model"):
             errors.append(f"{sidecar_path}: image.provenance.{key} is required")
         elif key == "prompt_retained" and "prompt_retained" not in provenance:
@@ -125,8 +139,6 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("paths", nargs="*", help="optional sidecar paths to validate; if omitted, scans all lanes")
     args = parser.parse_args(argv)
 
-    sidecar_schema = load_json(SIDECAR_SCHEMA)
-    provenance_schema = load_json(PROVENANCE_SCHEMA)
     sidecars = [Path(p) for p in args.paths] if args.paths else find_sidecars()
     sidecars = [p.resolve() if p.is_absolute() else (ROOT / p) for p in sidecars]
 
@@ -135,7 +147,7 @@ def main(argv: list[str] | None = None) -> int:
         if not sidecar_path.exists():
             errors.append(f"{sidecar_path}: file not found")
             continue
-        errors.extend(validate(sidecar_path, sidecar_schema, provenance_schema))
+        errors.extend(validate(sidecar_path))
 
     if not sidecars:
         print("warning: no sidecars found")
