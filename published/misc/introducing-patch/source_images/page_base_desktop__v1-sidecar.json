@@ -1,0 +1,78 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Source base image for the desktop 16:9 'Introducing Patch' one-pager. The image contains the background, Patch, and in-universe props only; all explanatory text is added deterministically after generation.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It is generated from the canonical Patch style bible prompt and does not broaden canon beyond the stated acceptance state.",
+  "runtime_use_note": "Use this as the compositional base for the finished desktop one-pager. Inspect the image pixels directly when exact character canon, prop placement, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed source base and stated intended use.",
+  "image": {
+    "repo_image_path": "published/misc/introducing-patch/source_images/page_base_desktop__v1.png",
+    "relative_image_path": "page_base_desktop__v1.png",
+    "repo_sidecar_path": "published/misc/introducing-patch/source_images/page_base_desktop__v1-sidecar.json",
+    "relative_sidecar_path": "page_base_desktop__v1-sidecar.json",
+    "image_filename": "page_base_desktop__v1.png",
+    "sha256": "1bd8c2e3bfe53de50185c3159babd4347f6957baa11a27e3c0a5bc0f54d8008d",
+    "byte_size": 2215370,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 2400,
+      "height": 1344
+    },
+    "mode": "RGB",
+    "asset_role": "source_image",
+    "acceptance_state": "accepted_source_image",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "openai-image MCP generate_image_gpt2",
+      "model": "gpt-image-2",
+      "generated_at": null,
+      "prompt_language": "en",
+      "prompt": "A clean, vector-style 16:9 illustration on a solid flat cream off-white background with hex color #f7f4ec. The background must be completely uniform with no gradients, no vignette, no shadows, no textures, no text, and no environment. On the left third of the frame stands a friendly autonomous software-agent character named Patch. Patch wears a long-sleeved teal hoodie with the hood up, a front pouch pocket, and two slim dark antenna stalks protruding from the top of the hood, each ending in a small dark rounded tip. The teal hood frames an off-white face panel that has no colored outline or border. Patch has simple black oval eyes with tiny white shine highlights only, no white sclera, no irises, and no other eye detail. He has a small, simple friendly smile with no teeth or lips. Patch wears dark trousers and teal shoes with white soles. He carries a dark grey crossbody bag with a small white greater-than symbol on it. The dark crossbody strap is clearly attached to the bag and visibly crosses his torso from the left shoulder to the right hip where the bag rests. Patch is mid-shot, friendly, facing slightly toward the viewer. He holds a small blank cream card in one hand and a folded blank cream paper in the other. The right two-thirds of the frame is empty cream space for text. Thick rounded outlines, simple soft shading, clean editorial-vector style. No text, no words, no letters, no watermarks, no UI, no captions.",
+      "prompt_retained": true,
+      "prompt_unretained_note": null
+    }
+  },
+  "summary": "Generated 16:9 cream background base image with canonical Patch on the left and blank space on the right for deterministic text overlay.",
+  "observed_visual_facts": {
+    "composition": [
+      "Solid cream/off-white #f7f4ec background."
+    ],
+    "subject": [
+      "Patch wears teal hoodie, hood up, dark antennae, off-white face panel.",
+      "Black oval eyes with small white shine highlights.",
+      "Dark trousers and teal shoes with white soles.",
+      "Teal crossbody bag with dark strap and white greater-than mark.",
+      "Holds a small blank cream card and a folded blank paper."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the base for the desktop 'Introducing Patch' one-pager.",
+    "Preserve Patch canon from the approved style bible.",
+    "Add all explanatory prose with deterministic tools."
+  ],
+  "negative_constraints": [
+    "Do not add new characters, story beats, or props.",
+    "Do not generate new image versions without updating the sidecar prompt.",
+    "Do not treat this as the final published one-pager without the text overlay."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Compositional input for the desktop one-pager build script.",
+      "Pixel-level Patch canon QA."
+    ],
+    "not_sufficient_for": [
+      "Final published one-pager on its own.",
+      "Mobile portrait layout."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:source-image",
+      "one-pager:introducing-patch",
+      "state:accepted",
+      "layout:landscape"
+    ]
+  }
+}
