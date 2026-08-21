@@ -12,8 +12,8 @@
     "repo_sidecar_path": "published/misc/introducing-patch/page__v1-mobile-sidecar.json",
     "relative_sidecar_path": "page__v1-mobile-sidecar.json",
     "image_filename": "page__v1-mobile.png",
-    "sha256": "998cb9a616272080728be212420a5d522b3da500b0ab04db85ca2ada75b11053",
-    "byte_size": 519650,
+    "sha256": "0e0ab3fc0818671aea27b0b060671ff48d3517bb63ea51d3eb392af6080d97bb",
+    "byte_size": 520504,
     "mime_type": "image/png",
     "dimensions": {
       "width": 1080,
@@ -43,7 +43,7 @@
       "Below Patch: 'ADVENTURES OF PATCH' in teal.",
       "Title: 'Introducing Patch' in dark.",
       "Subtitle: 'An autonomous software agent who makes workflows easy to follow.'",
-      "Three white rounded cards: 'Who am I?', 'What do I do?', 'How do I learn?'.",
+      "Three white rounded cards: 'Who am I?' / 'I'm Patch! Your friendly autonomous software agent.', 'What do I do?' / 'I get a goal, find the next step, and keep going until the work is done.', 'How do I learn?' / 'I learn one clear next step at a time.'.",
       "Footer: Adventures of Patch and Patch and related characters are reserved. Images are CC BY-ND 4.0."
     ],
     "subject": [

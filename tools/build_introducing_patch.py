@@ -27,9 +27,9 @@ TEAL = (14, 141, 132)
 WHITE = (255, 255, 255)
 
 CARDS = [
-    ("Who am I?", "A friendly autonomous software agent."),
-    ("What do I do?", "Turn agentic workflow ideas into small, followable stories."),
-    ("How do I learn?", "One clear next step at a time."),
+    ("Who am I?", "I'm Patch! Your friendly autonomous software agent."),
+    ("What do I do?", "I get a goal, find the next step, and keep going until the work is done."),
+    ("How do I learn?", "I learn one clear next step at a time."),
 ]
 
 FOOTER = (
