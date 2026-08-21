@@ -13,8 +13,7 @@
   },
   "files": {
     "source_images": [
-      "page_base_desktop__v1.png",
-      "page_base_mobile__v1.png"
+      "page_base_desktop__v1.png"
     ],
     "finished_page": "page__v1.png",
     "finished_page_mobile": "page__v1-mobile.png",
@@ -22,8 +21,9 @@
     "reference_sheets": []
   },
   "provenance_notes": [
-    "The source images were generated using the Patch style bible and the OpenAI image generation MCP.",
-    "The finished pages were deterministically composed from the source images with text and cards added by Pillow.",
+    "The single source base was generated using the Patch style bible and the OpenAI image generation MCP.",
+    "The finished desktop page overlays the source base with deterministic text and cards.",
+    "The finished mobile page extracts the Patch figure from the same source base and re-uses it on a portrait canvas.",
     "All final published one-pagers include the Adventures of Patch licence footer."
   ],
   "core_lesson": "Patch makes hard workflows feel like a clear next step."

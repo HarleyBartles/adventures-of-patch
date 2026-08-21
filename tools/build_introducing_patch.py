@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
-"""Deterministic build for the "Introducing Patch" one-pager."""
+"""Deterministic build for the 'Introducing Patch' one-pager.
+
+The single generated source image (the 16:9 desktop base) is reused for both
+formats. The desktop final uses the base directly. The mobile final crops Patch
+out of the base with a Pillow flood-fill mask and places the cut-out on a
+portrait canvas.
+"""
 
 from __future__ import annotations
 
 import json
+import math
 import subprocess
 import sys
 from pathlib import Path
@@ -20,9 +27,9 @@ TEAL = (14, 141, 132)
 WHITE = (255, 255, 255)
 
 CARDS = [
-    ("What I am", "A friendly autonomous software agent."),
-    ("What I do", "Turn agentic workflow ideas into small, followable stories."),
-    ("How I learn", "One clear next step at a time."),
+    ("Who am I?", "A friendly autonomous software agent."),
+    ("What do I do?", "Turn agentic workflow ideas into small, followable stories."),
+    ("How do I learn?", "One clear next step at a time."),
 ]
 
 FOOTER = (
@@ -65,6 +72,48 @@ def draw_text_block(draw, text, font, x, y, max_width, color=DARK, line_spacing=
         draw.text((x, y), line, font=font, fill=color)
         y += font.size + line_spacing
     return y
+
+
+def _extract_patch(base: Image.Image) -> Image.Image:
+    """Return the base with only Patch (and props) opaque and the rest transparent."""
+    rgba = base.convert("RGBA")
+    mask = Image.new("L", base.size, 255)
+    work = base.convert("RGB").copy()
+
+    # Flood fill the background from each corner with a sentinel colour.
+    w, h = work.size
+    ImageDraw.floodfill(work, (0, 0), value=(0, 255, 0), thresh=50)
+    ImageDraw.floodfill(work, (w - 1, 0), value=(0, 255, 0), thresh=50)
+    ImageDraw.floodfill(work, (0, h - 1), value=(0, 255, 0), thresh=50)
+    ImageDraw.floodfill(work, (w - 1, h - 1), value=(0, 255, 0), thresh=50)
+
+    # Any pixel that is now (0, 255, 0) is background and becomes transparent.
+    work_rgba = work.convert("RGBA")
+    pixels = work_rgba.load()
+    mask_data = mask.load()
+    for y in range(h):
+        for x in range(w):
+            if pixels[x, y][:3] == (0, 255, 0):
+                mask_data[x, y] = 0
+
+    cutout = rgba.copy()
+    cutout.putalpha(mask)
+    return cutout
+
+
+def _background_sample(image: Image.Image) -> tuple[int, int, int]:
+    corners = [
+        image.getpixel((0, 0)),
+        image.getpixel((image.width - 1, 0)),
+        image.getpixel((0, image.height - 1)),
+        image.getpixel((image.width - 1, image.height - 1)),
+    ]
+    return tuple(int(round(sum(c[i] for c in corners) / len(corners))) for i in range(3))
+
+
+def _tight_bbox(image: Image.Image) -> tuple[int, int, int, int]:
+    alpha = image.getchannel("A")
+    return alpha.getbbox()
 
 
 def build_desktop() -> Path:
@@ -116,14 +165,28 @@ def build_desktop() -> Path:
 
 
 def build_mobile() -> Path:
-    base = Image.open(SRC / "page_base_mobile__v1.png").convert("RGB")
-    # crop to 1080x1920 from the centre
-    if base.size[0] > 1080:
-        excess = base.size[0] - 1080
-        base = base.crop((excess // 2, 0, base.size[0] - excess // 2, base.size[1]))
-    canvas = base
+    base = Image.open(SRC / "page_base_desktop__v1.png").convert("RGB")
+    w, h = 1080, 1920
+    canvas = Image.new("RGB", (w, h), _background_sample(base))
+
+    cutout = _extract_patch(base)
+    bbox = _tight_bbox(cutout)
+    if bbox:
+        cutout = cutout.crop(bbox)
+
+    # Fit Patch in the upper part of the canvas, leaving room for text below.
+    max_w = w - 120
+    max_h = 900
+    scale = min(max_w / cutout.width, max_h / cutout.height)
+    new_size = (int(cutout.width * scale), int(cutout.height * scale))
+    cutout = cutout.resize(new_size, Image.Resampling.LANCZOS)
+
+    paste_x = (w - cutout.width) // 2
+    paste_y = 80
+    canvas.paste(cutout, (paste_x, paste_y), cutout)
+    patch_bottom = paste_y + cutout.height
+
     draw = ImageDraw.Draw(canvas)
-    w, h = canvas.size
 
     font_brand = load_font("bold", 22)
     font_title = load_font("bold", 56)
@@ -134,7 +197,7 @@ def build_mobile() -> Path:
 
     # Header below Patch
     hx = 60
-    hy = 1200
+    hy = patch_bottom + 40
     draw.text((hx, hy), "ADVENTURES OF PATCH", font=font_brand, fill=TEAL)
     hy += font_brand.size + 15
     draw.text((hx, hy), "Introducing Patch", font=font_title, fill=DARK)
@@ -145,9 +208,8 @@ def build_mobile() -> Path:
     card_x = 60
     card_w = w - 120
     card_margin = 30
-    cy = 1360
+    cy = hy + 40
     for label, body in CARDS:
-        # Dynamic card height based on body text
         body_w = card_w - 2 * card_margin
         body_lines = wrap_text(body, font_card_body, body_w)
         label_h = font_card_label.size + 20
@@ -188,18 +250,16 @@ def update_manifest() -> None:
             "reference_sheets": "absent_not_required",
         },
         "files": {
-            "source_images": [
-                "page_base_desktop__v1.png",
-                "page_base_mobile__v1.png",
-            ],
+            "source_images": ["page_base_desktop__v1.png"],
             "finished_page": "page__v1.png",
             "finished_page_mobile": "page__v1-mobile.png",
             "compiled_asset_sheets": [],
             "reference_sheets": [],
         },
         "provenance_notes": [
-            "The source images were generated using the Patch style bible and the OpenAI image generation MCP.",
-            "The finished pages were deterministically composed from the source images with text and cards added by Pillow.",
+            "The single source base was generated using the Patch style bible and the OpenAI image generation MCP.",
+            "The finished desktop page overlays the source base with deterministic text and cards.",
+            "The finished mobile page extracts the Patch figure from the same source base and re-uses it on a portrait canvas.",
             "All final published one-pagers include the Adventures of Patch licence footer.",
         ],
         "core_lesson": "Patch makes hard workflows feel like a clear next step.",
@@ -217,7 +277,7 @@ def main() -> None:
     for name in ["page__v1.png", "page__v1-mobile.png"]:
         out = PKG / name
         subprocess.run([sys.executable, "tools/generate_image_sidecar.py", str(out)])
-    for name in ["source_images/page_base_desktop__v1.png", "source_images/page_base_mobile__v1.png"]:
+    for name in ["source_images/page_base_desktop__v1.png"]:
         out = PKG / name
         subprocess.run([sys.executable, "tools/generate_image_sidecar.py", str(out)])
 
