@@ -1,0 +1,85 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Patch Fairytales",
+  "character": "Patch",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for the 9:16 mobile portrait variant of the Goldilocks right-amount-of-guidance fairytale page.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It is deterministically composed from the three approved source scenes and the accepted desktop fairytale page; it does not broaden canon beyond the stated acceptance state.",
+  "runtime_use_note": "Use this sidecar for responsive fairytale page selection and layout reference. Inspect the image pixels directly when exact composition, small text, physical relationships, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed page and stated intended use.",
+  "image": {
+    "repo_image_path": "published/fairytales/goldilocks/page__right_amount_of_guidance__v1-mobile.png",
+    "relative_image_path": "page__right_amount_of_guidance__v1-mobile.png",
+    "repo_sidecar_path": "published/fairytales/goldilocks/page__right_amount_of_guidance__v1-mobile-sidecar.json",
+    "relative_sidecar_path": "page__right_amount_of_guidance__v1-mobile-sidecar.json",
+    "image_filename": "page__right_amount_of_guidance__v1-mobile.png",
+    "sha256": "9facb864843f01ecbac48a12ac911496f55b6e02cd532f7908787a6686395f60",
+    "byte_size": 1093991,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1080,
+      "height": 1920
+    },
+    "mode": "RGB",
+    "asset_role": "approved_fairytale_page_mobile",
+    "acceptance_state": "accepted_fairytale_page_mobile",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "tools/build_fairytale_mobile_page.py",
+      "model": "Pillow / Python image composition",
+      "generated_at": null,
+      "prompt_language": "en",
+      "prompt": "Deterministic 9:16 mobile re-flow of the approved Goldilocks fairytale page: stacked scene rows with captions on the right and a bottom lesson bar.",
+      "prompt_retained": true,
+      "prompt_unretained_note": null
+    }
+  },
+  "summary": "9:16 mobile portrait variant of the approved Goldilocks fairytale page. The three approved guidance-balance scenes are stacked vertically in rounded cards with the scene image on the left and the label and caption on the right, closing with the same lesson bar as the 16:9 page.",
+  "observed_visual_facts": {
+    "composition": [
+      "Portrait 9:16 canvas (1080 x 1920) with the same cream background as the 16:9 page.",
+      "Header with the PATCH FAIRYTALES label, the Goldilocks title, and the subtitle.",
+      "Three stacked rounded cards, each containing one approved source scene and its caption.",
+      "Bottom lesson card with 'THE LESSON' label and the guidance-balance principle.",
+      "Patch's canonical identity is preserved across all scenes."
+    ],
+    "scene_semantics": [
+      "Too much: excessive signposts and guidance become a burden.",
+      "Not enough: sparse, ambiguous trail markers leave too many paths.",
+      "Just right: a tidy planning room with organised resources supports a confident next move."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the approved mobile portrait variant of the Goldilocks fairytale page.",
+    "Preserve the same wording, colours, and lesson as the 16:9 desktop page.",
+    "Treat the three source scenes as the canonical source set.",
+    "Maintain Patch's canonical identity across all re-flowed scenes."
+  ],
+  "negative_constraints": [
+    "Do not add new characters, story beats, or props.",
+    "Do not change the core lesson or the approved captions.",
+    "Do not use as the desktop fairytale page; the 16:9 page remains the desktop canonical."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Responsive fairytale page selection when a portrait 9:16 layout is required.",
+      "Mobile browser layout reference and QA.",
+      "Prompt constraints for producing alternate-layout fairytale pages."
+    ],
+    "not_sufficient_for": [
+      "Authoring new fairytale content.",
+      "Patch character canon in general.",
+      "Exact OCR of incidental small text."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:fairytale-page",
+      "fairytale:goldilocks",
+      "pattern:right-amount-of-guidance",
+      "state:accepted",
+      "theme:guidance-balance",
+      "layout:mobile"
+    ]
+  }
+}
