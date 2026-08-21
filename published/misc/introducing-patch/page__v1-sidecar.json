@@ -12,8 +12,8 @@
     "repo_sidecar_path": "published/misc/introducing-patch/page__v1-sidecar.json",
     "relative_sidecar_path": "page__v1-sidecar.json",
     "image_filename": "page__v1.png",
-    "sha256": "c4f1ce8b560b66765c603a91a8c6b867f0a5b7188606dae6a0b553312fc11584",
-    "byte_size": 1607782,
+    "sha256": "3bba43955aac2a6d179b540a3d5a11038fae6eb67622aa4efea18136e0cdb3f5",
+    "byte_size": 1738293,
     "mime_type": "image/png",
     "dimensions": {
       "width": 2400,

@@ -12,8 +12,8 @@
     "repo_sidecar_path": "published/misc/introducing-patch/source_images/page_base_mobile__v1-sidecar.json",
     "relative_sidecar_path": "page_base_mobile__v1-sidecar.json",
     "image_filename": "page_base_mobile__v1.png",
-    "sha256": "a0801dd66a0a20cce0e4e88da6f7649a956c7cbe2890ff2e5bc771978f7a99a2",
-    "byte_size": 1496839,
+    "sha256": "6f77633b6ed7be957ee3b9e5172a56bfeb767995173ea32e958c3fab28042e36",
+    "byte_size": 1561130,
     "mime_type": "image/png",
     "dimensions": {
       "width": 1088,
@@ -29,7 +29,7 @@
       "model": "gpt-image-2",
       "generated_at": null,
       "prompt_language": "en",
-      "prompt": "A clean, vector-style 9:16 portrait illustration on a solid flat cream off-white background with hex color #f7f4ec. The background must be completely uniform with no gradients, no vignette, no shadows, no textures, no text, and no environment. In the upper half stands a friendly autonomous software-agent character named Patch. Patch wears a long-sleeved teal hoodie with the hood up, a front pouch pocket, and two slim dark antenna stalks protruding from the hood. The teal hood frames an off-white face panel. Patch has simple black oval eyes with tiny white shine highlights only, no white sclera and no irises. Patch wears dark trousers and teal shoes with white soles. He carries a teal crossbody bag with a dark strap crossing his torso and a dark flap with a small white greater-than symbol. Patch is mid-shot, friendly, facing slightly toward the viewer. He holds a small blank cream card in one hand and a folded blank cream paper in the other. The lower half of the frame is empty cream space for text. Thick rounded outlines, simple soft shading, clean editorial-vector style. No text, no words, no letters, no watermarks, no UI, no captions.",
+      "prompt": "A clean, vector-style 9:16 portrait illustration on a solid flat cream off-white background with hex color #f7f4ec. The background must be completely uniform with no gradients, no vignette, no shadows, no textures, no text, and no environment. In the upper half stands a friendly autonomous software-agent character named Patch. Patch wears a long-sleeved teal hoodie with the hood up, a front pouch pocket, and two slim dark antenna stalks protruding from the top of the hood, each ending in a small dark rounded tip. The teal hood frames an off-white face panel that has no colored outline or border. Patch has simple black oval eyes with tiny white shine highlights only, no white sclera, no irises, and no other eye detail. He has a small, simple friendly smile with no teeth or lips. Patch wears dark trousers and teal shoes with white soles. He carries a dark grey crossbody bag with a small white greater-than symbol on it. The dark crossbody strap is clearly attached to the bag and visibly crosses his torso from the left shoulder to the right hip where the bag rests. Patch is mid-shot, friendly, facing slightly toward the viewer. He holds a small blank cream card in one hand and a folded blank cream paper in the other. The lower half of the frame is empty cream space for text. Thick rounded outlines, simple soft shading, clean editorial-vector style. No text, no words, no letters, no watermarks, no UI, no captions.",
       "prompt_retained": true,
       "prompt_unretained_note": null
     }
