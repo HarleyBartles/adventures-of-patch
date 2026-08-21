@@ -100,6 +100,15 @@ def main(argv: list[str] | None = None) -> int:
         ]
     )
 
+    # Normalize/check image sidecar JSON formatting.
+    norm_cmd = [
+        sys.executable,
+        "tools/normalize_image_sidecars.py",
+    ]
+    if args.apply:
+        norm_cmd.append("--apply")
+    _run(norm_cmd)
+
     # Check for whitespace/diff issues.
     _run(["git", "diff", "--check", "--", ".", ":(exclude).agents/skills"])
 
