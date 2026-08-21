@@ -5,4 +5,8 @@
 scripts/*.py eol=lf
 scripts/*.ps1 eol=lf
 scripts/*.sh eol=lf
+tools/*.py eol=lf
 .gitattributes eol=lf
+
+# Sidecar JSON must be LF for deterministic normalization checks.
+*-sidecar.json eol=lf
