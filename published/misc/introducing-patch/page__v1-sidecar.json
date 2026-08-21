@@ -1,0 +1,81 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Patch",
+  "sidecar_purpose": "Published 16:9 desktop one-pager introducing Patch. All text, cards, and the licence footer were added deterministically by the builder script over the generated source base.",
+  "source_truth_note": "This sidecar is derived visual evidence for the referenced image. It is the deterministic composition of the approved source base and the agreed copy.",
+  "runtime_use_note": "Use this one-pager as a landing or introductory page on the portfolio site. Inspect the image pixels directly when exact text, card placement, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional story beats, extra props, or acceptance of derivatives beyond the observed page and stated intended use.",
+  "image": {
+    "repo_image_path": "published/misc/introducing-patch/page__v1.png",
+    "relative_image_path": "page__v1.png",
+    "repo_sidecar_path": "published/misc/introducing-patch/page__v1-sidecar.json",
+    "relative_sidecar_path": "page__v1-sidecar.json",
+    "image_filename": "page__v1.png",
+    "sha256": "c4f1ce8b560b66765c603a91a8c6b867f0a5b7188606dae6a0b553312fc11584",
+    "byte_size": 1607782,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 2400,
+      "height": 1344
+    },
+    "mode": "RGB",
+    "asset_role": "published_one_pager",
+    "acceptance_state": "accepted_one_pager",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "tools/build_introducing_patch.py",
+      "model": "Pillow / Python image composition",
+      "generated_at": null,
+      "prompt_language": "en",
+      "prompt": "Deterministic 16:9 desktop composition of the 'Introducing Patch' one-pager: paste the generated source base, add 'Adventures of Patch' brand label, 'Introducing Patch' title, subtitle, three rounded info cards, and the licence footer.",
+      "prompt_retained": true,
+      "prompt_unretained_note": null
+    }
+  },
+  "summary": "Finished 16:9 'Introducing Patch' one-pager with Patch on the left, an infographic-style card layout on the right, and the Adventures of Patch licence footer.",
+  "observed_visual_facts": {
+    "composition": [
+      "Cream off-white #f7f4ec background."
+    ],
+    "text": [
+      "Top right: 'ADVENTURES OF PATCH' in teal.",
+      "Title: 'Introducing Patch' in dark.",
+      "Subtitle: 'An autonomous software agent who makes workflows easy to follow.'",
+      "Three white rounded cards: 'What I am', 'What I do', 'How I learn'.",
+      "Footer: Adventures of Patch and Patch and related characters are reserved. Images are CC BY-ND 4.0."
+    ],
+    "subject": [
+      "Canonical Patch in teal hoodie, crossbody bag, holding a blank card and folded paper."
+    ]
+  },
+  "positive_constraints": [
+    "Use as the published desktop 'Introducing Patch' one-pager.",
+    "Preserve the Adventures of Patch brand and licence footer.",
+    "Treat the source base as the canonical Patch reference."
+  ],
+  "negative_constraints": [
+    "Do not modify the text or layout without updating the builder script.",
+    "Do not use as a different story or fairytale page.",
+    "Do not remove or alter the licence footer."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Desktop display on the portfolio site.",
+      "Introduction to Patch before specific adventures or fairytales."
+    ],
+    "not_sufficient_for": [
+      "Mobile portrait display.",
+      "OCR of the small footer."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:patch",
+      "asset:one-pager",
+      "one-pager:introducing-patch",
+      "state:accepted",
+      "layout:landscape"
+    ]
+  }
+}

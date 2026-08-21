@@ -1,0 +1,30 @@
+{
+  "domain": "misc",
+  "family": "introducing-patch",
+  "package_id": "introducing-patch",
+  "package_type": "one_pager",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "present",
+    "finished_page": "present",
+    "finished_page_mobile": "present",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "absent_not_required"
+  },
+  "files": {
+    "source_images": [
+      "page_base_desktop__v1.png",
+      "page_base_mobile__v1.png"
+    ],
+    "finished_page": "page__v1.png",
+    "finished_page_mobile": "page__v1-mobile.png",
+    "compiled_asset_sheets": [],
+    "reference_sheets": []
+  },
+  "provenance_notes": [
+    "The source images were generated using the Patch style bible and the OpenAI image generation MCP.",
+    "The finished pages were deterministically composed from the source images with text and cards added by Pillow.",
+    "All final published one-pagers include the Adventures of Patch licence footer."
+  ],
+  "core_lesson": "Patch makes hard workflows feel like a clear next step."
+}
