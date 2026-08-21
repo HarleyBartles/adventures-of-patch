@@ -8,7 +8,8 @@
     "source_scenes": "present",
     "finished_page": "present",
     "compiled_asset_sheets": "absent_not_required",
-    "reference_sheets": "absent_not_required"
+    "reference_sheets": "absent_not_required",
+    "finished_page_mobile": "present"
   },
   "files": {
     "source_scenes": [
@@ -18,7 +19,8 @@
     ],
     "finished_page": "page__right_amount_of_guidance__v1.png",
     "compiled_asset_sheets": [],
-    "reference_sheets": []
+    "reference_sheets": [],
+    "finished_page_mobile": "page__right_amount_of_guidance__v1-mobile.png"
   },
   "provenance_notes": [
     "All three Goldilocks source scenes and the finished one-page composition were approved by Harley in the originating ChatGPT production session on 2026-08-14.",

@@ -20,6 +20,13 @@ Plans must state the source of truth, target worktree and branch, scope,
 non-goals, custody boundaries, readiness gates, validation commands, and
 publication evidence.
 
+## Closing out plans and specs
+
+The PR that completes the work must also archive the in-flight plan and any
+related spec. Move `plan-name.md` to `.agents/plans/completed/` and the matching
+spec to `.agents/specs/completed/` in the same completing PR. See
+`.agents/runbooks/completing-plans.md` for the exact steps.
+
 ## Stop conditions
 
 Stop before production if the frame is weak, Patch references cannot be

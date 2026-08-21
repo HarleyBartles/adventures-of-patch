@@ -23,6 +23,7 @@ Use this runbook for pull-request workflow and publication proof in this repo.
 - Keep the PR in draft while iterating and running local validation.
 - Flip to ready for review only after self-review is complete and `py -3 tools/run.py ci --check` passes.
 - The PR body must include publication proof.
+- If the PR completes work that has an in-flight plan or spec in `.agents/plans/` or `.agents/specs/`, move those artifacts to `completed/` in this same PR before flipping to ready for review. See `.agents/runbooks/completing-plans.md`.
 
 ## Draft PR policy
 
