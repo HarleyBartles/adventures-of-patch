@@ -20,7 +20,7 @@
       "height": 1024
     },
     "mode": "RGB",
-    "asset_role": "source-image",
+    "asset_role": "anti_pattern_sheet",
     "acceptance_state": "approved",
     "inspection_mode": "pixel_inspection",
     "confidence": "high",
@@ -74,7 +74,7 @@
     "linear_view_route": null,
     "repo_index_tags": [
       "character:receipt",
-      "asset:source-image",
+      "asset:anti-patterns",
       "state:approved",
       "role:audit",
       "canonical-character-reference"
