@@ -16,7 +16,7 @@ Path, lane, and manifest carry taxonomy. Filenames are local identifiers inside 
 - `published/` - finished, licensable CC BY-ND output (`adventures/`, `fairytales/`).
 - `build/` - reusable assets that feed published output.
 - `style/` - style bibles, pattern guides, and image-generation drivers.
-- `workbench/` - active, repo-tracked experiments and drafts; no licence granted.
+- `workbench/` - active, repo-tracked experiments and drafts; no default licence is granted, and any specific written permission does not promote or relicense the rest of the workbench.
 
 ## Canonical build family shape
 
@@ -150,6 +150,10 @@ The taxonomy should be mechanically checkable:
 ## Workbench
 
 `workbench/` stores active experiments and drafts that are not yet canonical. Material promoted from `workbench/` should move into `build/` or `style/` through a custody workflow. Material discarded from `workbench/` should be deleted, not archived.
+
+A narrow written permission for a named downstream repository and named output
+does not change workbench custody, grant a default workbench licence, or promote
+unlisted workbench material.
 
 ## Operating rule
 

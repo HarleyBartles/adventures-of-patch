@@ -67,18 +67,18 @@ SIDECARS = [
         "generated_at": None,
     },
     {
-        "sidecar": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-hero-sidecar.json",
-        "image": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-hero.png",
+        "sidecar": "build/characters/heist-crew/reference_sheets/index_hero__v1-sidecar.json",
+        "image": "build/characters/heist-crew/reference_sheets/index_hero__v1.png",
         "generated_at": "2026-06-13T07:40:44Z",
     },
     {
-        "sidecar": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet-sidecar.json",
-        "image": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-approved-style-sheet.png",
+        "sidecar": "build/characters/heist-crew/reference_sheets/index_style_sheet__v1-sidecar.json",
+        "image": "build/characters/heist-crew/reference_sheets/index_style_sheet__v1.png",
         "generated_at": "2026-06-13T07:40:44Z",
     },
     {
-        "sidecar": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-prohibited-anti-patterns-sidecar.json",
-        "image": "workbench/issue_48_override_heist_style_framework_v0_3/style-sheets/index/index-prohibited-anti-patterns.png",
+        "sidecar": "build/characters/heist-crew/reference_sheets/index_anti_patterns__v1-sidecar.json",
+        "image": "build/characters/heist-crew/reference_sheets/index_anti_patterns__v1.png",
         "generated_at": "2026-06-13T07:40:44Z",
     },
 ]

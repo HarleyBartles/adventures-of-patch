@@ -8,13 +8,20 @@ Operation class: deterministic no-credit visual framework work
 
 These notes constrain future visual planning, prompt boards, image generation briefs, QA, and asset packaging for the Patch recruitment pitch folder and the six character assent markers. They do not authorize image generation, image editing, deck building, asset-sheet compilation, or issue closure.
 
+The only external-production exception is the narrow permission granted by
+Harley Bartles to `HarleyBartles/portfolio`: that repository may create and
+publish derivative assent-marker images for the six marker designs documented
+in the marker-lock sections below. The permission covers only portfolio
+derivatives documented as such. It does not relicense this workbench packet or
+the promoted character references, and it grants no general adaptation right.
+
 ## Evidence basis
 
 Current source basis:
 
 - Issue #48 Override Heist premise, recruit roles, and lawful-layer structure.
 - Accepted seven-image pitch-folder continuity sequence now tracked under the in-flight `style-sheets/heist_pitch_folder/` lane.
-- Accepted character hero shots, style sheets, anti-pattern sheets, and updated character bibles for Index, Silk, Rollback, Writ, Klause, and Receipt.
+- Accepted character hero shots, style sheets, anti-pattern sheets, and character-continuity bibles promoted to `build/characters/heist-crew/` for Index, Silk, Rollback, Writ, Klause, and Receipt.
 - Accepted working distinction between the pitch folder and the later keycard proof object.
 - Session QA decisions that resolved storage and occlusion failures for Silk, Rollback, Writ, Klause, and Receipt markers.
 

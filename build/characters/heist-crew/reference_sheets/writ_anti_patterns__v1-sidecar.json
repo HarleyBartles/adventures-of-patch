@@ -1,0 +1,80 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Writ",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar describes a promoted Heist Crew character reference. The repo image bytes and package manifest remain authoritative for custody; the acceptance state controls its continuity role.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "build/characters/heist-crew/reference_sheets/writ_anti_patterns__v1.png",
+    "relative_image_path": "writ_anti_patterns__v1.png",
+    "repo_sidecar_path": "build/characters/heist-crew/reference_sheets/writ_anti_patterns__v1-sidecar.json",
+    "relative_sidecar_path": "writ_anti_patterns__v1-sidecar.json",
+    "image_filename": "writ_anti_patterns__v1.png",
+    "sha256": "90bf33d484ffd0dfbb0fca10fd1db1f9f235c112f2c72b4b969d4040f0a0d3af",
+    "byte_size": 2675335,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1402,
+      "height": 1122
+    },
+    "mode": "RGB",
+    "asset_role": "source-image",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Prohibited anti-pattern reference board for Writ. It explicitly documents rejected designs, roles, props, materials, proportions, and behavior drifts that must not be replicated.",
+  "observed_visual_facts": {
+    "layout": [
+      "Prohibited anti-pattern reference board for Writ, marked with rejections."
+    ],
+    "rejection_categories": [],
+    "hard_nos": [
+      "Do not make Writ a literal human man, judge villain, boss, policeman, king, aristocratic tyrant, animal, Patch clone, Bit/Bot-style robot, generic bureaucrat, or Rollback-like bulky containment worker.",
+      "Do not make him threatening, authoritarian, militarized, police-coded, courtroom-dramatic, or modern tech-office.",
+      "Do not give him two Patch antennae, teal Patch clothing, Rollback's hooded suit/body mass, or generic robot features.",
+      "Do not remove the moustache, single brass-tipped antenna, tweed legal-office wardrobe, seal/ledger props, or lawful-standards iconography when producing Writ hero or style-sheet images.",
+      "Do not have him casually agree; his assent must be formal, copied, filed, and procedurally closed."
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet primarily as negative guidance and QA rejection criteria for Writ.",
+    "Writ is a Patch-level autonomous-agent mandate and authority specialist. He is an older scholarly gentleman: dry, precise, formally observant, slightly old-world, and procedurally exact. Visually, use the accepted Writ hero lock: cream rounded helmet with one brass-tipped antenna, dark faceplate, narrowed yellow eyes, brown moustache, brown tweed formalwear, green tie, white gloves, WRIT badge, legal-scale insignia, seal stamp, and dark green LEDGERS binder with tabbed records/seals/requests/ledgers/assent contents. His domain is the Office of Lawful Standards: chambers, ledger halls, seal desks, frosted glass doors, walnut, brass, green leather, tea, and secretary support. He stops Patch with “Absolutely not. On whose authority?” then realizes this is why Patch needs him. He says “You sly old bombardier,” writes “I’M IN” on a triplicate receipt pad, distributes all copies properly, and closes the matter."
+  ],
+  "negative_constraints": [
+    "Do not make Writ a literal human man, judge villain, boss, policeman, king, aristocratic tyrant, animal, Patch clone, Bit/Bot-style robot, generic bureaucrat, or Rollback-like bulky containment worker. Do not make him threatening, authoritarian, militarized, police-coded, courtroom-dramatic, or modern tech-office. Do not give him two Patch antennae, teal Patch clothing, Rollback's hooded suit/body mass, or generic robot features. Do not remove the moustache, single brass-tipped antenna, tweed legal-office wardrobe, seal/ledger props, or lawful-standards iconography when producing Writ hero or style-sheet images. Do not have him casually agree; his assent must be formal, copied, filed, and procedurally closed."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA rejection checks for Writ.",
+      "Prompt negative constraints.",
+      "Preventing role/ontology drift.",
+      "Differentiating Writ from other crew members."
+    ],
+    "not_sufficient_for": [
+      "Positive generation by itself; pair with approved hero/style sheet.",
+      "Detailed final Writ outfit rendering without the approved style sheet.",
+      "Treating any rejected example as a fallback design."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:writ",
+      "asset:source-image",
+      "state:approved",
+      "role:mandate",
+      "canonical-character-reference"
+    ]
+  },
+  "created_at": "2026-08-20T18:23:13.641039Z"
+}

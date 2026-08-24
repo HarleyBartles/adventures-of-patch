@@ -20,7 +20,7 @@ Current framework sources:
 - locked thought-experiment outcomes for Index, Silk, Rollback, Writ, Klause, and Receipt;
 - Silk frame-transition pre-vis and image-generation QA learnings;
 - Silk character exploration/contact-sheet learning: Threadline Inspector A with grey hoodie and single antenna is the preferred working base;
-- accepted Silk v1 visual references now live under `style-sheets/silk/`:
+- accepted Silk v1 visual references now live under `build/characters/heist-crew/reference_sheets/`:
   - accepted hero shot;
   - accepted approved style sheet;
   - accepted anti-pattern sheet.

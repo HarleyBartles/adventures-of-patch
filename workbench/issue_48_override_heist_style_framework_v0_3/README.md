@@ -17,7 +17,7 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - `style-bibles/` own global systems.
 - `style-bibles/04_composable_panel_framing.md` is the global frame/panel/superframe bible.
 - `frame-bibles/` own character-specific panel/frame grammars.
-- `character-bibles/` own character identity, recruitment posture, payoff language, and character QA.
+- First-class crew character identity and continuity now live in `build/characters/heist-crew/`; this workbench retains adventure-specific framing and production material.
 - `source/` preserves the original combined source packet unchanged.
 
 ## File map
@@ -26,7 +26,7 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [00_framework_index.md](00_framework_index.md) — packet posture, evidence basis, composition rules, and update triggers.
 - [style-bibles/01_override_heist_world.md](style-bibles/01_override_heist_world.md) — global world and tone bible.
 - [style-bibles/02_patch_comic_adaptation.md](style-bibles/02_patch_comic_adaptation.md) — repo-grounded Patch adaptation layer.
-- [style-bibles/03_crew_character_class.md](style-bibles/03_crew_character_class.md) — shared ontology for the six recruits.
+- [Heist Crew character-class bible](../../build/characters/heist-crew/manifests/heist_crew_character_class_bible.md) - promoted shared ontology for the six core characters.
 - [style-bibles/04_composable_panel_framing.md](style-bibles/04_composable_panel_framing.md) — global frame, panel, gutter, and superframe bible.
 - [style-bibles/05_vault_keycard_prop_system.md](style-bibles/05_vault_keycard_prop_system.md) — vault and programmable keycard prop system.
 - [style-bibles/06_safehouse_specialist_zone_environment.md](style-bibles/06_safehouse_specialist_zone_environment.md) — shared safehouse and specialist zones.
@@ -40,21 +40,19 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [frame-bibles/writ_frame_bible.md](frame-bibles/writ_frame_bible.md) — Writ formal institutional frame grammar.
 - [frame-bibles/klause_frame_bible.md](frame-bibles/klause_frame_bible.md) — Klause internal decision-grid frame grammar.
 - [frame-bibles/receipt_frame_bible.md](frame-bibles/receipt_frame_bible.md) — Receipt audit-roll frame grammar.
-- [character-bibles/index.md](character-bibles/index.md) — Index recruitment/character-language bible.
-- [character-bibles/silk.md](character-bibles/silk.md) â€” Silk recruitment/character-language bible and current design direction.
-- [style-sheets/INDEX.md](style-sheets/INDEX.md) â€” in-flight style-sheet image references for Index, Klause, Patch, Receipt, Rollback, Silk, and Writ.
-- [style-sheets/silk/silk-approved-hero.png](style-sheets/silk/silk-approved-hero.png) â€” accepted Silk v1 hero shot, primary character reference.
-- [style-sheets/silk/silk-approved-style-sheet.png](style-sheets/silk/silk-approved-style-sheet.png) â€” accepted Silk v1 approved style sheet, primary multi-view reference.
-- [style-sheets/silk/silk-prohibited-anti-patterns.png](style-sheets/silk/silk-prohibited-anti-patterns.png) â€” accepted Silk v1 anti-pattern sheet, negative-control reference only.
-- [character-bibles/rollback.md](character-bibles/rollback.md) — Rollback recruitment/character-language bible.
-- [character-bibles/writ.md](character-bibles/writ.md) — Writ recruitment/character-language bible.
-- [character-bibles/klause.md](character-bibles/klause.md) — Klause recruitment/character-language bible.
-- [character-bibles/receipt.md](character-bibles/receipt.md) — Receipt recruitment/character-language bible.
+- [Index character references](../../build/characters/heist-crew/README.md#package-contents) - accepted hero, multi-view, anti-pattern, and sidecar continuity; no separate Index character bible is checked in.
+- [Silk character bible](../../build/characters/heist-crew/manifests/silk_character_bible.md) - promoted character identity and continuity.
+- [style-sheets/INDEX.md](style-sheets/INDEX.md) - Override Heist-specific working references that remain in the workbench.
+- [Heist Crew reference sheets](../../build/characters/heist-crew/reference_sheets/INDEX.md) - promoted accepted hero, multi-view, and anti-pattern references for all six crew members.
+- [Rollback character bible](../../build/characters/heist-crew/manifests/rollback_character_bible.md) - promoted character identity and continuity.
+- [Writ character bible](../../build/characters/heist-crew/manifests/writ_character_bible.md) - promoted character identity and continuity.
+- [Klause character bible](../../build/characters/heist-crew/manifests/klause_character_bible.md) - promoted character identity and continuity.
+- [Receipt character bible](../../build/characters/heist-crew/manifests/receipt_character_bible.md) - promoted character identity and continuity.
 - [source/issue_48_override_heist_visual_bibles_combined_v0_1.md](source/issue_48_override_heist_visual_bibles_combined_v0_1.md) — original combined source preserved unchanged.
 
 ## Locking posture
 
-The six recruitment-language outcomes are approved carry-forward doctrine for planning. They are not final character appearance sheets.
+The six recruitment-language outcomes remain approved carry-forward doctrine for Override Heist planning. The accepted hero, style-sheet, and anti-pattern references are now reusable character continuity in `build/characters/heist-crew/`.
 
-The Silk character bible now includes the accepted working design direction from the sketch/contact-sheet pass: Threadline Inspector A as base, grey hoodie, single antenna, compact red-thread rigging kit, and light Clipwright/Quiet Pin borrowing. This is a working design direction, not final turnaround canon.
+The workbench remains authoritative only for adventure-specific framing, props, environments, pitch-folder continuity, source history, and production experiments. It does not supersede the promoted Heist Crew package.
 
