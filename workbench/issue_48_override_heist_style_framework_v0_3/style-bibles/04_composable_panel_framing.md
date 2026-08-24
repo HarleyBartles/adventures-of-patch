@@ -16,7 +16,11 @@ This bible defines shared panel, frame, gutter, and superframe doctrine for the 
 
 This file owns global frame taxonomy and deck-safe panel rules.
 
-Character-specific frame behaviour belongs in `frame-bibles/`. Character identity belongs in `character-bibles/`. Do not overload character bibles with frame-transition catalogues or panel-grammar taxonomies.
+Character-specific frame behaviour belongs in `frame-bibles/`. Character
+identity belongs in the promoted
+`../../../build/characters/heist-crew/manifests/` continuity documents. Do not
+overload character bibles with frame-transition catalogues or panel-grammar
+taxonomies.
 
 ## Shared taxonomy
 

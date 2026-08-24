@@ -48,6 +48,22 @@ Permission may be granted separately. If you want to publish something transform
 
 Private, non-public experimentation is not the concern this reservation is aimed at. The practical boundary is publication and public distribution.
 
+## Limited portfolio assent-marker permission
+
+Harley Bartles authorises the repository `HarleyBartles/portfolio` to create
+and publicly publish the specifically documented derivative Heist Crew
+assent-marker images recorded in
+`workbench/issue_48_override_heist_style_framework_v0_3/style-bibles/09_pitch_folder_and_assent_marker_system.md`.
+The permission is limited to the six recorded marker designs for Index, Silk,
+Rollback, Writ, Klause, and Receipt and to the portfolio derivatives that are
+documented as such in that repository.
+
+This is a separate, narrow permission, not a relicensing of the source assets.
+It does not change their CC BY-ND 4.0 status, does not apply to other portfolio
+art or other repositories, does not permit sublicensing, and does not grant a
+general right to create or publish adapted Heist Crew or Adventures of Patch
+images, characters, stories, world material, or branding.
+
 ## Other original material
 
 Original prose, narrative-development material, presentations, doctrine, project documentation, and other project-authored material that is not expressly within the MIT or CC BY-ND grants remains all rights reserved unless a more specific notice says otherwise.

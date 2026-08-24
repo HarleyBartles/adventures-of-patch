@@ -24,10 +24,12 @@ For a recruitment slide or frame-heavy scene, compose:
 1. `style-bibles/01_override_heist_world.md`
 2. `style-bibles/04_composable_panel_framing.md`
 3. relevant `frame-bibles/*_frame_bible.md`
-4. relevant `character-bibles/*.md`
+4. relevant `../../../build/characters/heist-crew/manifests/*_character_bible.md`
 5. `style-bibles/02_patch_comic_adaptation.md` if Patch appears
 
-For a character design sheet, usually omit frame bibles. Use world, crew class, and character bible.
+For a character design sheet, usually omit frame bibles. Use the world bible,
+`../../../build/characters/heist-crew/manifests/heist_crew_character_class_bible.md`,
+and the relevant promoted character bible.
 
 For the planning table, use small inserts from multiple frame bibles rather than fully staging every recruitment journey again.
 

@@ -1,0 +1,92 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Receipt",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar describes a promoted Heist Crew character reference. The repo image bytes and package manifest remain authoritative for custody; the acceptance state controls its continuity role.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "build/characters/heist-crew/reference_sheets/receipt_style_sheet__v1.png",
+    "relative_image_path": "receipt_style_sheet__v1.png",
+    "repo_sidecar_path": "build/characters/heist-crew/reference_sheets/receipt_style_sheet__v1-sidecar.json",
+    "relative_sidecar_path": "receipt_style_sheet__v1-sidecar.json",
+    "image_filename": "receipt_style_sheet__v1.png",
+    "sha256": "2e4610ce72eb06c0fa9c586f34690f9d49fc76eb09c043b7d0f6c6e79bbb53ad",
+    "byte_size": 2175447,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "mode": "RGB",
+    "asset_role": "style-sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Approved full style sheet for Receipt, the Receipt is the audit-trail, record, timestamp, reviewability, and proof-after-the-fact specialist. He ensures the override is not an invisible backdoor.. It defines the canonical design, turnaround, action poses, kit/props, material palette, identity locks, and guiding principle.",
+  "observed_visual_facts": {
+    "layout": [
+      "Approved Receipt style sheet, multi-panel reference board."
+    ],
+    "character_design": [
+      "Patch-level autonomous agent, not human, animal, mole, furry, helper bot, Bit/Bot-style robot, Patch clone, or generic office worker;",
+      "compact, short, narrow, stooped older-gent clerk silhouette;",
+      "mild, precise, quiet, tired-but-calm posture;",
+      "one single stubby antenna on top of the head, small and understated;",
+      "one continuous curved pale aqua / glass-like faceplate forming the whole face, including chin and jawline;",
+      "no faceplate partition seams, metal chin strap, lower rim, helmet-window read, mouthplate, or separate lower face panel;"
+    ],
+    "action_utility_poses": [
+      "simple dark tired eye marks and tiny mild mouth on or within the glass faceplate;",
+      "white upper head casing that softly reads like white old-gent hair but is not literal hair;",
+      "white casing should stay primarily on the upper head/crown, not become white side ears or broad white cheek panels;",
+      "side hardware, if present, is subtle and subdued, not ear-like or dominant;"
+    ],
+    "canonical_kit_props": [
+      "simple soft agent hands, not exposed mechanical fingers, paws, claws, or human hands;",
+      "maroon knitted tank top / vest;",
+      "cream shirt;",
+      "narrow dark tie;"
+    ]
+  },
+  "positive_constraints": [
+    "Receipt is a Patch-level autonomous-agent audit-trail specialist. He is neat, mild, precise, nerdy, quiet, and easy to underestimate. His accepted visual anchor is a compact, short, narrow, stooped older-gent agent with one stubby antenna, a single uninterrupted curved pale-aqua glass faceplate forming the whole face, simple tired dark eye marks, a tiny mild mouth, and a white upper head casing that reads like white hair without being literal hair. He wears a neat maroon knitted vest over a cream shirt and narrow dark tie, tidy dark trousers, and small polished dark shoes. His domain is a tiny immaculate audit alcove with old reliable tools: receipt printer, paper rolls, timestamp clock, labelled trays, carbon copy slips, ledger-slate, pencil cup, stamp pad, archive boxes, warm desk lamp, tidy drawers, and tiny filing rituals. Patch arrives ready to pitch, but Receipt quietly interrupts because no pitch is needed; he has already observed and recorded the prior recruitment angles. Receipt tears off and hands over the audit slip."
+  ],
+  "negative_constraints": [
+    "Do not make Receipt run a full pitch journey or speak at length. Do not make him a literal human man, accountant stereotype, nervous clerk caricature, animal, mole, furry, Patch clone, Bit/Bot-style robot, generic helper bot, or generic office worker. Do not use fur, whiskers, paws, claws, tail, animal ears, biological muzzle, snout, or creature anatomy. Do not make him round, plush, chibi, mascot-like, or rotund. Do not give him Patch's teal hoodie, paired antennae, crossbody bag, Patch pouch, teal trainers, or Patch identity palette. Do not give him a helmet visor, metal chin strap, lower face rim, separate mouthplate, partitioned faceplate seams, or exposed mechanical fingers. Do not let the white upper casing become literal hair, white side ears, or broad white cheek panels. Do not make the audit trail decorative, optional, chaotic, or irrelevant. Do not use messy paperwork storms, unreadable tiny ledgers, real brand receipts, real tax forms, broad comic action, prop clutter in hero portraits, cinematic 3D, photorealism, steampunk clutter, or environment-first booth studies."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "Canonical Receipt design reference.",
+      "Turnaround/proportion checks.",
+      "Prompt constraints for Receipt scenes.",
+      "Prop and palette extraction.",
+      "QA against character drift."
+    ],
+    "not_sufficient_for": [
+      "Final acceptance of new generated images without image QA.",
+      "Precise OCR of every small label if exact wording matters.",
+      "Authorizing non-Receipt character design changes."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:receipt",
+      "asset:style-sheet",
+      "state:approved",
+      "role:audit",
+      "canonical-character-reference"
+    ]
+  },
+  "created_at": "2026-08-20T18:23:13.641039Z"
+}

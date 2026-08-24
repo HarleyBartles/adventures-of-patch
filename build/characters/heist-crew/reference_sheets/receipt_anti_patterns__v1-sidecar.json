@@ -1,0 +1,84 @@
+{
+  "schema": "adventures.visual_sidecar.adjacent.v1",
+  "project": "Adventures of Patch",
+  "character": "Receipt",
+  "sidecar_purpose": "Repo-resident semantic image sidecar for Codex/Devin worker selection, visual continuity, QA, and prompt constraint extraction.",
+  "source_truth_note": "This sidecar describes a promoted Heist Crew character reference. The repo image bytes and package manifest remain authoritative for custody; the acceptance state controls its continuity role.",
+  "runtime_use_note": "Use this sidecar for ordinary textual selection and continuity work. Inspect the image pixels directly when exact composition, small text, proportions, or fine visual details matter.",
+  "do_not_infer_note": "Do not infer unseen alternate views, additional props, story state, or acceptance of derivative images beyond what is described here.",
+  "image": {
+    "repo_image_path": "build/characters/heist-crew/reference_sheets/receipt_anti_patterns__v1.png",
+    "relative_image_path": "receipt_anti_patterns__v1.png",
+    "repo_sidecar_path": "build/characters/heist-crew/reference_sheets/receipt_anti_patterns__v1-sidecar.json",
+    "relative_sidecar_path": "receipt_anti_patterns__v1-sidecar.json",
+    "image_filename": "receipt_anti_patterns__v1.png",
+    "sha256": "6e3e5afc6f62d0f60cfe3fa34279d5e44774c6f2efc41615543c0d0ee6996460",
+    "byte_size": 2392992,
+    "mime_type": "image/png",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "mode": "RGB",
+    "asset_role": "anti_pattern_sheet",
+    "acceptance_state": "approved",
+    "inspection_mode": "pixel_inspection",
+    "confidence": "high",
+    "provenance": {
+      "generator": "unknown",
+      "model": "unknown",
+      "generated_at": null,
+      "prompt_language": null,
+      "prompt": null,
+      "prompt_retained": false,
+      "prompt_unretained_note": "Provenance has not been determined for this image."
+    }
+  },
+  "summary": "Prohibited anti-pattern reference board for Receipt. It explicitly documents rejected designs, roles, props, materials, proportions, and behavior drifts that must not be replicated.",
+  "observed_visual_facts": {
+    "layout": [
+      "Prohibited anti-pattern reference board for Receipt, marked with rejections."
+    ],
+    "rejection_categories": [],
+    "hard_nos": [
+      "Do not make Receipt run a full pitch journey or speak at length.",
+      "Do not make him a literal human man, accountant stereotype, nervous clerk caricature, animal, mole, furry, Patch clone, Bit/Bot-style robot, generic helper bot, or generic office worker.",
+      "Do not use fur, whiskers, paws, claws, tail, animal ears, biological muzzle, snout, or creature anatomy.",
+      "Do not make him round, plush, chibi, mascot-like, or rotund.",
+      "Do not give him Patch's teal hoodie, paired antennae, crossbody bag, Patch pouch, teal trainers, or Patch identity palette.",
+      "Do not give him a helmet visor, metal chin strap, lower face rim, separate mouthplate, partitioned faceplate seams, or exposed mechanical fingers.",
+      "Do not let the white upper casing become literal hair, white side ears, or broad white cheek panels.",
+      "Do not make the audit trail decorative, optional, chaotic, or irrelevant.",
+      "Do not use messy paperwork storms, unreadable tiny ledgers, real brand receipts, real tax forms, broad comic action, prop clutter in hero portraits, cinematic 3D, photorealism, steampunk clutter, or environment-first booth studies."
+    ]
+  },
+  "positive_constraints": [
+    "Use this sheet primarily as negative guidance and QA rejection criteria for Receipt.",
+    "Receipt is a Patch-level autonomous-agent audit-trail specialist. He is neat, mild, precise, nerdy, quiet, and easy to underestimate. His accepted visual anchor is a compact, short, narrow, stooped older-gent agent with one stubby antenna, a single uninterrupted curved pale-aqua glass faceplate forming the whole face, simple tired dark eye marks, a tiny mild mouth, and a white upper head casing that reads like white hair without being literal hair. He wears a neat maroon knitted vest over a cream shirt and narrow dark tie, tidy dark trousers, and small polished dark shoes. His domain is a tiny immaculate audit alcove with old reliable tools: receipt printer, paper rolls, timestamp clock, labelled trays, carbon copy slips, ledger-slate, pencil cup, stamp pad, archive boxes, warm desk lamp, tidy drawers, and tiny filing rituals. Patch arrives ready to pitch, but Receipt quietly interrupts because no pitch is needed; he has already observed and recorded the prior recruitment angles. Receipt tears off and hands over the audit slip."
+  ],
+  "negative_constraints": [
+    "Do not make Receipt run a full pitch journey or speak at length. Do not make him a literal human man, accountant stereotype, nervous clerk caricature, animal, mole, furry, Patch clone, Bit/Bot-style robot, generic helper bot, or generic office worker. Do not use fur, whiskers, paws, claws, tail, animal ears, biological muzzle, snout, or creature anatomy. Do not make him round, plush, chibi, mascot-like, or rotund. Do not give him Patch's teal hoodie, paired antennae, crossbody bag, Patch pouch, teal trainers, or Patch identity palette. Do not give him a helmet visor, metal chin strap, lower face rim, separate mouthplate, partitioned faceplate seams, or exposed mechanical fingers. Do not let the white upper casing become literal hair, white side ears, or broad white cheek panels. Do not make the audit trail decorative, optional, chaotic, or irrelevant. Do not use messy paperwork storms, unreadable tiny ledgers, real brand receipts, real tax forms, broad comic action, prop clutter in hero portraits, cinematic 3D, photorealism, steampunk clutter, or environment-first booth studies."
+  ],
+  "sidecar_usage": {
+    "best_for": [
+      "QA rejection checks for Receipt.",
+      "Prompt negative constraints.",
+      "Preventing role/ontology drift.",
+      "Differentiating Receipt from other crew members."
+    ],
+    "not_sufficient_for": [
+      "Positive generation by itself; pair with approved hero/style sheet.",
+      "Detailed final Receipt outfit rendering without the approved style sheet.",
+      "Treating any rejected example as a fallback design."
+    ],
+    "linear_view_route": null,
+    "repo_index_tags": [
+      "character:receipt",
+      "asset:anti-patterns",
+      "state:approved",
+      "role:audit",
+      "canonical-character-reference"
+    ]
+  },
+  "created_at": "2026-08-20T18:23:13.641039Z"
+}

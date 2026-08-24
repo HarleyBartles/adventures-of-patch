@@ -1,0 +1,63 @@
+{
+  "domain": "characters",
+  "family": "heist-crew",
+  "package_id": "heist-crew",
+  "package_type": "reference_pack",
+  "status": "approved",
+  "artifact_lanes": {
+    "source_images": "absent_not_reconstructed",
+    "compiled_asset_sheets": "absent_not_required",
+    "reference_sheets": "present"
+  },
+  "files": {
+    "source_images": [],
+    "compiled_asset_sheets": [],
+    "reference_sheets": [
+      "index_anti_patterns__v1.png",
+      "index_hero__v1.png",
+      "index_style_sheet__v1.png",
+      "klause_anti_patterns__v1.png",
+      "klause_hero__v1.png",
+      "klause_style_sheet__v1.png",
+      "receipt_anti_patterns__v1.png",
+      "receipt_hero__v1.png",
+      "receipt_style_sheet__v1.png",
+      "rollback_anti_patterns__v1.png",
+      "rollback_hero__v1.png",
+      "rollback_style_sheet__v1.png",
+      "silk_anti_patterns__v1.png",
+      "silk_hero__v1.png",
+      "silk_style_sheet__v1.png",
+      "writ_anti_patterns__v1.png",
+      "writ_hero__v1.png",
+      "writ_style_sheet__v1.png"
+    ],
+    "continuity_documents": [
+      "heist_crew_character_class_bible.md",
+      "klause_character_bible.md",
+      "receipt_character_bible.md",
+      "rollback_character_bible.md",
+      "silk_character_bible.md",
+      "writ_character_bible.md"
+    ]
+  },
+  "licensing": {
+    "visual_assets": "CC-BY-ND-4.0 where Harley Bartles holds the rights needed to grant it and no more specific notice applies",
+    "license_file": "LICENSES/CC-BY-ND-4.0.txt",
+    "reserved_ip": "Heist Crew characters, names, distinctive designs, Adventures of Patch world, stories, and branding remain Harley Bartles' property under LICENSING.md",
+    "general_adaptation_right": false
+  },
+  "portfolio_derivative_permission": {
+    "authorised_repository": "HarleyBartles/portfolio",
+    "scope": "Only the specifically documented derivative Heist Crew assent-marker images recorded in workbench/issue_48_override_heist_style_framework_v0_3/style-bibles/09_pitch_folder_and_assent_marker_system.md",
+    "may_create_and_publish": true,
+    "changes_source_asset_license": false,
+    "grants_general_adaptation_right": false
+  },
+  "provenance_notes": [
+    "Promoted with history from workbench/issue_48_override_heist_style_framework_v0_3 after acceptance as reusable Heist Crew character continuity.",
+    "Each PNG retains an adjacent sidecar containing its recorded generator, model, prompt-retention state, checksum, dimensions, and acceptance state; unknown provenance was not reconstructed.",
+    "Anti-pattern sheets are accepted negative-control references only and must not be used as positive design targets.",
+    "Index has no separate checked-in character bible; its accepted images, adjacent sidecars, and the shared character-class bible are the available continuity authority."
+  ]
+}
