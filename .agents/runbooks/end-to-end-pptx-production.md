@@ -46,52 +46,6 @@ If a proof run fails at any mandatory gate, the proof result is Red or Amber wit
 
 A proof run must not be downgraded to storyboard, draft, placeholder, asset-sheet deck, or plan-only mode merely because a gate is difficult, unavailable, or inconvenient. Storyboard and draft modes are separate requested modes, not implicit proof-run fallbacks.
 
-## Skill and tool selection
-
-Use appropriate currently installed skills and available tools at each stage. A stage may require multiple skills, no skill, or a future skill not named here.
-
-Do not skip a gate because a named skill is unavailable. If a skill is unavailable, stale, renamed, or superseded, still satisfy the runbook's required evidence, outputs, and stop conditions with the best available route.
-
-Expected compositions include:
-
-- `adventures-bootstrap` at fresh project start when available;
-- `adventures-repo` and `github-issue-management` for repo and issue discipline;
-- `adventures-issue-ingestor` for issue briefs;
-- `adventures-project-readiness` when the frame is missing or weak;
-- `adventures-deck-doctrine` and `adventures-deck-planner` for deck planning;
-- the image-planning stage in this runbook for shot lists, prompt packs, and the image inventory skeleton;
-- `visual-intent-gate` before generation/editing;
-- the Patch visual preflight section in this runbook before generating Patch images;
-- `adventures-image-qa` after generation and before slides;
-- `adventures-pptx-builder` for PPTX assembly;
-- `adventures-presentation-qa` for package/stage QA;
-- the receipt and canonisation follow-up described in this runbook for embedded-image receipt packages.
-
-### Required discovery before unavailability claims
-
-Before claiming that a required skill, artifact route, image route, repo connector, or source package is unavailable, record the discovery attempt in the run-state ledger.
-
-For external app connectors, refresh the named connector namespace at the action boundary before selecting actions or reporting availability. Treat earlier sparse connector listings as provisional until that refresh happens.
-
-For skills:
-
-- attempt skill catalogue lookup for each required Adventures skill;
-- read `SKILL.md` for visible skills;
-- record exact absence or read failure if a skill is missing.
-
-For GitHub/repo:
-
-- identify all currently available GitHub-capable routes;
-- prefer direct known-path and known-issue reads over search;
-- preserve any successful route as proof of repo access for the current run.
-
-For image generation:
-
-- image generation availability must be established by the actual image-generation route at the image stage, not by inference, tool sparsity language, artifact-tool behaviour, or prior failures in unrelated tools;
-- valid image-stage outcomes are: image generation invoked and outputs produced; image generation invoked and failed with the exact tool failure recorded; or no image-generation route visible after actual tool discovery, with the discovery result recorded.
-
-Do not use phrases such as "tool sparsity", "unavailable", "not visible", or "unbound" unless the actual discovery or tool call supports that statement.
-
 ## Hard preflight: repo access proof
 
 Before any issue-to-PPTX production work may proceed beyond mandatory artifact-handoff preparation, prove live access to the canonical GitHub repo and fetch the named source issue.

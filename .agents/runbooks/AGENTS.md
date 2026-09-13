@@ -11,11 +11,10 @@ the entry point for each kind of work.
 - Use `code-style.md` for conventions and style.
 - Use `code-review.md` for review work.
 - Use `pr.md` for pull-request workflow and publication proof.
-- Use `testing.md` for test commands and TDD workflow.
+- Use `testing.md` for the local validation command map.
 - Use `security.md` for security posture and review.
 - Use `skill-authoring.md` for creating or editing skills.
 - Use `marketplace-generation.md` for marketplace refresh and plugin work.
-- Use `completing-plans.md` for plan closeout and archive.
 - Use the additional project runbooks for Adventures-specific workflows:
   - `pre-runbook-adventure-readiness.md`
   - `visual-preproduction.md`
@@ -25,7 +24,6 @@ the entry point for each kind of work.
   - `asset-sheet-production-contract.md`
   - `visual-bible-creation.md`
   - `visual-bible-interpretation.md`
-  - `bound-connector-action-gate.md`
 
 ## Working rules
 

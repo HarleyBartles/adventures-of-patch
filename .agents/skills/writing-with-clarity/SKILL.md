@@ -5,17 +5,17 @@ description: Use when drafting, revising, or reviewing prose intended for human 
   commit messages, and pull request text.
 metadata:
   source-id: writing-with-clarity
-  source-path: codex-marketplace/plugins/repo-worker-pack/skills/writing-with-clarity/SKILL.md
+  source-path: codex-marketplace/plugins/writing-pack/skills/writing-with-clarity/SKILL.md
   provenance-name: Writing With Clarity first-party skill
   source-category: first_party
   status: active
   owner: Harley Bartles
   scope: all prose intended for human readers
   use_when:
-  - Use when drafting, revising, or reviewing prose intended for human readers
-  - Use when clarity, structure, concision, tone, wording, or copyediting is material
+  - drafting, revising, or reviewing prose intended for human readers
+  - clarity, structure, concision, tone, wording, or copyediting is material
   do_not_use_when:
-  - Do not use when another more specific skill owns this task.
+  - another more specific skill owns this task.
 license: MIT
 ---
 

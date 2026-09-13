@@ -19,7 +19,6 @@ This repo follows the `repo-standards` skill. Invoke `/using-superpowers-plus` f
 
 ## Additional repo-specific runbooks
 
-- `completing-plans.md` — plan and spec archive workflow.
 - `pre-runbook-adventure-readiness.md` — adventure readiness gate.
 - `visual-preproduction.md` — reusable visual language and image requirements.
 - `end-to-end-pptx-production.md` — issue-to-PPTX pipeline.
@@ -28,7 +27,6 @@ This repo follows the `repo-standards` skill. Invoke `/using-superpowers-plus` f
 - `asset-sheet-production-contract.md` — asset sheet build contract.
 - `visual-bible-creation.md` — visual bible creation.
 - `visual-bible-interpretation.md` — visual bible interpretation.
-- `bound-connector-action-gate.md` — connector action gate.
 
 ## Root contributor and review surfaces
 

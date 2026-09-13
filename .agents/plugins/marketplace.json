@@ -51,6 +51,32 @@
       "policy": {
         "installation": "INSTALLED_BY_DEFAULT"
       }
+    },
+    {
+      "name": "writing-pack",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "owner": "HarleyBartles",
+        "repo": "agent-asset-marketplace",
+        "path": "codex-marketplace/plugins/writing-pack"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT"
+      }
+    },
+    {
+      "name": "unslop-plus",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "owner": "HarleyBartles",
+        "repo": "agent-asset-marketplace",
+        "path": "codex-marketplace/plugins/unslop-plus"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT"
+      }
     }
   ]
 }

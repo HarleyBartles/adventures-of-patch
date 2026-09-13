@@ -20,13 +20,10 @@ For character asset sheets, including Patch variants and non-Patch characters, t
 
 Use `adventures-visual-preproduction` as the primary orchestration skill for this runbook.
 
-Compose with:
-
-- `visual-intent-gate` after the lane and stage semantics are clear;
-- `adventures-visual-bible-interpreter` when a mature visual bible exists or a provisional asset-class bible must be created;
-- the Patch visual preflight section in this runbook as the identity and interaction subcheck when Patch appears;
-- `adventures-image-qa` after Harley asks to continue from a generated or edited candidate;
-- `.agents/runbooks/asset-sheet-production-contract.md` after QA acceptance, when sheet-format, landing, or promotion guidance is needed.
+Related local contracts are `.agents/runbooks/visual-bible-interpretation.md`,
+the Patch visual preflight section below, and
+`.agents/runbooks/asset-sheet-production-contract.md`. Image acceptance belongs
+to `adventures-image-qa`.
 
 `adventures-image-qa` is the single authoritative acceptance gate. Visual preproduction owns the stage, bible/preflight packet, prompt contract, and generation cadence. Image QA owns the decision.
 

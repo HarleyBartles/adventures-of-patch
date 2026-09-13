@@ -237,7 +237,8 @@ def _condition_holds(condition: str, state: dict, ledger: Path, current_node: st
     if condition == "always":
         return True
     if condition == "after_lens_dispatch":
-        return previous_node == "lens-dispatch"
+        expected_previous = "normalize-inputs" if current_node == "lens-triage" else "lens-dispatch"
+        return previous_node == expected_previous and not unresolved
     if condition == "after_setup":
         return previous_node == "setup"
     if condition == "ready":
@@ -314,8 +315,6 @@ def _condition_holds(condition: str, state: dict, ledger: Path, current_node: st
         return not unresolved and not regressions
     if condition == "after_reviewer_fast":
         return previous_node == "reviewer-fast" and not unresolved
-    if condition == "after_lens_dispatch":
-        return previous_node == "lens-dispatch" and not unresolved
     if condition == "fast_origin":
         findings = _load_jsonl(scratch / "findings.jsonl")
         resolved_ids = {r["finding_id"] for r in _load_jsonl(scratch / "resolutions.jsonl")}
@@ -413,6 +412,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.propose and (args.status or args.resync):
         print("--propose cannot be combined with --status or --resync", file=sys.stderr)
         return 2
+    if args.propose and args.metrics:
+        print("--metrics cannot be combined with --propose (metrics are read-only diagnostics)", file=sys.stderr)
+        return 2
     if args.non_trivial and not args.propose:
         print("--non-trivial is only valid with --propose", file=sys.stderr)
         return 2
@@ -435,6 +437,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.state:
         state_path = Path(args.state)
         state = _load_state(state_path)
+        if state.get("schema_version") == 2:
+            print(
+                "BLOCKED: version-2 state is controlled only by reviewctl.py",
+                file=sys.stderr,
+            )
+            return 1
         if args.non_trivial:
             state["non_trivial_fix"] = True
         ledger_path = (
@@ -444,28 +452,21 @@ def main(argv: list[str] | None = None) -> int:
         )
         node, reason = _next_node(state, ledger_path)
     elif args.metrics:
-        if args.propose:
-            # Existing recipes call --propose with --metrics; derive the canonical
-            # review-state.json path from the metrics file.
-            state_path = Path(args.metrics).with_name("review-state.json")
-            state = _load_state(state_path)
-            if args.non_trivial:
-                state["non_trivial_fix"] = True
-            ledger_path = (
-                Path(args.ledger)
-                if args.ledger
-                else Path(state.get("ledger_path", state_path.parent / "review-log-resolved-ledger.md"))
-            )
-            node, reason = _next_node(state, ledger_path)
-        else:
-            # Backward-compatible read-only discovery from compiled metrics.
-            metrics_path = Path(args.metrics)
-            ledger_path = Path(args.ledger) if args.ledger else metrics_path.parent / "review-log-resolved-ledger.md"
-            metrics = _load_metrics(metrics_path)
-            node, reason = _next_node(metrics, ledger_path)
+        # Backward-compatible read-only discovery from compiled metrics.
+        metrics_path = Path(args.metrics)
+        ledger_path = Path(args.ledger) if args.ledger else metrics_path.parent / "review-log-resolved-ledger.md"
+        metrics = _load_metrics(metrics_path)
+        node, reason = _next_node(metrics, ledger_path)
     else:
         print("--state or --metrics is required when not using --check", file=sys.stderr)
         return 2
+
+    if args.propose == "ready":
+        print(
+            "BLOCKED: version-1 review state cannot produce a trustworthy-green seal; start a version-2 review",
+            file=sys.stderr,
+        )
+        return 1
 
     if args.status:
         if args.json:
