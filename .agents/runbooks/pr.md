@@ -23,7 +23,7 @@ Use this runbook for pull-request workflow and publication proof in this repo.
 - Keep the PR in draft while iterating and running local validation.
 - Flip to ready for review only after self-review is complete and `py -3 tools/run.py ci --check` passes.
 - The PR body must include publication proof.
-- If the PR completes work that has an in-flight plan or spec in `.agents/plans/` or `.agents/specs/`, move those artifacts to `completed/` in this same PR before flipping to ready for review. See `.agents/runbooks/completing-plans.md`.
+- If the PR completes work that has an in-flight plan or spec in `.agents/plans/` or `.agents/specs/`, remove those artifacts from the tracked tree in this same PR before flipping to ready for review. Promote enduring decisions first; see `.agents/runbooks/completing-plans.md`.
 
 ## Draft PR policy
 
@@ -48,10 +48,12 @@ Use this runbook for pull-request workflow and publication proof in this repo.
 
 ## Pre-commit hook
 
-This repo installs a `pre-commit` hook via `repo-standards` that runs
-`py -3 tools/run.py ci --apply --allow-shared-checkout` and stages generated
-surfaces. If the hook is not installed, run `py -3 tools/run.py ci --apply` and
-then `py -3 tools/run.py ci --check` before committing.
+This repo installs a `pre-commit` hook via `repo-standards`. The hook reads
+`.agents/contracts/repo-standards-commands.json`, materializes the exact staged
+snapshot, runs the declared apply capability, stages owned generated surfaces,
+and runs the declared check capability. If the hook is not installed, run
+`py -3 tools/run.py ci --apply` and then `py -3 tools/run.py ci --check` before
+committing.
 
 ## Remote CI gate
 

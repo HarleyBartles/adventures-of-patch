@@ -22,9 +22,10 @@ relevant implementation skill.
 3. Apply skill authoring TDD for every new or adapted skill.
 4. Run the narrow checks while iterating, then run `py -3 tools/run.py ci --check`
    before committing.
-5. Before the work is completed, move the in-flight plan and any related spec to
-   `.agents/plans/completed/` and `.agents/specs/completed/` in the same PR that
-   completes the implementation. See `.agents/runbooks/completing-plans.md`.
+5. Before the work is completed, remove the in-flight plan and any related spec
+   from the tracked tree in the same PR, after promoting enduring decisions to
+   ADRs, current doctrine, or runbooks. See
+   `.agents/runbooks/completing-plans.md`.
 
 ## Patch boundaries
 

@@ -15,7 +15,8 @@ the entry point for each kind of work.
 - Use `security.md` for security posture and review.
 - Use `skill-authoring.md` for creating or editing skills.
 - Use `marketplace-generation.md` for marketplace refresh and plugin work.
-- Use `completing-plans.md` for plan closeout and archive.
+- Use `completing-plans.md` for removing completed planning artifacts after
+  promoting enduring decisions.
 - Use the additional project runbooks for Adventures-specific workflows:
   - `pre-runbook-adventure-readiness.md`
   - `visual-preproduction.md`

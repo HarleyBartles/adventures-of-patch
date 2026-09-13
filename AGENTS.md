@@ -40,7 +40,6 @@ The Adventures of Patch repo produces reusable presentation packages and the ass
 
 - [.devin/rules/pr.md](.devin/rules/pr.md) - pull-request workflow and publication proof
 - [.devin/rules/tools.md](.devin/rules/tools.md) - working in `tools/`
-- [.devin/rules/completed-plans.md](.devin/rules/completed-plans.md) - completed plans and specs
 
 ### Doctrine and stage runbooks
 

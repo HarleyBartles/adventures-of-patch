@@ -22,10 +22,10 @@ publication evidence.
 
 ## Closing out plans and specs
 
-The PR that completes the work must also archive the in-flight plan and any
-related spec. Move `plan-name.md` to `.agents/plans/completed/` and the matching
-spec to `.agents/specs/completed/` in the same completing PR. See
-`.agents/runbooks/completing-plans.md` for the exact steps.
+The PR that completes the work must also remove the in-flight plan and any
+related spec from the tracked tree after promoting enduring decisions to ADRs,
+current doctrine, or runbooks. See `.agents/runbooks/completing-plans.md` for
+the exact steps.
 
 ## Stop conditions
 

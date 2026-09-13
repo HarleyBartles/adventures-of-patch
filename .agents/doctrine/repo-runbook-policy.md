@@ -19,7 +19,7 @@ This repo follows the `repo-standards` skill. Invoke `/using-superpowers-plus` f
 
 ## Additional repo-specific runbooks
 
-- `completing-plans.md` — plan and spec archive workflow.
+- `completing-plans.md` — completed plan and spec removal workflow.
 - `pre-runbook-adventure-readiness.md` — adventure readiness gate.
 - `visual-preproduction.md` — reusable visual language and image requirements.
 - `end-to-end-pptx-production.md` — issue-to-PPTX pipeline.
