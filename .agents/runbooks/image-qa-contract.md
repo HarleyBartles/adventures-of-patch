@@ -16,8 +16,8 @@ Other skills may orchestrate image work, but they do not own acceptance:
 
 - `adventures-visual-preproduction` owns preproduction generation loops.
 - the image-planning stage in `.agents/runbooks/end-to-end-pptx-production.md` owns image plans and inventories.
-- `adventures-pptx-builder` owns build gating.
-- `adventures-presentation-qa` owns package/stage QA.
+- `.agents/runbooks/end-to-end-pptx-production.md` owns PPTX build and package
+  QA gates.
 - `.agents/runbooks/asset-sheet-production-contract.md` owns sheet canonisation and landing posture after image QA.
 
 ## Core rule

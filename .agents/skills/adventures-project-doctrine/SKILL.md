@@ -7,16 +7,13 @@ metadata:
   scope: Triggerable routing into Adventures project doctrine
   use_when: task needs a project invariant or source-of-truth decision before execution
   do_not_use_when: task is generic repository work with no Adventures-specific boundary
-  use_with: base-doctrine, repo-worker-base, work-mode-router, matching local guide
+  use_with: using-superpowers-plus, base-doctrine, matching local runbook
 ---
 
 # Adventures project doctrine router
 
-This is a routing entrypoint, not a second doctrine store. Compose it with
-`work-mode-router` for first classification, `repo-worker-base` for repository
-hygiene and stage composition, and `base-doctrine` for cross-project evidence,
-source-truth, bounded-read, and report-hygiene invariants. Read only the
-smallest canonical rule surface needed for the task.
+This is a routing entrypoint, not a second doctrine store. Read only the
+smallest canonical Adventures rule surface needed for the task.
 
 ## Route by decision
 
@@ -25,25 +22,15 @@ smallest canonical rule surface needed for the task.
 | Adventures identity, source truth, readiness, or publication invariants | `.agents/doctrine/adventures-project-doctrine.md` |
 | Agent/documentation custody, generated indexes, gitlinks, or mesh safety | `.agents/doctrine/mesh-policy.md` |
 | Creating, adapting, assessing, or retiring a local skill | `.agents/doctrine/skill-authoring-policy.md` |
-| Design, planning, implementation, or review overlay | matching file under `.agents/guides/` |
+| Design, planning, implementation, or review overlay | matching file under `.agents/runbooks/` |
 | Readiness/frame, visual preparation, or image acceptance | `adventures-project-readiness`, `adventures-visual-preproduction`, or `adventures-image-qa` |
-
-## Composition contract
-
-For repository-backed work, use:
-
-`work-mode-router -> repo-worker-base -> matching baseline + local guide -> Superpowers lane`
-
-Use `base-doctrine` only for the cross-runtime doctrine decision that remains
-after the more specific project, repository, or workflow owner is selected.
 
 ## Routing rules
 
 1. Identify the decision that could be wrong.
-2. Read the matching doctrine or guide before acting.
+2. Read the matching doctrine or runbook before acting.
 3. Keep the canonical rule's path and evidence in the plan or return.
-4. Compose with the owning workflow skill; do not duplicate doctrine in a
-   router or treat this skill as approval.
+4. Do not duplicate doctrine in this router or treat it as approval.
 
 ## Hard boundaries
 

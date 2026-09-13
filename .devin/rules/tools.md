@@ -12,7 +12,6 @@ When working in this scope:
 
 - MUST READ `.agents/doctrine/repo-runbook-policy.md`
 - MUST READ `.agents/runbooks/implementing.md`
-- MUST INVOKE `/repo-worker-base`
 
 The canonical validation command is `py -3 tools/run.py ci --check`.
 

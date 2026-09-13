@@ -1,19 +1,6 @@
 # Code review runbook
 
-This is the repository-specific overlay for review work. It does not replace
-`repo-worker-base`, `requesting-code-review`, `receiving-code-review`, or
-`verification-before-completion`.
-
-## Review order
-
-1. Review the exact branch head and draft PR, not a stale local summary.
-2. Check scope against the plan, doctrine, and current local skill inventory.
-3. Check that doctrine, runbooks, skills, and scripts each remain in their
-   smallest canonical surface.
-4. For skills, verify frontmatter, trigger-only descriptions, local metadata,
-   stop conditions, references, pressure scenario evidence, and no stale Patch
-   actor identity.
-5. Run `py -3 tools/run.py ci --check` on the final head.
+This is the repository-specific overlay for Adventures review concerns.
 
 ## Review red flags
 
@@ -25,5 +12,4 @@ This is the repository-specific overlay for review work. It does not replace
 - Patch is described as an agent or actor rather than a character;
 - local validation is reported without matching remote branch and PR proof.
 
-Return blockers with file paths and evidence. Keep a draft PR open for the
-end-of-slice review; do not merge it as part of the implementation pass.
+The local complete check command is `py -3 tools/run.py ci --check`.

@@ -11,11 +11,10 @@ metadata:
 
 # Adventures visual preproduction
 
-## Overview
+## Owned decision
 
-Visual preproduction makes a frame-ready Adventures world repeatable before
-body-slide production. It owns the requirements and candidate-planning lane;
-`adventures-image-qa` owns acceptance.
+Determine whether a frame-ready project has a repeatable visual system and the
+required governed reference candidates before body-slide production.
 
 ## Required route
 
@@ -27,38 +26,11 @@ Read, in order:
 4. `.agents/runbooks/asset-sheet-production-contract.md` for sheet work.
 
 Discover assets through the index mesh. Do not hard-code source-zip names,
-fixed sheet counts, or bundled paths. Record relevant references, skipped files,
-positive constraints, hard negatives, lane, composition, text posture, physical
-logic, continuity requirements, and the selected QA lane in the preflight
-packet.
+fixed sheet counts, or bundled paths.
 
-## Image requirements
+## Boundary
 
-Every candidate needs a stated artifact lane and intended downstream use. For
-Patch-bearing prompts, preserve the current canonical character: clean
-editorial vector style, teal hoodie and antennae, off-white face panel, black
-oval eyes with small white highlights, dark trousers, teal shoes, and teal
-crossbody bag with visible `>` mark. Keep other people, agents, systems, and
-props visually distinct.
-
-Keep operator context out of audience-facing images: no issue comments, QA
-labels, candidate numbers, repo paths, process checklists, or hidden notes.
-Translate known failures into concise prompt constraints and preserve features
-that already passed.
-
-## Stage boundary
-
-Preproduction may plan and, when explicitly authorized, generate one governed
-reference candidate at a time. It must not generate body-slide scene images or
-call a final deck green. For asset classes, use the required
-`minimal bible -> overview -> accepted learning -> member sheets` sequence and
-deterministic template compilation.
-
-Stop at generation for your human partner review. On continuation, send the latest
-candidate to `adventures-image-qa`; do not skip acceptance or restart planning.
-
-## Hard boundaries
-
-- A generated candidate is not an accepted asset.
-- An asset sheet is not body-slide art.
-- Patch is a character and canon reference, never an agent or actor identity.
+This skill owns preproduction planning and candidate-generation routing;
+`adventures-image-qa` owns acceptance. The referenced runbooks own the detailed
+stage, package, canon, and human-review contracts. Do not restate or replace
+those contracts here.

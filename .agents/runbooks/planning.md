@@ -1,35 +1,13 @@
 # Planning runbook
 
-This is the repository-specific overlay for planning work. It does not replace
-`repo-worker-base`, `writing-plans`, or `risk-gates`.
+This is the repository-specific overlay for Adventures planning custody.
 
-## Route
+## Local custody and gates
 
-1. Start from the live repository mesh and, when named, the live GitHub issue.
-2. Keep implementation plans under `.agents/plans/`.
-3. For issue-to-PPTX work, classify the issue as seed-ready, frame-ready,
-   asset-ready, or runbook-ready using
-   `.agents/runbooks/pre-runbook-adventure-readiness.md`.
-4. Use the frame gate in `adventures-project-readiness`, route visual
-   preparation to `adventures-visual-preproduction`, and acceptance to
-   `adventures-image-qa`.
-
-## Plan contents
-
-Plans must state the source of truth, target worktree and branch, scope,
-non-goals, custody boundaries, readiness gates, validation commands, and
-publication evidence.
-
-## Closing out plans and specs
-
-The PR that completes the work must also remove the in-flight plan and any
-related spec from the tracked tree after promoting enduring decisions to ADRs,
-current doctrine, or runbooks. See `.agents/runbooks/completing-plans.md` for
-the exact steps.
-
-## Stop conditions
-
-Stop before production if the frame is weak, Patch references cannot be
-inspected, asset readiness is unproven, the issue source is unavailable, or a
-required decision belongs to Harley. Do not invent a frame, asset canon, actor
-identity, or acceptance result to make a plan appear green.
+- Implementation plans live under `.agents/plans/`; associated specifications
+  live under `.agents/specs/`.
+- Issue-to-PPTX work uses the seed-ready, frame-ready, asset-ready, and
+  runbook-ready classifications defined in
+  `.agents/runbooks/pre-runbook-adventure-readiness.md`.
+- Patch canon, visual-preproduction, and image-acceptance requirements come
+  from the corresponding Adventures skills and project runbooks.
