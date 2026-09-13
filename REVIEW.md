@@ -6,7 +6,7 @@ This file is the repo's review entry point. Code-review agents discover it autom
 
 - Read root [`AGENTS.md`](./AGENTS.md) for source-of-truth and publication rules.
 - Read [`.agents/doctrine/repo-runbook-policy.md`](./.agents/doctrine/repo-runbook-policy.md) for this repo's mapping to the cross-repo runbook standard.
-- Read [`.agents/runbooks/code-review.md`](./.agents/runbooks/code-review.md) for detailed review methodology.
+- Read [`.agents/runbooks/code-review.md`](./.agents/runbooks/code-review.md) for Adventures-specific review concerns.
 
 ## Workflow routing
 
