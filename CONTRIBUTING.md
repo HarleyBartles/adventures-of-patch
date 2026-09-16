@@ -16,6 +16,9 @@ commands, custody, and exceptions.
 
 ## Repo-specific contribution notes
 
+- Enable per-worktree Git configuration once with
+  `git config extensions.worktreeConfig true`, then activate the tracked gate
+  in each checkout with `git config --worktree core.hooksPath .githooks`.
 - Preserve `.agents/plugins/marketplace-source` as a gitlink. Change portable
   skills in their canonical marketplace repository, then refresh this repo.
 - Keep project-owned skills under `.agents/skills/adventures-*/` and list them

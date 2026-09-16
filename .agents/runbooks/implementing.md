@@ -2,6 +2,44 @@
 
 This is the repository-specific overlay for implementation custody.
 
+## When
+
+Use when an approved plan or bounded repo change is ready for implementation.
+
+## Required skills
+
+- `executing-plans` or `subagent-driven-development` owns plan execution.
+- `test-driven-development` owns feature/bugfix test order.
+- `repo-worker-base` owns repository hygiene and validation boundaries.
+- `verification-before-completion` owns completion claims.
+
+## Composition
+
+Choose one execution owner, apply TDD where behavior changes, bind all work to
+the repository surfaces below, and use verification before completion or
+publication.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/doctrine/mesh-policy.md`
+- `.agents/contracts/repo-standards-commands.json`
+
+## Local commands and paths
+
+Apply mechanical surfaces with `py -3 tools/run.py ci --apply`; the normal
+commit hook runs the complete staged apply/check gate.
+
+## Evidence contract
+
+Evidence names the exact changed state, focused tests, hooked validation result,
+generated-surface explanation, and remaining blockers.
+
+## Prohibited combinations
+
+- Do not edit marketplace-derived installed skills as authored source.
+- Do not hand-edit generated indexes or bypass the normal commit hook.
+
 ## Repository surfaces
 
 - Agent infrastructure belongs under `.agents/`.

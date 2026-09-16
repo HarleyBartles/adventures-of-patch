@@ -16,17 +16,11 @@ This repo follows the `repo-standards` skill. Invoke `/using-superpowers-plus` f
 | testing.md | `.agents/runbooks/testing.md` |  |
 | pr.md | `.agents/runbooks/pr.md` | required |
 | code-style.md | `.agents/runbooks/code-style.md` |  |
+| completing-plans.md | `.agents/runbooks/completing-plans.md` |  |
 
 ## Additional repo-specific runbooks
 
-- `pre-runbook-adventure-readiness.md` — adventure readiness gate.
-- `visual-preproduction.md` — reusable visual language and image requirements.
-- `end-to-end-pptx-production.md` — issue-to-PPTX pipeline.
-- `image-qa-contract.md` — image acceptance QA.
-- `image-inspection-source-contract.md` — image source inspection.
-- `asset-sheet-production-contract.md` — asset sheet build contract.
-- `visual-bible-creation.md` — visual bible creation.
-- `visual-bible-interpretation.md` — visual bible interpretation.
+- `visual-production.md` — idea-to-visual-adventure production workflow.
 
 ## Root contributor and review surfaces
 

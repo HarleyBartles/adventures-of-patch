@@ -23,7 +23,7 @@ owner reads `.agents/runbooks/code-review.md` for Adventures-specific concerns.
   overlays must not duplicate portable workflow instructions.
 - Patch is the project character, never an agent, actor, owner, or execution
   lane.
-- Generated images and presentation artifacts require the applicable project
-  readiness and image-QA evidence before acceptance claims.
+- Generated images and downstream artifacts require the applicable project
+  readiness, direct inspection, and selection evidence before acceptance claims.
 - Review conclusions must match the exact published PR head and current
   validation evidence.

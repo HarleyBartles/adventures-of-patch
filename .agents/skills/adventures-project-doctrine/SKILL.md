@@ -23,7 +23,7 @@ smallest canonical Adventures rule surface needed for the task.
 | Agent/documentation custody, generated indexes, gitlinks, or mesh safety | `.agents/doctrine/mesh-policy.md` |
 | Creating, adapting, assessing, or retiring a local skill | `.agents/doctrine/skill-authoring-policy.md` |
 | Design, planning, implementation, or review overlay | matching file under `.agents/runbooks/` |
-| Readiness/frame, visual preparation, or image acceptance | `adventures-project-readiness`, `adventures-visual-preproduction`, or `adventures-image-qa` |
+| Readiness/frame or visual preparation | `adventures-project-readiness` or `directing-visual-stories` |
 
 ## Routing rules
 

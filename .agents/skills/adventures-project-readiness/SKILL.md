@@ -1,6 +1,6 @@
 ---
 name: adventures-project-readiness
-description: Use when an Adventures of Patch idea, issue, or deck request must be classified before framing, visual preparation, or PPTX production
+description: Use when an Adventures of Patch idea, issue, or artifact request must be classified before framing, visual preparation, or downstream production
 metadata:
   source_id: adventures-project-readiness
   status: active-local
@@ -18,16 +18,16 @@ Classify the current source as exactly one of:
 | State | Meaning | Next owner |
 | --- | --- | --- |
 | `seed-ready` | Core teaching or frame decisions remain open. | Frame gate in the readiness runbook. |
-| `frame-ready` | The frame contract is green. | `adventures-visual-preproduction` |
-| `asset-ready` | Required visual references are accepted and packaged. | End-to-end PPTX runbook |
-| `runbook-ready` | Frame and asset readiness are green. | End-to-end PPTX runbook |
+| `frame-ready` | The frame contract is green. | `directing-visual-stories` through the visual-production runbook |
+| `asset-ready` | Required visual references are accepted and packaged. | Requested downstream workflow |
+| `runbook-ready` | Frame and asset readiness are green. | Requested downstream workflow |
 
 ## Local contract
 
-Read `.agents/runbooks/pre-runbook-adventure-readiness.md` for the repository's
+Read `.agents/contracts/adventure-readiness.md` for the repository's
 frame evidence, readiness record, and production boundary. Route visual
-requirements to `adventures-visual-preproduction` and image acceptance to
-`adventures-image-qa`.
+requirements to `directing-visual-stories`; the visual-production
+runbook owns the wider production and review sequence.
 
 ## Boundary
 

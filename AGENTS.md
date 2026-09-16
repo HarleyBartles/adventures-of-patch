@@ -4,7 +4,7 @@ This repository is the canonical source of truth for the Presentation Planner / 
 
 ## Repository purpose
 
-The Adventures of Patch repo produces reusable presentation packages and the asset, story, and doctrine that feed them. It is the canonical source for Patch visual canon, adventure frames, style bibles, and the generated mesh that routes workers through design, planning, implementation, review, and publication.
+The Adventures of Patch repo produces reusable visual adventures and the assets, stories, learning frames, and doctrine that feed them. It is the canonical source for Patch visual canon, adventure frames, style bibles, and the generated mesh that routes workers through design, planning, implementation, review, and publication.
 
 ## Source-of-truth split
 

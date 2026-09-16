@@ -15,15 +15,10 @@ the entry point for each kind of work.
 - Use `security.md` for security posture and review.
 - Use `skill-authoring.md` for creating or editing skills.
 - Use `marketplace-generation.md` for marketplace refresh and plugin work.
+- Use `completing-plans.md` to compose completion custody, durable promotion,
+  removal, mesh regeneration, and validation.
 - Use the additional project runbooks for Adventures-specific workflows:
-  - `pre-runbook-adventure-readiness.md`
-  - `visual-preproduction.md`
-  - `end-to-end-pptx-production.md`
-  - `image-qa-contract.md`
-  - `image-inspection-source-contract.md`
-  - `asset-sheet-production-contract.md`
-  - `visual-bible-creation.md`
-  - `visual-bible-interpretation.md`
+  - `visual-production.md`
 
 ## Working rules
 
