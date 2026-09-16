@@ -26,7 +26,8 @@ product, and standalone full validation only for diagnosis or explicit parity.
 ## Local commands and paths
 
 - Tracked hook entrypoint: `.githooks/pre-commit`.
-- Local hook binding: `git config core.hooksPath .githooks`.
+- Local hook binding: `git config extensions.worktreeConfig true`, then
+  `git config --worktree core.hooksPath .githooks` in each checkout.
 - See the canonical capability map below.
 
 ## Evidence contract

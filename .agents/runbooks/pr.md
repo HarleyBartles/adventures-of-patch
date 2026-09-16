@@ -46,7 +46,8 @@ current validation proof, and any hosted-check boundary.
 - Consumer command declaration:
   `.agents/contracts/repo-standards-commands.json`.
 - Tracked commit gate: `.githooks/pre-commit`, activated with
-  `git config core.hooksPath .githooks`.
+  `git config --worktree core.hooksPath .githooks` after enabling
+  `extensions.worktreeConfig` once for the repository.
 - Hosted workflow: `.github/workflows/ci.yml`.
 - The hosted `build-and-test` and `repo-hygiene` jobs run for `main` pushes and
   non-draft pull requests; `ready_for_review` is an enabled PR activity.
