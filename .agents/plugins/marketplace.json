@@ -6,10 +6,10 @@
   },
   "repo": {
     "local_skills": [
-      "adventures-image-qa",
       "adventures-project-doctrine",
       "adventures-project-readiness",
-      "adventures-visual-preproduction"
+      "directing-visual-stories",
+      "generating-images"
     ]
   },
   "plugins": [

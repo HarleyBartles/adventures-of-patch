@@ -38,7 +38,8 @@ validation tied to the reviewed head, and accurate PR state.
 ## Prohibited combinations
 
 - Do not use review output as validation evidence.
-- Do not let generated-image acceptance bypass `adventures-image-qa`.
+- Do not treat generated-image output as self-validating; inspect the actual
+  image against its intended use and project canon.
 
 ## Review red flags
 
@@ -46,7 +47,8 @@ validation tied to the reviewed head, and accurate PR state.
 - a generated index was hand-edited or descends into a gitlink/skill root;
 - a runbook duplicates doctrine or generic workflow ownership;
 - a deterministic compiler is presented as a judgment skill;
-- a generated image is called accepted without the image-QA lane;
+- a generated image is called accepted without direct inspection against the
+  authored direction, intended use, and project canon;
 - Patch is described as an agent or actor rather than a character;
 - local validation is reported without matching remote branch and PR proof.
 

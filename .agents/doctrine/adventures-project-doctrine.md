@@ -25,14 +25,15 @@ skill, task recipe, or substitute for the detailed project runbooks.
 
 ## Readiness law
 
-- An adventure begins as a seed, not a production-ready deck.
-- Production requires a green frame and green asset readiness. The issue must
-  be runbook-ready before the end-to-end PPTX pipeline begins.
+- An adventure begins as a seed, not a production-ready artifact.
+- Production requires a green frame and green asset readiness. The source must
+  be runbook-ready before downstream production begins.
 - A frame must make the lesson physically happen through a bounded world,
   visible anti-pattern and positive pattern, Patch agency as character,
   function mappings, continuity, story progression, and audience action.
-- Generated images are candidates until the image-QA contract accepts them in
-  the correct lane. Asset sheets and contact sheets are not body-slide art.
+- Generated images are candidates until the actual result is inspected against
+  its authored direction and intended use. Preproduction references are not
+  final scene art.
 
 ## Publication law
 

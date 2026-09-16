@@ -10,7 +10,7 @@ implementation plan is required.
 ## Required skills
 
 - `writing-plans` owns executable plan construction.
-- `adventures-project-readiness` supplies readiness state for issue-to-PPTX work.
+- `adventures-project-readiness` supplies readiness state for visual-production work.
 - `handoff-gates` owns plan-readiness evaluation.
 
 ## Composition
@@ -22,6 +22,7 @@ repo custody, then apply the plan-readiness gate before execution handoff.
 
 - `.agents/doctrine/adventures-project-doctrine.md`
 - `.agents/doctrine/completed-artifacts.md`
+- `.agents/contracts/adventure-readiness.md`
 
 ## Local commands and paths
 
@@ -43,8 +44,8 @@ named execution lane, validation commands, and plan-readiness result.
 
 - Implementation plans live under `.agents/plans/`; associated specifications
   live under `.agents/specs/`.
-- Issue-to-PPTX work uses the seed-ready, frame-ready, asset-ready, and
+- Visual-production work uses the seed-ready, frame-ready, asset-ready, and
   runbook-ready classifications defined in
-  `.agents/runbooks/pre-runbook-adventure-readiness.md`.
+  `.agents/contracts/adventure-readiness.md`.
 - Patch canon, visual-preproduction, and image-acceptance requirements come
   from the corresponding Adventures skills and project runbooks.
