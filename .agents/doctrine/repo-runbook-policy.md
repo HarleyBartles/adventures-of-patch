@@ -16,6 +16,7 @@ This repo follows the `repo-standards` skill. Invoke `/using-superpowers-plus` f
 | testing.md | `.agents/runbooks/testing.md` |  |
 | pr.md | `.agents/runbooks/pr.md` | required |
 | code-style.md | `.agents/runbooks/code-style.md` |  |
+| completing-plans.md | `.agents/runbooks/completing-plans.md` |  |
 
 ## Additional repo-specific runbooks
 

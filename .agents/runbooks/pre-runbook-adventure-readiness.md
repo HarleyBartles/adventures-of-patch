@@ -1,5 +1,41 @@
 # Pre-runbook adventure readiness runbook
 
+## When
+
+Use when an Adventures idea, issue, or deck request may not yet be ready for
+visual preproduction or PPTX production.
+
+## Required skills
+
+- `adventures-project-readiness` owns readiness classification.
+- `adventures-project-doctrine` supplies project invariants and source truth.
+- `asking-clarifying-questions` resolves a remaining human-owned decision.
+
+## Composition
+
+Load project doctrine, classify with `adventures-project-readiness`, and ask one
+bounded question only when durable sources cannot settle a required gate.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/visual-preproduction.md`
+
+## Local commands and paths
+
+Use the live issue and repository indexes. This judgment runbook has no
+standalone mutation command.
+
+## Evidence contract
+
+Return the source, readiness state, passed/failed gate evidence, canon/assets
+basis, blocker, and next owner.
+
+## Prohibited combinations
+
+- Do not infer frame-ready from topic clarity alone.
+- Do not combine readiness judgment with deck or image production.
+
 This runbook defines the required planning state before an Adventures of Patch issue may enter the end-to-end PPTX production runbook.
 
 The production runbook should remain strict and staged. It should not privately invent a frame, teaching model, cast, world, or visual language while building a deck. If a source issue is thin, the production runbook stops and routes outward to this readiness process.
@@ -70,15 +106,9 @@ Use `adventures-project-readiness` as the umbrella router for the framing and
 readiness family. A green readiness result means the frame is green, not merely
 that a single theme sounds appealing.
 
-Expected composition:
-
-- `adventures-theme-buster` tests whether the world/theme is scene-generating, bounded, and non-decorative.
-- `adventures-lesson-buster` tests the real-world autonomous-agent lesson, anti-pattern, positive pattern, and audience applicability.
-- `adventures-story-buster` tests Patch's agency, stakes, continuity, and ordered story progression.
-- `adventures-cast-domain-mapper` maps cast members to real-world functions.
-- `adventures-environment-domain-mapper` maps environments and locations to real-world command or workflow domains.
-- `adventures-prop-state-mapper` maps props, tools-as-props, continuity objects, and state transitions.
-- `adventures-frame-greenlight` aggregates the family result and emits the visual preproduction order.
+`adventures-project-readiness` applies the theme, lesson, story, cast,
+environment, prop/state, and aggregate greenlight tests defined below. Those are
+facets of one readiness capability, not separate skill owners.
 
 ## Lesson sharpness tests
 

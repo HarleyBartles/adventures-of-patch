@@ -1,5 +1,43 @@
 # Asset sheet production contract
 
+## When
+
+Use when producing or updating a reusable Adventures asset sheet.
+
+## Required skills
+
+- `adventures-visual-preproduction` owns source-image requirements and generation routing.
+- `adventures-image-qa` owns source and compiled-sheet acceptance.
+- `adventures-project-doctrine` supplies canon and custody constraints.
+
+## Composition
+
+Plan source images through visual preproduction, accept each source through
+image QA, compile deterministically into the approved template, then run the
+compiled-sheet QA lane before landing or promotion.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/image-inspection-source-contract.md`
+- `.agents/runbooks/image-qa-contract.md`
+
+## Local commands and paths
+
+Use the approved repo-indexed template package, adjacent sidecars, the governed
+asset directory, and `assets/source-zips/` only under the landing rule below.
+
+## Evidence contract
+
+Evidence includes accepted source filenames/decisions, template/spec identity,
+compiled PNG, package sidecar/spec, omitted candidates, final QA decision, and
+landing/canon status.
+
+## Prohibited combinations
+
+- Do not ask image generation to create the final sheet layout.
+- Do not equate a zip, compile, or source-image acceptance with canonisation.
+
 This contract defines the canonical final-layout rule for Adventures of Patch asset sheets.
 
 ## Scope

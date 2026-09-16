@@ -1,5 +1,46 @@
 # Visual preproduction runbook
 
+## When
+
+Use when a frame-ready Adventures project lacks repeatable visual language or
+accepted reusable references.
+
+## Required skills
+
+- `adventures-visual-preproduction` owns candidate planning and generation routing.
+- `adventures-image-qa` owns candidate acceptance.
+- `adventures-project-doctrine` supplies canon/source constraints.
+- `risk-gates` protects canon and human-approval boundaries.
+
+## Composition
+
+Bind frame-ready evidence to project doctrine, plan/generate through visual
+preproduction, stop at the human review points defined below, and route every
+acceptance decision through image QA.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/image-inspection-source-contract.md`
+- `.agents/runbooks/image-qa-contract.md`
+- `.agents/runbooks/asset-sheet-production-contract.md`
+
+## Local commands and paths
+
+Discover references through `assets/INDEX.md` and the generated mesh. Durable
+accepted outputs land in their governed asset package paths.
+
+## Evidence contract
+
+Evidence includes frame source, selected lane, inspected references, prompt/
+preflight packet, candidate IDs, QA decisions, human approvals, package state,
+and asset-ready judgment.
+
+## Prohibited combinations
+
+- Do not combine candidate generation with self-acceptance.
+- Do not treat asset sheets or preproduction references as body-slide art.
+
 This runbook defines the pre-deck visual preproduction workflow for Adventures of Patch issues that are frame-ready but not asset-ready.
 
 Visual preproduction creates or verifies reusable visual references before the end-to-end PPTX production runbook starts. It is the stage where the deck world, cast, locations, prop grammar, continuity objects, interaction patterns, and visual style become repeatable enough that later body-slide image generation does not need to invent the core asset language from scratch.

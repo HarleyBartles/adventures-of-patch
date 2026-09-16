@@ -1,21 +1,55 @@
 # Visual bible creation runbook
 
+## When
+
+Use when accepted visual evidence must become a new or updated Adventures visual
+bible for a reusable asset class.
+
+## Required skills
+
+- `adventures-visual-preproduction` owns bible need and candidate context.
+- `adventures-image-qa` supplies accepted visual evidence.
+- `writing-with-clarity` owns reader-facing bible prose.
+- `adventures-project-doctrine` supplies canon/source constraints.
+
+## Composition
+
+Start from accepted evidence and project doctrine, create the smallest bible
+state needed for the asset family, apply clarity without changing canon, then
+return it to visual preproduction for governed use and later refinement.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/visual-preproduction.md`
+- `.agents/runbooks/image-qa-contract.md`
+
+## Local commands and paths
+
+Store durable bibles beside the governed asset family and expose them through
+the generated mesh; regenerate via `py -3 tools/run.py ci --apply` when landed.
+
+## Evidence contract
+
+Evidence includes source images and QA decisions, bible state/version, retained
+uncertainty, prompt/QA blocks, landing path, and approval status.
+
+## Prohibited combinations
+
+- Do not derive canon from rejected or unreviewed candidates.
+- Do not let prose cleanup change visual facts or approval status.
+
 This runbook defines how Adventures visual bibles are created, updated, normalised, and locked for reusable asset classes.
 
 Use this runbook when a visual-preproduction task needs a new minimal provisional bible before image generation, when accepted Pass A imagery should update a bible, when accepted Pass B family sheets should lock a bible, or when an older bible needs to be normalised into the Patch v1.4 operational shape.
 
-## Primary skill route
+## Composition ownership
 
-Use `adventures-visual-bible-creator` as the primary skill for authoring bible content.
-
-Compose with:
-
-- `adventures-visual-bible-interpreter` after a bible exists and must be converted into prompt, QA, repair, and extrapolation packets;
-- `adventures-visual-preproduction` when the bible is part of a preproduction image-generation loop;
-- the visual preflight section of `.agents/runbooks/visual-preproduction.md` when bible blocks must be turned into a concrete prompt contract;
-- `adventures-image-qa` when a generated image candidate must be accepted, repaired, regenerated, or blocked.
-
-The creator writes or updates the bible. The interpreter reads a repo-indexed or provisional bible and extracts operational constraints. Image QA accepts or rejects generated images. Do not collapse those responsibilities into one step.
+`adventures-visual-preproduction` decides when a bible is required and consumes
+the bible in the generation loop. This runbook owns the repository-specific
+bible shape and update contract. `adventures-image-qa` supplies accepted image
+evidence; `.agents/runbooks/visual-bible-interpretation.md` owns extraction into
+prompt, QA, repair, and extrapolation packets.
 
 ## Source discipline
 

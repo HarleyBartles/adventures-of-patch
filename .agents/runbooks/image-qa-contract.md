@@ -1,5 +1,42 @@
 # Canonical image QA contract
 
+## When
+
+Use when a generated or edited Adventures image may enter preproduction, a
+deck, a package, a receipt, or canon.
+
+## Required skills
+
+- `adventures-image-qa` owns the acceptance decision.
+- `adventures-project-doctrine` supplies canon and source truth.
+- `risk-gates` protects canon/promotion authority.
+
+## Composition
+
+Select one QA lane, inspect the actual candidate and applicable references,
+apply the contract below, and return exactly one accepted/repair/blocked result.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/image-inspection-source-contract.md`
+- `.agents/runbooks/asset-sheet-production-contract.md`
+
+## Local commands and paths
+
+Use repo-indexed references and adjacent sidecars; focused sidecar validation is
+available through `tools/validate_image_sidecars.py`.
+
+## Evidence contract
+
+Evidence includes candidate identifier, lane, intended use, references, Patch
+presence, decision, exact failures, repair packet, and readiness/promotion effect.
+
+## Prohibited combinations
+
+- Do not accept from a thumbnail, report, or generation claim alone.
+- Do not let the generating capability accept its own output.
+
 This runbook defines the project-level image QA contract for Adventures of Patch.
 
 Use this runbook whenever generated or edited images may become preproduction references, body-slide art, anti-pattern references, package evidence, or reusable assets.

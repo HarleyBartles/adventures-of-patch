@@ -1,5 +1,44 @@
 # Visual bible interpretation runbook
 
+## When
+
+Use when a visual bible must be translated into a concrete preflight, prompt,
+repair, or QA packet without inventing new canon.
+
+## Required skills
+
+- `adventures-visual-preproduction` owns the consuming preproduction stage.
+- `adventures-project-doctrine` supplies canon/source boundaries.
+- `adventures-image-qa` consumes QA-relevant constraints.
+- `risk-gates` protects extrapolation and canon authority.
+
+## Composition
+
+Resolve the current bible and evidence basis, interpret only the requested lane,
+mark extrapolation/uncertainty, then return the packet to visual preproduction or
+image QA rather than executing a separate lifecycle here.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/visual-preproduction.md`
+- `.agents/runbooks/image-qa-contract.md`
+
+## Local commands and paths
+
+Discover bibles and references through the generated asset indexes. No separate
+mutation command is owned by this runbook.
+
+## Evidence contract
+
+Evidence names the bible path/version, source references, extracted constraints,
+uncertainty/extrapolation, target lane, and downstream owner.
+
+## Prohibited combinations
+
+- Do not turn interpretation into canon creation or image acceptance.
+- Do not hide extrapolation inside positive prompt language.
+
 This runbook defines how Adventures visual bibles are discovered and converted into image-generation, image-QA, and repair constraints.
 
 Use this runbook whenever a visual-preproduction, image-preflight, or image-QA task involves a subject, style system, character, environment, prop, or asset class that has a repo-indexed visual bible or style guide. Also use it when creating a minimal provisional bible before generating a new reusable asset class.

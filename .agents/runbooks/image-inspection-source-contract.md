@@ -1,5 +1,42 @@
 # Image inspection source contract
 
+## When
+
+Use when an Adventures image decision depends on proving which pixels, source
+package, or sidecar were actually inspected.
+
+## Required skills
+
+- `adventures-image-qa` consumes the inspection evidence for acceptance.
+- `adventures-project-doctrine` supplies source-truth boundaries.
+- `risk-gates` protects canon and source-law decisions.
+
+## Composition
+
+Resolve the canonical candidate/source first, inspect the highest-authority
+available pixels, bind adjacent metadata, then hand the evidence to the owning
+judgment skill.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/contracts/adventures.visual_sidecar.adjacent.v1.schema.json`
+- `.agents/contracts/image-sidecar-provenance.schema.json`
+
+## Local commands and paths
+
+Use asset indexes, adjacent sidecars, and `tools/validate_image_sidecars.py`.
+
+## Evidence contract
+
+Evidence names the exact inspected file/blob, inspection mode/resolution,
+sidecar/provenance state, package relation, and any visibility limitation.
+
+## Prohibited combinations
+
+- Do not substitute contact-sheet labels or filenames for pixel inspection.
+- Do not infer canon or acceptance from source-zip presence.
+
 This contract defines how Codex and Devin agents should visually inspect repo-canonical image assets.
 
 ## Source truth

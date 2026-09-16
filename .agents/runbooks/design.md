@@ -3,6 +3,43 @@
 This is the repository-specific overlay for Adventures design sources and
 boundaries.
 
+## When
+
+Use for Adventures concept, frame, visual-direction, or presentation-design
+work before executable planning.
+
+## Required skills
+
+- `brainstorming` owns design-stage shaping and handoff.
+- `adventures-project-doctrine` supplies project identity and source-truth routing.
+- `adventures-project-readiness` classifies adventure/deck readiness.
+
+## Composition
+
+Run `brainstorming` as the stage owner. When the work is Adventures-specific,
+bind it with project doctrine and use readiness classification before visual
+preproduction or implementation planning.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/pre-runbook-adventure-readiness.md`
+
+## Local commands and paths
+
+Use the local sources below and the generated asset indexes. No design-only
+command is required.
+
+## Evidence contract
+
+Evidence names the live source, applicable canon, readiness state, unresolved
+human decisions, and the durable design/spec surface produced by the stage.
+
+## Prohibited combinations
+
+- Do not let `brainstorming` invent Patch canon or readiness evidence.
+- Do not advance a seed-ready idea directly into visual or PPTX production.
+
 ## Local sources
 
 - Project orientation: `README.md` and `docs/project/INDEX.md`.

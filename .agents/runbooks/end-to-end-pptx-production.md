@@ -4,6 +4,53 @@ This runbook is the canonical orchestration guide for turning an Adventures of P
 
 It owns process flow, required evidence, production gates, stop conditions, downgrade rules, artifact expectations, and failure reporting. It does not prescribe a fixed skill invocation script. At each stage, select currently available skills and tools that satisfy the required evidence and gates.
 
+## When
+
+Use when a runbook-ready Adventures issue must become a delivered PPTX package.
+
+## Required skills
+
+- `adventures-project-doctrine` supplies project and source invariants.
+- `adventures-project-readiness` proves production entry state.
+- `adventures-visual-preproduction` supplies governed reusable visual references.
+- `adventures-image-qa` owns generated-image acceptance.
+- `connector-safety` governs external source/issue mutations.
+- `verification-before-completion` owns final package and publication claims.
+
+The runtime's presentation-artifact capability owns PPTX construction and
+rendering. If it is unavailable, production blocks at the artifact stage.
+
+## Composition
+
+Prove repo/issue access, require runbook-ready state, follow the production
+stages below, keep generation separate from acceptance, build only from accepted
+inputs, and verify the package before publication or canon follow-up.
+
+## Doctrine and contracts
+
+- `.agents/doctrine/adventures-project-doctrine.md`
+- `.agents/runbooks/pre-runbook-adventure-readiness.md`
+- `.agents/runbooks/visual-preproduction.md`
+- `.agents/runbooks/image-qa-contract.md`
+- `.agents/contracts/adventures.visual_sidecar.adjacent.v1.schema.json`
+
+## Local commands and paths
+
+Use the named live GitHub issue, repository asset indexes, the package paths
+defined below, and `py -3 tools/run.py ci --check` for standalone repo proof.
+
+## Evidence contract
+
+Evidence includes the run-state ledger, source issue, readiness proof, accepted
+image inventory, rendered PPTX/sidecar/receipt, presentation QA, mode/downgrade
+history, publication proof, and exact blockers.
+
+## Prohibited combinations
+
+- Do not downgrade a proof/full run silently.
+- Do not combine image generation with acceptance or package build with final QA.
+- Do not claim delivery from a plan, storyboard, placeholder deck, or local path.
+
 ## Scope
 
 Use this runbook when the user asks to take an adventure-plan issue, deck-plan issue, or related GitHub issue through to a delivered presentation package.

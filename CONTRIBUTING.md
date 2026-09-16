@@ -16,6 +16,8 @@ commands, custody, and exceptions.
 
 ## Repo-specific contribution notes
 
+- Configure the tracked commit gate once per clone with
+  `git config core.hooksPath .githooks`.
 - Preserve `.agents/plugins/marketplace-source` as a gitlink. Change portable
   skills in their canonical marketplace repository, then refresh this repo.
 - Keep project-owned skills under `.agents/skills/adventures-*/` and list them
