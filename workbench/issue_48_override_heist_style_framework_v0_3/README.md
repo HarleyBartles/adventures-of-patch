@@ -22,7 +22,7 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 
 ## File map
 
-- [INDEX.md](INDEX.md) — packet directory entry point and discoverability alias.
+- [packet README](README.md) — packet directory entry point and discoverability alias.
 - [00_framework_index.md](00_framework_index.md) — packet posture, evidence basis, composition rules, and update triggers.
 - [style-bibles/01_override_heist_world.md](style-bibles/01_override_heist_world.md) — global world and tone bible.
 - [style-bibles/02_patch_comic_adaptation.md](style-bibles/02_patch_comic_adaptation.md) — repo-grounded Patch adaptation layer.
@@ -42,8 +42,8 @@ The v0.2 packet correctly decomposed the visual framework, but the character bib
 - [frame-bibles/receipt_frame_bible.md](frame-bibles/receipt_frame_bible.md) — Receipt audit-roll frame grammar.
 - [Index character references](../../build/characters/heist-crew/README.md#package-contents) - accepted hero, multi-view, anti-pattern, and sidecar continuity; no separate Index character bible is checked in.
 - [Silk character bible](../../build/characters/heist-crew/manifests/silk_character_bible.md) - promoted character identity and continuity.
-- [style-sheets/INDEX.md](style-sheets/INDEX.md) - Override Heist-specific working references that remain in the workbench.
-- [Heist Crew reference sheets](../../build/characters/heist-crew/reference_sheets/INDEX.md) - promoted accepted hero, multi-view, and anti-pattern references for all six crew members.
+- [style-sheets/](style-sheets/) - Override Heist-specific working references that remain in the workbench.
+- [Heist Crew reference sheets](../../build/characters/heist-crew/README.md) - promoted accepted hero, multi-view, and anti-pattern references for all six crew members.
 - [Rollback character bible](../../build/characters/heist-crew/manifests/rollback_character_bible.md) - promoted character identity and continuity.
 - [Writ character bible](../../build/characters/heist-crew/manifests/writ_character_bible.md) - promoted character identity and continuity.
 - [Klause character bible](../../build/characters/heist-crew/manifests/klause_character_bible.md) - promoted character identity and continuity.

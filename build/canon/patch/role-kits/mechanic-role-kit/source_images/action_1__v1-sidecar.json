@@ -83,10 +83,6 @@
       "Texture maps for 3D models.",
       "Canonical backstory or environment details beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }

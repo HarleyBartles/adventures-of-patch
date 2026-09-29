@@ -70,13 +70,6 @@
       "Hierarchical prop sheets or environment sheets.",
       "Exact measurements; inspect the image pixels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:template",
-      "domain:asset-sheet",
-      "state:candidate",
-      "template:prop-pack-12grid",
-      "role:prop-pack"
-    ]
+    "linear_view_route": null
   }
 }

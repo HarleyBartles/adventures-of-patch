@@ -82,15 +82,6 @@
       "Canonical positive environment reference; use the approved environment reference surfaces.",
       "Exact OCR of all incidental small labels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "style:drift",
-      "style:risk",
-      "pattern:anti-pattern",
-      "asset:reference-sheet",
-      "state:accepted",
-      "purpose:negative-reference",
-      "domain:environment"
-    ]
+    "linear_view_route": null
   }
 }

@@ -62,14 +62,7 @@
       "Precise OCR of every small label if exact wording matters.",
       "Authorizing non-Klause character design changes."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:klause",
-      "asset:style-sheet",
-      "state:approved",
-      "role:decision",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-08-20T18:23:13.641039Z"
 }

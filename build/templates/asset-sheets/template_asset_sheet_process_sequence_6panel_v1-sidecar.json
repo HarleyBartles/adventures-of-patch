@@ -70,13 +70,6 @@
       "Non-sequential or multi-track processes.",
       "Exact measurements; inspect the image pixels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:template",
-      "domain:asset-sheet",
-      "state:candidate",
-      "template:process-sequence-6panel",
-      "role:storyboard-sequence"
-    ]
+    "linear_view_route": null
   }
 }

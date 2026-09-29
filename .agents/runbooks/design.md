@@ -1,24 +1,30 @@
 # Design runbook
 
-This is the repository-specific overlay for Adventures design sources and
-boundaries.
-
 ## When
 
-Use for Adventures concept, frame, or visual-direction
-work before executable planning.
+Use when a request needs shaping before requirements are settled.
 
-## Required skills
+## Required capabilities
 
-- `brainstorming` owns design-stage shaping and handoff.
-- `adventures-project-doctrine` supplies project identity and source-truth routing.
-- `adventures-project-readiness` classifies adventure readiness.
+- a capability for clarifying intent and exploring design alternatives.
+- a capability for project readiness and source-truth assessment.
+
+## Optional capabilities
+
+- None.
+
+## Required repository-owned skills
+
+- `adventures-project-doctrine` is the repository-owned capability for this project concern.
+- `adventures-project-readiness` is the repository-owned capability for this project concern.
+
+## Optional repository-owned skills
+
+- None.
 
 ## Composition
 
-Run `brainstorming` as the stage owner. When the work is Adventures-specific,
-bind it with project doctrine and use readiness classification before visual
-preproduction or implementation planning.
+Clarify the requested outcome, inspect live source truth and canon, resolve human-owned design decisions, and record the evidence and constraints needed by planning. Do not move to planning while material design decisions remain open.
 
 ## Doctrine and contracts
 
@@ -27,29 +33,18 @@ preproduction or implementation planning.
 
 ## Local commands and paths
 
-Use the local sources below and the generated asset indexes. No design-only
-command is required.
+Read `README.md` and direct canonical sources under `docs/`, `build/`, `style/`, `published/`, and `workbench/`; use `py -3 tools/run.py ci --check` when standalone validation is needed.
 
 ## Evidence contract
 
-Evidence names the live source, applicable canon, readiness state, unresolved
-human decisions, and the durable design/spec surface produced by the stage.
+Evidence names the exact source and state, decisions, validation tied to that state, and remaining uncertainty or blockers.
 
 ## Prohibited combinations
 
-- Do not let `brainstorming` invent Patch canon or readiness evidence.
-- Do not advance a seed-ready idea directly into visual production.
+- Do not claim review, validation, readiness, or publication without the evidence that proves it.
 
-## Local sources
+## Playbook routing
 
-- Project orientation: `README.md` and `docs/project/INDEX.md`.
-- Patch-bearing work: `assets/canon/patch/INDEX.md` and the repo-tracked Patch
-  references.
-- Adventure readiness: `.agents/contracts/adventure-readiness.md`.
-- Idea-to-visual-adventure workflow: `.agents/runbooks/visual-production.md`.
-
-## Local boundaries
-
-- Patch is a character and visual canon, not an agent, actor lane, or owner.
-- Do not turn a doctrine rule, one-off frame, or deterministic asset procedure
-  into a new skill.
+- `.agents/playbooks/visual-production.md` when that concern applies.
+- `.agents/playbooks/repo-doctrine.md` when project truth or canon shapes the design.
+- `.agents/playbooks/code-style.md` when that concern applies.

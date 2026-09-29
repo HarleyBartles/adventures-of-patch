@@ -20,9 +20,9 @@ smallest canonical Adventures rule surface needed for the task.
 | Need | Read |
 | --- | --- |
 | Adventures identity, source truth, readiness, or publication invariants | `.agents/doctrine/adventures-project-doctrine.md` |
-| Agent/documentation custody, generated indexes, gitlinks, or mesh safety | `.agents/doctrine/mesh-policy.md` |
+| Agent/documentation custody, direct routing, or gitlink boundaries | `.agents/playbooks/repo-doctrine.md` |
 | Creating, adapting, assessing, or retiring a local skill | `.agents/doctrine/skill-authoring-policy.md` |
-| Design, planning, implementation, or review overlay | matching file under `.agents/runbooks/` |
+| Design, planning, implementation, or review overlay | matching lifecycle file under `.agents/runbooks/` or topical file under `.agents/playbooks/` |
 | Readiness/frame or visual preparation | `adventures-project-readiness` or `directing-visual-stories` |
 
 ## Routing rules

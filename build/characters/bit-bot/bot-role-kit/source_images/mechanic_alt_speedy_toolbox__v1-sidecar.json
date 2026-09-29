@@ -72,12 +72,6 @@
       "Stand-alone publication asset",
       "Other characters or variants"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:mechanic",
-      "role:alt",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

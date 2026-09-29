@@ -86,12 +86,6 @@
       "Authorizing derivative images without direct image QA.",
       "Exact OCR of any small diagram or card text."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:stakeholder",
-      "role:software-architect",
-      "role:props",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

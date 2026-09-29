@@ -108,13 +108,6 @@
       "Scenes requiring other bouncer characters or Club DB environments.",
       "Exact color values; inspect the image pixels for precise color codes."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:bouncer-family",
-      "role:reference-sheet",
-      "asset:reference-sheet"
-    ]
+    "linear_view_route": null
   }
 }

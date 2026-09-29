@@ -1,22 +1,29 @@
 # Planning runbook
 
-This is the repository-specific overlay for Adventures planning custody.
-
 ## When
 
-Use after design/spec requirements are settled and an executable Adventures
-implementation plan is required.
+Use after design and specification requirements are settled and an executable implementation plan is required.
 
-## Required skills
+## Required capabilities
 
-- `writing-plans` owns executable plan construction.
-- `adventures-project-readiness` supplies readiness state for visual-production work.
-- `handoff-gates` owns plan-readiness evaluation.
+- a capability for executable plan construction.
+- a capability for evaluating readiness and handoff.
+
+## Optional capabilities
+
+- None.
+
+## Required repository-owned skills
+
+- `adventures-project-doctrine` is the repository-owned capability for this project concern.
+
+## Optional repository-owned skills
+
+- None.
 
 ## Composition
 
-Run `writing-plans` as the stage owner, bind the plan to current readiness and
-repo custody, then apply the plan-readiness gate before execution handoff.
+Bind the plan to the approved source/spec, readiness, repository custody, validation, and handoff evidence. Do not use a plan to settle unresolved design or canon decisions.
 
 ## Doctrine and contracts
 
@@ -26,26 +33,17 @@ repo custody, then apply the plan-readiness gate before execution handoff.
 
 ## Local commands and paths
 
-Active plans live in `.agents/plans/`; associated specs live in
-`.agents/specs/`. Use `py -3 tools/run.py ci --check` only when standalone
-complete validation is required.
+Active plans live in `.agents/plans/`; associated specifications live in `.agents/specs/`.
 
 ## Evidence contract
 
-Evidence identifies the approved source/spec, readiness state, exact plan path,
-named execution lane, validation commands, and plan-readiness result.
+Evidence names the exact source and state, decisions, validation tied to that state, and remaining uncertainty or blockers.
 
 ## Prohibited combinations
 
-- Do not use a plan to settle unresolved design or canon decisions.
-- Do not retain completed plans/specs as tracked archives.
+- Do not claim review, validation, readiness, or publication without the evidence that proves it.
 
-## Local custody and gates
+## Playbook routing
 
-- Implementation plans live under `.agents/plans/`; associated specifications
-  live under `.agents/specs/`.
-- Visual-production work uses the seed-ready, frame-ready, asset-ready, and
-  runbook-ready classifications defined in
-  `.agents/contracts/adventure-readiness.md`.
-- Patch canon, visual-preproduction, and image-acceptance requirements come
-  from the corresponding Adventures skills and project runbooks.
+- `.agents/playbooks/testing.md` when that concern applies.
+- `.agents/playbooks/visual-production.md` when that concern applies.

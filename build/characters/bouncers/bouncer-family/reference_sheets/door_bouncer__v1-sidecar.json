@@ -86,11 +86,6 @@
       "Inferred narrative or dialogue beyond the visual reference",
       "Non-Door Bouncer character variants"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bouncer",
-      "role:door",
-      "asset:reference-sheet"
-    ]
+    "linear_view_route": null
   }
 }

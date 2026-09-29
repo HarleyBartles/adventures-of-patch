@@ -100,15 +100,6 @@
       "Authorizing derivative images without image QA.",
       "Animation frames, rigging, or expression variants."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:prep-officer",
-      "project:adventures-of-patch",
-      "team:mission-control",
-      "role:reference-sheet",
-      "state:accepted-source-reference"
-    ]
+    "linear_view_route": null
   }
 }

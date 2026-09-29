@@ -75,13 +75,6 @@
       "Final canon approval without image QA.",
       "Detailed prop or signage transcription."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "domain:environment",
-      "environment:club-db",
-      "asset:reference-sheet",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

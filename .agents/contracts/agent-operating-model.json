@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "surface_exceptions": [
+    {
+      "id": "markdown-formatting",
+      "reason": "Optional Markdown formatting is not adopted; the repository has no formatting contract."
+    }
+  ]
+}

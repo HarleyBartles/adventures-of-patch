@@ -82,14 +82,6 @@
       "Animation frames, timing, or rigging not shown.",
       "Final acceptance of derivative art without separate image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "adventure",
-      "adventure:Tournament",
-      "project:adventures-of-patch",
-      "asset:compiled-sheet",
-      "character:patch-bit-bot-tournament-kit"
-    ]
+    "linear_view_route": null
   }
 }

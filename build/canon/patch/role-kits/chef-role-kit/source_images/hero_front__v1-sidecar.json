@@ -74,10 +74,6 @@
       "Real-time game sprites at target resolutions.",
       "Texture maps for 3D models."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }

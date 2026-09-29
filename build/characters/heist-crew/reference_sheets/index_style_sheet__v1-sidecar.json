@@ -127,14 +127,7 @@
       "Precise OCR of every small label if exact wording matters.",
       "Authorizing non-Index character design changes."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:index",
-      "asset:style-sheet",
-      "state:accepted-reference",
-      "role:source-provenance",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-06-13T07:40:44Z"
 }

@@ -83,12 +83,6 @@
       "Final asset acceptance without pixel-level QA against the source image.",
       "Authorizing derivative images beyond the observed prop set."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:stakeholder",
-      "role:product-manager",
-      "role:props",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

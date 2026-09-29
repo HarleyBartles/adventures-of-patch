@@ -74,14 +74,7 @@
       "Complete prop inventory; use the Klause-approved style sheet.",
       "Anti-pattern checks; use the anti-pattern sheet."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:klause",
-      "asset:approved-hero",
-      "state:approved",
-      "role:decision",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-08-20T18:23:13.641039Z"
 }

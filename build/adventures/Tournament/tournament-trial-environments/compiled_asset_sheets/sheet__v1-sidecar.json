@@ -73,19 +73,6 @@
       "Runtime prompt source without provenance review",
       "Per-panel detail inspection"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "adventure",
-      "tournament",
-      "trial-environments",
-      "environment",
-      "compiled-asset-sheet",
-      "asset-sheet",
-      "course-1",
-      "course-2",
-      "course-3",
-      "course-4"
-    ]
+    "linear_view_route": null
   }
 }

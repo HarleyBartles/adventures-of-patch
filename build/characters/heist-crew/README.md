@@ -21,7 +21,7 @@ character-class bible. Do not reconstruct a missing Index bible from the
 historical workbench source packet.
 
 Adventure-specific panel and recruitment-frame grammar remains under
-[`workbench/issue_48_override_heist_style_framework_v0_3/frame-bibles/`](../../../workbench/issue_48_override_heist_style_framework_v0_3/frame-bibles/INDEX.md).
+[`workbench/issue_48_override_heist_style_framework_v0_3/frame-bibles/`](../../../workbench/issue_48_override_heist_style_framework_v0_3/frame-bibles/).
 
 ## Package contents
 

@@ -102,14 +102,6 @@
       "Exact OCR of any small labels or text.",
       "Provenance or prompt reconstruction."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon",
-      "character:Patch",
-      "role:mechanic",
-      "role:props",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

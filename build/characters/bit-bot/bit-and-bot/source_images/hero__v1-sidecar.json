@@ -104,13 +104,6 @@
       "Authorizing derivative images or unobserved alternate poses.",
       "Detailed prop or environment canon beyond the visible hero frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:bit-bot",
-      "role:hero",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

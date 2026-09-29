@@ -1,64 +1,50 @@
-# Pull request local overlay
-
-Portable commit, draft lifecycle, review sequencing, and publication handoff
-belong to the selected skills. This file contains only Adventures repository
-configuration.
+# PR instructions and publication proof runbook
 
 ## When
 
-Use when publishing or checking repo-backed work through GitHub.
+Use when publishing repository work or verifying a pull request and its review state.
 
-## Required skills
+## Required capabilities
 
-- `publishing-source` owns the publication decision and lifecycle.
-- `using-github-mcp` owns GitHub/CLI surface selection and readback.
-- `verification-before-completion` owns validation claims.
+- a capability for safe source publication.
+- a capability for verifying remote pull request state.
+
+## Optional capabilities
+
+- None.
+
+## Required repository-owned skills
+
+- `adventures-project-doctrine` is the repository-owned capability for this project concern.
+
+## Optional repository-owned skills
+
+- None.
 
 ## Composition
 
-Use `publishing-source` as owner, bind it to the local base/commands below, use
-`using-github-mcp` for mutation and exact readback, and verify before readiness.
+Commit completed implementation through the tracked hook, push the intended branch, open or update the requested pull request, and verify its exact head, base, draft/review state, and checks.
 
 ## Doctrine and contracts
 
 - `.agents/doctrine/adventures-project-doctrine.md`
-- `.agents/contracts/repo-standards-commands.json`
+- `.agents/doctrine/completed-artifacts.md`
 
 ## Local commands and paths
 
-See `## PR instructions` below.
+Publication instructions and proof are also linked from `CONTRIBUTING.md`; local validation alone is not publication proof.
 
 ## Evidence contract
 
-Evidence includes PR URL, base/head branches, full remote head SHA, draft/state,
-current validation proof, and any hosted-check boundary.
+Evidence names the exact source and state, decisions, validation tied to that state, and remaining uncertainty or blockers.
 
 ## Prohibited combinations
 
-- Do not treat a local commit or branch as publication proof.
-- Do not bypass draft-aware CI or infer GitHub state from a worker report.
+- Do not claim review, validation, readiness, or publication without the evidence that proves it.
 
-## PR instructions
+## Playbook routing
 
-- Base branch: `main`.
-- Apply capability: `py -3 tools/run.py ci --apply`.
-- Check capability: `py -3 tools/run.py ci --check`.
-- Consumer command declaration:
-  `.agents/contracts/repo-standards-commands.json`.
-- Tracked commit gate: `.githooks/pre-commit`, activated with
-  `git config --worktree core.hooksPath .githooks` after enabling
-  `extensions.worktreeConfig` once for the repository.
-- Hosted workflow: `.github/workflows/ci.yml`.
-- The hosted `build-and-test` and `repo-hygiene` jobs run for `main` pushes and
-  non-draft pull requests; `ready_for_review` is an enabled PR activity.
-
-## Publication proof surface
-
-Repo-backed publication proof is the GitHub pull request targeting `main`, or a
-verified commit on `main` when direct-main publication was explicitly
-authorized. Local branches, worktrees, files, and validation output are not the
-publication surface.
-
-## Exceptions
-
-None.
+- `.agents/playbooks/testing.md` when that concern applies.
+- `.agents/playbooks/security.md` when that concern applies.
+- `.agents/playbooks/marketplace-generation.md` when that concern applies.
+- `.agents/playbooks/completed-artifact-custody.md` when publication completes a tracked plan.

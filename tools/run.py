@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Minimal CI runner for the Adventures of Patch repo."""
+"""Canonical validation runner for the Adventures of Patch repository."""
 
 from __future__ import annotations
 
 import argparse
-import os
 import subprocess
 import sys
 from pathlib import Path
@@ -14,103 +13,75 @@ import shared_checkout
 
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPT_NAME = "tools/run"
+MARKETPLACE_DEPLOYMENT = ".agents/plugins/marketplace-source/skills/repo-shape/scripts/deploy_operating_standards.py"
+REPO_STANDARDS = ".agents/standards/_runtime/repo_standards.py"
 
 
-def _run(cmd: list[str]) -> None:
-    print("+ " + " ".join(cmd))
-    subprocess.run(cmd, cwd=ROOT, check=True)
+def _run(command: list[str]) -> None:
+    print("+ " + " ".join(command))
+    subprocess.run(command, cwd=ROOT, check=True)
 
 
-def _python() -> list[str]:
-    return [sys.executable, "-3"] if sys.executable.endswith("py.exe") else [sys.executable]
+def _marketplace_command(mode: str, allow_shared: bool = False) -> list[str]:
+    command = [sys.executable, MARKETPLACE_DEPLOYMENT, f"--{mode}"]
+    if mode == "apply":
+        command.append("--yes")
+        if allow_shared:
+            command.append("--allow-shared-checkout")
+    return command
+
+
+def _standards_command(mode: str, allow_shared: bool = False) -> list[str]:
+    command = [sys.executable, REPO_STANDARDS, f"--{mode}"]
+    if mode == "apply":
+        command.append("--yes")
+        if allow_shared:
+            command.append("--allow-shared-checkout")
+    return command
+
+
+def _validate_sidecars() -> None:
+    _run([sys.executable, "tools/validate_image_sidecars.py"])
+
+
+def _normalize_sidecars(*, apply: bool) -> None:
+    command = [sys.executable, "tools/normalize_image_sidecars.py"]
+    if apply:
+        command.append("--apply")
+    _run(command)
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Adventures of Patch CI runner.")
+    parser = argparse.ArgumentParser(description="Adventures of Patch repository runner.")
     parser.add_argument("target", choices=["ci"], help="target to run")
-    parser.add_argument("--check", action="store_true", help="non-mutating validation (default)")
-    parser.add_argument("--apply", action="store_true", help="apply and regenerate surfaces")
+    mode_group = parser.add_mutually_exclusive_group()
+    mode_group.add_argument("--check", action="store_true", help="validate without writing (default)")
+    mode_group.add_argument("--apply", action="store_true", help="deploy and apply selected standards")
     parser.add_argument(
         "--allow-shared-checkout",
         action="store_true",
         dest="allow_shared",
-        help="allow writes in a shared/main checkout",
+        help="allow writes in the shared main checkout",
     )
     args = parser.parse_args(argv)
+    applying = args.apply
 
-    if not args.check and not args.apply:
-        args.check = True
-    if args.apply and args.check:
-        print("error: --apply and --check are mutually exclusive", file=sys.stderr)
-        return 1
-    if args.allow_shared and not args.apply:
-        print("error: --allow-shared-checkout requires --apply", file=sys.stderr)
+    if args.allow_shared and not applying:
+        parser.error("--allow-shared-checkout requires --apply")
+    if applying and not shared_checkout.approve_mutation(ROOT, SCRIPT_NAME, args.allow_shared):
         return 1
 
-    if args.apply:
-        if not shared_checkout.approve_mutation(ROOT, SCRIPT_NAME, args.allow_shared):
-            return 1
-
-    allow = ["--allow-shared-checkout"] if args.allow_shared else []
-    mode = "apply" if args.apply else "check"
-
+    mode = "apply" if applying else "check"
     print(f"[tools/run] === ci ({mode})")
 
-    # Refresh marketplace skills and check they are current.
-    refresh_cmd = [
-        sys.executable,
-        ".agents/skills/refreshing-installed-skills/scripts/refresh_installed_skills.py",
-        f"--{mode}",
-        *allow,
-    ]
-    _run(refresh_cmd)
+    _run(_marketplace_command(mode, args.allow_shared))
+    if applying:
+        _run(_standards_command("apply", args.allow_shared))
+    _run(_standards_command("check"))
 
-    # Regenerate or check the repository index mesh.
-    mesh_cmd = [
-        sys.executable,
-        ".agents/skills/generating-agent-mesh/scripts/generate_index_mesh.py",
-        f"--{mode}",
-        *allow,
-    ]
-    _run(mesh_cmd)
-
-    # Validate the agent mesh (local links, doctrine routing, local skill custody).
-    _run(
-        [
-            sys.executable,
-            ".agents/skills/generating-agent-mesh/scripts/validate_agent_mesh.py",
-            "--check",
-        ]
-    )
-
-    # Validate repo-standards surface manifest.
-    _run(
-        [
-            sys.executable,
-            ".agents/skills/repo-standards/scripts/repo_standards.py",
-            "--check",
-        ]
-    )
-
-    # Validate image sidecars.
-    _run(
-        [
-            sys.executable,
-            "tools/validate_image_sidecars.py",
-        ]
-    )
-
-    # Normalize/check image sidecar JSON formatting.
-    norm_cmd = [
-        sys.executable,
-        "tools/normalize_image_sidecars.py",
-    ]
-    if args.apply:
-        norm_cmd.append("--apply")
-    _run(norm_cmd)
-
-    # Check for whitespace/diff issues.
-    _run(["git", "diff", "--check", "--", ".", ":(exclude).agents/skills"])
+    _validate_sidecars()
+    _normalize_sidecars(apply=applying)
+    _run(["git", "diff", "--check"])
 
     print(f"[tools/run] ci ({mode}) passed.")
     return 0

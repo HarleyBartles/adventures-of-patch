@@ -97,12 +97,6 @@
       "Full Data Analyst character turnaround or expression set (use the hero, props, and additional views).",
       "Authorizing derivative images without direct image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:stakeholder",
-      "role:data-analyst",
-      "role:alt-pose",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

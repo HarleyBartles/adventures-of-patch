@@ -16,12 +16,14 @@ skill, task recipe, or substitute for the detailed project runbooks.
 ## Source truth
 
 - The repository, live issue/PR evidence, repo-tracked receipts, asset guides,
-  and indexed project sources are authoritative for their respective facts.
+  manifests, sidecars, and direct canonical sources are authoritative for their
+  respective facts.
 - Uploaded zips, chat attachments, scratch files, memory, generated packages,
   and marketplace caches are context or evidence until the repo explicitly
   adopts them.
-- Discover assets through the generated mesh. Do not replace current repo truth
-  with a hard-coded source-zip name or remembered path.
+- Discover assets through `build/TAXONOMY.md`, tracked manifests, and the relevant
+  canonical directories such as `build/`, `style/`, `published/`, and `workbench/`. Do not replace current repo truth with a hard-coded
+  source-zip name or remembered path.
 
 ## Readiness law
 
@@ -39,5 +41,6 @@ skill, task recipe, or substitute for the detailed project runbooks.
 
 - Do not call work green without the required local validation and, for tracked
   mutation, exact branch/remote/PR publication proof.
-- Keep local `adventures-*` skill custody distinct from marketplace projections;
-  refresh tooling must preserve the local prefix.
+- Keep local `adventures-*` skills as repository-owned sources. The pinned
+  marketplace gitlink supplies selected standards; ambient plugins are neither
+  subscribed nor projected into this checkout.

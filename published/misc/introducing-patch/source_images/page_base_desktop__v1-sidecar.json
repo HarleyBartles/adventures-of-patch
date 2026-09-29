@@ -66,13 +66,6 @@
       "Final published one-pager on its own.",
       "Mobile portrait layout."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:source-image",
-      "one-pager:introducing-patch",
-      "state:accepted",
-      "layout:landscape"
-    ]
+    "linear_view_route": null
   }
 }

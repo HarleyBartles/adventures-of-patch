@@ -8,16 +8,16 @@ language repeatable for any downstream use.
 
 ## Source discovery
 
-Start from `assets/INDEX.md`, follow the generated mesh, inspect the relevant
-canon/style/bible/source surfaces, and record both used and skipped references.
-When Patch appears, include current `assets/canon/patch/` references.
+Start from `build/TAXONOMY.md`, tracked manifests, and relevant canonical
+canon/style/bible/source directories under `build/`, `style/`, and `published/`. Record both used and skipped references.
+When Patch appears, include current `build/canon/patch/` references.
 
 ## Preflight packet
 
 Name the artifact lane and intended use, composition, physical logic,
 continuity, allowed text, positive constraints, hard negatives, reference
-basis, known uncertainty, and inspection criteria. Keep operator context—issue
-comments, candidate labels, paths, review prose, and process checklists—out of
+basis, known uncertainty, and inspection criteria. Keep operator context such as issue comments, candidate labels, paths, review
+prose, and process checklists out of
 audience-facing images.
 
 ## Bible-first asset families

@@ -103,14 +103,6 @@
       "Animation frames, timing, or bone rigging not shown.",
       "Using directly as a sliced runtime sprite atlas."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character:bit-bot",
-      "asset:compiled-sheet",
-      "role-kit:bot",
-      "project:adventures-of-patch",
-      "status:approved"
-    ]
+    "linear_view_route": null
   }
 }

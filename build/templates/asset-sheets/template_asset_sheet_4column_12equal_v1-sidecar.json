@@ -70,13 +70,6 @@
       "Hierarchical or hero/alt layouts.",
       "Exact measurements; inspect the image pixels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:template",
-      "domain:asset-sheet",
-      "state:candidate",
-      "template:4column-12equal",
-      "role:grid-reference"
-    ]
+    "linear_view_route": null
   }
 }

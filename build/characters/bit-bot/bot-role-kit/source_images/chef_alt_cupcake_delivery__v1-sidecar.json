@@ -77,12 +77,6 @@
       "Detailed prop or environment canon beyond the visible frame.",
       "Confirming exact chest nameplate text without pixel inspection."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:chef",
-      "role:alternate",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

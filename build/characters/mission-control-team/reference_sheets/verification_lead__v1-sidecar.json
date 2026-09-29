@@ -86,14 +86,6 @@
       "Detailed prop or expression variants; use additional source images if available.",
       "Authorizing derivative images without image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:verification-lead",
-      "asset:reference-sheet",
-      "team:mission-control",
-      "state:accepted-source-reference"
-    ]
+    "linear_view_route": null
   }
 }

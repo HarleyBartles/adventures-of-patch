@@ -72,10 +72,6 @@
       "Runtime animation frames without cropping",
       "Provenance verification"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }

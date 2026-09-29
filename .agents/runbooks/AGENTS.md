@@ -1,28 +1,11 @@
-# `.agents/runbooks` Guidance
+# Lifecycle runbooks
 
-This directory holds the repo's stage-based and project runbooks. Use them as
-the entry point for each kind of work.
+This directory contains the repository's lifecycle stages. Use the runbook matching the work stage; use its playbook routes whenever a topical concern applies. Playbooks may also be invoked directly.
 
-## Read when
+- `design.md` - shape a request and settle design decisions.
+- `planning.md` - turn settled requirements into an executable plan.
+- `implementing.md` - execute approved work and validate it.
+- `code-review.md` - inspect a concrete change and evaluate findings.
+- `pr.md` - publish and verify pull request state.
 
-- Use `design.md` for design and shaping work.
-- Use `planning.md` for multi-step planning work.
-- Use `implementing.md` for implementation work.
-- Use `code-style.md` for conventions and style.
-- Use `code-review.md` for review work.
-- Use `pr.md` for pull-request workflow and publication proof.
-- Use `testing.md` for the local validation command map.
-- Use `security.md` for security posture and review.
-- Use `skill-authoring.md` for creating or editing skills.
-- Use `marketplace-generation.md` for marketplace refresh and plugin work.
-- Use `completing-plans.md` to compose completion custody, durable promotion,
-  removal, mesh regeneration, and validation.
-- Use the additional project runbooks for Adventures-specific workflows:
-  - `visual-production.md`
-
-## Working rules
-
-- Keep each runbook focused on a single stage or concern.
-- Do not repeat doctrine; point to `.agents/doctrine/*.md`.
-- If a runbook moves or a new one is added, update this router and the mesh in
-the same change.
+Topical guidance lives in `.agents/playbooks/`. The policy mapping is `.agents/doctrine/repo-runbook-policy.md`.

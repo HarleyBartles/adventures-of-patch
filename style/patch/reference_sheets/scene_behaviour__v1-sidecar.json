@@ -106,14 +106,6 @@
       "Canonical Patch anatomy in all contexts; use the canonical Patch reference surfaces for that.",
       "Animation rigging or 3D model construction."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:reference-sheet",
-      "state:approved",
-      "theme:interaction",
-      "role:style-reference",
-      "environment:neutral"
-    ]
+    "linear_view_route": null
   }
 }

@@ -71,15 +71,6 @@
       "Patch character canon in general.",
       "Exact OCR of incidental small text."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:fairytale-page",
-      "fairytale:goldilocks",
-      "pattern:right-amount-of-guidance",
-      "state:accepted",
-      "theme:guidance-balance",
-      "layout:mobile"
-    ]
+    "linear_view_route": null
   }
 }

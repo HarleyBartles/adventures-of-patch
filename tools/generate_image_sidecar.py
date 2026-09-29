@@ -41,26 +41,6 @@ def _extract_base_project(image_path: Path) -> str:
     return "Adventures of Patch"
 
 
-def _extract_tags(image_path: Path) -> list[str]:
-    rel = image_path.relative_to(ROOT).as_posix()
-    tags = ["asset:image"]
-    if "/characters/" in rel or rel.startswith("characters/"):
-        tags.append("character")
-    if "/environments/" in rel or rel.startswith("environments/"):
-        tags.append("environment")
-    if "/adventures/" in rel or rel.startswith("adventures/"):
-        tags.append("adventure")
-    if "/canon/" in rel or rel.startswith("canon/"):
-        tags.append("canon")
-    if rel.startswith("style/") or "/style/" in rel:
-        tags.append("style-reference")
-    if rel.startswith("templates/") or "/templates/" in rel:
-        tags.append("template")
-    if rel.startswith("workbench/") or "/workbench/" in rel:
-        tags.append("workbench")
-    return tags
-
-
 def generate(image_path: Path, force: bool = False) -> Path | None:
     sidecar_path = image_path.with_name(image_path.stem + "-sidecar.json")
     if sidecar_path.exists() and not force:
@@ -109,7 +89,6 @@ def generate(image_path: Path, force: bool = False) -> Path | None:
             "best_for": ["TBD"],
             "not_sufficient_for": ["TBD"],
             "linear_view_route": None,
-            "repo_index_tags": _extract_tags(image_path),
         },
     }
     with open(sidecar_path, "w", encoding="utf-8", newline="\n") as f:

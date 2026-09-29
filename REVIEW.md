@@ -15,10 +15,10 @@ owner reads `.agents/runbooks/code-review.md` for Adventures-specific concerns.
 
 ## First-class review concerns
 
-- Marketplace refreshes must preserve every `adventures-*` local skill and keep
-  each installed portable skill backed by a subscribed plugin.
-- Generated `INDEX.md` files must come from the mesh generator and must not
-  descend into the marketplace-source gitlink or installed-skill internals.
+- Repository-owned `adventures-*` skills stay declared in `repo.local_skills`;
+  selected standards and their deployed resources must match the pinned gitlink.
+- Generated mesh indexes are retired; navigate through direct canonical links
+  and tracked manifests, and do not descend into the marketplace-source gitlink.
 - Doctrine, runbooks, skills, and scripts must retain distinct ownership; local
   overlays must not duplicate portable workflow instructions.
 - Patch is the project character, never an agent, actor, owner, or execution

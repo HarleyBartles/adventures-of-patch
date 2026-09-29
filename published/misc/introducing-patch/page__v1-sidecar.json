@@ -69,13 +69,6 @@
       "Mobile portrait display.",
       "OCR of the small footer."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:one-pager",
-      "one-pager:introducing-patch",
-      "state:accepted",
-      "layout:landscape"
-    ]
+    "linear_view_route": null
   }
 }

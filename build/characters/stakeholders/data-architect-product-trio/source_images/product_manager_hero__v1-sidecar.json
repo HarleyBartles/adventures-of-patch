@@ -76,10 +76,6 @@
       "Detailed prop or expression variants; use the props and alt source images instead.",
       "Authorizing derivative images without image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character"
-    ]
+    "linear_view_route": null
   }
 }

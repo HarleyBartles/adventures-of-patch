@@ -1,15 +1,8 @@
-# Plugin marketplace routing
+# Marketplace source and manifest routing
 
-Use this routing file before changing the repo-local plugin manifest, pinned
-marketplace source, or derived skill refresh contract.
+- `marketplace.json` records this repository's exact local skill custody and has no ambient plugin subscriptions.
+- `marketplace-source/` is the pinned gitlink supplying selected standard implementations; do not edit its contents from this repository.
+- `.agents/contracts/operating-standards.json` declares the selected standards.
+- Use `.agents/playbooks/marketplace-generation.md` for ownership, source pin, and standards deployment changes.
 
-- `marketplace.json` is the repo-owned provider manifest.
-- `marketplace-source/` is a pinned gitlink boundary; do not edit its contents
-  from this repository.
-- `INDEX.md` is generated navigation.
-- Refresh derived skills with the scripts in `../../scripts/`, then regenerate
-  the full index mesh.
-
-Do not store proposals, inventories, or ordinary project documentation in this
-directory. Keep durable policy in `.agents/doctrine/` and current procedures in
-`.agents/runbooks/`.
+Do not store proposals, inventories, or ordinary project documentation here. Keep durable policy in `.agents/doctrine/` and current topical procedures in `.agents/playbooks/`.

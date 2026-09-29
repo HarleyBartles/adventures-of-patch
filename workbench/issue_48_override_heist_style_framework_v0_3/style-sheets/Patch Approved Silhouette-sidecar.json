@@ -83,13 +83,6 @@
       "Precise anatomy or three-dimensional pose extraction.",
       "Final acceptance of generated derivatives without image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:style-reference",
-      "state:approved",
-      "role:style-silhouette",
-      "workbench"
-    ]
+    "linear_view_route": null
   }
 }

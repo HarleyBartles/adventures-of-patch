@@ -89,15 +89,6 @@
       "Detailed prop or signage transcription if exact wording matters.",
       "Animation frames, rigging, or expression variants."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:mission-control-team",
-      "asset:reference-sheet",
-      "project:adventures-of-patch",
-      "team:mission-control",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

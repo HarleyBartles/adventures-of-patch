@@ -71,13 +71,6 @@
       "Multi-location or character-trio sheets.",
       "Exact measurements; inspect the image pixels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:template",
-      "domain:asset-sheet",
-      "state:candidate",
-      "template:1location-3view",
-      "role:environment-location"
-    ]
+    "linear_view_route": null
   }
 }

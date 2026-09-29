@@ -93,12 +93,6 @@
       "Authorizing derivative images without direct image QA.",
       "Exact OCR of any small chart or card text."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:stakeholder",
-      "role:data-analyst",
-      "role:props",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

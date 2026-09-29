@@ -85,10 +85,6 @@
       "Real-time game sprites at target resolutions.",
       "Canonical backstory or environment details beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }
