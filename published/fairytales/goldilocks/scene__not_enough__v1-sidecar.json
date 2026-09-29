@@ -88,15 +88,6 @@
       "Patch character canon in general; use the canonical Patch reference surfaces.",
       "Exact OCR of incidental small sign text."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:scene",
-      "fairytale:goldilocks",
-      "pattern:not-enough",
-      "state:approved",
-      "theme:guidance-balance",
-      "camera:over-the-shoulder"
-    ]
+    "linear_view_route": null
   }
 }

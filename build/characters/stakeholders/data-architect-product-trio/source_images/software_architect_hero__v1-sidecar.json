@@ -105,12 +105,6 @@
       "Final asset acceptance without pixel-level QA against the source image.",
       "Authorizing derivative images or unobserved alternate poses."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:stakeholder",
-      "role:software-architect",
-      "pose:hero",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

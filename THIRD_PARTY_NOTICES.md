@@ -16,11 +16,11 @@ The rule is simple: third-party, vendored, adapted, or upstream-derived material
 
 - **Path:** `.agents/plugins/marketplace-source`
 - **Source:** https://github.com/HarleyBartles/agent-asset-marketplace
-- **Pinning:** The submodule is tracked by git; the current checkout is recorded in `.gitmodules` and the working tree. The installed snapshot is also recorded in `.agents/skills/.provenance.json`.
+- **Pinning:** The submodule is tracked by git. Its exact source revision and deployed standard resources are recorded in `.agents/standards/provenance.json`.
 - **License:** governed by the upstream repository; see `.agents/plugins/marketplace-source/LICENSE`
 - **Status:** repo-boundary
 
-The skills installed under `.agents/skills/` are copied from this marketplace source, except the four `adventures-*` local skills. Their provenance and licensing are governed by the upstream repository and the per-plugin `SOURCE.md`, `references/bundle-manifest.json`, and `references/source-map.md` files in the submodule. The snapshot installed here is recorded in `.agents/skills/.provenance.json`.
+Selected Agent Operating Model standard resources are deployed from this pinned source into `.agents/standards/`. Their provenance and content hashes are recorded in `.agents/standards/provenance.json`. Marketplace plugins are ambient and are not copied into this repository. Repository-owned skills under `.agents/skills/adventures-*/` are authored here.
 
 For a repo-local summary, see `docs/project/provenance-skills.md`.
 
@@ -34,14 +34,6 @@ For a repo-local summary, see `docs/project/provenance-skills.md`.
 - **Source:** https://pyyaml.org/
 - **License:** MIT
 - **License text:** `LICENSES/PyYAML.txt`
-- **Status:** verified
-
-### The Elements of Style (1918)
-
-- **Path:** `.agents/skills/writing-with-clarity/assets/authority/reference-source/elements-of-style-1918/`
-- **Source:** Project Gutenberg EBook #37134, https://www.gutenberg.org/ebooks/37134
-- **License:** public domain
-- **Authority record:** `.agents/skills/writing-with-clarity/assets/authority/CITATIONS.md`
 - **Status:** verified
 
 ## Material needing audit before public release
@@ -63,8 +55,8 @@ For a repo-local summary, see `docs/project/provenance-skills.md`.
 1. Do not classify uncertain provenance as first-party.
 2. Record new dependencies in `docs/project/provenance-dependencies.md` and copy the license text to `LICENSES/`.
 3. Record asset provenance in `docs/project/provenance-assets.md` and update this file to `verified`.
-4. Record skill provenance in `docs/project/provenance-skills.md`.
+4. Record repository-owned skill and selected standards provenance in `docs/project/provenance-skills.md`.
 
 ## Current status
 
-This is a proper audit surface rather than an empty scaffold. The repository boundary and verified items are recorded. The visual and media asset audit and the per-skill marketplace summary remain thin surfaces for the next review pass.
+This is a proper audit surface rather than an empty scaffold. The repository boundary and verified items are recorded. The visual and media asset audit remains a thin surface for the next review pass.

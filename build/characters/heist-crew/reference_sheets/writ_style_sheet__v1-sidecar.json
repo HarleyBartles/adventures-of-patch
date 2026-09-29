@@ -62,14 +62,7 @@
       "Precise OCR of every small label if exact wording matters.",
       "Authorizing non-Writ character design changes."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:writ",
-      "asset:style-sheet",
-      "state:approved",
-      "role:mandate",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-08-20T18:23:13.641039Z"
 }

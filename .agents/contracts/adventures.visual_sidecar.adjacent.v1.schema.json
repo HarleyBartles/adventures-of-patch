@@ -28,7 +28,10 @@
       "type": "string"
     },
     "character": {
-      "type": ["string", "null"]
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "sidecar_purpose": {
       "type": "string"
@@ -43,7 +46,10 @@
       "type": "string"
     },
     "created_at": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "date-time"
     },
     "image": {
@@ -95,7 +101,10 @@
         },
         "dimensions": {
           "type": "object",
-          "required": ["width", "height"],
+          "required": [
+            "width",
+            "height"
+          ],
           "additionalProperties": false,
           "properties": {
             "width": {
@@ -160,8 +169,7 @@
       "required": [
         "best_for",
         "not_sufficient_for",
-        "linear_view_route",
-        "repo_index_tags"
+        "linear_view_route"
       ],
       "additionalProperties": false,
       "properties": {
@@ -178,13 +186,10 @@
           }
         },
         "linear_view_route": {
-          "type": ["string", "null"]
-        },
-        "repo_index_tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     }

@@ -149,14 +149,7 @@
       "Detailed final outfit rendering without the approved style sheet.",
       "Treating any rejected example as a fallback design."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:index",
-      "asset:anti-patterns",
-      "state:accepted-reference",
-      "role:source-provenance",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-06-13T07:40:44Z"
 }

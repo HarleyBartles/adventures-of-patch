@@ -77,13 +77,6 @@
       "Exact colour hex values; inspect pixels.",
       "Final canon without image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "domain:environment",
-      "environment:club-db",
-      "location:front-exterior",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

@@ -92,10 +92,6 @@
       "Inferring dialogue, backstory, or personality beyond the visual reference.",
       "Using directly as a sliced runtime sprite atlas."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character"
-    ]
+    "linear_view_route": null
   }
 }

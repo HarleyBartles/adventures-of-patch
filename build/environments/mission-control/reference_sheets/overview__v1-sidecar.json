@@ -76,13 +76,6 @@
       "Final canon without image QA.",
       "Detailed prop or signage transcription."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "domain:environment",
-      "environment:mission-control",
-      "asset:reference-sheet",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

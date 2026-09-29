@@ -82,16 +82,6 @@
       "Final publication crop without review",
       "Provenance-unaware re-generation"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "adventure",
-      "tournament",
-      "trial-environments",
-      "environment",
-      "source-image",
-      "course-1",
-      "hero"
-    ]
+    "linear_view_route": null
   }
 }

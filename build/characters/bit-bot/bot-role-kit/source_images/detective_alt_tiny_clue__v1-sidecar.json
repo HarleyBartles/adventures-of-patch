@@ -78,12 +78,6 @@
       "Bit/Bot full character canon in general; use canonical reference surfaces.",
       "Exact OCR of incidental small labels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:detective",
-      "alt:tiny-clue",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

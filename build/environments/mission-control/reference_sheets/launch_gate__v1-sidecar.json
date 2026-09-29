@@ -77,13 +77,6 @@
       "Exact icon or sign text.",
       "Final canon without image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "domain:environment",
-      "environment:mission-control",
-      "location:launch-gate",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

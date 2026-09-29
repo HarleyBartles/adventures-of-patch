@@ -106,14 +106,6 @@
       "Exact color values; inspect the image pixels or use the palette reference.",
       "Animation rigging or 3D model construction."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "style:approved",
-      "asset:reference-sheet",
-      "pattern:approved",
-      "state:accepted",
-      "purpose:positive-reference",
-      "domain:style-guide"
-    ]
+    "linear_view_route": null
   }
 }

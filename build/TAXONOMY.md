@@ -24,13 +24,10 @@ Build families live directly under `build/<domain>/<family>/`. The old `asset_pa
 
 ```text
 build/<domain>/<family>/
-  INDEX.md
-  README.md optional
+  README.md (only where a human-authored guide is useful)
   <pack_id>/
-    INDEX.md
-    README.md optional
+    README.md (only where a human-authored guide is useful)
     source_images/
-      INDEX.md
       <local_name>__vN.png
     compiled_asset_sheets/
       sheet__vN.png
@@ -45,7 +42,6 @@ A single-pack family whose pack would share the family name is collapsed so the 
 
 ```text
 build/environments/identity-emporium/
-  INDEX.md
   README.md
   reference_sheets/
     overview__v1.png
@@ -117,12 +113,11 @@ Recommended `artifact_lanes` values:
 - `absent_missing_legacy_inputs`
 - `absent_not_reconstructed`
 
-## Index rules
+## Navigation rules
 
-- Every visible directory should have an `INDEX.md`.
-- Indexes list only direct children that really exist.
-- Parent indexes must point to existing child indexes.
-- If a file moved, update the index mesh in the same batch.
+- Use direct links from scoped guides and canonical directory paths.
+- Keep manifests authoritative for package contents and provenance.
+- Update direct links and relevant tracked manifests when a canonical source moves.
 
 ## Validator
 
@@ -131,7 +126,7 @@ Repo-tracked validation lives in `tools/run.py`:
 - `py -3 tools/run.py ci --check`
 - `py -3 tools/run.py ci --apply`
 
-The `repo-standards` and `generating-agent-mesh` skills validate surface presence, index consistency, and `git diff --check`.
+The selected repository standards validate routing, composition, and `git diff --check`.
 
 The taxonomy should be mechanically checkable:
 
@@ -143,7 +138,7 @@ The taxonomy should be mechanically checkable:
 - `reference_sheets/` contains only local reference sheets;
 - `workbench/` contents are working references, not canonical package contents;
 - no active filename is over-encoded with redundant package taxonomy;
-- no stale moved path remains in indexes, manifests, registry, docs, or sample dispatches;
+- no stale moved path remains in manifests, registry, docs, or sample dispatches;
 - no UTF-8 BOM exists in touched Markdown or JSON files;
 - PNG count and bytes remain unchanged across the restructure.
 
@@ -157,4 +152,4 @@ unlisted workbench material.
 
 ## Operating rule
 
-When a taxonomy migration changes a PNG path, update all affected indexes, manifests, docs, registry entries, and sample dispatches in the same batch.
+When a taxonomy migration changes a PNG path, update all affected manifests, docs, registry entries, and sample dispatches in the same batch.

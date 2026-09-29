@@ -72,14 +72,6 @@
       "Authorizing derivative images without image QA.",
       "Patch character canon in general; use the canonical Patch reference surfaces."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:scene",
-      "fairytale:sorcerers-apprentice",
-      "pattern:initial-delegation",
-      "state:approved",
-      "theme:delegation-boundaries"
-    ]
+    "linear_view_route": null
   }
 }

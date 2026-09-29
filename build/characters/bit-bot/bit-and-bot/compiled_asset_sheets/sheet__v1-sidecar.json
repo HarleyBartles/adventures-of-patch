@@ -101,14 +101,6 @@
       "Inferring dialogue, backstory, or personality beyond the guidance text.",
       "Using directly as a sliced runtime sprite atlas."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character:bit-bot",
-      "asset:compiled-sheet",
-      "project:adventures-of-patch",
-      "team:mission-control",
-      "status:qa-accepted"
-    ]
+    "linear_view_route": null
   }
 }

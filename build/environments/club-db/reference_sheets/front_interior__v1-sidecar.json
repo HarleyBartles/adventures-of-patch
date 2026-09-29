@@ -77,13 +77,6 @@
       "Exact text transcription.",
       "Final canon without image QA."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "domain:environment",
-      "environment:club-db",
-      "location:front-interior",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

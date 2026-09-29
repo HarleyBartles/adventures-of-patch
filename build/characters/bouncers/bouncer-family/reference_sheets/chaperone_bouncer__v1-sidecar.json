@@ -86,11 +86,6 @@
       "Inferred narrative or dialogue beyond the visual reference",
       "Non-Chaperone Bouncer character variants"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bouncer",
-      "role:chaperone",
-      "asset:reference-sheet"
-    ]
+    "linear_view_route": null
   }
 }

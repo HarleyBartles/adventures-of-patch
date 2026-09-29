@@ -85,14 +85,6 @@
       "Authorizing derivative images or additional views beyond those shown.",
       "Determining animation frames, bone rigging, or runtime sprite treatment."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character:mission-controller",
-      "project:adventures-of-patch",
-      "team:mission-control",
-      "role:reference-sheet",
-      "status:approved"
-    ]
+    "linear_view_route": null
   }
 }

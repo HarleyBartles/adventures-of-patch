@@ -129,12 +129,6 @@
       "Exact color values or hex codes; inspect the image pixels or use a palette reference.",
       "Authorizing derivative agent classes or role kits beyond the six examples shown."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:other-agents",
-      "asset:reference-sheet"
-    ]
+    "linear_view_route": null
   }
 }

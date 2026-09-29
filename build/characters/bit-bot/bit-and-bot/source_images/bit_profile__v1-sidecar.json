@@ -93,13 +93,6 @@
       "Environmental storytelling or multi-character tournament scenes.",
       "Direct runtime crop without further processing or cropping."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:bit-bot",
-      "role:profile",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

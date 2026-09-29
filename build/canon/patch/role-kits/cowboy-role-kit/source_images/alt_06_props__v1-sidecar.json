@@ -70,10 +70,6 @@
       "Animation frames or motion reference.",
       "Inferences about environment lighting, scale, or story context."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }

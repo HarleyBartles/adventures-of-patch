@@ -86,13 +86,6 @@
       "Inferred narrative or dialogue beyond the visual reference",
       "Non-Route Bouncer character variants"
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:bouncer",
-      "role:route",
-      "asset:reference-sheet"
-    ]
+    "linear_view_route": null
   }
 }

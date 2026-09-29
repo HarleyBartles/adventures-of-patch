@@ -32,7 +32,6 @@ STALE_REFERENCE_EXCLUDE_FILES: set[Path] = set()
 LOCAL_REF_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*__v\d+(?:_\d+)?\.png$")
 SHEET_RE = re.compile(r"^sheet__v\d+(?:_\d+)?\.png$")
 PNG_REF_RE = re.compile(r"(?P<path>(?:[A-Za-z]:[\\/])?(?:assets|Patch|docs|skills|\.agents[\\/]runbooks)[^\"'\s)]+?\.png)")
-INDEX_REF_RE = re.compile(r"`([^`]+)`")
 
 
 def normalize_token(value: str) -> str:
@@ -42,30 +41,6 @@ def normalize_token(value: str) -> str:
 
 def list_pngs() -> list[Path]:
     return sorted(path for path in ASSETS_ROOT.rglob("*.png") if path.is_file())
-
-
-def index_entries(path: Path) -> tuple[list[str], list[str]]:
-    files: list[str] = []
-    subdirs: list[str] = []
-    current: str | None = None
-    for line in path.read_text(encoding="utf-8").splitlines():
-        stripped = line.strip()
-        if stripped.startswith("## "):
-            if stripped == "## Files in this directory":
-                current = "files"
-            elif stripped == "## Subdirectories":
-                current = "subdirs"
-            else:
-                current = None
-            continue
-        if current not in {"files", "subdirs"}:
-            continue
-        for entry in INDEX_REF_RE.findall(line):
-            if current == "files":
-                files.append(entry)
-            elif current == "subdirs":
-                subdirs.append(entry)
-    return files, subdirs
 
 
 def package_files(package_root: Path) -> dict[str, list[str]]:
@@ -194,7 +169,7 @@ def main() -> int:
             rel_package_root = package_root.relative_to(REPO_ROOT).as_posix()
             domain, family, package_id = package_metadata(package_root)
 
-            allowed_root_entries = {"INDEX.md", "README.md", "source_images", "compiled_asset_sheets", "reference_sheets", "manifests"}
+            allowed_root_entries = {"README.md", "source_images", "compiled_asset_sheets", "reference_sheets", "manifests"}
             for child in package_root.iterdir():
                 if child.name not in allowed_root_entries:
                     lane_mismatches.append(f"{rel_package_root}: unexpected package-root entry {child.name}")

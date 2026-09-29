@@ -87,15 +87,6 @@
       "Canonical Patch positive reference; use the canonical Patch reference surfaces.",
       "Exact OCR of all incidental small labels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "asset:reference_sheet",
-      "style:drift",
-      "style:risk",
-      "pattern:anti-pattern",
-      "state:accepted",
-      "purpose:negative-reference"
-    ]
+    "linear_view_route": null
   }
 }

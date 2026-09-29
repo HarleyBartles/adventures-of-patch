@@ -75,12 +75,6 @@
       "Final acceptance of derivative art without image QA.",
       "Detailed ranch, motion, or lasso-action canon beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:cowboy",
-      "role:hero",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

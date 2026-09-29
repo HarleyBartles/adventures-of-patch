@@ -20,7 +20,7 @@ Do not ask image generation to create the final sheet layout. Image generation c
 
 Use the current approved blank asset sheet template as the final layout for every asset sheet. The approved template is the one Harley placed as a first-class project-source/library template package after approving `template_final_asset_sheet_blank_v3.png`. Project sources are reserved for asset-sheet template package(s) only for now unless Harley changes that policy.
 
-For template packages, the repo PNG and JSON sidecar are required source truth, and the matching project-source PNG plus spec are also required and must be discoverable through the index mesh. Do not treat either side as sufficient on its own.
+For template packages, the repo PNG and JSON sidecar are required source truth, and the matching project-source PNG plus spec are also required and must be discoverable through tracked manifests and direct canonical paths. Do not treat either side as sufficient on its own.
 
 Before deterministic compile, read the repo JSON sidecar first, then use the matching project-source PNG and spec filenames recorded there. Do not compile from the repo PNG alone or from session memory.
 
@@ -79,6 +79,6 @@ The final canonical artifact is the compiled asset-sheet PNG. HTML files, scratc
 
 ## Landing posture
 
-When landing in the repo, place the compiled asset sheet and approved source images in the relevant asset directory. Place the zip package in `assets/source-zips/` only when the package is intended as a repo-tracked source/import package or integrity receipt. Update the relevant asset directory index and `assets/source-zips/INDEX.md` when applicable.
+When landing in the repo, place the compiled asset sheet and approved source images in the relevant asset directory. Keep any explicitly requested repo-tracked source/import zip in its governed `workbench/` package with clear provenance; it remains workbench material until separately promoted. Update the relevant tracked manifest or asset guide when applicable.
 
-Do not call the sheet canonical solely because the zip exists. Canonical status requires repo/source-package/index evidence and any required Harley approval threshold.
+Do not call the sheet canonical solely because the zip exists. Canonical status requires repo/source-package/manifest evidence and any required Harley approval threshold.

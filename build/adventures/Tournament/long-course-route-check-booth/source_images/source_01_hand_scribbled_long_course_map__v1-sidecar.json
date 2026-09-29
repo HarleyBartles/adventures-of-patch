@@ -87,14 +87,6 @@
       "Texture maps for 3D models.",
       "Canonical character or environment details beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "adventure",
-      "character:Course Map",
-      "prop:map",
-      "domain:source-image",
-      "adventure:long-course-route-check-booth"
-    ]
+    "linear_view_route": null
   }
 }

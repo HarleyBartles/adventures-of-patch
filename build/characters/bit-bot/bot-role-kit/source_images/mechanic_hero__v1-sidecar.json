@@ -73,12 +73,6 @@
       "Final acceptance of derivative art without image QA.",
       "Detailed tool or environment canon beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:mechanic",
-      "role:hero",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

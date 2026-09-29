@@ -70,13 +70,6 @@
       "Single-location deep sheets or character sheets.",
       "Exact measurements; inspect the image pixels."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:template",
-      "domain:asset-sheet",
-      "state:candidate",
-      "template:world-overview",
-      "role:world-style-overview"
-    ]
+    "linear_view_route": null
   }
 }

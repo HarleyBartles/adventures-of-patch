@@ -37,7 +37,7 @@ The top-level layers are organised by licence and maturity:
 - [`.agents/`](.agents/) contains project doctrine, runbooks, local skills, and other agent-facing infrastructure.
 - [`tools/`](tools/) contains deterministic maintenance and validation helpers.
 
-Scratch files, uploaded source packages, generated projections, and old presentation material are not automatically current just because they exist locally; follow the indexed repo paths to find the active source.
+Scratch files, uploaded source packages, generated projections, and old presentation material are not automatically current just because they exist locally; follow direct links from `AGENTS.md` and the scoped guides to find active sources.
 
 ## Patch's role
 
@@ -45,7 +45,7 @@ Patch is the recurring project character and visual through-line unless a partic
 
 ## Finding your way around
 
-Start with the generated [repository index](INDEX.md) for the current map of the tree. The [project index](docs/project/INDEX.md) points to project-specific sources and guidance. [`AGENTS.md`](AGENTS.md) explains the repository rules for contributors and automated work. [`build/TAXONOMY.md`](build/TAXONOMY.md) defines the current asset taxonomy.
+Start with [`AGENTS.md`](AGENTS.md) for contributor routing. Project sources and guidance live under `docs/project/` and are linked from scoped routers. [`AGENTS.md`](AGENTS.md) explains the repository rules for contributors and automated work. [`build/TAXONOMY.md`](build/TAXONOMY.md) defines the current asset taxonomy.
 
 ## Licensing
 

@@ -114,13 +114,6 @@
       "Exact color values for each role; inspect the individual reference sheets and image pixels.",
       "Detailed narrative or dialogue beyond the visual reference."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "character",
-      "character:bouncer-family",
-      "role:overview",
-      "asset:reference-sheet"
-    ]
+    "linear_view_route": null
   }
 }

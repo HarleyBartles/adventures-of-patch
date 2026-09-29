@@ -116,14 +116,6 @@
       "Exact typeface or layout measurements; inspect the image directly.",
       "Inferring full story scenes or environments not shown on the sheet."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:patch",
-      "style:approved",
-      "state:ready-for-qa",
-      "asset:reference-sheet",
-      "role:style-bible",
-      "domain:character-design"
-    ]
+    "linear_view_route": null
   }
 }

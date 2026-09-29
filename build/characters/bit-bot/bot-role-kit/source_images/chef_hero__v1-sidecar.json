@@ -73,12 +73,6 @@
       "Final acceptance of derivative art without image QA.",
       "Detailed kitchen or food canon beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:chef",
-      "role:hero",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

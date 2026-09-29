@@ -95,10 +95,6 @@
       "Provenance or prompt reconstruction.",
       "Determining exact ingredient or recipe details."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }

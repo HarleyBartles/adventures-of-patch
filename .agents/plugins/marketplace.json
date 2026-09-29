@@ -1,9 +1,14 @@
 {
-  "schema_version": 2,
-  "marketplace_source": {
-    "repository": "https://github.com/HarleyBartles/agent-asset-marketplace.git",
-    "path": ".agents/plugins/marketplace-source"
+  "name": "adventures-of-patch",
+  "interface": {
+    "displayName": "Adventures of Patch"
   },
+  "plugins": [],
+  "notes": [
+    "Agent Operating Model standards are selected explicitly in .agents/contracts/operating-standards.json.",
+    "The marketplace-source submodule pins implementation resources for selected standards.",
+    "Repository-owned skills are declared exactly in repo.local_skills."
+  ],
   "repo": {
     "local_skills": [
       "adventures-project-doctrine",
@@ -11,72 +16,5 @@
       "directing-visual-stories",
       "generating-images"
     ]
-  },
-  "plugins": [
-    {
-      "name": "repo-worker-pack",
-      "version": "1.0.0",
-      "source": {
-        "source": "github",
-        "owner": "HarleyBartles",
-        "repo": "agent-asset-marketplace",
-        "path": "codex-marketplace/plugins/repo-worker-pack"
-      },
-      "policy": {
-        "installation": "INSTALLED_BY_DEFAULT"
-      }
-    },
-    {
-      "name": "superpowers-plus",
-      "version": "1.0.0",
-      "source": {
-        "source": "github",
-        "owner": "HarleyBartles",
-        "repo": "agent-asset-marketplace",
-        "path": "codex-marketplace/plugins/superpowers-plus"
-      },
-      "policy": {
-        "installation": "INSTALLED_BY_DEFAULT"
-      }
-    },
-    {
-      "name": "mcp-usage-pack",
-      "version": "1.0.0",
-      "source": {
-        "source": "github",
-        "owner": "HarleyBartles",
-        "repo": "agent-asset-marketplace",
-        "path": "codex-marketplace/plugins/mcp-usage-pack"
-      },
-      "policy": {
-        "installation": "INSTALLED_BY_DEFAULT"
-      }
-    },
-    {
-      "name": "writing-pack",
-      "version": "1.0.0",
-      "source": {
-        "source": "github",
-        "owner": "HarleyBartles",
-        "repo": "agent-asset-marketplace",
-        "path": "codex-marketplace/plugins/writing-pack"
-      },
-      "policy": {
-        "installation": "INSTALLED_BY_DEFAULT"
-      }
-    },
-    {
-      "name": "unslop-plus",
-      "version": "1.0.0",
-      "source": {
-        "source": "github",
-        "owner": "HarleyBartles",
-        "repo": "agent-asset-marketplace",
-        "path": "codex-marketplace/plugins/unslop-plus"
-      },
-      "policy": {
-        "installation": "INSTALLED_BY_DEFAULT"
-      }
-    }
-  ]
+  }
 }

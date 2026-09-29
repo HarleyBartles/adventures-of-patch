@@ -68,14 +68,7 @@
       "Detailed final Klause outfit rendering without the approved style sheet.",
       "Treating any rejected example as a fallback design."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:klause",
-      "asset:anti-patterns",
-      "state:approved",
-      "role:decision",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-08-20T18:23:13.641039Z"
 }

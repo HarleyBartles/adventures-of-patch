@@ -102,13 +102,6 @@
       "Exact transcription of small prop labels if exact wording matters.",
       "Authorizing derivative images beyond the three observed views."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:shopkeeper",
-      "asset:reference-sheet",
-      "environment:identity-emporium",
-      "state:accepted-source-reference",
-      "pass:a"
-    ]
+    "linear_view_route": null
   }
 }

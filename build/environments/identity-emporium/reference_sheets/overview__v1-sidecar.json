@@ -77,13 +77,6 @@
       "Final canon without image QA.",
       "Per-room detailed sheets."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "domain:environment",
-      "environment:identity-emporium",
-      "asset:reference-sheet",
-      "state:accepted"
-    ]
+    "linear_view_route": null
   }
 }

@@ -1,4 +1,8 @@
 {
-  "apply": ["@python", "tools/run.py", "ci", "--apply"],
-  "check": ["@python", "tools/run.py", "ci", "--check"]
+  "apply": ["@python", "tools/run.py", "ci", "--apply", "--allow-shared-checkout"],
+  "check": ["@python", "tools/run.py", "ci", "--check"],
+  "generated_paths": [
+    ".agents/standards/**",
+    "**/*-sidecar.json"
+  ]
 }

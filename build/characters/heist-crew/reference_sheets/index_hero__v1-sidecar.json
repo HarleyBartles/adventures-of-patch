@@ -115,14 +115,7 @@
       "Complete prop inventory; use style sheet canonical kit panel.",
       "Anti-pattern checks; use anti-pattern sheet."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:index",
-      "asset:hero",
-      "state:accepted-reference",
-      "role:source-provenance",
-      "canonical-character-reference"
-    ]
+    "linear_view_route": null
   },
   "created_at": "2026-06-13T07:40:44Z"
 }

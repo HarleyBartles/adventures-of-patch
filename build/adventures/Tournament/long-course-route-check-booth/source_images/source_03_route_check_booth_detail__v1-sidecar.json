@@ -88,13 +88,6 @@
       "Wide establishing context of the long course.",
       "Provenance or prompt reconstruction."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "adventure",
-      "character:Route Check Booth",
-      "domain:source-image",
-      "adventure:long-course-route-check-booth"
-    ]
+    "linear_view_route": null
   }
 }

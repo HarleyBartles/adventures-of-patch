@@ -113,13 +113,6 @@
       "Exact transcription of small labels, badges, or icon captions.",
       "Authorizing derivative prop reference sheets."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "style:patterns",
-      "asset:reference-sheet",
-      "theme:props",
-      "state:accepted-source-reference"
-    ]
+    "linear_view_route": null
   }
 }

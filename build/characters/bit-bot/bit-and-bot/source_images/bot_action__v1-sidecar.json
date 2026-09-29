@@ -67,11 +67,6 @@
       "Final acceptance of derivative images without image QA.",
       "Detailed prop, expression, or environment canon beyond the shown pose."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:action",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

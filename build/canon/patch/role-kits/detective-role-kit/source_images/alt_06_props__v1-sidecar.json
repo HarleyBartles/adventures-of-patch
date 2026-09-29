@@ -88,10 +88,6 @@
       "Canonical character pose or full-body reference.",
       "Canonical backstory or environment details beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon"
-    ]
+    "linear_view_route": null
   }
 }

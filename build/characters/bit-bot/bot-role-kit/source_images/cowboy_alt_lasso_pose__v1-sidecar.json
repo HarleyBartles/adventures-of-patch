@@ -73,13 +73,6 @@
       "Final acceptance of derivative art without image QA.",
       "Detailed lasso motion or environment canon beyond the visible frame."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "character:bit-bot",
-      "role:cowboy",
-      "role:alternate",
-      "pose:lasso",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }

@@ -63,12 +63,6 @@
       "Exact OCR or small-type verification.",
       "Authorizing design changes outside the style framework."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "workbench",
-      "style-framework",
-      "heist"
-    ]
+    "linear_view_route": null
   }
 }

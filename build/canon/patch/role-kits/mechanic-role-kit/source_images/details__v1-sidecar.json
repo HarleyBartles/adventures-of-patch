@@ -93,13 +93,6 @@
       "Texture maps for 3D models.",
       "Provenance or prompt reconstruction."
     ],
-    "linear_view_route": null,
-    "repo_index_tags": [
-      "asset:image",
-      "canon",
-      "character:Patch",
-      "role:mechanic",
-      "asset:source-image"
-    ]
+    "linear_view_route": null
   }
 }
